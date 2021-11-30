@@ -1,11 +1,22 @@
 ---
-title: "Manuscript Title"
+title: "Polychrony detection in raster plots"
 keywords:
-  - markdown
-  - publishing
-  - manubot
+  - neurons
+  - code
+  - time
 lang: en-US
 authors:
+  - github: laurentperrinet
+    name: Laurent U Perrinet
+    initials: LuP
+    orcid: 0000-0002-9536-010X
+    twitter: laurentperrinet
+    website: https://laurentperrinet.github.io/
+    email: laurent.perrinet@univ-amu.fr
+    affiliations:
+      - Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
+    funders:
+      - Grant XXXXXXXX
   - github: johndoe
     name: John Doe
     initials: JD
