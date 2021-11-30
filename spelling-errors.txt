@@ -1,10 +1,12 @@
 adipiscing
+Aix
 aliqua
 aliquip
 amet
 anim
 aute
 cillum
+CNRS
 commodo
 consectetur
 consequat
@@ -21,6 +23,7 @@ Excepteur
 exercitation
 fugiat
 incididunt
+Institut
 ipsum
 irure
 janeroe
@@ -28,9 +31,12 @@ johndoe
 labore
 laboris
 laborum
+laurentperrinet
 Lorem
 magna
+Marseille
 mollit
+Neurosciences
 nisi
 nostrud
 nulla
@@ -38,6 +44,7 @@ occaecat
 officia
 Pandoc’s
 pariatur
+Perrinet
 proident
 qui
 quis
@@ -46,7 +53,9 @@ sed
 sint
 sunt
 tempor
+Timone
 ullamco
+Université
 velit
 veniam
 voluptate

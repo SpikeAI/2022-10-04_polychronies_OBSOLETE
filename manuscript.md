@@ -1,12 +1,13 @@
 ---
-title: Manuscript Title
+title: Polychrony detection in raster plots
 keywords:
-- markdown
-- publishing
-- manubot
+- neurons
+- code
+- time
 lang: en-US
 date-meta: '2021-11-30'
 author-meta:
+- Laurent U Perrinet
 - John Doe
 - Jane Roe
 header-includes: |-
@@ -15,10 +16,10 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Manuscript Title" />
-  <meta name="citation_title" content="Manuscript Title" />
-  <meta property="og:title" content="Manuscript Title" />
-  <meta property="twitter:title" content="Manuscript Title" />
+  <meta name="dc.title" content="Polychrony detection in raster plots" />
+  <meta name="citation_title" content="Polychrony detection in raster plots" />
+  <meta property="og:title" content="Polychrony detection in raster plots" />
+  <meta property="twitter:title" content="Polychrony detection in raster plots" />
   <meta name="dc.date" content="2021-11-30" />
   <meta name="citation_publication_date" content="2021-11-30" />
   <meta name="dc.language" content="en-US" />
@@ -27,6 +28,10 @@ header-includes: |-
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
+  <meta name="citation_author" content="Laurent U Perrinet" />
+  <meta name="citation_author_institution" content="Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université" />
+  <meta name="citation_author_orcid" content="0000-0002-9536-010X" />
+  <meta name="twitter:creator" content="@laurentperrinet" />
   <meta name="citation_author" content="John Doe" />
   <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
@@ -41,9 +46,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/4ae5997246915cb5245f198d2ed701aafd9850b1/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/4ae5997246915cb5245f198d2ed701aafd9850b1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/4ae5997246915cb5245f198d2ed701aafd9850b1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/46fe08541539b2aaa861b2c99d386f7ed97fa751/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/46fe08541539b2aaa861b2c99d386f7ed97fa751/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/46fe08541539b2aaa861b2c99d386f7ed97fa751/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,15 +70,28 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/4ae5997246915cb5245f198d2ed701aafd9850b1/))
+([permalink](https://SpikeAI.github.io/polychronies/v/46fe08541539b2aaa861b2c99d386f7ed97fa751/))
 was automatically generated
-from [SpikeAI/polychronies@4ae5997](https://github.com/SpikeAI/polychronies/tree/4ae5997246915cb5245f198d2ed701aafd9850b1)
+from [SpikeAI/polychronies@46fe085](https://github.com/SpikeAI/polychronies/tree/46fe08541539b2aaa861b2c99d386f7ed97fa751)
 on November 30, 2021.
 </em></small>
 
 ## Authors
 
 
+
++ **Laurent U Perrinet**
+  · [https://laurentperrinet.github.io/](https://laurentperrinet.github.io/)<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-9536-010X](https://orcid.org/0000-0002-9536-010X)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [laurentperrinet](https://github.com/laurentperrinet)
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [laurentperrinet](https://twitter.com/laurentperrinet)<br>
+  <small>
+     Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
+     · Funded by Grant XXXXXXXX
+  </small>
 
 + **John Doe**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
