@@ -12,8 +12,7 @@
 
 <!-- usage note: edit this section. -->
 
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+This manuscript reviews cureent litterature on Polychrony detection in raster plots. It is work in progress, where anybody interested can join.
 
 ## Manubot
 
