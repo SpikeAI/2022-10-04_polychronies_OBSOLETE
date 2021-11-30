@@ -50,3 +50,10 @@ content/02.delete-me.md:47:sint
 content/02.delete-me.md:47:sunt
 content/02.delete-me.md:236:Pandoc's
 content/02.delete-me.md:246:Pandoc's
+content/25.cortical_songs.md:4:Aronov
+content/25.cortical_songs.md:4:Cossart
+content/25.cortical_songs.md:4:Ferster
+content/25.cortical_songs.md:4:Ikegaya
+content/25.cortical_songs.md:4:Lampl
+content/25.cortical_songs.md:4:Synfire
+content/25.cortical_songs.md:4:Yuste

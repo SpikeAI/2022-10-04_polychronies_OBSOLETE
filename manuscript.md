@@ -46,9 +46,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/a9e2f0283a8b422390631123a188467c1c0c043c/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a9e2f0283a8b422390631123a188467c1c0c043c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a9e2f0283a8b422390631123a188467c1c0c043c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/684faabcc64e6c387e0dcca1b4b6c9992aaa19f6/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/684faabcc64e6c387e0dcca1b4b6c9992aaa19f6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/684faabcc64e6c387e0dcca1b4b6c9992aaa19f6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -70,9 +70,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/a9e2f0283a8b422390631123a188467c1c0c043c/))
+([permalink](https://SpikeAI.github.io/polychronies/v/684faabcc64e6c387e0dcca1b4b6c9992aaa19f6/))
 was automatically generated
-from [SpikeAI/polychronies@a9e2f02](https://github.com/SpikeAI/polychronies/tree/a9e2f0283a8b422390631123a188467c1c0c043c)
+from [SpikeAI/polychronies@684faab](https://github.com/SpikeAI/polychronies/tree/684faabcc64e6c387e0dcca1b4b6c9992aaa19f6)
 on November 30, 2021.
 </em></small>
 
@@ -415,6 +415,12 @@ useful for *important information* - [manubot.org](https://manubot.org/)
 <i class="fas fa-ban fa-lg"></i> **Light Red Banner**<br>
 useful for *warnings* - [manubot.org](https://manubot.org/)
 ]{.banner .lightred}
+
+
+
+## cortical songs
+
+Ikegaya Y, Aaron G, Cossart R, Aronov D, Lampl I, Ferster D, Yuste R. 2004. Synfire chains and cortical songs: temporal modules of cortical activity. Science (New York, NY) 304:559–564. [@doi:10.1126/science.1093173]
 
 
 ## References {.page_break_before}
