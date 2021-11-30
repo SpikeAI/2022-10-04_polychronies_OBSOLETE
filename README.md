@@ -5,7 +5,6 @@
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://SpikeAI.github.io/polychronies/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://SpikeAI.github.io/polychronies/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/SpikeAI/polychronies/workflows/Manubot/badge.svg)](https://github.com/SpikeAI/polychronies/actions)
-[![Travis Build Status](https://travis-ci.com/SpikeAI/polychronies.svg?branch=main)](https://travis-ci.com/SpikeAI/polychronies)
 <!-- usage note: delete CI badges above for services not used by your manuscript -->
 
 ## Manuscript description
