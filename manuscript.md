@@ -5,11 +5,14 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2021-11-30'
+date-meta: '2021-12-02'
 author-meta:
 - Laurent U Perrinet
 - John Doe
 - Jane Roe
+citekey-aliases:
+  my-url: https://openreview.net/forum?id=HkwoSDPgg
+  Ikegaya2004: doi:10.1126/science.1093173
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -20,8 +23,8 @@ header-includes: |-
   <meta name="citation_title" content="Polychrony detection in raster plots" />
   <meta property="og:title" content="Polychrony detection in raster plots" />
   <meta property="twitter:title" content="Polychrony detection in raster plots" />
-  <meta name="dc.date" content="2021-11-30" />
-  <meta name="citation_publication_date" content="2021-11-30" />
+  <meta name="dc.date" content="2021-12-02" />
+  <meta name="citation_publication_date" content="2021-12-02" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -46,9 +49,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/7d89fdfbcfc35e707ba1c7641af895cbed93721e/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/7d89fdfbcfc35e707ba1c7641af895cbed93721e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/7d89fdfbcfc35e707ba1c7641af895cbed93721e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/4fc343bf0e162c8dd1a554d1ae51b69b031a5cfa/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/4fc343bf0e162c8dd1a554d1ae51b69b031a5cfa/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/4fc343bf0e162c8dd1a554d1ae51b69b031a5cfa/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -70,10 +73,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/7d89fdfbcfc35e707ba1c7641af895cbed93721e/))
+([permalink](https://SpikeAI.github.io/polychronies/v/4fc343bf0e162c8dd1a554d1ae51b69b031a5cfa/))
 was automatically generated
-from [SpikeAI/polychronies@7d89fdf](https://github.com/SpikeAI/polychronies/tree/7d89fdfbcfc35e707ba1c7641af895cbed93721e)
-on November 30, 2021.
+from [SpikeAI/polychronies@4fc343b](https://github.com/SpikeAI/polychronies/tree/4fc343bf0e162c8dd1a554d1ae51b69b031a5cfa)
+on December 2, 2021.
 </em></small>
 
 ## Authors
@@ -418,9 +421,32 @@ useful for *warnings* - [manubot.org](https://manubot.org/)
 
 
 
+
+
+
+speed
+(1] S Thorpe, D Fize, and C Marlot, Nature 381.6582 (1996), pp.520-522.
+
+sparse in time and space
+[2] AL Barth and JF Poulet
+Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet, Neuron 78.1 (2013), pp. 28-48.
+
+timing encodes profile
+Celebrini
+[4] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
+
+
+surrogate gradients
+
+ F Zenke and S Ganguli, Neural Computation 30.6 (2018), pp. 1514-1541.
+
+ G Bellec et al., arXiv:1803.09574 [cs, q-bio] (2018) arXiv: 1803.09574.
+
+ SB Shrestha and G Orchard, arXiv:1810.08646 /cs, stat) (2018) . arXiv: 1810.08646.
+
 ## cortical songs
 
-Ikegaya Y, Aaron G, Cossart R, Aronov D, Lampl I, Ferster D, Yuste R. 2004. Synfire chains and cortical songs: temporal modules of cortical activity. Science (New York, NY) 304:559–564. [@doi:10.1126/science.1093173]
+Ikegaya Y, Aaron G, Cossart R, Aronov D, Lampl I, Ferster D, Yuste R. 2004. Synfire chains and cortical songs: temporal modules of cortical activity. Science (New York, NY) 304:559–564. [@Ikegaya2004]
 
 
 ## References {.page_break_before}

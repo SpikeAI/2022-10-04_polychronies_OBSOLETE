@@ -5,7 +5,10 @@ aliquip
 amet
 anim
 Aronov
+arXiv
 aute
+Bellec
+Celebrini
 cillum
 CNRS
 commodo
@@ -24,13 +27,17 @@ esse
 Excepteur
 exercitation
 Ferster
+Fize
 fugiat
+Ganguli
+Gollisch
 Ikegaya
 incididunt
 Institut
 ipsum
 irure
 janeroe
+JF
 johndoe
 labore
 laboris
@@ -39,7 +46,9 @@ Lampl
 laurentperrinet
 Lorem
 magna
+Marlot
 Marseille
+Meister
 mollit
 Neurosciences
 nisi
@@ -50,11 +59,13 @@ officia
 Pandoc’s
 pariatur
 Perrinet
+Poulet
 proident
 qui
 quis
 reprehenderit
 sed
+Shrestha
 sint
 sunt
 Synfire
@@ -68,3 +79,4 @@ voluptate
 XXXX
 XXXXXXXX
 Yuste
+Zenke
