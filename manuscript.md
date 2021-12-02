@@ -14,6 +14,11 @@ citekey-aliases:
   my-url: https://openreview.net/forum?id=HkwoSDPgg
   Ikegaya2004: doi:10.1126/science.1093173
   gan: https://papers.nips.cc/paper/5423-generative-adversarial-nets
+  alexnet: http://dl.acm.org/citation.cfm?doid=3098997.3065386
+  zotero: https://www.zotero.org/
+  vgg: https://arxiv.org/abs/1409.1556
+  googlenet: https://ieeexplore.ieee.org/document/7298594
+  resnet: https://ieeexplore.ieee.org/document/7780459
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -50,9 +55,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/8cf9bd9c54ec854c5a60fa496d97e1ec02c8d4ef/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8cf9bd9c54ec854c5a60fa496d97e1ec02c8d4ef/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8cf9bd9c54ec854c5a60fa496d97e1ec02c8d4ef/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/8834001f1e20353aa37accba919babbb83cebe10/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8834001f1e20353aa37accba919babbb83cebe10/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8834001f1e20353aa37accba919babbb83cebe10/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,9 +79,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/8cf9bd9c54ec854c5a60fa496d97e1ec02c8d4ef/))
+([permalink](https://SpikeAI.github.io/polychronies/v/8834001f1e20353aa37accba919babbb83cebe10/))
 was automatically generated
-from [SpikeAI/polychronies@8cf9bd9](https://github.com/SpikeAI/polychronies/tree/8cf9bd9c54ec854c5a60fa496d97e1ec02c8d4ef)
+from [SpikeAI/polychronies@8834001](https://github.com/SpikeAI/polychronies/tree/8834001f1e20353aa37accba919babbb83cebe10)
 on December 2, 2021.
 </em></small>
 
@@ -154,7 +159,7 @@ surrogate gradients
 Ikegaya Y, Aaron G, Cossart R, Aronov D, Lampl I, Ferster D, Yuste R. 2004. Synfire chains and cortical songs: temporal modules of cortical activity. Science (New York, NY) 304:559–564. [@Ikegaya2004]
 
 
-Gan were introduced in [@gan]
+Gan were introduced in [@gan] see also [@alexnet] [@zotero] [@vgg] [@googlenet] [@resnet]
 
 
 ## References {.page_break_before}
