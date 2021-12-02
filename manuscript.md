@@ -55,9 +55,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/8834001f1e20353aa37accba919babbb83cebe10/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8834001f1e20353aa37accba919babbb83cebe10/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8834001f1e20353aa37accba919babbb83cebe10/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/8398191bcab12cec6ebe7be5441b282706797293/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8398191bcab12cec6ebe7be5441b282706797293/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8398191bcab12cec6ebe7be5441b282706797293/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,9 +79,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/8834001f1e20353aa37accba919babbb83cebe10/))
+([permalink](https://SpikeAI.github.io/polychronies/v/8398191bcab12cec6ebe7be5441b282706797293/))
 was automatically generated
-from [SpikeAI/polychronies@8834001](https://github.com/SpikeAI/polychronies/tree/8834001f1e20353aa37accba919babbb83cebe10)
+from [SpikeAI/polychronies@8398191](https://github.com/SpikeAI/polychronies/tree/8398191bcab12cec6ebe7be5441b282706797293)
 on December 2, 2021.
 </em></small>
 
@@ -160,6 +160,66 @@ Ikegaya Y, Aaron G, Cossart R, Aronov D, Lampl I, Ferster D, Yuste R. 2004. Synf
 
 
 Gan were introduced in [@gan] see also [@alexnet] [@zotero] [@vgg] [@googlenet] [@resnet]
+
+
+---
+jupyter:
+  kernel_info:
+    name: python3
+  kernelspec:
+    argv:
+    - /usr/local/opt/python@3.9/bin/python3.9
+    - "-m"
+    - ipykernel_launcher
+    - "-f"
+    - "{connection_file}"
+    display_name: Python 3 (ipykernel)
+    language: python
+    metadata:
+      debugger: true
+    name: python3
+  language_info:
+    codemirror_mode:
+      name: ipython
+      version: 3
+    file_extension: .py
+    mimetype: text/x-python
+    name: python
+    nbconvert_exporter: python
+    pygments_lexer: ipython3
+    version: 3.9.9
+  nbformat: 4
+  nbformat_minor: 0
+  nteract:
+    version: 0.28.0
+---
+
+<div class="cell code" execution_count="1" collapsed="true"
+execution="{&quot;iopub.execute_input&quot;:&quot;2021-12-02T10:36:25.737Z&quot;,&quot;iopub.status.busy&quot;:&quot;2021-12-02T10:36:25.734Z&quot;,&quot;iopub.status.idle&quot;:&quot;2021-12-02T10:36:26.390Z&quot;,&quot;shell.execute_reply&quot;:&quot;2021-12-02T10:36:26.395Z&quot;}"
+jupyter="{&quot;outputs_hidden&quot;:false,&quot;source_hidden&quot;:false}"
+nteract="{&quot;transient&quot;:{&quot;deleting&quot;:false}}">
+
+``` python
+import numpy as np
+print(f'{np.pi=}')
+```
+
+<div class="output stream stdout">
+
+    np.pi=3.141592653589793
+
+</div>
+
+</div>
+
+
+in  [@natural],  we generate raster plots from natural images
+
+A natural documentary, Planet Earth with David Attenborough
+
+```
+filename = './nat_inputs/PlanetEarth.mp4'  # filename of the movie
+```
 
 
 ## References {.page_break_before}
