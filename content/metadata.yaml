@@ -35,3 +35,8 @@ authors:
     affiliations:
       - Department of Something, University of Whatever
       - Department of Whatever, University of Something
+
+pandoc:
+  citekey-aliases:
+    my-url: https://openreview.net/forum?id=HkwoSDPgg
+    Ikegaya2004: doi:10.1126/science.1093173
