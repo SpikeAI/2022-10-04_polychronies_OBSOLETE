@@ -40,3 +40,4 @@ pandoc:
   citekey-aliases:
     my-url: https://openreview.net/forum?id=HkwoSDPgg
     Ikegaya2004: doi:10.1126/science.1093173
+    gan: https://papers.nips.cc/paper/5423-generative-adversarial-nets
