@@ -30,7 +30,6 @@ authors:
       - Grant AgileNeuroBot
 pandoc:
   citekey-aliases:
-    my-url: https://openreview.net/forum?id=HkwoSDPgg
     Ikegaya2004: doi:10.1126/science.1093173
     Luczak2015: pmid:26507295
     gan: https://papers.nips.cc/paper/5423-generative-adversarial-nets
@@ -46,3 +45,4 @@ pandoc:
     Moser2014: doi:10.1109/TSP.2014.2305642
     Stringer2019nature: doi:10.1038/s41586-019-1346-5
     Stringer2019science: doi:10.1126/science.aav7893
+    rastermap: https://github.com/MouseLand/rastermap
