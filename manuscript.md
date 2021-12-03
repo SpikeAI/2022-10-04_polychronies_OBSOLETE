@@ -7,9 +7,8 @@ keywords:
 lang: en-US
 date-meta: '2021-12-03'
 author-meta:
+- Antoine Grimaldi
 - Laurent U Perrinet
-- John Doe
-- Jane Roe
 citekey-aliases:
   my-url: https://openreview.net/forum?id=HkwoSDPgg
   Ikegaya2004: doi:10.1126/science.1093173
@@ -25,6 +24,8 @@ citekey-aliases:
   Agus2010: doi:10.1016/j.neuron.2010.04.014
   Agus2010pdf: http://audition-backend.ens.fr/dp/pdfs/AgusThorpePressnitzer-2010-noise_memory.pdf
   Moser2014: doi:10.1109/TSP.2014.2305642
+  Stringer2019nature: doi:10.1038/s41586-019-1346-5
+  Stringer2019science: doi:10.1126/science.aav7893
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -43,27 +44,23 @@ header-includes: |-
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
+  <meta name="citation_author" content="Antoine Grimaldi" />
+  <meta name="citation_author_institution" content="Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="twitter:creator" content="@WWWWWWWWWWWWW" />
   <meta name="citation_author" content="Laurent U Perrinet" />
   <meta name="citation_author_institution" content="Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université" />
   <meta name="citation_author_orcid" content="0000-0002-9536-010X" />
   <meta name="twitter:creator" content="@laurentperrinet" />
-  <meta name="citation_author" content="John Doe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <link rel="canonical" href="https://SpikeAI.github.io/polychronies/" />
   <meta property="og:url" content="https://SpikeAI.github.io/polychronies/" />
   <meta property="twitter:url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/0bc05e88131b7f54a3ded748c3eb0913506e70b4/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/0bc05e88131b7f54a3ded748c3eb0913506e70b4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/0bc05e88131b7f54a3ded748c3eb0913506e70b4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/8aa73cfb30b9c39a73d7b4642ac7a1778868c857/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8aa73cfb30b9c39a73d7b4642ac7a1778868c857/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8aa73cfb30b9c39a73d7b4642ac7a1778868c857/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -85,15 +82,27 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/0bc05e88131b7f54a3ded748c3eb0913506e70b4/))
+([permalink](https://SpikeAI.github.io/polychronies/v/8aa73cfb30b9c39a73d7b4642ac7a1778868c857/))
 was automatically generated
-from [SpikeAI/polychronies@0bc05e8](https://github.com/SpikeAI/polychronies/tree/0bc05e88131b7f54a3ded748c3eb0913506e70b4)
+from [SpikeAI/polychronies@8aa73cf](https://github.com/SpikeAI/polychronies/tree/8aa73cfb30b9c39a73d7b4642ac7a1778868c857)
 on December 3, 2021.
 </em></small>
 
 ## Authors
 
 
+
++ **Antoine Grimaldi**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [XXXXXXXX](https://github.com/XXXXXXXX)
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [WWWWWWWWWWWWW](https://twitter.com/WWWWWWWWWWWWW)<br>
+  <small>
+     Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
+     · Funded by Grant XXXXXXXX
+  </small>
 
 + **Laurent U Perrinet**
   · [https://laurentperrinet.github.io/](https://laurentperrinet.github.io/)<br>
@@ -105,28 +114,7 @@ on December 3, 2021.
     [laurentperrinet](https://twitter.com/laurentperrinet)<br>
   <small>
      Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
-     · Funded by Grant XXXXXXXX
-  </small>
-
-+ **John Doe**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [johndoe](https://github.com/johndoe)
-    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [johndoe](https://twitter.com/johndoe)<br>
-  <small>
-     Department of Something, University of Whatever
-     · Funded by Grant XXXXXXXX
-  </small>
-
-+ **Jane Roe**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [janeroe](https://github.com/janeroe)<br>
-  <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     · Funded by Grant APROVIS3D; Grant AgileNeuroBot
   </small>
 
 
@@ -148,10 +136,13 @@ sparse in time and space
 [2] AL Barth and JF Poulet
 Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet, Neuron 78.1 (2013), pp. 28-48.
 
-### cortical songs
 
 Celebrini
+
 [4] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
+
+
+### cortical songs
 
 The approach which is currently most prominent in the Spiking Neural Networks community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.
 
@@ -166,31 +157,41 @@ Ikegaya Y, Aaron G, Cossart R, Aronov D, Lampl I, Ferster D, Yuste R. 2004. Synf
 [@Luczak2015] Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745–55.
 
 
+### polychronization
+
 Rapid Formation of Robust Auditory Memories: Insights from Noise [@Agus2010]
 
-Gan were introduced in [@gan] see also [@alexnet] [@zotero] [@vgg] [@googlenet] [@resnet]
 
 
 
-
-## Stae-of-the-art
-
-### surrogate gradients
-
- F Zenke and S Ganguli, Neural Computation 30.6 (2018), pp. 1514-1541.
-
- G Bellec et al., arXiv:1803.09574 [cs, q-bio] (2018) arXiv: 1803.09574.
-
- SB Shrestha and G Orchard, arXiv:1810.08646 /cs, stat) (2018) . arXiv: 1810.08646.
-
-### spike distance
+## State-of-the-art
 
 
-[@Grossberger2018] :
+### spike pattern clustering
+
+#### Paper by [@Grossberger2018]
 * Temporally ordered multi-neuron patterns likely encode information in the brain. We introduce an unsupervised method, SPOTDisClust (Spike Pattern Optimal Transport Dissimilarity Clustering), for their detection from high-dimensional neural ensembles. SPOTDisClust measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other (SPOTDis).
 * Detecting these temporal patterns represents a major methodological challenge.
+* Many approaches to this problem are supervised, that is, they take patterns occurring concurrently with a known event, such as the delivery of a stimulus for sensory neurons or the traversal of a running track for hippocampal place fields, as a “template” and then search for repetitions of the same template in spiking activity :
+ * Nadasdy Z, Hirase H, Czurko A, Csicsvari J, Buzsaki G. Replay and time compression of recurring spike sequences in the hippocampus. J Neurosci. 1999;19(21):9497–507. pmid:10531452
+ * Lee AK, Wilson MA. A combinatorial method for analyzing sequential firing patterns involving an arbitrary number of neurons based on relative time order. J Neurophysiol. 2004;92(4):2555–73. pmid:15212425
+ * Davidson TJ, Kloosterman F, Wilson MA. Hippocampal replay of extended experience. Neuron. 2009;63(4):497–507. pmid:19709631
+* only one spike per neuron: fig 1A = "For each pattern and each neuron, a random position was chosen for the activation pulse."
+ * t-SNE projection with HDBSCAN labels shows that our clustering method can retrieve all patterns from the data.
+* data available @ https://doi.org/10.1371/journal.pcbi.1006283.s013
 
-On Stability of Distance Measures for Event Sequences Induced by Level-Crossing Sampling [@Moser2014]
+
+#### Rastermap
+
+* https://www.janelia.org/lab/stringer-lab
+* https://www.biorxiv.org/content/10.1101/374090v2 [@Stringer2019nature, @Stringer2019science]
+
+
+
+
+#### Paper by [@Moser2014]
+
+On Stability of Distance Measures for Event Sequences Induced by Level-Crossing Sampling
 
 
 
@@ -200,6 +201,15 @@ This paper is organized following the successes that we envision and would be re
 D1. Theoretical foundations of spike time coding in a neuron: In that deliverable, we will derive a Spike-Time Dependent Plasticity (STDP) rule which will implement an unsupervised learning aiming at optimizing the detection of polychronous patterns, that is volleys of spikes which are synchronized, up to some stable pattern of pre-synaptic delays. This STDP rule will be based by the inversion of the generative model for spike formation and will therefore be derived by a Bayesian approach. This will decouple the active synapses (similarly to a logistic regression) from the values of possible synaptic delays.
 D2. Image processing using sparse spiking representations: Using the core computational unit defined in D1, we will extend the computation to a topographic representation similar to that observed in the primary visual cortex of mammals. Our position in an institue for biological neurosciences gives us access to numerous sources of inspiration and validation. In particular, our expertise in the design of micro-circuits with specific lateral interactions will allow us to design efficient micro-circuits for the sparse representation of images.
 D3. Ultra-fast vision: Stacking different layers  as defined in D2 allows ultimately to derive a classification scheme. Inspired by the HOTS algorithm, we will use that architecture on real-world settings. In particular we will use our existing datasets recorded in natural settings or indoor scenes with event-based cameras to benchmark our full system.
+
+
+* Limit : not online - in the future it is a model of a neuron
+
+
+
+## Methods
+
+### Outline of the algorithm
 
 
 
@@ -237,6 +247,10 @@ A natural documentary, Planet Earth with David Attenborough
 ```
 filename = './nat_inputs/PlanetEarth.mp4'  # filename of the movie
 ```
+
+
+
+## Results
 
 
 ## References {.page_break_before}
