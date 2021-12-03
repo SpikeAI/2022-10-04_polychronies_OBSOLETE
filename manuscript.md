@@ -13,6 +13,7 @@ author-meta:
 citekey-aliases:
   my-url: https://openreview.net/forum?id=HkwoSDPgg
   Ikegaya2004: doi:10.1126/science.1093173
+  Luczak2015: pmid:26507295
   gan: https://papers.nips.cc/paper/5423-generative-adversarial-nets
   alexnet: http://dl.acm.org/citation.cfm?doid=3098997.3065386
   zotero: https://www.zotero.org/
@@ -21,6 +22,9 @@ citekey-aliases:
   resnet: https://ieeexplore.ieee.org/document/7780459
   natural: https://laurentperrinet.github.io/sciblog/posts/2018-11-05-statistics-of-the-natural-input-to-a-ring-model.html
   Grossberger2018: doi:10.1371/journal.pcbi.1006283
+  Agus2010: doi:10.1016/j.neuron.2010.04.014
+  Agus2010pdf: http://audition-backend.ens.fr/dp/pdfs/AgusThorpePressnitzer-2010-noise_memory.pdf
+  Moser2014: doi:10.1109/TSP.2014.2305642
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -57,9 +61,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/97adeef5b69150f4920db6e073c806fab4816abe/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/97adeef5b69150f4920db6e073c806fab4816abe/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/97adeef5b69150f4920db6e073c806fab4816abe/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/169d66ed3ccbc36222ebed931424f2bfc512b914/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/169d66ed3ccbc36222ebed931424f2bfc512b914/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/169d66ed3ccbc36222ebed931424f2bfc512b914/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -81,9 +85,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/97adeef5b69150f4920db6e073c806fab4816abe/))
+([permalink](https://SpikeAI.github.io/polychronies/v/169d66ed3ccbc36222ebed931424f2bfc512b914/))
 was automatically generated
-from [SpikeAI/polychronies@97adeef](https://github.com/SpikeAI/polychronies/tree/97adeef5b69150f4920db6e073c806fab4816abe)
+from [SpikeAI/polychronies@169d66e](https://github.com/SpikeAI/polychronies/tree/169d66ed3ccbc36222ebed931424f2bfc512b914)
 on December 3, 2021.
 </em></small>
 
@@ -134,7 +138,7 @@ on December 3, 2021.
 
 
 
-
+## introduction
 
 speed
 (1] S Thorpe, D Fize, and C Marlot, Nature 381.6582 (1996), pp.520-522.
@@ -149,21 +153,24 @@ Celebrini
 
 
 
-## cortical songs
+### cortical songs
 
 Ikegaya Y, Aaron G, Cossart R, Aronov D, Lampl I, Ferster D, Yuste R. 2004. Synfire chains and cortical songs: temporal modules of cortical activity. Science (New York, NY) 304:559–564. [@Ikegaya2004]
 
+
+[@Luczak2015] Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745–55.
+
+
+Rapid Formation of Robust Auditory Memories: Insights from Noise [@Agus2010]
 
 Gan were introduced in [@gan] see also [@alexnet] [@zotero] [@vgg] [@googlenet] [@resnet]
 
 
 
 
+## Stae-of-the-art
 
-[@Grossberger2018] : Temporally ordered multi-neuron patterns likely encode information in the brain. We introduce an unsupervised method, SPOTDisClust (Spike Pattern Optimal Transport Dissimilarity Clustering), for their detection from high-dimensional neural ensembles. SPOTDisClust measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other (SPOTDis). 
-
-
-surrogate gradients
+### surrogate gradients
 
  F Zenke and S Ganguli, Neural Computation 30.6 (2018), pp. 1514-1541.
 
@@ -171,12 +178,17 @@ surrogate gradients
 
  SB Shrestha and G Orchard, arXiv:1810.08646 /cs, stat) (2018) . arXiv: 1810.08646.
 
-## cortical songs
-
-Ikegaya Y, Aaron G, Cossart R, Aronov D, Lampl I, Ferster D, Yuste R. 2004. Synfire chains and cortical songs: temporal modules of cortical activity. Science (New York, NY) 304:559–564. [@Ikegaya2004]
+### spike distance
 
 
-Gan were introduced in [@gan] see also [@alexnet] [@zotero] [@vgg] [@googlenet] [@resnet]
+[@Grossberger2018] : Temporally ordered multi-neuron patterns likely encode information in the brain. We introduce an unsupervised method, SPOTDisClust (Spike Pattern Optimal Transport Dissimilarity Clustering), for their detection from high-dimensional neural ensembles. SPOTDisClust measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other (SPOTDis).
+
+
+On Stability of Distance Measures for Event Sequences Induced by Level-Crossing Sampling [@Moser2014]
+
+
+
+## Results
 
 
 ---
@@ -217,7 +229,7 @@ jupyter="{&quot;outputs_hidden&quot;:false,&quot;source_hidden&quot;:false}"
 nteract="{&quot;transient&quot;:{&quot;deleting&quot;:false}}">
 
 ``` python
-# test notebook
+### test notebook
 ```
 
 </div>
@@ -251,7 +263,7 @@ nteract="{&quot;transient&quot;:{&quot;deleting&quot;:false}}">
 
 
 
-# results on natural images
+### results on natural images
 
 in  [@natural],  we generate raster plots from natural images
 

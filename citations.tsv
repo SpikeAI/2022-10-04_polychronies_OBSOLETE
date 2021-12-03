@@ -1,5 +1,7 @@
 input_id	dealiased_id	standard_id	short_id
 Ikegaya2004	doi:10.1126/science.1093173	doi:10.1126/science.1093173	Mf6h1KNY
+Luczak2015	pmid:26507295	pubmed:26507295	MfmcMsqA
+Agus2010	doi:10.1016/j.neuron.2010.04.014	doi:10.1016/j.neuron.2010.04.014	Jzr1gwsr
 gan	https://papers.nips.cc/paper/5423-generative-adversarial-nets	url:https://papers.nips.cc/paper/5423-generative-adversarial-nets	19XTKLJcf
 alexnet	http://dl.acm.org/citation.cfm?doid=3098997.3065386	url:http://dl.acm.org/citation.cfm?doid=3098997.3065386	7mnKXPVd
 zotero	https://www.zotero.org/	url:https://www.zotero.org/	183p02lhE
@@ -7,4 +9,5 @@ vgg	https://arxiv.org/abs/1409.1556	url:https://arxiv.org/abs/1409.1556	17yLI5aV
 googlenet	https://ieeexplore.ieee.org/document/7298594	url:https://ieeexplore.ieee.org/document/7298594	12kaO8g54
 resnet	https://ieeexplore.ieee.org/document/7780459	url:https://ieeexplore.ieee.org/document/7780459	W1UJmIrm
 Grossberger2018	doi:10.1371/journal.pcbi.1006283	doi:10.1371/journal.pcbi.1006283	9AK1cwY1
+Moser2014	doi:10.1109/TSP.2014.2305642	doi:10.1109/tsp.2014.2305642	LjkTSK3h
 natural	https://laurentperrinet.github.io/sciblog/posts/2018-11-05-statistics-of-the-natural-input-to-a-ring-model.html	url:https://laurentperrinet.github.io/sciblog/posts/2018-11-05-statistics-of-the-natural-input-to-a-ring-model.html	XbugcO8G
