@@ -6,6 +6,16 @@ keywords:
   - time
 lang: en-US
 authors:
+  - github: XXXXXXXX
+    name: Antoine Grimaldi
+    initials: AG
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: WWWWWWWWWWWWW
+    email: AAAAAAAAAAAAAAAAAA
+    affiliations:
+      - Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
+    funders:
+      - Grant XXXXXXXX
   - github: laurentperrinet
     name: Laurent U Perrinet
     initials: LuP
@@ -16,26 +26,8 @@ authors:
     affiliations:
       - Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
     funders:
-      - Grant XXXXXXXX
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
-    affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
-    affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
-
+      - Grant APROVIS3D
+      - Grant AgileNeuroBot
 pandoc:
   citekey-aliases:
     my-url: https://openreview.net/forum?id=HkwoSDPgg
@@ -52,3 +44,5 @@ pandoc:
     Agus2010: doi:10.1016/j.neuron.2010.04.014
     Agus2010pdf: http://audition-backend.ens.fr/dp/pdfs/AgusThorpePressnitzer-2010-noise_memory.pdf
     Moser2014: doi:10.1109/TSP.2014.2305642
+    Stringer2019nature: doi:10.1038/s41586-019-1346-5
+    Stringer2019science: doi:10.1126/science.aav7893
