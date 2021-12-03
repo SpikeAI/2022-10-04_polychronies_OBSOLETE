@@ -31,6 +31,17 @@ jupyter:
 ---
 
 <div class="cell code" execution_count="1" collapsed="true"
+execution="{&quot;iopub.execute_input&quot;:&quot;2021-12-03T09:30:24.753Z&quot;,&quot;iopub.status.busy&quot;:&quot;2021-12-03T09:30:24.749Z&quot;,&quot;iopub.status.idle&quot;:&quot;2021-12-03T09:30:24.756Z&quot;,&quot;shell.execute_reply&quot;:&quot;2021-12-03T09:30:24.731Z&quot;}"
+jupyter="{&quot;outputs_hidden&quot;:false,&quot;source_hidden&quot;:false}"
+nteract="{&quot;transient&quot;:{&quot;deleting&quot;:false}}">
+
+``` python
+# test notebook
+```
+
+</div>
+
+<div class="cell code" execution_count="1" collapsed="true"
 execution="{&quot;iopub.execute_input&quot;:&quot;2021-12-02T10:36:25.737Z&quot;,&quot;iopub.status.busy&quot;:&quot;2021-12-02T10:36:25.734Z&quot;,&quot;iopub.status.idle&quot;:&quot;2021-12-02T10:36:26.390Z&quot;,&quot;shell.execute_reply&quot;:&quot;2021-12-02T10:36:26.395Z&quot;}"
 jupyter="{&quot;outputs_hidden&quot;:false,&quot;source_hidden&quot;:false}"
 nteract="{&quot;transient&quot;:{&quot;deleting&quot;:false}}">
@@ -45,5 +56,14 @@ print(f'{np.pi=}')
     np.pi=3.141592653589793
 
 </div>
+
+</div>
+
+<div class="cell code" collapsed="true"
+jupyter="{&quot;outputs_hidden&quot;:false,&quot;source_hidden&quot;:false}"
+nteract="{&quot;transient&quot;:{&quot;deleting&quot;:false}}">
+
+``` python
+```
 
 </div>

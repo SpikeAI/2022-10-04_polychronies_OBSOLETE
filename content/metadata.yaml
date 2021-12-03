@@ -46,3 +46,5 @@ pandoc:
     vgg: https://arxiv.org/abs/1409.1556
     googlenet: https://ieeexplore.ieee.org/document/7298594
     resnet: https://ieeexplore.ieee.org/document/7780459
+    natural: https://laurentperrinet.github.io/sciblog/posts/2018-11-05-statistics-of-the-natural-input-to-a-ring-model.html
+    Grossberger2018: doi:10.1371/journal.pcbi.1006283
