@@ -1,5 +1,5 @@
 
-# results on natural images
+### results on natural images
 
 in  [@natural],  we generate raster plots from natural images
 
