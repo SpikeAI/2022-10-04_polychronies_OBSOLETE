@@ -61,9 +61,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/169d66ed3ccbc36222ebed931424f2bfc512b914/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/169d66ed3ccbc36222ebed931424f2bfc512b914/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/169d66ed3ccbc36222ebed931424f2bfc512b914/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/0bc05e88131b7f54a3ded748c3eb0913506e70b4/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/0bc05e88131b7f54a3ded748c3eb0913506e70b4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/0bc05e88131b7f54a3ded748c3eb0913506e70b4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -85,9 +85,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/169d66ed3ccbc36222ebed931424f2bfc512b914/))
+([permalink](https://SpikeAI.github.io/polychronies/v/0bc05e88131b7f54a3ded748c3eb0913506e70b4/))
 was automatically generated
-from [SpikeAI/polychronies@169d66e](https://github.com/SpikeAI/polychronies/tree/169d66ed3ccbc36222ebed931424f2bfc512b914)
+from [SpikeAI/polychronies@0bc05e8](https://github.com/SpikeAI/polychronies/tree/0bc05e88131b7f54a3ded748c3eb0913506e70b4)
 on December 3, 2021.
 </em></small>
 
@@ -134,26 +134,31 @@ on December 3, 2021.
 ## Abstract {.page_break_before}
 
 
-
-
+A crucial advantage of Spiking Neural Networks (SNNs) architectures lies in its processing of temporal information. Yet, most SNNs encode the temporal signal as an analog signal and try to “cross-compile” classical Neural Network to a spiking architecture. To go beyond the state-of-the-art, we will focus on one core computation of a spiking neuron, that is, is its ability to switch from the classical integrator mode (summing analog currents on its synapses) to a synchrony detector where it emits a spike whenever presynaptic spiking inputs are synchronized. To overcome the diversity of input presynaptic patterns, we will develop an adaptive architecture to learn to detect stable “polychronous“ events, that is, volleys of spikes which are stable up to certain synaptic delays. These models will be tested on a series of visual benchmarks with the goal to achieve ultra-rapid visual categorization.
 
 
 ## introduction
 
-speed
+### timing encodes profile
+
+Most importantly, it will provide with a detection ability requiring only a few spikes, and therefore in line with the performance observed in biological systems, like the ability for humans to detect the presence of an animal in an image in a few milliseconds (Thorpe et al (1996). Speed of processing in the human visual system. Nature, 381(6582), 520-522). Such biological observations would serve as benchmarks to compare our proposed architecture  to conventional solutions.
 (1] S Thorpe, D Fize, and C Marlot, Nature 381.6582 (1996), pp.520-522.
 
 sparse in time and space
 [2] AL Barth and JF Poulet
 Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet, Neuron 78.1 (2013), pp. 28-48.
 
-timing encodes profile
+### cortical songs
+
 Celebrini
 [4] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
 
+The approach which is currently most prominent in the Spiking Neural Networks community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.
 
+While my previous expertise was based on the modeling of how SNNs process information (Perrinet, Samuelides and Thorpe, 2004) and how these networks may be tuned in a unsupervised manner to their input (Perrinet, Samuelides and Thorpe, 2003), many different SNN architectures may provide robust solutions. Since that time, I have worked on exploring the space of all solutions which are the most efficient to solve a given problem using Bayesian methods. This culminated in defining a hierarchical model performing predictive coding (Boutin et al, 2020).  However, this network is analog and simulations perform too slowly, even on advanced GPU architectures, to be used for real life situation. We have recently developed a similar architecture but based on a SNN architecture.  In particular, this model is event-based from one end (sensory input from event-based cameras) to the other (classification) and its intermediate layers are learned in a self-supervised fashion (Grimaldi et al, 2021: a, b).
 
-### cortical songs
+Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level. I have an extensive expertise in the domain of temporal delays in the nervous system, both at the neural (Perrinet, Adams, Friston, 2012) and behavioral (Khoei et al, 2017) levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks. Our expertise in reproducing the HOTS network (Grimaldi et al, 2021: a, b) will be crucial in the swift realization of this project.
+
 
 Ikegaya Y, Aaron G, Cossart R, Aronov D, Lampl I, Ferster D, Yuste R. 2004. Synfire chains and cortical songs: temporal modules of cortical activity. Science (New York, NY) 304:559–564. [@Ikegaya2004]
 
@@ -181,85 +186,45 @@ Gan were introduced in [@gan] see also [@alexnet] [@zotero] [@vgg] [@googlenet] 
 ### spike distance
 
 
-[@Grossberger2018] : Temporally ordered multi-neuron patterns likely encode information in the brain. We introduce an unsupervised method, SPOTDisClust (Spike Pattern Optimal Transport Dissimilarity Clustering), for their detection from high-dimensional neural ensembles. SPOTDisClust measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other (SPOTDis).
-
+[@Grossberger2018] :
+* Temporally ordered multi-neuron patterns likely encode information in the brain. We introduce an unsupervised method, SPOTDisClust (Spike Pattern Optimal Transport Dissimilarity Clustering), for their detection from high-dimensional neural ensembles. SPOTDisClust measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other (SPOTDis).
+* Detecting these temporal patterns represents a major methodological challenge.
 
 On Stability of Distance Measures for Event Sequences Induced by Level-Crossing Sampling [@Moser2014]
+
+
+
+### outline
+
+This paper is organized following the successes that we envision and would be realized using publications when they are completed (thus reaching a milestone). The research plan is organized as follows:
+D1. Theoretical foundations of spike time coding in a neuron: In that deliverable, we will derive a Spike-Time Dependent Plasticity (STDP) rule which will implement an unsupervised learning aiming at optimizing the detection of polychronous patterns, that is volleys of spikes which are synchronized, up to some stable pattern of pre-synaptic delays. This STDP rule will be based by the inversion of the generative model for spike formation and will therefore be derived by a Bayesian approach. This will decouple the active synapses (similarly to a logistic regression) from the values of possible synaptic delays.
+D2. Image processing using sparse spiking representations: Using the core computational unit defined in D1, we will extend the computation to a topographic representation similar to that observed in the primary visual cortex of mammals. Our position in an institue for biological neurosciences gives us access to numerous sources of inspiration and validation. In particular, our expertise in the design of micro-circuits with specific lateral interactions will allow us to design efficient micro-circuits for the sparse representation of images.
+D3. Ultra-fast vision: Stacking different layers  as defined in D2 allows ultimately to derive a classification scheme. Inspired by the HOTS algorithm, we will use that architecture on real-world settings. In particular we will use our existing datasets recorded in natural settings or indoor scenes with event-based cameras to benchmark our full system.
 
 
 
 ## Results
 
 
----
-jupyter:
-  kernel_info:
-    name: python3
-  kernelspec:
-    argv:
-    - /usr/local/opt/python@3.9/bin/python3.9
-    - "-m"
-    - ipykernel_launcher
-    - "-f"
-    - "{connection_file}"
-    display_name: Python 3 (ipykernel)
-    language: python
-    metadata:
-      debugger: true
-    name: python3
-  language_info:
-    codemirror_mode:
-      name: ipython
-      version: 3
-    file_extension: .py
-    mimetype: text/x-python
-    name: python
-    nbconvert_exporter: python
-    pygments_lexer: ipython3
-    version: 3.9.9
-  nbformat: 4
-  nbformat_minor: 0
-  nteract:
-    version: 0.28.0
----
-
-<div class="cell code" execution_count="1" collapsed="true"
-execution="{&quot;iopub.execute_input&quot;:&quot;2021-12-03T09:30:24.753Z&quot;,&quot;iopub.status.busy&quot;:&quot;2021-12-03T09:30:24.749Z&quot;,&quot;iopub.status.idle&quot;:&quot;2021-12-03T09:30:24.756Z&quot;,&quot;shell.execute_reply&quot;:&quot;2021-12-03T09:30:24.731Z&quot;}"
-jupyter="{&quot;outputs_hidden&quot;:false,&quot;source_hidden&quot;:false}"
-nteract="{&quot;transient&quot;:{&quot;deleting&quot;:false}}">
-
-``` python
+::: {.cell .markdown nteract="{\"transient\":{\"deleting\":false}}"}
 ### test notebook
-```
+:::
 
-</div>
-
-<div class="cell code" execution_count="1" collapsed="true"
-execution="{&quot;iopub.execute_input&quot;:&quot;2021-12-02T10:36:25.737Z&quot;,&quot;iopub.status.busy&quot;:&quot;2021-12-02T10:36:25.734Z&quot;,&quot;iopub.status.idle&quot;:&quot;2021-12-02T10:36:26.390Z&quot;,&quot;shell.execute_reply&quot;:&quot;2021-12-02T10:36:26.395Z&quot;}"
-jupyter="{&quot;outputs_hidden&quot;:false,&quot;source_hidden&quot;:false}"
-nteract="{&quot;transient&quot;:{&quot;deleting&quot;:false}}">
-
+::: {.cell .code execution_count="1" collapsed="true" execution="{\"iopub.execute_input\":\"2021-12-02T10:36:25.737Z\",\"iopub.status.busy\":\"2021-12-02T10:36:25.734Z\",\"iopub.status.idle\":\"2021-12-02T10:36:26.390Z\",\"shell.execute_reply\":\"2021-12-02T10:36:26.395Z\"}" jupyter="{\"outputs_hidden\":false,\"source_hidden\":false}" nteract="{\"transient\":{\"deleting\":false}}"}
 ``` python
 import numpy as np
 print(f'{np.pi=}')
 ```
 
-<div class="output stream stdout">
-
+::: {.output .stream .stdout}
     np.pi=3.141592653589793
+:::
+:::
 
-</div>
-
-</div>
-
-<div class="cell code" collapsed="true"
-jupyter="{&quot;outputs_hidden&quot;:false,&quot;source_hidden&quot;:false}"
-nteract="{&quot;transient&quot;:{&quot;deleting&quot;:false}}">
-
+::: {.cell .code collapsed="true" jupyter="{\"outputs_hidden\":false,\"source_hidden\":false}" nteract="{\"transient\":{\"deleting\":false}}"}
 ``` python
 ```
-
-</div>
+:::
 
 
 
