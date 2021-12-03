@@ -10,7 +10,6 @@ author-meta:
 - Antoine Grimaldi
 - Laurent U Perrinet
 citekey-aliases:
-  my-url: https://openreview.net/forum?id=HkwoSDPgg
   Ikegaya2004: doi:10.1126/science.1093173
   Luczak2015: pmid:26507295
   gan: https://papers.nips.cc/paper/5423-generative-adversarial-nets
@@ -26,6 +25,7 @@ citekey-aliases:
   Moser2014: doi:10.1109/TSP.2014.2305642
   Stringer2019nature: doi:10.1038/s41586-019-1346-5
   Stringer2019science: doi:10.1126/science.aav7893
+  rastermap: https://github.com/MouseLand/rastermap
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -58,9 +58,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/8aa73cfb30b9c39a73d7b4642ac7a1778868c857/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8aa73cfb30b9c39a73d7b4642ac7a1778868c857/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8aa73cfb30b9c39a73d7b4642ac7a1778868c857/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/a622dc55f83294b5dfe24e7234234810982d3aef/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a622dc55f83294b5dfe24e7234234810982d3aef/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a622dc55f83294b5dfe24e7234234810982d3aef/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,9 +82,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/8aa73cfb30b9c39a73d7b4642ac7a1778868c857/))
+([permalink](https://SpikeAI.github.io/polychronies/v/a622dc55f83294b5dfe24e7234234810982d3aef/))
 was automatically generated
-from [SpikeAI/polychronies@8aa73cf](https://github.com/SpikeAI/polychronies/tree/8aa73cfb30b9c39a73d7b4642ac7a1778868c857)
+from [SpikeAI/polychronies@a622dc5](https://github.com/SpikeAI/polychronies/tree/a622dc55f83294b5dfe24e7234234810982d3aef)
 on December 3, 2021.
 </em></small>
 
@@ -183,7 +183,7 @@ Rapid Formation of Robust Auditory Memories: Insights from Noise [@Agus2010]
 
 #### Rastermap
 
-* https://www.janelia.org/lab/stringer-lab
+* https://www.janelia.org/lab/stringer-lab [@rastermap]
 * https://www.biorxiv.org/content/10.1101/374090v2 [@Stringer2019nature, @Stringer2019science]
 
 

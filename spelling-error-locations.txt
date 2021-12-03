@@ -60,6 +60,7 @@ content/15.state-of-the-art.md:14:TJ
 content/15.state-of-the-art.md:16:HDBSCAN
 content/15.state-of-the-art.md:16:SNE
 content/15.state-of-the-art.md:20:Rastermap
+content/15.state-of-the-art.md:22:rastermap
 content/18.outline.md:5:polychronous
 content/18.outline.md:5:pre
 content/18.outline.md:5:STDP
