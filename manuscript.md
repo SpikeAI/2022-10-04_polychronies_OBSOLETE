@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2021-12-02'
+date-meta: '2021-12-03'
 author-meta:
 - Laurent U Perrinet
 - John Doe
@@ -19,6 +19,8 @@ citekey-aliases:
   vgg: https://arxiv.org/abs/1409.1556
   googlenet: https://ieeexplore.ieee.org/document/7298594
   resnet: https://ieeexplore.ieee.org/document/7780459
+  natural: https://laurentperrinet.github.io/sciblog/posts/2018-11-05-statistics-of-the-natural-input-to-a-ring-model.html
+  Grossberger2018: doi:10.1371/journal.pcbi.1006283
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -29,8 +31,8 @@ header-includes: |-
   <meta name="citation_title" content="Polychrony detection in raster plots" />
   <meta property="og:title" content="Polychrony detection in raster plots" />
   <meta property="twitter:title" content="Polychrony detection in raster plots" />
-  <meta name="dc.date" content="2021-12-02" />
-  <meta name="citation_publication_date" content="2021-12-02" />
+  <meta name="dc.date" content="2021-12-03" />
+  <meta name="citation_publication_date" content="2021-12-03" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -55,9 +57,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/8398191bcab12cec6ebe7be5441b282706797293/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8398191bcab12cec6ebe7be5441b282706797293/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8398191bcab12cec6ebe7be5441b282706797293/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/97adeef5b69150f4920db6e073c806fab4816abe/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/97adeef5b69150f4920db6e073c806fab4816abe/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/97adeef5b69150f4920db6e073c806fab4816abe/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -79,10 +81,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/8398191bcab12cec6ebe7be5441b282706797293/))
+([permalink](https://SpikeAI.github.io/polychronies/v/97adeef5b69150f4920db6e073c806fab4816abe/))
 was automatically generated
-from [SpikeAI/polychronies@8398191](https://github.com/SpikeAI/polychronies/tree/8398191bcab12cec6ebe7be5441b282706797293)
-on December 2, 2021.
+from [SpikeAI/polychronies@97adeef](https://github.com/SpikeAI/polychronies/tree/97adeef5b69150f4920db6e073c806fab4816abe)
+on December 3, 2021.
 </em></small>
 
 ## Authors
@@ -146,6 +148,21 @@ Celebrini
 [4] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
 
 
+
+## cortical songs
+
+Ikegaya Y, Aaron G, Cossart R, Aronov D, Lampl I, Ferster D, Yuste R. 2004. Synfire chains and cortical songs: temporal modules of cortical activity. Science (New York, NY) 304:559–564. [@Ikegaya2004]
+
+
+Gan were introduced in [@gan] see also [@alexnet] [@zotero] [@vgg] [@googlenet] [@resnet]
+
+
+
+
+
+[@Grossberger2018] : Temporally ordered multi-neuron patterns likely encode information in the brain. We introduce an unsupervised method, SPOTDisClust (Spike Pattern Optimal Transport Dissimilarity Clustering), for their detection from high-dimensional neural ensembles. SPOTDisClust measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other (SPOTDis). 
+
+
 surrogate gradients
 
  F Zenke and S Ganguli, Neural Computation 30.6 (2018), pp. 1514-1541.
@@ -195,6 +212,17 @@ jupyter:
 ---
 
 <div class="cell code" execution_count="1" collapsed="true"
+execution="{&quot;iopub.execute_input&quot;:&quot;2021-12-03T09:30:24.753Z&quot;,&quot;iopub.status.busy&quot;:&quot;2021-12-03T09:30:24.749Z&quot;,&quot;iopub.status.idle&quot;:&quot;2021-12-03T09:30:24.756Z&quot;,&quot;shell.execute_reply&quot;:&quot;2021-12-03T09:30:24.731Z&quot;}"
+jupyter="{&quot;outputs_hidden&quot;:false,&quot;source_hidden&quot;:false}"
+nteract="{&quot;transient&quot;:{&quot;deleting&quot;:false}}">
+
+``` python
+# test notebook
+```
+
+</div>
+
+<div class="cell code" execution_count="1" collapsed="true"
 execution="{&quot;iopub.execute_input&quot;:&quot;2021-12-02T10:36:25.737Z&quot;,&quot;iopub.status.busy&quot;:&quot;2021-12-02T10:36:25.734Z&quot;,&quot;iopub.status.idle&quot;:&quot;2021-12-02T10:36:26.390Z&quot;,&quot;shell.execute_reply&quot;:&quot;2021-12-02T10:36:26.395Z&quot;}"
 jupyter="{&quot;outputs_hidden&quot;:false,&quot;source_hidden&quot;:false}"
 nteract="{&quot;transient&quot;:{&quot;deleting&quot;:false}}">
@@ -212,6 +240,18 @@ print(f'{np.pi=}')
 
 </div>
 
+<div class="cell code" collapsed="true"
+jupyter="{&quot;outputs_hidden&quot;:false,&quot;source_hidden&quot;:false}"
+nteract="{&quot;transient&quot;:{&quot;deleting&quot;:false}}">
+
+``` python
+```
+
+</div>
+
+
+
+# results on natural images
 
 in  [@natural],  we generate raster plots from natural images
 

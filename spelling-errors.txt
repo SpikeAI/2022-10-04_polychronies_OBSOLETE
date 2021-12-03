@@ -25,6 +25,8 @@ Neurosciences
 Perrinet
 Poulet
 Shrestha
+SPOTDis
+SPOTDisClust
 Synfire
 Timone
 Université
