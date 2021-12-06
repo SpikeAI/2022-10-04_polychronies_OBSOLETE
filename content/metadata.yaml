@@ -30,7 +30,11 @@ authors:
       - Grant AgileNeuroBot
 pandoc:
   citekey-aliases:
+    Abeles1991: isbn:9780521376174
+    Perrinet2001: doi:10.1016/S0925-2312(01)00460-X
+    Perrinet2002: doi:10.1016/S0925-2312(02)00374-0
     Ikegaya2004: doi:10.1126/science.1093173
+    Yuste2005: doi:10.1038/nrn1686
     Luczak2015: pmid:26507295
     gan: https://papers.nips.cc/paper/5423-generative-adversarial-nets
     alexnet: http://dl.acm.org/citation.cfm?doid=3098997.3065386
