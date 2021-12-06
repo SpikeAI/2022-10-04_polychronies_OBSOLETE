@@ -19,7 +19,7 @@ Friston
 Gollisch
 Grimaldi
 HDBSCAN
-hippocampal
+Hippocampal
 Hirase
 Ikegaya
 Institut

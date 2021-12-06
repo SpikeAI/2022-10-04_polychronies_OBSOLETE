@@ -60,9 +60,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/c84b9daccbcf2345fc169060bd7e771e31128666/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/c84b9daccbcf2345fc169060bd7e771e31128666/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/c84b9daccbcf2345fc169060bd7e771e31128666/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/0346e21d137eae4b8f717ae670a4fa2af336ec0f/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/0346e21d137eae4b8f717ae670a4fa2af336ec0f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/0346e21d137eae4b8f717ae670a4fa2af336ec0f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -84,9 +84,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/c84b9daccbcf2345fc169060bd7e771e31128666/))
+([permalink](https://SpikeAI.github.io/polychronies/v/0346e21d137eae4b8f717ae670a4fa2af336ec0f/))
 was automatically generated
-from [SpikeAI/polychronies@c84b9da](https://github.com/SpikeAI/polychronies/tree/c84b9daccbcf2345fc169060bd7e771e31128666)
+from [SpikeAI/polychronies@0346e21](https://github.com/SpikeAI/polychronies/tree/0346e21d137eae4b8f717ae670a4fa2af336ec0f)
 on December 6, 2021.
 </em></small>
 
@@ -185,7 +185,12 @@ Rapid Formation of Robust Auditory Memories: Insights from Noise [@Agus2010]
 * data available @ https://doi.org/10.1371/journal.pcbi.1006283.s013
 
 
-![Fig 1 of [@Grossberger2018]: "Simulated example illustrating the steps in SPOTDisClust."](https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1006283.g001)
+![Fig 1 of [@Grossberger2018]: "Simulated example illustrating the steps in SPOTDisClust."](https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1006283.g001){#fig:G2018-1 width="5in"}
+
+
+#### [@Russo2017]
+
+* "Here we present such a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization. "
 
 #### Rastermap
 
