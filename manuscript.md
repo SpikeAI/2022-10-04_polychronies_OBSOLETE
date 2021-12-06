@@ -60,9 +60,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/291db5331bc2795d2514c6e7a670122e5f38eb5e/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/291db5331bc2795d2514c6e7a670122e5f38eb5e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/291db5331bc2795d2514c6e7a670122e5f38eb5e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/c84b9daccbcf2345fc169060bd7e771e31128666/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/c84b9daccbcf2345fc169060bd7e771e31128666/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/c84b9daccbcf2345fc169060bd7e771e31128666/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -84,9 +84,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/291db5331bc2795d2514c6e7a670122e5f38eb5e/))
+([permalink](https://SpikeAI.github.io/polychronies/v/c84b9daccbcf2345fc169060bd7e771e31128666/))
 was automatically generated
-from [SpikeAI/polychronies@291db53](https://github.com/SpikeAI/polychronies/tree/291db5331bc2795d2514c6e7a670122e5f38eb5e)
+from [SpikeAI/polychronies@c84b9da](https://github.com/SpikeAI/polychronies/tree/c84b9daccbcf2345fc169060bd7e771e31128666)
 on December 6, 2021.
 </em></small>
 
@@ -142,6 +142,7 @@ Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet,
 Celebrini
 
 [4] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
+
 
 
 ### cortical songs
@@ -202,13 +203,11 @@ On Stability of Distance Measures for Event Sequences Induced by Level-Crossing 
 
 ### outline
 
-This paper is organized following the successes that we envision and would be realized using publications when they are completed (thus reaching a milestone). The research plan is organized as follows:
-D1. Theoretical foundations of spike time coding in a neuron: In that deliverable, we will derive a Spike-Time Dependent Plasticity (STDP) rule which will implement an unsupervised learning aiming at optimizing the detection of polychronous patterns, that is volleys of spikes which are synchronized, up to some stable pattern of pre-synaptic delays. This STDP rule will be based by the inversion of the generative model for spike formation and will therefore be derived by a Bayesian approach. This will decouple the active synapses (similarly to a logistic regression) from the values of possible synaptic delays.
-D2. Image processing using sparse spiking representations: Using the core computational unit defined in D1, we will extend the computation to a topographic representation similar to that observed in the primary visual cortex of mammals. Our position in an institue for biological neurosciences gives us access to numerous sources of inspiration and validation. In particular, our expertise in the design of micro-circuits with specific lateral interactions will allow us to design efficient micro-circuits for the sparse representation of images.
-D3. Ultra-fast vision: Stacking different layers  as defined in D2 allows ultimately to derive a classification scheme. Inspired by the HOTS algorithm, we will use that architecture on real-world settings. In particular we will use our existing datasets recorded in natural settings or indoor scenes with event-based cameras to benchmark our full system.
-
-
-* Limit : not online - in the future it is a model of a neuron
+The rest of this review paper is organized as follows:
+* polychronization
+* We review theoretical foundations of spike time coding in a neuron: We will describe the Spike-Time Dependent Plasticity (STDP) rule which implement an unsupervised learning aiming at optimizing the detection of polychronous patterns, that is volleys of spikes which are synchronized, up to some stable pattern of pre-synaptic delays. This STDP rule will be based by the inversion of the generative model for spike formation and will therefore be derived by a Bayesian approach. This will decouple the active synapses (similarly to a logistic regression) from the values of possible synaptic delays.
+* Application to Image processing using sparse spiking representations: Using the core computational unit defined, extension of the computation to a topographic representation similar to that observed in the primary visual cortex of mammals. design of micro-circuits with specific lateral interactions will allow us to design efficient micro-circuits for the sparse representation of images.
+* Discussion on Ultra-fast vision:  existing datasets recorded in natural settings or indoor scenes with event-based cameras.
 
 
 

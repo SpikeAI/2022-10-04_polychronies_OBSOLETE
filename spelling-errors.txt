@@ -22,7 +22,6 @@ HDBSCAN
 hippocampal
 Hirase
 Ikegaya
-institue
 Institut
 JF
 KD
@@ -38,7 +37,7 @@ MNIST
 Nadasdy
 Neurophysiol
 Neurosci
-neurosciences
+Neurosciences
 neuroscientific
 Perrinet
 polychronization
