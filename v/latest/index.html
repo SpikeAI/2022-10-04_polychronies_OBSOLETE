@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Antoine Grimaldi" />
   <meta name="author" content="Laurent U Perrinet" />
-  <meta name="dcterms.date" content="2021-12-03" />
+  <meta name="dcterms.date" content="2021-12-06" />
   <meta name="keywords" content="neurons, code, time" />
   <title>Polychrony detection in raster plots</title>
   <style>
@@ -111,8 +111,8 @@
   <meta name="citation_title" content="Polychrony detection in raster plots" />
   <meta property="og:title" content="Polychrony detection in raster plots" />
   <meta property="twitter:title" content="Polychrony detection in raster plots" />
-  <meta name="dc.date" content="2021-12-03" />
-  <meta name="citation_publication_date" content="2021-12-03" />
+  <meta name="dc.date" content="2021-12-06" />
+  <meta name="citation_publication_date" content="2021-12-06" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -133,9 +133,9 @@
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/a622dc55f83294b5dfe24e7234234810982d3aef/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a622dc55f83294b5dfe24e7234234810982d3aef/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a622dc55f83294b5dfe24e7234234810982d3aef/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/6ce075597910515f2b82ac4a56f3e83873c5e8cc/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/6ce075597910515f2b82ac4a56f3e83873c5e8cc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/6ce075597910515f2b82ac4a56f3e83873c5e8cc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -149,10 +149,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://SpikeAI.github.io/polychronies/v/a622dc55f83294b5dfe24e7234234810982d3aef/">permalink</a>)
+(<a href="https://SpikeAI.github.io/polychronies/v/6ce075597910515f2b82ac4a56f3e83873c5e8cc/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/SpikeAI/polychronies/tree/a622dc55f83294b5dfe24e7234234810982d3aef">SpikeAI/polychronies@a622dc5</a>
-on December 3, 2021.
+from <a href="https://github.com/SpikeAI/polychronies/tree/6ce075597910515f2b82ac4a56f3e83873c5e8cc">SpikeAI/polychronies@6ce0755</a>
+on December 6, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -181,7 +181,7 @@ Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
 </small></p></li>
 </ul>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
-<p>A crucial advantage of Spiking Neural Networks (SNNs) architectures lies in its processing of temporal information. Yet, most SNNs encode the temporal signal as an analog signal and try to “cross-compile” classical Neural Network to a spiking architecture. To go beyond the state-of-the-art, we will focus on one core computation of a spiking neuron, that is, is its ability to switch from the classical integrator mode (summing analog currents on its synapses) to a synchrony detector where it emits a spike whenever presynaptic spiking inputs are synchronized. To overcome the diversity of input presynaptic patterns, we will develop an adaptive architecture to learn to detect stable “polychronous“ events, that is, volleys of spikes which are stable up to certain synaptic delays. These models will be tested on a series of visual benchmarks with the goal to achieve ultra-rapid visual categorization.</p>
+<p>A crucial advantage of Spiking Neural Networks (SNNs) architectures lies in its processing of temporal information. Yet, most SNNs encode the temporal signal as an analog signal and try to “cross-compile” classical Neural Network to a spiking architecture. To go beyond the state-of-the-art, we will review here on one core computation of a spiking neuron, that is, is its ability to switch from the classical integrator mode (summing analog currents on its synapses) to a synchrony detector where it emits a spike whenever presynaptic spiking inputs are synchronized. To overcome the diversity of input presynaptic patterns, we will explore different existing architectures to learn to detect stable “polychronous“ events, that is, volleys of spikes which are stable up to certain synaptic delays. These models will be compared in light of neuroscientific and computational perspectives.</p>
 <h2 id="introduction">introduction</h2>
 <h3 id="timing-encodes-profile">timing encodes profile</h3>
 <p>Most importantly, it will provide with a detection ability requiring only a few spikes, and therefore in line with the performance observed in biological systems, like the ability for humans to detect the presence of an animal in an image in a few milliseconds (Thorpe et al (1996). Speed of processing in the human visual system. Nature, 381(6582), 520-522). Such biological observations would serve as benchmarks to compare our proposed architecture to conventional solutions.
