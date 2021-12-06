@@ -32,6 +32,8 @@ citekey-aliases:
   rastermap: https://github.com/MouseLand/rastermap
   Ravello2016droplets: arXiv:1611.06834
   Russo2017: doi:10.7554/eLife.19428
+  Grün2002: doi:10.1162/089976602753284464
+  Torre2016: 10.1371/journal.pcbi.1004939
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -64,9 +66,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/fdfe59721dfb7c77c62761630c52c35fb348d147/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/fdfe59721dfb7c77c62761630c52c35fb348d147/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/fdfe59721dfb7c77c62761630c52c35fb348d147/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/7dce8cdc3699d8b8abe51a8efc6058210195421b/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/7dce8cdc3699d8b8abe51a8efc6058210195421b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/7dce8cdc3699d8b8abe51a8efc6058210195421b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,9 +90,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/fdfe59721dfb7c77c62761630c52c35fb348d147/))
+([permalink](https://SpikeAI.github.io/polychronies/v/7dce8cdc3699d8b8abe51a8efc6058210195421b/))
 was automatically generated
-from [SpikeAI/polychronies@fdfe597](https://github.com/SpikeAI/polychronies/tree/fdfe59721dfb7c77c62761630c52c35fb348d147)
+from [SpikeAI/polychronies@7dce8cd](https://github.com/SpikeAI/polychronies/tree/7dce8cdc3699d8b8abe51a8efc6058210195421b)
 on December 6, 2021.
 </em></small>
 
@@ -197,13 +199,14 @@ Rapid Formation of Robust Auditory Memories: Insights from Noise [@Agus2010]
 * data available @ https://doi.org/10.1371/journal.pcbi.1006283.s013
 
 
-![Fig 1 of [@Grossberger2018]: "Simulated example illustrating the steps in SPOTDisClust."](https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pcbi.1006283/2/pcbi.1006283.g001.PNG_L?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20211206%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20211206T141911Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=e02aea1035ceeae4a9f78125ae56023b4175eff75b2b5ccf17df20242d3507c0ae38a4532e0d7f846545d70a69b8a9a4c7d04389aa190f71c71cdaaebe2790b4520135b30e5cfbce58cd00a1730e4c2347b01e81fbdf2ff1374cea9498c740df44087a56e7d143301656f1016432ea9cbf69b94dda26976f5db0597e10e215e340f5a59ca5fe4a33f45c8aae73b326206c97cb7a46cce97cfa0700555baa4b3925497c8a168454a49808c175015385277ea8edb794b7d7ac921c0833c27681ae9fc8301ed5e29da386fa0fc572ee490db1f5d93a938508fdcd20438c9d2bec19e64ef525471e41bbf7a1e14145f2ca8d71e02eb6c17ea681360628d563f7eee7){#fig:G2018-1 width="5in"}
+![Fig 1 of @Grossberger2018: "Simulated example illustrating the steps in SPOTDisClust."](https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pcbi.1006283/2/pcbi.1006283.g001.PNG_L?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20211206%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20211206T141911Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=e02aea1035ceeae4a9f78125ae56023b4175eff75b2b5ccf17df20242d3507c0ae38a4532e0d7f846545d70a69b8a9a4c7d04389aa190f71c71cdaaebe2790b4520135b30e5cfbce58cd00a1730e4c2347b01e81fbdf2ff1374cea9498c740df44087a56e7d143301656f1016432ea9cbf69b94dda26976f5db0597e10e215e340f5a59ca5fe4a33f45c8aae73b326206c97cb7a46cce97cfa0700555baa4b3925497c8a168454a49808c175015385277ea8edb794b7d7ac921c0833c27681ae9fc8301ed5e29da386fa0fc572ee490db1f5d93a938508fdcd20438c9d2bec19e64ef525471e41bbf7a1e14145f2ca8d71e02eb6c17ea681360628d563f7eee7){#fig:G2018-1 width="5in"}
 
 
 #### [@Russo2017]
 
 * "Here we present such a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization. " by @Russo2017
-* sliding windeow as in [@Grün2002]
+* sliding window as in [@Grün2002] ("Numerous other statistical procedures for detecting assemblies or sequential patterns have been proposed previously") - extended to multiple lags [@Torre2016]
+* based on a "non-stationarity-corrected parametric test statistic for assessing the independence of pairs" and "an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies"
 
 #### Rastermap
 

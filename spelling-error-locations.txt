@@ -63,9 +63,10 @@ content/15.raster-plots.md:15:TJ
 content/15.raster-plots.md:17:HDBSCAN
 content/15.raster-plots.md:17:SNE
 content/15.raster-plots.md:21:SPOTDisClust
-content/15.raster-plots.md:27:windeow
-content/15.raster-plots.md:29:Rastermap
-content/15.raster-plots.md:31:rastermap
+content/15.raster-plots.md:28:agglomerative
+content/15.raster-plots.md:28:stationarity
+content/15.raster-plots.md:30:Rastermap
+content/15.raster-plots.md:32:rastermap
 content/18.outline.md:5:polychronization
 content/18.outline.md:6:polychronous
 content/18.outline.md:6:pre

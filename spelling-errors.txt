@@ -1,3 +1,4 @@
+agglomerative
 AgileNeuroBot
 Aix
 APROVIS
@@ -19,6 +20,7 @@ Fize
 Friston
 Gollisch
 Grimaldi
+Grossberger
 HDBSCAN
 Hippocampal
 Hirase
@@ -53,12 +55,12 @@ SNN
 SNNs
 SPOTDis
 SPOTDisClust
+stationarity
 STDP
-synfire
+Synfire
 Timone
 TJ
 Université
-windeow
 WWWWWWWWWWWWW
 XXXX
 XXXXXXXX
