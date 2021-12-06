@@ -60,8 +60,9 @@ content/15.raster-plots.md:15:Kloosterman
 content/15.raster-plots.md:15:TJ
 content/15.raster-plots.md:17:HDBSCAN
 content/15.raster-plots.md:17:SNE
-content/15.raster-plots.md:21:Rastermap
-content/15.raster-plots.md:23:rastermap
+content/15.raster-plots.md:21:SPOTDisClust
+content/15.raster-plots.md:23:Rastermap
+content/15.raster-plots.md:25:rastermap
 content/18.outline.md:5:polychronous
 content/18.outline.md:5:pre
 content/18.outline.md:5:STDP

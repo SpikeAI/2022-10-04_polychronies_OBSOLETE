@@ -60,9 +60,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/6ce075597910515f2b82ac4a56f3e83873c5e8cc/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/6ce075597910515f2b82ac4a56f3e83873c5e8cc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/6ce075597910515f2b82ac4a56f3e83873c5e8cc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/291db5331bc2795d2514c6e7a670122e5f38eb5e/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/291db5331bc2795d2514c6e7a670122e5f38eb5e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/291db5331bc2795d2514c6e7a670122e5f38eb5e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -84,9 +84,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/6ce075597910515f2b82ac4a56f3e83873c5e8cc/))
+([permalink](https://SpikeAI.github.io/polychronies/v/291db5331bc2795d2514c6e7a670122e5f38eb5e/))
 was automatically generated
-from [SpikeAI/polychronies@6ce0755](https://github.com/SpikeAI/polychronies/tree/6ce075597910515f2b82ac4a56f3e83873c5e8cc)
+from [SpikeAI/polychronies@291db53](https://github.com/SpikeAI/polychronies/tree/291db5331bc2795d2514c6e7a670122e5f38eb5e)
 on December 6, 2021.
 </em></small>
 
@@ -166,7 +166,7 @@ Rapid Formation of Robust Auditory Memories: Insights from Noise [@Agus2010]
 
 
 
-## State-of-the-art
+## Detecting patterns in raster plots
 
 
 ### spike pattern clustering
@@ -183,6 +183,8 @@ Rapid Formation of Robust Auditory Memories: Insights from Noise [@Agus2010]
  * t-SNE projection with HDBSCAN labels shows that our clustering method can retrieve all patterns from the data.
 * data available @ https://doi.org/10.1371/journal.pcbi.1006283.s013
 
+
+![Fig 1 of [@Grossberger2018]: "Simulated example illustrating the steps in SPOTDisClust."](https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1006283.g001)
 
 #### Rastermap
 
