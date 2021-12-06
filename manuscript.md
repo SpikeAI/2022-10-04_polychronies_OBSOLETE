@@ -10,7 +10,11 @@ author-meta:
 - Antoine Grimaldi
 - Laurent U Perrinet
 citekey-aliases:
+  Abeles1991: isbn:9780521376174
+  Perrinet2001: doi:10.1016/S0925-2312(01)00460-X
+  Perrinet2002: doi:10.1016/S0925-2312(02)00374-0
   Ikegaya2004: doi:10.1126/science.1093173
+  Yuste2005: doi:10.1038/nrn1686
   Luczak2015: pmid:26507295
   gan: https://papers.nips.cc/paper/5423-generative-adversarial-nets
   alexnet: http://dl.acm.org/citation.cfm?doid=3098997.3065386
@@ -60,9 +64,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/0346e21d137eae4b8f717ae670a4fa2af336ec0f/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/0346e21d137eae4b8f717ae670a4fa2af336ec0f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/0346e21d137eae4b8f717ae670a4fa2af336ec0f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/fdfe59721dfb7c77c62761630c52c35fb348d147/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/fdfe59721dfb7c77c62761630c52c35fb348d147/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/fdfe59721dfb7c77c62761630c52c35fb348d147/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -84,9 +88,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/0346e21d137eae4b8f717ae670a4fa2af336ec0f/))
+([permalink](https://SpikeAI.github.io/polychronies/v/fdfe59721dfb7c77c62761630c52c35fb348d147/))
 was automatically generated
-from [SpikeAI/polychronies@0346e21](https://github.com/SpikeAI/polychronies/tree/0346e21d137eae4b8f717ae670a4fa2af336ec0f)
+from [SpikeAI/polychronies@fdfe597](https://github.com/SpikeAI/polychronies/tree/fdfe59721dfb7c77c62761630c52c35fb348d147)
 on December 6, 2021.
 </em></small>
 
@@ -129,14 +133,21 @@ A crucial advantage of Spiking Neural Networks (SNNs) architectures lies in its 
 
 ## introduction
 
-### timing encodes profile
 
 Most importantly, it will provide with a detection ability requiring only a few spikes, and therefore in line with the performance observed in biological systems, like the ability for humans to detect the presence of an animal in an image in a few milliseconds (Thorpe et al (1996). Speed of processing in the human visual system. Nature, 381(6582), 520-522). Such biological observations would serve as benchmarks to compare our proposed architecture  to conventional solutions.
 (1] S Thorpe, D Fize, and C Marlot, Nature 381.6582 (1996), pp.520-522.
 
-sparse in time and space
-[2] AL Barth and JF Poulet
-Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet, Neuron 78.1 (2013), pp. 28-48.
+
+
+The approach which is currently most prominent in the Spiking Neural Networks community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.
+
+While my previous expertise was based on the modeling of how SNNs process information (Perrinet, Samuelides and Thorpe, 2004) and how these networks may be tuned in a unsupervised manner to their input (Perrinet, Samuelides and Thorpe, 2003), many different SNN architectures may provide robust solutions. Since that time, I have worked on exploring the space of all solutions which are the most efficient to solve a given problem using Bayesian methods. This culminated in defining a hierarchical model performing predictive coding (Boutin et al, 2020).  However, this network is analog and simulations perform too slowly, even on advanced GPU architectures, to be used for real life situation. We have recently developed a similar architecture but based on a SNN architecture.  In particular, this model is event-based from one end (sensory input from event-based cameras) to the other (classification) and its intermediate layers are learned in a self-supervised fashion (Grimaldi et al, 2021: a, b).
+
+### timing encodes profile
+
+
+
+Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level. I have an extensive expertise in the domain of temporal delays in the nervous system, both at the neural (Perrinet, Adams, Friston, 2012) and behavioral (Khoei et al, 2017) levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks. Our expertise in reproducing the HOTS network (Grimaldi et al, 2021: a, b) will be crucial in the swift realization of this project.
 
 
 Celebrini
@@ -144,14 +155,15 @@ Celebrini
 [4] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
 
 
+[@Abeles1991]: The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models and synfire chains
+
+sparse in time and space
+[2] AL Barth and JF Poulet
+Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet, Neuron 78.1 (2013), pp. 28-48.
+
+
 
 ### cortical songs
-
-The approach which is currently most prominent in the Spiking Neural Networks community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.
-
-While my previous expertise was based on the modeling of how SNNs process information (Perrinet, Samuelides and Thorpe, 2004) and how these networks may be tuned in a unsupervised manner to their input (Perrinet, Samuelides and Thorpe, 2003), many different SNN architectures may provide robust solutions. Since that time, I have worked on exploring the space of all solutions which are the most efficient to solve a given problem using Bayesian methods. This culminated in defining a hierarchical model performing predictive coding (Boutin et al, 2020).  However, this network is analog and simulations perform too slowly, even on advanced GPU architectures, to be used for real life situation. We have recently developed a similar architecture but based on a SNN architecture.  In particular, this model is event-based from one end (sensory input from event-based cameras) to the other (classification) and its intermediate layers are learned in a self-supervised fashion (Grimaldi et al, 2021: a, b).
-
-Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level. I have an extensive expertise in the domain of temporal delays in the nervous system, both at the neural (Perrinet, Adams, Friston, 2012) and behavioral (Khoei et al, 2017) levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks. Our expertise in reproducing the HOTS network (Grimaldi et al, 2021: a, b) will be crucial in the swift realization of this project.
 
 
 Ikegaya Y, Aaron G, Cossart R, Aronov D, Lampl I, Ferster D, Yuste R. 2004. Synfire chains and cortical songs: temporal modules of cortical activity. Science (New York, NY) 304:559–564. [@Ikegaya2004]
@@ -185,12 +197,13 @@ Rapid Formation of Robust Auditory Memories: Insights from Noise [@Agus2010]
 * data available @ https://doi.org/10.1371/journal.pcbi.1006283.s013
 
 
-![Fig 1 of [@Grossberger2018]: "Simulated example illustrating the steps in SPOTDisClust."](https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1006283.g001){#fig:G2018-1 width="5in"}
+![Fig 1 of [@Grossberger2018]: "Simulated example illustrating the steps in SPOTDisClust."](https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pcbi.1006283/2/pcbi.1006283.g001.PNG_L?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20211206%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20211206T141911Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=e02aea1035ceeae4a9f78125ae56023b4175eff75b2b5ccf17df20242d3507c0ae38a4532e0d7f846545d70a69b8a9a4c7d04389aa190f71c71cdaaebe2790b4520135b30e5cfbce58cd00a1730e4c2347b01e81fbdf2ff1374cea9498c740df44087a56e7d143301656f1016432ea9cbf69b94dda26976f5db0597e10e215e340f5a59ca5fe4a33f45c8aae73b326206c97cb7a46cce97cfa0700555baa4b3925497c8a168454a49808c175015385277ea8edb794b7d7ac921c0833c27681ae9fc8301ed5e29da386fa0fc572ee490db1f5d93a938508fdcd20438c9d2bec19e64ef525471e41bbf7a1e14145f2ca8d71e02eb6c17ea681360628d563f7eee7){#fig:G2018-1 width="5in"}
 
 
 #### [@Russo2017]
 
-* "Here we present such a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization. "
+* "Here we present such a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization. " by @Russo2017
+* sliding windeow as in [@Grün2002]
 
 #### Rastermap
 
@@ -222,7 +235,12 @@ The rest of this review paper is organized as follows:
 
 
 
-## Results
+## Learning delays
+
+### STDP
+
+[@Perrinet2002] : coherence detection
+[@Perrinet2001] : STDP
 
 
 ::: {.cell .markdown nteract="{\"transient\":{\"deleting\":false}}"}

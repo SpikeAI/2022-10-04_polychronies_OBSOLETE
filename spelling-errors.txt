@@ -13,6 +13,7 @@ Csicsvari
 Czurko
 dataset
 datasets
+electrophysiological
 Ferster
 Fize
 Friston
@@ -53,10 +54,11 @@ SNNs
 SPOTDis
 SPOTDisClust
 STDP
-Synfire
+synfire
 Timone
 TJ
 Université
+windeow
 WWWWWWWWWWWWW
 XXXX
 XXXXXXXX
