@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2021-12-03'
+date-meta: '2021-12-06'
 author-meta:
 - Antoine Grimaldi
 - Laurent U Perrinet
@@ -26,6 +26,8 @@ citekey-aliases:
   Stringer2019nature: doi:10.1038/s41586-019-1346-5
   Stringer2019science: doi:10.1126/science.aav7893
   rastermap: https://github.com/MouseLand/rastermap
+  Ravello2016droplets: arXiv:1611.06834
+  Russo2017: doi:10.7554/eLife.19428
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -36,8 +38,8 @@ header-includes: |-
   <meta name="citation_title" content="Polychrony detection in raster plots" />
   <meta property="og:title" content="Polychrony detection in raster plots" />
   <meta property="twitter:title" content="Polychrony detection in raster plots" />
-  <meta name="dc.date" content="2021-12-03" />
-  <meta name="citation_publication_date" content="2021-12-03" />
+  <meta name="dc.date" content="2021-12-06" />
+  <meta name="citation_publication_date" content="2021-12-06" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -58,9 +60,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/a622dc55f83294b5dfe24e7234234810982d3aef/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a622dc55f83294b5dfe24e7234234810982d3aef/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a622dc55f83294b5dfe24e7234234810982d3aef/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/6ce075597910515f2b82ac4a56f3e83873c5e8cc/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/6ce075597910515f2b82ac4a56f3e83873c5e8cc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/6ce075597910515f2b82ac4a56f3e83873c5e8cc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,10 +84,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/a622dc55f83294b5dfe24e7234234810982d3aef/))
+([permalink](https://SpikeAI.github.io/polychronies/v/6ce075597910515f2b82ac4a56f3e83873c5e8cc/))
 was automatically generated
-from [SpikeAI/polychronies@a622dc5](https://github.com/SpikeAI/polychronies/tree/a622dc55f83294b5dfe24e7234234810982d3aef)
-on December 3, 2021.
+from [SpikeAI/polychronies@6ce0755](https://github.com/SpikeAI/polychronies/tree/6ce075597910515f2b82ac4a56f3e83873c5e8cc)
+on December 6, 2021.
 </em></small>
 
 ## Authors
@@ -122,7 +124,7 @@ on December 3, 2021.
 ## Abstract {.page_break_before}
 
 
-A crucial advantage of Spiking Neural Networks (SNNs) architectures lies in its processing of temporal information. Yet, most SNNs encode the temporal signal as an analog signal and try to “cross-compile” classical Neural Network to a spiking architecture. To go beyond the state-of-the-art, we will focus on one core computation of a spiking neuron, that is, is its ability to switch from the classical integrator mode (summing analog currents on its synapses) to a synchrony detector where it emits a spike whenever presynaptic spiking inputs are synchronized. To overcome the diversity of input presynaptic patterns, we will develop an adaptive architecture to learn to detect stable “polychronous“ events, that is, volleys of spikes which are stable up to certain synaptic delays. These models will be tested on a series of visual benchmarks with the goal to achieve ultra-rapid visual categorization.
+A crucial advantage of Spiking Neural Networks (SNNs) architectures lies in its processing of temporal information. Yet, most SNNs encode the temporal signal as an analog signal and try to “cross-compile” classical Neural Network to a spiking architecture. To go beyond the state-of-the-art, we will review here on one core computation of a spiking neuron, that is, is its ability to switch from the classical integrator mode (summing analog currents on its synapses) to a synchrony detector where it emits a spike whenever presynaptic spiking inputs are synchronized. To overcome the diversity of input presynaptic patterns, we will explore different existing architectures to learn to detect stable “polychronous“ events, that is, volleys of spikes which are stable up to certain synaptic delays. These models will be compared in light of neuroscientific and computational perspectives.
 
 
 ## introduction
@@ -170,6 +172,7 @@ Rapid Formation of Robust Auditory Memories: Insights from Noise [@Agus2010]
 ### spike pattern clustering
 
 #### Paper by [@Grossberger2018]
+
 * Temporally ordered multi-neuron patterns likely encode information in the brain. We introduce an unsupervised method, SPOTDisClust (Spike Pattern Optimal Transport Dissimilarity Clustering), for their detection from high-dimensional neural ensembles. SPOTDisClust measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other (SPOTDis).
 * Detecting these temporal patterns represents a major methodological challenge.
 * Many approaches to this problem are supervised, that is, they take patterns occurring concurrently with a known event, such as the delivery of a stimulus for sensory neurons or the traversal of a running track for hippocampal place fields, as a “template” and then search for repetitions of the same template in spiking activity :

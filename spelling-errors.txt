@@ -19,7 +19,7 @@ Friston
 Gollisch
 Grimaldi
 HDBSCAN
-Hippocampal
+hippocampal
 Hirase
 Ikegaya
 institue
@@ -39,6 +39,7 @@ Nadasdy
 Neurophysiol
 Neurosci
 neurosciences
+neuroscientific
 Perrinet
 polychronization
 polychronous
