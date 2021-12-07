@@ -14,6 +14,7 @@ Csicsvari
 Czurko
 dataset
 datasets
+dimensionality
 electrophysiological
 Ferster
 Fize
@@ -54,16 +55,13 @@ Samuelides
 SNE
 SNN
 SNNs
-spks
 SPOTDis
 SPOTDisClust
 stationarity
 STDP
 Synfire
-Tepoch
 Timone
 TJ
-Tpulse
 Université
 WWWWWWWWWWWWW
 XXXX

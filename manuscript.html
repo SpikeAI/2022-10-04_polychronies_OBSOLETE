@@ -133,9 +133,9 @@
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/26de26a5bcf8092a683a0f5ce33c1ddf2787d323/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/26de26a5bcf8092a683a0f5ce33c1ddf2787d323/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/26de26a5bcf8092a683a0f5ce33c1ddf2787d323/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/667c94bd8cfb0dee9c9d6b4536b538cd32293ce7/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/667c94bd8cfb0dee9c9d6b4536b538cd32293ce7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/667c94bd8cfb0dee9c9d6b4536b538cd32293ce7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -149,9 +149,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://SpikeAI.github.io/polychronies/v/26de26a5bcf8092a683a0f5ce33c1ddf2787d323/">permalink</a>)
+(<a href="https://SpikeAI.github.io/polychronies/v/667c94bd8cfb0dee9c9d6b4536b538cd32293ce7/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/SpikeAI/polychronies/tree/26de26a5bcf8092a683a0f5ce33c1ddf2787d323">SpikeAI/polychronies@26de26a</a>
+from <a href="https://github.com/SpikeAI/polychronies/tree/667c94bd8cfb0dee9c9d6b4536b538cd32293ce7">SpikeAI/polychronies@667c94b</a>
 on December 7, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -183,6 +183,7 @@ Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
 <h2 class="page_break_before" id="abstract">Abstract</h2>
 <p>A crucial advantage of Spiking Neural Networks (SNNs) architectures lies in its processing of temporal information. Yet, most SNNs encode the temporal signal as an analog signal and try to “cross-compile” classical Neural Network to a spiking architecture. To go beyond the state-of-the-art, we will review here on one core computation of a spiking neuron, that is, is its ability to switch from the classical integrator mode (summing analog currents on its synapses) to a synchrony detector where it emits a spike whenever presynaptic spiking inputs are synchronized. To overcome the diversity of input presynaptic patterns, we will explore different existing architectures to learn to detect stable “polychronous“ events, that is, volleys of spikes which are stable up to certain synaptic delays. These models will be compared in light of neuroscientific and computational perspectives.</p>
 <h2 id="introduction">introduction</h2>
+<h3 id="ultra-fast-neural-codes">ultra fast neural codes</h3>
 <p>Most importantly, it will provide with a detection ability requiring only a few spikes, and therefore in line with the performance observed in biological systems, like the ability for humans to detect the presence of an animal in an image in a few milliseconds (Thorpe et al (1996). Speed of processing in the human visual system. Nature, 381(6582), 520-522). Such biological observations would serve as benchmarks to compare our proposed architecture to conventional solutions.
 (1] S Thorpe, D Fize, and C Marlot, Nature 381.6582 (1996), pp.520-522.</p>
 <p>The approach which is currently most prominent in the Spiking Neural Networks community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.</p>
@@ -213,8 +214,12 @@ Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet
 <li>t-SNE projection with HDBSCAN labels shows that our clustering method can retrieve all patterns from the data.</li>
 <li>data available @ https://doi.org/10.1371/journal.pcbi.1006283.s013</li>
 </ul>
-<p>![Fig 1 of <span class="citation" data-cites="9AK1cwY1">[<a href="#ref-9AK1cwY1" role="doc-biblioref">4</a>]</span>: “Simulated example illustrating the steps in SPOTDisClust. A) Structure of five “ground-truth” patterns, affecting 50 neurons. λin = 0.2 spks/sample, λout = 0.02 spks/sample. Tepoch = 300 samples, Tpulse = 30 samples. For each pattern and each neuron, a random position was chosen for the activation pulse. B) Neuronal output is generated according to an inhomogeneous Poisson process, with rates dictated by the patterns in (A). A total of 300 epochs were simulated, out of which 150 epochs were noise patterns, and each of the 5 patterns contributed 30 epochs. “](https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pcbi.1006283/2/pcbi.1006283.g001.PNG_L?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20211206%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20211206T141911Z&amp;X-Goog-Expires=86400&amp;X-Goog-SignedHeaders=host&amp;X-Goog-Signature=e02aea1035ceeae4a9f78125ae56023b4175eff75b2b5ccf17df20242d3507c0ae38a4532e0d7f846545d70a69b8a9a4c7d04389aa190f71c71cdaaebe2790b4520135b30e5cfbce58cd00a1730e4c2347b01e81fbdf2ff1374cea9498c740df44087a56e7d143301656f1016432ea9cbf69b94dda26976f5db0597e10e215e340f5a59ca5fe4a33f45c8aae73b326206c97cb7a46cce97cfa0700555baa4b3925497c8a168454a49808c175015385277ea8edb794b7d7ac921c0833c27681ae9fc8301ed5e29da386fa0fc572ee490db1f5d93a938508fdcd20438c9d2bec19e64ef525471e41bbf7a1e14145f2ca8d71e02eb6c17ea681360628d563f7eee7){#fig:G2018-1 width=”5in”}</p>
-<h3 id="russo2017"><span class="citation" data-cites="RrgzWOSk">[<a href="#ref-RrgzWOSk" role="doc-biblioref">5</a>]</span></h3>
+<div id="fig:G2018-1" class="fignos">
+<figure>
+<img src="https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pcbi.1006283/2/pcbi.1006283.g001.PNG_L?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20211206%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20211206T141911Z&amp;X-Goog-Expires=86400&amp;X-Goog-SignedHeaders=host&amp;X-Goog-Signature=e02aea1035ceeae4a9f78125ae56023b4175eff75b2b5ccf17df20242d3507c0ae38a4532e0d7f846545d70a69b8a9a4c7d04389aa190f71c71cdaaebe2790b4520135b30e5cfbce58cd00a1730e4c2347b01e81fbdf2ff1374cea9498c740df44087a56e7d143301656f1016432ea9cbf69b94dda26976f5db0597e10e215e340f5a59ca5fe4a33f45c8aae73b326206c97cb7a46cce97cfa0700555baa4b3925497c8a168454a49808c175015385277ea8edb794b7d7ac921c0833c27681ae9fc8301ed5e29da386fa0fc572ee490db1f5d93a938508fdcd20438c9d2bec19e64ef525471e41bbf7a1e14145f2ca8d71e02eb6c17ea681360628d563f7eee7" style="width:7in" alt="Figure 1: Fig 1 of [4]: “Simulated example illustrating the steps in SPOTDisClust. A) Structure of five “ground-truth” patterns (…). For each pattern and each neuron, a random position was chosen for the activation pulse. B) Neuronal output is generated according to an inhomogeneous Poisson process, with rates dictated by the patterns in (A).”" /><figcaption aria-hidden="true"><span>Figure 1:</span> Fig 1 of <span class="citation" data-cites="9AK1cwY1">[<a href="#ref-9AK1cwY1" role="doc-biblioref">4</a>]</span>: “Simulated example illustrating the steps in SPOTDisClust. A) Structure of five “ground-truth” patterns (…). For each pattern and each neuron, a random position was chosen for the activation pulse. B) Neuronal output is generated according to an inhomogeneous Poisson process, with rates dictated by the patterns in (A).”</figcaption>
+</figure>
+</div>
+<h3 id="russo-et-al-2017-russo2017">Russo et al 2017 <span class="citation" data-cites="RrgzWOSk">[<a href="#ref-RrgzWOSk" role="doc-biblioref">5</a>]</span></h3>
 <ul>
 <li>“Here we present such a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization.” by <span class="citation" data-cites="RrgzWOSk">[<a href="#ref-RrgzWOSk" role="doc-biblioref">5</a>]</span></li>
 <li>sliding window as in <span class="citation" data-cites="1XpTamcl">[<a href="#ref-1XpTamcl" role="doc-biblioref">6</a>]</span> (“Numerous other statistical procedures for detecting assemblies or sequential patterns have been proposed previously”) - extended to multiple lags <span class="citation" data-cites="bc9czTxi">[<a href="#ref-bc9czTxi" role="doc-biblioref">7</a>]</span></li>
@@ -223,8 +228,12 @@ Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet
 <h3 id="rastermap">Rastermap</h3>
 <ul>
 <li>https://www.janelia.org/lab/stringer-lab <span class="citation" data-cites="B1U2UicJ">[<a href="#ref-B1U2UicJ" role="doc-biblioref">8</a>]</span></li>
-<li>https://www.biorxiv.org/content/10.1101/374090v2 <span class="citation" data-cites="brg2FFsb">[<a href="#ref-1BPHUQLTf" role="doc-biblioref">10</a>]</span></li>
 </ul>
+<h4 id="stringer-et-al-2019-nature-stringer2019nature">Stringer et al 2019, Nature <span class="citation" data-cites="brg2FFsb">[<a href="#ref-brg2FFsb" role="doc-biblioref">9</a>]</span></h4>
+<ul>
+<li>“A neuronal population encodes information most efficiently when its stimulus responses are high-dimensional and uncorrelated, and most robustly when they are lower-dimensional and correlated. Here we analysed the dimensionality of the encoding of natural images by large populations of neurons in the visual cortex of awake mice.”</li>
+</ul>
+<h4 id="stringer-et-al-2019-science-stringer2019science">Stringer et al 2019, Science <span class="citation" data-cites="1BPHUQLTf">[<a href="#ref-1BPHUQLTf" role="doc-biblioref">10</a>]</span></h4>
 <h4 id="paper-by-moser2014">Paper by <span class="citation" data-cites="LjkTSK3h">[<a href="#ref-LjkTSK3h" role="doc-biblioref">11</a>]</span></h4>
 <p>On Stability of Distance Measures for Event Sequences Induced by Level-Crossing Sampling</p>
 <h3 id="outline">outline</h3>
@@ -300,7 +309,7 @@ Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet
 <div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>Networks of integrate-and-fire neuron using rank order coding A: How to implement spike time dependent Hebbian plasticity</strong> <div class="csl-block">L Perrinet, A Delorme, M Samuelides, SJ Thorpe</div> <em>Neurocomputing</em> (2001-06) <a href="https://doi.org/d5p6b2">https://doi.org/d5p6b2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/s0925-2312(01)00460-x">10.1016/s0925-2312(01)00460-x</a></div></div>
 </div>
 <div id="ref-vFdguXD2" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>Statistics of the natural input to a ring model</strong> <div class="csl-block">Laurent Perrinet, Hugo Ladret</div> <em>natural</em> (2018) <a href="https://laurentperrinet.github.io/sciblog/posts/2018-11-05-statistics-of-the-natural-input-to-a-ring-model.html">https://laurentperrinet.github.io/sciblog/posts/2018-11-05-statistics-of-the-natural-input-to-a-ring-model.html</a></div>
+<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>Statistics of the natural input to a ring model</strong> <div class="csl-block">Laurent Perrinet, Hugo Ladret</div> <em>Scientific Blog</em> (2018) <a href="https://laurentperrinet.github.io/sciblog/posts/2018-11-05-statistics-of-the-natural-input-to-a-ring-model.html">https://laurentperrinet.github.io/sciblog/posts/2018-11-05-statistics-of-the-natural-input-to-a-ring-model.html</a></div>
 </div>
 </div>
 <!-- default theme -->
