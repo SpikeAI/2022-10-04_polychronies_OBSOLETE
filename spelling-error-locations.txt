@@ -67,8 +67,13 @@ content/15.raster-plots.md:18:SPOTDisClust
 content/15.raster-plots.md:24:agglomerative
 content/15.raster-plots.md:24:stationarity
 content/15.raster-plots.md:26:Rastermap
-content/15.raster-plots.md:28:rastermap
-content/15.raster-plots.md:32:dimensionality
+content/15.raster-plots.md:30:rastermap
+content/15.raster-plots.md:30:rastermap
+content/15.raster-plots.md:31:deconvolution
+content/15.raster-plots.md:36:dimensionality
+content/15.raster-plots.md:37:deconvolved
+content/15.raster-plots.md:37:figshare
+content/15.raster-plots.md:37:figshare
 content/18.outline.md:5:polychronization
 content/18.outline.md:6:polychronous
 content/18.outline.md:6:pre

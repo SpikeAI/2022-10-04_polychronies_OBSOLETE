@@ -28,7 +28,8 @@ citekey-aliases:
   Moser2014: doi:10.1109/TSP.2014.2305642
   Stringer2019nature: doi:10.1038/s41586-019-1346-5
   Stringer2019science: doi:10.1126/science.aav7893
-  rastermap: https://github.com/MouseLand/rastermap
+  Stringer2021: doi:10.1016/j.cell.2021.03.042
+  Pachitariu2018: doi:10.1523/JNEUROSCI.3339-17.2018
   Ravello2016droplets: arXiv:1611.06834
   Russo2017: doi:10.7554/eLife.19428
   Grün2002: doi:10.1162/089976602753284464
@@ -65,9 +66,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/667c94bd8cfb0dee9c9d6b4536b538cd32293ce7/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/667c94bd8cfb0dee9c9d6b4536b538cd32293ce7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/667c94bd8cfb0dee9c9d6b4536b538cd32293ce7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/837b03d6fa6daf4c981e8373ac1493c84c77c7ed/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/837b03d6fa6daf4c981e8373ac1493c84c77c7ed/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/837b03d6fa6daf4c981e8373ac1493c84c77c7ed/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -89,9 +90,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/667c94bd8cfb0dee9c9d6b4536b538cd32293ce7/))
+([permalink](https://SpikeAI.github.io/polychronies/v/837b03d6fa6daf4c981e8373ac1493c84c77c7ed/))
 was automatically generated
-from [SpikeAI/polychronies@667c94b](https://github.com/SpikeAI/polychronies/tree/667c94bd8cfb0dee9c9d6b4536b538cd32293ce7)
+from [SpikeAI/polychronies@837b03d](https://github.com/SpikeAI/polychronies/tree/837b03d6fa6daf4c981e8373ac1493c84c77c7ed)
 on December 7, 2021.
 </em></small>
 
@@ -206,17 +207,23 @@ Rapid Formation of Robust Auditory Memories: Insights from Noise [@Agus2010]
 
 ### Rastermap
 
-* https://www.janelia.org/lab/stringer-lab [@rastermap]
+* https://www.janelia.org/lab/stringer-lab
+* described in [@Pachitariu2018]
+* [rastermap](https://github.com/MouseLand/rastermap)
+ * deconvolution strategy
+ * based on a linear model
 
 #### Stringer et al 2019, Nature [@Stringer2019nature]
 
 * "A neuronal population encodes information most efficiently when its stimulus responses are high-dimensional and uncorrelated, and most robustly when they are lower-dimensional and correlated. Here we analysed the dimensionality of the encoding of natural images by large populations of neurons in the visual cortex of awake mice. "
-
+* Data availability: All of the processed deconvolved calcium traces are available on [figshare](https://figshare.com/articles/Recordings_of_ten_thousand_neurons_in_visual_cortex_in_response_to_2_800_natural_images/6845348), together with the image stimuli.
+* Code availability: The code is available on [GitHub](https://github.com/MouseLand/stringer-pachitariu-et-al-2018b).
 
 #### Stringer et al 2019, Science [@Stringer2019science]
 
+* Stringer et al. analyzed spontaneous neuronal firing, finding that neurons in the primary visual cortex encoded both visual information and motor activity related to facial movements. The variability of neuronal responses to visual stimuli in the primary visual area is mainly related to arousal and reflects the encoding of latent behavioral states.
 
-
+* see also the work showing that you can encode very precise orientation information by using many neurons: [@Stringer2021]
 
 #### Paper by [@Moser2014]
 
