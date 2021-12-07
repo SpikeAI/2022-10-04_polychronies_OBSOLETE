@@ -1,11 +1,11 @@
 ---
-title: Polychrony detection in raster plots
+title: Review on Polychrony detection in biological and artificial raster plots
 keywords:
 - neurons
 - code
 - time
 lang: en-US
-date-meta: '2021-12-06'
+date-meta: '2021-12-07'
 author-meta:
 - Antoine Grimaldi
 - Laurent U Perrinet
@@ -40,12 +40,12 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Polychrony detection in raster plots" />
-  <meta name="citation_title" content="Polychrony detection in raster plots" />
-  <meta property="og:title" content="Polychrony detection in raster plots" />
-  <meta property="twitter:title" content="Polychrony detection in raster plots" />
-  <meta name="dc.date" content="2021-12-06" />
-  <meta name="citation_publication_date" content="2021-12-06" />
+  <meta name="dc.title" content="Review on Polychrony detection in biological and artificial raster plots" />
+  <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
+  <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
+  <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
+  <meta name="dc.date" content="2021-12-07" />
+  <meta name="citation_publication_date" content="2021-12-07" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -66,9 +66,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/7dce8cdc3699d8b8abe51a8efc6058210195421b/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/7dce8cdc3699d8b8abe51a8efc6058210195421b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/7dce8cdc3699d8b8abe51a8efc6058210195421b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/462de5119a4c2cfe892ed1366b20edcc2fd8b280/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/462de5119a4c2cfe892ed1366b20edcc2fd8b280/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/462de5119a4c2cfe892ed1366b20edcc2fd8b280/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -90,10 +90,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/7dce8cdc3699d8b8abe51a8efc6058210195421b/))
+([permalink](https://SpikeAI.github.io/polychronies/v/462de5119a4c2cfe892ed1366b20edcc2fd8b280/))
 was automatically generated
-from [SpikeAI/polychronies@7dce8cd](https://github.com/SpikeAI/polychronies/tree/7dce8cdc3699d8b8abe51a8efc6058210195421b)
-on December 6, 2021.
+from [SpikeAI/polychronies@462de51](https://github.com/SpikeAI/polychronies/tree/462de5119a4c2cfe892ed1366b20edcc2fd8b280)
+on December 7, 2021.
 </em></small>
 
 ## Authors
@@ -183,10 +183,7 @@ Rapid Formation of Robust Auditory Memories: Insights from Noise [@Agus2010]
 
 ## Detecting patterns in raster plots
 
-
-### spike pattern clustering
-
-#### Paper by [@Grossberger2018]
+### Paper by [@Grossberger2018]
 
 * Temporally ordered multi-neuron patterns likely encode information in the brain. We introduce an unsupervised method, SPOTDisClust (Spike Pattern Optimal Transport Dissimilarity Clustering), for their detection from high-dimensional neural ensembles. SPOTDisClust measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other (SPOTDis).
 * Detecting these temporal patterns represents a major methodological challenge.
@@ -199,16 +196,16 @@ Rapid Formation of Robust Auditory Memories: Insights from Noise [@Agus2010]
 * data available @ https://doi.org/10.1371/journal.pcbi.1006283.s013
 
 
-![Fig 1 of @Grossberger2018: "Simulated example illustrating the steps in SPOTDisClust."](https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pcbi.1006283/2/pcbi.1006283.g001.PNG_L?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20211206%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20211206T141911Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=e02aea1035ceeae4a9f78125ae56023b4175eff75b2b5ccf17df20242d3507c0ae38a4532e0d7f846545d70a69b8a9a4c7d04389aa190f71c71cdaaebe2790b4520135b30e5cfbce58cd00a1730e4c2347b01e81fbdf2ff1374cea9498c740df44087a56e7d143301656f1016432ea9cbf69b94dda26976f5db0597e10e215e340f5a59ca5fe4a33f45c8aae73b326206c97cb7a46cce97cfa0700555baa4b3925497c8a168454a49808c175015385277ea8edb794b7d7ac921c0833c27681ae9fc8301ed5e29da386fa0fc572ee490db1f5d93a938508fdcd20438c9d2bec19e64ef525471e41bbf7a1e14145f2ca8d71e02eb6c17ea681360628d563f7eee7){#fig:G2018-1 width="5in"}
+![Fig 1 of @Grossberger2018: "Simulated example illustrating the steps in SPOTDisClust. A) Structure of five “ground-truth” patterns, affecting 50 neurons. λin = 0.2 spks/sample, λout = 0.02 spks/sample. Tepoch = 300 samples, Tpulse = 30 samples. For each pattern and each neuron, a random position was chosen for the activation pulse. B) Neuronal output is generated according to an inhomogeneous Poisson process, with rates dictated by the patterns in (A). A total of 300 epochs were simulated, out of which 150 epochs were noise patterns, and each of the 5 patterns contributed 30 epochs. "](https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pcbi.1006283/2/pcbi.1006283.g001.PNG_L?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20211206%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20211206T141911Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=e02aea1035ceeae4a9f78125ae56023b4175eff75b2b5ccf17df20242d3507c0ae38a4532e0d7f846545d70a69b8a9a4c7d04389aa190f71c71cdaaebe2790b4520135b30e5cfbce58cd00a1730e4c2347b01e81fbdf2ff1374cea9498c740df44087a56e7d143301656f1016432ea9cbf69b94dda26976f5db0597e10e215e340f5a59ca5fe4a33f45c8aae73b326206c97cb7a46cce97cfa0700555baa4b3925497c8a168454a49808c175015385277ea8edb794b7d7ac921c0833c27681ae9fc8301ed5e29da386fa0fc572ee490db1f5d93a938508fdcd20438c9d2bec19e64ef525471e41bbf7a1e14145f2ca8d71e02eb6c17ea681360628d563f7eee7){#fig:G2018-1 width="5in"}
 
 
-#### [@Russo2017]
+### [@Russo2017]
 
 * "Here we present such a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization. " by @Russo2017
 * sliding window as in [@Grün2002] ("Numerous other statistical procedures for detecting assemblies or sequential patterns have been proposed previously") - extended to multiple lags [@Torre2016]
 * based on a "non-stationarity-corrected parametric test statistic for assessing the independence of pairs" and "an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies"
 
-#### Rastermap
+### Rastermap
 
 * https://www.janelia.org/lab/stringer-lab [@rastermap]
 * https://www.biorxiv.org/content/10.1101/374090v2 [@Stringer2019nature, @Stringer2019science]
