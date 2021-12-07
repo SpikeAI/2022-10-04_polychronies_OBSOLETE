@@ -22,7 +22,6 @@ citekey-aliases:
   vgg: https://arxiv.org/abs/1409.1556
   googlenet: https://ieeexplore.ieee.org/document/7298594
   resnet: https://ieeexplore.ieee.org/document/7780459
-  natural: https://laurentperrinet.github.io/sciblog/posts/2018-11-05-statistics-of-the-natural-input-to-a-ring-model.html
   Grossberger2018: doi:10.1371/journal.pcbi.1006283
   Agus2010: doi:10.1016/j.neuron.2010.04.014
   Agus2010pdf: http://audition-backend.ens.fr/dp/pdfs/AgusThorpePressnitzer-2010-noise_memory.pdf
@@ -66,9 +65,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/462de5119a4c2cfe892ed1366b20edcc2fd8b280/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/462de5119a4c2cfe892ed1366b20edcc2fd8b280/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/462de5119a4c2cfe892ed1366b20edcc2fd8b280/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/f72e1ebfc34b8af2ff231261b52e7d4553d0b3e8/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/f72e1ebfc34b8af2ff231261b52e7d4553d0b3e8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/f72e1ebfc34b8af2ff231261b52e7d4553d0b3e8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -90,9 +89,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/462de5119a4c2cfe892ed1366b20edcc2fd8b280/))
+([permalink](https://SpikeAI.github.io/polychronies/v/f72e1ebfc34b8af2ff231261b52e7d4553d0b3e8/))
 was automatically generated
-from [SpikeAI/polychronies@462de51](https://github.com/SpikeAI/polychronies/tree/462de5119a4c2cfe892ed1366b20edcc2fd8b280)
+from [SpikeAI/polychronies@f72e1eb](https://github.com/SpikeAI/polychronies/tree/f72e1ebfc34b8af2ff231261b52e7d4553d0b3e8)
 on December 7, 2021.
 </em></small>
 
