@@ -22,7 +22,7 @@ Gollisch
 Grimaldi
 Grossberger
 HDBSCAN
-hippocampal
+Hippocampal
 Hirase
 Ikegaya
 inhomogeneous
@@ -59,7 +59,7 @@ SPOTDis
 SPOTDisClust
 stationarity
 STDP
-synfire
+Synfire
 Tepoch
 Timone
 TJ
