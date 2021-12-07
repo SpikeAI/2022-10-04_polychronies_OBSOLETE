@@ -1,22 +1,26 @@
 [
 {
-  "id": "url:https://github.com/manubot/rootstock",
+  "id": "natural",
   "type": "webpage",
-  "URL": "https://github.com/manubot/rootstock",
-  "title": "manubot/rootstock GitHub repository",
-  "container-title": "GitHub",
+  "URL": "https://laurentperrinet.github.io/sciblog/posts/2018-11-05-statistics-of-the-natural-input-to-a-ring-model.html",
+  "title": "Statistics of the natural input to a ring model",
+  "container-title": "natural",
   "issued": {
     "date-parts": [
       [
-        2019
+        2018
       ]
     ]
   },
   "author": [
     {
-      "given": "Daniel",
-      "family": "Himmelstein"
+      "given": "Laurent",
+      "family": "Perrinet"
+  	},
+    {
+      "given": "Hugo",
+      "family": "Ladret"
     }
-  ]
+    ]
 }
 ]
