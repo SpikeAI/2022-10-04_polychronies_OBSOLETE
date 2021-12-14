@@ -1,4 +1,4 @@
 
-## Methods
+## Models of polychronization
 
-### Outline of the algorithm
+### Izhikevitch
