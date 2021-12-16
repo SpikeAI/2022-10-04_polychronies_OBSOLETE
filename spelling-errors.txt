@@ -34,7 +34,7 @@ Gollisch
 Grimaldi
 Grossberger
 HDBSCAN
-hippocampal
+Hippocampal
 Hirase
 inferned
 inhomogeneous
@@ -78,7 +78,7 @@ SPOTDis
 SPOTDisClust
 stationarity
 STDP
-Synfire
+synfire
 Timone
 TJ
 Université
