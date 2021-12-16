@@ -14,6 +14,7 @@ citekey-aliases:
   Perrinet2001: doi:10.1016/S0925-2312(01)00460-X
   Perrinet2002: doi:10.1016/S0925-2312(02)00374-0
   Ikegaya2004: doi:10.1126/science.1093173
+  Bienenstock1995: doi:10.1088/0954-898x_6_2_004
   Yuste2005: doi:10.1038/nrn1686
   Luczak2015: pmid:26507295
   gan: https://papers.nips.cc/paper/5423-generative-adversarial-nets
@@ -66,9 +67,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/425a78e6875e2f99e1af0814d96cedc638ffb23b/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/425a78e6875e2f99e1af0814d96cedc638ffb23b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/425a78e6875e2f99e1af0814d96cedc638ffb23b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/71c450f054b646d674bcc0cc5c94761f2d47d509/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/71c450f054b646d674bcc0cc5c94761f2d47d509/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/71c450f054b646d674bcc0cc5c94761f2d47d509/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -90,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/425a78e6875e2f99e1af0814d96cedc638ffb23b/))
+([permalink](https://SpikeAI.github.io/polychronies/v/71c450f054b646d674bcc0cc5c94761f2d47d509/))
 was automatically generated
-from [SpikeAI/polychronies@425a78e](https://github.com/SpikeAI/polychronies/tree/425a78e6875e2f99e1af0814d96cedc638ffb23b)
+from [SpikeAI/polychronies@71c450f](https://github.com/SpikeAI/polychronies/tree/71c450f054b646d674bcc0cc5c94761f2d47d509)
 on December 16, 2021.
 </em></small>
 
@@ -129,7 +130,6 @@ on December 16, 2021.
 
 ## Abstract {.page_break_before}
 
-
 A crucial advantage of Spiking Neural Networks (SNNs) architectures lies in its processing of temporal information. Yet, most SNNs encode the temporal signal as an analog signal and try to “cross-compile” classical Neural Network to a spiking architecture. To go beyond the state-of-the-art, we will review here on one core computation of a spiking neuron, that is, is its ability to switch from the classical integrator mode (summing analog currents on its synapses) to a synchrony detector where it emits a spike whenever presynaptic spiking inputs are synchronized. To overcome the diversity of input presynaptic patterns, we will explore different existing architectures to learn to detect stable “polychronous“ events, that is, volleys of spikes which are stable up to certain synaptic delays. These models will be compared in light of neuroscientific and computational perspectives.
 
 
@@ -157,20 +157,28 @@ Celebrini
 
 [4] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
 
+### synfire chains
 
 [@Abeles1991]: The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models and synfire chains
 
-sparse in time and space
-[2] AL Barth and JF Poulet
-Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet, Neuron 78.1 (2013), pp. 28-48.
+sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet, Neuron 78.1 (2013), pp. 28-48.
+
+M. Diesmann, M. O. Gewaltig, A. Aertsen, Nature402, 529 (1999).
+
+ * [@Bienenstock1995] : from synfire chains to Synfire braids
 
 
 
-### cortical songs
+### cortical songs [@Ikegaya2004]
 
+* "We find precise repetitions of spontaneous patterns of synaptic inputs in neocortical neurons in vivo and in vitro. These patterns repeat after minutes, maintaining millisecond accuracy."
+* Precisely repeating motifs of spontaneous synaptic activity in slices: duration around 1s +/- .5 s. Some events in motifs are of similar size but sometimes absent - better described by Bernouilli than SE (and covariance)
+* *in vivo*  spontaneous activity also reveals repeating sequences. About 3000 sequences, each involving 3-10 cells out of about 900, and last up to 3 seconds
+* topography: "Sequences had specific topographic structures, in some cases involving only a particular layer or a vertical column of cells or cells located in a cluster (Fig. 4, A and B, and fig. S3B). (...) Therefore, repeating temporal patterns of activation (...) were associated with a structured spatial organization of the neurons that formed them."
+* "Cortical songs: modular assemblies of repeated sequences": hierarchical detection.
+* in cotical songs, there is a "compressing timing" which may be taken into account by a similar mechanism as maxpooling in CNNs for space, but in time. Or there may be a mechanism for controlling the replay speed (pulvinar, ... ,  ?)
 
-Ikegaya Y, Aaron G, Cossart R, Aronov D, Lampl I, Ferster D, Yuste R. 2004. Synfire chains and cortical songs: temporal modules of cortical activity. Science (New York, NY) 304:559–564. [@Ikegaya2004]
-
+![Fig. 1. from  [@Ikegaya2004] Repeated motifs of spontaneous synaptic activity in vitro and in vivo. (A) Repeated motifs of intracellular activity from layer 5 pyramidal neurons in slices. Panels show segments (red) of the same voltage-clamp recording from the same cell repeating seconds or minutes after the initial occurrence (blue). Arrows indicate timings of repeated PSCs. (i) Upper trace: low–temporal resolution display of spontaneous activity of a neuron. Lower traces: higher resolution display of the repeated motif at indicated regions of the trace (a to c). (ii) Example of a longer motif. (B) Three repetitions of a motif. The top traces show the motifs superimposed on each other (blue, green, and red), the middle traces show these same traces individually, and the bottom traces show temporally magnified regions of the motifs (a to c). (C) Repeated sequences of intracellular current-clamp recordings in vivo. Two (i) and three (ii) repetitions of motifs are shown. Shuffle tests were performed on traces (i), a to c, yielding significantly fewer repeats (fig. S2, P < 0.02). In (i), the blue trace is shifted –2.75 mV; in (ii), the blue trace is shifted –1.58 mV, and the green +0.79 mV.](images/Ikegaya2004zse0150424620001.jpeg)
 
 [@Luczak2015] Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745–55.
 
@@ -178,6 +186,47 @@ Ikegaya Y, Aaron G, Cossart R, Aronov D, Lampl I, Ferster D, Yuste R. 2004. Synf
 ### polychronization
 
 Rapid Formation of Robust Auditory Memories: Insights from Noise [@Agus2010]
+
+
+
+### outline
+
+The rest of this review paper is organized as follows:
+
+* polychronization
+
+* We review theoretical foundations of spike time coding in a neuron: We will describe the Spike-Time Dependent Plasticity (STDP) rule which implement an unsupervised learning aiming at optimizing the detection of polychronous patterns, that is volleys of spikes which are synchronized, up to some stable pattern of pre-synaptic delays. This STDP rule will be based by the inversion of the generative model for spike formation and will therefore be derived by a Bayesian approach. This will decouple the active synapses (similarly to a logistic regression) from the values of possible synaptic delays.
+
+* Application to Image processing using sparse spiking representations: Using the core computational unit defined, extension of the computation to a topographic representation similar to that observed in the primary visual cortex of mammals. design of micro-circuits with specific lateral interactions will allow us to design efficient micro-circuits for the sparse representation of images.
+
+* Discussion on Ultra-fast vision:  existing datasets recorded in natural settings or indoor scenes with event-based cameras.
+
+
+
+## Models of polychronization
+
+### Izhikevitch
+
+
+
+## Learning to detect polychronous groups
+
+### Learning delays: STDP
+
+[@Perrinet2002] : coherence detection
+[@Perrinet2001] : STDP
+
+
+
+### results on natural images
+
+in  [@natural],  we generate raster plots from natural images
+
+A natural documentary, Planet Earth with David Attenborough
+
+```
+filename = './nat_inputs/PlanetEarth.mp4'  # filename of the movie
+```
 
 
 
@@ -234,65 +283,7 @@ On Stability of Distance Measures for Event Sequences Induced by Level-Crossing 
 
 
 
-### outline
-
-The rest of this review paper is organized as follows:
-* polychronization
-* We review theoretical foundations of spike time coding in a neuron: We will describe the Spike-Time Dependent Plasticity (STDP) rule which implement an unsupervised learning aiming at optimizing the detection of polychronous patterns, that is volleys of spikes which are synchronized, up to some stable pattern of pre-synaptic delays. This STDP rule will be based by the inversion of the generative model for spike formation and will therefore be derived by a Bayesian approach. This will decouple the active synapses (similarly to a logistic regression) from the values of possible synaptic delays.
-* Application to Image processing using sparse spiking representations: Using the core computational unit defined, extension of the computation to a topographic representation similar to that observed in the primary visual cortex of mammals. design of micro-circuits with specific lateral interactions will allow us to design efficient micro-circuits for the sparse representation of images.
-* Discussion on Ultra-fast vision:  existing datasets recorded in natural settings or indoor scenes with event-based cameras.
-
-
-
-## Methods
-
-### Outline of the algorithm
-
-
-
-## Learning delays
-
-### STDP
-
-[@Perrinet2002] : coherence detection
-[@Perrinet2001] : STDP
-
-
-::: {.cell .markdown nteract="{\"transient\":{\"deleting\":false}}"}
-### test notebook
-:::
-
-::: {.cell .code execution_count="1" collapsed="true" execution="{\"iopub.execute_input\":\"2021-12-02T10:36:25.737Z\",\"iopub.status.busy\":\"2021-12-02T10:36:25.734Z\",\"iopub.status.idle\":\"2021-12-02T10:36:26.390Z\",\"shell.execute_reply\":\"2021-12-02T10:36:26.395Z\"}" jupyter="{\"outputs_hidden\":false,\"source_hidden\":false}" nteract="{\"transient\":{\"deleting\":false}}"}
-``` python
-import numpy as np
-print(f'{np.pi=}')
-```
-
-::: {.output .stream .stdout}
-    np.pi=3.141592653589793
-:::
-:::
-
-::: {.cell .code collapsed="true" jupyter="{\"outputs_hidden\":false,\"source_hidden\":false}" nteract="{\"transient\":{\"deleting\":false}}"}
-``` python
-```
-:::
-
-
-
-### results on natural images
-
-in  [@natural],  we generate raster plots from natural images
-
-A natural documentary, Planet Earth with David Attenborough
-
-```
-filename = './nat_inputs/PlanetEarth.mp4'  # filename of the movie
-```
-
-
-
-## Results
+## Discussion
 
 
 ## References {.page_break_before}
