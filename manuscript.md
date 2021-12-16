@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2021-12-07'
+date-meta: '2021-12-16'
 author-meta:
 - Antoine Grimaldi
 - Laurent U Perrinet
@@ -44,8 +44,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="dc.date" content="2021-12-07" />
-  <meta name="citation_publication_date" content="2021-12-07" />
+  <meta name="dc.date" content="2021-12-16" />
+  <meta name="citation_publication_date" content="2021-12-16" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -66,9 +66,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/837b03d6fa6daf4c981e8373ac1493c84c77c7ed/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/837b03d6fa6daf4c981e8373ac1493c84c77c7ed/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/837b03d6fa6daf4c981e8373ac1493c84c77c7ed/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/425a78e6875e2f99e1af0814d96cedc638ffb23b/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/425a78e6875e2f99e1af0814d96cedc638ffb23b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/425a78e6875e2f99e1af0814d96cedc638ffb23b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -90,10 +90,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/837b03d6fa6daf4c981e8373ac1493c84c77c7ed/))
+([permalink](https://SpikeAI.github.io/polychronies/v/425a78e6875e2f99e1af0814d96cedc638ffb23b/))
 was automatically generated
-from [SpikeAI/polychronies@837b03d](https://github.com/SpikeAI/polychronies/tree/837b03d6fa6daf4c981e8373ac1493c84c77c7ed)
-on December 7, 2021.
+from [SpikeAI/polychronies@425a78e](https://github.com/SpikeAI/polychronies/tree/425a78e6875e2f99e1af0814d96cedc638ffb23b)
+on December 16, 2021.
 </em></small>
 
 ## Authors
@@ -183,6 +183,9 @@ Rapid Formation of Robust Auditory Memories: Insights from Noise [@Agus2010]
 
 
 ## Detecting patterns in raster plots
+
+In generic linear non linear lnl models, the output is assumed to be poisson As such a simple decoding strategy is to asscume it is to b inferned foran tuning curves (Jayazeri) or simply by a simple regression (Berens) This latter model aissunes a Bernouilt model for the generation of spites such that the decoding amounts to a single logistic regression.
+
 
 ### Paper by [@Grossberger2018]
 
