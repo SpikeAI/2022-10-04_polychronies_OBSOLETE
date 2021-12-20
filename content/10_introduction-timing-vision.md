@@ -14,6 +14,17 @@ While my previous expertise was based on the modeling of how SNNs process inform
 ### timing encodes profile
 
 
+#### timing in natural images
+
+in  [@natural],  we generate raster plots from natural images
+
+A natural documentary, Planet Earth with David Attenborough
+
+```
+filename = './nat_inputs/PlanetEarth.mp4'  # filename of the movie
+```
+
+####  delays
 
 Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level. I have an extensive expertise in the domain of temporal delays in the nervous system, both at the neural (Perrinet, Adams, Friston, 2012) and behavioral (Khoei et al, 2017) levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks. Our expertise in reproducing the HOTS network (Grimaldi et al, 2021: a, b) will be crucial in the swift realization of this project.
 
