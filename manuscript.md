@@ -34,7 +34,8 @@ citekey-aliases:
   Ravello2016droplets: arXiv:1611.06834
   Russo2017: doi:10.7554/eLife.19428
   Grün2002: doi:10.1162/089976602753284464
-  Torre2016: 10.1371/journal.pcbi.1004939
+  Torre2016: doi:10.1371/journal.pcbi.1004939
+  Orban2016: doi:10.1016/j.neuron.2016.09.038
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -67,9 +68,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/0e92046bb8f19ee911c4db1ec75c49321cae82c9/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/0e92046bb8f19ee911c4db1ec75c49321cae82c9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/0e92046bb8f19ee911c4db1ec75c49321cae82c9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/eb36b861e47f08bea7dcf17324a240d943b54bd2/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/eb36b861e47f08bea7dcf17324a240d943b54bd2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/eb36b861e47f08bea7dcf17324a240d943b54bd2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,9 +92,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/0e92046bb8f19ee911c4db1ec75c49321cae82c9/))
+([permalink](https://SpikeAI.github.io/polychronies/v/eb36b861e47f08bea7dcf17324a240d943b54bd2/))
 was automatically generated
-from [SpikeAI/polychronies@0e92046](https://github.com/SpikeAI/polychronies/tree/0e92046bb8f19ee911c4db1ec75c49321cae82c9)
+from [SpikeAI/polychronies@eb36b86](https://github.com/SpikeAI/polychronies/tree/eb36b861e47f08bea7dcf17324a240d943b54bd2)
 on December 20, 2021.
 </em></small>
 
@@ -278,25 +279,40 @@ The rest of this review paper is organized as follows:
 [@Perrinet2001] : STDP
 
 
-::: {.cell .markdown nteract="{\"transient\":{\"deleting\":false}}"}
-### test notebook
-:::
+### Learning sequences
 
-::: {.cell .code execution_count="1" collapsed="true" execution="{\"iopub.execute_input\":\"2021-12-02T10:36:25.737Z\",\"iopub.status.busy\":\"2021-12-02T10:36:25.734Z\",\"iopub.status.idle\":\"2021-12-02T10:36:26.390Z\",\"shell.execute_reply\":\"2021-12-02T10:36:26.395Z\"}" jupyter="{\"outputs_hidden\":false,\"source_hidden\":false}" nteract="{\"transient\":{\"deleting\":false}}"}
-``` python
-import numpy as np
-print(f'{np.pi=}')
-```
+Learning compositional sequences with multiple time scales through a hierarchical network of spiking neurons.
+Maes A, Barahona M, Clopath C.PLoS Comput Biol. 2021
 
-::: {.output .stream .stdout}
-    np.pi=3.141592653589793
-:::
-:::
+Characteristics of sequential activity in networks with temporally asymmetric Hebbian learning.
+Gillett M, Pereira U, Brunel N.Proc Natl Acad Sci U S A. 2020
 
-::: {.cell .code collapsed="true" jupyter="{\"outputs_hidden\":false,\"source_hidden\":false}" nteract="{\"transient\":{\"deleting\":false}}"}
-``` python
-```
-:::
+Unsupervised Learning of Persistent and Sequential Activity.
+Pereira U, Brunel N.Front Comput Neurosci. 2020
+
+From space to time: Spatial inhomogeneities lead to the emergence of spatiotemporal sequences in spiking neuronal networks.
+Spreizer S, Aertsen A, Kumar A.PLoS Comput Biol. 2019
+
+Fast and flexible sequence induction in spiking neural networks via rapid excitability changes.
+Pang R, Fairhall AL.Elife. 2019 May
+
+Emergence of spontaneous assembly activity in developing neural networks without afferent input.
+Triplett MA, Avitan L, Goodhill GJ.PLoS Comput Biol. 2018
+
+Training and Spontaneous Reinforcement of Neuronal Assemblies by Spike Timing Plasticity.
+Ocker GK, Doiron B.Cereb Cortex. 2019.
+
+
+
+### statistical modeling
+
+#### Neural Variability and Sampling-Based Probabilistic Representations in the Visual Cortex [@Orban2016]
+
+ * Stochastic sampling links perceptual uncertainty to neural response variability
+ * Model accounts for independent changes in strength and variability of responses
+ * Model predicts relationship between noise, signal, and spontaneous correlations
+ * Stimulus statistics dependence of response statistics is explained
+ 
 
 
 
