@@ -2,6 +2,9 @@
 
 ## Detecting patterns in raster plots
 
+In generic linear non linear lnl models, the output is assumed to be poisson As such a simple decoding strategy is to asscume it is to b inferned foran tuning curves (Jayazeri) or simply by a simple regression (Berens) This latter model aissunes a Bernouilt model for the generation of spites such that the decoding amounts to a single logistic regression.
+
+
 ### Paper by [@Grossberger2018]
 
 * Temporally ordered multi-neuron patterns likely encode information in the brain. We introduce an unsupervised method, SPOTDisClust (Spike Pattern Optimal Transport Dissimilarity Clustering), for their detection from high-dimensional neural ensembles. SPOTDisClust measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other (SPOTDis).
@@ -15,7 +18,7 @@
 * data available @ https://doi.org/10.1371/journal.pcbi.1006283.s013
 
 
-![Fig 1 of @Grossberger2018: "Simulated example illustrating the steps in SPOTDisClust. A) Structure of five “ground-truth” patterns (...). For each pattern and each neuron, a random position was chosen for the activation pulse. B) Neuronal output is generated according to an inhomogeneous Poisson process, with rates dictated by the patterns in (A)."](https://storage.googleapis.com/plos-corpus-prod/10.1371/journal.pcbi.1006283/2/pcbi.1006283.g001.PNG_L?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wombat-sa%40plos-prod.iam.gserviceaccount.com%2F20211206%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20211206T141911Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=e02aea1035ceeae4a9f78125ae56023b4175eff75b2b5ccf17df20242d3507c0ae38a4532e0d7f846545d70a69b8a9a4c7d04389aa190f71c71cdaaebe2790b4520135b30e5cfbce58cd00a1730e4c2347b01e81fbdf2ff1374cea9498c740df44087a56e7d143301656f1016432ea9cbf69b94dda26976f5db0597e10e215e340f5a59ca5fe4a33f45c8aae73b326206c97cb7a46cce97cfa0700555baa4b3925497c8a168454a49808c175015385277ea8edb794b7d7ac921c0833c27681ae9fc8301ed5e29da386fa0fc572ee490db1f5d93a938508fdcd20438c9d2bec19e64ef525471e41bbf7a1e14145f2ca8d71e02eb6c17ea681360628d563f7eee7){#fig:G2018-1 width="7in"}
+![Fig 1 of @Grossberger2018: "Simulated example illustrating the steps in SPOTDisClust. A) Structure of five “ground-truth” patterns (...). For each pattern and each neuron, a random position was chosen for the activation pulse. B) Neuronal output is generated according to an inhomogeneous Poisson process, with rates dictated by the patterns in (A)." (© Authors under a [CC licence](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006283))](images/pcbi.1006283.g001.PNG_L.png){#fig:G2018-1 width="7in"}
 
 ### Russo et al 2017 [@Russo2017]
 
