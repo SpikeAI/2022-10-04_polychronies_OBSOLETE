@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2021-12-16'
+date-meta: '2021-12-20'
 author-meta:
 - Antoine Grimaldi
 - Laurent U Perrinet
@@ -45,8 +45,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="dc.date" content="2021-12-16" />
-  <meta name="citation_publication_date" content="2021-12-16" />
+  <meta name="dc.date" content="2021-12-20" />
+  <meta name="citation_publication_date" content="2021-12-20" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/be035f7de66ad723e99015997daee04bcf6060fa/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/be035f7de66ad723e99015997daee04bcf6060fa/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/be035f7de66ad723e99015997daee04bcf6060fa/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/0e92046bb8f19ee911c4db1ec75c49321cae82c9/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/0e92046bb8f19ee911c4db1ec75c49321cae82c9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/0e92046bb8f19ee911c4db1ec75c49321cae82c9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,10 +91,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/be035f7de66ad723e99015997daee04bcf6060fa/))
+([permalink](https://SpikeAI.github.io/polychronies/v/0e92046bb8f19ee911c4db1ec75c49321cae82c9/))
 was automatically generated
-from [SpikeAI/polychronies@be035f7](https://github.com/SpikeAI/polychronies/tree/be035f7de66ad723e99015997daee04bcf6060fa)
-on December 16, 2021.
+from [SpikeAI/polychronies@0e92046](https://github.com/SpikeAI/polychronies/tree/0e92046bb8f19ee911c4db1ec75c49321cae82c9)
+on December 20, 2021.
 </em></small>
 
 ## Authors
@@ -149,6 +149,17 @@ While my previous expertise was based on the modeling of how SNNs process inform
 ### timing encodes profile
 
 
+#### timing in natural images
+
+in  [@natural],  we generate raster plots from natural images
+
+A natural documentary, Planet Earth with David Attenborough
+
+```
+filename = './nat_inputs/PlanetEarth.mp4'  # filename of the movie
+```
+
+####  delays
 
 Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level. I have an extensive expertise in the domain of temporal delays in the nervous system, both at the neural (Perrinet, Adams, Friston, 2012) and behavioral (Khoei et al, 2017) levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks. Our expertise in reproducing the HOTS network (Grimaldi et al, 2021: a, b) will be crucial in the swift realization of this project.
 
@@ -262,15 +273,6 @@ The rest of this review paper is organized as follows:
 ## Learning to detect polychronous groups
 
 ### Learning delays: STDP
-
-[@Perrinet2002] : coherence detection
-[@Perrinet2001] : STDP
-
-
-
-## Learning delays
-
-### STDP
 
 [@Perrinet2002] : coherence detection
 [@Perrinet2001] : STDP

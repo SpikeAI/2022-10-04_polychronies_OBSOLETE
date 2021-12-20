@@ -78,7 +78,7 @@ SPOTDis
 SPOTDisClust
 stationarity
 STDP
-synfire
+Synfire
 Timone
 TJ
 Université
