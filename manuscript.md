@@ -68,9 +68,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/103983c26f63915e13d160b80c62538184ac4fe1/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/103983c26f63915e13d160b80c62538184ac4fe1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/103983c26f63915e13d160b80c62538184ac4fe1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/1f8e18dc886ac9533fce49c751baaa6dd0b3033c/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/1f8e18dc886ac9533fce49c751baaa6dd0b3033c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/1f8e18dc886ac9533fce49c751baaa6dd0b3033c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,9 +92,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/103983c26f63915e13d160b80c62538184ac4fe1/))
+([permalink](https://SpikeAI.github.io/polychronies/v/1f8e18dc886ac9533fce49c751baaa6dd0b3033c/))
 was automatically generated
-from [SpikeAI/polychronies@103983c](https://github.com/SpikeAI/polychronies/tree/103983c26f63915e13d160b80c62538184ac4fe1)
+from [SpikeAI/polychronies@1f8e18d](https://github.com/SpikeAI/polychronies/tree/1f8e18dc886ac9533fce49c751baaa6dd0b3033c)
 on December 21, 2021.
 </em></small>
 
@@ -230,7 +230,7 @@ The rest of this review paper is organized as follows:
 In generic linear non linear lnl models, the output is assumed to be poisson As such a simple decoding strategy is to asscume it is to b inferned foran tuning curves (Jayazeri) or simply by a simple regression (Berens) This latter model aissunes a Bernouilt model for the generation of spites such that the decoding amounts to a single logistic regression.
 
 
-### Paper by [@Grossberger2018]
+### Paper by Grossberger, 2018 [@Grossberger2018]
 
 * Temporally ordered multi-neuron patterns likely encode information in the brain. We introduce an unsupervised method, SPOTDisClust (Spike Pattern Optimal Transport Dissimilarity Clustering), for their detection from high-dimensional neural ensembles. SPOTDisClust measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other (SPOTDis).
 * Detecting these temporal patterns represents a major methodological challenge.

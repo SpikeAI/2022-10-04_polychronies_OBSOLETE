@@ -49,7 +49,7 @@ Grimaldi
 Grossberger
 HDBSCAN
 Hebbian
-Hippocampal
+hippocampal
 Hirase
 inferned
 inhomogeneities
@@ -102,7 +102,7 @@ SPOTDisClust
 Spreizer
 stationarity
 STDP
-Synfire
+synfire
 Timone
 TJ
 Triplett

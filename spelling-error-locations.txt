@@ -80,6 +80,7 @@ content/25_raster-plots.md:5:foran
 content/25_raster-plots.md:5:inferned
 content/25_raster-plots.md:5:Jayazeri
 content/25_raster-plots.md:5:lnl
+content/25_raster-plots.md:8:Grossberger
 content/25_raster-plots.md:10:SPOTDis
 content/25_raster-plots.md:10:SPOTDisClust
 content/25_raster-plots.md:10:SPOTDisClust
