@@ -24,6 +24,8 @@ A natural documentary, Planet Earth with David Attenborough
 filename = './nat_inputs/PlanetEarth.mp4'  # filename of the movie
 ```
 
+Note also that timing is not entirely sensorial or internal but in [@doi:10.1073/pnas.1921226117], they found that "timing accuracy was improved when the environment afforded cues that rats can incorporate into motor routines. Timing, at least in animals, may thus be fundamentally embodied and situated."
+
 ####  delays
 
 Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level. I have an extensive expertise in the domain of temporal delays in the nervous system, both at the neural (Perrinet, Adams, Friston, 2012) and behavioral (Khoei et al, 2017) levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks. Our expertise in reproducing the HOTS network (Grimaldi et al, 2021: a, b) will be crucial in the swift realization of this project.
@@ -32,6 +34,7 @@ Our approach would be distinct than these approaches from us and colleagues as w
 Celebrini
 
 [4] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
+
 
 ### synfire chains
 
