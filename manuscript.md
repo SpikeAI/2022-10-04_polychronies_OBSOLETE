@@ -68,9 +68,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/1f8e18dc886ac9533fce49c751baaa6dd0b3033c/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/1f8e18dc886ac9533fce49c751baaa6dd0b3033c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/1f8e18dc886ac9533fce49c751baaa6dd0b3033c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/94e41035fe8fa220c6fa0542545eda13f4aca696/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/94e41035fe8fa220c6fa0542545eda13f4aca696/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/94e41035fe8fa220c6fa0542545eda13f4aca696/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,9 +92,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/1f8e18dc886ac9533fce49c751baaa6dd0b3033c/))
+([permalink](https://SpikeAI.github.io/polychronies/v/94e41035fe8fa220c6fa0542545eda13f4aca696/))
 was automatically generated
-from [SpikeAI/polychronies@1f8e18d](https://github.com/SpikeAI/polychronies/tree/1f8e18dc886ac9533fce49c751baaa6dd0b3033c)
+from [SpikeAI/polychronies@94e4103](https://github.com/SpikeAI/polychronies/tree/94e41035fe8fa220c6fa0542545eda13f4aca696)
 on December 21, 2021.
 </em></small>
 
@@ -322,15 +322,12 @@ Ocker GK, Doiron B.Cereb Cortex. 2019.
 
 
 
-### results on natural images
+### results on natural images / event-based cameras
 
-in  [@natural],  we generate raster plots from natural images
+#### HOTS
 
-A natural documentary, Planet Earth with David Attenborough
 
-```
-filename = './nat_inputs/PlanetEarth.mp4'  # filename of the movie
-```
+#### Grimaldi CBMI / PAMI
 
 
 

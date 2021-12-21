@@ -147,4 +147,6 @@ content/30_learning-PGs.md:28:PLoS
 content/30_learning-PGs.md:28:Triplett
 content/30_learning-PGs.md:31:Cereb
 content/30_learning-PGs.md:31:Doiron
-content/32_natural-images.md:6:Attenborough
+content/32_natural-images.md:7:CBMI
+content/32_natural-images.md:7:Grimaldi
+content/32_natural-images.md:7:PAMI

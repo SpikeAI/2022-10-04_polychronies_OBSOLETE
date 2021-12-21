@@ -15,6 +15,7 @@ Bernouilt
 Boutin
 Brunel
 Buzsaki
+CBMI
 Celebrini
 Cereb
 Clopath
@@ -79,6 +80,7 @@ Neurophysiol
 Neurosci
 Neurosciences
 neuroscientific
+PAMI
 Pereira
 Perrinet
 PLoS
