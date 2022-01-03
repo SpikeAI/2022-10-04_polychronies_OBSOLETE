@@ -104,7 +104,7 @@ SPOTDisClust
 Spreizer
 stationarity
 STDP
-Synfire
+synfire
 Timone
 TJ
 TODO

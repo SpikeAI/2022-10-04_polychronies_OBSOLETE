@@ -68,9 +68,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/905ebb8270312c72bee1955ca1ad9bdec7ca258b/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/905ebb8270312c72bee1955ca1ad9bdec7ca258b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/905ebb8270312c72bee1955ca1ad9bdec7ca258b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/88e1649ad16ee65022bf4f404c83f8efe3e03bd0/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/88e1649ad16ee65022bf4f404c83f8efe3e03bd0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/88e1649ad16ee65022bf4f404c83f8efe3e03bd0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,9 +92,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/905ebb8270312c72bee1955ca1ad9bdec7ca258b/))
+([permalink](https://SpikeAI.github.io/polychronies/v/88e1649ad16ee65022bf4f404c83f8efe3e03bd0/))
 was automatically generated
-from [SpikeAI/polychronies@905ebb8](https://github.com/SpikeAI/polychronies/tree/905ebb8270312c72bee1955ca1ad9bdec7ca258b)
+from [SpikeAI/polychronies@88e1649](https://github.com/SpikeAI/polychronies/tree/88e1649ad16ee65022bf4f404c83f8efe3e03bd0)
 on January 3, 2022.
 </em></small>
 
@@ -186,6 +186,7 @@ M. Diesmann, M. O. Gewaltig, A. Aertsen, Nature402, 529 (1999).
 
 ### cortical songs [@Ikegaya2004]
 
+* hello
 * "We find precise repetitions of spontaneous patterns of synaptic inputs in neocortical neurons in vivo and in vitro. These patterns repeat after minutes, maintaining millisecond accuracy."
 * Precisely repeating motifs of spontaneous synaptic activity in slices: duration around 1s +/- .5 s. Some events in motifs are of similar size but sometimes absent - better described by Bernouilli than SE (and covariance)
 * *in vivo*  spontaneous activity also reveals repeating sequences. About 3000 sequences, each involving 3-10 cells out of about 900, and last up to 3 seconds
