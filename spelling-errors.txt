@@ -94,7 +94,7 @@ presynaptic
 Proc
 PSCs
 pulvinar
-rastermap
+Rastermap
 Samuelides
 sensorial
 SNE
@@ -106,7 +106,7 @@ SPOTDisClust
 Spreizer
 stationarity
 STDP
-synfire
+Synfire
 Timone
 TJ
 TODO

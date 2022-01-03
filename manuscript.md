@@ -57,8 +57,6 @@ header-includes: |-
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Camille Besnainou" />
   <meta name="citation_author_institution" content="Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@WWWWWWWWWWWWW" />
   <meta name="citation_author" content="Antoine Grimaldi" />
   <meta name="citation_author_institution" content="Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
@@ -73,9 +71,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/5d480ab3636729d2717a89f5724f70af3c24dda9/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/5d480ab3636729d2717a89f5724f70af3c24dda9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/5d480ab3636729d2717a89f5724f70af3c24dda9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/1ae9869fe99ab26ecaadb441aaaa3e41a3eb4cdf/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/1ae9869fe99ab26ecaadb441aaaa3e41a3eb4cdf/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/1ae9869fe99ab26ecaadb441aaaa3e41a3eb4cdf/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -97,9 +95,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/5d480ab3636729d2717a89f5724f70af3c24dda9/))
+([permalink](https://SpikeAI.github.io/polychronies/v/1ae9869fe99ab26ecaadb441aaaa3e41a3eb4cdf/))
 was automatically generated
-from [SpikeAI/polychronies@5d480ab](https://github.com/SpikeAI/polychronies/tree/5d480ab3636729d2717a89f5724f70af3c24dda9)
+from [SpikeAI/polychronies@1ae9869](https://github.com/SpikeAI/polychronies/tree/1ae9869fe99ab26ecaadb441aaaa3e41a3eb4cdf)
 on January 3, 2022.
 </em></small>
 
@@ -108,12 +106,8 @@ on January 3, 2022.
 
 
 + **Camille Besnainou**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [camillebesnainou](https://github.com/camillebesnainou)
-    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [WWWWWWWWWWWWW](https://twitter.com/WWWWWWWWWWWWW)<br>
+    [camillebesnainou](https://github.com/camillebesnainou)<br>
   <small>
      Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
      · Funded by Grant XXXXXXXX
