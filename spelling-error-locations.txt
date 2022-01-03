@@ -60,10 +60,11 @@ content/12_introduction-cortical-songs.md:11:PSCs
 content/12_introduction-cortical-songs.md:11:vitro
 content/12_introduction-cortical-songs.md:11:vivo
 content/12_introduction-cortical-songs.md:11:vivo
-content/12_introduction-cortical-songs.md:13:KD
-content/12_introduction-cortical-songs.md:13:Luczak
-content/12_introduction-cortical-songs.md:13:Neurosci
-content/12_introduction-cortical-songs.md:16:polychronization
+content/12_introduction-cortical-songs.md:13:TODO
+content/12_introduction-cortical-songs.md:15:KD
+content/12_introduction-cortical-songs.md:15:Luczak
+content/12_introduction-cortical-songs.md:15:Neurosci
+content/12_introduction-cortical-songs.md:18:polychronization
 content/18_outline.md:6:polychronization
 content/18_outline.md:8:polychronous
 content/18_outline.md:8:pre

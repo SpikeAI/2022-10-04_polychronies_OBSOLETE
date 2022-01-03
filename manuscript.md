@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2021-12-21'
+date-meta: '2022-01-03'
 author-meta:
 - Antoine Grimaldi
 - Laurent U Perrinet
@@ -46,8 +46,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="dc.date" content="2021-12-21" />
-  <meta name="citation_publication_date" content="2021-12-21" />
+  <meta name="dc.date" content="2022-01-03" />
+  <meta name="citation_publication_date" content="2022-01-03" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -68,9 +68,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/94e41035fe8fa220c6fa0542545eda13f4aca696/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/94e41035fe8fa220c6fa0542545eda13f4aca696/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/94e41035fe8fa220c6fa0542545eda13f4aca696/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/905ebb8270312c72bee1955ca1ad9bdec7ca258b/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/905ebb8270312c72bee1955ca1ad9bdec7ca258b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/905ebb8270312c72bee1955ca1ad9bdec7ca258b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,10 +92,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/94e41035fe8fa220c6fa0542545eda13f4aca696/))
+([permalink](https://SpikeAI.github.io/polychronies/v/905ebb8270312c72bee1955ca1ad9bdec7ca258b/))
 was automatically generated
-from [SpikeAI/polychronies@94e4103](https://github.com/SpikeAI/polychronies/tree/94e41035fe8fa220c6fa0542545eda13f4aca696)
-on December 21, 2021.
+from [SpikeAI/polychronies@905ebb8](https://github.com/SpikeAI/polychronies/tree/905ebb8270312c72bee1955ca1ad9bdec7ca258b)
+on January 3, 2022.
 </em></small>
 
 ## Authors
@@ -194,6 +194,8 @@ M. Diesmann, M. O. Gewaltig, A. Aertsen, Nature402, 529 (1999).
 * in cotical songs, there is a "compressing timing" which may be taken into account by a similar mechanism as maxpooling in CNNs for space, but in time. Or there may be a mechanism for controlling the replay speed (pulvinar, ... ,  ?)
 
 ![Fig. 1. from  [@Ikegaya2004] Repeated motifs of spontaneous synaptic activity in vitro and in vivo. (A) Repeated motifs of intracellular activity from layer 5 pyramidal neurons in slices. Panels show segments (red) of the same voltage-clamp recording from the same cell repeating seconds or minutes after the initial occurrence (blue). Arrows indicate timings of repeated PSCs. (i) Upper trace: low–temporal resolution display of spontaneous activity of a neuron. Lower traces: higher resolution display of the repeated motif at indicated regions of the trace (a to c). (ii) Example of a longer motif. (B) Three repetitions of a motif. The top traces show the motifs superimposed on each other (blue, green, and red), the middle traces show these same traces individually, and the bottom traces show temporally magnified regions of the motifs (a to c). (C) Repeated sequences of intracellular current-clamp recordings in vivo. Two (i) and three (ii) repetitions of motifs are shown. Shuffle tests were performed on traces (i), a to c, yielding significantly fewer repeats (fig. S2, P < 0.02). In (i), the blue trace is shifted –2.75 mV; in (ii), the blue trace is shifted –1.58 mV, and the green +0.79 mV.](images/Ikegaya2004zse0150424620001.jpeg)
+
+### TODO read [@Luczak2015]
 
 [@Luczak2015] Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745–55.
 

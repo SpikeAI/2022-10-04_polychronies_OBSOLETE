@@ -104,9 +104,10 @@ SPOTDisClust
 Spreizer
 stationarity
 STDP
-synfire
+Synfire
 Timone
 TJ
+TODO
 Triplett
 Université
 vitro
