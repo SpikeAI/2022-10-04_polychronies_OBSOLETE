@@ -11,7 +11,7 @@
 
 <!-- usage note: edit this section. -->
 
-This manuscript reviews cureent litterature on Polychrony detection in raster plots. It is work in progress, where anybody interested can join.
+This manuscript reviews current litterature on *polychrony detection* in raster plots. It is work in progress, where anybody interested can join.
 
 ## Manubot
 
