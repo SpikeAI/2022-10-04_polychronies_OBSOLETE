@@ -71,9 +71,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/b093e979de7900799b4a9e6c9eee595e774e479a/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/b093e979de7900799b4a9e6c9eee595e774e479a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/b093e979de7900799b4a9e6c9eee595e774e479a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/4ba17d41512ea52db3cbf09a183cc62f68fa8f85/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/4ba17d41512ea52db3cbf09a183cc62f68fa8f85/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/4ba17d41512ea52db3cbf09a183cc62f68fa8f85/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/b093e979de7900799b4a9e6c9eee595e774e479a/))
+([permalink](https://SpikeAI.github.io/polychronies/v/4ba17d41512ea52db3cbf09a183cc62f68fa8f85/))
 was automatically generated
-from [SpikeAI/polychronies@b093e97](https://github.com/SpikeAI/polychronies/tree/b093e979de7900799b4a9e6c9eee595e774e479a)
+from [SpikeAI/polychronies@4ba17d4](https://github.com/SpikeAI/polychronies/tree/4ba17d41512ea52db3cbf09a183cc62f68fa8f85)
 on January 3, 2022.
 </em></small>
 
@@ -187,7 +187,7 @@ Celebrini
 
 ### synfire chains
 
-In [@Abeles1991] corticonics: The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models and synfire chains
+[@Abeles1991]: The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models and synfire chains
 
 sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet, Neuron 78.1 (2013), pp. 28-48.
 

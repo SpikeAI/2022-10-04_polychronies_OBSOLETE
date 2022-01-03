@@ -27,7 +27,6 @@ CNRS
 combinatorial
 compositional
 Comput
-corticonics
 cotical
 Csicsvari
 Czurko
@@ -93,7 +92,7 @@ Perrinet
 PGs
 PLoS
 polychronization
-polychronous
+Polychronous
 Poulet
 pre
 presynaptic

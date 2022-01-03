@@ -48,7 +48,6 @@ content/10_introduction-timing-vision.md:34:Celebrini
 content/10_introduction-timing-vision.md:36:Gollisch
 content/10_introduction-timing-vision.md:36:Meister
 content/10_introduction-timing-vision.md:39:synfire
-content/10_introduction-timing-vision.md:41:corticonics
 content/10_introduction-timing-vision.md:41:electrophysiological
 content/10_introduction-timing-vision.md:41:synfire
 content/10_introduction-timing-vision.md:43:JF
