@@ -6,6 +6,16 @@ keywords:
   - time
 lang: en-US
 authors:
+  - github: camillebesnainou
+    name: Camille Besnainou
+    initials: CB
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: WWWWWWWWWWWWW
+    email: AAAAAAAAAAAAAAAAAA
+    affiliations:
+      - Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
+    funders:
+      - Grant XXXXXXXX
   - github: XXXXXXXX
     name: Antoine Grimaldi
     initials: AG
