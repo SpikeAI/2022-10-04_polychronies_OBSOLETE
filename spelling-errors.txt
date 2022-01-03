@@ -52,7 +52,7 @@ Grimaldi
 Grossberger
 HDBSCAN
 Hebbian
-hippocampal
+Hippocampal
 Hirase
 inferned
 inhomogeneities
@@ -94,7 +94,7 @@ presynaptic
 Proc
 PSCs
 pulvinar
-Rastermap
+rastermap
 Samuelides
 sensorial
 SNE
@@ -106,7 +106,7 @@ SPOTDisClust
 Spreizer
 stationarity
 STDP
-Synfire
+synfire
 Timone
 TJ
 TODO
