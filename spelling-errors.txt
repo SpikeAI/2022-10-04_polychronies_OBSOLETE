@@ -1,4 +1,5 @@
 Acad
+activations
 Aertsen
 agglomerative
 AgileNeuroBot
@@ -26,6 +27,7 @@ CNRS
 combinatorial
 compositional
 Comput
+corticonics
 cotical
 Csicsvari
 Czurko
@@ -33,6 +35,7 @@ dataset
 datasets
 deconvolution
 deconvolved
+dendritic
 Diesmann
 dimensionality
 Doiron
@@ -59,6 +62,7 @@ inhomogeneities
 inhomogeneous
 Institut
 intracellular
+Izhikevich
 Izhikevitch
 Jayazeri
 JF
@@ -78,6 +82,7 @@ MNIST
 mV
 Nadasdy
 neocortical
+neuromorphic
 Neurophysiol
 Neurosci
 Neurosciences
@@ -85,6 +90,7 @@ neuroscientific
 PAMI
 Pereira
 Perrinet
+PGs
 PLoS
 polychronization
 polychronous
