@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-01-03'
+date-meta: '2022-01-04'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -47,8 +47,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="dc.date" content="2022-01-03" />
-  <meta name="citation_publication_date" content="2022-01-03" />
+  <meta name="dc.date" content="2022-01-04" />
+  <meta name="citation_publication_date" content="2022-01-04" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -71,9 +71,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/4ba17d41512ea52db3cbf09a183cc62f68fa8f85/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/4ba17d41512ea52db3cbf09a183cc62f68fa8f85/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/4ba17d41512ea52db3cbf09a183cc62f68fa8f85/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/1483aa5cbc849c8d41174f96b37d9e6604dbe63a/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/1483aa5cbc849c8d41174f96b37d9e6604dbe63a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/1483aa5cbc849c8d41174f96b37d9e6604dbe63a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,10 +95,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/4ba17d41512ea52db3cbf09a183cc62f68fa8f85/))
+([permalink](https://SpikeAI.github.io/polychronies/v/1483aa5cbc849c8d41174f96b37d9e6604dbe63a/))
 was automatically generated
-from [SpikeAI/polychronies@4ba17d4](https://github.com/SpikeAI/polychronies/tree/4ba17d41512ea52db3cbf09a183cc62f68fa8f85)
-on January 3, 2022.
+from [SpikeAI/polychronies@1483aa5](https://github.com/SpikeAI/polychronies/tree/1483aa5cbc849c8d41174f96b37d9e6604dbe63a)
+on January 4, 2022.
 </em></small>
 
 ## Authors
@@ -187,7 +187,7 @@ Celebrini
 
 ### synfire chains
 
-[@Abeles1991]: The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models and synfire chains
+In [@Abeles1991] corticonics: The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models and synfire chains
 
 sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet, Neuron 78.1 (2013), pp. 28-48.
 
@@ -199,7 +199,11 @@ M. Diesmann, M. O. Gewaltig, A. Aertsen, Nature402, 529 (1999).
 
 ### cortical songs [@Ikegaya2004]
 
-* hello
+* Ikegaya and colleagues worked on spontaneous activity in vitro and in vivo. They demonstated that in cortical activity, we can find a repetition of several motifs. In PSCs, but also in spike activity. These sequences repeat after minutes and have a precise spatio temporale structure with a ms precision. They can be specific of a particular layer or colomn and are synchronized with network activity oscillation. They also demonstated that these sequences can form supersequences : the cortical songs. It consist of the assemblie of several sequences which repeat in a specific order. 
+* 
+* QUESTION : sur les cells involves, je suis pas sure d'avoir bien compris, je veux pas écrire n'importe quoi 
+* QUESTION : sur le compressing timing, j'ai pas compris
+* 
 * "We find precise repetitions of spontaneous patterns of synaptic inputs in neocortical neurons in vivo and in vitro. These patterns repeat after minutes, maintaining millisecond accuracy."
 * Precisely repeating motifs of spontaneous synaptic activity in slices: duration around 1s +/- .5 s. Some events in motifs are of similar size but sometimes absent - better described by Bernouilli than SE (and covariance)
 * *in vivo*  spontaneous activity also reveals repeating sequences. About 3000 sequences, each involving 3-10 cells out of about 900, and last up to 3 seconds
