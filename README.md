@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/SpikeAI/polychronies/tree/gh-pages) branch hosts the contents of this directory at <https://SpikeAI.github.io/polychronies/>.
-The permalink for this webpage version is <https://SpikeAI.github.io/polychronies/v/1483aa5cbc849c8d41174f96b37d9e6604dbe63a/>.
+The permalink for this webpage version is <https://SpikeAI.github.io/polychronies/v/379b78f015c0012a7517810f3d73fc1cd4b231cd/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://SpikeAI.github.io/polychronies/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`1483aa5cbc849c8d41174f96b37d9e6604dbe63a`](https://github.com/SpikeAI/polychronies/commit/1483aa5cbc849c8d41174f96b37d9e6604dbe63a).
+[`379b78f015c0012a7517810f3d73fc1cd4b231cd`](https://github.com/SpikeAI/polychronies/commit/379b78f015c0012a7517810f3d73fc1cd4b231cd).
