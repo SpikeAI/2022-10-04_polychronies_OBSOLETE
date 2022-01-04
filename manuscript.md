@@ -71,9 +71,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/379b78f015c0012a7517810f3d73fc1cd4b231cd/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/379b78f015c0012a7517810f3d73fc1cd4b231cd/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/379b78f015c0012a7517810f3d73fc1cd4b231cd/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/f10bc098180169b5264bca28edef3533ddd206f0/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/f10bc098180169b5264bca28edef3533ddd206f0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/f10bc098180169b5264bca28edef3533ddd206f0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/379b78f015c0012a7517810f3d73fc1cd4b231cd/))
+([permalink](https://SpikeAI.github.io/polychronies/v/f10bc098180169b5264bca28edef3533ddd206f0/))
 was automatically generated
-from [SpikeAI/polychronies@379b78f](https://github.com/SpikeAI/polychronies/tree/379b78f015c0012a7517810f3d73fc1cd4b231cd)
+from [SpikeAI/polychronies@f10bc09](https://github.com/SpikeAI/polychronies/tree/f10bc098180169b5264bca28edef3533ddd206f0)
 on January 4, 2022.
 </em></small>
 
@@ -242,8 +242,6 @@ The rest of this review paper is organized as follows:
 ### Izhikevitch
 
 
-
-
 ## Detecting patterns in raster plots
 
 In generic linear non linear lnl models, the output is assumed to be poisson As such a simple decoding strategy is to asscume it is to b inferned foran tuning curves (Jayazeri) or simply by a simple regression (Berens) This latter model aissunes a Bernouilt model for the generation of spites such that the decoding amounts to a single logistic regression.
@@ -260,7 +258,6 @@ In generic linear non linear lnl models, the output is assumed to be poisson As 
 * only one spike per neuron: fig 1A = "For each pattern and each neuron, a random position was chosen for the activation pulse."
  * t-SNE projection with HDBSCAN labels shows that our clustering method can retrieve all patterns from the data.
 * data available @ https://doi.org/10.1371/journal.pcbi.1006283.s013
-
 
 ![Fig 1 of @Grossberger2018: "Simulated example illustrating the steps in SPOTDisClust. A) Structure of five “ground-truth” patterns (...). For each pattern and each neuron, a random position was chosen for the activation pulse. B) Neuronal output is generated according to an inhomogeneous Poisson process, with rates dictated by the patterns in (A)." (© Authors under a [CC licence](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006283))](images/pcbi.1006283.g001.PNG_L.png){#fig:G2018-1 width="7in"}
 
