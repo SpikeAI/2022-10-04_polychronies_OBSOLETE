@@ -71,9 +71,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/1483aa5cbc849c8d41174f96b37d9e6604dbe63a/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/1483aa5cbc849c8d41174f96b37d9e6604dbe63a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/1483aa5cbc849c8d41174f96b37d9e6604dbe63a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/379b78f015c0012a7517810f3d73fc1cd4b231cd/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/379b78f015c0012a7517810f3d73fc1cd4b231cd/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/379b78f015c0012a7517810f3d73fc1cd4b231cd/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/1483aa5cbc849c8d41174f96b37d9e6604dbe63a/))
+([permalink](https://SpikeAI.github.io/polychronies/v/379b78f015c0012a7517810f3d73fc1cd4b231cd/))
 was automatically generated
-from [SpikeAI/polychronies@1483aa5](https://github.com/SpikeAI/polychronies/tree/1483aa5cbc849c8d41174f96b37d9e6604dbe63a)
+from [SpikeAI/polychronies@379b78f](https://github.com/SpikeAI/polychronies/tree/379b78f015c0012a7517810f3d73fc1cd4b231cd)
 on January 4, 2022.
 </em></small>
 
@@ -199,10 +199,9 @@ M. Diesmann, M. O. Gewaltig, A. Aertsen, Nature402, 529 (1999).
 
 ### cortical songs [@Ikegaya2004]
 
-* Ikegaya and colleagues worked on spontaneous activity in vitro and in vivo. They demonstated that in cortical activity, we can find a repetition of several motifs. In PSCs, but also in spike activity. These sequences repeat after minutes and have a precise spatio temporale structure with a ms precision. They can be specific of a particular layer or colomn and are synchronized with network activity oscillation. They also demonstated that these sequences can form supersequences : the cortical songs. It consist of the assemblie of several sequences which repeat in a specific order. 
+* Ikegaya and colleagues worked on spontaneous activity in vitro and in vivo. They demonstated that in cortical activity, we can find a repetition of several motifs. In PSCs, but also in spike activity. These sequences repeat after minutes and have a precise spatio temporal structure with a ms precision. They can be specific of a particular layer or colomn, are synchronized with network activity oscillation and can involve several cells. They also demonstated that these sequences can form supersequences : the cortical songs. It consist of the assemblie of several sequences which repeat in a specific order with a compressed timing. 
 * 
-* QUESTION : sur les cells involves, je suis pas sure d'avoir bien compris, je veux pas écrire n'importe quoi 
-* QUESTION : sur le compressing timing, j'ai pas compris
+
 * 
 * "We find precise repetitions of spontaneous patterns of synaptic inputs in neocortical neurons in vivo and in vitro. These patterns repeat after minutes, maintaining millisecond accuracy."
 * Precisely repeating motifs of spontaneous synaptic activity in slices: duration around 1s +/- .5 s. Some events in motifs are of similar size but sometimes absent - better described by Bernouilli than SE (and covariance)

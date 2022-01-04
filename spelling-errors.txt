@@ -15,7 +15,6 @@ Berens
 Bernouilli
 Bernouilt
 Besnainou
-bien
 Boutin
 Brunel
 Buzsaki
@@ -29,7 +28,6 @@ CNRS
 colomn
 combinatorial
 compositional
-compris
 Comput
 corticonics
 cotical
@@ -37,7 +35,6 @@ Csicsvari
 Czurko
 dataset
 datasets
-d’avoir
 deconvolution
 deconvolved
 demonstated
@@ -45,7 +42,6 @@ dendritic
 Diesmann
 dimensionality
 Doiron
-écrire
 electrophysiological
 Elife
 Fairhall
@@ -62,7 +58,7 @@ Grimaldi
 Grossberger
 HDBSCAN
 Hebbian
-Hippocampal
+hippocampal
 Hirase
 Ikegaya
 inferned
@@ -72,9 +68,7 @@ Institut
 intracellular
 Izhikevich
 Izhikevitch
-j’ai
 Jayazeri
-je
 JF
 KD
 Khoei
@@ -97,7 +91,6 @@ Neurophysiol
 Neurosci
 Neurosciences
 neuroscientific
-n’importe
 PAMI
 Pereira
 Perrinet
@@ -111,8 +104,7 @@ presynaptic
 Proc
 PSCs
 pulvinar
-quoi
-rastermap
+Rastermap
 Samuelides
 sensorial
 SNE
@@ -125,17 +117,13 @@ SPOTDisClust
 Spreizer
 stationarity
 STDP
-suis
 supersequences
-sur
-synfire
-temporale
+Synfire
 Timone
 TJ
 TODO
 Triplett
 Université
-veux
 vitro
 vivo
 WWWWWWWWWWWWW
