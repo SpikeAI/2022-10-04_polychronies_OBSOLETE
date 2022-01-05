@@ -12,6 +12,11 @@ spike time coding in a neuron: We will describe the Spike-Time Dependent Plastic
 
 ### Learning sequences
 
+
+* in [@Agus2010], there are ‘‘good’’ and ‘‘bad’’ noises show that some patterns are more easy to disentangle - similar to bird songs and ecological niche.
+
+
+### bib
 Learning compositional sequences with multiple time scales through a hierarchical network of spiking neurons.
 Maes A, Barahona M, Clopath C.PLoS Comput Biol. 2021
 
