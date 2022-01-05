@@ -11,6 +11,11 @@ The approach which is currently most prominent in the Spiking Neural Networks co
 
 While my previous expertise was based on the modeling of how SNNs process information (Perrinet, Samuelides and Thorpe, 2004) and how these networks may be tuned in a unsupervised manner to their input (Perrinet, Samuelides and Thorpe, 2003), many different SNN architectures may provide robust solutions. Since that time, I have worked on exploring the space of all solutions which are the most efficient to solve a given problem using Bayesian methods. This culminated in defining a hierarchical model performing predictive coding (Boutin et al, 2020).  However, this network is analog and simulations perform too slowly, even on advanced GPU architectures, to be used for real life situation. We have recently developed a similar architecture but based on a SNN architecture.  In particular, this model is event-based from one end (sensory input from event-based cameras) to the other (classification) and its intermediate layers are learned in a self-supervised fashion (Grimaldi et al, 2021: a, b).
 
+### dynamical models
+
+Dumas and colleagues [@arxiv:2112.12147] : three levels
+
+
 ### timing encodes profile
 
 
@@ -44,4 +49,7 @@ sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6
 
 M. Diesmann, M. O. Gewaltig, A. Aertsen, Nature402, 529 (1999).
 
+
  * [@Bienenstock1995] : from synfire chains to Synfire braids
+
+ * recent theories of binding by synchrony : Fries 2005 trends cog neuro with spikes arriving at peak susceptibility (top of a cycle) or down, van Rullen, Laura Dugué
