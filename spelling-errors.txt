@@ -3,17 +3,14 @@ activations
 Aertsen
 agglomerative
 AgileNeuroBot
-aissunes
 Aix
 APROVIS
+apsect
 asscume
 assemblie
-Attenborough
 Avitan
 Barahona
-Berens
 Bernouilli
-Bernouilt
 Besnainou
 Boutin
 Brunel
@@ -34,7 +31,6 @@ cotical
 Csicsvari
 Czurko
 dataset
-datasets
 deconvolution
 deconvolved
 demonstated
@@ -42,13 +38,12 @@ dendritic
 Diesmann
 dimensionality
 Doiron
+Dugué
 electrophysiological
 Elife
 Fairhall
 figshare
 Fize
-foran
-Friston
 Gewaltig
 Gillett
 GJ
@@ -71,7 +66,6 @@ Izhikevitch
 Jayazeri
 JF
 KD
-Khoei
 Kloosterman
 Kumar
 laurentperrinet
@@ -86,6 +80,7 @@ MNIST
 mV
 Nadasdy
 neocortical
+neuro
 neuromorphic
 Neurophysiol
 Neurosci
@@ -105,6 +100,7 @@ Proc
 PSCs
 pulvinar
 Rastermap
+Rullen
 Samuelides
 sensorial
 SNE
@@ -118,7 +114,7 @@ Spreizer
 stationarity
 STDP
 supersequences
-Synfire
+synfire
 Timone
 TJ
 TODO

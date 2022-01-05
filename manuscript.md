@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-01-04'
+date-meta: '2022-01-05'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -47,8 +47,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="dc.date" content="2022-01-04" />
-  <meta name="citation_publication_date" content="2022-01-04" />
+  <meta name="dc.date" content="2022-01-05" />
+  <meta name="citation_publication_date" content="2022-01-05" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -71,9 +71,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/f10bc098180169b5264bca28edef3533ddd206f0/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/f10bc098180169b5264bca28edef3533ddd206f0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/f10bc098180169b5264bca28edef3533ddd206f0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/837fcef3fc9ed243ad389612cb6fbb7b8fd335b0/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/837fcef3fc9ed243ad389612cb6fbb7b8fd335b0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/837fcef3fc9ed243ad389612cb6fbb7b8fd335b0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,10 +95,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/f10bc098180169b5264bca28edef3533ddd206f0/))
+([permalink](https://SpikeAI.github.io/polychronies/v/837fcef3fc9ed243ad389612cb6fbb7b8fd335b0/))
 was automatically generated
-from [SpikeAI/polychronies@f10bc09](https://github.com/SpikeAI/polychronies/tree/f10bc098180169b5264bca28edef3533ddd206f0)
-on January 4, 2022.
+from [SpikeAI/polychronies@837fcef](https://github.com/SpikeAI/polychronies/tree/837fcef3fc9ed243ad389612cb6fbb7b8fd335b0)
+on January 5, 2022.
 </em></small>
 
 ## Authors
@@ -147,18 +147,17 @@ TODO: rewrite
 - A crucial advantage of Spiking Neural Networks (SNNs) architectures lies in its processing of temporal information. Yet, most SNNs encode the temporal signal as an analog signal and try to “cross-compile” classical Neural Network to a spiking architecture. To go beyond the state-of-the-art, we will review here on one core computation of a spiking neuron, that is, is its ability to switch from the classical integrator mode (summing analog currents on its synapses) to a synchrony detector where it emits a spike whenever presynaptic spiking inputs are synchronized. To overcome the diversity of input presynaptic patterns, we will explore different existing architectures to learn to detect stable “polychronous“ events, that is, volleys of spikes which are stable up to certain synaptic delays. These models will be compared in light of neuroscientific and computational perspectives.
 
 
-## introduction
+## introduction: precise temporal patterns in the brain
 
 ### ultra fast neural codes
 
 Most importantly, it will provide with a detection ability requiring only a few spikes, and therefore in line with the performance observed in biological systems, like the ability for humans to detect the presence of an animal in an image in a few milliseconds (Thorpe et al (1996). Speed of processing in the human visual system. Nature, 381(6582), 520-522). Such biological observations would serve as benchmarks to compare our proposed architecture  to conventional solutions.
 (1] S Thorpe, D Fize, and C Marlot, Nature 381.6582 (1996), pp.520-522.
 
-
-
 The approach which is currently most prominent in the Spiking Neural Networks community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.
 
 While my previous expertise was based on the modeling of how SNNs process information (Perrinet, Samuelides and Thorpe, 2004) and how these networks may be tuned in a unsupervised manner to their input (Perrinet, Samuelides and Thorpe, 2003), many different SNN architectures may provide robust solutions. Since that time, I have worked on exploring the space of all solutions which are the most efficient to solve a given problem using Bayesian methods. This culminated in defining a hierarchical model performing predictive coding (Boutin et al, 2020).  However, this network is analog and simulations perform too slowly, even on advanced GPU architectures, to be used for real life situation. We have recently developed a similar architecture but based on a SNN architecture.  In particular, this model is event-based from one end (sensory input from event-based cameras) to the other (classification) and its intermediate layers are learned in a self-supervised fashion (Grimaldi et al, 2021: a, b).
+
 
 ### timing encodes profile
 
@@ -167,22 +166,16 @@ While my previous expertise was based on the modeling of how SNNs process inform
 
 in  [@natural],  we generate raster plots from natural images
 
-A natural documentary, Planet Earth with David Attenborough
-
-```
-filename = './nat_inputs/PlanetEarth.mp4'  # filename of the movie
-```
-
 Note also that timing is not entirely sensorial or internal but in [@doi:10.1073/pnas.1921226117], they found that "timing accuracy was improved when the environment afforded cues that rats can incorporate into motor routines. Timing, at least in animals, may thus be fundamentally embodied and situated."
 
 ####  delays
 
-Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level. I have an extensive expertise in the domain of temporal delays in the nervous system, both at the neural (Perrinet, Adams, Friston, 2012) and behavioral (Khoei et al, 2017) levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks. Our expertise in reproducing the HOTS network (Grimaldi et al, 2021: a, b) will be crucial in the swift realization of this project.
+Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level. I have an extensive expertise in the domain of temporal delays in the nervous system, both at the neural [@doi:10.1007/s00422-014-0620-8] and behavioral [@doi:10.1371/journal.pcbi.1005068] levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks. Our expertise in reproducing the HOTS network [@doi:10.1109/CBMI50038.2021.9461901,@doi:Grimaldi2022pami] will be crucial in the swift realization of this project.
 
 
-Celebrini
+Celebrini [@doi:10/dqt5cm]
 
-[4] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
+[@doi:10.1016/j.neuron.2009.12.009, doi:10.1126/science.1149639] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
 
 
 ### synfire chains
@@ -193,16 +186,18 @@ sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6
 
 M. Diesmann, M. O. Gewaltig, A. Aertsen, Nature402, 529 (1999).
 
+
  * [@Bienenstock1995] : from synfire chains to Synfire braids
+
+ * recent theories of binding by synchrony : Fries 2005 trends cog neuro with spikes arriving at peak susceptibility (top of a cycle) or down, van Rullen, Laura Dugué
 
 
 
 ### cortical songs [@Ikegaya2004]
 
-* Ikegaya and colleagues worked on spontaneous activity in vitro and in vivo. They demonstated that in cortical activity, we can find a repetition of several motifs. In PSCs, but also in spike activity. These sequences repeat after minutes and have a precise spatio temporal structure with a ms precision. They can be specific of a particular layer or colomn, are synchronized with network activity oscillation and can involve several cells. They also demonstated that these sequences can form supersequences : the cortical songs. It consist of the assemblie of several sequences which repeat in a specific order with a compressed timing. 
-* 
+* Ikegaya and colleagues worked on spontaneous activity in vitro and in vivo. They demonstated that in cortical activity, we can find a repetition of several motifs. In PSCs, but also in spike activity. These sequences repeat after minutes and have a precise spatio temporal structure with a ms precision. They can be specific of a particular layer or colomn, are synchronized with network activity oscillation and can involve several cells. They also demonstated that these sequences can form supersequences : the cortical songs. It consist of the assemblie of several sequences which repeat in a specific order with a compressed timing.
+*
 
-* 
 * "We find precise repetitions of spontaneous patterns of synaptic inputs in neocortical neurons in vivo and in vitro. These patterns repeat after minutes, maintaining millisecond accuracy."
 * Precisely repeating motifs of spontaneous synaptic activity in slices: duration around 1s +/- .5 s. Some events in motifs are of similar size but sometimes absent - better described by Bernouilli than SE (and covariance)
 * *in vivo*  spontaneous activity also reveals repeating sequences. About 3000 sequences, each involving 3-10 cells out of about 900, and last up to 3 seconds
@@ -225,49 +220,33 @@ Rapid Formation of Robust Auditory Memories: Insights from Noise [@Agus2010]
 
 ### outline
 
-The rest of this review paper is organized as follows:
+This section has provided evidence that polychronous groups are an important apsect of information representation in biology with important application in data analysis and neuromorphic engineering. The rest of this review paper is organized as follows.
 
-* polychronization
+First, we will review models for the detection of polychronous groups:
 
-* We review theoretical foundations of spike time coding in a neuron: We will describe the Spike-Time Dependent Plasticity (STDP) rule which implement an unsupervised learning aiming at optimizing the detection of polychronous patterns, that is volleys of spikes which are synchronized, up to some stable pattern of pre-synaptic delays. This STDP rule will be based by the inversion of the generative model for spike formation and will therefore be derived by a Bayesian approach. This will decouple the active synapses (similarly to a logistic regression) from the values of possible synaptic delays.
+* We review theoretical and computational foundations of PG detection in models.
 
 * Application to Image processing using sparse spiking representations: Using the core computational unit defined, extension of the computation to a topographic representation similar to that observed in the primary visual cortex of mammals. design of micro-circuits with specific lateral interactions will allow us to design efficient micro-circuits for the sparse representation of images.
 
-* Discussion on Ultra-fast vision:  existing datasets recorded in natural settings or indoor scenes with event-based cameras.
+Finally we will discuss future avenues for effective PG detection and learning in event streams.
 
 
 
-## Models of polychronization
+## Models of polychronization detection in models
 
 ### Izhikevitch
 
 
-## Detecting patterns in raster plots
-
-In generic linear non linear lnl models, the output is assumed to be poisson As such a simple decoding strategy is to asscume it is to b inferned foran tuning curves (Jayazeri) or simply by a simple regression (Berens) This latter model aissunes a Bernouilt model for the generation of spites such that the decoding amounts to a single logistic regression.
+### spike distances
 
 
-### Paper by Grossberger, 2018 [@Grossberger2018]
+## Detecting patterns in biological raster plots
 
-* Temporally ordered multi-neuron patterns likely encode information in the brain. We introduce an unsupervised method, SPOTDisClust (Spike Pattern Optimal Transport Dissimilarity Clustering), for their detection from high-dimensional neural ensembles. SPOTDisClust measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other (SPOTDis).
-* Detecting these temporal patterns represents a major methodological challenge.
-* Many approaches to this problem are supervised, that is, they take patterns occurring concurrently with a known event, such as the delivery of a stimulus for sensory neurons or the traversal of a running track for hippocampal place fields, as a “template” and then search for repetitions of the same template in spiking activity :
- * Nadasdy Z, Hirase H, Czurko A, Csicsvari J, Buzsaki G. Replay and time compression of recurring spike sequences in the hippocampus. J Neurosci. 1999;19(21):9497–507. pmid:10531452
- * Lee AK, Wilson MA. A combinatorial method for analyzing sequential firing patterns involving an arbitrary number of neurons based on relative time order. J Neurophysiol. 2004;92(4):2555–73. pmid:15212425
- * Davidson TJ, Kloosterman F, Wilson MA. Hippocampal replay of extended experience. Neuron. 2009;63(4):497–507. pmid:19709631
-* only one spike per neuron: fig 1A = "For each pattern and each neuron, a random position was chosen for the activation pulse."
- * t-SNE projection with HDBSCAN labels shows that our clustering method can retrieve all patterns from the data.
-* data available @ https://doi.org/10.1371/journal.pcbi.1006283.s013
+### decoding neural activity
 
-![Fig 1 of @Grossberger2018: "Simulated example illustrating the steps in SPOTDisClust. A) Structure of five “ground-truth” patterns (...). For each pattern and each neuron, a random position was chosen for the activation pulse. B) Neuronal output is generated according to an inhomogeneous Poisson process, with rates dictated by the patterns in (A)." (© Authors under a [CC licence](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006283))](images/pcbi.1006283.g001.PNG_L.png){#fig:G2018-1 width="7in"}
+In generic linear non linear lnl models, the output is assumed to be poisson. As such a simple decoding strategy is to asscume it is to b inferned for a given tuning curves (Jayazeri) or simply by a simple regression [@doi:10.1523/jneurosci.1335-12.2012]. This latter model assumes a Bernoulli model for the generation of spikes such that the decoding amounts to a single-layer logistic regression.
 
-### Russo et al 2017 [@Russo2017]
-
-* "Here we present such a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization. " by @Russo2017
-* sliding window as in [@Grün2002] ("Numerous other statistical procedures for detecting assemblies or sequential patterns have been proposed previously") - extended to multiple lags [@Torre2016]
-* based on a "non-stationarity-corrected parametric test statistic for assessing the independence of pairs" and "an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies"
-
-### Rastermap
+### Rastermap : decoding large-scale data
 
 * https://www.janelia.org/lab/stringer-lab
 * described in [@Pachitariu2018]
@@ -287,15 +266,49 @@ In generic linear non linear lnl models, the output is assumed to be poisson As 
 
 * see also the work showing that you can encode very precise orientation information by using many neurons: [@Stringer2021]
 
+
+### detecting structured temporal patterns
+#### Paper by Grossberger, 2018 [@Grossberger2018]
+
+* Temporally ordered multi-neuron patterns likely encode information in the brain. We introduce an unsupervised method, SPOTDisClust (Spike Pattern Optimal Transport Dissimilarity Clustering), for their detection from high-dimensional neural ensembles. SPOTDisClust measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other (SPOTDis).
+* Detecting these temporal patterns represents a major methodological challenge.
+* Many approaches to this problem are supervised, that is, they take patterns occurring concurrently with a known event, such as the delivery of a stimulus for sensory neurons or the traversal of a running track for hippocampal place fields, as a “template” and then search for repetitions of the same template in spiking activity :
+ * Nadasdy Z, Hirase H, Czurko A, Csicsvari J, Buzsaki G. Replay and time compression of recurring spike sequences in the hippocampus. J Neurosci. 1999;19(21):9497–507. pmid:10531452
+ * Lee AK, Wilson MA. A combinatorial method for analyzing sequential firing patterns involving an arbitrary number of neurons based on relative time order. J Neurophysiol. 2004;92(4):2555–73. pmid:15212425
+ * Davidson TJ, Kloosterman F, Wilson MA. Hippocampal replay of extended experience. Neuron. 2009;63(4):497–507. pmid:19709631
+* only one spike per neuron: fig 1A = "For each pattern and each neuron, a random position was chosen for the activation pulse."
+ * t-SNE projection with HDBSCAN labels shows that our clustering method can retrieve all patterns from the data.
+* data available @ https://doi.org/10.1371/journal.pcbi.1006283.s013
+
+![Fig 1 of @Grossberger2018: "Simulated example illustrating the steps in SPOTDisClust. A) Structure of five “ground-truth” patterns (...). For each pattern and each neuron, a random position was chosen for the activation pulse. B) Neuronal output is generated according to an inhomogeneous Poisson process, with rates dictated by the patterns in (A)." (© Authors under a [CC licence](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006283))](images/pcbi.1006283.g001.PNG_L.png){#fig:G2018-1 width="7in"}
+
+#### Paper by Russo et al 2017 [@Russo2017]
+
+* "Here we present such a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization. " by @Russo2017
+* sliding window as in [@Grün2002] ("Numerous other statistical procedures for detecting assemblies or sequential patterns have been proposed previously") - extended to multiple lags [@Torre2016]
+* based on a "non-stationarity-corrected parametric test statistic for assessing the independence of pairs" and "an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies"
+
+
 #### Paper by [@Moser2014]
 
 On Stability of Distance Measures for Event Sequences Induced by Level-Crossing Sampling
+
+
+#### Neural Variability and Sampling-Based Probabilistic Representations in the Visual Cortex [@Orban2016]
+
+ * Stochastic sampling links perceptual uncertainty to neural response variability
+ * Model accounts for independent changes in strength and variability of responses
+ * Model predicts relationship between noise, signal, and spontaneous correlations
+ * Stimulus statistics dependence of response statistics is explained
 
 
 
 ## Learning to detect polychronous groups
 
 ### Learning delays: STDP
+
+spike time coding in a neuron: We will describe the Spike-Time Dependent Plasticity (STDP) rule which implement an unsupervised learning aiming at optimizing the detection of polychronous patterns, that is volleys of spikes which are synchronized, up to some stable pattern of pre-synaptic delays. This STDP rule will be based by the inversion of the generative model for spike formation and will therefore be derived by a Bayesian approach. This will decouple the active synapses (similarly to a logistic regression) from the values of possible synaptic delays.
+
 
 [@Perrinet2002] : coherence detection
 [@Perrinet2001] : STDP
@@ -326,19 +339,11 @@ Ocker GK, Doiron B.Cereb Cortex. 2019.
 
 
 
-### statistical modeling
-
-#### Neural Variability and Sampling-Based Probabilistic Representations in the Visual Cortex [@Orban2016]
-
- * Stochastic sampling links perceptual uncertainty to neural response variability
- * Model accounts for independent changes in strength and variability of responses
- * Model predicts relationship between noise, signal, and spontaneous correlations
- * Stimulus statistics dependence of response statistics is explained
- 
+### learning pattern detection on natural images / event-based cameras
 
 
+#### sparse coding on spatio-temporal data
 
-### results on natural images / event-based cameras
 
 #### HOTS
 
@@ -348,6 +353,12 @@ Ocker GK, Doiron B.Cereb Cortex. 2019.
 
 
 ## Discussion
+
+
+
+### dynamical models
+
+Dumas and colleagues [@arxiv:2112.12147] : three levels / fourth paradigm [@doi:10.1109/JPROC.2011.2155130] i.e., data exploration in which the scientific models are fit to the data by learning algorithms.
 
 
 ## References {.page_break_before}
