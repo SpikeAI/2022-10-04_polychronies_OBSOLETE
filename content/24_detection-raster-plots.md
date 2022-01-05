@@ -1,4 +1,4 @@
-## Detecting patterns in raster plots
+## Detecting patterns in biological raster plots
 
 In generic linear non linear lnl models, the output is assumed to be poisson As such a simple decoding strategy is to asscume it is to b inferned foran tuning curves (Jayazeri) or simply by a simple regression (Berens) This latter model aissunes a Bernouilt model for the generation of spites such that the decoding amounts to a single logistic regression.
 

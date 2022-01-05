@@ -1,4 +1,0 @@
-
-## Models of polychronization
-
-### Izhikevitch
