@@ -7,7 +7,6 @@ Aix
 APROVIS
 apsect
 asscume
-assemblie
 Avitan
 Barahona
 Bernouilli
@@ -92,14 +91,15 @@ Perrinet
 PGs
 PLoS
 polychronization
-polychronous
+Polychronous
 Poulet
 pre
 presynaptic
 Proc
 PSCs
 pulvinar
-Rastermap
+rastermap
+RefRN
 Rullen
 Samuelides
 sensorial
@@ -122,6 +122,7 @@ Triplett
 Université
 vitro
 vivo
+waveforms
 WWWWWWWWWWWWW
 XXXX
 XXXXXXXX
