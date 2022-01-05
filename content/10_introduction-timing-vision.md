@@ -1,4 +1,4 @@
-## introduction
+## introduction: precise temporal patterns in the brain
 
 ### ultra fast neural codes
 
