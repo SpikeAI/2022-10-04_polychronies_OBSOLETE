@@ -37,6 +37,7 @@ citekey-aliases:
   Grün2002: doi:10.1162/089976602753284464
   Torre2016: doi:10.1371/journal.pcbi.1004939
   Orban2016: doi:10.1016/j.neuron.2016.09.038
+  Gollish2008: doi:10.1016/j.neuron.2010.04.014
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -71,9 +72,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/871b5e5203bf86e4c5c9775678d28f23abd21730/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/871b5e5203bf86e4c5c9775678d28f23abd21730/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/871b5e5203bf86e4c5c9775678d28f23abd21730/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/a77e8f96e3b18d304167df1bdd99662a078c52c5/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a77e8f96e3b18d304167df1bdd99662a078c52c5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a77e8f96e3b18d304167df1bdd99662a078c52c5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +96,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/871b5e5203bf86e4c5c9775678d28f23abd21730/))
+([permalink](https://SpikeAI.github.io/polychronies/v/a77e8f96e3b18d304167df1bdd99662a078c52c5/))
 was automatically generated
-from [SpikeAI/polychronies@871b5e5](https://github.com/SpikeAI/polychronies/tree/871b5e5203bf86e4c5c9775678d28f23abd21730)
+from [SpikeAI/polychronies@a77e8f9](https://github.com/SpikeAI/polychronies/tree/a77e8f96e3b18d304167df1bdd99662a078c52c5)
 on January 6, 2022.
 </em></small>
 
