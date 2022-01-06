@@ -1,17 +1,18 @@
-# Automated scholarly manuscripts on GitHub
+# Review on Polychrony detection in biological and artificial raster plots
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://SpikeAI.github.io/polychronies/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://SpikeAI.github.io/polychronies/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/SpikeAI/polychronies/workflows/Manubot/badge.svg)](https://github.com/SpikeAI/polychronies/actions)
+
 <!-- usage note: delete CI badges above for services not used by your manuscript -->
 
 ## Manuscript description
 
 <!-- usage note: edit this section. -->
 
-This manuscript reviews current litterature on *polychrony detection* in raster plots. It is work in progress, where anybody interested can join.
+This manuscript reviews current litterature on *polychrony detection* in raster plots. It is work in progress, where anybody interested can *openly* join.
 
 ## Manubot
 
