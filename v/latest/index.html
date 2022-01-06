@@ -73,9 +73,9 @@
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/957ca7bbae043b14151e194340eeec1b1200dc28/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/957ca7bbae043b14151e194340eeec1b1200dc28/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/957ca7bbae043b14151e194340eeec1b1200dc28/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/254266f8640495a44bd01df76073b7987c5e955b/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/254266f8640495a44bd01df76073b7987c5e955b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/254266f8640495a44bd01df76073b7987c5e955b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -89,9 +89,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://SpikeAI.github.io/polychronies/v/957ca7bbae043b14151e194340eeec1b1200dc28/">permalink</a>)
+(<a href="https://SpikeAI.github.io/polychronies/v/254266f8640495a44bd01df76073b7987c5e955b/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/SpikeAI/polychronies/tree/957ca7bbae043b14151e194340eeec1b1200dc28">SpikeAI/polychronies@957ca7b</a>
+from <a href="https://github.com/SpikeAI/polychronies/tree/254266f8640495a44bd01df76073b7987c5e955b">SpikeAI/polychronies@254266f</a>
 on January 6, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -238,15 +238,23 @@ Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
 <li>Stimulus statistics dependence of response statistics is explained</li>
 </ul>
 <h2 id="learning-to-detect-polychronous-groups">Learning to detect polychronous groups</h2>
-<h3 id="learning-delays-stdp">Learning delays: STDP</h3>
+<h3 id="learning-weights-and-delays">Learning weights … and delays</h3>
 <p>spike time coding in a neuron: We will describe the Spike-Time Dependent Plasticity (STDP) <span class="citation" data-cites="19NyVq80B">[<a href="#ref-19NyVq80B" role="doc-biblioref">24</a>]</span> rule which implement an unsupervised learning aiming at optimizing the detection of polychronous patterns, that is volleys of spikes which are synchronized, up to some stable pattern of pre-synaptic delays. This STDP rule will be based by the inversion of the generative model for spike formation and will therefore be derived by a Bayesian approach. This will decouple the active synapses (similarly to a logistic regression) from the values of possible synaptic delays.</p>
 <p><span class="citation" data-cites="11p3NXmkg">[<a href="#ref-11p3NXmkg" role="doc-biblioref">25</a>]</span> : coherence detection
 <span class="citation" data-cites="j5xS3owo">[<a href="#ref-j5xS3owo" role="doc-biblioref">26</a>]</span> : STDP</p>
 <h3 id="learning-sequences">Learning sequences</h3>
 <ul>
-<li>in <span class="citation" data-cites="Jzr1gwsr">[<a href="#ref-Jzr1gwsr" role="doc-biblioref">12</a>]</span>, there are ‘‘good’’ and ‘‘bad’’ noises show that some patterns are more easy to disentangle - similar to bird songs and ecological niche.</li>
+<li><p>in <span class="citation" data-cites="Jzr1gwsr">[<a href="#ref-Jzr1gwsr" role="doc-biblioref">12</a>]</span>, there are ‘‘good’’ and ‘‘bad’’ noises show that some patterns are more easy to disentangle - similar to bird songs and ecological niche.</p></li>
+<li><p>In Bellec <span class="citation" data-cites="aj6TgorR">[<a href="#ref-aj6TgorR" role="doc-biblioref">27</a>]</span>, authors fit summary statistics of neural data with a differentiable spiking network simulator.</p>
+<ul>
+<li>the loss function is the cross entropy (following Bernouilli hypothesis with a GLM where each unit is modelled with a SRM neuron <span class="citation" data-cites="14e3BCBii">[<a href="#ref-14e3BCBii" role="doc-biblioref">28</a>]</span> with recurrent dynamics)</li>
+<li>sample and measure method to include latent / hidden neurons</li>
+<li>comes with code https://github.com/EPFL-LCN/pub-bellec-wang-2021-sample-and-measure</li>
+<li>V1-dataset : The dataset we used was collected by Smith and Kohn [49] and is publicly available at:
+http://crcns.org/data-sets/vc/pvc-11 - it is in a sense supervised with the input being the movie and the output the spikes recorded.</li>
+</ul></li>
 </ul>
-<h3 id="bib">bib</h3>
+<h3 id="todo-more-bib-to-read">TODO: more bib to read</h3>
 <p>Learning compositional sequences with multiple time scales through a hierarchical network of spiking neurons.
 Maes A, Barahona M, Clopath C.PLoS Comput Biol. 2021</p>
 <p>Characteristics of sequential activity in networks with temporally asymmetric Hebbian learning.
@@ -267,7 +275,7 @@ Ocker GK, Doiron B.Cereb Cortex. 2019.</p>
 <h4 id="grimaldi-cbmi-pami">Grimaldi CBMI / PAMI</h4>
 <h2 id="discussion">Discussion</h2>
 <h3 id="dynamical-models">dynamical models</h3>
-<p>Dumas and colleagues <span class="citation" data-cites="WxQdcMB2">[<a href="#ref-WxQdcMB2" role="doc-biblioref">27</a>]</span> : three levels / fourth paradigm <span class="citation" data-cites="JrZPoxk9">[<a href="#ref-JrZPoxk9" role="doc-biblioref">28</a>]</span> i.e., data exploration in which the scientific models are fit to the data by learning algorithms.</p>
+<p>Dumas and colleagues <span class="citation" data-cites="WxQdcMB2">[<a href="#ref-WxQdcMB2" role="doc-biblioref">29</a>]</span> : three levels / fourth paradigm <span class="citation" data-cites="JrZPoxk9">[<a href="#ref-JrZPoxk9" role="doc-biblioref">30</a>]</span> i.e., data exploration in which the scientific models are fit to the data by learning algorithms.</p>
 <h3 id="our-model">our model</h3>
 <p>Here, we develop a model for the efficient detection of such PGs based on the inversion of a probabilistic model defining the generation of the raster plot as a combination of such groups. We show that such an inference can be achieved by a neural-like computation that could itself be used as a spiking neuron, as can be implemented in a neuromorphic chip for instance. A first result is to show the efficiency of such a scheme in detecting different PGs occurring at specific times in synthetic data. The representational capacity of the PGs is particularly interesting compared to traditional models of neuronal encoding using spiking frequency. Our second result is to propose a novel learning method for learning PGs in raster plots in a self-supervised manner. Finally we demonstrate the use of this algorithm to the output of an event-based camera and how this may separate independent components from the stream of events. This end-to-end event-based computational brick could help improve the performance of current Spiking Neural Network solution currently used in neuromorphic chips.</p>
 <h2 class="page_break_before" id="references">References</h2>
@@ -351,11 +359,17 @@ Ocker GK, Doiron B.Cereb Cortex. 2019.</p>
 <div id="ref-j5xS3owo" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>Networks of integrate-and-fire neuron using rank order coding A: How to implement spike time dependent Hebbian plasticity</strong> <div class="csl-block">L Perrinet, A Delorme, M Samuelides, SJ Thorpe</div> <em>Neurocomputing</em> (2001-06) <a href="https://doi.org/d5p6b2">https://doi.org/d5p6b2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/s0925-2312(01)00460-x">10.1016/s0925-2312(01)00460-x</a></div></div>
 </div>
+<div id="ref-aj6TgorR" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>Fitting summary statistics of neural data with a differentiable spiking network simulator</strong> <div class="csl-block">Guillaume Bellec, Shuqi Wang, Alireza Modirshanechi, Johanni Brea, Wulfram Gerstner</div> <em>arXiv</em> (2021-11-16) <a href="https://arxiv.org/abs/2106.10064">https://arxiv.org/abs/2106.10064</a></div>
+</div>
+<div id="ref-14e3BCBii" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>Time structure of the activity in neural network models</strong> <div class="csl-block">Wulfram Gerstner</div> <em>Physical Review E</em> (1995-01-01) <a href="https://doi.org/cwcn9d">https://doi.org/cwcn9d</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1103/physreve.51.738">10.1103/physreve.51.738</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/9962697">9962697</a></div></div>
+</div>
 <div id="ref-WxQdcMB2" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>Generative Models of Brain Dynamics -- A review</strong> <div class="csl-block">Mahta Ramezanian Panahi, Germán Abrevaya, Jean-Christophe Gagnon-Audet, Vikram Voleti, Irina Rish, Guillaume Dumas</div> <em>arXiv</em> (2021-12-24) <a href="https://arxiv.org/abs/2112.12147">https://arxiv.org/abs/2112.12147</a></div>
+<div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>Generative Models of Brain Dynamics -- A review</strong> <div class="csl-block">Mahta Ramezanian Panahi, Germán Abrevaya, Jean-Christophe Gagnon-Audet, Vikram Voleti, Irina Rish, Guillaume Dumas</div> <em>arXiv</em> (2021-12-24) <a href="https://arxiv.org/abs/2112.12147">https://arxiv.org/abs/2112.12147</a></div>
 </div>
 <div id="ref-JrZPoxk9" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>The Fourth Paradigm: Data-Intensive Scientific Discovery [Point of View]</strong> <div class="csl-block">Kristin M Tolle, DStewart W Tansley, Anthony JG Hey</div> <em>Proceedings of the IEEE</em> (2011-08) <a href="https://doi.org/dfggjc">https://doi.org/dfggjc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/jproc.2011.2155130">10.1109/jproc.2011.2155130</a></div></div>
+<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>The Fourth Paradigm: Data-Intensive Scientific Discovery [Point of View]</strong> <div class="csl-block">Kristin M Tolle, DStewart W Tansley, Anthony JG Hey</div> <em>Proceedings of the IEEE</em> (2011-08) <a href="https://doi.org/dfggjc">https://doi.org/dfggjc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/jproc.2011.2155130">10.1109/jproc.2011.2155130</a></div></div>
 </div>
 </div>
 <!-- default theme -->
