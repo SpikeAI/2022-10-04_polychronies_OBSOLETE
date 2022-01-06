@@ -54,7 +54,7 @@ Grimaldi
 Grossberger
 HDBSCAN
 Hebbian
-Hippocampal
+hippocampal
 Hirase
 Ikegaya
 inferned
@@ -95,7 +95,7 @@ Perrinet
 PGs
 PLoS
 polychronization
-Polychronous
+polychronous
 polychrony
 Poulet
 pre
@@ -103,7 +103,7 @@ presynaptic
 Proc
 PSCs
 pulvinar
-Rastermap
+rastermap
 RefRN
 Rullen
 Samuelides
@@ -121,7 +121,7 @@ SRM
 stationarity
 STDP
 supersequences
-Synfire
+synfire
 Timone
 TJ
 TODO
