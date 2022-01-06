@@ -69,7 +69,6 @@ Kloosterman
 Kumar
 laurentperrinet
 litterature
-lmearning
 lnl
 Luczak
 Maes
@@ -87,13 +86,13 @@ Neurophysiol
 Neurosci
 Neurosciences
 neuroscientific
-pami
+PAMI
 Pereira
 Perrinet
 PGs
 PLoS
 polychronization
-Polychronous
+polychronous
 polychrony
 Poulet
 pre
@@ -101,7 +100,7 @@ presynaptic
 Proc
 PSCs
 pulvinar
-Rastermap
+rastermap
 RefRN
 Rullen
 Samuelides

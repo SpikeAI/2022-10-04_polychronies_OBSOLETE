@@ -5,7 +5,6 @@ content/01_abstract.md:5:Izhikevich
 content/01_abstract.md:5:litterature
 content/01_abstract.md:5:polychronous
 content/01_abstract.md:5:polychrony
-content/01_abstract.md:7:lmearning
 content/01_abstract.md:7:polychronous
 content/01_abstract.md:7:polychrony
 content/10_introduction-timing-vision.md:6:Fize

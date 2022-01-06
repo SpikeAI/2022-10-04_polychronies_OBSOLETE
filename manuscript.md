@@ -71,9 +71,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/a42922120197e9aa6cfc1e55eeb12276ba2a8bf3/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a42922120197e9aa6cfc1e55eeb12276ba2a8bf3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a42922120197e9aa6cfc1e55eeb12276ba2a8bf3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/957ca7bbae043b14151e194340eeec1b1200dc28/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/957ca7bbae043b14151e194340eeec1b1200dc28/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/957ca7bbae043b14151e194340eeec1b1200dc28/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/a42922120197e9aa6cfc1e55eeb12276ba2a8bf3/))
+([permalink](https://SpikeAI.github.io/polychronies/v/957ca7bbae043b14151e194340eeec1b1200dc28/))
 was automatically generated
-from [SpikeAI/polychronies@a429221](https://github.com/SpikeAI/polychronies/tree/a42922120197e9aa6cfc1e55eeb12276ba2a8bf3)
+from [SpikeAI/polychronies@957ca7b](https://github.com/SpikeAI/polychronies/tree/957ca7bbae043b14151e194340eeec1b1200dc28)
 on January 6, 2022.
 </em></small>
 
@@ -146,7 +146,7 @@ The response of a biological neuron depends largely on the precise timing of the
 
 We will define the motifs of precise temporal patterns as polychronous groups following the  model of Izhikevich (2006). This manuscript reviews current litterature on *polychrony detection* in raster plots. It is work in progress, where anybody interested can *openly* join.
 
-We will first review some biological and theoretical evidence for polychrony in the neural information processing. We will then review some models for the detection of such polychronous groups in arbitrary raster plots, synthetic, biological or artificial (notably from event-based cameras). Then, we will try to outline some possible strategies for lmearning these patterns and finally discuss possible perspectives.
+We will first review some biological and theoretical evidence for polychrony in the neural information processing. We will then review some models for the detection of such polychronous groups in arbitrary raster plots, synthetic, biological or artificial (notably from event-based cameras). Then, we will try to outline some possible strategies for learning these patterns and finally discuss possible perspectives.
 
 
 ## introduction: precise temporal patterns in the brain
