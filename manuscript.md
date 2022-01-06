@@ -71,9 +71,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/6d182a2e89c80f12b96c25805aec5d0cf038807e/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/6d182a2e89c80f12b96c25805aec5d0cf038807e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/6d182a2e89c80f12b96c25805aec5d0cf038807e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/af0e37cc376b877e59fa1ea3e399c516b69bd3a6/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/af0e37cc376b877e59fa1ea3e399c516b69bd3a6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/af0e37cc376b877e59fa1ea3e399c516b69bd3a6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/6d182a2e89c80f12b96c25805aec5d0cf038807e/))
+([permalink](https://SpikeAI.github.io/polychronies/v/af0e37cc376b877e59fa1ea3e399c516b69bd3a6/))
 was automatically generated
-from [SpikeAI/polychronies@6d182a2](https://github.com/SpikeAI/polychronies/tree/6d182a2e89c80f12b96c25805aec5d0cf038807e)
+from [SpikeAI/polychronies@af0e37c](https://github.com/SpikeAI/polychronies/tree/af0e37cc376b877e59fa1ea3e399c516b69bd3a6)
 on January 6, 2022.
 </em></small>
 
@@ -294,7 +294,7 @@ In generic linear non linear lnl models, the output is assumed to be poisson. As
 
 * "However, SPOTDis has two principal weaknesses that we address here: (1) Its computational complexity, for comparing two time epochs, is O(N2), where N is the number of neurons. This becomes a major problem for computing an MM dissimilarity matrix (for M time epochs) for thousands of neurons. (2) It relies exclusively on pairwise spike-timing relationships (i.e 2nd order correlations), because it does not solve the optimal transport problem for the entire spike pattern, but only for neuron pairs separately. Hence, it may not be sensitive to higher-order correlations in spiking
 patterns.
-Here, we develop a novel dissimilarity measure for multi-neuron spiking patterns called SpikeShip, which has linear computational complexity of O(N). We achieve this by (1) computing the minimum transport cost of spikes for each spike train separately, and (2) discounting a global translation term in the transport flow across neurons
+Here, we develop a novel dissimilarity measure for multi-neuron spiking patterns called SpikeShip, which has linear computational complexity of O(N). We achieve this by (1) computing the minimum transport cost of spikes for each spike train separately, and (2) discounting a global translation term in the transport flow across neurons."
 https://doi.org/10.1101/2020.06.03.131573; 
 
 #### Paper by Russo et al 2017 [@Russo2017]

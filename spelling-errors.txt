@@ -89,13 +89,13 @@ Neurophysiol
 Neurosci
 Neurosciences
 neuroscientific
-pami
+PAMI
 Pereira
 Perrinet
 PGs
 PLoS
 polychronization
-Polychronous
+polychronous
 polychrony
 Poulet
 pre
@@ -121,7 +121,7 @@ SRM
 stationarity
 STDP
 supersequences
-synfire
+Synfire
 Timone
 TJ
 TODO
