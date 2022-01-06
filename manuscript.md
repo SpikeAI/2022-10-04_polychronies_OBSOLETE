@@ -71,9 +71,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/58207678cc83d5c3463b8ff679420b7fceceedd7/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/58207678cc83d5c3463b8ff679420b7fceceedd7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/58207678cc83d5c3463b8ff679420b7fceceedd7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/871b5e5203bf86e4c5c9775678d28f23abd21730/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/871b5e5203bf86e4c5c9775678d28f23abd21730/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/871b5e5203bf86e4c5c9775678d28f23abd21730/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/58207678cc83d5c3463b8ff679420b7fceceedd7/))
+([permalink](https://SpikeAI.github.io/polychronies/v/871b5e5203bf86e4c5c9775678d28f23abd21730/))
 was automatically generated
-from [SpikeAI/polychronies@5820767](https://github.com/SpikeAI/polychronies/tree/58207678cc83d5c3463b8ff679420b7fceceedd7)
+from [SpikeAI/polychronies@871b5e5](https://github.com/SpikeAI/polychronies/tree/871b5e5203bf86e4c5c9775678d28f23abd21730)
 on January 6, 2022.
 </em></small>
 
@@ -165,7 +165,7 @@ While my previous expertise was based on the modeling of how SNNs process inform
 
 
 
-[ DOI: 10.1126/science.1149639] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111. Fig. 1. Ganglion cell responses to flashed gratings with different spatial phases. Fig. 4. Responses of a fast OFF ganglion cell to a flashed natural image. (For results from other cell types, see fig. S9.)
+[@doi:10.1126/science.1149639] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111. Fig. 1. Ganglion cell responses to flashed gratings with different spatial phases. Fig. 4. Responses of a fast OFF ganglion cell to a flashed natural image. (For results from other cell types, see fig. S9.)
 
 Celebrini [@doi:10/dqt5cm]
 
