@@ -9,6 +9,7 @@ apsect
 asscume
 Avitan
 Barahona
+Bellec
 Bernouilli
 Besnainou
 Boutin
@@ -46,13 +47,14 @@ Fize
 Gewaltig
 Gillett
 GJ
+GLM
 Gollisch
 Goodhill
 Grimaldi
 Grossberger
 HDBSCAN
 Hebbian
-Hippocampal
+hippocampal
 Hirase
 Ikegaya
 inferned
@@ -66,6 +68,7 @@ Jayazeri
 JF
 KD
 Kloosterman
+Kohn
 Kumar
 laurentperrinet
 litterature
@@ -86,7 +89,7 @@ Neurophysiol
 Neurosci
 Neurosciences
 neuroscientific
-PAMI
+pami
 Pereira
 Perrinet
 PGs
@@ -100,7 +103,7 @@ presynaptic
 Proc
 PSCs
 pulvinar
-rastermap
+Rastermap
 RefRN
 Rullen
 Samuelides
@@ -113,6 +116,7 @@ spatiotemporal
 SPOTDis
 SPOTDisClust
 Spreizer
+SRM
 stationarity
 STDP
 supersequences
