@@ -13,7 +13,11 @@ While my previous expertise was based on the modeling of how SNNs process inform
 ### how timing encodes analogous profile
 
 
+
+[@doi:10.1016/j.neuron.2009.12.009, doi:10.1126/science.1149639] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111. Fig. 1. Ganglion cell responses to flashed gratings with different spatial phases. Fig. 4. Responses of a fast OFF ganglion cell to a flashed natural image. (For results from other cell types, see fig. S9.)
+
 Celebrini [@doi:10/dqt5cm]
+
 
 
 #### timing in natural images
@@ -26,8 +30,6 @@ Note also that timing is not entirely sensorial or internal but in [@doi:10.1073
 
 Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level. I have an extensive expertise in the domain of temporal delays in the nervous system, both at the neural [@doi:10.1007/s00422-014-0620-8] and behavioral [@doi:10.1371/journal.pcbi.1005068] levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks. Our expertise in reproducing the HOTS network [@doi:10.1109/CBMI50038.2021.9461901,@doi:Grimaldi2022pami] will be crucial in the swift realization of this project.
 
-
-[@doi:10.1016/j.neuron.2009.12.009, doi:10.1126/science.1149639] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
 
 
 #### synfire chains
@@ -42,3 +44,6 @@ M. Diesmann, M. O. Gewaltig, A. Aertsen, Nature402, 529 (1999).
  * [@Bienenstock1995] : from synfire chains to Synfire braids
 
  * recent theories of binding by synchrony : Fries 2005 trends cog neuro with spikes arriving at peak susceptibility (top of a cycle) or down, van Rullen, Laura Dugué
+
+
+ * A notable exception is the polychronization model of Izhikevich (2006), which combined the construction of a random recurrent model of spiking neurons including such delays and whose weights evolved with a Spike-Time Dependent Plasticity (STDP) learning rule. In this model, raster plot analysis showed repeated activation of Polychronous Groups (PGs), i.e., specific spike patterns with a specific sequence of activations.
