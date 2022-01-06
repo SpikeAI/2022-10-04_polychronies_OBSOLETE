@@ -95,7 +95,7 @@ Perrinet
 PGs
 PLoS
 polychronization
-polychronous
+Polychronous
 polychrony
 Poulet
 pre
@@ -103,7 +103,7 @@ presynaptic
 Proc
 PSCs
 pulvinar
-Rastermap
+rastermap
 RefRN
 Rullen
 Samuelides
@@ -113,6 +113,7 @@ SNN
 SNNs
 spatio
 spatiotemporal
+SpikeShip
 SPOTDis
 SPOTDisClust
 Spreizer

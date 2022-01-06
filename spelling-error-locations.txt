@@ -129,8 +129,10 @@ content/24_detection-raster-plots.md:38:SNE
 content/24_detection-raster-plots.md:41:inhomogeneous
 content/24_detection-raster-plots.md:41:plos
 content/24_detection-raster-plots.md:41:SPOTDisClust
-content/24_detection-raster-plots.md:47:agglomerative
-content/24_detection-raster-plots.md:47:stationarity
+content/24_detection-raster-plots.md:43:SPOTDis
+content/24_detection-raster-plots.md:45:SpikeShip
+content/24_detection-raster-plots.md:52:agglomerative
+content/24_detection-raster-plots.md:52:stationarity
 content/30_learning-model.md:2:polychronous
 content/30_learning-model.md:6:polychronous
 content/30_learning-model.md:6:pre
