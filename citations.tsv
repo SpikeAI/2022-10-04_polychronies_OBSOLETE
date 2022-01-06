@@ -1,4 +1,5 @@
 input_id	dealiased_id	standard_id	short_id
+doi:10.1016/j.neuron.2009.12.009	doi:10.1016/j.neuron.2009.12.009	doi:10.1016/j.neuron.2009.12.009	TJ4mKOsm
 doi:10/dqt5cm	doi:10/dqt5cm	doi:10.1017/s0952523800006052	513xqzmL
 natural	natural	natural	vFdguXD2
 doi:10.1073/pnas.1921226117	doi:10.1073/pnas.1921226117	doi:10.1073/pnas.1921226117	1E8gkynCm
@@ -6,7 +7,6 @@ doi:10.1007/s00422-014-0620-8	doi:10.1007/s00422-014-0620-8	doi:10.1007/s00422-0
 doi:10.1371/journal.pcbi.1005068	doi:10.1371/journal.pcbi.1005068	doi:10.1371/journal.pcbi.1005068	1BSbXPPDF
 doi:Grimaldi2022pami	doi:Grimaldi2022pami	doi:grimaldi2022pami	JvH5T8DW
 doi:10.1109/CBMI50038.2021.9461901	doi:10.1109/CBMI50038.2021.9461901	doi:10.1109/cbmi50038.2021.9461901	7K80jcx9
-doi:10.1016/j.neuron.2009.12.009	doi:10.1016/j.neuron.2009.12.009	doi:10.1016/j.neuron.2009.12.009	TJ4mKOsm
 Abeles1991	isbn:9780521376174	isbn:9780521376174	19MS6Bbwp
 Bienenstock1995	doi:10.1088/0954-898x_6_2_004	doi:10.1088/0954-898x_6_2_004	HjDb1gnq
 Luczak2015	pmid:26507295	pubmed:26507295	MfmcMsqA
@@ -23,6 +23,7 @@ Grün2002	doi:10.1162/089976602753284464	doi:10.1162/089976602753284464	1XpTamcl
 Torre2016	doi:10.1371/journal.pcbi.1004939	doi:10.1371/journal.pcbi.1004939	bc9czTxi
 Moser2014	doi:10.1109/TSP.2014.2305642	doi:10.1109/tsp.2014.2305642	LjkTSK3h
 Orban2016	doi:10.1016/j.neuron.2016.09.038	doi:10.1016/j.neuron.2016.09.038	1300cS9RL
+doi:10/ftvvd8	doi:10/ftvvd8	doi:10.1126/science.275.5297.213	19NyVq80B
 Perrinet2002	doi:10.1016/S0925-2312(02)00374-0	doi:10.1016/s0925-2312(02)00374-0	11p3NXmkg
 Perrinet2001	doi:10.1016/S0925-2312(01)00460-X	doi:10.1016/s0925-2312(01)00460-x	j5xS3owo
 arxiv:2112.12147	arxiv:2112.12147	arxiv:2112.12147	WxQdcMB2

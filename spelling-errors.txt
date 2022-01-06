@@ -68,6 +68,8 @@ KD
 Kloosterman
 Kumar
 laurentperrinet
+litterature
+lmearning
 lnl
 Luczak
 Maes
@@ -85,13 +87,14 @@ Neurophysiol
 Neurosci
 Neurosciences
 neuroscientific
-PAMI
+pami
 Pereira
 Perrinet
 PGs
 PLoS
 polychronization
-polychronous
+Polychronous
+polychrony
 Poulet
 pre
 presynaptic
