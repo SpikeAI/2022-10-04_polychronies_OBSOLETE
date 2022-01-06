@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-01-05'
+date-meta: '2022-01-06'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -47,8 +47,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="dc.date" content="2022-01-05" />
-  <meta name="citation_publication_date" content="2022-01-05" />
+  <meta name="dc.date" content="2022-01-06" />
+  <meta name="citation_publication_date" content="2022-01-06" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -71,9 +71,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/a4fb428e1501cd7e269e7353dbb409f892e1f98c/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a4fb428e1501cd7e269e7353dbb409f892e1f98c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a4fb428e1501cd7e269e7353dbb409f892e1f98c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/ad7a62d66f16997ac7be48c56074dbb51b5f6538/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/ad7a62d66f16997ac7be48c56074dbb51b5f6538/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/ad7a62d66f16997ac7be48c56074dbb51b5f6538/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,10 +95,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/a4fb428e1501cd7e269e7353dbb409f892e1f98c/))
+([permalink](https://SpikeAI.github.io/polychronies/v/ad7a62d66f16997ac7be48c56074dbb51b5f6538/))
 was automatically generated
-from [SpikeAI/polychronies@a4fb428](https://github.com/SpikeAI/polychronies/tree/a4fb428e1501cd7e269e7353dbb409f892e1f98c)
-on January 5, 2022.
+from [SpikeAI/polychronies@ad7a62d](https://github.com/SpikeAI/polychronies/tree/ad7a62d66f16997ac7be48c56074dbb51b5f6538)
+on January 6, 2022.
 </em></small>
 
 ## Authors
@@ -141,6 +141,8 @@ on January 5, 2022.
 
 
 ## Abstract {.page_break_before}
+
+blah
 
 TODO: rewrite
 - The response of a biological neuron depends largely on the precise timing of presynaptic spikes when they reach the basal dendritic tree. This temporal aspect of the neuronal code is essential in understanding information processing and also  applies to the output of an event-based camera. However, most neuronal models do not take advantage of this minute temporal dimension, especially in exploiting the variety of synaptic delays on the dendritic tree. A notable exception is the polychronization model of Izhikevich (2006), which combined the construction of a random recurrent model of spiking neurons including such delays and whose weights evolved with a Spike-Time Dependent Plasticity (STDP) learning rule. In this model, raster plot analysis showed repeated activation of Polychronous Groups (PGs), i.e., specific spike patterns with a specific sequence of activations. Here, we develop a model for the efficient detection of such PGs based on the inversion of a probabilistic model defining the generation of the raster plot as a combination of such groups. We show that such an inference can be achieved by a neural-like computation that could itself be used as a spiking neuron, as can be implemented in a neuromorphic chip for instance. A first result is to show the efficiency of such a scheme in detecting different PGs occurring at specific times in synthetic data. The representational capacity of the PGs is particularly interesting compared to traditional models of neuronal encoding using spiking frequency. Our second result is to propose a novel learning method for learning PGs in raster plots in a self-supervised manner. Finally we demonstrate the use of this algorithm to the output of an event-based camera and how this may separate independent components from the stream of events. This end-to-end event-based computational brick could help improve the performance of current Spiking Neural Network solution currently used in neuromorphic chips.
