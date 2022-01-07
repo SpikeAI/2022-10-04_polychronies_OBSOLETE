@@ -7,6 +7,7 @@ Aix
 APROVIS
 apsect
 asscume
+attentional
 Avitan
 Barahona
 Bellec
@@ -61,12 +62,14 @@ inferned
 inhomogeneities
 inhomogeneous
 Institut
+interareal
 intracellular
 Izhikevich
 Izhikevitch
 Jayazeri
 JF
 KD
+Kempen
 Kloosterman
 Kohn
 Kumar
@@ -105,6 +108,7 @@ PSCs
 pulvinar
 Rastermap
 RefRN
+retinotopic
 Rullen
 Samuelides
 sensorial
@@ -121,7 +125,7 @@ SRM
 stationarity
 STDP
 supersequences
-Synfire
+synfire
 Timone
 TJ
 TODO

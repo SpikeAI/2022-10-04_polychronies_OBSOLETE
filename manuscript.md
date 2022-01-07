@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-01-06'
+date-meta: '2022-01-07'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -48,8 +48,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="dc.date" content="2022-01-06" />
-  <meta name="citation_publication_date" content="2022-01-06" />
+  <meta name="dc.date" content="2022-01-07" />
+  <meta name="citation_publication_date" content="2022-01-07" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -72,9 +72,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/a77e8f96e3b18d304167df1bdd99662a078c52c5/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a77e8f96e3b18d304167df1bdd99662a078c52c5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a77e8f96e3b18d304167df1bdd99662a078c52c5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/dca3d72e23f2cc6b72512dfebabc2ef1f5bcfe19/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/dca3d72e23f2cc6b72512dfebabc2ef1f5bcfe19/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/dca3d72e23f2cc6b72512dfebabc2ef1f5bcfe19/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,10 +96,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/a77e8f96e3b18d304167df1bdd99662a078c52c5/))
+([permalink](https://SpikeAI.github.io/polychronies/v/dca3d72e23f2cc6b72512dfebabc2ef1f5bcfe19/))
 was automatically generated
-from [SpikeAI/polychronies@a77e8f9](https://github.com/SpikeAI/polychronies/tree/a77e8f96e3b18d304167df1bdd99662a078c52c5)
-on January 6, 2022.
+from [SpikeAI/polychronies@dca3d72](https://github.com/SpikeAI/polychronies/tree/dca3d72e23f2cc6b72512dfebabc2ef1f5bcfe19)
+on January 7, 2022.
 </em></small>
 
 ## Authors
@@ -207,6 +207,7 @@ M. Diesmann, M. O. Gewaltig, A. Aertsen, Nature402, 529 (1999).
 
 [@Luczak2015] Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745–55.
 
+In [@doi:10.1016/j.neuron.2020.12.013], it was shown that attentional information from V4 or arousal can change the timings of groups of events in V1. They develop a HMM model for quantifying the transitions. "In this study, van Kempen et al. show that fluctuations in neural excitability are coordinated between visual areas with retinotopic precision. Top-down attention drives interareal coordination along the reverse cortical hierarchy, predicting better behavioral performance with increased coordination."
 
 ### cortical songs [@Ikegaya2004]
 
