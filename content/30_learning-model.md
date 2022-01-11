@@ -10,6 +10,13 @@ spike time coding in a neuron: We will describe the Spike-Time Dependent Plastic
 [@Perrinet2001] : STDP
 
 
+[@arxiv:2011.09380]
+
+Bio-plausible Unsupervised Delay Learning for Extracting Temporal Features in Spiking Neural Networks
+Alireza Nadafian, Mohammad Ganjtabesh
+
+    The plasticity of the conduction delay between neurons plays a fundamental role in learning. However, the exact underlying mechanisms in the brain for this modulation is still an open problem. Understanding the precise adjustment of synaptic delays could help us in developing effective brain-inspired computational models in providing aligned insights with the experimental evidence. In this paper, we propose an unsupervised biologically plausible learning rule for adjusting the synaptic delays in spiking neural networks. Then, we provided some mathematical proofs to show that our learning rule gives a neuron the ability to learn repeating spatio-temporal patterns. Furthermore, the experimental results of applying an STDP-based spiking neural network equipped with our proposed delay learning rule on Random Dot Kinematogram indicate the efficacy of the proposed delay learning rule in extracting temporal features.
+
 ### Learning sequences
 
 
