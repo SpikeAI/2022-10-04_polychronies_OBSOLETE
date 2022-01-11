@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-01-07'
+date-meta: '2022-01-11'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -48,8 +48,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="dc.date" content="2022-01-07" />
-  <meta name="citation_publication_date" content="2022-01-07" />
+  <meta name="dc.date" content="2022-01-11" />
+  <meta name="citation_publication_date" content="2022-01-11" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -72,9 +72,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/dca3d72e23f2cc6b72512dfebabc2ef1f5bcfe19/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/dca3d72e23f2cc6b72512dfebabc2ef1f5bcfe19/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/dca3d72e23f2cc6b72512dfebabc2ef1f5bcfe19/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/517fbc2e4cde37cdd0d487c54552c514350f5a82/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/517fbc2e4cde37cdd0d487c54552c514350f5a82/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/517fbc2e4cde37cdd0d487c54552c514350f5a82/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,10 +96,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/dca3d72e23f2cc6b72512dfebabc2ef1f5bcfe19/))
+([permalink](https://SpikeAI.github.io/polychronies/v/517fbc2e4cde37cdd0d487c54552c514350f5a82/))
 was automatically generated
-from [SpikeAI/polychronies@dca3d72](https://github.com/SpikeAI/polychronies/tree/dca3d72e23f2cc6b72512dfebabc2ef1f5bcfe19)
-on January 7, 2022.
+from [SpikeAI/polychronies@517fbc2](https://github.com/SpikeAI/polychronies/tree/517fbc2e4cde37cdd0d487c54552c514350f5a82)
+on January 11, 2022.
 </em></small>
 
 ## Authors
@@ -330,6 +330,13 @@ spike time coding in a neuron: We will describe the Spike-Time Dependent Plastic
 [@Perrinet2002] : coherence detection
 [@Perrinet2001] : STDP
 
+
+[@arxiv:2011.09380]
+
+Bio-plausible Unsupervised Delay Learning for Extracting Temporal Features in Spiking Neural Networks
+Alireza Nadafian, Mohammad Ganjtabesh
+
+    The plasticity of the conduction delay between neurons plays a fundamental role in learning. However, the exact underlying mechanisms in the brain for this modulation is still an open problem. Understanding the precise adjustment of synaptic delays could help us in developing effective brain-inspired computational models in providing aligned insights with the experimental evidence. In this paper, we propose an unsupervised biologically plausible learning rule for adjusting the synaptic delays in spiking neural networks. Then, we provided some mathematical proofs to show that our learning rule gives a neuron the ability to learn repeating spatio-temporal patterns. Furthermore, the experimental results of applying an STDP-based spiking neural network equipped with our proposed delay learning rule on Random Dot Kinematogram indicate the efficacy of the proposed delay learning rule in extracting temporal features.
 
 ### Learning sequences
 

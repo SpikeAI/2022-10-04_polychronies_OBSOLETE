@@ -4,6 +4,7 @@ Aertsen
 agglomerative
 AgileNeuroBot
 Aix
+Alireza
 APROVIS
 apsect
 asscume
@@ -45,6 +46,7 @@ Elife
 Fairhall
 figshare
 Fize
+Ganjtabesh
 Gewaltig
 Gillett
 GJ
@@ -84,6 +86,7 @@ maxpooling
 Meister
 MNIST
 mV
+Nadafian
 Nadasdy
 neocortical
 neuro
@@ -98,7 +101,7 @@ Perrinet
 PGs
 PLoS
 polychronization
-Polychronous
+polychronous
 polychrony
 Poulet
 pre
@@ -125,7 +128,7 @@ SRM
 stationarity
 STDP
 supersequences
-synfire
+Synfire
 Timone
 TJ
 TODO
