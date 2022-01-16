@@ -95,7 +95,7 @@ Neurophysiol
 Neurosci
 Neurosciences
 neuroscientific
-pami
+PAMI
 Pereira
 Perrinet
 PGs
@@ -109,7 +109,7 @@ presynaptic
 Proc
 PSCs
 pulvinar
-Rastermap
+rastermap
 RefRN
 retinotopic
 Rullen
@@ -128,7 +128,7 @@ SRM
 stationarity
 STDP
 supersequences
-Synfire
+synfire
 Timone
 TJ
 TODO

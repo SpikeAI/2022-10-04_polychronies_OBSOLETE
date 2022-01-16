@@ -7,7 +7,7 @@
   <meta name="author" content="Camille Besnainou" />
   <meta name="author" content="Antoine Grimaldi" />
   <meta name="author" content="Laurent U Perrinet" />
-  <meta name="dcterms.date" content="2022-01-11" />
+  <meta name="dcterms.date" content="2022-01-16" />
   <meta name="keywords" content="neurons, code, time" />
   <title>Review on Polychrony detection in biological and artificial raster plots</title>
   <style>
@@ -49,8 +49,8 @@
   <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="dc.date" content="2022-01-11" />
-  <meta name="citation_publication_date" content="2022-01-11" />
+  <meta name="dc.date" content="2022-01-16" />
+  <meta name="citation_publication_date" content="2022-01-16" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -73,9 +73,9 @@
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/517fbc2e4cde37cdd0d487c54552c514350f5a82/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/517fbc2e4cde37cdd0d487c54552c514350f5a82/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/517fbc2e4cde37cdd0d487c54552c514350f5a82/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/23ff3602db42d0be684c69bf3092b1e99ef78c96/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/23ff3602db42d0be684c69bf3092b1e99ef78c96/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/23ff3602db42d0be684c69bf3092b1e99ef78c96/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -89,10 +89,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://SpikeAI.github.io/polychronies/v/517fbc2e4cde37cdd0d487c54552c514350f5a82/">permalink</a>)
+(<a href="https://SpikeAI.github.io/polychronies/v/23ff3602db42d0be684c69bf3092b1e99ef78c96/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/SpikeAI/polychronies/tree/517fbc2e4cde37cdd0d487c54552c514350f5a82">SpikeAI/polychronies@517fbc2</a>
-on January 11, 2022.
+from <a href="https://github.com/SpikeAI/polychronies/tree/23ff3602db42d0be684c69bf3092b1e99ef78c96">SpikeAI/polychronies@23ff360</a>
+on January 16, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -128,7 +128,7 @@ Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
 </small></p></li>
 </ul>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
-<p>The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This temporal aspect of the neuronal code is essential in understanding information processing and also applies to the output of an event-based camera. However, most neuronal models do not take advantage of this minute temporal dimension, especially in exploiting the variety of synaptic delays on the dendritic tree.</p>
+<p>The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This <em>event-based representation</em> present in the neuronal code is essential in understanding information processing in the brain but also applies to other fields, for instance to the output of an event-based camera. However, most neuronal models do not take advantage of this minute temporal dimension, especially in exploiting the variety of synaptic delays on the dendritic tree.</p>
 <p>We will define the motifs of precise temporal patterns as polychronous groups following the model of Izhikevich (2006). This manuscript reviews current litterature on <em>polychrony detection</em> in raster plots. It is work in progress, where anybody interested can <em>openly</em> join.</p>
 <p>We will first review some biological and theoretical evidence for polychrony in the neural information processing. We will then review some models for the detection of such polychronous groups in arbitrary raster plots, synthetic, biological or artificial (notably from event-based cameras). Then, we will try to outline some possible strategies for learning these patterns and finally discuss possible perspectives.</p>
 <h2 id="introduction-precise-temporal-patterns-in-the-brain">introduction: precise temporal patterns in the brain</h2>
@@ -296,7 +296,7 @@ Ocker GK, Doiron B.Cereb Cortex. 2019.</p>
 <div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Rapid Neural Coding in the Retina with Relative Spike Latencies</strong> <div class="csl-block">Tim Gollisch, Markus Meister</div> <em>Science</em> (2008-02-22) <a href="https://doi.org/c6czvj">https://doi.org/c6czvj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1126/science.1149639">10.1126/science.1149639</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/18292344">18292344</a></div></div>
 </div>
 <div id="ref-513xqzmL" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Dynamics of orientation coding in area V1 of the awake primate</strong> <div class="csl-block">Simona Celebrini, Simon Thorpe, Yves Trotter, Michel Imbert</div> <em>Visual Neuroscience</em> (2009-06-02) <a href="https://doi.org/dqt5cm">https://doi.org/dqt5cm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1017/s0952523800006052">10.1017/s0952523800006052</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/8217934">8217934</a></div></div>
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Dynamics of orientation coding in area V1 of the awake primate</strong> <div class="csl-block">Simona Celebrini, Simon Thorpe, Yves Trotter, Michel Imbert</div> <em>Visual Neuroscience</em> (1993-09) <a href="https://doi.org/dqt5cm">https://doi.org/dqt5cm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1017/s0952523800006052">10.1017/s0952523800006052</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/8217934">8217934</a></div></div>
 </div>
 <div id="ref-vFdguXD2" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Statistics of the natural input to a ring model</strong> <div class="csl-block">Laurent Perrinet, Hugo Ladret</div> <em>Scientific Blog</em> (2018) <a href="https://laurentperrinet.github.io/sciblog/posts/2018-11-05-statistics-of-the-natural-input-to-a-ring-model.html">https://laurentperrinet.github.io/sciblog/posts/2018-11-05-statistics-of-the-natural-input-to-a-ring-model.html</a></div>
@@ -305,19 +305,19 @@ Ocker GK, Doiron B.Cereb Cortex. 2019.</p>
 <div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Turning the body into a clock: Accurate timing is facilitated by simple stereotyped interactions with the environment</strong> <div class="csl-block">Mostafa Safaie, Maria-Teresa Jurado-Parras, Stefania Sarno, Jordane Louis, Corane Karoutchi, Ludovic F Petit, Matthieu O Pasquet, Christophe Eloy, David Robbe</div> <em>Proceedings of the National Academy of Sciences</em> (2020-06-09) <a href="https://doi.org/gnqsmh">https://doi.org/gnqsmh</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1073/pnas.1921226117">10.1073/pnas.1921226117</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32434909">32434909</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7293717">PMC7293717</a></div></div>
 </div>
 <div id="ref-f7gkBktf" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Active inference, eye movements and oculomotor delays</strong> <div class="csl-block">Laurent U Perrinet, Rick A Adams, Karl J Friston</div> <em>Biological Cybernetics</em> (2014-08-16) <a href="https://doi.org/f6skjq">https://doi.org/f6skjq</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/s00422-014-0620-8">10.1007/s00422-014-0620-8</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25128318">25128318</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4250571">PMC4250571</a></div></div>
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Active inference, eye movements and oculomotor delays</strong> <div class="csl-block">Laurent U Perrinet, Rick A Adams, Karl J Friston</div> <em>Biological Cybernetics</em> (2014-12) <a href="https://doi.org/f6skjq">https://doi.org/f6skjq</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/s00422-014-0620-8">10.1007/s00422-014-0620-8</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25128318">25128318</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4250571">PMC4250571</a></div></div>
 </div>
 <div id="ref-1BSbXPPDF" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>The Flash-Lag Effect as a Motion-Based Predictive Shift</strong> <div class="csl-block">Mina A Khoei, Guillaume S Masson, Laurent U Perrinet</div> <em>PLOS Computational Biology</em> (2017-01-26) <a href="https://doi.org/b2t5">https://doi.org/b2t5</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1005068">10.1371/journal.pcbi.1005068</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28125585">28125585</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5268412">PMC5268412</a></div></div>
 </div>
 <div id="ref-7K80jcx9" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>A homeostatic gain control mechanism to improve event-driven object recognition</strong> <div class="csl-block">Antoine Grimaldi, Victor Boutin, Laurent Perrinet, Sio-Hoi Ieng, Ryad Benosman</div> <em>Institute of Electrical and Electronics Engineers (IEEE)</em> (2021-06-28) <a href="https://doi.org/gkzcrv">https://doi.org/gkzcrv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/cbmi50038.2021.9461901">10.1109/cbmi50038.2021.9461901</a></div></div>
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>A homeostatic gain control mechanism to improve event-driven object recognition</strong> <div class="csl-block">Antoine Grimaldi, Victor Boutin, Laurent Perrinet, Sio-Hoi Ieng, Ryad Benosman</div> <em>2021 International Conference on Content-Based Multimedia Indexing (CBMI)</em> (2021-06-28) <a href="https://doi.org/gkzcrv">https://doi.org/gkzcrv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/cbmi50038.2021.9461901">10.1109/cbmi50038.2021.9461901</a> · ISBN: 9781665442206</div></div>
 </div>
 <div id="ref-19MS6Bbwp" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Corticonics: neural circuits of the cerebral cortex</strong> <div class="csl-block">Moshe Abeles</div> <em>Cambridge University Press</em> (1991) <div class="csl-block">ISBN: 9780521374767</div></div>
 </div>
 <div id="ref-HjDb1gnq" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>A model of neocortex</strong> <div class="csl-block">Elie Bienenstock</div> <em>Network: Computation in Neural Systems</em> (2009-07-09) <a href="https://doi.org/gm6nn3">https://doi.org/gm6nn3</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1088/0954-898x_6_2_004">10.1088/0954-898x_6_2_004</a></div></div>
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>A model of neocortex</strong> <div class="csl-block">Elie Bienenstock</div> <em>Network: Computation in Neural Systems</em> (1995-01) <a href="https://doi.org/gm6nn3">https://doi.org/gm6nn3</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1088/0954-898x_6_2_004">10.1088/0954-898x_6_2_004</a></div></div>
 </div>
 <div id="ref-MfmcMsqA" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>Packet-based communication in the cortex.</strong> <div class="csl-block">Artur Luczak, Bruce L McNaughton, Kenneth D Harris</div> <em>Nature reviews. Neuroscience</em> (2015-10-28) <a href="https://www.ncbi.nlm.nih.gov/pubmed/26507295">https://www.ncbi.nlm.nih.gov/pubmed/26507295</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nrn4026">10.1038/nrn4026</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26507295">26507295</a></div></div>
@@ -338,7 +338,7 @@ Ocker GK, Doiron B.Cereb Cortex. 2019.</p>
 <div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>Robustness of Spike Deconvolution for Neuronal Calcium Imaging</strong> <div class="csl-block">Marius Pachitariu, Carsen Stringer, Kenneth D Harris</div> <em>The Journal of Neuroscience</em> (2018-09-12) <a href="https://doi.org/gd9mcx">https://doi.org/gd9mcx</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1523/jneurosci.3339-17.2018">10.1523/jneurosci.3339-17.2018</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30082416">30082416</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6136155">PMC6136155</a></div></div>
 </div>
 <div id="ref-brg2FFsb" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>High-dimensional geometry of population responses in visual cortex</strong> <div class="csl-block">Carsen Stringer, Marius Pachitariu, Nicholas Steinmetz, Matteo Carandini, Kenneth D Harris</div> <em>Nature</em> (2019-06-26) <a href="https://doi.org/gf4cfj">https://doi.org/gf4cfj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-019-1346-5">10.1038/s41586-019-1346-5</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31243367">31243367</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6642054">PMC6642054</a></div></div>
+<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>High-dimensional geometry of population responses in visual cortex</strong> <div class="csl-block">Carsen Stringer, Marius Pachitariu, Nicholas Steinmetz, Matteo Carandini, Kenneth D Harris</div> <em>Nature</em> (2019-07-18) <a href="https://doi.org/gf4cfj">https://doi.org/gf4cfj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-019-1346-5">10.1038/s41586-019-1346-5</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31243367">31243367</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6642054">PMC6642054</a></div></div>
 </div>
 <div id="ref-1BPHUQLTf" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>Spontaneous behaviors drive multidimensional, brainwide activity</strong> <div class="csl-block">Carsen Stringer, Marius Pachitariu, Nicholas Steinmetz, Charu Bai Reddy, Matteo Carandini, Kenneth D Harris</div> <em>Science</em> (2019-04-19) <a href="https://doi.org/gfz6mh">https://doi.org/gfz6mh</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1126/science.aav7893">10.1126/science.aav7893</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31000656">31000656</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6525101">PMC6525101</a></div></div>

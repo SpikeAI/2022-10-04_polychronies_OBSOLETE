@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-01-11'
+date-meta: '2022-01-16'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -48,8 +48,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="dc.date" content="2022-01-11" />
-  <meta name="citation_publication_date" content="2022-01-11" />
+  <meta name="dc.date" content="2022-01-16" />
+  <meta name="citation_publication_date" content="2022-01-16" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -72,9 +72,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/517fbc2e4cde37cdd0d487c54552c514350f5a82/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/517fbc2e4cde37cdd0d487c54552c514350f5a82/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/517fbc2e4cde37cdd0d487c54552c514350f5a82/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/23ff3602db42d0be684c69bf3092b1e99ef78c96/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/23ff3602db42d0be684c69bf3092b1e99ef78c96/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/23ff3602db42d0be684c69bf3092b1e99ef78c96/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,10 +96,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/517fbc2e4cde37cdd0d487c54552c514350f5a82/))
+([permalink](https://SpikeAI.github.io/polychronies/v/23ff3602db42d0be684c69bf3092b1e99ef78c96/))
 was automatically generated
-from [SpikeAI/polychronies@517fbc2](https://github.com/SpikeAI/polychronies/tree/517fbc2e4cde37cdd0d487c54552c514350f5a82)
-on January 11, 2022.
+from [SpikeAI/polychronies@23ff360](https://github.com/SpikeAI/polychronies/tree/23ff3602db42d0be684c69bf3092b1e99ef78c96)
+on January 16, 2022.
 </em></small>
 
 ## Authors
@@ -143,9 +143,9 @@ on January 11, 2022.
 
 ## Abstract {.page_break_before}
 
-The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This temporal aspect of the neuronal code is essential in understanding information processing and also  applies to the output of an event-based camera. However, most neuronal models do not take advantage of this minute temporal dimension, especially in exploiting the variety of synaptic delays on the dendritic tree.
+The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This *event-based representation* present in the neuronal code is essential in understanding information processing in the brain but also applies to other fields, for instance to the output of an event-based camera. However, most neuronal models do not take advantage of this minute temporal dimension, especially in exploiting the variety of synaptic delays on the dendritic tree.
 
-We will define the motifs of precise temporal patterns as polychronous groups following the  model of Izhikevich (2006). This manuscript reviews current litterature on *polychrony detection* in raster plots. It is work in progress, where anybody interested can *openly* join.
+We will define the motifs of precise temporal patterns as polychronous groups following the model of Izhikevich (2006). This manuscript reviews current litterature on *polychrony detection* in raster plots. It is work in progress, where anybody interested can *openly* join.
 
 We will first review some biological and theoretical evidence for polychrony in the neural information processing. We will then review some models for the detection of such polychronous groups in arbitrary raster plots, synthetic, biological or artificial (notably from event-based cameras). Then, we will try to outline some possible strategies for learning these patterns and finally discuss possible perspectives.
 
