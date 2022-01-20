@@ -72,9 +72,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/bc56ecde85706bbc3e171ea8b9ea335bc1862043/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/bc56ecde85706bbc3e171ea8b9ea335bc1862043/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/bc56ecde85706bbc3e171ea8b9ea335bc1862043/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/7cf0fe66fe905ba082a1bd963abeff4fa77c45d9/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/7cf0fe66fe905ba082a1bd963abeff4fa77c45d9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/7cf0fe66fe905ba082a1bd963abeff4fa77c45d9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/bc56ecde85706bbc3e171ea8b9ea335bc1862043/))
+([permalink](https://SpikeAI.github.io/polychronies/v/7cf0fe66fe905ba082a1bd963abeff4fa77c45d9/))
 was automatically generated
-from [SpikeAI/polychronies@bc56ecd](https://github.com/SpikeAI/polychronies/tree/bc56ecde85706bbc3e171ea8b9ea335bc1862043)
+from [SpikeAI/polychronies@7cf0fe6](https://github.com/SpikeAI/polychronies/tree/7cf0fe66fe905ba082a1bd963abeff4fa77c45d9)
 on January 20, 2022.
 </em></small>
 
@@ -168,9 +168,12 @@ While my previous expertise was based on the modeling of how SNNs process inform
 
 [@doi:10.1126/science.1149639] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
 Fig. 1. Ganglion cell responses to flashed gratings with different spatial phases.
-Gollisch and colaborators demonstrated that depending on the shifted of a square-wave grating, the OFF ganglion cells of the retina modify their activity. They encode structural information not by the number of spikes, but by the time of appearance of the first spikes. 
+Gollisch and colaborators demonstrated that depending on the shifted of a square-wave grating, the OFF ganglion cells of the retina modify their activity. They encode structural information not by the number of spikes, but by the latency of appearance of the first spikes. 
 
 Fig. 4. Responses of a fast OFF ganglion cell to a flashed natural image. (For results from other cell types, see fig. S9.)
+The projection of a natural image on the retina leads to an encoding of the spatial information by the OFF ganglion cells in a rather faithful way. Depending on the luminosity, the ganglion cells respond with different latencies. If we make a gray-scale plot of the
+differential spike latency according to the location of the receptor field of the ganglion cells, we obtain a representation of the presented image that is much more faithful than by doing a gray-scale plot of spike count.
+
 
 Celebrini [@doi:10/dqt5cm]
 
