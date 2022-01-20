@@ -24,6 +24,7 @@ Cereb
 Clopath
 CNNs
 CNRS
+colaborators
 colomn
 combinatorial
 compositional
@@ -95,7 +96,7 @@ Neurophysiol
 Neurosci
 Neurosciences
 neuroscientific
-PAMI
+pami
 Pereira
 Perrinet
 PGs

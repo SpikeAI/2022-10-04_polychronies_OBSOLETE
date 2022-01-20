@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-01-16'
+date-meta: '2022-01-20'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -48,8 +48,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="dc.date" content="2022-01-16" />
-  <meta name="citation_publication_date" content="2022-01-16" />
+  <meta name="dc.date" content="2022-01-20" />
+  <meta name="citation_publication_date" content="2022-01-20" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -72,9 +72,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/23ff3602db42d0be684c69bf3092b1e99ef78c96/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/23ff3602db42d0be684c69bf3092b1e99ef78c96/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/23ff3602db42d0be684c69bf3092b1e99ef78c96/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/bc56ecde85706bbc3e171ea8b9ea335bc1862043/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/bc56ecde85706bbc3e171ea8b9ea335bc1862043/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/bc56ecde85706bbc3e171ea8b9ea335bc1862043/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,10 +96,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/23ff3602db42d0be684c69bf3092b1e99ef78c96/))
+([permalink](https://SpikeAI.github.io/polychronies/v/bc56ecde85706bbc3e171ea8b9ea335bc1862043/))
 was automatically generated
-from [SpikeAI/polychronies@23ff360](https://github.com/SpikeAI/polychronies/tree/23ff3602db42d0be684c69bf3092b1e99ef78c96)
-on January 16, 2022.
+from [SpikeAI/polychronies@bc56ecd](https://github.com/SpikeAI/polychronies/tree/bc56ecde85706bbc3e171ea8b9ea335bc1862043)
+on January 20, 2022.
 </em></small>
 
 ## Authors
@@ -166,7 +166,11 @@ While my previous expertise was based on the modeling of how SNNs process inform
 
 
 
-[@doi:10.1126/science.1149639] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111. Fig. 1. Ganglion cell responses to flashed gratings with different spatial phases. Fig. 4. Responses of a fast OFF ganglion cell to a flashed natural image. (For results from other cell types, see fig. S9.)
+[@doi:10.1126/science.1149639] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
+Fig. 1. Ganglion cell responses to flashed gratings with different spatial phases.
+Gollisch and colaborators demonstrated that depending on the shifted of a square-wave grating, the OFF ganglion cells of the retina modify their activity. They encode structural information not by the number of spikes, but by the time of appearance of the first spikes. 
+
+Fig. 4. Responses of a fast OFF ganglion cell to a flashed natural image. (For results from other cell types, see fig. S9.)
 
 Celebrini [@doi:10/dqt5cm]
 
