@@ -14,7 +14,11 @@ While my previous expertise was based on the modeling of how SNNs process inform
 
 
 
-[@doi:10.1126/science.1149639] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111. Fig. 1. Ganglion cell responses to flashed gratings with different spatial phases. Fig. 4. Responses of a fast OFF ganglion cell to a flashed natural image. (For results from other cell types, see fig. S9.)
+[@doi:10.1126/science.1149639] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
+Fig. 1. Ganglion cell responses to flashed gratings with different spatial phases.
+Gollisch and colaborators demonstrated that depending on the shifted of a square-wave grating, the OFF ganglion cells of the retina modify their activity. They encode structural information not by the number of spikes, but by the time of appearance of the first spikes. 
+
+Fig. 4. Responses of a fast OFF ganglion cell to a flashed natural image. (For results from other cell types, see fig. S9.)
 
 Celebrini [@doi:10/dqt5cm]
 
