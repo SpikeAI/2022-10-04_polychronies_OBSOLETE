@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-01-20'
+date-meta: '2022-01-24'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -48,8 +48,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="dc.date" content="2022-01-20" />
-  <meta name="citation_publication_date" content="2022-01-20" />
+  <meta name="dc.date" content="2022-01-24" />
+  <meta name="citation_publication_date" content="2022-01-24" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -72,9 +72,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/7cf0fe66fe905ba082a1bd963abeff4fa77c45d9/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/7cf0fe66fe905ba082a1bd963abeff4fa77c45d9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/7cf0fe66fe905ba082a1bd963abeff4fa77c45d9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/c5e8f4ca7593789487e68b023abcf8459d3e1c48/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/c5e8f4ca7593789487e68b023abcf8459d3e1c48/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/c5e8f4ca7593789487e68b023abcf8459d3e1c48/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,10 +96,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/7cf0fe66fe905ba082a1bd963abeff4fa77c45d9/))
+([permalink](https://SpikeAI.github.io/polychronies/v/c5e8f4ca7593789487e68b023abcf8459d3e1c48/))
 was automatically generated
-from [SpikeAI/polychronies@7cf0fe6](https://github.com/SpikeAI/polychronies/tree/7cf0fe66fe905ba082a1bd963abeff4fa77c45d9)
-on January 20, 2022.
+from [SpikeAI/polychronies@c5e8f4c](https://github.com/SpikeAI/polychronies/tree/c5e8f4ca7593789487e68b023abcf8459d3e1c48)
+on January 24, 2022.
 </em></small>
 
 ## Authors
@@ -257,6 +257,9 @@ Finally we will discuss future avenues for effective PG detection and learning i
 
 
 ### spike distances
+
+### synchrony
+Robust computation with rhythmic spike patterns. Proceedings of the National Academy of Sciences of the United States of America 116(36), 18050 - 18059. https://dx.doi.org/10.1073/pnas.1902653116
 
 
 ## Detecting patterns in biological raster plots

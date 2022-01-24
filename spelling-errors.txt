@@ -58,7 +58,7 @@ Grimaldi
 Grossberger
 HDBSCAN
 Hebbian
-Hippocampal
+hippocampal
 Hirase
 Ikegaya
 inferned
@@ -97,7 +97,7 @@ Neurophysiol
 Neurosci
 Neurosciences
 neuroscientific
-pami
+PAMI
 Pereira
 Perrinet
 PGs
@@ -111,7 +111,7 @@ presynaptic
 Proc
 PSCs
 pulvinar
-rastermap
+Rastermap
 RefRN
 retinotopic
 Rullen
