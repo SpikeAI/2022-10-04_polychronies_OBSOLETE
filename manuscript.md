@@ -72,9 +72,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/d32df12790d5480fc8b942091024163a6535d9db/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/d32df12790d5480fc8b942091024163a6535d9db/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/d32df12790d5480fc8b942091024163a6535d9db/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/170cc131edd9649e63eaa9fbfd6c53867f05630d/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/170cc131edd9649e63eaa9fbfd6c53867f05630d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/170cc131edd9649e63eaa9fbfd6c53867f05630d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -97,9 +97,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/d32df12790d5480fc8b942091024163a6535d9db/))
+([permalink](https://SpikeAI.github.io/polychronies/v/170cc131edd9649e63eaa9fbfd6c53867f05630d/))
 was automatically generated
-from [SpikeAI/polychronies@d32df12](https://github.com/SpikeAI/polychronies/tree/d32df12790d5480fc8b942091024163a6535d9db)
+from [SpikeAI/polychronies@170cc13](https://github.com/SpikeAI/polychronies/tree/170cc131edd9649e63eaa9fbfd6c53867f05630d)
 on January 25, 2022.
 </em></small>
 
@@ -172,11 +172,9 @@ RSVP - 17ms per image
 
 ### how timing encodes analogous profile
 
-
-
 [@doi:10.1126/science.1149639] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
 Fig. 1. Ganglion cell responses to flashed gratings with different spatial phases.
-Gollisch and colaborators demonstrated that depending on the shifted of a square-wave grating, the OFF ganglion cells of the retina modify their activity. They encode structural information not by the number of spikes, but by the latency of appearance of the first spikes. 
+Gollisch and colaborators demonstrated that depending on the shifted of a square-wave grating, the OFF ganglion cells of the retina modify their activity. They encode structural information not by the number of spikes, but by the latency of appearance of the first spikes.
 
 Fig. 4. Responses of a fast OFF ganglion cell to a flashed natural image. (For results from other cell types, see fig. S9.)
 The projection of a natural image on the retina leads to an encoding of the spatial information by the OFF ganglion cells in a rather faithful way. Depending on the luminosity, the ganglion cells respond with different latencies. If we make a gray-scale plot of the
@@ -185,6 +183,8 @@ differential spike latency according to the location of the receptor field of th
 
 Celebrini [@doi:10/dqt5cm]
 
+
+Used in models like [@arXiv:1912.11443] : Fast and energy-efficient neuromorphic deep learning with first-spike times
 
 
 #### timing in natural images
@@ -214,6 +214,10 @@ M. Diesmann, M. O. Gewaltig, A. Aertsen, Nature402, 529 (1999).
 
 
  * A notable exception is the polychronization model of Izhikevich (2006), which combined the construction of a random recurrent model of spiking neurons including such delays and whose weights evolved with a Spike-Time Dependent Plasticity (STDP) learning rule. In this model, raster plot analysis showed repeated activation of Polychronous Groups (PGs), i.e., specific spike patterns with a specific sequence of activations.
+
+#### traveling waves
+
+[@doi:10.1038/s41467-021-26175-1]
 
 
 
@@ -278,7 +282,18 @@ Finally we will discuss future avenues for effective PG detection and learning i
 
 ### spike distances
 
-### synchrony
+
+J. D. Victor and K. P. Purpura, “Nature and precision of temporal coding in visual cortex: a metric-space analysis,” J. Neurophysiol., vol. 76, pp. 1310–1326, Aug. 1996.
+
+M. C. W. van Rossum, “A novel spike distance,” Neural Comput., vol. 13, no. 4, pp. 751–763, 2001. [21] D. Aronov and J. D. Victor, “Non-Euclidean properties of spike train metric spaces,” Physical Rev. E (Statist., Nonlinear, Soft Matter Phys.), vol. 69, no. 6, 2004.
+
+T. Kreuz, J. S. Haas, A. Morelli, H. D. I. Abarbanel, and A. Politi, “Measuring spike train synchrony,” J. Neurosci. Methods, vol. 165, no. 1, pp. 151–161, 2007. [23] H.
+
+Paper by [@Moser2014] On Stability of Distance Measures for Event Sequences Induced by Level-Crossing Sampling
+
+Weyl's discrepency measure [@doi:10.1007/BF01475864] which may lead to the definition of a cross-correlation.
+
+
 Robust computation with rhythmic spike patterns. Proceedings of the National Academy of Sciences of the United States of America 116(36), 18050 - 18059. https://dx.doi.org/10.1073/pnas.1902653116
 
 
@@ -289,6 +304,8 @@ Robust computation with rhythmic spike patterns. Proceedings of the National Ac
 In generic linear non linear lnl models, the output is assumed to be poisson. As such a simple decoding strategy is to asscume it is to b inferned for a given tuning curves (Jayazeri) or simply by a simple regression [@doi:10.1523/jneurosci.1335-12.2012]. This latter model assumes a Bernoulli model for the generation of spikes such that the decoding amounts to a single-layer logistic regression.
 
 ### Rastermap : decoding large-scale data
+
+[Rastermap](https://nbviewer.org/github/MouseLand/rastermap/blob/master/tutorial/tutorial.ipynb) re-arranges neurons in the raster plot based on similarity of activity
 
 * https://www.janelia.org/lab/stringer-lab
 * described in [@Pachitariu2018]
@@ -334,11 +351,6 @@ https://doi.org/10.1101/2020.06.03.131573;
 * "Here we present such a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization. " by @Russo2017
 * sliding window as in [@Grün2002] ("Numerous other statistical procedures for detecting assemblies or sequential patterns have been proposed previously") - extended to multiple lags [@Torre2016]
 * based on a "non-stationarity-corrected parametric test statistic for assessing the independence of pairs" and "an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies"
-
-
-#### Paper by [@Moser2014]
-
-On Stability of Distance Measures for Event Sequences Induced by Level-Crossing Sampling
 
 
 #### Neural Variability and Sampling-Based Probabilistic Representations in the Visual Cortex [@Orban2016]

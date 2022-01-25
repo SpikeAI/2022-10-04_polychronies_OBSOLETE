@@ -1,3 +1,4 @@
+Abarbanel
 Acad
 activations
 Aertsen
@@ -7,6 +8,7 @@ Aix
 Alireza
 APROVIS
 apsect
+Aronov
 asscume
 attentional
 Avitan
@@ -43,6 +45,7 @@ demonstated
 dendritic
 Diesmann
 dimensionality
+discrepency
 Doiron
 Dugué
 electrophysiological
@@ -66,7 +69,7 @@ Grossberger
 HDBSCAN
 Hebbian
 heterosynaptic
-hippocampal
+Hippocampal
 Hirase
 Huning
 ICECS
@@ -85,6 +88,7 @@ KD
 Kempen
 Kloosterman
 Kohn
+Kreuz
 Kumar
 Lamme
 latencies
@@ -100,6 +104,7 @@ Mayr
 Meister
 MNIST
 MNSD
+Morelli
 mV
 Nadafian
 Nadasdy
@@ -113,7 +118,7 @@ Neurosciences
 neuroscientific
 Nowak
 organazed
-PAMI
+pami
 Partzsch
 Pawelzik
 Paxon
@@ -121,8 +126,9 @@ Pereira
 Perrinet
 PGs
 PLoS
-Polychronization
-Polychronous
+Politi
+polychronization
+polychronous
 polychrony
 Poulet
 pre
@@ -130,11 +136,13 @@ presynaptic
 Proc
 PSCs
 pulvinar
-Rastermap
+Purpura
+rastermap
 RefRN
 Reproducibility
 retinotopic
 Roelfsemma
+Rossum
 Rullen
 Samuelides
 sensorial
@@ -149,6 +157,7 @@ SPOTDisClust
 Spreizer
 SRM
 stationarity
+Statist
 STDP
 supersequences
 synfire
@@ -162,6 +171,7 @@ vitro
 vivo
 Vogginger
 waveforms
+Weyl’s
 WWWWWWWWWWWWW
 XXXX
 XXXXXXXX
