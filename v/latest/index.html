@@ -7,7 +7,7 @@
   <meta name="author" content="Camille Besnainou" />
   <meta name="author" content="Antoine Grimaldi" />
   <meta name="author" content="Laurent U Perrinet" />
-  <meta name="dcterms.date" content="2022-01-24" />
+  <meta name="dcterms.date" content="2022-01-25" />
   <meta name="keywords" content="neurons, code, time" />
   <title>Review on Polychrony detection in biological and artificial raster plots</title>
   <style>
@@ -49,8 +49,8 @@
   <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="dc.date" content="2022-01-24" />
-  <meta name="citation_publication_date" content="2022-01-24" />
+  <meta name="dc.date" content="2022-01-25" />
+  <meta name="citation_publication_date" content="2022-01-25" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -73,9 +73,9 @@
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/c5e8f4ca7593789487e68b023abcf8459d3e1c48/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/c5e8f4ca7593789487e68b023abcf8459d3e1c48/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/c5e8f4ca7593789487e68b023abcf8459d3e1c48/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/d32df12790d5480fc8b942091024163a6535d9db/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/d32df12790d5480fc8b942091024163a6535d9db/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/d32df12790d5480fc8b942091024163a6535d9db/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -89,10 +89,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://SpikeAI.github.io/polychronies/v/c5e8f4ca7593789487e68b023abcf8459d3e1c48/">permalink</a>)
+(<a href="https://SpikeAI.github.io/polychronies/v/d32df12790d5480fc8b942091024163a6535d9db/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/SpikeAI/polychronies/tree/c5e8f4ca7593789487e68b023abcf8459d3e1c48">SpikeAI/polychronies@c5e8f4c</a>
-on January 24, 2022.
+from <a href="https://github.com/SpikeAI/polychronies/tree/d32df12790d5480fc8b942091024163a6535d9db">SpikeAI/polychronies@d32df12</a>
+on January 25, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -137,6 +137,9 @@ Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
 (1] S Thorpe, D Fize, and C Marlot, Nature 381.6582 (1996), pp.520-522.</p>
 <p>The approach which is currently most prominent in the Spiking Neural Networks community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.</p>
 <p>While my previous expertise was based on the modeling of how SNNs process information (Perrinet, Samuelides and Thorpe, 2004) and how these networks may be tuned in a unsupervised manner to their input (Perrinet, Samuelides and Thorpe, 2003), many different SNN architectures may provide robust solutions. Since that time, I have worked on exploring the space of all solutions which are the most efficient to solve a given problem using Bayesian methods. This culminated in defining a hierarchical model performing predictive coding (Boutin et al, 2020). However, this network is analog and simulations perform too slowly, even on advanced GPU architectures, to be used for real life situation. We have recently developed a similar architecture but based on a SNN architecture. In particular, this model is event-based from one end (sensory input from event-based cameras) to the other (classification) and its intermediate layers are learned in a self-supervised fashion (Grimaldi et al, 2021: a, b).</p>
+<p>Lamme and Roelfsemma, 2000</p>
+<p>Nowak and Bullier, 1997</p>
+<p>RSVP - 17ms per image</p>
 <h3 id="how-timing-encodes-analogous-profile">how timing encodes analogous profile</h3>
 <p><span class="citation" data-cites="IjepoonT">[<a href="#ref-IjepoonT" role="doc-biblioref">1</a>]</span> T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
 Fig. 1. Ganglion cell responses to flashed gratings with different spatial phases.
@@ -187,6 +190,21 @@ differential spike latency according to the location of the receptor field of th
 <p>Finally we will discuss future avenues for effective PG detection and learning in event streams.</p>
 <h2 id="models-of-polychronization-detection-in-models">Models of polychronization detection in models</h2>
 <h3 id="izhikevitch">Izhikevitch</h3>
+<ul>
+<li><p>Reproducing Polychronization: A Guide to Maximizing the Reproducibility of Spiking Network Models <a href="https://www.frontiersin.org/articles/10.3389/fninf.2018.00046/full" class="uri">https://www.frontiersin.org/articles/10.3389/fninf.2018.00046/full</a></p>
+<ul>
+<li>comes with python code</li>
+</ul></li>
+<li><p>blog post by Paxon Frady <a href="https://epaxon.blogspot.com/2012/07/izhikevich-2006-polychronization.html" class="uri">https://epaxon.blogspot.com/2012/07/izhikevich-2006-polychronization.html</a></p></li>
+<li><p>dynamic networks &amp; learning delays:</p>
+<ul>
+<li>Huning H., Glunder H., and Palm G. (1998) Synaptic delay learning in pulse-coupled neurons. Neural Computation, 10:555–565. <a href="https://www.deepdyve.com/lp/mit-press/synaptic-delay-learning-in-pulse-coupled-neurons-DGMiNHxp0A" class="uri">https://www.deepdyve.com/lp/mit-press/synaptic-delay-learning-in-pulse-coupled-neurons-DGMiNHxp0A</a></li>
+<li><a href="https://www.researchgate.net/publication/37921636_Dynamics_of_Self-Organized_Delay_Adaptation">Eurich C., Pawelzik K., Ernst U., Cowan J., and Milton J. (1999) Dynamics of self-organazed delay adaptation. Phys. Rev. Lett., 82:1594–1597.</a></li>
+<li>The recent “multi-neuronal spike sequence detector” (MNSD) architecture integrates the weight- and delay-adjustment methods by combining heterosynaptic plasticity with the neurocomputational feature spike latency : <a href="https://pubmed.ncbi.nlm.nih.gov/33679293/" class="uri">https://pubmed.ncbi.nlm.nih.gov/33679293/</a></li>
+<li>an extensive (graph-centric) review on <a href="https://arxiv.org/abs/2109.07618">Synchronization in time-varying networks</a></li>
+</ul></li>
+<li><p>related</p></li>
+</ul>
 <h3 id="spike-distances">spike distances</h3>
 <h3 id="synchrony">synchrony</h3>
 <p>Robust computation with rhythmic spike patterns. Proceedings of the National Academy of Sciences of the United States of America 116(36), 18050 - 18059. https://dx.doi.org/10.1073/pnas.1902653116</p>
@@ -251,6 +269,12 @@ https://doi.org/10.1101/2020.06.03.131573;</li>
 <li>Model predicts relationship between noise, signal, and spontaneous correlations</li>
 <li>Stimulus statistics dependence of response statistics is explained</li>
 </ul>
+<h4 id="fpga">FPGA</h4>
+<p>Dynamics of Delay-Coupled Excitable Neural Systems.</p>
+<pre><code>February 2009International Journal of Bifurcation and Chaos 19(02):745-753
+
+DOI: 10.1142/S0218127409023111</code></pre>
+<p>V. Thanasoulis, B. Vogginger, J. Partzsch and C. Mayr, “Delay-Based Neural Computation: Pulse Routing Architecture and Benchmark Application in FPGA,” 2021 28th IEEE International Conference on Electronics, Circuits, and Systems (ICECS), 2021, pp. 1-5, doi: 10.1109/ICECS53924.2021.9665468.</p>
 <h2 id="learning-to-detect-polychronous-groups">Learning to detect polychronous groups</h2>
 <h3 id="learning-weights-and-delays">Learning weights … and delays</h3>
 <p>spike time coding in a neuron: We will describe the Spike-Time Dependent Plasticity (STDP) <span class="citation" data-cites="19NyVq80B">[<a href="#ref-19NyVq80B" role="doc-biblioref">25</a>]</span> rule which implement an unsupervised learning aiming at optimizing the detection of polychronous patterns, that is volleys of spikes which are synchronized, up to some stable pattern of pre-synaptic delays. This STDP rule will be based by the inversion of the generative model for spike formation and will therefore be derived by a Bayesian approach. This will decouple the active synapses (similarly to a logistic regression) from the values of possible synaptic delays.</p>
