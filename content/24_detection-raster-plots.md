@@ -6,6 +6,8 @@ In generic linear non linear lnl models, the output is assumed to be poisson. As
 
 ### Rastermap : decoding large-scale data
 
+[Rastermap](https://nbviewer.org/github/MouseLand/rastermap/blob/master/tutorial/tutorial.ipynb) re-arranges neurons in the raster plot based on similarity of activity
+
 * https://www.janelia.org/lab/stringer-lab
 * described in [@Pachitariu2018]
 * [rastermap](https://github.com/MouseLand/rastermap)
@@ -50,11 +52,6 @@ https://doi.org/10.1101/2020.06.03.131573;
 * "Here we present such a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization. " by @Russo2017
 * sliding window as in [@Grün2002] ("Numerous other statistical procedures for detecting assemblies or sequential patterns have been proposed previously") - extended to multiple lags [@Torre2016]
 * based on a "non-stationarity-corrected parametric test statistic for assessing the independence of pairs" and "an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies"
-
-
-#### Paper by [@Moser2014]
-
-On Stability of Distance Measures for Event Sequences Induced by Level-Crossing Sampling
 
 
 #### Neural Variability and Sampling-Based Probabilistic Representations in the Visual Cortex [@Orban2016]

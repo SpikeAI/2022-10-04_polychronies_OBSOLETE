@@ -19,11 +19,9 @@ RSVP - 17ms per image
 
 ### how timing encodes analogous profile
 
-
-
 [@doi:10.1126/science.1149639] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
 Fig. 1. Ganglion cell responses to flashed gratings with different spatial phases.
-Gollisch and colaborators demonstrated that depending on the shifted of a square-wave grating, the OFF ganglion cells of the retina modify their activity. They encode structural information not by the number of spikes, but by the latency of appearance of the first spikes. 
+Gollisch and colaborators demonstrated that depending on the shifted of a square-wave grating, the OFF ganglion cells of the retina modify their activity. They encode structural information not by the number of spikes, but by the latency of appearance of the first spikes.
 
 Fig. 4. Responses of a fast OFF ganglion cell to a flashed natural image. (For results from other cell types, see fig. S9.)
 The projection of a natural image on the retina leads to an encoding of the spatial information by the OFF ganglion cells in a rather faithful way. Depending on the luminosity, the ganglion cells respond with different latencies. If we make a gray-scale plot of the
@@ -32,6 +30,8 @@ differential spike latency according to the location of the receptor field of th
 
 Celebrini [@doi:10/dqt5cm]
 
+
+Used in models like [@arXiv:1912.11443] : Fast and energy-efficient neuromorphic deep learning with first-spike times
 
 
 #### timing in natural images
@@ -61,3 +61,7 @@ M. Diesmann, M. O. Gewaltig, A. Aertsen, Nature402, 529 (1999).
 
 
  * A notable exception is the polychronization model of Izhikevich (2006), which combined the construction of a random recurrent model of spiking neurons including such delays and whose weights evolved with a Spike-Time Dependent Plasticity (STDP) learning rule. In this model, raster plot analysis showed repeated activation of Polychronous Groups (PGs), i.e., specific spike patterns with a specific sequence of activations.
+
+#### traveling waves
+
+[@doi:10.1038/s41467-021-26175-1]
