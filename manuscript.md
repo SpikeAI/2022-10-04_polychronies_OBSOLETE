@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-01-24'
+date-meta: '2022-01-25'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -48,8 +48,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="dc.date" content="2022-01-24" />
-  <meta name="citation_publication_date" content="2022-01-24" />
+  <meta name="dc.date" content="2022-01-25" />
+  <meta name="citation_publication_date" content="2022-01-25" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -72,9 +72,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/c5e8f4ca7593789487e68b023abcf8459d3e1c48/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/c5e8f4ca7593789487e68b023abcf8459d3e1c48/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/c5e8f4ca7593789487e68b023abcf8459d3e1c48/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/d32df12790d5480fc8b942091024163a6535d9db/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/d32df12790d5480fc8b942091024163a6535d9db/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/d32df12790d5480fc8b942091024163a6535d9db/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,6 +82,7 @@ header-includes: |-
   <meta name="theme-color" content="#ad1457" />
   <!-- end Manubot generated metadata -->
 bibliography:
+- content/manual-references.bib
 - content/manual-references.json
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
@@ -96,10 +97,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/c5e8f4ca7593789487e68b023abcf8459d3e1c48/))
+([permalink](https://SpikeAI.github.io/polychronies/v/d32df12790d5480fc8b942091024163a6535d9db/))
 was automatically generated
-from [SpikeAI/polychronies@c5e8f4c](https://github.com/SpikeAI/polychronies/tree/c5e8f4ca7593789487e68b023abcf8459d3e1c48)
-on January 24, 2022.
+from [SpikeAI/polychronies@d32df12](https://github.com/SpikeAI/polychronies/tree/d32df12790d5480fc8b942091024163a6535d9db)
+on January 25, 2022.
 </em></small>
 
 ## Authors
@@ -160,6 +161,13 @@ Most importantly, it will provide with a detection ability requiring only a few 
 The approach which is currently most prominent in the Spiking Neural Networks community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.
 
 While my previous expertise was based on the modeling of how SNNs process information (Perrinet, Samuelides and Thorpe, 2004) and how these networks may be tuned in a unsupervised manner to their input (Perrinet, Samuelides and Thorpe, 2003), many different SNN architectures may provide robust solutions. Since that time, I have worked on exploring the space of all solutions which are the most efficient to solve a given problem using Bayesian methods. This culminated in defining a hierarchical model performing predictive coding (Boutin et al, 2020).  However, this network is analog and simulations perform too slowly, even on advanced GPU architectures, to be used for real life situation. We have recently developed a similar architecture but based on a SNN architecture.  In particular, this model is event-based from one end (sensory input from event-based cameras) to the other (classification) and its intermediate layers are learned in a self-supervised fashion (Grimaldi et al, 2021: a, b).
+
+
+Lamme and Roelfsemma, 2000
+
+Nowak and Bullier, 1997
+
+RSVP - 17ms per image
 
 
 ### how timing encodes analogous profile
@@ -255,6 +263,18 @@ Finally we will discuss future avenues for effective PG detection and learning i
 
 ### Izhikevitch
 
+* Reproducing Polychronization: A Guide to Maximizing the Reproducibility of Spiking Network Models <https://www.frontiersin.org/articles/10.3389/fninf.2018.00046/full>
+  * comes with python code
+
+* blog post by Paxon Frady <https://epaxon.blogspot.com/2012/07/izhikevich-2006-polychronization.html>
+
+* dynamic networks & learning delays:
+  * Huning H., Glunder H., and Palm G. (1998) Synaptic delay learning in pulse-coupled neurons. Neural Computation, 10:555–565. <https://www.deepdyve.com/lp/mit-press/synaptic-delay-learning-in-pulse-coupled-neurons-DGMiNHxp0A>
+  * [Eurich C., Pawelzik K., Ernst U., Cowan J., and Milton J. (1999) Dynamics of self-organazed delay adaptation. Phys. Rev. Lett., 82:1594–1597.](https://www.researchgate.net/publication/37921636_Dynamics_of_Self-Organized_Delay_Adaptation)
+  * The recent "multi-neuronal spike sequence detector" (MNSD) architecture integrates the weight- and delay-adjustment methods by combining heterosynaptic plasticity with the neurocomputational feature spike latency : <https://pubmed.ncbi.nlm.nih.gov/33679293/>
+  * an extensive (graph-centric) review on [Synchronization in time-varying networks](https://arxiv.org/abs/2109.07618)
+* related
+
 
 ### spike distances
 
@@ -307,7 +327,7 @@ In generic linear non linear lnl models, the output is assumed to be poisson. As
 * "However, SPOTDis has two principal weaknesses that we address here: (1) Its computational complexity, for comparing two time epochs, is O(N2), where N is the number of neurons. This becomes a major problem for computing an MM dissimilarity matrix (for M time epochs) for thousands of neurons. (2) It relies exclusively on pairwise spike-timing relationships (i.e 2nd order correlations), because it does not solve the optimal transport problem for the entire spike pattern, but only for neuron pairs separately. Hence, it may not be sensitive to higher-order correlations in spiking
 patterns.
 Here, we develop a novel dissimilarity measure for multi-neuron spiking patterns called SpikeShip, which has linear computational complexity of O(N). We achieve this by (1) computing the minimum transport cost of spikes for each spike train separately, and (2) discounting a global translation term in the transport flow across neurons."
-https://doi.org/10.1101/2020.06.03.131573; 
+https://doi.org/10.1101/2020.06.03.131573;
 
 #### Paper by Russo et al 2017 [@Russo2017]
 
@@ -327,6 +347,17 @@ On Stability of Distance Measures for Event Sequences Induced by Level-Crossing 
  * Model accounts for independent changes in strength and variability of responses
  * Model predicts relationship between noise, signal, and spontaneous correlations
  * Stimulus statistics dependence of response statistics is explained
+
+
+#### FPGA
+
+Dynamics of Delay-Coupled Excitable Neural Systems.
+
+    February 2009International Journal of Bifurcation and Chaos 19(02):745-753
+
+    DOI: 10.1142/S0218127409023111
+
+V. Thanasoulis, B. Vogginger, J. Partzsch and C. Mayr, "Delay-Based Neural Computation: Pulse Routing Architecture and Benchmark Application in FPGA," 2021 28th IEEE International Conference on Electronics, Circuits, and Systems (ICECS), 2021, pp. 1-5, doi: 10.1109/ICECS53924.2021.9665468.
 
 
 
