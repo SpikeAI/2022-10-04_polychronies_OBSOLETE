@@ -34,6 +34,7 @@ content/10_introduction-timing-vision.md:24:Gollisch
 content/10_introduction-timing-vision.md:27:latencies
 content/10_introduction-timing-vision.md:31:Celebrini
 content/10_introduction-timing-vision.md:34:neuromorphic
+content/10_introduction-timing-vision.md:41:pnas
 content/10_introduction-timing-vision.md:41:sensorial
 content/10_introduction-timing-vision.md:45:presynaptic
 content/10_introduction-timing-vision.md:45:SNN
@@ -137,6 +138,9 @@ content/20_detection-polychronization.md:26:Neurosci
 content/20_detection-polychronization.md:26:Politi
 content/20_detection-polychronization.md:30:discrepency
 content/20_detection-polychronization.md:30:Weyl's
+content/20_detection-polychronization.md:33:pnas
+content/20_detection-polychronization.md:36:feedforward
+content/20_detection-polychronization.md:36:pnas
 content/24_detection-raster-plots.md:5:asscume
 content/24_detection-raster-plots.md:5:inferned
 content/24_detection-raster-plots.md:5:Jayazeri

@@ -52,6 +52,7 @@ electrophysiological
 Elife
 Eurich
 Fairhall
+feedforward
 figshare
 Fize
 FPGA
@@ -126,8 +127,9 @@ Pereira
 Perrinet
 PGs
 PLoS
+pnas
 Politi
-polychronization
+Polychronization
 Polychronous
 polychrony
 Poulet
