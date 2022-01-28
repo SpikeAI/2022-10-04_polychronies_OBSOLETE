@@ -69,7 +69,7 @@ Grossberger
 HDBSCAN
 Hebbian
 heterosynaptic
-Hippocampal
+hippocampal
 Hirase
 Huning
 ICECS
@@ -118,7 +118,7 @@ Neurosciences
 neuroscientific
 Nowak
 organazed
-pami
+PAMI
 Partzsch
 Pawelzik
 Paxon
@@ -128,7 +128,7 @@ PGs
 PLoS
 Politi
 polychronization
-polychronous
+Polychronous
 polychrony
 Poulet
 pre
@@ -160,7 +160,7 @@ stationarity
 Statist
 STDP
 supersequences
-synfire
+Synfire
 Thanasoulis
 Timone
 TJ
