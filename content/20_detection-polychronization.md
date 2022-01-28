@@ -31,3 +31,6 @@ Weyl's discrepency measure [@doi:10.1007/BF01475864] which may lead to the defin
 
 
 Robust computation with rhythmic spike patterns. Proceedings of the National Academy of Sciences of the United States of America 116(36), 18050 - 18059. https://dx.doi.org/10.1073/pnas.1902653116
+
+
+Memory traces in dynamical systems [@doi:10.1073pnas.0804451105] We address these issues by applying Fisher information theory to dynamical systems driven by time-dependent signals corrupted by noise.  Memory capacity is constrained by architecture: "This limit can be realized by feedforward structures with divergent fan out that distributes the signal across neurons, thereby avoiding saturation."
