@@ -43,7 +43,7 @@ From space to time: Spatial inhomogeneities lead to the emergence of spatiotempo
 Spreizer S, Aertsen A, Kumar A.PLoS Comput Biol. 2019
 
 Fast and flexible sequence induction in spiking neural networks via rapid excitability changes.
-Pang R, Fairhall AL.Elife. 2019 May
+Pang R, Fairhall AL.Elife. 2019 May [@doi:10.7554/eLife.44324.001]
 
 Emergence of spontaneous assembly activity in developing neural networks without afferent input.
 Triplett MA, Avitan L, Goodhill GJ.PLoS Comput Biol. 2018
