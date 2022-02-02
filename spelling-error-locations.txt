@@ -16,6 +16,7 @@ content/10_introduction-timing-vision.md:18:sensorial
 content/10_introduction-timing-vision.md:18:SNN
 content/10_introduction-timing-vision.md:18:SNNs
 content/10_introduction-timing-vision.md:21:synfire
+content/10_introduction-timing-vision.md:21:TODO
 content/10_introduction-timing-vision.md:23:corticonics
 content/10_introduction-timing-vision.md:23:electrophysiological
 content/10_introduction-timing-vision.md:23:synfire
@@ -37,8 +38,8 @@ content/10_introduction-timing-vision.md:37:PGs
 content/10_introduction-timing-vision.md:37:polychronization
 content/10_introduction-timing-vision.md:37:Polychronous
 content/10_introduction-timing-vision.md:37:STDP
-content/10_introduction-timing-vision.md:47:presynaptic
-content/10_introduction-timing-vision.md:47:SNN
+content/10_introduction-timing-vision.md:45:presynaptic
+content/10_introduction-timing-vision.md:45:SNN
 content/14_introduction-cortical-songs.md:3:TODO
 content/14_introduction-cortical-songs.md:5:KD
 content/14_introduction-cortical-songs.md:5:Luczak
@@ -219,6 +220,7 @@ content/30_learning-model.md:43:Comput
 content/30_learning-model.md:43:Kumar
 content/30_learning-model.md:43:PLoS
 content/30_learning-model.md:43:Spreizer
+content/30_learning-model.md:46:eLife
 content/30_learning-model.md:46:Elife
 content/30_learning-model.md:46:Fairhall
 content/30_learning-model.md:49:Avitan

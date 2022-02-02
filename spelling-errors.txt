@@ -65,7 +65,7 @@ Grun
 HDBSCAN
 Hebbian
 heterosynaptic
-hippocampal
+Hippocampal
 Hirase
 Huning
 ICECS
@@ -122,7 +122,7 @@ PGs
 PLoS
 pnas
 Politi
-Polychronization
+polychronization
 polychronous
 polychrony
 Poulet
@@ -132,7 +132,7 @@ Proc
 PSCs
 pulvinar
 Purpura
-rastermap
+Rastermap
 RefRN
 Reproducibility
 retinotopic
@@ -155,7 +155,7 @@ stationarity
 Statist
 STDP
 supersequences
-Synfire
+synfire
 Thanasoulis
 Timone
 TJ
