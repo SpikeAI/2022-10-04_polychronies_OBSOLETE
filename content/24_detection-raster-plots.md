@@ -4,6 +4,10 @@
 
 In generic linear non linear lnl models, the output is assumed to be poisson. As such a simple decoding strategy is to asscume it is to b inferned for a given tuning curves (Jayazeri) or simply by a simple regression [@doi:10.1523/jneurosci.1335-12.2012]. This latter model assumes a Bernoulli model for the generation of spikes such that the decoding amounts to a single-layer logistic regression.
 
+
+S. Grun, M. Diesmann, and A. Aertsen. Unitary event analysis. In Analysis of parallel spike trains, pages 191–220. Springer, 2010. + coincidence detection
+
+
 ### Rastermap : decoding large-scale data
 
 [Rastermap](https://nbviewer.org/github/MouseLand/rastermap/blob/master/tutorial/tutorial.ipynb) re-arranges neurons in the raster plot based on similarity of activity
