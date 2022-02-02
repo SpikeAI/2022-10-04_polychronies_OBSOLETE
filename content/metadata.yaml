@@ -39,6 +39,11 @@ authors:
 pandoc:
   citekey-aliases:
     Abeles1991: isbn:9780521376174
+    Izhikevich2006: doi:10.1162/089976606775093882
+    Thorpe1996: doi:10/c4v35x
+    Grimaldi2021: doi:10.1109/CBMI50038.2021.9461901
+    Grimaldi2022: doi:10.36227/techrxiv.18003077.v1
+    Perrinet2004: doi:10.1109/TNN.2004.833303
     Perrinet2001: doi:10.1016/S0925-2312(01)00460-X
     Perrinet2002: doi:10.1016/S0925-2312(02)00374-0
     Ikegaya2004: doi:10.1126/science.1093173

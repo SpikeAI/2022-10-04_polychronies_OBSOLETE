@@ -1,6 +1,8 @@
 
 ## Models of polychronization detection in models
 
+
+
 ### Izhikevitch
 
 * Reproducing Polychronization: A Guide to Maximizing the Reproducibility of Spiking Network Models <https://www.frontiersin.org/articles/10.3389/fninf.2018.00046/full>
