@@ -5,13 +5,18 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-01-28'
+date-meta: '2022-02-02'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
 - Laurent U Perrinet
 citekey-aliases:
   Abeles1991: isbn:9780521376174
+  Izhikevich2006: doi:10.1162/089976606775093882
+  Thorpe1996: doi:10/c4v35x
+  Grimaldi2021: doi:10.1109/CBMI50038.2021.9461901
+  Grimaldi2022: doi:10.36227/techrxiv.18003077.v1
+  Perrinet2004: doi:10.1109/TNN.2004.833303
   Perrinet2001: doi:10.1016/S0925-2312(01)00460-X
   Perrinet2002: doi:10.1016/S0925-2312(02)00374-0
   Ikegaya2004: doi:10.1126/science.1093173
@@ -48,8 +53,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="dc.date" content="2022-01-28" />
-  <meta name="citation_publication_date" content="2022-01-28" />
+  <meta name="dc.date" content="2022-02-02" />
+  <meta name="citation_publication_date" content="2022-02-02" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -72,9 +77,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/543da76a6be0d30df2e510773f03c01373725826/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/543da76a6be0d30df2e510773f03c01373725826/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/543da76a6be0d30df2e510773f03c01373725826/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/c390cdf1a7c0eca1fcbaa4aa239a65e21714c5ec/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/c390cdf1a7c0eca1fcbaa4aa239a65e21714c5ec/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/c390cdf1a7c0eca1fcbaa4aa239a65e21714c5ec/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -97,10 +102,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/543da76a6be0d30df2e510773f03c01373725826/))
+([permalink](https://SpikeAI.github.io/polychronies/v/c390cdf1a7c0eca1fcbaa4aa239a65e21714c5ec/))
 was automatically generated
-from [SpikeAI/polychronies@543da76](https://github.com/SpikeAI/polychronies/tree/543da76a6be0d30df2e510773f03c01373725826)
-on January 28, 2022.
+from [SpikeAI/polychronies@c390cdf](https://github.com/SpikeAI/polychronies/tree/c390cdf1a7c0eca1fcbaa4aa239a65e21714c5ec)
+on February 2, 2022.
 </em></small>
 
 ## Authors
@@ -146,66 +151,40 @@ on January 28, 2022.
 
 The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This *event-based representation* present in the neuronal code is essential in understanding information processing in the brain but also applies to other fields, for instance to the output of an event-based camera. However, most neuronal models do not take advantage of this minute temporal dimension, especially in exploiting the variety of synaptic delays on the dendritic tree.
 
-We will define the motifs of precise temporal patterns as polychronous groups following the model of Izhikevich (2006). This manuscript reviews current litterature on *polychrony detection* in raster plots. It is work in progress, where anybody interested can *openly* join.
+Following the terminology of [@Izhikevich2006], we will define such motifs of precise temporal patterns as **polychronous groups** and this manuscript reviews current litterature on *polychrony detection* in generic raster plots. It is work in progress, where anybody interested can *openly* join.
 
-We will first review some biological and theoretical evidence for polychrony in the neural information processing. We will then review some models for the detection of such polychronous groups in arbitrary raster plots, synthetic, biological or artificial (notably from event-based cameras). Then, we will try to outline some possible strategies for learning these patterns and finally discuss possible perspectives.
+We will first review some biological and theoretical evidence for polychrony in the neural information processing. We will then present some models for the detection of such polychronous groups in arbitrary raster plots, synthetic, biological or artificial (notably from event-based cameras). Then, we will try to outline some possible strategies for learning these patterns and finally discuss possible perspectives.
 
 
 ## introduction: precise temporal patterns in the brain
 
-### ultra fast neural codes
+### Ultra fast neural codes for ultra fast vision
 
-Most importantly, it will provide with a detection ability requiring only a few spikes, and therefore in line with the performance observed in biological systems, like the ability for humans to detect the presence of an animal in an image in a few milliseconds (Thorpe et al (1996). Speed of processing in the human visual system. Nature, 381(6582), 520-522). Such biological observations would serve as benchmarks to compare our proposed architecture to conventional solutions.
-(1] S Thorpe, D Fize, and C Marlot, Nature 381.6582 (1996), pp.520-522.
+Let us start our review of the state of the art on the role of dynamics in vision by presenting some surprising results that have been obtained in neuroscience. Indeed, Simon Thorpe's group has shown that humans can categorize briefly presented images in a fraction of a second.
+This experiment consisted in asking subjects to categorize images that contain or do not contain animals [@Thorpe1996]. The results showed that humans were able to perform this task very well (with a success rate of more than 95%) but above all that a differential activity for the two categories of images could be observed by electroencephalography, showing that this differentiation emerges at a very early latency in neuronal activity. These results have been extended to several species including primates but also extended to different experimental protocols and have shown for example that the response could be extremely fast of the order of 120 ms when the task was to perform a saccade [@doi:10/d8gpjq].
 
-The approach which is currently most prominent in the Spiking Neural Networks community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.
+This fast processing also explains the surprising experiments of fast serial detection which consists in presenting a fast succession of different images and to decode via the EEG if the observer can detect for example the presence of an animal. The performances decrease progressively as the frequency of presentation of the images increases. However, it has been shown in the macaque that a significant performance could be maintained with an image presentation time of only 14 ms per image [@doi:10.1162/089892901564199].
 
-While my previous expertise was based on the modeling of how SNNs process information (Perrinet, Samuelides and Thorpe, 2004) and how these networks may be tuned in a unsupervised manner to their input (Perrinet, Samuelides and Thorpe, 2003), many different SNN architectures may provide robust solutions. Since that time, I have worked on exploring the space of all solutions which are the most efficient to solve a given problem using Bayesian methods. This culminated in defining a hierarchical model performing predictive coding (Boutin et al, 2020).  However, this network is analog and simulations perform too slowly, even on advanced GPU architectures, to be used for real life situation. We have recently developed a similar architecture but based on a SNN architecture.  In particular, this model is event-based from one end (sensory input from event-based cameras) to the other (classification) and its intermediate layers are learned in a self-supervised fashion (Grimaldi et al, 2021: a, b).
-
-
-Lamme and Roelfsemma, 2000
-
-Nowak and Bullier, 1997
-
-RSVP - 17ms per image
-
+This speed of the visual cortex, although surprising, is quite compatible with the latencies that are recorded at the neuro-physiological level. Indeed, when an image is presented on the retina, the visual information is rapidly propagated to the thalamus and then to the primary visual cortex takes about 55 ms in the macaque [@doi:10.1007/978-1-4757-9625-4_5]. This functioning of visual processing as a forward pass is most prominent in fast processing but can be complemented with feedback loops from the higher areas to the sensory areas [@doi:10.1016/S0166-2236(00)01657-X].
 
 ### how timing encodes analogous profile
 
-[@doi:10.1126/science.1149639] T Gollisch and M Meister, Science 319.5866 (2008), pp. 1108-1111.
-Fig. 1. Ganglion cell responses to flashed gratings with different spatial phases.
-Gollisch and colaborators demonstrated that depending on the shifted of a square-wave grating, the OFF ganglion cells of the retina modify their activity. They encode structural information not by the number of spikes, but by the latency of appearance of the first spikes.
+An important characteristic of neuronal information is that it consists mainly in the transfer of action potentials, or spikes, which consist of brief impulses that propagate along the axons of neurons. These have the particularity of being essentially binary in their amplitude (that is to say, they are prototypical, all or nothing). An important consequence of the speed of processing is that it implies that it is carried out using only very few spikes. Indeed, if we consider that a behavioral response in only 120 ms consists of about ten processing stages following the "forward" pathways of the visual system, then this imposes that the processing in a single area is performed with a reduced number of spikes.
 
-Fig. 4. Responses of a fast OFF ganglion cell to a flashed natural image. (For results from other cell types, see fig. S9.)
-The projection of a natural image on the retina leads to an encoding of the spatial information by the OFF ganglion cells in a rather faithful way. Depending on the luminosity, the ganglion cells respond with different latencies. If we make a gray-scale plot of the
-differential spike latency according to the location of the receptor field of the ganglion cells, we obtain a representation of the presented image that is much more faithful than by doing a gray-scale plot of spike count.
+At the level of dynamic processing of visual information, it has been shown that an encoding of the values of luminance imminence in the image instead of the retina [@doi:10.1126/science.1149639]. Notably one can appreciate in figure 1 that the response of ganglion cells to visual gratings that are flashed onto the retina. The authors showed that the neuronal response could be encoded in the latency of the response and not only in the frequency of discharge as is often assumed. In figure 4 of the same article, these results are extended to natural images and show a qualitatively similar behavior. The conclusion of the authors is that the discharge latency of the neurons allows to encode spatial characteristics of the image.
+
+Similar results have been demonstrated through neurophysiological recordings in the primary visual cortex and show that different levels of visual activity will induce different levels of neuronal discharge latency in the primary visual area [@doi:10/dqt5cm]. Many models have used these properties in temporal coding to build fast image categorization networks. These models take the form of artificial spiking neural networks (SNNs) and have been able to demonstrate their practical applications for image categorization [@Perrinet2004]. This work has been extended to include unsupervised learning capabilities and we have recently developed a SNN architecture that allows to categorize images of different classes in only a few spikes [@Grimaldi2021, @Grimaldi2022]. This type of modeling is extremely important with respect to the development of a new generation of cameras called Silicon Cameras which, instead of using a basic frame-based representation, uses a representation similar to the one we have just described and which consists in representing the image by events [@arxiv:2201.12673]. This type of modeling often uses the classical architecture of image categorization developed in deep learning while adapting it to the specificity of the event-based representation [@arXiv:1912.11443]. Note also that timing is not entirely sensorial or internal but in [@doi:10.1073/pnas.1921226117], they found that "timing accuracy was improved when the environment afforded cues that rats can incorporate into motor routines. Timing, at least in animals, may thus be fundamentally embodied and situated."
 
 
-Celebrini [@doi:10/dqt5cm]
-
-
-Used in models like [@arXiv:1912.11443] : Fast and energy-efficient neuromorphic deep learning with first-spike times
-
-
-#### timing in natural images
-
-in  [@natural],  we generate raster plots from natural images
-
-Note also that timing is not entirely sensorial or internal but in [@doi:10.1073/pnas.1921226117], they found that "timing accuracy was improved when the environment afforded cues that rats can incorporate into motor routines. Timing, at least in animals, may thus be fundamentally embodied and situated."
-
-####  delays
-
-Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level. I have an extensive expertise in the domain of temporal delays in the nervous system, both at the neural [@doi:10.1007/s00422-014-0620-8] and behavioral [@doi:10.1371/journal.pcbi.1005068] levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks. Our expertise in reproducing the HOTS network [@doi:10.1109/CBMI50038.2021.9461901,@doi:Grimaldi2022pami] will be crucial in the swift realization of this project.
-
-
-
-#### synfire chains
+### synfire chains
 
 In [@Abeles1991] corticonics: The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models and synfire chains
 
-sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet, Neuron 78.1 (2013), pp. 28-48.
-
 M. Diesmann, M. O. Gewaltig, A. Aertsen, Nature402, 529 (1999).
+
+
+### synfire braids
+sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet, Neuron 78.1 (2013), pp. 28-48.
 
 
  * [@Bienenstock1995] : from synfire chains to Synfire braids
@@ -213,11 +192,17 @@ M. Diesmann, M. O. Gewaltig, A. Aertsen, Nature402, 529 (1999).
  * recent theories of binding by synchrony : Fries 2005 trends cog neuro with spikes arriving at peak susceptibility (top of a cycle) or down, van Rullen, Laura Dugué
 
 
- * A notable exception is the polychronization model of Izhikevich (2006), which combined the construction of a random recurrent model of spiking neurons including such delays and whose weights evolved with a Spike-Time Dependent Plasticity (STDP) learning rule. In this model, raster plot analysis showed repeated activation of Polychronous Groups (PGs), i.e., specific spike patterns with a specific sequence of activations.
+ * A notable exception is the polychronization model of Izhikevich [@Izhikevich2006], which combined the construction of a random recurrent model of spiking neurons including such delays and whose weights evolved with a Spike-Time Dependent Plasticity (STDP) learning rule. In this model, raster plot analysis showed repeated activation of Polychronous Groups (PGs), i.e., specific spike patterns with a specific sequence of activations.
 
 #### traveling waves
 
 [@doi:10.1038/s41467-021-26175-1]
+
+
+
+####  delays
+
+Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level. I have an extensive expertise in the domain of temporal delays in the nervous system, both at the neural [@doi:10.1007/s00422-014-0620-8] and behavioral [@doi:10.1371/journal.pcbi.1005068] levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks. Our expertise in reproducing the HOTS network [@doi:10.1109/CBMI50038.2021.9461901,@doi:Grimaldi2022pami] will be crucial in the swift realization of this project.
 
 
 
@@ -251,6 +236,13 @@ It is interesting to make a parallel with the "Rapid Formation of Robust Auditor
 
 ### outline
 
+
+
+
+The approach which is currently most prominent in the Spiking Neural Networks community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.
+
+
+
 This section has provided evidence that polychronous groups are an important apsect of information representation in biology with important application in data analysis and neuromorphic engineering. The rest of this review paper is organized as follows.
 
 First, we will review models for the detection of polychronous groups:
@@ -264,6 +256,8 @@ Finally we will discuss future avenues for effective PG detection and learning i
 
 
 ## Models of polychronization detection in models
+
+
 
 ### Izhikevitch
 
@@ -305,6 +299,10 @@ Memory traces in dynamical systems [@doi:10.1073pnas.0804451105] We address the
 ### decoding neural activity
 
 In generic linear non linear lnl models, the output is assumed to be poisson. As such a simple decoding strategy is to asscume it is to b inferned for a given tuning curves (Jayazeri) or simply by a simple regression [@doi:10.1523/jneurosci.1335-12.2012]. This latter model assumes a Bernoulli model for the generation of spikes such that the decoding amounts to a single-layer logistic regression.
+
+
+S. Grun, M. Diesmann, and A. Aertsen. Unitary event analysis. In Analysis of parallel spike trains, pages 191–220. Springer, 2010. + coincidence detection
+
 
 ### Rastermap : decoding large-scale data
 
