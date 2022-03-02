@@ -26,10 +26,15 @@ In his book "Corticonics" [@Abeles1991], Moshe Abeles asked if the role of corti
 
 It was shown that a simple model may allow the propagation of such synfire chains [@pmid:11665761]. This model considers the dynamics of leaky integrate-of-fire neurons in different groups of similar size. Each neuron of one group is connected by an excitatory synapse to the next. When a pulse is elicited in the first group, this may generate a spike in the next group. Depending on the weight value, this new activity may get more or less synchronized than the previous pulse (as measured by the standard deviation of spike times in the pulse). Recursively applying this to a sequence of groups generates either a synfire propagation or not. A simple simulation is shown in Figure [@fig:diesman].
 
-
-Attempts have been made to detect such synfire chains in neurobiological data [@doi:10.1152/jn.01245.2007]: "The sensitivity is high enough to detect synfire chain activity in simultaneous single-unit recordings of 100 to 200 neurons from such data, enabling application to experimental data in the near future." Further models have shown that such synfire chains could be embedded in topographies [@doi:10.1162/089976603321780290] or using conductance-based neurons with feed-forward inhibition to improve the robustness of the propagation [@doi:10.1007/s10827-010-0240-9].
-
 ![Simulation of a synfire propagation [using Brian](https://brian2.readthedocs.io/en/stable/examples/frompapers.Diesmann_et_al_1999.html). The model consists of 10 groups of 100 neurons each. A pulse with a given jitter is generated in the first group which here generates a pulse after a certain processing delay in the second group with a lower jitter. This allows the propagation of the synchronous activity along the chain of the neural groups.](https://brian2.readthedocs.io/en/stable/_images/frompapers.Diesmann_et_al_1999.1.png){#fig:diesman}
+
+Attempts have been made to detect such synfire chains in neurobiological data [@doi:10.1152/jn.01245.2007]: "The sensitivity is high enough to detect synfire chain activity in simultaneous single-unit recordings of 100 to 200 neurons from such data, enabling application to experimental data in the near future." Further models have shown that such synfire chains could be embedded in topographies [@doi:10.1162/089976603321780290] or using conductance-based neurons with feed-forward inhibition to improve the robustness of the propagation [@doi:10.1007/s10827-010-0240-9]. In particular, this was implemented using the pyNN language [@doi:10.3389/neuro.11.011.2008] both in CPU-based and neuromorphic hardware [@doi:10.3389/fnins.2013.00011] (see Figure [@fig:pynn]).
+
+![A pyNN implementation of a Synfire chain with feedforward inhibition. The background is only utilized in the original model, where it is implemented as random Gaussian current. For the presented hardware implementation it has been omitted due to network size constraints. As compensation for missing background stimuli, the resting potential was increased to ensure a comparable excitability of the neurons. The state space gives the duration of synfire chains as a function of the protocol's parameters and compares (C) CPU to (D) neuromorphic implementations.](https://www.frontiersin.org/files/Articles/39056/fnins-07-00011-r2/image_m/fnins-07-00011-g004.jpg){#fig:pynn}
+
+Note also that synchronicity may explain some unintuitive results. Indeed it has been shown that  thalamocortical synapses are relatively weak compared to the amount of intra-cortical activity. However, this pathway is sufficient to drive the cortex as this input is more often synchronously active [@doi:10.1126/science.1124593].
+
+
 
 #### TODO : ... to synfire braids
 
