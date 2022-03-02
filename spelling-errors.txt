@@ -123,7 +123,7 @@ Neurosci
 Neurosciences
 neuroscientific
 organazed
-pami
+PAMI
 Partzsch
 Pawelzik
 Paxon
@@ -135,7 +135,6 @@ pnas
 Politi
 polychronization
 polychronous
-polychrony
 Poulet
 pre
 premotor

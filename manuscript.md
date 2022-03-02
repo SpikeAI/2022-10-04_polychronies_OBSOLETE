@@ -1,5 +1,5 @@
 ---
-title: Review on Polychrony detection in biological and artificial raster plots
+title: Review on temporal spiking motifs in neurobiological and neuromorphic data
 keywords:
 - neurons
 - code
@@ -54,10 +54,10 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
+  <meta name="dc.title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
+  <meta name="citation_title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
+  <meta property="og:title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
+  <meta property="twitter:title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
   <meta name="dc.date" content="2022-03-02" />
   <meta name="citation_publication_date" content="2022-03-02" />
   <meta name="dc.language" content="en-US" />
@@ -82,9 +82,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/02dd78b1480a163778e3afde98984f9af2c8d21a/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/02dd78b1480a163778e3afde98984f9af2c8d21a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/02dd78b1480a163778e3afde98984f9af2c8d21a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/c01c85d5aa5144a0dbaa8e03fc6d98fb732975f7/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/c01c85d5aa5144a0dbaa8e03fc6d98fb732975f7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/c01c85d5aa5144a0dbaa8e03fc6d98fb732975f7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -107,9 +107,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/02dd78b1480a163778e3afde98984f9af2c8d21a/))
+([permalink](https://SpikeAI.github.io/polychronies/v/c01c85d5aa5144a0dbaa8e03fc6d98fb732975f7/))
 was automatically generated
-from [SpikeAI/polychronies@02dd78b](https://github.com/SpikeAI/polychronies/tree/02dd78b1480a163778e3afde98984f9af2c8d21a)
+from [SpikeAI/polychronies@c01c85d](https://github.com/SpikeAI/polychronies/tree/c01c85d5aa5144a0dbaa8e03fc6d98fb732975f7)
 on March 2, 2022.
 </em></small>
 
@@ -154,11 +154,11 @@ on March 2, 2022.
 
 ## Abstract {.page_break_before}
 
-Why do neurons communicate through action potentials, or spikes? An action potential is a binary event —it can occur or not, without further details— and asynchronous, i.e. it can occur at any time. In the living world, neurons almost systematically use this so-called event-based representation, though we do not yet have a clear idea why. A better understanding of this phenomenon remains a fundamental challenge in neurobiology in order to better interpret the masses of recorded data. It is also an emerging challenge in computer science to allow the efficient exploitation of a new class of sensors and impulse computers, called neuromorphic, which could allow significant gains in computing time and energy consumption —a major societal challenge in the age of the digital economy and of global warming.
+Why do neurons communicate through spikes? An action potential is a binary event —it can occur or not, without further details— and asynchronous, i.e. it can occur at any time. In the living world, neurons almost systematically use this so-called event-based representation, though we do not yet have a clear idea why. A better understanding of this phenomenon remains a fundamental challenge in neurobiology in order to better interpret the masses of recorded data. It is also an emerging challenge in computer science to allow the efficient exploitation of a new class of sensors and event-based computers, called neuromorphic, which could allow significant gains in computing time and energy consumption —a major societal challenge in the age of the digital economy and of global warming.
 
-The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This *event-based representation* present in the neuronal code is essential in understanding information processing in the brain but also applies to other fields, for instance to the output of an event-based camera. However, most neuronal models do not take advantage of this minute temporal dimension, especially in exploiting the variety of synaptic delays on the dendritic tree. Our goal here is to bring an interdisciplinary perspective on the computational advantage of time series representations for the brain and for information processing machines. In particular, we will formalize mathematically a representation in an assembly of neurons based on a set of patterns of different relative spike times. Following the terminology of [@Izhikevich2006], we will define such motifs of precise temporal patterns as **polychronous groups** and this manuscript reviews current litterature on *polychrony detection* in generic raster plots. It is work in progress, where anybody interested can *openly* join. This hypothesis is directly inspired by neurobiological observations in the hippocampus, and it expands the capabilities of analog representations based on the firing rate by considering a representation based on repetitions of these polychronous groups at precise times of occurrence. This formalization is particularly well suited to neuromorphic computing, and allows for supervised or self-supervised learning of polychronous groups in any event-driven data.
+The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This *event-based representation* present in the neuronal code is essential in understanding information processing and yet, most neuronal models do not take advantage of this minute temporal dimension. Our goal here is to bring an interdisciplinary perspective on the computational advantage of time series representations for the brain and for information processing machines. In particular, we will focus on the hypothesis that there exists in an assembly of neurons a representation based on a set of motifs of different relative spike times. Here, we will review current litterature on the detection of such motifs in generic raster plots. It is work in progress, where anybody interested can *openly* join.
 
-We will first review some biological and theoretical evidence for polychrony in the neural information processing. We will then present some models for the detection of such polychronous groups in arbitrary raster plots, synthetic, biological or artificial (notably from event-based cameras). Then, we will try to outline some possible strategies for learning these patterns and finally discuss possible perspectives.
+This hypothesis is directly inspired by neurobiological observations in the hippocampus, and it expands the capabilities of analog representations based on the firing rate by considering a representation based on repetitions of these motifs at precise times of occurrence. A mathematical formalization would be particularly well suited to neuromorphic computing, and would allow for the supervised or self-supervised learning of such motifs in any event-driven data. We will first review some biological and theoretical evidence in neural information processing. We will then present some models for the detection of such motifs in arbitrary raster plots, synthetic, biological or artificial (notably from event-based cameras). In particular, we will discuss models which exploit the variety of synaptic delays on the dendritic tree. Then, we will try to outline some possible strategies for learning these patterns and finally discuss possible perspectives.
 
 
 ## Introduction: precise temporal patterns in the brain
