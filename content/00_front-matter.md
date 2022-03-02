@@ -1,4 +1,6 @@
 {##
+	https://github.com/manubot/rootstock/blob/main/USAGE.md
+	
   This file contains a Jinja2 front-matter template that adds version and authorship information.
   Changing the Jinja2 templates in this file may cause incompatibility with Manubot updates.
   Pandoc automatically inserts title from metadata.yaml, so it is not included in this template.

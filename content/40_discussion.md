@@ -14,4 +14,4 @@ Here, we develop a model for the efficient detection of such PGs based on the in
 
 ## development
 
-scaffolding of neural assemblies / existence of critical periods : [@doi:10.1101/2021.06.08.447542v1]
+scaffolding of neural assemblies / existence of critical periods : [@doi:10.1101/2021.06.08.447542]
