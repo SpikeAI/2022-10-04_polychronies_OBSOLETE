@@ -82,9 +82,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/28fe64af8c8dc1cd47d8e060808d65238e60b05f/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/28fe64af8c8dc1cd47d8e060808d65238e60b05f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/28fe64af8c8dc1cd47d8e060808d65238e60b05f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/5e09809c58d583bb45d24c123f73aa10210a5688/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/5e09809c58d583bb45d24c123f73aa10210a5688/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/5e09809c58d583bb45d24c123f73aa10210a5688/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -107,9 +107,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/28fe64af8c8dc1cd47d8e060808d65238e60b05f/))
+([permalink](https://SpikeAI.github.io/polychronies/v/5e09809c58d583bb45d24c123f73aa10210a5688/))
 was automatically generated
-from [SpikeAI/polychronies@28fe64a](https://github.com/SpikeAI/polychronies/tree/28fe64af8c8dc1cd47d8e060808d65238e60b05f)
+from [SpikeAI/polychronies@5e09809](https://github.com/SpikeAI/polychronies/tree/5e09809c58d583bb45d24c123f73aa10210a5688)
 on March 2, 2022.
 </em></small>
 
@@ -299,6 +299,7 @@ Finally we will discuss future avenues for effective PG detection and learning i
   * an extensive (graph-centric) review on [Synchronization in time-varying networks](https://arxiv.org/abs/2109.07618)
 * related
 
+[@Kaplan13]
 
 ### spike distances
 

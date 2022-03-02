@@ -136,8 +136,8 @@ PGs
 PLoS
 pnas
 Politi
-polychronization
-Polychronous
+Polychronization
+polychronous
 Poulet
 pre
 premotor
@@ -147,7 +147,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-Rastermap
+rastermap
 RefRN
 Reproducibility
 retinotopic
@@ -171,7 +171,7 @@ stationarity
 Statist
 STDP
 supersequences
-synfire
+Synfire
 thalamocortical
 Thanasoulis
 Timone
