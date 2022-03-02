@@ -72,7 +72,7 @@ heatmap
 Hebbian
 heterosynaptic
 hh
-Hippocampal
+hippocampal
 Hirase
 Huning
 HVC
@@ -168,7 +168,7 @@ stationarity
 Statist
 STDP
 supersequences
-Synfire
+synfire
 Thanasoulis
 Timone
 TJ
