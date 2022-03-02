@@ -14,9 +14,7 @@ content/10_introduction-timing-vision.md:17:vitro
 content/10_introduction-timing-vision.md:19:cnrs
 content/10_introduction-timing-vision.md:19:latencies
 content/10_introduction-timing-vision.md:21:luminance
-content/10_introduction-timing-vision.md:21:pnas
 content/10_introduction-timing-vision.md:23:neurophysiological
-content/10_introduction-timing-vision.md:23:pnas
 content/10_introduction-timing-vision.md:23:sensorial
 content/10_introduction-timing-vision.md:23:SNN
 content/10_introduction-timing-vision.md:23:SNNs
@@ -89,11 +87,7 @@ content/14_introduction-cortical-songs.md:3:synfire
 content/14_introduction-cortical-songs.md:5:hippocampal
 content/14_introduction-cortical-songs.md:5:hippocampal
 content/14_introduction-cortical-songs.md:5:Malvache
-content/14_introduction-cortical-songs.md:5:pnas
 content/14_introduction-cortical-songs.md:7:heatmap
-content/14_introduction-cortical-songs.md:7:pnas
-content/14_introduction-cortical-songs.md:7:pnas
-content/14_introduction-cortical-songs.md:7:pnas
 content/14_introduction-cortical-songs.md:9:KD
 content/14_introduction-cortical-songs.md:9:Luczak
 content/14_introduction-cortical-songs.md:9:Neurosci
@@ -184,9 +178,7 @@ content/20_detection-polychronization.md:29:Neurosci
 content/20_detection-polychronization.md:29:Politi
 content/20_detection-polychronization.md:33:discrepency
 content/20_detection-polychronization.md:33:Weyl's
-content/20_detection-polychronization.md:36:pnas
 content/20_detection-polychronization.md:39:feedforward
-content/20_detection-polychronization.md:39:pnas
 content/24_detection-raster-plots.md:5:asscume
 content/24_detection-raster-plots.md:5:inferned
 content/24_detection-raster-plots.md:5:Jayazeri
@@ -253,7 +245,6 @@ content/30_learning-model.md:22:HVC
 content/30_learning-model.md:22:HVC
 content/30_learning-model.md:22:HVC
 content/30_learning-model.md:22:PGs
-content/30_learning-model.md:22:pnas
 content/30_learning-model.md:22:premotor
 content/30_learning-model.md:26:Bellec
 content/30_learning-model.md:27:Bernouilli

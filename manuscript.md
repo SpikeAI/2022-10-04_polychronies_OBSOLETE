@@ -82,9 +82,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/5e09809c58d583bb45d24c123f73aa10210a5688/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/5e09809c58d583bb45d24c123f73aa10210a5688/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/5e09809c58d583bb45d24c123f73aa10210a5688/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/90420b4d276795ff630c89a0a5146c034b3602e3/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/90420b4d276795ff630c89a0a5146c034b3602e3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/90420b4d276795ff630c89a0a5146c034b3602e3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -107,9 +107,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/5e09809c58d583bb45d24c123f73aa10210a5688/))
+([permalink](https://SpikeAI.github.io/polychronies/v/90420b4d276795ff630c89a0a5146c034b3602e3/))
 was automatically generated
-from [SpikeAI/polychronies@5e09809](https://github.com/SpikeAI/polychronies/tree/5e09809c58d583bb45d24c123f73aa10210a5688)
+from [SpikeAI/polychronies@90420b4](https://github.com/SpikeAI/polychronies/tree/90420b4d276795ff630c89a0a5146c034b3602e3)
 on March 2, 2022.
 </em></small>
 
@@ -318,7 +318,7 @@ Weyl's discrepency measure [@doi:10.1007/BF01475864] which may lead to the defin
 Robust computation with rhythmic spike patterns. Proceedings of the National Academy of Sciences of the United States of America 116(36), 18050 - 18059. https://dx.doi.org/10.1073/pnas.1902653116
 
 
-Memory traces in dynamical systems [@doi:10.1073pnas.0804451105] We address these issues by applying Fisher information theory to dynamical systems driven by time-dependent signals corrupted by noise.  Memory capacity is constrained by architecture: "This limit can be realized by feedforward structures with divergent fan out that distributes the signal across neurons, thereby avoiding saturation."
+Memory traces in dynamical systems [@doi:10.1073/pnas.0804451105] We address these issues by applying Fisher information theory to dynamical systems driven by time-dependent signals corrupted by noise.  Memory capacity is constrained by architecture: "This limit can be realized by feedforward structures with divergent fan out that distributes the signal across neurons, thereby avoiding saturation."
 
 
 ## Detecting patterns in biological raster plots
@@ -484,7 +484,7 @@ Here, we develop a model for the efficient detection of such PGs based on the in
 
 ## development
 
-scaffolding of neural assemblies / existence of critical periods : [@doi:10.1101/2021.06.08.447542v1]
+scaffolding of neural assemblies / existence of critical periods : [@doi:10.1101/2021.06.08.447542]
 
 
 ## References {.page_break_before}

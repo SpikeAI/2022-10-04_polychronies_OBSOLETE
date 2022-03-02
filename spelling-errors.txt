@@ -72,7 +72,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-hippocampal
+Hippocampal
 Hirase
 Huning
 HVC
@@ -134,10 +134,9 @@ Pereira
 Perrinet
 PGs
 PLoS
-pnas
 Politi
 Polychronization
-polychronous
+Polychronous
 Poulet
 pre
 premotor
@@ -171,7 +170,7 @@ stationarity
 Statist
 STDP
 supersequences
-Synfire
+synfire
 thalamocortical
 Thanasoulis
 Timone
