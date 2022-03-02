@@ -72,7 +72,6 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-hh
 hippocampal
 Hirase
 Huning
@@ -127,7 +126,7 @@ Neurosci
 Neurosciences
 neuroscientific
 organazed
-pami
+PAMI
 Partzsch
 Pawelzik
 Paxon
@@ -137,7 +136,7 @@ PGs
 PLoS
 pnas
 Politi
-Polychronization
+polychronization
 Polychronous
 Poulet
 pre
@@ -148,7 +147,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-Rastermap
+rastermap
 RefRN
 Reproducibility
 retinotopic
