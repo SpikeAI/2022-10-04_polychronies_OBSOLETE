@@ -82,9 +82,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/a9f530650ab5c0e1d44f28e01a2f98d3197ed731/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a9f530650ab5c0e1d44f28e01a2f98d3197ed731/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a9f530650ab5c0e1d44f28e01a2f98d3197ed731/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/b219fe8e59ac301d79c52db5de587d2153e62a78/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/b219fe8e59ac301d79c52db5de587d2153e62a78/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/b219fe8e59ac301d79c52db5de587d2153e62a78/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -107,9 +107,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/a9f530650ab5c0e1d44f28e01a2f98d3197ed731/))
+([permalink](https://SpikeAI.github.io/polychronies/v/b219fe8e59ac301d79c52db5de587d2153e62a78/))
 was automatically generated
-from [SpikeAI/polychronies@a9f5306](https://github.com/SpikeAI/polychronies/tree/a9f530650ab5c0e1d44f28e01a2f98d3197ed731)
+from [SpikeAI/polychronies@b219fe8](https://github.com/SpikeAI/polychronies/tree/b219fe8e59ac301d79c52db5de587d2153e62a78)
 on March 2, 2022.
 </em></small>
 
@@ -179,7 +179,7 @@ An important characteristic of neuronal information is that it consists mainly i
 
 Note also that depending on how an in vitro cell is driven, this may influence the reliability of spike timing in neocortical neurons [@doi:10.1126/science.7770778].
 
-![Latency coding. An input analog profile is encoded in latencies: the higher the contrast, the shorter the latency. In this example, one generates at most one spike per neuron. From [@url:https://www.cnrs.fr/mi/IMG/pdf/parissep14-m-thorpe-small.pdf]](images/roc.jpg){#fig:roc}
+![Latency coding. An input analog profile is encoded in latencies: the higher the contrast, the shorter the latency. In this example, one generates at most one spike per neuron. From [@https://www.cnrs.fr/mi/IMG/pdf/parissep14-m-thorpe-small.pdf]](images/roc.jpg){#fig:roc}
 
 At the level of dynamic processing of visual information, it has been shown that an encoding of the values of luminance imminence in the image instead of the retina [@doi:10.1126/science.1149639]. Notably one can appreciate in figure 1 that the response of ganglion cells to visual gratings that are flashed onto the retina. The authors showed that the neuronal response could be encoded in the latency of the response and not only in the frequency of discharge as is often assumed. In figure 4 of the same article, these results are extended to natural images and show a qualitatively similar behavior. The conclusion of the authors is that the discharge latency of the neurons allows to encode spatial characteristics of the image. First-spike latency codes are a feasible mechanism for information transfer even when biologically plausible estimates of stimulus onset are taken into account [@doi:10.1073/pnas.0610368104].
 
@@ -188,7 +188,7 @@ Similar results have been demonstrated through neurophysiological recordings in 
 
 ### From synfire chains...
 
-In his book "Corticonics" [@Abeles1991], Moshe Abeles asked if the role of cortical neurons is whether to integrate synaptic inputs or rather to detect coincidences in temporal spiking patterns. The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models. While the first hypothesis favors the rate coding theory, the second possibility highlights the need for temporal precision in the neural code. The book then demonstrates that this could take the form of "synfire chains", that is synchronous activity on subsets of neurons which could be propagated in a stable fashion. Since, numerous studies demonstrated the emergence of synchronicity in neuron population activity [@doi:10/gm79hh], efficient encoding thanks to the use of spike latencies [@Perrinet2004,@doi:10.1126/science.1149639] or precise timing in the auditory system [@url:https://repository.cshl.edu/id/eprint/30941,@doi:10.1523/JNEUROSCI.10-10-03227.1990]. All these findings, and more [@doi:10.1023/B:NACO.0000027755.02868.60], highlight the importance of the temporal aspect of the neural code and suggest the existence of repeated spatio-temporal patterns in the spike train.
+In his book "Corticonics" [@Abeles1991], Moshe Abeles asked if the role of cortical neurons is whether to integrate synaptic inputs or rather to detect coincidences in temporal spiking patterns. The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models. While the first hypothesis favors the rate coding theory, the second possibility highlights the need for temporal precision in the neural code. The book then demonstrates that this could take the form of "synfire chains", that is synchronous activity on subsets of neurons which could be propagated in a stable fashion. Since, numerous studies demonstrated the emergence of synchronicity in neuron population activity [@doi:10/gm79hh], efficient encoding thanks to the use of spike latencies [@Perrinet2004,@doi:10.1126/science.1149639] or precise timing in the auditory system [@https://repository.cshl.edu/id/eprint/30941,@doi:10.1523/JNEUROSCI.10-10-03227.1990]. All these findings, and more [@doi:10.1023/B:NACO.0000027755.02868.60], highlight the importance of the temporal aspect of the neural code and suggest the existence of repeated spatio-temporal patterns in the spike train.
 
 It was shown that a simple model may allow the propagation of such synfire chains [@pmid:11665761]. This model considers the dynamics of leaky integrate-of-fire neurons in different groups of similar size. Each neuron of one group is connected by an excitatory synapse to the next. When a pulse is elicited in the first group, this may generate a spike in the next group. Depending on the weight value, this new activity may get more or less synchronized than the previous pulse (as measured by the standard deviation of spike times in the pulse). Recursively applying this to a sequence of groups generates either a synfire propagation or not. A simple simulation is shown in Figure [@fig:diesman].
 
@@ -217,15 +217,19 @@ sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6
 
  * A notable exception is the polychronization model of Izhikevich [@Izhikevich2006], which combined the construction of a random recurrent model of spiking neurons including such delays and whose weights evolved with a Spike-Time Dependent Plasticity (STDP) learning rule. In this model, raster plot analysis showed repeated activation of Polychronous Groups (PGs), i.e., specific spike patterns with a specific sequence of activations.
 
-#### link to traveling waves and synaptic delays
+#### Traveling waves: A more generic view
 
 [@doi:10.1038/s41467-021-26175-1]
 
-
+[@Muller14]
 
 Spontaneous traveling waves naturally emerge from horizontal fiber time delays and travel through locally asynchronous-irregular states [@doi:10.1126/science.278.5345.1950]
 
-Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level. I have an extensive expertise in the domain of temporal delays in the nervous system, both at the neural [@doi:10.1007/s00422-014-0620-8] and behavioral [@doi:10.1371/journal.pcbi.1005068] levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks. Our expertise in reproducing the HOTS network [@doi:10.1109/CBMI50038.2021.9461901,@doi:Grimaldi2022pami] will be crucial in the swift realization of this project.
+Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level.
+
+there are temporal delays in the nervous system, both at the neural [@doi:10.1007/s00422-014-0620-8] and behavioral [@doi:10.1371/journal.pcbi.1005068] levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks.
+
+Our expertise in reproducing the HOTS network [@Grimaldi2021,@Grimaldi2022]
 
 
 

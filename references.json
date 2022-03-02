@@ -1,5 +1,48 @@
 [
   {
+    "DOI": "10/f52mxc",
+    "ISSN": "2041-1723",
+    "PMCID": "PMC4015334",
+    "PMID": "24770473",
+    "abstract": "Propagating waves occur in many excitable media and were recently found in neural systems from retina to neocortex. While propagating waves are clearly present under anaesthesia, whether they also appear during awake and conscious states remains unclear. One possibility is that these waves are systematically missed in trial-averaged data, due to variability. Here we present a method for detecting propagating waves in noisy multichannel recordings. Applying this method to single-trial voltage-sensitive dye imaging data, we show that the stimulus-evoked population response in primary visual cortex of the awake monkey propagates as a travelling wave, with consistent dynamics across trials. A network model suggests that this reliability is the hallmark of the horizontal fibre network of superficial cortical layers. Propagating waves with similar properties occur independently in secondary visual cortex, but maintain precise phase relations with the waves in primary visual cortex. These results show that, in response to a visual stimulus, propagating waves are systematically evoked in several visual areas, generating a consistent spatiotemporal frame for further neuronal interactions.",
+    "author": [
+      {
+        "family": "Muller",
+        "given": "Lyle"
+      },
+      {
+        "family": "Reynaud",
+        "given": "Alexandre"
+      },
+      {
+        "family": "Chavane",
+        "given": "Frédéric"
+      },
+      {
+        "family": "Destexhe",
+        "given": "Alain"
+      }
+    ],
+    "container-title": "Nature Communications",
+    "container-title-short": "Nat Commun",
+    "id": "hGYLURVS",
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          4,
+          28
+        ]
+      ]
+    },
+    "keyword": "Animals, Visual Cortex, Macaca mulatta, Eye Movements, Photic Stimulation, Models, Neurological, Evoked Potentials, Visual, Fixation, Ocular, Pyrazoles, Thiazoles",
+    "note": "00068\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: Muller14",
+    "page": "3675",
+    "title": "The stimulus-evoked population response in visual cortex of awake monkey is a propagating wave",
+    "type": "article-journal",
+    "volume": "5"
+  },
+  {
     "id": "15cR83gqd",
     "URL": "https://arxiv.org/abs/1912.11443",
     "number": "1912.11443",

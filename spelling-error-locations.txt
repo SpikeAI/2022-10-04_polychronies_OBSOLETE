@@ -73,7 +73,7 @@ content/10_introduction-timing-vision.md:55:polychronization
 content/10_introduction-timing-vision.md:55:Polychronous
 content/10_introduction-timing-vision.md:55:STDP
 content/10_introduction-timing-vision.md:65:presynaptic
-content/10_introduction-timing-vision.md:65:SNN
+content/10_introduction-timing-vision.md:67:SNN
 content/14_introduction-cortical-songs.md:5:Bienenstock
 content/14_introduction-cortical-songs.md:5:hippocampal
 content/14_introduction-cortical-songs.md:5:Ikegaya
