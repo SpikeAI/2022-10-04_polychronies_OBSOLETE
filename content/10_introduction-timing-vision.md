@@ -20,10 +20,15 @@ Similar results have been demonstrated through neurophysiological recordings in 
 
 ### TODO: synfire chains
 
-In [@Abeles1991] corticonics: The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models and synfire chains
+In [@Abeles1991], Abeles asked if the role of cortical neurons is whether to integrate synaptic inputs or rather to detect coincidences in temporal spiking patterns. corticonics: The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models and synfire chains
 
-M. Diesmann, M. O. Gewaltig, A. Aertsen, Nature402, 529 (1999).
+While the first role favors the rate coding theory, the second possibility highlights the need for temporal precision in the neural code. Since, numerous studies demonstrated the emergence of synchronicity in neuron population activity [@doi:10.1126/science.278.5345.1950, @doi:10/gm79hh], efficient encoding thanks to the use of spike latencies [@Perrinet2004, @doi:10.1126/science.1149639] or precise timing in the auditory system [@url:https://repository.cshl.edu/id/eprint/30941, @doi:10.1523/JNEUROSCI.10-10-03227.1990]. All these findings, and more [@doi:10.1023/B:NACO.0000027755.02868.60], highlight the importance of the temporal aspect of the neural code and suggest the existence of repeated spatio-temporal patterns in the spike train.
 
+In neuronal models, an efficient use or detection of these spatio-temporal patterns embedded in the spike train comes with the integration of heterogeneous delays [@doi:10/ch29r4, @doi:10/f6chbq, @doi:10.1016/j.neucom.2020.03.079]. Notably, Izhikevich [@Izhikevich2006] introduced the notion of polychronous groups (PGs) as a repetitive motif of spikes defined by a subset of neurons with different, yet precise,  spiking delays. This representation has a much greater information capacity in comparison to other neural coding approaches through their connectivity and the possible coexistence of numerous superposed PGs.
+
+It was shown that a simple model may allow the propagation of such synfire chains [@pmid:11665761].
+
+![Simulation [using Brian](https://brian2.readthedocs.io/en/stable/examples/frompapers.Diesmann_et_al_1999.html) ](https://brian2.readthedocs.io/en/stable/_images/frompapers.Diesmann_et_al_1999.1.png)
 
 #### synfire braids
 sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet, Neuron 78.1 (2013), pp. 28-48.
