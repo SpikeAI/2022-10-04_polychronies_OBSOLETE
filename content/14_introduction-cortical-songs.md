@@ -24,5 +24,3 @@ In [@doi:10.1016/j.neuron.2020.12.013], it was shown that attentional informatio
 
 
 It is interesting to make a parallel with the "Rapid Formation of Robust Auditory Memories" reported in [@Agus2010] which uses noise patterns. They " used random waveforms to probe the formation of new memories for arbitrary complex sounds. A behavioral measure was designed, based on the detection of repetitions embedded in noises up to 4 s long." The  task is to detect the repetition of the same (frozen) noise within a trial. " Unbeknownst to listeners, some noise samples reoccurred randomly throughout an experimental block." they showed that the "repeated exposure induced learning for otherwise totally unpredictable and meaningless sounds" by showing that the sensitivity increases in that case. Note that "acoustical analyses failed to reveal any obvious differences between good and bad noises" and that "Time reversal had no significant effect on the RefRN advantage" (quite surprising). The Learning is unsupervised (statistical, automatic), fast-acting (phase transition, "insight"), and long-lasting (memorization).
-
-### polychronization
