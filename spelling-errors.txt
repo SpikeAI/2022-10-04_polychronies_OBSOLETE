@@ -136,7 +136,7 @@ PGs
 PLoS
 pnas
 Politi
-polychronization
+Polychronization
 polychronous
 Poulet
 pre
@@ -147,7 +147,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-rastermap
+Rastermap
 RefRN
 Reproducibility
 retinotopic
