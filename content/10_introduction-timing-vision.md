@@ -38,8 +38,20 @@ Attempts have been made to detect such synfire chains in neurobiological data [@
 Note also that synchronicity may explain some unintuitive results. Indeed it has been shown that  thalamocortical synapses are relatively weak compared to the amount of intra-cortical activity. However, this pathway is sufficient to drive the cortex as this input is more often synchronously active [@doi:10.1126/science.1124593].
 
 
+#### TODO .. to traveling waves ...
 
-#### TODO : ... to synfire braids
+[@doi:10.1038/s41467-021-26175-1]
+
+[@Muller14]
+
+Spontaneous traveling waves naturally emerge from horizontal fiber time delays and travel through locally asynchronous-irregular states [@doi:10.1126/science.278.5345.1950]
+
+Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level.
+
+there are temporal delays in the nervous system, both at the neural [@doi:10.1007/s00422-014-0620-8] and behavioral [@doi:10.1371/journal.pcbi.1005068] levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks.
+
+
+#### TODO ... and to synfire braids and polychronous groups
 
  * [@Bienenstock1995] : from synfire chains to Synfire braids
 
@@ -53,17 +65,3 @@ sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6
 
 
  * A notable exception is the polychronization model of Izhikevich [@Izhikevich2006], which combined the construction of a random recurrent model of spiking neurons including such delays and whose weights evolved with a Spike-Time Dependent Plasticity (STDP) learning rule. In this model, raster plot analysis showed repeated activation of Polychronous Groups (PGs), i.e., specific spike patterns with a specific sequence of activations.
-
-#### Traveling waves: A more generic view
-
-[@doi:10.1038/s41467-021-26175-1]
-
-[@Muller14]
-
-Spontaneous traveling waves naturally emerge from horizontal fiber time delays and travel through locally asynchronous-irregular states [@doi:10.1126/science.278.5345.1950]
-
-Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level.
-
-there are temporal delays in the nervous system, both at the neural [@doi:10.1007/s00422-014-0620-8] and behavioral [@doi:10.1371/journal.pcbi.1005068] levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks.
-
-Our expertise in reproducing the HOTS network [@Grimaldi2021; @Grimaldi2022]
