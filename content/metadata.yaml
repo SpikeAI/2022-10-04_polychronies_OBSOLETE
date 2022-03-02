@@ -49,6 +49,9 @@ pandoc:
     Ikegaya2004: doi:10.1126/science.1093173
     Bienenstock1995: doi:10.1088/0954-898x_6_2_004
     Yuste2005: doi:10.1038/nrn1686
+    Branco2010: doi:10.1126/science.1189664
+    Buzsáki2018: doi:10.1016/j.tics.2018.07.006
+    Luczak2007: doi:10.1073/pnas.0605643104
     Luczak2015: pmid:26507295
     gan: https://papers.nips.cc/paper/5423-generative-adversarial-nets
     alexnet: http://dl.acm.org/citation.cfm?doid=3098997.3065386
