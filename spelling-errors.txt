@@ -73,7 +73,7 @@ heatmap
 Hebbian
 heterosynaptic
 hh
-Hippocampal
+hippocampal
 Hirase
 Huning
 HVC
@@ -84,6 +84,7 @@ inhomogeneities
 inhomogeneous
 Institut
 interareal
+intra
 intracellular
 Izhikevich
 Izhikevitch
@@ -136,8 +137,8 @@ PGs
 PLoS
 pnas
 Politi
-polychronization
-polychronous
+Polychronization
+Polychronous
 Poulet
 pre
 premotor
@@ -146,6 +147,7 @@ Proc
 PSCs
 pulvinar
 Purpura
+pyNN
 Rastermap
 RefRN
 Reproducibility
@@ -171,11 +173,13 @@ Statist
 STDP
 supersequences
 Synfire
+thalamocortical
 Thanasoulis
 Timone
 TJ
 TODO
 Triplett
+unintuitive
 Université
 Villette
 vitro
