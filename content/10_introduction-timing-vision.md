@@ -1,4 +1,4 @@
-## Introduction: precise temporal patterns in the brain
+## Introduction: Precise temporal patterns in the brain
 
 ### Ultra fast neural codes for ultra fast vision
 
