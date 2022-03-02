@@ -72,7 +72,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-Hippocampal
+hippocampal
 Hirase
 Huning
 HVC
@@ -136,8 +136,8 @@ PGs
 PLoS
 pnas
 Politi
-Polychronization
-polychronous
+polychronization
+Polychronous
 Poulet
 pre
 premotor
