@@ -26,9 +26,9 @@ While the first role favors the rate coding theory, the second possibility highl
 
 In neuronal models, an efficient use or detection of these spatio-temporal patterns embedded in the spike train comes with the integration of heterogeneous delays [@doi:10/ch29r4, @doi:10/f6chbq, @doi:10.1016/j.neucom.2020.03.079]. Notably, Izhikevich [@Izhikevich2006] introduced the notion of polychronous groups (PGs) as a repetitive motif of spikes defined by a subset of neurons with different, yet precise,  spiking delays. This representation has a much greater information capacity in comparison to other neural coding approaches through their connectivity and the possible coexistence of numerous superposed PGs.
 
-It was shown that a simple model may allow the propagation of such synfire chains [@pmid:11665761].
+It was shown that a simple model may allow the propagation of such synfire chains [@pmid:11665761]. A simple simulation is shown in Figure [@fig:diesman].
 
-![Simulation [using Brian](https://brian2.readthedocs.io/en/stable/examples/frompapers.Diesmann_et_al_1999.html) ](https://brian2.readthedocs.io/en/stable/_images/frompapers.Diesmann_et_al_1999.1.png)
+![Simulation [using Brian](https://brian2.readthedocs.io/en/stable/examples/frompapers.Diesmann_et_al_1999.html) ](https://brian2.readthedocs.io/en/stable/_images/frompapers.Diesmann_et_al_1999.1.png){#fig:diesman}
 
 #### synfire braids
 sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet, Neuron 78.1 (2013), pp. 28-48.
