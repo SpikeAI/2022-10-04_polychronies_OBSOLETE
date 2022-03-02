@@ -22,6 +22,8 @@ citekey-aliases:
   Ikegaya2004: doi:10.1126/science.1093173
   Bienenstock1995: doi:10.1088/0954-898x_6_2_004
   Yuste2005: doi:10.1038/nrn1686
+  Pastalkova2008: doi:10.1126/science.1159775
+  Villette2015: doi:10/f7whnn
   Branco2010: doi:10.1126/science.1189664
   Buzsáki2018: doi:10.1016/j.tics.2018.07.006
   Luczak2007: doi:10.1073/pnas.0605643104
@@ -80,9 +82,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/a6bba29506b370ca14c2f2b6fb6f89c0d7ad722d/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a6bba29506b370ca14c2f2b6fb6f89c0d7ad722d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a6bba29506b370ca14c2f2b6fb6f89c0d7ad722d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/ad5097b0f6935e4c35002d6144a6e5cf73416c7f/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/ad5097b0f6935e4c35002d6144a6e5cf73416c7f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/ad5097b0f6935e4c35002d6144a6e5cf73416c7f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -105,9 +107,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/a6bba29506b370ca14c2f2b6fb6f89c0d7ad722d/))
+([permalink](https://SpikeAI.github.io/polychronies/v/ad5097b0f6935e4c35002d6144a6e5cf73416c7f/))
 was automatically generated
-from [SpikeAI/polychronies@a6bba29](https://github.com/SpikeAI/polychronies/tree/a6bba29506b370ca14c2f2b6fb6f89c0d7ad722d)
+from [SpikeAI/polychronies@ad5097b](https://github.com/SpikeAI/polychronies/tree/ad5097b0f6935e4c35002d6144a6e5cf73416c7f)
 on March 2, 2022.
 </em></small>
 
@@ -152,9 +154,7 @@ on March 2, 2022.
 
 ## Abstract {.page_break_before}
 
-
 Why do neurons communicate through action potentials, or spikes? An action potential is a binary event —it can occur or not, without further details— and asynchronous, i.e. it can occur at any time. In the living world, neurons almost systematically use this so-called event-based representation, though we do not yet have a clear idea why. A better understanding of this phenomenon remains a fundamental challenge in neurobiology in order to better interpret the masses of recorded data. It is also an emerging challenge in computer science to allow the efficient exploitation of a new class of sensors and impulse computers, called neuromorphic, which could allow significant gains in computing time and energy consumption —a major societal challenge in the age of the digital economy and of global warming.
-
 
 The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This *event-based representation* present in the neuronal code is essential in understanding information processing in the brain but also applies to other fields, for instance to the output of an event-based camera. However, most neuronal models do not take advantage of this minute temporal dimension, especially in exploiting the variety of synaptic delays on the dendritic tree. Our goal here is to bring an interdisciplinary perspective on the computational advantage of time series representations for the brain and for information processing machines. In particular, we will formalize mathematically a representation in an assembly of neurons based on a set of patterns of different relative spike times. Following the terminology of [@Izhikevich2006], we will define such motifs of precise temporal patterns as **polychronous groups** and this manuscript reviews current litterature on *polychrony detection* in generic raster plots. It is work in progress, where anybody interested can *openly* join. This hypothesis is directly inspired by neurobiological observations in the hippocampus, and it expands the capabilities of analog representations based on the firing rate by considering a representation based on repetitions of these polychronous groups at precise times of occurrence. This formalization is particularly well suited to neuromorphic computing, and allows for supervised or self-supervised learning of polychronous groups in any event-driven data.
 
@@ -183,10 +183,15 @@ Similar results have been demonstrated through neurophysiological recordings in 
 
 ### TODO: synfire chains
 
-In [@Abeles1991] corticonics: The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models and synfire chains
+In [@Abeles1991], Abeles asked if the role of cortical neurons is whether to integrate synaptic inputs or rather to detect coincidences in temporal spiking patterns. corticonics: The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models and synfire chains
 
-M. Diesmann, M. O. Gewaltig, A. Aertsen, Nature402, 529 (1999).
+While the first role favors the rate coding theory, the second possibility highlights the need for temporal precision in the neural code. Since, numerous studies demonstrated the emergence of synchronicity in neuron population activity [@doi:10.1126/science.278.5345.1950, @doi:10/gm79hh], efficient encoding thanks to the use of spike latencies [@Perrinet2004, @doi:10.1126/science.1149639] or precise timing in the auditory system [@url:https://repository.cshl.edu/id/eprint/30941, @doi:10.1523/JNEUROSCI.10-10-03227.1990]. All these findings, and more [@doi:10.1023/B:NACO.0000027755.02868.60], highlight the importance of the temporal aspect of the neural code and suggest the existence of repeated spatio-temporal patterns in the spike train.
 
+In neuronal models, an efficient use or detection of these spatio-temporal patterns embedded in the spike train comes with the integration of heterogeneous delays [@doi:10/ch29r4, @doi:10/f6chbq, @doi:10.1016/j.neucom.2020.03.079]. Notably, Izhikevich [@Izhikevich2006] introduced the notion of polychronous groups (PGs) as a repetitive motif of spikes defined by a subset of neurons with different, yet precise,  spiking delays. This representation has a much greater information capacity in comparison to other neural coding approaches through their connectivity and the possible coexistence of numerous superposed PGs.
+
+It was shown that a simple model may allow the propagation of such synfire chains [@pmid:11665761].
+
+![Simulation [using Brian](https://brian2.readthedocs.io/en/stable/examples/frompapers.Diesmann_et_al_1999.html) ](https://brian2.readthedocs.io/en/stable/_images/frompapers.Diesmann_et_al_1999.1.png)
 
 #### synfire braids
 sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet, Neuron 78.1 (2013), pp. 28-48.
@@ -466,6 +471,10 @@ Dumas and colleagues [@arxiv:2112.12147] : three levels / fourth paradigm [@doi:
 ### our model
 
 Here, we develop a model for the efficient detection of such PGs based on the inversion of a probabilistic model defining the generation of the raster plot as a combination of such groups. We show that such an inference can be achieved by a neural-like computation that could itself be used as a spiking neuron, as can be implemented in a neuromorphic chip for instance. A first result is to show the efficiency of such a scheme in detecting different PGs occurring at specific times in synthetic data. The representational capacity of the PGs is particularly interesting compared to traditional models of neuronal encoding using spiking frequency. Our second result is to propose a novel learning method for learning PGs in raster plots in a self-supervised manner. Finally we demonstrate the use of this algorithm to the output of an event-based camera and how this may separate independent components from the stream of events. This end-to-end event-based computational brick could help improve the performance of current Spiking Neural Network solution currently used in neuromorphic chips.
+
+## development
+
+scaffolding of neural assemblies / existence of critical periods : [@doi:10.1101/2021.06.08.447542v1]
 
 
 ## References {.page_break_before}
