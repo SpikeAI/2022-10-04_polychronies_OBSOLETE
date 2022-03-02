@@ -82,9 +82,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/6e66c2b53a7cfc221cf29eb8bc1023e9e3ae6434/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/6e66c2b53a7cfc221cf29eb8bc1023e9e3ae6434/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/6e66c2b53a7cfc221cf29eb8bc1023e9e3ae6434/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/fb7cf92c676110fca4b2016a46aa1ebada78df2d/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/fb7cf92c676110fca4b2016a46aa1ebada78df2d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/fb7cf92c676110fca4b2016a46aa1ebada78df2d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -107,9 +107,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/6e66c2b53a7cfc221cf29eb8bc1023e9e3ae6434/))
+([permalink](https://SpikeAI.github.io/polychronies/v/fb7cf92c676110fca4b2016a46aa1ebada78df2d/))
 was automatically generated
-from [SpikeAI/polychronies@6e66c2b](https://github.com/SpikeAI/polychronies/tree/6e66c2b53a7cfc221cf29eb8bc1023e9e3ae6434)
+from [SpikeAI/polychronies@fb7cf92](https://github.com/SpikeAI/polychronies/tree/fb7cf92c676110fca4b2016a46aa1ebada78df2d)
 on March 2, 2022.
 </em></small>
 
@@ -234,9 +234,9 @@ sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6
 ### precise temporal patterns
 
 
-Currently, few interdisciplinary research projects take full advantage of event-based representations in computational and biological neuroscience. Nevertheless, there is a substantial literature in neurobiology indicating that brain dynamics often organize into stereotyped sequences (like synfire chains (Ikegaya et al., 2004), packets (Luczak et al., 2007) or hippocampal sequences [@Pastalkova2008, @Villette2015] and on the role of such precise spike timing in downstream information transfer and coding [@Branco2010, @Buzsáki2018, @Luczak2015]. In particular, one theoretical viewpoint considers synfire braids (Bienenstock, 1995), where a precise sequential motif of spikes will synchronize as it reaches the soma of a neuron for which synaptic delays are adequately tuned. In particular, computational modeling shows that at the scale of neurons, an efficient neural code can emerge where spike times are organized in prototypical, precise temporal motifs (Izhikevich, 2006) which he defined as polychronous groups.
+Currently, few interdisciplinary research projects take full advantage of event-based representations in computational and biological neuroscience. Nevertheless, there is a substantial literature in neurobiology indicating that brain dynamics often organize into stereotyped sequences (like synfire chains (Ikegaya et al., 2004), packets (Luczak et al., 2007) or hippocampal sequences [@Pastalkova2008; @Villette2015] and on the role of such precise spike timing in downstream information transfer and coding [@Branco2010; @Buzsáki2018; @Luczak2015]. In particular, one theoretical viewpoint considers synfire braids (Bienenstock, 1995), where a precise sequential motif of spikes will synchronize as it reaches the soma of a neuron for which synaptic delays are adequately tuned. In particular, computational modeling shows that at the scale of neurons, an efficient neural code can emerge where spike times are organized in prototypical, precise temporal motifs (Izhikevich, 2006) which he defined as polychronous groups.
 
-Stereotyped sequences of neuronal activation have been particularly well described in the adult hippocampus and related to its function in mental travel in time and space [@Buzsáki2018]. These sequences can be internally generated [@Pastalkova2008, @Villette2015] and are formed by the chained activation of orthogonal assemblies, themselves organized as sequence packets (Malvache et al., 2016). Thus, hippocampal sequences are formed by the ordered activation of smaller sequence motifs. They are stereotyped and robust, since neurons can be activated in the same order across days (see Figure [@fig:haimerl] from [@doi:10.1073/pnas.1718518116] below). As a consequence, hippocampal sequences may rely on an internally hardwired structure and form the functional building blocks for encoding, storing and retrieving experience.
+Stereotyped sequences of neuronal activation have been particularly well described in the adult hippocampus and related to its function in mental travel in time and space [@Buzsáki2018]. These sequences can be internally generated [@Pastalkova2008; @Villette2015] and are formed by the chained activation of orthogonal assemblies, themselves organized as sequence packets (Malvache et al., 2016). Thus, hippocampal sequences are formed by the ordered activation of smaller sequence motifs. They are stereotyped and robust, since neurons can be activated in the same order across days (see Figure [@fig:haimerl] from [@doi:10.1073/pnas.1718518116] below). As a consequence, hippocampal sequences may rely on an internally hardwired structure and form the functional building blocks for encoding, storing and retrieving experience.
 
 ![Mixed distance and duration representation in CA1. (A) Calcium fluorescence (heatmap) of CA1 neurons participating to run sequences in consecutive imaging sessions. Cells have been selected and ordered with respect to their activity in the first imaging session (Top). The black line represents speed of the mouse.](https://www.pnas.org/cms/10.1073/pnas.1718518116/asset/ab9a48f6-b28f-40c1-978e-6f6dbec39b98/assets/graphic/pnas.1718518116fig01.jpeg){#fig:haimerl}
 
