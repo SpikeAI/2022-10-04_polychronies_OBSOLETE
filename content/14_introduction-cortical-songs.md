@@ -2,6 +2,8 @@
 
 ### precise temporal patterns TODO read [@Luczak2015]
 
+In [@doi:10.1073/pnas.1815910116], authors present a model to "show a way by which the nervous system maintains precise, stereotyped behavior in the face of environmental and neural changes". It is shown in bridsong generation that "A precise, temporally sparse sequence from the premotor nucleus HVC is crucial to the performance of song in songbirds" [@pmid:12490259,@pmid:8308169,@pmid:8791594] and this model shows how one could vary HVC activity using something similar to dropout in ML. Using such controlled variability, "behaviors are made more robust to environmental change by continually seeking subtly new ways of performing the same task". Not sure however how important it is that the HVC pattern should be sparse (and similar to PGs).
+
 [@Luczak2015] Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745–55.
 
 In [@doi:10.1016/j.neuron.2020.12.013], it was shown that attentional information from V4 or arousal can change the timings of groups of events in V1. They develop a HMM model for quantifying the transitions. "In this study, van Kempen et al. show that fluctuations in neural excitability are coordinated between visual areas with retinotopic precision. Top-down attention drives interareal coordination along the reverse cortical hierarchy, predicting better behavioral performance with increased coordination."
