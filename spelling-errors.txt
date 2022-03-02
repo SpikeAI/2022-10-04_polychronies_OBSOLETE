@@ -35,7 +35,7 @@ colomn
 combinatorial
 compositional
 Comput
-corticonics
+Corticonics
 cotical
 Cowan
 Csicsvari
@@ -53,6 +53,7 @@ Dugué
 electrophysiological
 Elife
 Eurich
+excitatory
 Fairhall
 feedforward
 figshare
@@ -72,7 +73,7 @@ heatmap
 Hebbian
 heterosynaptic
 hh
-hippocampal
+Hippocampal
 Hirase
 Huning
 HVC
@@ -88,6 +89,7 @@ Izhikevich
 Izhikevitch
 Jayazeri
 JF
+jitter
 KD
 Kempen
 Kloosterman
@@ -108,6 +110,7 @@ Mayr
 MNIST
 MNSD
 Morelli
+Moshe
 mV
 Nadafian
 Nadasdy
@@ -123,7 +126,7 @@ Neurosci
 Neurosciences
 neuroscientific
 organazed
-PAMI
+pami
 Partzsch
 Pawelzik
 Paxon
@@ -143,7 +146,7 @@ Proc
 PSCs
 pulvinar
 Purpura
-rastermap
+Rastermap
 RefRN
 Reproducibility
 retinotopic
@@ -167,7 +170,7 @@ stationarity
 Statist
 STDP
 supersequences
-synfire
+Synfire
 Thanasoulis
 Timone
 TJ
