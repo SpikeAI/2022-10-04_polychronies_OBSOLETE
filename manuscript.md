@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-02-02'
+date-meta: '2022-03-02'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -53,8 +53,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="og:title" content="Review on Polychrony detection in biological and artificial raster plots" />
   <meta property="twitter:title" content="Review on Polychrony detection in biological and artificial raster plots" />
-  <meta name="dc.date" content="2022-02-02" />
-  <meta name="citation_publication_date" content="2022-02-02" />
+  <meta name="dc.date" content="2022-03-02" />
+  <meta name="citation_publication_date" content="2022-03-02" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/96181e00fd429cb32ed452d000b64da3a892397d/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/96181e00fd429cb32ed452d000b64da3a892397d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/96181e00fd429cb32ed452d000b64da3a892397d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/91e282d8b2518dd0a3160af83ec329ed4729bcde/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/91e282d8b2518dd0a3160af83ec329ed4729bcde/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/91e282d8b2518dd0a3160af83ec329ed4729bcde/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -102,10 +102,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/96181e00fd429cb32ed452d000b64da3a892397d/))
+([permalink](https://SpikeAI.github.io/polychronies/v/91e282d8b2518dd0a3160af83ec329ed4729bcde/))
 was automatically generated
-from [SpikeAI/polychronies@96181e0](https://github.com/SpikeAI/polychronies/tree/96181e00fd429cb32ed452d000b64da3a892397d)
-on February 2, 2022.
+from [SpikeAI/polychronies@91e282d](https://github.com/SpikeAI/polychronies/tree/91e282d8b2518dd0a3160af83ec329ed4729bcde)
+on March 2, 2022.
 </em></small>
 
 ## Authors
@@ -149,9 +149,11 @@ on February 2, 2022.
 
 ## Abstract {.page_break_before}
 
-The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This *event-based representation* present in the neuronal code is essential in understanding information processing in the brain but also applies to other fields, for instance to the output of an event-based camera. However, most neuronal models do not take advantage of this minute temporal dimension, especially in exploiting the variety of synaptic delays on the dendritic tree.
 
-Following the terminology of [@Izhikevich2006], we will define such motifs of precise temporal patterns as **polychronous groups** and this manuscript reviews current litterature on *polychrony detection* in generic raster plots. It is work in progress, where anybody interested can *openly* join.
+Why do neurons communicate through action potentials, or spikes? An action potential is a binary event —it can occur or not, without further details— and asynchronous, i.e. it can occur at any time. In the living world, neurons almost systematically use this so-called event-based representation, though we do not yet have a clear idea why. A better understanding of this phenomenon remains a fundamental challenge in neurobiology in order to better interpret the masses of recorded data. It is also an emerging challenge in computer science to allow the efficient exploitation of a new class of sensors and impulse computers, called neuromorphic, which could allow significant gains in computing time and energy consumption —a major societal challenge in the age of the digital economy and of global warming.
+
+
+The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This *event-based representation* present in the neuronal code is essential in understanding information processing in the brain but also applies to other fields, for instance to the output of an event-based camera. However, most neuronal models do not take advantage of this minute temporal dimension, especially in exploiting the variety of synaptic delays on the dendritic tree. Our goal here is to bring an interdisciplinary perspective on the computational advantage of time series representations for the brain and for information processing machines. In particular, we will formalize mathematically a representation in an assembly of neurons based on a set of patterns of different relative spike times. Following the terminology of [@Izhikevich2006], we will define such motifs of precise temporal patterns as **polychronous groups** and this manuscript reviews current litterature on *polychrony detection* in generic raster plots. It is work in progress, where anybody interested can *openly* join. This hypothesis is directly inspired by neurobiological observations in the hippocampus, and it expands the capabilities of analog representations based on the firing rate by considering a representation based on repetitions of these polychronous groups at precise times of occurrence. This formalization is particularly well suited to neuromorphic computing, and allows for supervised or self-supervised learning of polychronous groups in any event-driven data.
 
 We will first review some biological and theoretical evidence for polychrony in the neural information processing. We will then present some models for the detection of such polychronous groups in arbitrary raster plots, synthetic, biological or artificial (notably from event-based cameras). Then, we will try to outline some possible strategies for learning these patterns and finally discuss possible perspectives.
 
@@ -206,6 +208,7 @@ Our approach would be distinct than these approaches from us and colleagues as w
 
 
 ### precise temporal patterns TODO read [@Luczak2015]
+
 
 [@Luczak2015] Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745–55.
 
@@ -392,6 +395,7 @@ Alireza Nadafian, Mohammad Ganjtabesh
 
 ### Learning sequences
 
+In [@doi:10.1073/pnas.1815910116], authors present a model to "show a way by which the nervous system maintains precise, stereotyped behavior in the face of environmental and neural changes". It is shown in bridsong generation that "A precise, temporally sparse sequence from the premotor nucleus HVC is crucial to the performance of song in songbirds" [@pmid:12490259,@pmid:8308169,@pmid:8791594] and this model shows how one could vary HVC activity using something similar to dropout in ML. Using such controlled variability, "behaviors are made more robust to environmental change by continually seeking subtly new ways of performing the same task". Not sure however how important it is that the HVC pattern should be sparse (and similar to PGs).
 
 * in [@Agus2010], there are ‘‘good’’ and ‘‘bad’’ noises show that some patterns are more easy to disentangle - similar to bird songs and ecological niche.
 
