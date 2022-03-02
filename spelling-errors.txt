@@ -10,15 +10,18 @@ APROVIS
 apsect
 Aronov
 asscume
+ATIS
 attentional
 Avitan
 Barahona
 Bellec
 Bernouilli
 Besnainou
+Bienenstock
 bridsong
 Brunel
 Buzsaki
+Buzsáki
 camillebesnainou
 CBMI
 centric
@@ -64,9 +67,10 @@ Grimaldi
 Grossberger
 Grun
 HDBSCAN
+heatmap
 Hebbian
 heterosynaptic
-hippocampal
+Hippocampal
 Hirase
 Huning
 HVC
@@ -95,6 +99,7 @@ lnl
 Luczak
 luminance
 Maes
+Malvache
 Marseille
 maxpooling
 Mayr
@@ -127,7 +132,7 @@ PLoS
 pnas
 Politi
 Polychronization
-Polychronous
+polychronous
 polychrony
 Poulet
 pre
@@ -148,6 +153,7 @@ sensorial
 SNE
 SNN
 SNNs
+soma
 spatio
 spatiotemporal
 SpikeShip
@@ -167,6 +173,7 @@ TJ
 TODO
 Triplett
 Université
+Villette
 vitro
 vivo
 Vogginger

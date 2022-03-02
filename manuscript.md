@@ -22,6 +22,9 @@ citekey-aliases:
   Ikegaya2004: doi:10.1126/science.1093173
   Bienenstock1995: doi:10.1088/0954-898x_6_2_004
   Yuste2005: doi:10.1038/nrn1686
+  Branco2010: doi:10.1126/science.1189664
+  Buzsáki2018: doi:10.1016/j.tics.2018.07.006
+  Luczak2007: doi:10.1073/pnas.0605643104
   Luczak2015: pmid:26507295
   gan: https://papers.nips.cc/paper/5423-generative-adversarial-nets
   alexnet: http://dl.acm.org/citation.cfm?doid=3098997.3065386
@@ -77,9 +80,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/91e282d8b2518dd0a3160af83ec329ed4729bcde/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/91e282d8b2518dd0a3160af83ec329ed4729bcde/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/91e282d8b2518dd0a3160af83ec329ed4729bcde/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/a6bba29506b370ca14c2f2b6fb6f89c0d7ad722d/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a6bba29506b370ca14c2f2b6fb6f89c0d7ad722d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a6bba29506b370ca14c2f2b6fb6f89c0d7ad722d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -102,9 +105,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/91e282d8b2518dd0a3160af83ec329ed4729bcde/))
+([permalink](https://SpikeAI.github.io/polychronies/v/a6bba29506b370ca14c2f2b6fb6f89c0d7ad722d/))
 was automatically generated
-from [SpikeAI/polychronies@91e282d](https://github.com/SpikeAI/polychronies/tree/91e282d8b2518dd0a3160af83ec329ed4729bcde)
+from [SpikeAI/polychronies@a6bba29](https://github.com/SpikeAI/polychronies/tree/a6bba29506b370ca14c2f2b6fb6f89c0d7ad722d)
 on March 2, 2022.
 </em></small>
 
@@ -206,17 +209,22 @@ Our approach would be distinct than these approaches from us and colleagues as w
 
 
 
+### precise temporal patterns
 
-### precise temporal patterns TODO read [@Luczak2015]
 
+Currently, few interdisciplinary research projects take full advantage of event-based representations in computational and biological neuroscience. Nevertheless, there is a substantial literature in neurobiology indicating that brain dynamics often organize into stereotyped sequences (like synfire chains (Ikegaya et al., 2004), packets (Luczak et al., 2007) or hippocampal sequences [@Pastalkova2008, @Villette2015] and on the role of such precise spike timing in downstream information transfer and coding [@Branco2010, @Buzsáki2018, @Luczak2015]. In particular, one theoretical viewpoint considers synfire braids (Bienenstock, 1995), where a precise sequential motif of spikes will synchronize as it reaches the soma of a neuron for which synaptic delays are adequately tuned. In particular, computational modeling shows that at the scale of neurons, an efficient neural code can emerge where spike times are organized in prototypical, precise temporal motifs (Izhikevich, 2006) which he defined as polychronous groups.
 
-[@Luczak2015] Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745–55.
+Stereotyped sequences of neuronal activation have been particularly well described in the adult hippocampus and related to its function in mental travel in time and space [@Buzsáki2018]. These sequences can be internally generated [@Pastalkova2008, @Villette2015] and are formed by the chained activation of orthogonal assemblies, themselves organized as sequence packets (Malvache et al., 2016). Thus, hippocampal sequences are formed by the ordered activation of smaller sequence motifs. They are stereotyped and robust, since neurons can be activated in the same order across days (see Figure 1 of [@doi:10.1073/pnas.1718518116] below). As a consequence, hippocampal sequences may rely on an internally hardwired structure and form the functional building blocks for encoding, storing and retrieving experience.
+
+![Mixed distance and duration representation in CA1. (A) Calcium fluorescence (heatmap) of CA1 neurons participating to run sequences in consecutive imaging sessions. Cells have been selected and ordered with respect to their activity in the first imaging session (Top). The black line represents speed of the mouse.](https://www.pnas.org/cms/10.1073/pnas.1718518116/asset/ab9a48f6-b28f-40c1-978e-6f6dbec39b98/assets/graphic/pnas.1718518116fig01.jpeg)
+
+TODO: read [@Luczak2015] Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745–55.
 
 In [@doi:10.1016/j.neuron.2020.12.013], it was shown that attentional information from V4 or arousal can change the timings of groups of events in V1. They develop a HMM model for quantifying the transitions. "In this study, van Kempen et al. show that fluctuations in neural excitability are coordinated between visual areas with retinotopic precision. Top-down attention drives interareal coordination along the reverse cortical hierarchy, predicting better behavioral performance with increased coordination."
 
 ### cortical songs [@Ikegaya2004]
 
-* Ikegaya and colleagues worked on spontaneous activity in vitro and in vivo. They demonstated that in cortical activity, we can find a repetition of several motifs. In PSCs, but also in spike activity. These sequences repeat after minutes and have a precise spatio temporal structure with a ms precision. They can be specific of a particular layer or colomn, are synchronized with network activity oscillation and can involve several cells. They also demonstated that these sequences can form supersequences : the cortical songs. It consist of the assembly of several sequences which repeat in a specific order with a compressed timing.
+* Ikegaya and colleagues worked on spontaneous activity in vitro and in vivo. They demonstrated that in cortical activity, we can find a repetition of several motifs. In PSCs, but also in spike activity. These sequences repeat after minutes and have a precise spatio temporal structure with a ms precision. They can be specific of a particular layer or colomn, are synchronized with network activity oscillation and can involve several cells. They also demonstated that these sequences can form supersequences : the cortical songs. It consist of the assembly of several sequences which repeat in a specific order with a compressed timing.
 
 
 * "We find precise repetitions of spontaneous patterns of synaptic inputs in neocortical neurons in vivo and in vitro. These patterns repeat after minutes, maintaining millisecond accuracy."
@@ -243,6 +251,9 @@ It is interesting to make a parallel with the "Rapid Formation of Robust Auditor
 The approach which is currently most prominent in the Spiking Neural Networks community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.
 
 
+Remarkably, novel neuromorphic chips use a representation similar to that of real neurons [@arxiv:2201.12673]. For example, event-based cameras provide a stream of binary asynchronous events signaling detectable changes in luminance, and information is represented by these spike-based temporal motifs, hence their name "silicon retinas" (see Figure 1). For such devices, it is crucial to better understand the potential of using such event-based representations in order to devise novel algorithms.
+
+![A miniature, event-based ATIS sensor. Contrary to a classical frame-based camera for which a full dense image representation is given at discrete, regularly spaced timings, the event-based camera provides with events at the micro-second resolution. These are sparse as they represent luminance increments or decrements (ON and OFF events, respectively).](https://laurentperrinet.github.io/grant/anr-anb/event_driven_computations.png)
 
 This section has provided evidence that polychronous groups are an important apsect of information representation in biology with important application in data analysis and neuromorphic engineering. The rest of this review paper is organized as follows.
 
