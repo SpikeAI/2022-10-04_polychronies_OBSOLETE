@@ -1,5 +1,116 @@
 [
   {
+    "DOI": "10/b9shf4",
+    "ISSN": "0036-8075, 1095-9203",
+    "PMID": "9924031",
+    "URL": "http://science.sciencemag.org/content/283/5402/695",
+    "abstract": "The receptive field of a visual neuron is classically defined as the region of space (or retina) where a visual stimulus evokes a change in its firing activity. At the cortical level, a challenging issue concerns the roles of feedforward, local recurrent, intracortical, and cortico-cortical feedback connectivity in receptive field properties. Intracellular recordings in cat area 17 showed that the visually evoked synaptic integration field extends over a much larger area than that established on the basis of spike activity. Synaptic depolarizing responses to stimuli flashed at increasing distances from the center of the receptive field decreased in strength, whereas their onset latency increased. These findings suggest that subthreshold responses in the unresponsive region surrounding the classical discharge field result from the integration of visual activation waves spread by slowly conducting horizontal axons within primary visual cortex.",
+    "accessed": {
+      "date-parts": [
+        [
+          2019,
+          2,
+          7
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Bringuier",
+        "given": "Vincent"
+      },
+      {
+        "family": "Chavane",
+        "given": "Frédéric"
+      },
+      {
+        "family": "Glaeser",
+        "given": "Larry"
+      },
+      {
+        "family": "Frégnac",
+        "given": "Yves"
+      }
+    ],
+    "container-title": "Science",
+    "id": "zNDCo9Hy",
+    "issue": "5402",
+    "issued": {
+      "date-parts": [
+        [
+          1999,
+          1
+        ]
+      ]
+    },
+    "note": "00535\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: Bringuier99",
+    "page": "695-699",
+    "title": "Horizontal Propagation of Visual Activity in the Synaptic Integration Field of Area 17 Neurons",
+    "type": "article-journal",
+    "volume": "283"
+  },
+  {
+    "DOI": "10.1523/JNEUROSCI.2792-18.2019",
+    "URL": "http://www.jneurosci.org/content/early/2019/03/18/JNEUROSCI.2792-18.2019",
+    "abstract": "The “apparent motion” illusion is evoked when stationary stimuli are successively flashed in spatially separated positions. It depends on the precise spatial and temporal separations of the stimuli. For large spatiotemporal separation, the long-range apparent motion (lrAM), it remains unclear how the visual system computes unambiguous motion signals. Here we investigated whether intracortical interactions within retinotopic maps could shape a global motion representation at the level of V1 population in response to a lrAM. In fixating monkeys, voltage-sensitive dye imaging revealed the emergence of a spatio-temporal representation of the motion trajectory at the scale of V1 population activity, shaped by systematic backward suppressive waves. We show that these waves are the expected emergent property of a recurrent gain control fed by the horizontal intra-cortical network. Such non-linearities explain away ambiguous correspondence problems of the stimulus along the motion path, preformating V1 population response for an optimal read-out by downstream areas.",
+    "accessed": {
+      "date-parts": [
+        [
+          2018,
+          7,
+          27
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Chemla",
+        "given": "Sandrine"
+      },
+      {
+        "family": "Reynaud",
+        "given": "Alexandre"
+      },
+      {
+        "family": "diVolo",
+        "given": "Matteo"
+      },
+      {
+        "family": "Zerlaut",
+        "given": "Yann"
+      },
+      {
+        "family": "Perrinet",
+        "given": "Laurent U"
+      },
+      {
+        "family": "Destexhe",
+        "given": "Alain"
+      },
+      {
+        "family": "Chavane",
+        "given": "Frédéric Y"
+      }
+    ],
+    "container-title": "Journal of Neuroscience",
+    "id": "OAorhMRa",
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          3,
+          18
+        ]
+      ]
+    },
+    "keyword": "area-v1",
+    "page": "18",
+    "title": "Suppressive waves disambiguate the representation of long-range apparent motion in awake monkey V1",
+    "type": "article-journal",
+    "volume": "2792",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: Chemla19"
+  },
+  {
     "DOI": "10.3389/fncom.2013.00112",
     "URL": "https://laurentperrinet.github.io/publication/kaplan-13",
     "abstract": "Predictive coding hypothesizes that the brain explicitly infers upcoming sensory input to establish a coherent representation of the world. Although it is becoming generally accepted, it is not clear on which level spiking neural networks may implement predictive coding and what function their connectivity may have. We present a network model of conductance-based integrate-and-fire neurons inspired by the architecture of retinotopic cortical areas that assumes predictive coding is implemented through network connectivity, namely in the connection delays and in selectiveness for the tuning properties of source and target cells. We show that the applied connection pattern leads to motion-based prediction in an experiment tracking a moving dot. In contrast to our proposed model, a network with random or isotropic connectivity fails to predict the path when the moving dot disappears. Furthermore, we show that a simple linear decoding approach is sufficient to transform neuronal spiking activity into a probabilistic estimate for reading out the target trajectory.",
@@ -38,6 +149,115 @@
     "type": "article-journal",
     "volume": "7",
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: Kaplan13"
+  },
+  {
+    "DOI": "10.1371/journal.pcbi.1005068",
+    "URL": "https://laurentperrinet.github.io/publication/khoei-masson-perrinet-17/",
+    "abstract": "Due to its inherent neural delays, the visual system has an outdated access to sensory information about the current position of moving objects. In contrast, living organisms are remarkably able to track and intercept moving objects under a large range of challenging environmental conditions. Physiological, behavioral and psychophysical evidences strongly suggest that position coding is extrapolated using an explicit and reliable representation of object’s motion but it is still unclear how these two representations interact. For instance, the so-called flash-lag effect supports the idea of a differential processing of position between moving and static objects. Although elucidating such mechanisms is crucial in our understanding of the dynamics of visual processing, a theory is still missing to explain the different facets of this visual illusion. Here, we reconsider several of the key aspects of the flash-lag effect in order to explore the role of motion upon neural coding of objects’ position. First, we formalize the problem using a Bayesian modeling framework which includes a graded representation of the degree of belief about visual motion. We introduce a motion-based prediction model as a candidate explanation for the perception of coherent motion. By including the knowledge of a fixed delay, we can model the dynamics of sensory information integration by extrapolating the information acquired at previous instants in time. Next, we simulate the optimal estimation of object position with and without delay compensation and compared it with human perception under a broad range of different psychophysical conditions. Our computational study suggests that the explicit, probabilistic representation of velocity information is crucial in explaining position coding, and therefore the flash-lag effect. We discuss these theoretical results in light of the putative corrective mechanisms that can be used to cancel out the detrimental effects of neural delays and illuminate the more general question of the dynamical representation of spatial information at the present time in the visual pathways.",
+    "author": [
+      {
+        "family": "Khoei",
+        "given": "Mina A"
+      },
+      {
+        "family": "Masson",
+        "given": "Guillaume S"
+      },
+      {
+        "family": "Perrinet",
+        "given": "Laurent U"
+      }
+    ],
+    "container-title": "PLoS Computational Biology",
+    "id": "7GEdzh5o",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          26
+        ]
+      ]
+    },
+    "keyword": "Bayesian model,motion prediction",
+    "page": "e1005068",
+    "title": "The flash-lag effect as a motion-based predictive shift",
+    "type": "article-journal",
+    "volume": "13",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: KhoeiMassonPerrinet17"
+  },
+  {
+    "DOI": "10.1016/j.visres.2005.10.002",
+    "ISSN": "0042-6989",
+    "URL": "https://www.sciencedirect.com/science/article/pii/S0042698905005110",
+    "abstract": "Previous ultra-rapid go/no-go categorization studies with manual responses have demonstrated the remarkable speed and efficiency with which humans process natural scenes. Using a forced-choice saccade task we show here that when two scenes are simultaneously flashed in the left and right hemifields, human participants can reliably make saccades to the side containing an animal in as little as 120 ms. Low level differences between target and distractor images were unable to account for these exceptionally fast responses. The results suggest a very fast and unexpected route linking visual processing in the ventral stream with the programming of saccadic eye movements.",
+    "author": [
+      {
+        "family": "Kirchner",
+        "given": "H"
+      },
+      {
+        "family": "Thorpe",
+        "given": "Sj"
+      }
+    ],
+    "container-title": "Vision Research",
+    "id": "B9iZWoq3",
+    "issue": "11",
+    "issued": {
+      "date-parts": [
+        [
+          2006
+        ]
+      ]
+    },
+    "keyword": "Visual Pathways,Humans,Psychomotor Performance,Reaction Time,Saccades,Photic Stimulation,Female,Male,Adult,Learning,Learning: physiology,Pattern Recognition,Visual,Visual: physiology,perrinet11sfn,assofield,Ocular,Ocular: physiology,Visual Pathways: physiology,Fixation,Saccades: physiology,Psychomotor Performance: physiology,Electrooculography,Electrooculography: methods,#nosource",
+    "page": "1762-76",
+    "title": "Ultra-rapid object detection with saccadic eye movements: Visual processing speed revisited",
+    "title-short": "Ultra-rapid object detection with saccadic eye movements",
+    "type": "article-journal",
+    "volume": "46",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: Kirchner06"
+  },
+  {
+    "DOI": "10/fm92kt",
+    "ISSN": "08936080",
+    "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0893608097000117",
+    "abstract": "The computational power of formal models for networks of spiking neurons is compared with that of other neural network models based on McCulloch Pitts neurons (i.e., threshold gates), respectively, sigmoidal gates. In particular it is shown that networks of spiking neurons are, with regard to the number of neurons that are needed, computationally more powerful than these other neural network models. A concrete biologically relevant function is exhibited which can be computed by a single spiking neuron (for biologically reasonable values of its parameters), but which requires hundreds of hidden units on a sigmoidal neural net. On the other hand, it is known that any function that can be computed by a small sigmoidal neural net can also be computed by a small network of spiking neurons. This article does not assume prior knowledge about spiking neurons, and it contains an extensive list of references to the currently available literature on computations in networks of spiking neurons and relevant results from neurobiology. © 1997 Elsevier Science Ltd. All rights reserved.",
+    "accessed": {
+      "date-parts": [
+        [
+          2020,
+          7,
+          6
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Maass",
+        "given": "Wolfgang"
+      }
+    ],
+    "container-title": "Neural Networks",
+    "id": "DUpFdm8C",
+    "issue": "9",
+    "issued": {
+      "date-parts": [
+        [
+          1997,
+          12
+        ]
+      ]
+    },
+    "language": "en-US",
+    "page": "1659-1671",
+    "title": "Networks of spiking neurons: The third generation of neural network models",
+    "title-short": "Networks of spiking neurons",
+    "type": "article-journal",
+    "volume": "10",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: Maass97"
   },
   {
     "DOI": "10/f52mxc",
@@ -81,6 +301,71 @@
     "title": "The stimulus-evoked population response in visual cortex of awake monkey is a propagating wave",
     "type": "article-journal",
     "volume": "5"
+  },
+  {
+    "DOI": "10.1038/nrn.2018.20",
+    "ISSN": "1471-003X",
+    "URL": "http://www.nature.com/doifinder/10.1038/nrn.2018.20",
+    "abstract": "Advanced recording techniques have enabled the identification of travelling waves of neuronal activity in different areas of the cortex. Sejnowski and colleagues review these findings, consider the mechanisms by which travelling waves are generated and evaluate their possible roles in cortical function.",
+    "author": [
+      {
+        "family": "Muller",
+        "given": "Lyle"
+      },
+      {
+        "family": "Chavane",
+        "given": "Frédéric"
+      },
+      {
+        "family": "Reynolds",
+        "given": "John"
+      },
+      {
+        "family": "Sejnowski",
+        "given": "Terrence J."
+      }
+    ],
+    "container-title": "Nature Reviews Neuroscience",
+    "id": "vsKvZJ82",
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          3
+        ]
+      ]
+    },
+    "keyword": "Visual system, Neural encoding, Dynamical systems",
+    "title": "Cortical travelling waves: Mechanisms and computational principles",
+    "title-short": "Cortical travelling waves",
+    "type": "article-journal",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: Muller18"
+  },
+  {
+    "author": [
+      {
+        "family": "Paugam-Moisy",
+        "given": "Hélene"
+      },
+      {
+        "family": "Bohte",
+        "given": "Sander"
+      }
+    ],
+    "container-title": "Handbook of natural computing",
+    "id": "lT1Ato7P",
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    },
+    "page": "335-376",
+    "publisher": "Springer",
+    "title": "Computing with spiking neuron networks",
+    "type": "chapter",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: Paugam12"
   },
   {
     "id": "15cR83gqd",
@@ -790,41 +1075,6 @@
     "PMID": "30266146",
     "id": "13dQ0R4UM",
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1016/j.tics.2018.07.006"
-  },
-  {
-    "publisher": "Elsevier BV",
-    "issue": "11",
-    "DOI": "10.1016/j.visres.2005.10.002",
-    "type": "article-journal",
-    "page": "1762-1776",
-    "source": "Crossref",
-    "title": "Ultra-rapid object detection with saccadic eye movements: Visual processing speed revisited",
-    "volume": "46",
-    "author": [
-      {
-        "given": "Holle",
-        "family": "Kirchner"
-      },
-      {
-        "given": "Simon J.",
-        "family": "Thorpe"
-      }
-    ],
-    "container-title": "Vision Research",
-    "language": "en",
-    "issued": {
-      "date-parts": [
-        [
-          2006,
-          5
-        ]
-      ]
-    },
-    "URL": "https://doi.org/d8gpjq",
-    "container-title-short": "Vision Research",
-    "PMID": "16289663",
-    "id": "QstYfgqz",
-    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1016/j.visres.2005.10.002"
   },
   {
     "publisher": "Elsevier BV",

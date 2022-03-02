@@ -46,6 +46,7 @@ deconvolved
 demonstated
 dendritic
 Diesmann
+Differentially
 dimensionality
 discrepency
 Doiron
@@ -59,6 +60,7 @@ feedforward
 figshare
 FPGA
 Frady
+Gabor
 Ganjtabesh
 Gillett
 GJ
@@ -98,6 +100,7 @@ Kreuz
 Kumar
 latencies
 laurentperrinet
+LFP
 litterature
 lnl
 Luczak
@@ -111,9 +114,11 @@ MNIST
 MNSD
 Morelli
 Moshe
+multielectrode
 mV
 Nadafian
 Nadasdy
+neocortex
 neocortical
 neuro
 neurobiological
@@ -146,13 +151,15 @@ PSCs
 pulvinar
 Purpura
 pyNN
-rastermap
+Rastermap
 RefRN
 Reproducibility
 retinotopic
 Rossum
 Rullen
 saccade
+Sejnowski
+SEM
 sensorial
 SNE
 SNN
@@ -169,8 +176,9 @@ SRM
 stationarity
 Statist
 STDP
+subserve
 supersequences
-synfire
+Synfire
 thalamocortical
 Thanasoulis
 Timone
@@ -185,6 +193,7 @@ vivo
 Vogginger
 waveforms
 Weyl’s
+Wilcoxon’s
 WWWWWWWWWWWWW
 XXXX
 XXXXXXXX

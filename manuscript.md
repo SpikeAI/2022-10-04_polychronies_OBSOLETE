@@ -82,9 +82,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/90420b4d276795ff630c89a0a5146c034b3602e3/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/90420b4d276795ff630c89a0a5146c034b3602e3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/90420b4d276795ff630c89a0a5146c034b3602e3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/5a7273c5ba1e894e78840d0c3a4535d128350428/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/5a7273c5ba1e894e78840d0c3a4535d128350428/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/5a7273c5ba1e894e78840d0c3a4535d128350428/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -107,9 +107,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/90420b4d276795ff630c89a0a5146c034b3602e3/))
+([permalink](https://SpikeAI.github.io/polychronies/v/5a7273c5ba1e894e78840d0c3a4535d128350428/))
 was automatically generated
-from [SpikeAI/polychronies@90420b4](https://github.com/SpikeAI/polychronies/tree/90420b4d276795ff630c89a0a5146c034b3602e3)
+from [SpikeAI/polychronies@5a7273c](https://github.com/SpikeAI/polychronies/tree/5a7273c5ba1e894e78840d0c3a4535d128350428)
 on March 2, 2022.
 </em></small>
 
@@ -165,7 +165,7 @@ This hypothesis is directly inspired by neurobiological observations in the hipp
 
 ### Ultra fast neural codes for ultra fast vision
 
-Let us start our review of the state of the art on the role of dynamics in vision by presenting some surprising results that have been obtained in neuroscience. Indeed, Simon Thorpe's group has shown during the last decades numerous examples demonstrating that humans can categorize briefly presented images in a fraction of a second. Its first experiment consisted in asking subjects to categorize images that do or do not contain animals [@Thorpe1996]. The results showed that humans were able to perform this task very well (with a success rate of more than 95%) but above all that a differential activity for the two categories of images could be observed by electroencephalography, showing that this differentiation emerges at a very early latency in neuronal activity. These results have been extended to several species including primates but also extended to different experimental protocols and have shown for example that the response could be extremely fast of the order of 120 ms when the task was to perform a saccade [@doi:10/d8gpjq].
+Let us start our review of the state of the art on the role of dynamics in vision by presenting some surprising results that have been obtained in neuroscience. Indeed, Simon Thorpe's group has shown during the last decades numerous examples demonstrating that humans can categorize briefly presented images in a fraction of a second. Its first experiment consisted in asking subjects to categorize images that do or do not contain animals [@Thorpe1996]. The results showed that humans were able to perform this task very well (with a success rate of more than 95%) but above all that a differential activity for the two categories of images could be observed by electroencephalography, showing that this differentiation emerges at a very early latency in neuronal activity. These results have been extended to several species including primates but also extended to different experimental protocols and have shown for example that the response could be extremely fast of the order of 120 ms when the task was to perform a saccade [@Kirchner06].
 
 This fast processing also explains the surprising experiments of fast serial detection which consists in presenting a fast succession of different images and to decode via the EEG if the observer can detect for example the presence of an animal. The performances decrease progressively as the frequency of presentation of the images increases. However, it has been shown in the macaque that a significant performance could be maintained with an image presentation time of only 14 ms per image [@doi:10.1162/089892901564199].
 
@@ -188,7 +188,7 @@ Similar results have been demonstrated through neurophysiological recordings in 
 
 ### From synfire chains...
 
-In his book "Corticonics" [@Abeles1991], Moshe Abeles asked if the role of cortical neurons is whether to integrate synaptic inputs or rather to detect coincidences in temporal spiking patterns. The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models. While the first hypothesis favors the rate coding theory, the second possibility highlights the need for temporal precision in the neural code. The book then demonstrates that this could take the form of "synfire chains", that is synchronous activity on subsets of neurons which could be propagated in a stable fashion. Since, numerous studies demonstrated the emergence of synchronicity in neuron population activity [@doi:10/gm79hh], efficient encoding thanks to the use of spike latencies [@Perrinet2004; @doi:10.1126/science.1149639] or precise timing in the auditory system [@https://repository.cshl.edu/id/eprint/30941; @doi:10.1523/JNEUROSCI.10-10-03227.1990]. All these findings, and more [@doi:10.1023/B:NACO.0000027755.02868.60], highlight the importance of the temporal aspect of the neural code and suggest the existence of repeated spatio-temporal patterns in the spike train.
+In his book "Corticonics" [@Abeles1991], Moshe Abeles asked if the role of cortical neurons is whether to integrate synaptic inputs or rather to detect coincidences in temporal spiking patterns. The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models. While the first hypothesis favors the rate coding theory, the second possibility highlights the need for temporal precision in the neural code [@Paugam12]. The book then demonstrates that this could take the form of "synfire chains", that is synchronous activity on subsets of neurons which could be propagated in a stable fashion. Since, numerous studies demonstrated the emergence of synchronicity in neuron population activity [@doi:10/gm79hh], efficient encoding thanks to the use of spike latencies [@Perrinet2004; @doi:10.1126/science.1149639] or precise timing in the auditory system [@https://repository.cshl.edu/id/eprint/30941; @doi:10.1523/JNEUROSCI.10-10-03227.1990]. All these findings, and more [@doi:10.1023/B:NACO.0000027755.02868.60], highlight the importance of the temporal aspect of the neural code and suggest the existence of repeated spatio-temporal patterns in the spike train.
 
 It was shown that a simple model may allow the propagation of such synfire chains [@pmid:11665761]. This model considers the dynamics of leaky integrate-of-fire neurons in different groups of similar size. Each neuron of one group is connected by an excitatory synapse to the next. When a pulse is elicited in the first group, this may generate a spike in the next group. Depending on the weight value, this new activity may get more or less synchronized than the previous pulse (as measured by the standard deviation of spike times in the pulse). Recursively applying this to a sequence of groups generates either a synfire propagation or not. A simple simulation is shown in Figure [@fig:diesman].
 
@@ -203,16 +203,34 @@ Note also that synchronicity may explain some unintuitive results. Indeed it has
 
 #### TODO .. to traveling waves ...
 
-[@doi:10.1038/s41467-021-26175-1]
+[@Bringuier99]
 
-[@Muller14]
 
-Spontaneous traveling waves naturally emerge from horizontal fiber time delays and travel through locally asynchronous-irregular states [@doi:10.1126/science.278.5345.1950]
+The stimulus-evoked population response in visual cortex of awake monkey is a propagating wave
+Propagating waves occur in many excitable media and were recently found in neural systems from retina to neocortex. While propagating waves are clearly present under anaesthesia, whether they also appear during awake and conscious states remains unclear. One possibility is that these waves are systematically missed in trial-averaged data, due to variability. Here we present a method for detecting propagating waves in noisy multichannel recordings. Applying this method to single-trial voltage-sensitive dye imaging data, we show that the stimulus-evoked population response in primary visual cortex of the awake monkey propagates as a travelling wave, with consistent dynamics across trials. A network model suggests that this reliability is the hallmark of the horizontal fibre network of superficial cortical layers. Propagating waves with similar properties occur independently in secondary visual cortex, but maintain precise phase relations with the waves in primary visual cortex. These results show that, in response to a visual stimulus, propagating waves are systematically evoked in several visual areas, generating a consistent spatiotemporal frame for further neuronal interactions. [@Muller14]
+
+Advanced recording techniques have enabled the identification of travelling waves of neuronal activity in different areas of the cortex. Sejnowski and colleagues review these findings, consider the mechanisms by which travelling waves are generated and evaluate their possible roles in cortical function. [@Muller18]
+
+
+#### Spontaneous traveling waves naturally emerge from horizontal fiber time delays and travel through locally asynchronous-irregular states [@doi:10.1038/s41467-021-26175-1]
+
+![a Spike raster for repeated presentations (N = 40) of a high-contrast (10% Michelson contrast) drifting Gabor recorded from area MT of a fixating marmoset (stimulus-onset, red line; mean response, blue line). A single-trial LFP trace is plotted in gray, and the average LFP response is plotted in black. The relative power between baseline (−200 ms to stimulus-onset) and evoked fluctuations (stimulus-onset + 50–250 ms) significantly favored the evoked response (right panel; N = 110 trials; median = 1.89 dB, p = 0.000019, two-tailed Wilcoxon’s ranked-sum test). b Same as in (a), but for a low contrast stimulus (<2% Michelson contrast). The relative power between baseline and evoked LFP fluctuations was not statistically different from parity (median = 1.23 dB, p = 0.087 two-tailed Wilcoxon’s ranked-sum test). c An example of spontaneous LFP fluctuations structured as a traveling wave recorded from a spatially distributed multielectrode array in marmoset area MT. d Histogram of spontaneous spike probability as a function of the generalized phase of the LFP during fixation. e The average evoked response to low contrast stimuli was stronger when a more excitable phase (±π rad) of a spontaneous traveling wave aligned with the retinotopic location of the target (aligned, green line) as compared to when a less excitable phase (0 rad) was aligned (unaligned, purple line; N = 43 wave and non-wave trials; shaded region SEM; p = 0.0000015 two-tailed Wilcoxon’s rank-sum test). Data for panels c–e modified from Davis et al.17 with permission.](https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-26175-1/MediaObjects/41467_2021_26175_Fig1_HTML.png){#fig:davis width="100%"}
+
+Studies of sensory-evoked neuronal responses often focus on mean spike rates, with fluctuations treated as internally-generated noise. However, fluctuations of spontaneous activity, often organized as traveling waves, shape stimulus-evoked responses and perceptual sensitivity. The mechanisms underlying these waves are unknown. Further, it is unclear whether waves are consistent with the low rate and weakly correlated “asynchronous-irregular” dynamics observed in cortical recordings. Here, we describe a large-scale computational model with topographically-organized connectivity and conduction delays relevant to biological scales. We find that spontaneous traveling waves are a general property of these networks. The traveling waves that occur in the model are sparse, with only a small fraction of neurons participating in any individual wave. Consequently, they do not induce measurable spike correlations and remain consistent with locally asynchronous irregular states. Further, by modulating local network state, they can shape responses to incoming inputs as observed in vivo.
+
+
+#### Spike Synchronization and Rate Modulation Differentially Involved in Motor Cortical Function [@doi:10.1126/science.278.5345.1950]
+
+It is now commonly accepted that planning and execution of movements are based on distributed processing by neuronal populations in motor cortical areas. It is less clear, though, how these populations organize dynamically to cope with the momentary computational demands. Simultaneously recorded activities of neurons in the primary motor cortex of monkeys during performance of a delayed-pointing task exhibited context-dependent, rapid changes in the patterns of coincident action potentials. Accurate spike synchronization occurred in relation to external events (stimuli, movements) and was commonly accompanied by discharge rate modulations but without precise time locking of the spikes to these external events. Spike synchronization also occurred in relation to purely internal events (stimulus expectancy), where firing rate modulations were distinctly absent. These findings indicate that internally generated synchronization of individual spike discharges may subserve the cortical organization of cognitive motor processes.
+
+
+[@Chemla19]
 
 Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level.
 
 there are temporal delays in the nervous system, both at the neural [@doi:10.1007/s00422-014-0620-8] and behavioral [@doi:10.1371/journal.pcbi.1005068] levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks.
 
+may be used for motion detection and interpolation [@Kaplan13] [@KhoeiMassonPerrinet17]
 
 #### TODO ... and to synfire braids and polychronous groups
 
@@ -257,12 +275,10 @@ In [@doi:10.1016/j.neuron.2020.12.013], it was shown that attentional informatio
 
 It is interesting to make a parallel with the "Rapid Formation of Robust Auditory Memories" reported in [@Agus2010] which uses noise patterns. They " used random waveforms to probe the formation of new memories for arbitrary complex sounds. A behavioral measure was designed, based on the detection of repetitions embedded in noises up to 4 s long." The  task is to detect the repetition of the same (frozen) noise within a trial. " Unbeknownst to listeners, some noise samples reoccurred randomly throughout an experimental block." they showed that the "repeated exposure induced learning for otherwise totally unpredictable and meaningless sounds" by showing that the sensitivity increases in that case. Note that "acoustical analyses failed to reveal any obvious differences between good and bad noises" and that "Time reversal had no significant effect on the RefRN advantage" (quite surprising). The Learning is unsupervised (statistical, automatic), fast-acting (phase transition, "insight"), and long-lasting (memorization).
 
-### polychronization
-
 
 ### outline
 
-A natural candidate to use these precise temporal patterns in the brain is to use Spiking Neural Networks (SNNs). The approach which is at present most prominent in the SNNs community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.
+A natural candidate to use these precise temporal patterns in the brain is to use Spiking Neural Networks (SNNs) [@Maass97]. The approach which is at present most prominent in the SNNs community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.
 
 
 Remarkably, novel neuromorphic chips use a representation similar to that of real neurons [@arxiv:2201.12673]. For example, event-based cameras provide a stream of binary asynchronous events signaling detectable changes in luminance, and information is represented by these spike-based temporal motifs, hence their name "silicon retinas" (see Figure @fig:silicon_retina). For such devices, it is crucial to better understand the potential of using such event-based representations in order to devise novel algorithms.
@@ -284,8 +300,7 @@ Finally we will discuss future avenues for effective PG detection and learning i
 ## Models of polychronization detection in models
 
 
-
-### Izhikevitch
+### polychronization Izhikevitch
 
 * Reproducing Polychronization: A Guide to Maximizing the Reproducibility of Spiking Network Models <https://www.frontiersin.org/articles/10.3389/fninf.2018.00046/full>
   * comes with python code
@@ -294,12 +309,13 @@ Finally we will discuss future avenues for effective PG detection and learning i
 
 * dynamic networks & learning delays:
   * Huning H., Glunder H., and Palm G. (1998) Synaptic delay learning in pulse-coupled neurons. Neural Computation, 10:555–565. <https://www.deepdyve.com/lp/mit-press/synaptic-delay-learning-in-pulse-coupled-neurons-DGMiNHxp0A>
-  * [Eurich C., Pawelzik K., Ernst U., Cowan J., and Milton J. (1999) Dynamics of self-organazed delay adaptation. Phys. Rev. Lett., 82:1594–1597.](https://www.researchgate.net/publication/37921636_Dynamics_of_Self-Organized_Delay_Adaptation)
-  * The recent "multi-neuronal spike sequence detector" (MNSD) architecture integrates the weight- and delay-adjustment methods by combining heterosynaptic plasticity with the neurocomputational feature spike latency : <https://pubmed.ncbi.nlm.nih.gov/33679293/>
-  * an extensive (graph-centric) review on [Synchronization in time-varying networks](https://arxiv.org/abs/2109.07618)
-* related
 
-[@Kaplan13]
+  * [Eurich C., Pawelzik K., Ernst U., Cowan J., and Milton J. (1999) Dynamics of self-organazed delay adaptation. Phys. Rev. Lett., 82:1594–1597.](https://www.researchgate.net/publication/37921636_Dynamics_of_Self-Organized_Delay_Adaptation)
+
+  * The recent "multi-neuronal spike sequence detector" (MNSD) architecture integrates the weight- and delay-adjustment methods by combining heterosynaptic plasticity with the neurocomputational feature spike latency : <https://pubmed.ncbi.nlm.nih.gov/33679293/>
+
+  * an extensive (graph-centric) review on [Synchronization in time-varying networks](https://arxiv.org/abs/2109.07618)
+
 
 ### spike distances
 
