@@ -17,6 +17,7 @@
   * an extensive (graph-centric) review on [Synchronization in time-varying networks](https://arxiv.org/abs/2109.07618)
 * related
 
+[@Kaplan13]
 
 ### spike distances
 
