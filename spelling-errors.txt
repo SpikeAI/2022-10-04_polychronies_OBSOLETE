@@ -62,6 +62,7 @@ FPGA
 Frady
 Gabor
 Ganjtabesh
+Gaussians
 Gillett
 GJ
 GLM
@@ -74,7 +75,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-Hippocampal
+hippocampal
 Hirase
 Huning
 HVC
@@ -140,8 +141,8 @@ Perrinet
 PGs
 PLoS
 Politi
-Polychronization
-Polychronous
+polychronization
+polychronous
 Poulet
 pre
 premotor
@@ -151,7 +152,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-Rastermap
+rastermap
 RefRN
 Reproducibility
 retinotopic
@@ -167,6 +168,8 @@ SNNs
 soma
 spatio
 spatiotemporal
+Spectro
+spectrograms
 SpikeShip
 SPOTDis
 SPOTDisClust
@@ -176,14 +179,16 @@ SRM
 stationarity
 Statist
 STDP
+STRFs
 subserve
 supersequences
-Synfire
+synfire
 thalamocortical
 Thanasoulis
 Timone
 TJ
 TODO
+tradeoff
 Triplett
 unintuitive
 Université

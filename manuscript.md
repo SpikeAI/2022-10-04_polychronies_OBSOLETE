@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-03-02'
+date-meta: '2022-03-08'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -58,8 +58,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-03-02" />
-  <meta name="citation_publication_date" content="2022-03-02" />
+  <meta name="dc.date" content="2022-03-08" />
+  <meta name="citation_publication_date" content="2022-03-08" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -82,9 +82,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/5a7273c5ba1e894e78840d0c3a4535d128350428/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/5a7273c5ba1e894e78840d0c3a4535d128350428/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/5a7273c5ba1e894e78840d0c3a4535d128350428/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/0081827867f7fd6d6245c4348ed300ab8f00edc4/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/0081827867f7fd6d6245c4348ed300ab8f00edc4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/0081827867f7fd6d6245c4348ed300ab8f00edc4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -107,10 +107,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/5a7273c5ba1e894e78840d0c3a4535d128350428/))
+([permalink](https://SpikeAI.github.io/polychronies/v/0081827867f7fd6d6245c4348ed300ab8f00edc4/))
 was automatically generated
-from [SpikeAI/polychronies@5a7273c](https://github.com/SpikeAI/polychronies/tree/5a7273c5ba1e894e78840d0c3a4535d128350428)
-on March 2, 2022.
+from [SpikeAI/polychronies@0081827](https://github.com/SpikeAI/polychronies/tree/0081827867f7fd6d6245c4348ed300ab8f00edc4)
+on March 8, 2022.
 </em></small>
 
 ## Authors
@@ -346,6 +346,8 @@ In generic linear non linear lnl models, the output is assumed to be poisson. As
 
 S. Grun, M. Diesmann, and A. Aertsen. Unitary event analysis. In Analysis of parallel spike trains, pages 191–220. Springer, 2010. + coincidence detection
 
+TODO: summarize "Understanding Auditory Spectro-Temporal Receptive Fields and Their Changes with Input Statistics by Efficient Coding Principles" - Spectro-temporal receptive fields (STRFs) have been widely used as linear approximations to the signal transform from sound spectrograms to neural responses along the auditory pathway. Their dependence on statistical attributes of the stimuli, such as sound intensity, is usually explained by nonlinear mechanisms and models. Here, we apply an efficient coding principle which has been successfully used to understand receptive fields in early stages of visual processing, in order to provide a computational understanding of the STRFs. According to this principle, STRFs result from an optimal tradeoff between maximizing the sensory information the brain receives, and minimizing the cost of the neural activities required to represent and transmit this information. Both terms depend on the statistical properties of the sensory inputs and the noise that corrupts them. The STRFs should therefore depend on the input power spectrum and the signal-to-noise ratio, which is assumed to increase with input intensity. We analytically derive the optimal STRFs when signal and noise are approximated as Gaussians. Under the constraint that they should be spectro-temporally local, the STRFs are predicted to adapt from being band-pass to low-pass filters as the input intensity reduces, or the input correlation becomes longer range in sound frequency or time. These predictions qualitatively match physiological observations. Our prediction as to how the STRFs should be determined by the input power spectrum could readily be tested, since this spectrum depends on the stimulus ensemble. The potentials and limitations of the efficient coding principle are discussed.
+[@doi:10.1371/journal.pcbi.1002123]
 
 ### Rastermap : decoding large-scale data
 

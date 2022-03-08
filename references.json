@@ -1445,6 +1445,7 @@
   {
     "publisher": "Proceedings of the National Academy of Sciences",
     "issue": "12",
+    "abstract": "<jats:p>It is well known that many stimulus parameters, such as sound location in the auditory system or contrast in the visual system, can modulate the timing of the first spike in sensory neurons. Could first-spike latency be a candidate neural code? Most studies measuring first-spike latency information assume that the brain has an independent reference for stimulus onset from which to extract latency. This assumption creates an obvious confound that casts doubt on the feasibility of first-spike latency codes. If latency is measured relative to an internal reference of stimulus onset calculated from the responses of the neural population, the information conveyed by the latency of single neurons might decrease because of correlated changes in latency across the population. Here we assess the effects of a realistic model of stimulus onset detection on the first-spike latency information conveyed by single neurons in the auditory system. Contrary to expectation, we find that on average, the information contained in single neurons does not decrease; in fact, the majority of neurons show a slight increase in the information conveyed by latency referenced to a population onset. Our results show that first-spike latency codes are a feasible mechanism for information transfer even when biologically plausible estimates of stimulus onset are taken into account.</jats:p>",
     "DOI": "10.1073/pnas.0610368104",
     "type": "article-journal",
     "page": "5175-5180",
@@ -1453,11 +1454,11 @@
     "volume": "104",
     "author": [
       {
-        "given": "S. M.",
+        "given": "Steven M.",
         "family": "Chase"
       },
       {
-        "given": "E. D.",
+        "given": "Eric D.",
         "family": "Young"
       }
     ],
@@ -1468,12 +1469,12 @@
         [
           2007,
           3,
-          9
+          20
         ]
       ]
     },
     "URL": "https://doi.org/cm3b98",
-    "container-title-short": "Proceedings of the National Academy of Sciences",
+    "container-title-short": "Proc. Natl. Acad. Sci. U.S.A.",
     "PMCID": "PMC1829282",
     "PMID": "17360369",
     "id": "1H1Omh73g",
@@ -1482,6 +1483,7 @@
   {
     "publisher": "Proceedings of the National Academy of Sciences",
     "issue": "48",
+    "abstract": "<jats:p>\n            To perform nontrivial, real-time computations on a sensory input stream, biological systems must retain a short-term memory trace of their recent inputs. It has been proposed that generic high-dimensional dynamical systems could retain a memory trace for past inputs in their current state. This raises important questions about the fundamental limits of such memory traces and the properties required of dynamical systems to achieve these limits. We address these issues by applying Fisher information theory to dynamical systems driven by time-dependent signals corrupted by noise. We introduce the Fisher Memory Curve (FMC) as a measure of the signal-to-noise ratio (SNR) embedded in the dynamical state relative to the input SNR. The integrated FMC indicates the total memory capacity. We apply this theory to linear neuronal networks and show that the capacity of networks with normal connectivity matrices is exactly 1 and that of any network of N neurons is, at most, N. A nonnormal network achieving this bound is subject to stringent design constraints: It must have a hidden feedforward architecture that superlinearly amplifies its input for a time of order N, and the input connectivity must optimally match this architecture. The memory capacity of networks subject to saturating nonlinearities is further limited, and cannot exceed\n            <jats:inline-formula>\n              <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" overflow=\"scroll\">\n                <mml:mrow>\n                  <mml:msqrt>\n                    <mml:mi>N</mml:mi>\n                  </mml:msqrt>\n                </mml:mrow>\n              </mml:math>\n            </jats:inline-formula>\n            . This limit can be realized by feedforward structures with divergent fan out that distributes the signal across neurons, thereby avoiding saturation. We illustrate the generality of the theory by showing that memory in fluid systems can be sustained by transient nonnormal amplification due to convective instability or the onset of turbulence.\n          </jats:p>",
     "DOI": "10.1073/pnas.0804451105",
     "type": "article-journal",
     "page": "18970-18975",
@@ -1490,15 +1492,15 @@
     "volume": "105",
     "author": [
       {
-        "given": "S.",
+        "given": "Surya",
         "family": "Ganguli"
       },
       {
-        "given": "D.",
+        "given": "Dongsung",
         "family": "Huh"
       },
       {
-        "given": "H.",
+        "given": "Haim",
         "family": "Sompolinsky"
       }
     ],
@@ -1508,13 +1510,13 @@
       "date-parts": [
         [
           2008,
-          11,
-          19
+          12,
+          2
         ]
       ]
     },
     "URL": "https://doi.org/bq52bt",
-    "container-title-short": "Proceedings of the National Academy of Sciences",
+    "container-title-short": "Proc. Natl. Acad. Sci. U.S.A.",
     "PMCID": "PMC2596211",
     "PMID": "19020074",
     "id": "o7rANZux",
@@ -1523,7 +1525,7 @@
   {
     "publisher": "Proceedings of the National Academy of Sciences",
     "issue": "15",
-    "abstract": "<jats:p>The hippocampus plays a critical role in episodic memory: the sequential representation of visited places and experienced events. This function is mirrored by hippocampal activity that self organizes into sequences of neuronal activation that integrate spatiotemporal information. What are the underlying mechanisms of such integration is still unknown. Single cell activity was recently shown to combine time and distance information; however, it remains unknown whether a degree of tuning between space and time can be defined at the network level. Here, combining daily calcium imaging of CA1 sequence dynamics in running head-fixed mice and network modeling, we show that CA1 network activity tends to represent a specific combination of space and time at any given moment, and that the degree of tuning can shift within a continuum from 1 day to the next. Our computational model shows that this shift in tuning can happen under the control of the external drive power. We propose that extrinsic global inputs shape the nature of spatiotemporal integration in the hippocampus at the population level depending on the task at hand, a hypothesis which may guide future experimental studies.</jats:p>",
+    "abstract": "<jats:title>Significance</jats:title>\n          <jats:p>The hippocampus organizes experience in sequences of events that form episodic memory. How are time and space internally computed in the hippocampus in the absence of sequential external inputs? Here we show that time and space are integrated together within the hippocampal network with different degrees of tuning across days. This was found by recording the activity of hundreds of pyramidal cells for several days. We also propose a mechanism supporting such spatiotemporal integration based on a ring attractor network model: the degree of tuning between space and time can be adjusted by modulating the power of a nonsequential external excitatory drive. In this way, the hippocampus is able to generate a spatiotemporal representation tuned to the task at hand.</jats:p>",
     "DOI": "10.1073/pnas.1718518116",
     "type": "article-journal",
     "page": "7477-7482",
@@ -1572,7 +1574,7 @@
       ]
     },
     "URL": "https://doi.org/ghpbm3",
-    "container-title-short": "Proc Natl Acad Sci USA",
+    "container-title-short": "Proc. Natl. Acad. Sci. U.S.A.",
     "PMCID": "PMC6462106",
     "PMID": "30910984",
     "id": "qI2HUEyy",
@@ -2670,6 +2672,49 @@
   },
   {
     "publisher": "Public Library of Science (PLoS)",
+    "issue": "8",
+    "DOI": "10.1371/journal.pcbi.1002123",
+    "type": "article-journal",
+    "page": "e1002123",
+    "source": "Crossref",
+    "title": "Understanding Auditory Spectro-Temporal Receptive Fields and Their Changes with Input Statistics by Efficient Coding Principles",
+    "volume": "7",
+    "author": [
+      {
+        "given": "Lingyun",
+        "family": "Zhao"
+      },
+      {
+        "given": "Li",
+        "family": "Zhaoping"
+      }
+    ],
+    "container-title": "PLoS Computational Biology",
+    "language": "en",
+    "editor": [
+      {
+        "given": "Lyle J.",
+        "family": "Graham"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          8,
+          18
+        ]
+      ]
+    },
+    "URL": "https://doi.org/bjc6c9",
+    "container-title-short": "PLoS Comput Biol",
+    "PMCID": "PMC3158037",
+    "PMID": "21887121",
+    "id": "s63GcujC",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1371/journal.pcbi.1002123"
+  },
+  {
+    "publisher": "Public Library of Science (PLoS)",
     "issue": "7",
     "DOI": "10.1371/journal.pcbi.1004939",
     "type": "article-journal",
@@ -3351,7 +3396,7 @@
         [
           "2022",
           3,
-          2
+          8
         ]
       ]
     },
