@@ -9,6 +9,7 @@ spike time coding in a neuron: We will describe the Spike-Time Dependent Plastic
 [@Perrinet2002] : coherence detection
 [@Perrinet2001] : STDP
 
+bonjour amelie
 
 [@arxiv:2011.09380]
 
