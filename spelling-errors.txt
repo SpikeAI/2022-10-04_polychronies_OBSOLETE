@@ -15,6 +15,7 @@ asscume
 ATIS
 attentional
 Avitan
+axonal
 Barahona
 Bellec
 Bernouilli
@@ -78,7 +79,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-hippocampal
+Hippocampal
 Hirase
 Huning
 HVC
@@ -91,6 +92,7 @@ Institut
 interareal
 intra
 intracellular
+Izhichevitch
 Izhikevich
 Izhikevitch
 Jayazeri
@@ -145,7 +147,7 @@ PGs
 PLoS
 Politi
 polychronization
-Polychronous
+polychronous
 Poulet
 pre
 premotor
@@ -155,7 +157,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-rastermap
+Rastermap
 RefRN
 Reproducibility
 retinotopic
@@ -171,7 +173,7 @@ SNNs
 soma
 spatio
 spatiotemporal
-spectro
+Spectro
 spectrograms
 SpikeShip
 SPOTDis
@@ -185,7 +187,7 @@ STDP
 STRFs
 subserve
 supersequences
-synfire
+Synfire
 thalamocortical
 Thanasoulis
 Timone
