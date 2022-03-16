@@ -17,13 +17,14 @@ authors:
   - github: XXXXXXXX
     name: Antoine Grimaldi
     initials: AG
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: WWWWWWWWWWWWW
-    email: AAAAAAAAAAAAAAAAAA
+    orcid: 0000-0002-3107-4788
+    twitter: A_Grismaldi
+    website: http://antoinegrimaldi.fr/
+    email: antoine.grimaldi@univ-amu.fr
     affiliations:
       - Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
     funders:
-      - Grant XXXXXXXX
+      - Grant APROVIS3D
   - github: laurentperrinet
     name: Laurent U Perrinet
     initials: LuP
