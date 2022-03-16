@@ -71,13 +71,14 @@ GLM
 Glunder
 Goodhill
 Grimaldi
+Grismaldi
 Grossberger
 Grun
 HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-Hippocampal
+hippocampal
 Hirase
 Huning
 HVC
@@ -143,8 +144,8 @@ Perrinet
 PGs
 PLoS
 Politi
-Polychronization
-polychronous
+polychronization
+Polychronous
 Poulet
 pre
 premotor
@@ -170,7 +171,7 @@ SNNs
 soma
 spatio
 spatiotemporal
-Spectro
+spectro
 spectrograms
 SpikeShip
 SPOTDis
@@ -201,6 +202,4 @@ Vogginger
 waveforms
 Weyl’s
 Wilcoxon’s
-WWWWWWWWWWWWW
-XXXX
 XXXXXXXX

@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-03-15'
+date-meta: '2022-03-16'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -58,8 +58,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-03-15" />
-  <meta name="citation_publication_date" content="2022-03-15" />
+  <meta name="dc.date" content="2022-03-16" />
+  <meta name="citation_publication_date" content="2022-03-16" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,8 +70,8 @@ header-includes: |-
   <meta name="citation_author_institution" content="Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université" />
   <meta name="citation_author" content="Antoine Grimaldi" />
   <meta name="citation_author_institution" content="Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@WWWWWWWWWWWWW" />
+  <meta name="citation_author_orcid" content="0000-0002-3107-4788" />
+  <meta name="twitter:creator" content="@A_Grismaldi" />
   <meta name="citation_author" content="Laurent U Perrinet" />
   <meta name="citation_author_institution" content="Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université" />
   <meta name="citation_author_orcid" content="0000-0002-9536-010X" />
@@ -82,9 +82,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/3c7535b360e0f226bbafdfb7cb1b6f7a108ed656/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/3c7535b360e0f226bbafdfb7cb1b6f7a108ed656/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/3c7535b360e0f226bbafdfb7cb1b6f7a108ed656/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/7b1aa9b0f577fe15688c5e6a69028503aab6564d/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/7b1aa9b0f577fe15688c5e6a69028503aab6564d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/7b1aa9b0f577fe15688c5e6a69028503aab6564d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -107,10 +107,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/3c7535b360e0f226bbafdfb7cb1b6f7a108ed656/))
+([permalink](https://SpikeAI.github.io/polychronies/v/7b1aa9b0f577fe15688c5e6a69028503aab6564d/))
 was automatically generated
-from [SpikeAI/polychronies@3c7535b](https://github.com/SpikeAI/polychronies/tree/3c7535b360e0f226bbafdfb7cb1b6f7a108ed656)
-on March 15, 2022.
+from [SpikeAI/polychronies@7b1aa9b](https://github.com/SpikeAI/polychronies/tree/7b1aa9b0f577fe15688c5e6a69028503aab6564d)
+on March 16, 2022.
 </em></small>
 
 ## Authors
@@ -125,16 +125,17 @@ on March 15, 2022.
      · Funded by Grant AgileNeuroBot
   </small>
 
-+ **Antoine Grimaldi**<br>
++ **Antoine Grimaldi**
+  · [http://antoinegrimaldi.fr/](http://antoinegrimaldi.fr/)<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0002-3107-4788](https://orcid.org/0000-0002-3107-4788)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [XXXXXXXX](https://github.com/XXXXXXXX)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [WWWWWWWWWWWWW](https://twitter.com/WWWWWWWWWWWWW)<br>
+    [A_Grismaldi](https://twitter.com/A_Grismaldi)<br>
   <small>
      Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
-     · Funded by Grant XXXXXXXX
+     · Funded by Grant APROVIS3D
   </small>
 
 + **Laurent U Perrinet**
