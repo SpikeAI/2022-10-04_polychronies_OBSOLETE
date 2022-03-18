@@ -7,7 +7,7 @@
       "time"
     ],
     "lang": "en-US",
-    "date-meta": "2022-03-16",
+    "date-meta": "2022-03-18",
     "author-meta": [
       "Camille Besnainou",
       "Antoine Grimaldi",
@@ -52,7 +52,7 @@
       "Orban2016": "doi:10.1016/j.neuron.2016.09.038",
       "Gollish2008": "doi:10.1016/j.neuron.2010.04.014"
     },
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Review on temporal spiking motifs in neurobiological and neuromorphic data\" />\n<meta name=\"citation_title\" content=\"Review on temporal spiking motifs in neurobiological and neuromorphic data\" />\n<meta property=\"og:title\" content=\"Review on temporal spiking motifs in neurobiological and neuromorphic data\" />\n<meta property=\"twitter:title\" content=\"Review on temporal spiking motifs in neurobiological and neuromorphic data\" />\n<meta name=\"dc.date\" content=\"2022-03-16\" />\n<meta name=\"citation_publication_date\" content=\"2022-03-16\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Camille Besnainou\" />\n<meta name=\"citation_author_institution\" content=\"Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université\" />\n<meta name=\"citation_author\" content=\"Antoine Grimaldi\" />\n<meta name=\"citation_author_institution\" content=\"Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3107-4788\" />\n<meta name=\"twitter:creator\" content=\"@A_Grismaldi\" />\n<meta name=\"citation_author\" content=\"Laurent U Perrinet\" />\n<meta name=\"citation_author_institution\" content=\"Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-9536-010X\" />\n<meta name=\"twitter:creator\" content=\"@laurentperrinet\" />\n<link rel=\"canonical\" href=\"https://SpikeAI.github.io/polychronies/\" />\n<meta property=\"og:url\" content=\"https://SpikeAI.github.io/polychronies/\" />\n<meta property=\"twitter:url\" content=\"https://SpikeAI.github.io/polychronies/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://SpikeAI.github.io/polychronies/\" />\n<meta name=\"citation_pdf_url\" content=\"https://SpikeAI.github.io/polychronies/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://SpikeAI.github.io/polychronies/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://SpikeAI.github.io/polychronies/v/63bd71033a9888523fa4da0423e1ae7a69bb0b32/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://SpikeAI.github.io/polychronies/v/63bd71033a9888523fa4da0423e1ae7a69bb0b32/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://SpikeAI.github.io/polychronies/v/63bd71033a9888523fa4da0423e1ae7a69bb0b32/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Review on temporal spiking motifs in neurobiological and neuromorphic data\" />\n<meta name=\"citation_title\" content=\"Review on temporal spiking motifs in neurobiological and neuromorphic data\" />\n<meta property=\"og:title\" content=\"Review on temporal spiking motifs in neurobiological and neuromorphic data\" />\n<meta property=\"twitter:title\" content=\"Review on temporal spiking motifs in neurobiological and neuromorphic data\" />\n<meta name=\"dc.date\" content=\"2022-03-18\" />\n<meta name=\"citation_publication_date\" content=\"2022-03-18\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Camille Besnainou\" />\n<meta name=\"citation_author_institution\" content=\"Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université\" />\n<meta name=\"citation_author\" content=\"Antoine Grimaldi\" />\n<meta name=\"citation_author_institution\" content=\"Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3107-4788\" />\n<meta name=\"twitter:creator\" content=\"@A_Grismaldi\" />\n<meta name=\"citation_author\" content=\"Laurent U Perrinet\" />\n<meta name=\"citation_author_institution\" content=\"Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-9536-010X\" />\n<meta name=\"twitter:creator\" content=\"@laurentperrinet\" />\n<link rel=\"canonical\" href=\"https://SpikeAI.github.io/polychronies/\" />\n<meta property=\"og:url\" content=\"https://SpikeAI.github.io/polychronies/\" />\n<meta property=\"twitter:url\" content=\"https://SpikeAI.github.io/polychronies/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://SpikeAI.github.io/polychronies/\" />\n<meta name=\"citation_pdf_url\" content=\"https://SpikeAI.github.io/polychronies/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://SpikeAI.github.io/polychronies/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://SpikeAI.github.io/polychronies/v/f9e3bbcc56b954cc004ee333a12c96fb3d510f4d/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://SpikeAI.github.io/polychronies/v/f9e3bbcc56b954cc004ee333a12c96fb3d510f4d/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://SpikeAI.github.io/polychronies/v/f9e3bbcc56b954cc004ee333a12c96fb3d510f4d/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.bib",
       "content/manual-references.json"
@@ -63,7 +63,7 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "March 16, 2022",
+    "date": "March 18, 2022",
     "randomize_author_order": false,
     "authors": [
       {
@@ -130,19 +130,19 @@
       "repo_slug": "SpikeAI/polychronies",
       "repo_owner": "SpikeAI",
       "repo_name": "polychronies",
-      "commit": "63bd71033a9888523fa4da0423e1ae7a69bb0b32",
-      "triggering_commit": "63bd71033a9888523fa4da0423e1ae7a69bb0b32",
-      "build_url": "https://github.com/SpikeAI/polychronies/commit/63bd71033a9888523fa4da0423e1ae7a69bb0b32/checks",
-      "job_url": "https://github.com/SpikeAI/polychronies/actions/runs/1994022353"
+      "commit": "f9e3bbcc56b954cc004ee333a12c96fb3d510f4d",
+      "triggering_commit": "f9e3bbcc56b954cc004ee333a12c96fb3d510f4d",
+      "build_url": "https://github.com/SpikeAI/polychronies/commit/f9e3bbcc56b954cc004ee333a12c96fb3d510f4d/checks",
+      "job_url": "https://github.com/SpikeAI/polychronies/actions/runs/2005595982"
     },
     "html_url": "https://SpikeAI.github.io/polychronies/",
     "pdf_url": "https://SpikeAI.github.io/polychronies/manuscript.pdf",
-    "html_url_versioned": "https://SpikeAI.github.io/polychronies/v/63bd71033a9888523fa4da0423e1ae7a69bb0b32/",
-    "pdf_url_versioned": "https://SpikeAI.github.io/polychronies/v/63bd71033a9888523fa4da0423e1ae7a69bb0b32/manuscript.pdf",
+    "html_url_versioned": "https://SpikeAI.github.io/polychronies/v/f9e3bbcc56b954cc004ee333a12c96fb3d510f4d/",
+    "pdf_url_versioned": "https://SpikeAI.github.io/polychronies/v/f9e3bbcc56b954cc004ee333a12c96fb3d510f4d/manuscript.pdf",
     "manubot_version": "0.5.2",
     "rootstock_commit": "d150e23a01bcbb94a9337675454c4179c1e48275",
     "manuscript_stats": {
-      "word_count": 7548
+      "word_count": 7607
     }
   }
 }

@@ -18,6 +18,7 @@ Avitan
 axonal
 Barahona
 Bellec
+Benham
 Bernouilli
 Besnainou
 Bienenstock
@@ -79,7 +80,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-Hippocampal
+hippocampal
 Hirase
 Huning
 HVC
@@ -139,6 +140,7 @@ neuroscientific
 organazed
 PAMI
 Partzsch
+parvocellular
 Pawelzik
 Paxon
 Pereira
@@ -173,7 +175,7 @@ SNNs
 soma
 spatio
 spatiotemporal
-Spectro
+spectro
 spectrograms
 SpikeShip
 SPOTDis

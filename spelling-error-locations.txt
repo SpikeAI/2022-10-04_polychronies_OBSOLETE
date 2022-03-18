@@ -13,7 +13,9 @@ content/10_introduction-timing-vision.md:17:neocortical
 content/10_introduction-timing-vision.md:17:vitro
 content/10_introduction-timing-vision.md:19:cnrs
 content/10_introduction-timing-vision.md:19:latencies
+content/10_introduction-timing-vision.md:21:Benham
 content/10_introduction-timing-vision.md:21:luminance
+content/10_introduction-timing-vision.md:21:parvocellular
 content/10_introduction-timing-vision.md:23:neurophysiological
 content/10_introduction-timing-vision.md:23:sensorial
 content/10_introduction-timing-vision.md:23:SNN
