@@ -8,6 +8,7 @@ AgileNeuroBot
 Aix
 Alireza
 amelie
+AntoineGrimaldi
 APROVIS
 apsect
 Aronov
@@ -152,8 +153,8 @@ Perrinet
 PGs
 PLoS
 Politi
-polychronization
-polychronous
+Polychronization
+Polychronous
 Poulet
 pre
 premotor
@@ -163,7 +164,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-Rastermap
+rastermap
 RefRN
 Reproducibility
 retinotopic
@@ -193,7 +194,7 @@ STDP
 STRFs
 subserve
 supersequences
-Synfire
+synfire
 thalamocortical
 Thanasoulis
 Timone
@@ -210,4 +211,3 @@ Vogginger
 waveforms
 Weyl’s
 Wilcoxon’s
-XXXXXXXX

@@ -82,9 +82,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/8e8ebcc203b6278a43bbd079592f5bff8ca49f0a/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8e8ebcc203b6278a43bbd079592f5bff8ca49f0a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8e8ebcc203b6278a43bbd079592f5bff8ca49f0a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/dd8161d8e442a2ea579edf042fcd2feb5ab732cb/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/dd8161d8e442a2ea579edf042fcd2feb5ab732cb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/dd8161d8e442a2ea579edf042fcd2feb5ab732cb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -107,9 +107,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/8e8ebcc203b6278a43bbd079592f5bff8ca49f0a/))
+([permalink](https://SpikeAI.github.io/polychronies/v/dd8161d8e442a2ea579edf042fcd2feb5ab732cb/))
 was automatically generated
-from [SpikeAI/polychronies@8e8ebcc](https://github.com/SpikeAI/polychronies/tree/8e8ebcc203b6278a43bbd079592f5bff8ca49f0a)
+from [SpikeAI/polychronies@dd8161d](https://github.com/SpikeAI/polychronies/tree/dd8161d8e442a2ea579edf042fcd2feb5ab732cb)
 on March 18, 2022.
 </em></small>
 
@@ -130,7 +130,7 @@ on March 18, 2022.
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-3107-4788](https://orcid.org/0000-0002-3107-4788)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [XXXXXXXX](https://github.com/XXXXXXXX)
+    [AntoineGrimaldi](https://github.com/AntoineGrimaldi)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [A_Grismaldi](https://twitter.com/A_Grismaldi)<br>
   <small>
