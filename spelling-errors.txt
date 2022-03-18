@@ -80,7 +80,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-hippocampal
+Hippocampal
 Hirase
 Huning
 HVC
@@ -149,7 +149,7 @@ PGs
 PLoS
 Politi
 polychronization
-polychronous
+Polychronous
 Poulet
 pre
 premotor
@@ -159,7 +159,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-Rastermap
+rastermap
 RefRN
 Reproducibility
 retinotopic
@@ -175,7 +175,7 @@ SNNs
 soma
 spatio
 spatiotemporal
-spectro
+Spectro
 spectrograms
 SpikeShip
 SPOTDis
@@ -189,7 +189,7 @@ STDP
 STRFs
 subserve
 supersequences
-Synfire
+synfire
 thalamocortical
 Thanasoulis
 Timone
