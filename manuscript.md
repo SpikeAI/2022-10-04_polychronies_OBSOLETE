@@ -82,9 +82,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/68ad50fd55c2ee81e3ea23768be6a3bec3148a0e/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/68ad50fd55c2ee81e3ea23768be6a3bec3148a0e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/68ad50fd55c2ee81e3ea23768be6a3bec3148a0e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/8e8ebcc203b6278a43bbd079592f5bff8ca49f0a/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8e8ebcc203b6278a43bbd079592f5bff8ca49f0a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8e8ebcc203b6278a43bbd079592f5bff8ca49f0a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -107,9 +107,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/68ad50fd55c2ee81e3ea23768be6a3bec3148a0e/))
+([permalink](https://SpikeAI.github.io/polychronies/v/8e8ebcc203b6278a43bbd079592f5bff8ca49f0a/))
 was automatically generated
-from [SpikeAI/polychronies@68ad50f](https://github.com/SpikeAI/polychronies/tree/68ad50fd55c2ee81e3ea23768be6a3bec3148a0e)
+from [SpikeAI/polychronies@8e8ebcc](https://github.com/SpikeAI/polychronies/tree/8e8ebcc203b6278a43bbd079592f5bff8ca49f0a)
 on March 18, 2022.
 </em></small>
 
@@ -436,7 +436,7 @@ spike time coding in a neuron: We will describe the Spike-Time Dependent Plastic
 [@Perrinet2002] : coherence detection
 [@Perrinet2001] : STDP
 
-bonjour amelie
+bonjour amelie - coucou ceci est un test ! j'essaye de citer : [@arxiv:2102.04906]
 
 [@arxiv:2011.09380]
 

@@ -286,6 +286,10 @@ content/30_learning-model.md:6:STDP
 content/30_learning-model.md:10:STDP
 content/30_learning-model.md:12:amelie
 content/30_learning-model.md:12:bonjour
+content/30_learning-model.md:12:ceci
+content/30_learning-model.md:12:citer
+content/30_learning-model.md:12:coucou
+content/30_learning-model.md:12:j'essaye
 content/30_learning-model.md:17:Alireza
 content/30_learning-model.md:17:Ganjtabesh
 content/30_learning-model.md:17:Nadafian

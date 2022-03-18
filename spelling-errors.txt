@@ -29,9 +29,11 @@ Buzsaki
 Buzsáki
 camillebesnainou
 CBMI
+ceci
 centric
 Cereb
 chbq
+citer
 Clopath
 CNNs
 CNRS
@@ -41,6 +43,7 @@ compositional
 Comput
 Corticonics
 cotical
+coucou
 Cowan
 Csicsvari
 Czurko
@@ -80,7 +83,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-Hippocampal
+hippocampal
 Hirase
 Huning
 HVC
@@ -97,6 +100,7 @@ Izhichevitch
 Izhikevich
 Izhikevitch
 Jayazeri
+j’essaye
 JF
 jitter
 KD
@@ -149,7 +153,7 @@ PGs
 PLoS
 Politi
 polychronization
-Polychronous
+polychronous
 Poulet
 pre
 premotor
@@ -159,7 +163,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-rastermap
+Rastermap
 RefRN
 Reproducibility
 retinotopic
@@ -175,7 +179,7 @@ SNNs
 soma
 spatio
 spatiotemporal
-Spectro
+spectro
 spectrograms
 SpikeShip
 SPOTDis
@@ -189,7 +193,7 @@ STDP
 STRFs
 subserve
 supersequences
-synfire
+Synfire
 thalamocortical
 Thanasoulis
 Timone
