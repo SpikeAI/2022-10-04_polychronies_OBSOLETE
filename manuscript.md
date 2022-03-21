@@ -5,10 +5,11 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-03-18'
+date-meta: '2022-03-21'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
+- Amélie Gruel
 - Laurent U Perrinet
 citekey-aliases:
   Abeles1991: isbn:9780521376174
@@ -58,8 +59,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-03-18" />
-  <meta name="citation_publication_date" content="2022-03-18" />
+  <meta name="dc.date" content="2022-03-21" />
+  <meta name="citation_publication_date" content="2022-03-21" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -72,6 +73,9 @@ header-includes: |-
   <meta name="citation_author_institution" content="Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université" />
   <meta name="citation_author_orcid" content="0000-0002-3107-4788" />
   <meta name="twitter:creator" content="@A_Grismaldi" />
+  <meta name="citation_author" content="Amélie Gruel" />
+  <meta name="citation_author_institution" content="Laboratoire d&#39;Informatique, Signaux et Systèmes de Sophia Antipolis (I3S), CNRS / Université Côte d&#39;Azur" />
+  <meta name="citation_author_orcid" content="0000-0003-3916-0514" />
   <meta name="citation_author" content="Laurent U Perrinet" />
   <meta name="citation_author_institution" content="Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université" />
   <meta name="citation_author_orcid" content="0000-0002-9536-010X" />
@@ -82,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/dd8161d8e442a2ea579edf042fcd2feb5ab732cb/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/dd8161d8e442a2ea579edf042fcd2feb5ab732cb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/dd8161d8e442a2ea579edf042fcd2feb5ab732cb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/8a4b3cf784b91b29aa3b3ea6deb26ec6047fd4e9/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8a4b3cf784b91b29aa3b3ea6deb26ec6047fd4e9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8a4b3cf784b91b29aa3b3ea6deb26ec6047fd4e9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -107,10 +111,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/dd8161d8e442a2ea579edf042fcd2feb5ab732cb/))
+([permalink](https://SpikeAI.github.io/polychronies/v/8a4b3cf784b91b29aa3b3ea6deb26ec6047fd4e9/))
 was automatically generated
-from [SpikeAI/polychronies@dd8161d](https://github.com/SpikeAI/polychronies/tree/dd8161d8e442a2ea579edf042fcd2feb5ab732cb)
-on March 18, 2022.
+from [SpikeAI/polychronies@8a4b3cf](https://github.com/SpikeAI/polychronies/tree/8a4b3cf784b91b29aa3b3ea6deb26ec6047fd4e9)
+on March 21, 2022.
 </em></small>
 
 ## Authors
@@ -135,6 +139,16 @@ on March 18, 2022.
     [A_Grismaldi](https://twitter.com/A_Grismaldi)<br>
   <small>
      Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
+     · Funded by Grant APROVIS3D
+  </small>
+
++ **Amélie Gruel**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-3916-0514](https://orcid.org/0000-0003-3916-0514)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [amygruel](https://github.com/amygruel)<br>
+  <small>
+     Laboratoire d'Informatique, Signaux et Systèmes de Sophia Antipolis (I3S), CNRS / Université Côte d'Azur
      · Funded by Grant APROVIS3D
   </small>
 

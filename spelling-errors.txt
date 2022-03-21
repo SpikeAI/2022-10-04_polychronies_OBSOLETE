@@ -8,6 +8,9 @@ AgileNeuroBot
 Aix
 Alireza
 amelie
+Amélie
+amygruel
+Antipolis
 AntoineGrimaldi
 APROVIS
 apsect
@@ -43,12 +46,14 @@ combinatorial
 compositional
 Comput
 Corticonics
+Côte
 cotical
 coucou
 Cowan
 Csicsvari
 Czurko
 dataset
+d’Azur
 deconvolution
 deconvolved
 demonstated
@@ -56,6 +61,7 @@ dendritic
 Diesmann
 Differentially
 dimensionality
+d’Informatique
 discrepency
 Doiron
 Dugué
@@ -84,7 +90,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-hippocampal
+Hippocampal
 Hirase
 Huning
 HVC
@@ -110,6 +116,7 @@ Kloosterman
 Kohn
 Kreuz
 Kumar
+Laboratoire
 latencies
 laurentperrinet
 LFP
@@ -153,8 +160,8 @@ Perrinet
 PGs
 PLoS
 Politi
-Polychronization
-Polychronous
+polychronization
+polychronous
 Poulet
 pre
 premotor
@@ -174,6 +181,7 @@ saccade
 Sejnowski
 SEM
 sensorial
+Signaux
 SNE
 SNN
 SNNs
@@ -194,7 +202,8 @@ STDP
 STRFs
 subserve
 supersequences
-synfire
+Synfire
+Systèmes
 thalamocortical
 Thanasoulis
 Timone
