@@ -25,6 +25,15 @@ authors:
       - Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
     funders:
       - Grant APROVIS3D
+  - github: amygruel
+    name: Amélie Gruel
+    initials: AG
+    orcid: 0000-0003-3916-0514
+    email: amelie.gruel@univ-cotedazur.fr
+    affiliations:
+      - Laboratoire d'Informatique, Signaux et Systèmes de Sophia Antipolis (I3S), CNRS / Université Côte d'Azur
+    funders:
+      - Grant APROVIS3D
   - github: laurentperrinet
     name: Laurent U Perrinet
     initials: LuP
