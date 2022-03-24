@@ -7,6 +7,8 @@ JH=date; $(J) --to html
 all:
 	#pandoc notebooks/31_synthetic.ipynb --resource-path=notebooks -s --extract-media=content/images  -t markdown -o content/31_synthetic.md
 	#pandoc notebooks/31_synthetic.ipynb --resource-path=notebooks --extract-media=content/images  -t markdown -o content/31_synthetic.md
+	git pull ; git commit -m'edit' -a ; git push
+
 
 clean:
 	rm -fr ./figures

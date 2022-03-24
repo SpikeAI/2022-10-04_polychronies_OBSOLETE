@@ -40,7 +40,10 @@ Note also that synchronicity may explain some unintuitive results. Indeed it has
 
 #### TODO .. to traveling waves ...
 
+
 [@Bringuier99]
+
+Statistical dependencies in the responses of sensory neurons govern both the amount of stimulus information conveyed and the means by which downstream neurons can extract it.  This is put in evidenceby analysing the functional significance of correlated firing in a complete population of macaque parasol retinal ganglion cells using a model of multi-neuron spike responses [@doi:10.1038/nature07140]. This show precise spatio-temporal differences in this recurrently connected assembly. The different aspects of information in the data are evaluated by a decoding strategy highlighting the role of correlations. A similar dataset used in [@doi:10.1016/j.neuron.2005.03.026, @doi:10.1038/nature04701] is available from M. Berry's lab [@url:https://dataspace.princeton.edu/handle/88435/dsp015425kd84r].
 
 
 The stimulus-evoked population response in visual cortex of awake monkey is a propagating wave
