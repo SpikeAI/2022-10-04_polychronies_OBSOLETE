@@ -23,6 +23,8 @@ Alireza Nadafian, Mohammad Ganjtabesh
 Integrating synaptic delay plasticity into supervised learning and proposes a novel learning method that adjusts both the synaptic delays and weights of the learning neurons to make them fire precisely timed spikes, that is referred to as synaptic delay-weight plasticity [@doi:10.1016/j.neucom.2020.03.079]. Uses synthetic data to extend the existing Remote Supervised Method (ReSuMe) method.
 
 
+In a computational model, authors show that the frequently activated polychronous neuronal groups can be learned by readout neurons with joint weight-delay spike-timing-dependent plasticity [@doi:10.1162/NECO_a_00879]. This uses a joint Weight-Delay Spike-Timing-Dependent Plasticity and show aan efficient learning of polychronous groups.
+
 ### Learning sequences
 
 In [@doi:10.1073/pnas.1815910116], authors present a model to "show a way by which the nervous system maintains precise, stereotyped behavior in the face of environmental and neural changes". It is shown in bridsong generation that "A precise, temporally sparse sequence from the premotor nucleus HVC is crucial to the performance of song in songbirds" [@pmid:12490259; @pmid:8308169; @pmid:8791594] and this model shows how one could vary HVC activity using something similar to dropout in ML. Using such controlled variability, "behaviors are made more robust to environmental change by continually seeking subtly new ways of performing the same task". Not sure however how important it is that the HVC pattern should be sparse (and similar to PGs).
