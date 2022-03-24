@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/bf0b3e88d7a1b871c63b4654c897efd6303e327e/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/bf0b3e88d7a1b871c63b4654c897efd6303e327e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/bf0b3e88d7a1b871c63b4654c897efd6303e327e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/e7062c11dfa82b0c0403703d7917c3477439859a/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/e7062c11dfa82b0c0403703d7917c3477439859a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/e7062c11dfa82b0c0403703d7917c3477439859a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,9 +111,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/bf0b3e88d7a1b871c63b4654c897efd6303e327e/))
+([permalink](https://SpikeAI.github.io/polychronies/v/e7062c11dfa82b0c0403703d7917c3477439859a/))
 was automatically generated
-from [SpikeAI/polychronies@bf0b3e8](https://github.com/SpikeAI/polychronies/tree/bf0b3e88d7a1b871c63b4654c897efd6303e327e)
+from [SpikeAI/polychronies@e7062c1](https://github.com/SpikeAI/polychronies/tree/e7062c11dfa82b0c0403703d7917c3477439859a)
 on March 24, 2022.
 </em></small>
 
@@ -218,7 +218,10 @@ Note also that synchronicity may explain some unintuitive results. Indeed it has
 
 #### TODO .. to traveling waves ...
 
+
 [@Bringuier99]
+
+Statistical dependencies in the responses of sensory neurons govern both the amount of stimulus information conveyed and the means by which downstream neurons can extract it.  This is put in evidenceby analysing the functional significance of correlated firing in a complete population of macaque parasol retinal ganglion cells using a model of multi-neuron spike responses [@doi:10.1038/nature07140]. This show precise spatio-temporal differences in this recurrently connected assembly. The different aspects of information in the data are evaluated by a decoding strategy highlighting the role of correlations. A similar dataset used in [@doi:10.1016/j.neuron.2005.03.026, @doi:10.1038/nature04701] is available from M. Berry's lab [@url:https://dataspace.princeton.edu/handle/88435/dsp015425kd84r].
 
 
 The stimulus-evoked population response in visual cortex of awake monkey is a propagating wave

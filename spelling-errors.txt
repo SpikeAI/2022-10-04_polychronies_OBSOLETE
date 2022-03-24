@@ -68,6 +68,7 @@ Dugué
 electrophysiological
 Elife
 Eurich
+evidenceby
 excitatory
 Fairhall
 feedforward
@@ -161,7 +162,7 @@ Perrinet
 PGs
 PLoS
 Politi
-polychronization
+Polychronization
 polychronous
 Poulet
 pre
@@ -203,7 +204,7 @@ STDP
 STRFs
 subserve
 supersequences
-synfire
+Synfire
 Systèmes
 thalamocortical
 Thanasoulis
