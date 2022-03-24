@@ -1,3 +1,4 @@
+aan
 Abarbanel
 Abeles
 Acad
@@ -192,7 +193,7 @@ SNNs
 soma
 spatio
 spatiotemporal
-Spectro
+spectro
 spectrograms
 SpikeShip
 SPOTDis

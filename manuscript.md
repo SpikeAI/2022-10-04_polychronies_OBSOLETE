@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/6f3b54a6908889290bd5043cce9247123d007d26/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/6f3b54a6908889290bd5043cce9247123d007d26/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/6f3b54a6908889290bd5043cce9247123d007d26/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/92706168ea564e614b62803557be26dee095eae5/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/92706168ea564e614b62803557be26dee095eae5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/92706168ea564e614b62803557be26dee095eae5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,9 +111,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/6f3b54a6908889290bd5043cce9247123d007d26/))
+([permalink](https://SpikeAI.github.io/polychronies/v/92706168ea564e614b62803557be26dee095eae5/))
 was automatically generated
-from [SpikeAI/polychronies@6f3b54a](https://github.com/SpikeAI/polychronies/tree/6f3b54a6908889290bd5043cce9247123d007d26)
+from [SpikeAI/polychronies@9270616](https://github.com/SpikeAI/polychronies/tree/92706168ea564e614b62803557be26dee095eae5)
 on March 24, 2022.
 </em></small>
 
@@ -468,6 +468,8 @@ Alireza Nadafian, Mohammad Ganjtabesh
 
 Integrating synaptic delay plasticity into supervised learning and proposes a novel learning method that adjusts both the synaptic delays and weights of the learning neurons to make them fire precisely timed spikes, that is referred to as synaptic delay-weight plasticity [@doi:10.1016/j.neucom.2020.03.079]. Uses synthetic data to extend the existing Remote Supervised Method (ReSuMe) method.
 
+
+In a computational model, authors show that the frequently activated polychronous neuronal groups can be learned by readout neurons with joint weight-delay spike-timing-dependent plasticity [@doi:10.1162/NECO_a_00879]. This uses a joint Weight-Delay Spike-Timing-Dependent Plasticity and show aan efficient learning of polychronous groups.
 
 ### Learning sequences
 
