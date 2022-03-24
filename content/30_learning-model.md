@@ -6,8 +6,9 @@
 spike time coding in a neuron: We will describe the Spike-Time Dependent Plasticity (STDP) [@doi:10/ftvvd8] rule which implement an unsupervised learning aiming at optimizing the detection of polychronous patterns, that is volleys of spikes which are synchronized, up to some stable pattern of pre-synaptic delays. This STDP rule will be based by the inversion of the generative model for spike formation and will therefore be derived by a Bayesian approach. This will decouple the active synapses (similarly to a logistic regression) from the values of possible synaptic delays.
 
 
-[@Perrinet2002] : coherence detection
-[@Perrinet2001] : STDP
+* [@Perrinet2002] : coherence detection
+* [@Perrinet2001] : STDP
+* Masquelier
 
 bonjour amelie - coucou ceci est un test ! j'essaye de citer : [@arxiv:2102.04906]
 
@@ -17,6 +18,10 @@ Bio-plausible Unsupervised Delay Learning for Extracting Temporal Features in Sp
 Alireza Nadafian, Mohammad Ganjtabesh
 
     The plasticity of the conduction delay between neurons plays a fundamental role in learning. However, the exact underlying mechanisms in the brain for this modulation is still an open problem. Understanding the precise adjustment of synaptic delays could help us in developing effective brain-inspired computational models in providing aligned insights with the experimental evidence. In this paper, we propose an unsupervised biologically plausible learning rule for adjusting the synaptic delays in spiking neural networks. Then, we provided some mathematical proofs to show that our learning rule gives a neuron the ability to learn repeating spatio-temporal patterns. Furthermore, the experimental results of applying an STDP-based spiking neural network equipped with our proposed delay learning rule on Random Dot Kinematogram indicate the efficacy of the proposed delay learning rule in extracting temporal features.
+
+
+Integrating synaptic delay plasticity into supervised learning and proposes a novel learning method that adjusts both the synaptic delays and weights of the learning neurons to make them fire precisely timed spikes, that is referred to as synaptic delay-weight plasticity [@doi:10.1016/j.neucom.2020.03.079]. Uses synthetic data to extend the existing Remote Supervised Method (ReSuMe) method.
+
 
 ### Learning sequences
 
@@ -30,6 +35,7 @@ In [@doi:10.1073/pnas.1815910116], authors present a model to "show a way by whi
   * comes with code https://github.com/EPFL-LCN/pub-bellec-wang-2021-sample-and-measure
   * V1-dataset : The dataset we used was collected by Smith and Kohn [49] and is publicly available at:
 http://crcns.org/data-sets/vc/pvc-11 - it is in a sense supervised with the input being the movie and the output the spikes recorded.
+
 
 ### TODO: more bib to read
 Learning compositional sequences with multiple time scales through a hierarchical network of spiking neurons.
