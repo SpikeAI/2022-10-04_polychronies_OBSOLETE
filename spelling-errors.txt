@@ -90,7 +90,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-Hippocampal
+hippocampal
 Hirase
 Huning
 HVC
@@ -127,6 +127,7 @@ luminance
 Maes
 Malvache
 Marseille
+Masquelier
 maxpooling
 Mayr
 MNIST
@@ -171,7 +172,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-rastermap
+Rastermap
 RefRN
 Reproducibility
 retinotopic
@@ -202,7 +203,7 @@ STDP
 STRFs
 subserve
 supersequences
-Synfire
+synfire
 Systèmes
 thalamocortical
 Thanasoulis

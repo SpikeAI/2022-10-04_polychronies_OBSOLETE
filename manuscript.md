@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-03-21'
+date-meta: '2022-03-24'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -59,8 +59,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-03-21" />
-  <meta name="citation_publication_date" content="2022-03-21" />
+  <meta name="dc.date" content="2022-03-24" />
+  <meta name="citation_publication_date" content="2022-03-24" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/8a4b3cf784b91b29aa3b3ea6deb26ec6047fd4e9/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8a4b3cf784b91b29aa3b3ea6deb26ec6047fd4e9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/8a4b3cf784b91b29aa3b3ea6deb26ec6047fd4e9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/bf0b3e88d7a1b871c63b4654c897efd6303e327e/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/bf0b3e88d7a1b871c63b4654c897efd6303e327e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/bf0b3e88d7a1b871c63b4654c897efd6303e327e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,10 +111,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/8a4b3cf784b91b29aa3b3ea6deb26ec6047fd4e9/))
+([permalink](https://SpikeAI.github.io/polychronies/v/bf0b3e88d7a1b871c63b4654c897efd6303e327e/))
 was automatically generated
-from [SpikeAI/polychronies@8a4b3cf](https://github.com/SpikeAI/polychronies/tree/8a4b3cf784b91b29aa3b3ea6deb26ec6047fd4e9)
-on March 21, 2022.
+from [SpikeAI/polychronies@bf0b3e8](https://github.com/SpikeAI/polychronies/tree/bf0b3e88d7a1b871c63b4654c897efd6303e327e)
+on March 24, 2022.
 </em></small>
 
 ## Authors
@@ -447,8 +447,9 @@ V. Thanasoulis, B. Vogginger, J. Partzsch and C. Mayr, "Delay-Based Neural Compu
 spike time coding in a neuron: We will describe the Spike-Time Dependent Plasticity (STDP) [@doi:10/ftvvd8] rule which implement an unsupervised learning aiming at optimizing the detection of polychronous patterns, that is volleys of spikes which are synchronized, up to some stable pattern of pre-synaptic delays. This STDP rule will be based by the inversion of the generative model for spike formation and will therefore be derived by a Bayesian approach. This will decouple the active synapses (similarly to a logistic regression) from the values of possible synaptic delays.
 
 
-[@Perrinet2002] : coherence detection
-[@Perrinet2001] : STDP
+* [@Perrinet2002] : coherence detection
+* [@Perrinet2001] : STDP
+* Masquelier
 
 bonjour amelie - coucou ceci est un test ! j'essaye de citer : [@arxiv:2102.04906]
 
@@ -458,6 +459,10 @@ Bio-plausible Unsupervised Delay Learning for Extracting Temporal Features in Sp
 Alireza Nadafian, Mohammad Ganjtabesh
 
     The plasticity of the conduction delay between neurons plays a fundamental role in learning. However, the exact underlying mechanisms in the brain for this modulation is still an open problem. Understanding the precise adjustment of synaptic delays could help us in developing effective brain-inspired computational models in providing aligned insights with the experimental evidence. In this paper, we propose an unsupervised biologically plausible learning rule for adjusting the synaptic delays in spiking neural networks. Then, we provided some mathematical proofs to show that our learning rule gives a neuron the ability to learn repeating spatio-temporal patterns. Furthermore, the experimental results of applying an STDP-based spiking neural network equipped with our proposed delay learning rule on Random Dot Kinematogram indicate the efficacy of the proposed delay learning rule in extracting temporal features.
+
+
+Integrating synaptic delay plasticity into supervised learning and proposes a novel learning method that adjusts both the synaptic delays and weights of the learning neurons to make them fire precisely timed spikes, that is referred to as synaptic delay-weight plasticity [@doi:10.1016/j.neucom.2020.03.079]. Uses synthetic data to extend the existing Remote Supervised Method (ReSuMe) method.
+
 
 ### Learning sequences
 
@@ -471,6 +476,7 @@ In [@doi:10.1073/pnas.1815910116], authors present a model to "show a way by whi
   * comes with code https://github.com/EPFL-LCN/pub-bellec-wang-2021-sample-and-measure
   * V1-dataset : The dataset we used was collected by Smith and Kohn [49] and is publicly available at:
 http://crcns.org/data-sets/vc/pvc-11 - it is in a sense supervised with the input being the movie and the output the spikes recorded.
+
 
 ### TODO: more bib to read
 Learning compositional sequences with multiple time scales through a hierarchical network of spiking neurons.
