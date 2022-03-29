@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/25823292c2421ad2143e16e1487372e62a9d7eb8/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/25823292c2421ad2143e16e1487372e62a9d7eb8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/25823292c2421ad2143e16e1487372e62a9d7eb8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/972d401590b1c9d515f10d5fedca1a5b45d727d9/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/972d401590b1c9d515f10d5fedca1a5b45d727d9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/972d401590b1c9d515f10d5fedca1a5b45d727d9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,9 +111,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/25823292c2421ad2143e16e1487372e62a9d7eb8/))
+([permalink](https://SpikeAI.github.io/polychronies/v/972d401590b1c9d515f10d5fedca1a5b45d727d9/))
 was automatically generated
-from [SpikeAI/polychronies@2582329](https://github.com/SpikeAI/polychronies/tree/25823292c2421ad2143e16e1487372e62a9d7eb8)
+from [SpikeAI/polychronies@972d401](https://github.com/SpikeAI/polychronies/tree/972d401590b1c9d515f10d5fedca1a5b45d727d9)
 on March 29, 2022.
 </em></small>
 
@@ -379,14 +379,17 @@ We address these issues by applying Fisher information theory to dynamical syste
 In generic linear non linear lnl models, the output is assumed to be poisson. As such a simple decoding strategy is to asscume it is to b inferned for a given tuning curves (Jayazeri) or simply by a simple regression [@doi:10.1523/jneurosci.1335-12.2012]. This latter model assumes a Bernoulli model for the generation of spikes such that the decoding amounts to a single-layer logistic regression.
 
 
-S. Grun, M. Diesmann, and A. Aertsen. Unitary event analysis. In Analysis of parallel spike trains, pages 191–220. Springer, 2010. + coincidence detection
+Unitary event analysis is performed by a statistical model of coincidence detection [@doi:10.1007/978-1-4419-5675-0_10]. This was extensively used in detecting above chance significant synchronous patterns, in particular in recordings of pairs of neurons (see [@doi:10.1126/science.278.5345.1950] for instance).
 
-Statistical evaluation of synchronous spike patterns extracted by frequent item set mining -  a method to detect significant patterns of synchronous spiking in a subset of massively parallel spike trains in the presence of background activity  [@doi:10.3389/fncom.2013.00132]. Methods for identification of spike patterns in massively parallel spike trains : methods which enable the analysis of massively parallel spike trains (the spiking activity of tens to hundred(s) of neurons recorded in parallel) for fine temporal correlations in the ms precision range [@doi:10.1007/s00422-018-0755-0]. 
+Statistical evaluation of synchronous spike patterns extracted by frequent item set mining -  a method to detect significant patterns of synchronous spiking in a subset of massively parallel spike trains in the presence of background activity  [@doi:10.3389/fncom.2013.00132]. By the same group the SPADE, CAD or ASSET algorithms are methods for identification of spike patterns in massively parallel spike trains (the spiking activity of tens to hundred(s) of neurons recorded in parallel) by identifying fine temporal correlations in the ms precision range [@doi:10.1007/s00422-018-0755-0].
+
+This was recently extended in "3d-SPADE: Significance evaluation of spatio-temporal patterns of various temporal extents" [@doi:10.1016/j.biosystems.2019.104022] in order to find reoccurring spike patterns in parallel spike train data, and to determine their statistical significance. The extension improves the performance in the presence of patterns with different durations, as here demonstrated by application to various synthetic data.
+
+
+A review of the methods for neuronal response latency estimation including bayesian binning [@doi:10.1016/j.biosystems.2015.04.008].
 
 [@doi:]
-[@doi:]
-[@doi:]
-[@doi:]
+
 
 TODO: summarize "Understanding Auditory Spectro-Temporal Receptive Fields and Their Changes with Input Statistics by Efficient Coding Principles" - Spectro-temporal receptive fields (STRFs) have been widely used as linear approximations to the signal transform from sound spectrograms to neural responses along the auditory pathway. Their dependence on statistical attributes of the stimuli, such as sound intensity, is usually explained by nonlinear mechanisms and models. Here, we apply an efficient coding principle which has been successfully used to understand receptive fields in early stages of visual processing, in order to provide a computational understanding of the STRFs. According to this principle, STRFs result from an optimal tradeoff between maximizing the sensory information the brain receives, and minimizing the cost of the neural activities required to represent and transmit this information. Both terms depend on the statistical properties of the sensory inputs and the noise that corrupts them. The STRFs should therefore depend on the input power spectrum and the signal-to-noise ratio, which is assumed to increase with input intensity. We analytically derive the optimal STRFs when signal and noise are approximated as Gaussians. Under the constraint that they should be spectro-temporally local, the STRFs are predicted to adapt from being band-pass to low-pass filters as the input intensity reduces, or the input correlation becomes longer range in sound frequency or time. These predictions qualitatively match physiological observations. Our prediction as to how the STRFs should be determined by the input power spectrum could readily be tested, since this spectrum depends on the stimulus ensemble. The potentials and limitations of the efficient coding principle are discussed.
 [@doi:10.1371/journal.pcbi.1002123]

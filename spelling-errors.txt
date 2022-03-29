@@ -60,13 +60,13 @@ deconvolution
 deconvolved
 demonstated
 dendritic
-Diesmann
 Differentially
 dimensionality
 d’Informatique
 discrepency
 Doiron
 Dugué
+durations
 electrophysiological
 Elife
 EPSPs
@@ -90,12 +90,11 @@ Goodhill
 Grimaldi
 Grismaldi
 Grossberger
-Grun
 HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-hippocampal
+Hippocampal
 Hirase
 Huning
 HVC
@@ -173,7 +172,7 @@ PNG
 PNGs
 Politi
 Polychronization
-polychronous
+Polychronous
 Poulet
 pre
 premotor
@@ -183,7 +182,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-Rastermap
+rastermap
 RefRN
 Reproducibility
 resistive
@@ -208,7 +207,6 @@ SpikeShip
 SPOTDis
 SPOTDisClust
 Spreizer
-Springer
 SRM
 stationarity
 Statist
@@ -217,7 +215,7 @@ STRFs
 subserve
 superlinearly
 supersequences
-Synfire
+synfire
 Systèmes
 thalamocortical
 Thanasoulis
