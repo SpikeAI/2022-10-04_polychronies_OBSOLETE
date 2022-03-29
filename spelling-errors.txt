@@ -33,6 +33,7 @@ Brunel
 Buzsaki
 Buzsáki
 camillebesnainou
+capacitive
 CBMI
 ceci
 centric
@@ -68,12 +69,14 @@ Doiron
 Dugué
 electrophysiological
 Elife
+EPSPs
 Eurich
 evidenceby
 excitatory
 Fairhall
 feedforward
 figshare
+FMC
 FPGA
 Frady
 Gabor
@@ -122,6 +125,7 @@ Laboratoire
 latencies
 laurentperrinet
 LFP
+LIF
 litterature
 lnl
 Luczak
@@ -152,6 +156,9 @@ neurophysiological
 Neurosci
 Neurosciences
 neuroscientific
+nois
+nonlinearities
+nonnormal
 organazed
 PAMI
 Partzsch
@@ -165,7 +172,7 @@ PLoS
 PNG
 PNGs
 Politi
-polychronization
+Polychronization
 polychronous
 Poulet
 pre
@@ -176,9 +183,10 @@ PSCs
 pulvinar
 Purpura
 pyNN
-Rastermap
+rastermap
 RefRN
 Reproducibility
+resistive
 retinotopic
 Rossum
 Rullen
@@ -190,6 +198,7 @@ Signaux
 SNE
 SNN
 SNNs
+SNR
 soma
 spatio
 spatiotemporal
@@ -206,8 +215,9 @@ Statist
 STDP
 STRFs
 subserve
+superlinearly
 supersequences
-synfire
+Synfire
 Systèmes
 thalamocortical
 Thanasoulis
