@@ -95,7 +95,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-Hippocampal
+hippocampal
 Hirase
 Huning
 HVC
@@ -183,7 +183,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-rastermap
+Rastermap
 RefRN
 Reproducibility
 resistive
