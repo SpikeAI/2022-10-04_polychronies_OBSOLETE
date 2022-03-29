@@ -41,6 +41,8 @@ Attempts have been made to detect such synfire chains in neurobiological data [@
 
 Note also that synchronicity may explain some unintuitive results. Indeed it has been shown that  thalamocortical synapses are relatively weak compared to the amount of intra-cortical activity. However, this pathway is sufficient to drive the cortex as this input is more often synchronously active [@doi:10.1126/science.1124593].
 
+Some experimental results show the emergence of synchrony, for instance in motor cortical function [@doi:10.1126/science.278.5345.1950]. Interestingly, authors showed that "Accurate spike synchronization occurred in relation to external events (stimuli, movements) and was commonly accompanied by discharge rate modulations but without precise time locking of the spikes to these external events. Spike synchronization also occurred in relation to purely internal events (stimulus expectancy), where firing rate modulations were distinctly absent. These findings indicate that internally generated synchronization of individual spike discharges may subserve the cortical organization of cognitive motor processes." Moreover, such emergence could change over the learning period involved in learning a task [@doi:10.1523/JNEUROSCI.1554-09.2009] and showed some tuning to  to movement direction and reaction time [@doi:10.1007/s00422-002-0385-3]. It is important to note that synchronous events tended to lock to LFP beta waves [@doi:10.1038/s41598-018-22990-7], and was extended to larger assemblies [@doi:10.1523/JNEUROSCI.4375-15.2016] using statistical methods (see [@sec:detection]).
+
 
 #### TODO .. to traveling waves ...
 
