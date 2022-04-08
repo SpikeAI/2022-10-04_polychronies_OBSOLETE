@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-03-29'
+date-meta: '2022-04-08'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -59,8 +59,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-03-29" />
-  <meta name="citation_publication_date" content="2022-03-29" />
+  <meta name="dc.date" content="2022-04-08" />
+  <meta name="citation_publication_date" content="2022-04-08" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/5d9b7860c036708e3a405f0f776912e04aebc99e/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/5d9b7860c036708e3a405f0f776912e04aebc99e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/5d9b7860c036708e3a405f0f776912e04aebc99e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/305206746571b5e3e1c648c42e72cf9d1d9610f1/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/305206746571b5e3e1c648c42e72cf9d1d9610f1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/305206746571b5e3e1c648c42e72cf9d1d9610f1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,10 +111,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/5d9b7860c036708e3a405f0f776912e04aebc99e/))
+([permalink](https://SpikeAI.github.io/polychronies/v/305206746571b5e3e1c648c42e72cf9d1d9610f1/))
 was automatically generated
-from [SpikeAI/polychronies@5d9b786](https://github.com/SpikeAI/polychronies/tree/5d9b7860c036708e3a405f0f776912e04aebc99e)
-on March 29, 2022.
+from [SpikeAI/polychronies@3052067](https://github.com/SpikeAI/polychronies/tree/305206746571b5e3e1c648c42e72cf9d1d9610f1)
+on April 8, 2022.
 </em></small>
 
 ## Authors
@@ -277,7 +277,7 @@ sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6
 
 ### Are there precise temporal patterns in the brain?
 
-Currently, there is a consensus for rate-based coding models in computational and biological neuroscience. Nevertheless, there is a substantial literature in neurobiology indicating that brain dynamics often organize into stereotyped sequences (like synfire chains (Ikegaya et al., 2004), packets (Luczak et al., 2007) or hippocampal sequences [@Pastalkova2008; @Villette2015] and on the role of such precise spike timing in downstream information transfer and coding [@Branco2010; @Buzsáki2018; @Luczak2015]. In particular, one theoretical viewpoint considers synfire braids (Bienenstock, 1995), where a precise sequential motif of spikes will synchronize as it reaches the soma of a neuron for which synaptic delays are adequately tuned. In particular, computational modeling shows that at the scale of neurons, an efficient neural code can emerge where spike times are organized in prototypical, precise temporal motifs (Izhikevich, 2006) which he defined as polychronous groups.
+Currently, there is a consensus for rate-based coding models in computational and biological neuroscience. Nevertheless, there is a substantial literature in neurobiology indicating that brain dynamics often organize into stereotyped sequences (like synfire chains (Ikegaya et al., 2004), packets (Luczak et al., 2007) or hippocampal sequences [@Pastalkova2008; @Villette2015] and on the role of such precise spike timing in downstream information transfer and coding [@Branco2010; @Buzsáki2018; @Luczak2015]. This is for instance relevant in sensory pathways in vision [@doi:10.1126/science.270.5239.1207], audition [@doi:10.1038/381610a0], olfaction @doi:10.1038/384162a0] or touch [@doi:10.1038/nn1177]. In particular, one theoretical viewpoint considers synfire braids (Bienenstock, 1995), where a precise sequential motif of spikes will synchronize as it reaches the soma of a neuron for which synaptic delays are adequately tuned. In particular, computational modeling shows that at the scale of neurons, an efficient neural code can emerge where spike times are organized in prototypical, precise temporal motifs (Izhikevich, 2006) which he defined as polychronous groups.
 
 Stereotyped sequences of neuronal activation have been particularly well described in the adult hippocampus and related to its function in mental travel in time and space [@Buzsáki2018]. These sequences can be internally generated [@Pastalkova2008; @Villette2015] and are formed by the chained activation of orthogonal assemblies, themselves organized as sequence packets (Malvache et al., 2016). Thus, hippocampal sequences are formed by the ordered activation of smaller sequence motifs. They are stereotyped and robust, since neurons can be activated in the same order across days (see Figure [@fig:haimerl] from [@doi:10.1073/pnas.1718518116] below). As a consequence, hippocampal sequences may rely on an internally hardwired structure and form the functional building blocks for encoding, storing and retrieving experience.
 

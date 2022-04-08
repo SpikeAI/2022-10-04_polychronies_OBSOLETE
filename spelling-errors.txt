@@ -158,6 +158,7 @@ neuroscientific
 nois
 nonlinearities
 nonnormal
+olfaction
 organazed
 PAMI
 Partzsch
@@ -182,7 +183,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-rastermap
+Rastermap
 RefRN
 Reproducibility
 resistive

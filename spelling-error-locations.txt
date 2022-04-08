@@ -115,6 +115,7 @@ content/14_introduction-cortical-songs.md:3:Ikegaya
 content/14_introduction-cortical-songs.md:3:Izhikevich
 content/14_introduction-cortical-songs.md:3:Luczak
 content/14_introduction-cortical-songs.md:3:neurobiology
+content/14_introduction-cortical-songs.md:3:olfaction
 content/14_introduction-cortical-songs.md:3:polychronous
 content/14_introduction-cortical-songs.md:3:soma
 content/14_introduction-cortical-songs.md:3:synfire
