@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/853b5c183962063857fdc47a443d972603947ed5/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/853b5c183962063857fdc47a443d972603947ed5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/853b5c183962063857fdc47a443d972603947ed5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/6a4c79b5239e0036a5f3c20180f5cfcd237a565d/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/6a4c79b5239e0036a5f3c20180f5cfcd237a565d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/6a4c79b5239e0036a5f3c20180f5cfcd237a565d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,9 +111,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/853b5c183962063857fdc47a443d972603947ed5/))
+([permalink](https://SpikeAI.github.io/polychronies/v/6a4c79b5239e0036a5f3c20180f5cfcd237a565d/))
 was automatically generated
-from [SpikeAI/polychronies@853b5c1](https://github.com/SpikeAI/polychronies/tree/853b5c183962063857fdc47a443d972603947ed5)
+from [SpikeAI/polychronies@6a4c79b](https://github.com/SpikeAI/polychronies/tree/6a4c79b5239e0036a5f3c20180f5cfcd237a565d)
 on April 25, 2022.
 </em></small>
 
@@ -198,8 +198,7 @@ Note also that depending on how an in vitro cell is driven, this may influence t
 
 At the level of dynamic processing of visual information, it has been shown that an encoding of the values of luminance imminence in the image instead of the retina [@doi:10.1126/science.1149639]. Notably one can appreciate in figure 1 that the response of ganglion cells to visual gratings that are flashed onto the retina. The authors showed that the neuronal response could be encoded in the latency of the response and not only in the frequency of discharge as is often assumed. In figure 4 of the same article, these results are extended to natural images and show a qualitatively similar behavior. The conclusion of the authors is that the discharge latency of the neurons allows to encode spatial characteristics of the image. First-spike latency codes are a feasible mechanism for information transfer even when biologically plausible estimates of stimulus onset are taken into account [@doi:10.1073/pnas.0610368104]. Interestingly, such fine latency effect can be at the origin of somme visual illusions, for instance the illusion of false colors in the [Benham Top](https://michaelbach.de/ot/col-Benham/index.html) based based on center-surround interactions in the parvocellular pathway [@doi:10.1016/j.neunet.2004.05.005].
 
-Similar results have been demonstrated through neurophysiological recordings in the primary visual cortex and show that different levels of visual activity will induce different levels of neuronal discharge latency in the primary visual area [@doi:10/dqt5cm]. Many models have used these properties in temporal coding to build fast image categorization networks. These models take the form of artificial spiking neural networks (SNNs) and have been able to demonstrate their practical applications for image categorization [@Perrinet2004]. This work has been extended to include unsupervised learning capabilities and we have recently developed a SNN architecture that allows to categorize images of different classes in only a few spikes [@Grimaldi2021; @Grimaldi2022]. This type of modeling is extremely important with respect to the development of a new generation of cameras called Silicon Cameras which, instead of using a basic frame-based representation, uses a representation similar to the one we have just described and which consists in representing the image by events [@arxiv:2201.12673]. This type of modeling often uses the classical architecture of image categorization developed in deep learning while adapting it to the specificity of the event-based representation [@arXiv:1912.11443]. Note also that timing is not entirely sensorial or internal but in [@doi:10.1073/pnas.1921226117], they found that "timing accuracy was improved when the environment afforded cues that rats can incorporate into motor routines. Timing, at least in animals, may thus be fundamentally embodied and situated."
-
+Similar results have been demonstrated through neurophysiological recordings in the primary visual cortex and show that different levels of visual activity will induce different levels of neuronal discharge latency in the primary visual area [@doi:10/dqt5cm]. Many models have used these properties in temporal coding to build fast image categorization networks. These models take the form of artificial spiking neural networks (SNNs) and have been able to demonstrate their practical applications for image categorization [@Perrinet2004]. This work has been extended to include unsupervised learning capabilities and we have recently developed a SNN architecture that allows to categorize images of different classes in only a few spikes [@Grimaldi2021; @Grimaldi2022]. This type of modeling is extremely important with respect to the development of a new generation of cameras called Silicon Cameras which, instead of using a basic frame-based representation, uses a representation similar to the one we have just described and which consists in representing the image by events [@arxiv:2201.12673]. This type of modeling often uses the classical architecture of image categorization developed in deep learning while adapting it to the specificity of the event-based representation [@arXiv:1912.11443]. Note also that timing is not entirely sensorial or internal but in [@doi:10.1073/pnas.1921226117], they found that "timing accuracy was improved when the environment afforded cues that rats can incorporate into motor routines. Timing, at least in animals, may thus be fundamentally embodied and situated." Altogether, these results show that "that like other senses, vision relies heavily on temporal strategies and temporal neural codes to extract and represent spatial information" [@doi:10.1016/j.tics.2018.07.009].
 
 ### From synfire chains...
 

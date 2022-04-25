@@ -172,8 +172,8 @@ PLoS
 PNG
 PNGs
 Politi
-Polychronization
-Polychronous
+polychronization
+polychronous
 Poulet
 pre
 premotor
@@ -183,7 +183,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-rastermap
+Rastermap
 RefRN
 Reproducibility
 resistive
@@ -202,7 +202,7 @@ SNR
 soma
 spatio
 spatiotemporal
-spectro
+Spectro
 spectrograms
 SpikeShip
 SPOTDis
