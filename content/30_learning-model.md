@@ -22,6 +22,7 @@ Alireza Nadafian, Mohammad Ganjtabesh
 
 Integrating synaptic delay plasticity into supervised learning and proposes a novel learning method that adjusts both the synaptic delays and weights of the learning neurons to make them fire precisely timed spikes, that is referred to as synaptic delay-weight plasticity [@doi:10.1016/j.neucom.2020.03.079]. Uses synthetic data to extend the existing Remote Supervised Method (ReSuMe) method.
 
+In a recent paper [@doi:10.1109/TNNLS.2022.3164930], authors propose a gradient descent-based learning algorithm for synaptic delays to enhance the sequential learning performance of single spiking neuron. In this algorithm, information is encoded in the relative timing of individual neuronal spikes, and learning is performed based on the exact derivatives of the postsynaptic spike times with respect to presynaptic spike times.
 
 In a computational model, authors show that the frequently activated polychronous neuronal groups can be learned by readout neurons with joint weight-delay spike-timing-dependent plasticity [@doi:10.1162/NECO_a_00879]. This uses a joint Weight-Delay Spike-Timing-Dependent Plasticity and show aan efficient learning of polychronous groups.
 
