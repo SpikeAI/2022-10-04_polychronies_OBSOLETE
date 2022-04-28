@@ -94,7 +94,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-hippocampal
+Hippocampal
 Hirase
 Huning
 HVC
@@ -107,6 +107,7 @@ Institut
 interareal
 intra
 intracellular
+invariants
 Izhichevitch
 Izhikevich
 Izhikevitch
@@ -172,7 +173,7 @@ PLoS
 PNG
 PNGs
 Politi
-polychronization
+Polychronization
 polychronous
 Poulet
 pre
@@ -183,7 +184,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-Rastermap
+rastermap
 RefRN
 Reproducibility
 resistive
@@ -216,7 +217,7 @@ STRFs
 subserve
 superlinearly
 supersequences
-synfire
+Synfire
 Systèmes
 thalamocortical
 Thanasoulis

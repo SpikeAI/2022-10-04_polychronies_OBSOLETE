@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-04-25'
+date-meta: '2022-04-28'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -59,8 +59,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-04-25" />
-  <meta name="citation_publication_date" content="2022-04-25" />
+  <meta name="dc.date" content="2022-04-28" />
+  <meta name="citation_publication_date" content="2022-04-28" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/6a4c79b5239e0036a5f3c20180f5cfcd237a565d/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/6a4c79b5239e0036a5f3c20180f5cfcd237a565d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/6a4c79b5239e0036a5f3c20180f5cfcd237a565d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/ee7628e502b2c554aed53e69b1235080350017c0/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/ee7628e502b2c554aed53e69b1235080350017c0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/ee7628e502b2c554aed53e69b1235080350017c0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,10 +111,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/6a4c79b5239e0036a5f3c20180f5cfcd237a565d/))
+([permalink](https://SpikeAI.github.io/polychronies/v/ee7628e502b2c554aed53e69b1235080350017c0/))
 was automatically generated
-from [SpikeAI/polychronies@6a4c79b](https://github.com/SpikeAI/polychronies/tree/6a4c79b5239e0036a5f3c20180f5cfcd237a565d)
-on April 25, 2022.
+from [SpikeAI/polychronies@ee7628e](https://github.com/SpikeAI/polychronies/tree/ee7628e502b2c554aed53e69b1235080350017c0)
+on April 28, 2022.
 </em></small>
 
 ## Authors
@@ -325,6 +325,7 @@ Finally we will discuss future avenues for effective PG detection and learning i
 
 ## Models of polychronization detection in models
 
+In [@doi:10.1371/journal.pcbi.1002561], the author proposes a simple spike-based computational framework, based on the idea that stimulus-induced synchrony can be used to extract sensory invariants (for example, the location of a sound source), which is a difficult task for classical neural networks. It relies on the simple remark that a series of repeated coincidences is in itself an invariant. Many aspects of perception rely on extracting invariant features, such as the spatial location of a time-varying sound, the identity of an odor with fluctuating intensity, the pitch of a musical note.
 
 ### polychronization Izhikevitch
 
