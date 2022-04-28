@@ -1,6 +1,7 @@
 
 ## Models of polychronization detection in models
 
+In [@doi:10.1371/journal.pcbi.1002561], the author proposes a simple spike-based computational framework, based on the idea that stimulus-induced synchrony can be used to extract sensory invariants (for example, the location of a sound source), which is a difficult task for classical neural networks. It relies on the simple remark that a series of repeated coincidences is in itself an invariant. Many aspects of perception rely on extracting invariant features, such as the spatial location of a time-varying sound, the identity of an odor with fluctuating intensity, the pitch of a musical note.
 
 ### polychronization Izhikevitch
 
