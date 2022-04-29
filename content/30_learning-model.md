@@ -39,6 +39,7 @@ In [@doi:10.1073/pnas.1815910116], authors present a model to "show a way by whi
   * V1-dataset : The dataset we used was collected by Smith and Kohn [49] and is publicly available at:
 http://crcns.org/data-sets/vc/pvc-11 - it is in a sense supervised with the input being the movie and the output the spikes recorded.
 
+A recent work [@doi:10.48550/arXiv.1903.07067] proposes a two-stage unsupervised-supervised system for the categorization of spatiotemporal actions from an event-based stream. The first stage learns spatiotemporal convolutional filters targeted to minimize event-removal related changes to a local spatiotemporal spike-event pattern. The second stage takes the output of the spatiotemporal filters as an input example containing multiple feature channels, and proceeds to train a classifier for recognition of spatiotemporal activity. For testing the system, two datasets are considered: DVS Gesture and a new action recognition dataset recorded for this work. Results demonstrate the ability of the system to outperform the state-of-the-art in event-based gesture recognition, along with demonstrating superior performance to other alternative ways of obtaining the first stage filters. Showing the potential of such representation
 
 ### TODO: more bib to read
 Learning compositional sequences with multiple time scales through a hierarchical network of spiking neurons.
