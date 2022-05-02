@@ -41,6 +41,7 @@ doi:10.1007/s00422-002-0385-3	doi:10.1007/s00422-002-0385-3	doi:10.1007/s00422-0
 doi:10.1038/s41598-018-22990-7	doi:10.1038/s41598-018-22990-7	doi:10.1038/s41598-018-22990-7	Ejy1sAyh
 doi:10.1523/JNEUROSCI.4375-15.2016	doi:10.1523/JNEUROSCI.4375-15.2016	doi:10.1523/jneurosci.4375-15.2016	Glu4NlLC
 sec:detection	sec:detection	sec:detection	8bmmx3xh
+doi:10.1371/journal.pcbi.1002561	doi:10.1371/journal.pcbi.1002561	doi:10.1371/journal.pcbi.1002561	3GlNNxH5
 Bringuier99	Bringuier99	Bringuier99	zNDCo9Hy
 doi:10.1038/nature07140	doi:10.1038/nature07140	doi:10.1038/nature07140	Piao2Wzf
 doi:10.1038/nature04701	doi:10.1038/nature04701	doi:10.1038/nature04701	2AsQOOsE
@@ -50,10 +51,6 @@ Muller14	Muller14	Muller14	hGYLURVS
 Muller18	Muller18	Muller18	vsKvZJ82
 doi:10.1038/s41467-021-26175-1	doi:10.1038/s41467-021-26175-1	doi:10.1038/s41467-021-26175-1	BNK6T5Uk
 Chemla19	Chemla19	Chemla19	OAorhMRa
-doi:10.1007/s00422-014-0620-8	doi:10.1007/s00422-014-0620-8	doi:10.1007/s00422-014-0620-8	f7gkBktf
-doi:10.1371/journal.pcbi.1005068	doi:10.1371/journal.pcbi.1005068	doi:10.1371/journal.pcbi.1005068	1BSbXPPDF
-Kaplan13	Kaplan13	Kaplan13	WGEaBYgy
-KhoeiMassonPerrinet17	KhoeiMassonPerrinet17	KhoeiMassonPerrinet17	7GEdzh5o
 Bienenstock1995	doi:10.1088/0954-898x_6_2_004	doi:10.1088/0954-898x_6_2_004	HjDb1gnq
 doi:10/ch29r4	doi:10/ch29r4	doi:10.1038/nn1643	1GazUBEdT
 doi:10/f6chbq	doi:10/f6chbq	doi:10.1162/neco_a_00620	KS4oxnst
@@ -73,7 +70,10 @@ doi:10.1016/j.neuron.2020.12.013	doi:10.1016/j.neuron.2020.12.013	doi:10.1016/j.
 Ikegaya2004	doi:10.1126/science.1093173	doi:10.1126/science.1093173	Mf6h1KNY
 Agus2010	doi:10.1016/j.neuron.2010.04.014	doi:10.1016/j.neuron.2010.04.014	Jzr1gwsr
 Maass97	Maass97	Maass97	DUpFdm8C
-doi:10.1371/journal.pcbi.1002561	doi:10.1371/journal.pcbi.1002561	doi:10.1371/journal.pcbi.1002561	3GlNNxH5
+doi:10.1007/s00422-014-0620-8	doi:10.1007/s00422-014-0620-8	doi:10.1007/s00422-014-0620-8	f7gkBktf
+doi:10.1371/journal.pcbi.1005068	doi:10.1371/journal.pcbi.1005068	doi:10.1371/journal.pcbi.1005068	1BSbXPPDF
+Kaplan13	Kaplan13	Kaplan13	WGEaBYgy
+KhoeiMassonPerrinet17	KhoeiMassonPerrinet17	KhoeiMassonPerrinet17	7GEdzh5o
 doi	doi	doi	FSDqKxd0
 10.1162/NECO_a_00620	10.1162/NECO_a_00620	doi:10.1162/neco_a_00620	KS4oxnst
 Moser2014	doi:10.1109/TSP.2014.2305642	doi:10.1109/tsp.2014.2305642	LjkTSK3h
@@ -108,6 +108,7 @@ pmid:8308169	pmid:8308169	pubmed:8308169	Dry1ANMD
 pmid:8791594	pmid:8791594	pubmed:8791594	SAIh1pga
 arxiv:2106.10064	arxiv:2106.10064	arxiv:2106.10064	aj6TgorR
 doi:10/cwcn9d	doi:10/cwcn9d	doi:10.1103/physreve.51.738	14e3BCBii
+doi:10.48550/arXiv.1903.07067	doi:10.48550/arXiv.1903.07067	doi:10.48550/arxiv.1903.07067	10EU8MfxC
 doi:10.7554/eLife.44324.001	doi:10.7554/eLife.44324.001	doi:10.7554/elife.44324.001	12zyUFdO4
 arxiv:2112.12147	arxiv:2112.12147	arxiv:2112.12147	WxQdcMB2
 doi:10.1109/JPROC.2011.2155130	doi:10.1109/JPROC.2011.2155130	doi:10.1109/jproc.2011.2155130	JrZPoxk9

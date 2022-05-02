@@ -1,11 +1,11 @@
 ---
-title: Review on temporal spiking motifs in neurobiological and neuromorphic data
+title: Review on event-based, spiking motifs in neurobiological and neuromorphic data
 keywords:
 - neurons
 - code
 - time
 lang: en-US
-date-meta: '2022-04-28'
+date-meta: '2022-05-02'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -55,12 +55,12 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="citation_title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
-  <meta property="og:title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
-  <meta property="twitter:title" content="Review on temporal spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-04-28" />
-  <meta name="citation_publication_date" content="2022-04-28" />
+  <meta name="dc.title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
+  <meta name="citation_title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
+  <meta property="og:title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
+  <meta property="twitter:title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
+  <meta name="dc.date" content="2022-05-02" />
+  <meta name="citation_publication_date" content="2022-05-02" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/ee7628e502b2c554aed53e69b1235080350017c0/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/ee7628e502b2c554aed53e69b1235080350017c0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/ee7628e502b2c554aed53e69b1235080350017c0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/f0287b5b95cf889827f0646e06ae492020084374/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/f0287b5b95cf889827f0646e06ae492020084374/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/f0287b5b95cf889827f0646e06ae492020084374/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,10 +111,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/ee7628e502b2c554aed53e69b1235080350017c0/))
+([permalink](https://SpikeAI.github.io/polychronies/v/f0287b5b95cf889827f0646e06ae492020084374/))
 was automatically generated
-from [SpikeAI/polychronies@ee7628e](https://github.com/SpikeAI/polychronies/tree/ee7628e502b2c554aed53e69b1235080350017c0)
-on April 28, 2022.
+from [SpikeAI/polychronies@f0287b5](https://github.com/SpikeAI/polychronies/tree/f0287b5b95cf889827f0646e06ae492020084374)
+on May 2, 2022.
 </em></small>
 
 ## Authors
@@ -169,7 +169,7 @@ on April 28, 2022.
 
 ## Abstract {.page_break_before}
 
-Why do neurons communicate through spikes? An action potential is a binary event —it can occur or not, without further details— and asynchronous, i.e. it can occur at any time. In the living world, neurons almost systematically use this so-called event-based representation, though we do not yet have a clear idea why. A better understanding of this phenomenon remains a fundamental challenge in neurobiology in order to better interpret the masses of recorded data. It is also an emerging challenge in computer science to allow the efficient exploitation of a new class of sensors and event-based computers, called neuromorphic, which could allow significant gains in computing time and energy consumption —a major societal challenge in the age of the digital economy and of global warming.
+Why do neurons communicate through spikes? By definition, a spike, or action potential, is a binary event —it can occur or not without further details— at asynchronous timings, i.e. it can occur at any time - differentially to the discretized timing classically used in digital processing. In the living world, neurons almost systematically use this so-called event-based representation, though we do not yet have a clear idea why. A better understanding of this phenomenon remains a fundamental challenge in neurobiology in order to better interpret the masses of recorded data. It is also an emerging challenge in computer science to allow the efficient exploitation of a new class of sensors and event-based computers, called neuromorphic, which could allow significant gains in computing time and energy consumption —a major societal challenge in the age of the digital economy and of global warming.
 
 The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This *event-based representation* present in the neuronal code is essential in understanding information processing and yet, most neuronal models do not take advantage of this minute temporal dimension. Our goal here is to bring an interdisciplinary perspective on the computational advantage of time series representations for the brain and for information processing machines. In particular, we will focus on the hypothesis that there exists in an assembly of neurons a representation based on a set of motifs of different relative spike times. Here, we will review current litterature on the detection of such motifs in generic raster plots. It is work in progress, where anybody interested can *openly* join.
 
@@ -222,27 +222,19 @@ Note also that synchronicity may explain some unintuitive results. Indeed it has
 Some experimental results show the emergence of synchrony, for instance in motor cortical function [@doi:10.1126/science.278.5345.1950]. Interestingly, authors showed that "Accurate spike synchronization occurred in relation to external events (stimuli, movements) and was commonly accompanied by discharge rate modulations but without precise time locking of the spikes to these external events. Spike synchronization also occurred in relation to purely internal events (stimulus expectancy), where firing rate modulations were distinctly absent. These findings indicate that internally generated synchronization of individual spike discharges may subserve the cortical organization of cognitive motor processes." Moreover, such emergence could change over the learning period involved in learning a task [@doi:10.1523/JNEUROSCI.1554-09.2009] and showed some tuning to  to movement direction and reaction time [@doi:10.1007/s00422-002-0385-3]. It is important to note that synchronous events tended to lock to LFP beta waves [@doi:10.1038/s41598-018-22990-7], and was extended to larger assemblies [@doi:10.1523/JNEUROSCI.4375-15.2016] using statistical methods (see [@sec:detection]).
 
 
-#### TODO .. to traveling waves ...
+In [@doi:10.1371/journal.pcbi.1002561], the author proposes a simple spike-based computational framework, based on the idea that stimulus-induced synchrony can be used to extract sensory invariants (for example, the location of a sound source), which is a difficult task for classical neural networks. It relies on the simple remark that a series of repeated coincidences is in itself an invariant. Many aspects of perception rely on extracting invariant features, such as the spatial location of a time-varying sound, the identity of an odor with fluctuating intensity, the pitch of a musical note.
 
+####  .. to traveling waves ...
 
-[@Bringuier99]
+TODO : [@Bringuier99]
 
-Statistical dependencies in the responses of sensory neurons govern both the amount of stimulus information conveyed and the means by which downstream neurons can extract it.  This is put in evidenceby analysing the functional significance of correlated firing in a complete population of macaque parasol retinal ganglion cells using a model of multi-neuron spike responses [@doi:10.1038/nature07140]. This show precise spatio-temporal differences in this recurrently connected assembly. The different aspects of information in the data are evaluated by a decoding strategy highlighting the role of correlations. A similar dataset used in [@doi:10.1016/j.neuron.2005.03.026, @doi:10.1038/nature04701] is available from M. Berry's lab [@url:https://dataspace.princeton.edu/handle/88435/dsp015425kd84r].
+Statistical dependencies in the responses of sensory neurons govern both the amount of stimulus information conveyed and the means by which downstream neurons can extract it.  This is put in evidence by analysing the functional significance of correlated firing in a complete population of macaque parasol retinal ganglion cells using a model of multi-neuron spike responses [@doi:10.1038/nature07140]. This show precise spatio-temporal differences in this recurrently connected assembly. The different aspects of information in the data are evaluated by a decoding strategy highlighting the role of correlations. A similar dataset used in [@doi:10.1016/j.neuron.2005.03.026, @doi:10.1038/nature04701] is available from M. Berry's lab [@url:https://dataspace.princeton.edu/handle/88435/dsp015425kd84r].
 
-
-The stimulus-evoked population response in visual cortex of awake monkey is a propagating wave
-Propagating waves occur in many excitable media and were recently found in neural systems from retina to neocortex. While propagating waves are clearly present under anaesthesia, whether they also appear during awake and conscious states remains unclear. One possibility is that these waves are systematically missed in trial-averaged data, due to variability. Here we present a method for detecting propagating waves in noisy multichannel recordings. Applying this method to single-trial voltage-sensitive dye imaging data, we show that the stimulus-evoked population response in primary visual cortex of the awake monkey propagates as a travelling wave, with consistent dynamics across trials. A network model suggests that this reliability is the hallmark of the horizontal fibre network of superficial cortical layers. Propagating waves with similar properties occur independently in secondary visual cortex, but maintain precise phase relations with the waves in primary visual cortex. These results show that, in response to a visual stimulus, propagating waves are systematically evoked in several visual areas, generating a consistent spatiotemporal frame for further neuronal interactions. [@Muller14]
-
-Advanced recording techniques have enabled the identification of travelling waves of neuronal activity in different areas of the cortex. Sejnowski and colleagues review these findings, consider the mechanisms by which travelling waves are generated and evaluate their possible roles in cortical function. [@Muller18]
-
-
-#### Spontaneous traveling waves
-
-Spontaneous traveling waves naturally emerge from horizontal fiber time delays and travel through locally asynchronous-irregular states [@doi:10.1038/s41467-021-26175-1].
+Propagating waves occur in many excitable media and were recently found in neural systems from retina to neocortex. While propagating waves are clearly present under anaesthesia, whether they also appear during awake and conscious states remains unclear. One possibility is that these waves are systematically missed in trial-averaged data, due to variability. A recent work [@Muller14] presents a method for detecting propagating waves in noisy multichannel recordings. Applying this method to single-trial voltage-sensitive dye imaging data, they show that the stimulus-evoked population response in primary visual cortex of the awake monkey propagates as a travelling wave, with consistent dynamics across trials. A network model suggests that this reliability is the hallmark of the horizontal fibre network of superficial cortical layers. Propagating waves with similar properties occur independently in secondary visual cortex, but maintain precise phase relations with the waves in primary visual cortex. These results show that, in response to a visual stimulus, propagating waves are systematically evoked in several visual areas, generating a consistent spatiotemporal frame for further neuronal interactions.
 
 ![a Spike raster for repeated presentations (N = 40) of a high-contrast (10% Michelson contrast) drifting Gabor recorded from area MT of a fixating marmoset (stimulus-onset, red line; mean response, blue line). A single-trial LFP trace is plotted in gray, and the average LFP response is plotted in black. The relative power between baseline (−200 ms to stimulus-onset) and evoked fluctuations (stimulus-onset + 50–250 ms) significantly favored the evoked response (right panel; N = 110 trials; median = 1.89 dB, p = 0.000019, two-tailed Wilcoxon’s ranked-sum test). b Same as in (a), but for a low contrast stimulus (<2% Michelson contrast). The relative power between baseline and evoked LFP fluctuations was not statistically different from parity (median = 1.23 dB, p = 0.087 two-tailed Wilcoxon’s ranked-sum test). c An example of spontaneous LFP fluctuations structured as a traveling wave recorded from a spatially distributed multielectrode array in marmoset area MT. d Histogram of spontaneous spike probability as a function of the generalized phase of the LFP during fixation. e The average evoked response to low contrast stimuli was stronger when a more excitable phase (±π rad) of a spontaneous traveling wave aligned with the retinotopic location of the target (aligned, green line) as compared to when a less excitable phase (0 rad) was aligned (unaligned, purple line; N = 43 wave and non-wave trials; shaded region SEM; p = 0.0000015 two-tailed Wilcoxon’s rank-sum test). Data for panels c–e modified from Davis et al.17 with permission.](https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-26175-1/MediaObjects/41467_2021_26175_Fig1_HTML.png){#fig:davis width="100%"}
 
-Studies of sensory-evoked neuronal responses often focus on mean spike rates, with fluctuations treated as internally-generated noise. However, fluctuations of spontaneous activity, often organized as traveling waves, shape stimulus-evoked responses and perceptual sensitivity. The mechanisms underlying these waves are unknown. Further, it is unclear whether waves are consistent with the low rate and weakly correlated “asynchronous-irregular” dynamics observed in cortical recordings. Here, we describe a large-scale computational model with topographically-organized connectivity and conduction delays relevant to biological scales. We find that spontaneous traveling waves are a general property of these networks. The traveling waves that occur in the model are sparse, with only a small fraction of neurons participating in any individual wave. Consequently, they do not induce measurable spike correlations and remain consistent with locally asynchronous irregular states. Further, by modulating local network state, they can shape responses to incoming inputs as observed in vivo.
+More recently Advanced recording techniques have enabled the identification of travelling waves of neuronal activity in different areas of the cortex [@Muller18]. Authors review these findings, consider the mechanisms by which travelling waves are generated and evaluate their possible roles in cortical function. In particular, spontaneous traveling waves naturally emerge from horizontal fiber time delays and travel through locally asynchronous-irregular states [@doi:10.1038/s41467-021-26175-1]. Studies of sensory-evoked neuronal responses often focus on mean spike rates, with fluctuations treated as internally-generated noise. However, fluctuations of spontaneous activity, often organized as traveling waves, shape stimulus-evoked responses and perceptual sensitivity. The mechanisms underlying these waves are unknown. Further, it is unclear whether waves are consistent with the low rate and weakly correlated “asynchronous-irregular” dynamics observed in cortical recordings. Here, authors describe a large-scale computational model with topographically-organized connectivity and conduction delays relevant to biological scales. They find that spontaneous traveling waves are a general property of these networks. The traveling waves that occur in the model are sparse, with only a small fraction of neurons participating in any individual wave. Consequently, they do not induce measurable spike correlations and remain consistent with locally asynchronous irregular states. Further, by modulating local network state, they can shape responses to incoming inputs as observed in vivo.
 
 
 #### Spike Synchronization and Rate Modulation Differentially Involved in Motor Cortical Function [@doi:10.1126/science.278.5345.1950]
@@ -251,12 +243,6 @@ It is now commonly accepted that planning and execution of movements are based o
 
 
 [@Chemla19]
-
-Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level.
-
-there are temporal delays in the nervous system, both at the neural [@doi:10.1007/s00422-014-0620-8] and behavioral [@doi:10.1371/journal.pcbi.1005068] levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks.
-
-may be used for motion detection and interpolation [@Kaplan13] [@KhoeiMassonPerrinet17]
 
 #### TODO ... and to synfire braids and polychronous groups
 
@@ -307,6 +293,13 @@ It is interesting to make a parallel with the "Rapid Formation of Robust Auditor
 A natural candidate to use these precise temporal patterns in the brain is to use Spiking Neural Networks (SNNs) [@Maass97]. The approach which is at present most prominent in the SNNs community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.
 
 
+TODO: a paragraph on our existing work
+Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level.
+
+there are temporal delays in the nervous system, both at the neural [@doi:10.1007/s00422-014-0620-8] and behavioral [@doi:10.1371/journal.pcbi.1005068] levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks.
+
+may be used for motion detection and interpolation [@Kaplan13] [@KhoeiMassonPerrinet17]
+
 Remarkably, novel neuromorphic chips use a representation similar to that of real neurons [@arxiv:2201.12673]. For example, event-based cameras provide a stream of binary asynchronous events signaling detectable changes in luminance, and information is represented by these spike-based temporal motifs, hence their name "silicon retinas" (see Figure @fig:silicon_retina). For such devices, it is crucial to better understand the potential of using such event-based representations in order to devise novel algorithms.
 
 ![A miniature, event-based ATIS sensor. Contrary to a classical frame-based camera for which a full dense image representation is given at discrete, regularly spaced timings, the event-based camera provides with events at the micro-second resolution. These are sparse as they represent luminance increments or decrements (ON and OFF events, respectively).](https://laurentperrinet.github.io/grant/anr-anb/event_driven_computations.png){#fig:silicon_retina}
@@ -325,7 +318,6 @@ Finally we will discuss future avenues for effective PG detection and learning i
 
 ## Models of polychronization detection in models
 
-In [@doi:10.1371/journal.pcbi.1002561], the author proposes a simple spike-based computational framework, based on the idea that stimulus-induced synchrony can be used to extract sensory invariants (for example, the location of a sound source), which is a difficult task for classical neural networks. It relies on the simple remark that a series of repeated coincidences is in itself an invariant. Many aspects of perception rely on extracting invariant features, such as the spatial location of a time-varying sound, the identity of an odor with fluctuating intensity, the pitch of a musical note.
 
 ### polychronization Izhikevitch
 
@@ -505,6 +497,7 @@ In [@doi:10.1073/pnas.1815910116], authors present a model to "show a way by whi
   * V1-dataset : The dataset we used was collected by Smith and Kohn [49] and is publicly available at:
 http://crcns.org/data-sets/vc/pvc-11 - it is in a sense supervised with the input being the movie and the output the spikes recorded.
 
+A recent work [@doi:10.48550/arXiv.1903.07067] proposes a two-stage unsupervised-supervised system for the categorization of spatiotemporal actions from an event-based stream. The first stage learns spatiotemporal convolutional filters targeted to minimize event-removal related changes to a local spatiotemporal spike-event pattern. The second stage takes the output of the spatiotemporal filters as an input example containing multiple feature channels, and proceeds to train a classifier for recognition of spatiotemporal activity. For testing the system, two datasets are considered: DVS Gesture and a new action recognition dataset recorded for this work. Results demonstrate the ability of the system to outperform the state-of-the-art in event-based gesture recognition, along with demonstrating superior performance to other alternative ways of obtaining the first stage filters. Showing the potential of such representation
 
 ### TODO: more bib to read
 Learning compositional sequences with multiple time scales through a hierarchical network of spiking neurons.
