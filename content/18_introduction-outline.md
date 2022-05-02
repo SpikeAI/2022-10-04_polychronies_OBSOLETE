@@ -2,6 +2,14 @@
 
 A natural candidate to use these precise temporal patterns in the brain is to use Spiking Neural Networks (SNNs) [@Maass97]. The approach which is at present most prominent in the SNNs community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.
 
+
+TODO: a paragraph on our existing work
+Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level.
+
+there are temporal delays in the nervous system, both at the neural [@doi:10.1007/s00422-014-0620-8] and behavioral [@doi:10.1371/journal.pcbi.1005068] levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks.
+
+may be used for motion detection and interpolation [@Kaplan13] [@KhoeiMassonPerrinet17]
+
 Remarkably, novel neuromorphic chips use a representation similar to that of real neurons [@arxiv:2201.12673]. For example, event-based cameras provide a stream of binary asynchronous events signaling detectable changes in luminance, and information is represented by these spike-based temporal motifs, hence their name "silicon retinas" (see Figure @fig:silicon_retina). For such devices, it is crucial to better understand the potential of using such event-based representations in order to devise novel algorithms.
 
 ![A miniature, event-based ATIS sensor. Contrary to a classical frame-based camera for which a full dense image representation is given at discrete, regularly spaced timings, the event-based camera provides with events at the micro-second resolution. These are sparse as they represent luminance increments or decrements (ON and OFF events, respectively).](https://laurentperrinet.github.io/grant/anr-anb/event_driven_computations.png){#fig:silicon_retina}
