@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-05-02'
+date-meta: '2022-05-03'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -59,8 +59,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-05-02" />
-  <meta name="citation_publication_date" content="2022-05-02" />
+  <meta name="dc.date" content="2022-05-03" />
+  <meta name="citation_publication_date" content="2022-05-03" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/f0287b5b95cf889827f0646e06ae492020084374/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/f0287b5b95cf889827f0646e06ae492020084374/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/f0287b5b95cf889827f0646e06ae492020084374/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/81207bb776c67f16dc5f62681700fd225e7136e6/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/81207bb776c67f16dc5f62681700fd225e7136e6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/81207bb776c67f16dc5f62681700fd225e7136e6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,10 +111,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/f0287b5b95cf889827f0646e06ae492020084374/))
+([permalink](https://SpikeAI.github.io/polychronies/v/81207bb776c67f16dc5f62681700fd225e7136e6/))
 was automatically generated
-from [SpikeAI/polychronies@f0287b5](https://github.com/SpikeAI/polychronies/tree/f0287b5b95cf889827f0646e06ae492020084374)
-on May 2, 2022.
+from [SpikeAI/polychronies@81207bb](https://github.com/SpikeAI/polychronies/tree/81207bb776c67f16dc5f62681700fd225e7136e6)
+on May 3, 2022.
 </em></small>
 
 ## Authors
@@ -190,9 +190,7 @@ This speed of the visual cortex, although surprising, is quite compatible with t
 
 ### How timing encodes analogous profile
 
-An important characteristic of neuronal information is that it consists mainly in the transfer of action potentials, or spikes, which consist of brief impulses that propagate along the axons of neurons. These have the particularity of being essentially binary in their amplitude (that is to say, they are prototypical, all or nothing). An important consequence of the speed of processing is that it implies that it is carried out using only very few spikes. Indeed, if we consider that a behavioral response in only 120 ms consists of about ten processing stages following the "forward" pathways of the visual system, then this imposes that the processing in a single area is performed with a reduced number of spikes.
-
-Note also that depending on how an in vitro cell is driven, this may influence the reliability of spike timing in neocortical neurons [@doi:10.1126/science.7770778].
+An important characteristic of neuronal information is that it consists mainly in the transfer of action potentials, or spikes, which consist of brief impulses that propagate along the axons of neurons. These have the particularity of being essentially binary in their amplitude (that is to say, they are prototypical, all or nothing). An important consequence of the speed of processing is that it implies that it is carried out using only very few spikes. Indeed, if we consider that a behavioral response in only 120 ms consists of about ten processing stages following the "forward" pathways of the visual system, then this imposes that the processing in a single area is performed with a reduced number of spikes. Neurophysiologists tipcally use firing sequences to characterize the activity of neurons using different statistics on their individual timing [@doi:10.1016/s0006-3495(67)86596-2] but also the dependance across neurons [@doi:10.1016/s0006-3495(67)86597-4]. Note also that depending on how an in vitro cell is driven, this may influence the reliability of spike timing in neocortical neurons [@doi:10.1126/science.7770778].
 
 ![Latency coding. An input analog profile is encoded in latencies: the higher the contrast, the shorter the latency. In this example, one generates at most one spike per neuron. From [@https://www.cnrs.fr/mi/IMG/pdf/parissep14-m-thorpe-small.pdf]](images/roc.jpg){#fig:roc}
 
@@ -545,6 +543,10 @@ Dumas and colleagues [@arxiv:2112.12147] : three levels / fourth paradigm [@doi:
 ### our model
 
 Here, we develop a model for the efficient detection of such PGs based on the inversion of a probabilistic model defining the generation of the raster plot as a combination of such groups. We show that such an inference can be achieved by a neural-like computation that could itself be used as a spiking neuron, as can be implemented in a neuromorphic chip for instance. A first result is to show the efficiency of such a scheme in detecting different PGs occurring at specific times in synthetic data. The representational capacity of the PGs is particularly interesting compared to traditional models of neuronal encoding using spiking frequency. Our second result is to propose a novel learning method for learning PGs in raster plots in a self-supervised manner. Finally we demonstrate the use of this algorithm to the output of an event-based camera and how this may separate independent components from the stream of events. This end-to-end event-based computational brick could help improve the performance of current Spiking Neural Network solution currently used in neuromorphic chips.
+
+
+Emergence of electronic architectures specialized in Sparse Event-Based Convolutions [@doi:10.3929/ethz-b-000543342] or of sparsity aware algorithms [@arxiv:2204.05422].
+
 
 ## development
 

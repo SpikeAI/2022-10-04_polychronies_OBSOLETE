@@ -62,7 +62,8 @@ deconvolution
 deconvolved
 demonstated
 dendritic
-differentially
+dependance
+Differentially
 dimensionality
 d’Informatique
 discrepency
@@ -156,6 +157,7 @@ neurocomputational
 neuromorphic
 Neurophysiol
 neurophysiological
+Neurophysiologists
 Neurosci
 Neurosciences
 neuroscientific
@@ -176,8 +178,8 @@ PLoS
 PNG
 PNGs
 Politi
-polychronization
-polychronous
+Polychronization
+Polychronous
 Poulet
 pre
 premotor
@@ -205,7 +207,7 @@ SNR
 soma
 spatio
 spatiotemporal
-Spectro
+spectro
 spectrograms
 SpikeShip
 SPOTDis
@@ -219,11 +221,12 @@ STRFs
 subserve
 superlinearly
 supersequences
-synfire
+Synfire
 Systèmes
 thalamocortical
 Thanasoulis
 Timone
+tipcally
 TJ
 TODO
 tradeoff
