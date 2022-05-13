@@ -38,7 +38,6 @@ CBMI
 ceci
 centric
 Cereb
-chbq
 citer
 Clopath
 CNNs
@@ -68,6 +67,7 @@ dimensionality
 d’Informatique
 discrepency
 discretized
+distractor
 Doiron
 Dugué
 durations
@@ -98,7 +98,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-hippocampal
+Hippocampal
 Hirase
 Huning
 HVC
@@ -171,6 +171,7 @@ Partzsch
 parvocellular
 Pawelzik
 Paxon
+perceptron
 Pereira
 Perrinet
 PGs
@@ -179,7 +180,7 @@ PNG
 PNGs
 Politi
 Polychronization
-Polychronous
+polychronous
 Poulet
 pre
 premotor
@@ -214,6 +215,7 @@ SPOTDis
 SPOTDisClust
 Spreizer
 SRM
+staorage
 stationarity
 Statist
 STDP
@@ -221,8 +223,9 @@ STRFs
 subserve
 superlinearly
 supersequences
-Synfire
+synfire
 Systèmes
+Tempotron
 thalamocortical
 Thanasoulis
 Timone
