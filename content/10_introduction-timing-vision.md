@@ -68,7 +68,7 @@ It is now commonly accepted that planning and execution of movements are based o
 
  * [@Bienenstock1995] : from synfire chains to Synfire braids
 
-In neuronal models, an efficient use or detection of these spatio-temporal patterns embedded in the spike train comes with the integration of heterogeneous delays [@doi:10/ch29r4; @doi:10/f6chbq; @doi:10.1016/j.neucom.2020.03.079]. Notably, Izhikevich [@Izhikevich2006] introduced the notion of polychronous groups (PGs) as a repetitive motif of spikes defined by a subset of neurons with different, yet precise,  spiking delays. This representation has a much greater information capacity in comparison to other neural coding approaches through their connectivity and the possible coexistence of numerous superposed PGs.
+In neuronal models, an efficient use or detection of these spatio-temporal patterns embedded in the spike train comes with the integration of heterogeneous delays [@doi:10/f6chbq; @doi:10.1016/j.neucom.2020.03.079]. Notably, Izhikevich [@Izhikevich2006] introduced the notion of polychronous groups (PGs) as a repetitive motif of spikes defined by a subset of neurons with different, yet precise,  spiking delays. This representation has a much greater information capacity in comparison to other neural coding approaches through their connectivity and the possible coexistence of numerous superposed PGs.
 
 
 sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp. 345-355. [3] CC Petersen and S Crochet, Neuron 78.1 (2013), pp. 28-48.
