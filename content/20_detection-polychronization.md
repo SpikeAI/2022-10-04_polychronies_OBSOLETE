@@ -1,6 +1,10 @@
 
 ## Models of polychronization detection in models
 
+A model for the detection of latency patterns is the tempotron
+[@doi:10/ch29r4]. This model is in particular reviewed in [@doi:10.1016/j.conb.2014.01.004]. The Tempotron is a supervised synaptic learning algorithm which classifies a distractor from a target motif. This aims at extending the perceptron which does not incorporate a spike timing framework. The tempotron learning rule is derived by an optimization process and takes the form of a STDP rule.  It is general consensus that spike timing (STDP) plays a crucial role in the development of synaptic efficacy for many different kinds of neurons [@doi:10.1146/annurev.neuro.31.060407.125639]. The limits of this model is that it's output is only binary and that it's staorage capacity are limited.
+
+Some other models of latency motifs detection using STDP learning rules. For instance, [@10.1016/j.neunet.2017.12.005] implements a STDP-based spiking deep convolutional neural networks for object recognition;  [@doi:10.1016/j.neunet.2018.05.018] develops a form of spike-based, competitive learning applied for unsupervised learning.
 
 ### polychronization Izhikevitch
 
