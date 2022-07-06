@@ -2315,7 +2315,7 @@
   {
     "publisher": "Proceedings of the National Academy of Sciences",
     "issue": "15",
-    "abstract": "<jats:title>Significance</jats:title>\n          <jats:p>The hippocampus organizes experience in sequences of events that form episodic memory. How are time and space internally computed in the hippocampus in the absence of sequential external inputs? Here we show that time and space are integrated together within the hippocampal network with different degrees of tuning across days. This was found by recording the activity of hundreds of pyramidal cells for several days. We also propose a mechanism supporting such spatiotemporal integration based on a ring attractor network model: the degree of tuning between space and time can be adjusted by modulating the power of a nonsequential external excitatory drive. In this way, the hippocampus is able to generate a spatiotemporal representation tuned to the task at hand.</jats:p>",
+    "abstract": "<jats:p>The hippocampus plays a critical role in episodic memory: the sequential representation of visited places and experienced events. This function is mirrored by hippocampal activity that self organizes into sequences of neuronal activation that integrate spatiotemporal information. What are the underlying mechanisms of such integration is still unknown. Single cell activity was recently shown to combine time and distance information; however, it remains unknown whether a degree of tuning between space and time can be defined at the network level. Here, combining daily calcium imaging of CA1 sequence dynamics in running head-fixed mice and network modeling, we show that CA1 network activity tends to represent a specific combination of space and time at any given moment, and that the degree of tuning can shift within a continuum from 1 day to the next. Our computational model shows that this shift in tuning can happen under the control of the external drive power. We propose that extrinsic global inputs shape the nature of spatiotemporal integration in the hippocampus at the population level depending on the task at hand, a hypothesis which may guide future experimental studies.</jats:p>",
     "DOI": "10.1073/pnas.1718518116",
     "type": "article-journal",
     "page": "7477-7482",
@@ -2419,7 +2419,7 @@
   {
     "publisher": "Proceedings of the National Academy of Sciences",
     "issue": "23",
-    "abstract": "<jats:title>Significance</jats:title>\n          <jats:p>Humans rely on their inner sense of time to judge the duration of events or decide when to initiate actions. Still, they also often use movements to improve their timing accuracy. In both humans and animals, it is unclear whether accurate timing relies on disembodied internal representations or is externalized in motor routines. We investigated this issue in rats performing a timing task while running on a motorized treadmill. Our setup allowed us to create conditions that either favored or limited the usage of motor routines. We found that timing accuracy was improved when the environment afforded cues that rats can incorporate into motor routines. Timing, at least in animals, may thus be fundamentally embodied and situated.</jats:p>",
+    "abstract": "<jats:p>How animals adapt their behavior according to regular time intervals between events is not well understood, especially when intervals last several seconds. One possibility is that animals use disembodied internal neuronal representations of time to decide when to initiate a given action at the end of an interval. However, animals rarely remain immobile during time intervals but tend to perform stereotyped behaviors, raising the possibility that motor routines improve timing accuracy. To test this possibility, we used a task in which rats, freely moving on a motorized treadmill, could obtain a reward if they approached it after a fixed interval. Most animals took advantage of the treadmill length and its moving direction to develop, by trial-and-error, the same motor routine whose execution resulted in the precise timing of their reward approaches. Noticeably, when proficient animals did not follow this routine, their temporal accuracy decreased. Then, naïve animals were trained in modified versions of the task designed to prevent the development of this routine. Compared to rats trained in the first protocol, these animals didn’t reach a comparable level of timing accuracy. Altogether, our results indicate that timing accuracy in rats is improved when the environment affords cues that animals can incorporate into motor routines.</jats:p>",
     "DOI": "10.1073/pnas.1921226117",
     "type": "article-journal",
     "page": "13084-13093",
@@ -4784,8 +4784,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          13
+          7,
+          6
         ]
       ]
     },
@@ -4821,8 +4821,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          13
+          7,
+          6
         ]
       ]
     },

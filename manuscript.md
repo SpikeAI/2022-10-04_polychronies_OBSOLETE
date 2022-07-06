@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-05-13'
+date-meta: '2022-07-06'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -59,8 +59,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-05-13" />
-  <meta name="citation_publication_date" content="2022-05-13" />
+  <meta name="dc.date" content="2022-07-06" />
+  <meta name="citation_publication_date" content="2022-07-06" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/30df464d7649fe071e975201635b1597fb8d0998/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/30df464d7649fe071e975201635b1597fb8d0998/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/30df464d7649fe071e975201635b1597fb8d0998/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/103921165f4419557806dafbdee4d0d3706328bf/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/103921165f4419557806dafbdee4d0d3706328bf/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/103921165f4419557806dafbdee4d0d3706328bf/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,10 +111,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/30df464d7649fe071e975201635b1597fb8d0998/))
+([permalink](https://SpikeAI.github.io/polychronies/v/103921165f4419557806dafbdee4d0d3706328bf/))
 was automatically generated
-from [SpikeAI/polychronies@30df464](https://github.com/SpikeAI/polychronies/tree/30df464d7649fe071e975201635b1597fb8d0998)
-on May 13, 2022.
+from [SpikeAI/polychronies@1039211](https://github.com/SpikeAI/polychronies/tree/103921165f4419557806dafbdee4d0d3706328bf)
+on July 6, 2022.
 </em></small>
 
 ## Authors
@@ -300,7 +300,7 @@ may be used for motion detection and interpolation [@Kaplan13] [@KhoeiMassonPerr
 
 Remarkably, novel neuromorphic chips use a representation similar to that of real neurons [@arxiv:2201.12673]. For example, event-based cameras provide a stream of binary asynchronous events signaling detectable changes in luminance, and information is represented by these spike-based temporal motifs, hence their name "silicon retinas" (see Figure @fig:silicon_retina). For such devices, it is crucial to better understand the potential of using such event-based representations in order to devise novel algorithms.
 
-![A miniature, event-based ATIS sensor. Contrary to a classical frame-based camera for which a full dense image representation is given at discrete, regularly spaced timings, the event-based camera provides with events at the micro-second resolution. These are sparse as they represent luminance increments or decrements (ON and OFF events, respectively).](https://laurentperrinet.github.io/grant/anr-anb/event_driven_computations.png){#fig:silicon_retina}
+![A miniature, event-based ATIS sensor. Contrary to a classical frame-based camera for which a full dense image representation is given at discrete, regularly spaced timings, the event-based camera provides with events at the micro-second resolution. These are sparse as they represent luminance increments or decrements (ON and OFF events, respectively).](https://laurentperrinet.github.io/grant/anr-anr/event_driven_computations.png){#fig:silicon_retina}
 
 This section has provided evidence that polychronous groups are an important apsect of information representation in biology with important application in data analysis and neuromorphic engineering. The rest of this review paper is organized as follows.
 

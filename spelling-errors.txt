@@ -98,7 +98,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-Hippocampal
+hippocampal
 Hirase
 Huning
 HVC
@@ -208,7 +208,7 @@ SNR
 soma
 spatio
 spatiotemporal
-spectro
+Spectro
 spectrograms
 SpikeShip
 SPOTDis
@@ -223,7 +223,7 @@ STRFs
 subserve
 superlinearly
 supersequences
-synfire
+Synfire
 Systèmes
 Tempotron
 thalamocortical
