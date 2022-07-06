@@ -12,7 +12,7 @@ may be used for motion detection and interpolation [@Kaplan13] [@KhoeiMassonPerr
 
 Remarkably, novel neuromorphic chips use a representation similar to that of real neurons [@arxiv:2201.12673]. For example, event-based cameras provide a stream of binary asynchronous events signaling detectable changes in luminance, and information is represented by these spike-based temporal motifs, hence their name "silicon retinas" (see Figure @fig:silicon_retina). For such devices, it is crucial to better understand the potential of using such event-based representations in order to devise novel algorithms.
 
-![A miniature, event-based ATIS sensor. Contrary to a classical frame-based camera for which a full dense image representation is given at discrete, regularly spaced timings, the event-based camera provides with events at the micro-second resolution. These are sparse as they represent luminance increments or decrements (ON and OFF events, respectively).](https://laurentperrinet.github.io/grant/anr-anb/event_driven_computations.png){#fig:silicon_retina}
+![A miniature, event-based ATIS sensor. Contrary to a classical frame-based camera for which a full dense image representation is given at discrete, regularly spaced timings, the event-based camera provides with events at the micro-second resolution. These are sparse as they represent luminance increments or decrements (ON and OFF events, respectively).](https://laurentperrinet.github.io/grant/anr-anr/event_driven_computations.png){#fig:silicon_retina}
 
 This section has provided evidence that polychronous groups are an important apsect of information representation in biology with important application in data analysis and neuromorphic engineering. The rest of this review paper is organized as follows.
 
