@@ -62,7 +62,7 @@ deconvolved
 demonstated
 dendritic
 dependance
-differentially
+Differentially
 dimensionality
 d’Informatique
 discrepency
@@ -98,7 +98,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-Hippocampal
+hippocampal
 Hirase
 Huning
 HVC
@@ -180,7 +180,7 @@ PNG
 PNGs
 Politi
 Polychronization
-Polychronous
+polychronous
 Poulet
 pre
 premotor
@@ -208,7 +208,7 @@ SNR
 soma
 spatio
 spatiotemporal
-Spectro
+spectro
 spectrograms
 SpikeShip
 SPOTDis
@@ -225,7 +225,7 @@ superlinearly
 supersequences
 synfire
 Systèmes
-Tempotron
+tempotron
 thalamocortical
 Thanasoulis
 Timone
