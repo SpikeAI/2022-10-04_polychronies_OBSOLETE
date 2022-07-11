@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-07-06'
+date-meta: '2022-07-11'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -59,8 +59,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-07-06" />
-  <meta name="citation_publication_date" content="2022-07-06" />
+  <meta name="dc.date" content="2022-07-11" />
+  <meta name="citation_publication_date" content="2022-07-11" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/103921165f4419557806dafbdee4d0d3706328bf/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/103921165f4419557806dafbdee4d0d3706328bf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/103921165f4419557806dafbdee4d0d3706328bf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/39131262d2a62494e69e96ca2bbda58730304a8a/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/39131262d2a62494e69e96ca2bbda58730304a8a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/39131262d2a62494e69e96ca2bbda58730304a8a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,10 +111,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/103921165f4419557806dafbdee4d0d3706328bf/))
+([permalink](https://SpikeAI.github.io/polychronies/v/39131262d2a62494e69e96ca2bbda58730304a8a/))
 was automatically generated
-from [SpikeAI/polychronies@1039211](https://github.com/SpikeAI/polychronies/tree/103921165f4419557806dafbdee4d0d3706328bf)
-on July 6, 2022.
+from [SpikeAI/polychronies@3913126](https://github.com/SpikeAI/polychronies/tree/39131262d2a62494e69e96ca2bbda58730304a8a)
+on July 11, 2022.
 </em></small>
 
 ## Authors
@@ -320,6 +320,8 @@ A model for the detection of latency patterns is the tempotron
 [@doi:10/ch29r4]. This model is in particular reviewed in [@doi:10.1016/j.conb.2014.01.004]. The Tempotron is a supervised synaptic learning algorithm which classifies a distractor from a target motif. This aims at extending the perceptron which does not incorporate a spike timing framework. The tempotron learning rule is derived by an optimization process and takes the form of a STDP rule.  It is general consensus that spike timing (STDP) plays a crucial role in the development of synaptic efficacy for many different kinds of neurons [@doi:10.1146/annurev.neuro.31.060407.125639]. The limits of this model is that it's output is only binary and that it's staorage capacity are limited.
 
 Some other models of latency motifs detection using STDP learning rules. For instance, [@10.1016/j.neunet.2017.12.005] implements a STDP-based spiking deep convolutional neural networks for object recognition;  [@doi:10.1016/j.neunet.2018.05.018] develops a form of spike-based, competitive learning applied for unsupervised learning.
+
+In [@10.7554/eLife.19428], authors developed novel machine learning tools and statistical tests for unsupervised spatio-temporal pattern detection in non-stationary environments, which was applied to simultaneous electrophysiological recordings from tens to hundreds of neurons for decoding cognitive processes from neural activity.
 
 ### polychronization Izhikevitch
 
