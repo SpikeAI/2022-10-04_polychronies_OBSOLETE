@@ -190,7 +190,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-rastermap
+Rastermap
 RefRN
 Reproducibility
 resistive
@@ -208,7 +208,7 @@ SNR
 soma
 spatio
 spatiotemporal
-spectro
+Spectro
 spectrograms
 SpikeShip
 SPOTDis
@@ -223,9 +223,9 @@ STRFs
 subserve
 superlinearly
 supersequences
-synfire
+Synfire
 Systèmes
-tempotron
+Tempotron
 thalamocortical
 Thanasoulis
 Timone

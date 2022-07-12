@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-07-11'
+date-meta: '2022-07-12'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -59,8 +59,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-07-11" />
-  <meta name="citation_publication_date" content="2022-07-11" />
+  <meta name="dc.date" content="2022-07-12" />
+  <meta name="citation_publication_date" content="2022-07-12" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/1d30143ccc7b944d69ff5e9f7f23fcf2a85214fc/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/1d30143ccc7b944d69ff5e9f7f23fcf2a85214fc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/1d30143ccc7b944d69ff5e9f7f23fcf2a85214fc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/56254b10e776be75c935ec79718f79abc6f867fe/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/56254b10e776be75c935ec79718f79abc6f867fe/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/56254b10e776be75c935ec79718f79abc6f867fe/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,10 +111,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/1d30143ccc7b944d69ff5e9f7f23fcf2a85214fc/))
+([permalink](https://SpikeAI.github.io/polychronies/v/56254b10e776be75c935ec79718f79abc6f867fe/))
 was automatically generated
-from [SpikeAI/polychronies@1d30143](https://github.com/SpikeAI/polychronies/tree/1d30143ccc7b944d69ff5e9f7f23fcf2a85214fc)
-on July 11, 2022.
+from [SpikeAI/polychronies@56254b1](https://github.com/SpikeAI/polychronies/tree/56254b10e776be75c935ec79718f79abc6f867fe)
+on July 12, 2022.
 </em></small>
 
 ## Authors
@@ -234,6 +234,8 @@ Propagating waves occur in many excitable media and were recently found in neura
 
 More recently Advanced recording techniques have enabled the identification of travelling waves of neuronal activity in different areas of the cortex [@Muller18]. Authors review these findings, consider the mechanisms by which travelling waves are generated and evaluate their possible roles in cortical function. In particular, spontaneous traveling waves naturally emerge from horizontal fiber time delays and travel through locally asynchronous-irregular states [@doi:10.1038/s41467-021-26175-1]. Studies of sensory-evoked neuronal responses often focus on mean spike rates, with fluctuations treated as internally-generated noise. However, fluctuations of spontaneous activity, often organized as traveling waves, shape stimulus-evoked responses and perceptual sensitivity. The mechanisms underlying these waves are unknown. Further, it is unclear whether waves are consistent with the low rate and weakly correlated “asynchronous-irregular” dynamics observed in cortical recordings. Here, authors describe a large-scale computational model with topographically-organized connectivity and conduction delays relevant to biological scales. They find that spontaneous traveling waves are a general property of these networks. The traveling waves that occur in the model are sparse, with only a small fraction of neurons participating in any individual wave. Consequently, they do not induce measurable spike correlations and remain consistent with locally asynchronous irregular states. Further, by modulating local network state, they can shape responses to incoming inputs as observed in vivo.
 
+
+[@doi:10.1101/2021.08.31.458405] present ensemble-recordings of neurons in the lumbar spinal cord that indicate that, rather than alternating, the population is performing a low-dimensional “rotation” in neural space, in which the neural activity is cycling through all phases continuously during the rhythmic behavior. 
 
 #### Spike Synchronization and Rate Modulation Differentially Involved in Motor Cortical Function [@doi:10.1126/science.278.5345.1950]
 
