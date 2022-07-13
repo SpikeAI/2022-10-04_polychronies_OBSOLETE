@@ -102,6 +102,8 @@ https://doi.org/10.1101/2020.06.03.131573;
  * Stimulus statistics dependence of response statistics is explained
 
 
+To overcome the limits of models which require spike times to be discretized, utilize a sub-optimal least-squares criterion, or do not provide uncertainty estimates for model predictions or estimated parameters, [@arXiv:2010.04875]  address each of these shortcomings by developing a point process model that characterizes fine-scale sequences at the level of individual spikes and represents sequence occurrences as a small number of marked events in continuous time. They also introduce learnable time warping parameters to model sequences of varying duration, which have been experimentally observed in neural circuits and demonstrate these advantages on experimental recordings from songbird higher vocal center and rodent hippocampus.
+
 #### FPGA
 
 Dynamics of Delay-Coupled Excitable Neural Systems.
