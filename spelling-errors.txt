@@ -36,7 +36,6 @@ camillebesnainou
 capacitive
 CBMI
 ceci
-centric
 Cereb
 citer
 Clopath
@@ -51,7 +50,6 @@ Corticonics
 Côte
 cotical
 coucou
-Cowan
 Csicsvari
 Czurko
 dataset
@@ -62,7 +60,7 @@ deconvolved
 demonstated
 dendritic
 dependance
-Differentially
+differentially
 dimensionality
 d’Informatique
 discrepency
@@ -75,21 +73,18 @@ DVS
 electrophysiological
 Elife
 EPSPs
-Eurich
 excitatory
 Fairhall
 feedforward
 figshare
 FMC
 FPGA
-Frady
 Gabor
 Ganjtabesh
 Gaussians
 Gillett
 GJ
 GLM
-Glunder
 Goodhill
 Grimaldi
 Grismaldi
@@ -98,9 +93,8 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-Hippocampal
+hippocampal
 Hirase
-Huning
 HVC
 ICECS
 Ikegaya
@@ -130,6 +124,7 @@ latencies
 laurentperrinet
 LFP
 LIF
+lightred
 litterature
 lnl
 Luczak
@@ -141,7 +136,6 @@ Masquelier
 maxpooling
 Mayr
 MNIST
-MNSD
 Morelli
 Moshe
 multielectrode
@@ -153,7 +147,6 @@ neocortical
 neuro
 neurobiological
 neurobiology
-neurocomputational
 neuromorphic
 Neurophysiol
 neurophysiological
@@ -165,12 +158,9 @@ nois
 nonlinearities
 nonnormal
 olfaction
-organazed
 PAMI
 Partzsch
 parvocellular
-Pawelzik
-Paxon
 perceptron
 Pereira
 Perrinet
@@ -179,8 +169,8 @@ PLoS
 PNG
 PNGs
 Politi
-Polychronization
-polychronous
+polychronization
+Polychronous
 Poulet
 pre
 premotor
@@ -192,7 +182,6 @@ Purpura
 pyNN
 rastermap
 RefRN
-Reproducibility
 resistive
 retinotopic
 Rossum
@@ -208,7 +197,7 @@ SNR
 soma
 spatio
 spatiotemporal
-Spectro
+spectro
 spectrograms
 SpikeShip
 SPOTDis

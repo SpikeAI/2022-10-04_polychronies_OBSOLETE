@@ -111,83 +111,6 @@
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: Chemla19"
   },
   {
-    "DOI": "10.3389/fncom.2013.00112",
-    "URL": "https://laurentperrinet.github.io/publication/kaplan-13",
-    "abstract": "Predictive coding hypothesizes that the brain explicitly infers upcoming sensory input to establish a coherent representation of the world. Although it is becoming generally accepted, it is not clear on which level spiking neural networks may implement predictive coding and what function their connectivity may have. We present a network model of conductance-based integrate-and-fire neurons inspired by the architecture of retinotopic cortical areas that assumes predictive coding is implemented through network connectivity, namely in the connection delays and in selectiveness for the tuning properties of source and target cells. We show that the applied connection pattern leads to motion-based prediction in an experiment tracking a moving dot. In contrast to our proposed model, a network with random or isotropic connectivity fails to predict the path when the moving dot disappears. Furthermore, we show that a simple linear decoding approach is sufficient to transform neuronal spiking activity into a probabilistic estimate for reading out the target trajectory.",
-    "author": [
-      {
-        "family": "Kaplan",
-        "given": "Bernhard A"
-      },
-      {
-        "family": "Lansner",
-        "given": "Anders"
-      },
-      {
-        "family": "Masson",
-        "given": "Guillaume S"
-      },
-      {
-        "family": "Perrinet",
-        "given": "Laurent U"
-      }
-    ],
-    "container-title": "Frontiers in Computational Neuroscience",
-    "id": "WGEaBYgy",
-    "issue": "112",
-    "issued": {
-      "date-parts": [
-        [
-          2013,
-          9,
-          17
-        ]
-      ]
-    },
-    "keyword": "Bayesian model,large-scale_networks,motion detection,motion prediction,predictive coding,pynn,spike",
-    "title": "Anisotropic connectivity implements motion-based prediction in a spiking neural network",
-    "type": "article-journal",
-    "volume": "7",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: Kaplan13"
-  },
-  {
-    "DOI": "10.1371/journal.pcbi.1005068",
-    "URL": "https://laurentperrinet.github.io/publication/khoei-masson-perrinet-17/",
-    "abstract": "Due to its inherent neural delays, the visual system has an outdated access to sensory information about the current position of moving objects. In contrast, living organisms are remarkably able to track and intercept moving objects under a large range of challenging environmental conditions. Physiological, behavioral and psychophysical evidences strongly suggest that position coding is extrapolated using an explicit and reliable representation of object’s motion but it is still unclear how these two representations interact. For instance, the so-called flash-lag effect supports the idea of a differential processing of position between moving and static objects. Although elucidating such mechanisms is crucial in our understanding of the dynamics of visual processing, a theory is still missing to explain the different facets of this visual illusion. Here, we reconsider several of the key aspects of the flash-lag effect in order to explore the role of motion upon neural coding of objects’ position. First, we formalize the problem using a Bayesian modeling framework which includes a graded representation of the degree of belief about visual motion. We introduce a motion-based prediction model as a candidate explanation for the perception of coherent motion. By including the knowledge of a fixed delay, we can model the dynamics of sensory information integration by extrapolating the information acquired at previous instants in time. Next, we simulate the optimal estimation of object position with and without delay compensation and compared it with human perception under a broad range of different psychophysical conditions. Our computational study suggests that the explicit, probabilistic representation of velocity information is crucial in explaining position coding, and therefore the flash-lag effect. We discuss these theoretical results in light of the putative corrective mechanisms that can be used to cancel out the detrimental effects of neural delays and illuminate the more general question of the dynamical representation of spatial information at the present time in the visual pathways.",
-    "author": [
-      {
-        "family": "Khoei",
-        "given": "Mina A"
-      },
-      {
-        "family": "Masson",
-        "given": "Guillaume S"
-      },
-      {
-        "family": "Perrinet",
-        "given": "Laurent U"
-      }
-    ],
-    "container-title": "PLoS Computational Biology",
-    "id": "7GEdzh5o",
-    "issue": "1",
-    "issued": {
-      "date-parts": [
-        [
-          2017,
-          1,
-          26
-        ]
-      ]
-    },
-    "keyword": "Bayesian model,motion prediction",
-    "page": "e1005068",
-    "title": "The flash-lag effect as a motion-based predictive shift",
-    "type": "article-journal",
-    "volume": "13",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: KhoeiMassonPerrinet17"
-  },
-  {
     "DOI": "10.1016/j.visres.2005.10.002",
     "ISSN": "0042-6989",
     "URL": "https://www.sciencedirect.com/science/article/pii/S0042698905005110",
@@ -815,47 +738,6 @@
     "PMID": "12750898",
     "id": "FZ9X31Qa",
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1007/s00422-002-0385-3"
-  },
-  {
-    "publisher": "Springer Science and Business Media LLC",
-    "issue": "6",
-    "DOI": "10.1007/s00422-014-0620-8",
-    "type": "article-journal",
-    "page": "777-801",
-    "source": "Crossref",
-    "title": "Active inference, eye movements and oculomotor delays",
-    "volume": "108",
-    "author": [
-      {
-        "given": "Laurent U.",
-        "family": "Perrinet"
-      },
-      {
-        "given": "Rick A.",
-        "family": "Adams"
-      },
-      {
-        "given": "Karl J.",
-        "family": "Friston"
-      }
-    ],
-    "container-title": "Biological Cybernetics",
-    "language": "en",
-    "issued": {
-      "date-parts": [
-        [
-          2014,
-          8,
-          16
-        ]
-      ]
-    },
-    "URL": "https://doi.org/f6skjq",
-    "container-title-short": "Biol Cybern",
-    "PMCID": "PMC4250571",
-    "PMID": "25128318",
-    "id": "f7gkBktf",
-    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1007/s00422-014-0620-8"
   },
   {
     "publisher": "Springer Science and Business Media LLC",
@@ -3866,53 +3748,6 @@
     "PMID": "27420734",
     "id": "bc9czTxi",
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1371/journal.pcbi.1004939"
-  },
-  {
-    "publisher": "Public Library of Science (PLoS)",
-    "issue": "1",
-    "DOI": "10.1371/journal.pcbi.1005068",
-    "type": "article-journal",
-    "page": "e1005068",
-    "source": "Crossref",
-    "title": "The Flash-Lag Effect as a Motion-Based Predictive Shift",
-    "volume": "13",
-    "author": [
-      {
-        "given": "Mina A.",
-        "family": "Khoei"
-      },
-      {
-        "given": "Guillaume S.",
-        "family": "Masson"
-      },
-      {
-        "given": "Laurent U.",
-        "family": "Perrinet"
-      }
-    ],
-    "container-title": "PLOS Computational Biology",
-    "language": "en",
-    "editor": [
-      {
-        "given": "Olaf",
-        "family": "Sporns"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2017,
-          1,
-          26
-        ]
-      ]
-    },
-    "URL": "https://doi.org/b2t5",
-    "container-title-short": "PLoS Comput Biol",
-    "PMCID": "PMC5268412",
-    "PMID": "28125585",
-    "id": "1BSbXPPDF",
-    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1371/journal.pcbi.1005068"
   },
   {
     "publisher": "Public Library of Science (PLoS)",

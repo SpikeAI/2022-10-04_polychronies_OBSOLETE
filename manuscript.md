@@ -1,5 +1,5 @@
 ---
-title: Review on event-based, spiking motifs in neurobiological and neuromorphic data
+title: Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data
 keywords:
 - neurons
 - code
@@ -55,10 +55,10 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="citation_title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
-  <meta property="og:title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
-  <meta property="twitter:title" content="Review on event-based, spiking motifs in neurobiological and neuromorphic data" />
+  <meta name="dc.title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
+  <meta name="citation_title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
+  <meta property="og:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
+  <meta property="twitter:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta name="dc.date" content="2022-07-13" />
   <meta name="citation_publication_date" content="2022-07-13" />
   <meta name="dc.language" content="en-US" />
@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/10237a386f5ed68162682494b040e906759af199/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/10237a386f5ed68162682494b040e906759af199/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/10237a386f5ed68162682494b040e906759af199/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/bf5a477c4c7380d025d41084dddb7d859bc865f8/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/bf5a477c4c7380d025d41084dddb7d859bc865f8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/bf5a477c4c7380d025d41084dddb7d859bc865f8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,9 +111,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/10237a386f5ed68162682494b040e906759af199/))
+([permalink](https://SpikeAI.github.io/polychronies/v/bf5a477c4c7380d025d41084dddb7d859bc865f8/))
 was automatically generated
-from [SpikeAI/polychronies@10237a3](https://github.com/SpikeAI/polychronies/tree/10237a386f5ed68162682494b040e906759af199)
+from [SpikeAI/polychronies@bf5a477](https://github.com/SpikeAI/polychronies/tree/bf5a477c4c7380d025d41084dddb7d859bc865f8)
 on July 13, 2022.
 </em></small>
 
@@ -176,7 +176,7 @@ The response of a biological neuron depends largely on the precise timing of the
 This hypothesis is directly inspired by neurobiological observations in the hippocampus, and it expands the capabilities of analog representations based on the firing rate by considering a representation based on repetitions of these motifs at precise times of occurrence. A mathematical formalization would be particularly well suited to neuromorphic computing, and would allow for the supervised or self-supervised learning of such motifs in any event-driven data. We will first review some biological and theoretical evidence in neural information processing. We will then present some models for the detection of such motifs in arbitrary raster plots, synthetic, biological or artificial (notably from event-based cameras). In particular, we will discuss models which exploit the variety of synaptic delays on the dendritic tree. Then, we will try to outline some possible strategies for learning these patterns and finally discuss possible perspectives.
 
 
-## Introduction: Precise temporal patterns in the brain
+## Introduction: Importance of precise spike timings in the brain
 
 ### Ultra fast neural codes for ultra fast vision
 
@@ -260,7 +260,7 @@ sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6
  * A notable exception is the polychronization model of Izhikevich [@Izhikevich2006], which combined the construction of a random recurrent model of spiking neurons including such delays and whose weights evolved with a Spike-Time Dependent Plasticity (STDP) learning rule. In this model, raster plot analysis showed repeated activation of Polychronous Groups (PGs), i.e., specific spike patterns with a specific sequence of activations.
 
 
-### Are there precise temporal patterns in the brain?
+### Are there precise heterosynaptic spiking motifs in the brain?
 
 Currently, there is a consensus for rate-based coding models in computational and biological neuroscience. Nevertheless, there is a substantial literature in neurobiology indicating that brain dynamics often organize into stereotyped sequences (like synfire chains (Ikegaya et al., 2004), packets (Luczak et al., 2007) or hippocampal sequences [@Pastalkova2008; @Villette2015] and on the role of such precise spike timing in downstream information transfer and coding [@Branco2010; @Buzsáki2018; @Luczak2015]. This is for instance relevant in sensory pathways in vision [@doi:10.1126/science.270.5239.1207], audition [@doi:10.1038/381610a0], olfaction @doi:10.1038/384162a0] or touch [@doi:10.1038/nn1177]. In particular, one theoretical viewpoint considers synfire braids (Bienenstock, 1995), where a precise sequential motif of spikes will synchronize as it reaches the soma of a neuron for which synaptic delays are adequately tuned. In particular, computational modeling shows that at the scale of neurons, an efficient neural code can emerge where spike times are organized in prototypical, precise temporal motifs (Izhikevich, 2006) which he defined as polychronous groups.
 
@@ -292,13 +292,16 @@ It is interesting to make a parallel with the "Rapid Formation of Robust Auditor
 
 A natural candidate to use these precise temporal patterns in the brain is to use Spiking Neural Networks (SNNs) [@Maass97]. The approach which is at present most prominent in the SNNs community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.
 
-
-TODO: a paragraph on our existing work
+[
+<i class="fas fa-ban fa-lg"></i> **TODO: a paragraph on our existing work**<br>
 Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level.
 
 there are temporal delays in the nervous system, both at the neural [@doi:10.1007/s00422-014-0620-8] and behavioral [@doi:10.1371/journal.pcbi.1005068] levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks.
 
 may be used for motion detection and interpolation [@Kaplan13] [@KhoeiMassonPerrinet17]
+
+]{.banner .lightred}
+
 
 Remarkably, novel neuromorphic chips use a representation similar to that of real neurons [@arxiv:2201.12673]. For example, event-based cameras provide a stream of binary asynchronous events signaling detectable changes in luminance, and information is represented by these spike-based temporal motifs, hence their name "silicon retinas" (see Figure @fig:silicon_retina). For such devices, it is crucial to better understand the potential of using such event-based representations in order to devise novel algorithms.
 
@@ -328,6 +331,10 @@ In [@10.7554/eLife.19428], authors developed novel machine learning tools and st
 ### polychronization Izhikevitch
 
 Considering the number of spikes required to exceed a voltage threshold, asynchronous signals are less efficient than synchronous signals. However, taking axonal propagation times into account, synchronous signals may not coincide significantly at the post-synaptic neuron contrary to asynchronous or polychronous signals. The term polychronous was first introduced in 2006, by E. Izhichevitch in [@doi: 10.1162/089976606775093882]. He defines this term after pointing out a particular organization of the neurons of his spiking artificial neural network. The network is characterized by a timing-dependant learning rule for weights (STDP) and by fixed conduction delays between neurons. Due to the interplay between the delays and STDP, the spiking neurons spontaneously self-organize into groups and generate patterns of stereotypical polychronous activity, i.e. exhibit reproducible time-locked but not synchronous firing patterns. The neurons composing a group discharge at different times, but due to delays, the spikes reach the postsynaptic neuron at the same time. This synchrony leads to the summation of the excitatory post-synaptic potentials evoked by each spike and thus to the crossing of the voltage threshold and to the discharge of a spike. According to the STDP rule, the neurons involved in this activity will see their weight of synaptic connection increase and thus, constitute a polychronous group. Interestingly, thanks to the fact that a neuron can be involved in different polychronous groups,  the number of coexisting polychronous groups far exceeds the number of neurons in the network, resulting in an unprecedented memory capacity of the system.
+
+[
+<i class="fas fa-ban fa-lg"></i> **TODO**<br>
+
 -> insert fig 2 of [@doi: 10.1162/089976606775093882]
 
 Thus, the learning of delays allowing this polychronous group organization may be useful to detect temporal sequences of interest.
@@ -346,12 +353,17 @@ Thus, the learning of delays allowing this polychronous group organization may b
 
   * an extensive (graph-centric) review on [Synchronization in time-varying networks](https://arxiv.org/abs/2109.07618)
 
+]{.banner .lightred}
+
 
 A Bayesian account: "Previous methods for studying the PNG activation response to stimuli have been limited by the template-based methods used to identify PNG activation. In this letter, we outline a new method that overcomes these difficulties by establishing for the first time a probabilistic interpretation of PNG activation. We then demonstrate the use of this method by investigating the claim that PNGs might provide the foundation of a representational system." [@10.1162/NECO_a_00620].  Stimulation of a trained network produces the activation of a PNG, ie the propagation of firing activity through multiple layers due to convergent patterns of firing.
 
 ### spike distances
 
 
+
+
+<i class="fas fa-ban fa-lg"></i> **TODO**<br>
 J. D. Victor and K. P. Purpura, “Nature and precision of temporal coding in visual cortex: a metric-space analysis,” J. Neurophysiol., vol. 76, pp. 1310–1326, Aug. 1996.
 
 M. C. W. van Rossum, “A novel spike distance,” Neural Comput., vol. 13, no. 4, pp. 751–763, 2001. [21] D. Aronov and J. D. Victor, “Non-Euclidean properties of spike train metric spaces,” Physical Rev. E (Statist., Nonlinear, Soft Matter Phys.), vol. 69, no. 6, 2004.
@@ -365,6 +377,8 @@ Weyl's discrepency measure [@doi:10.1007/BF01475864] which may lead to the defin
 
 Robust computation with rhythmic spike patterns. Proceedings of the National Academy of Sciences of the United States of America 116(36), 18050 - 18059. https://dx.doi.org/10.1073/pnas.1902653116
 
+]{.banner .lightred}
+
 
 Memory traces in dynamical systems [@doi:10.1073/pnas.0804451105] : "To perform nontrivial, real-time computations on a sensory input stream, biological systems must retain a short-term memory trace of their recent inputs. It has been proposed that generic high-dimensional dynamical systems could retain a memory trace for past inputs in their current state. This raises important questions about the fundamental limits of such memory traces and the properties required of dynamical systems to achieve these limits. We address these issues by applying Fisher information theory to dynamical systems driven by time-dependent signals corrupted by noise. We introduce the Fisher Memory Curve (FMC) as a measure of the signal-to-noise ratio (SNR) embedded in the dynamical state relative to the input SNR. The integrated FMC indicates the total memory capacity. We apply this theory to linear neuronal networks and show that the capacity of networks with normal connectivity matrices is exactly 1 and that of any network of N neurons is, at most, N. A nonnormal network achieving this bound is subject to stringent design constraints: It must have a hidden feedforward architecture that superlinearly amplifies its input for a time of order N, and the input connectivity must optimally match this architecture. The memory capacity of networks subject to saturating nonlinearities is further limited, and cannot exceed √𝑁. This limit can be realized by feedforward structures with divergent fan out that distributes the signal across neurons, thereby avoiding saturation. We illustrate the generality of the theory by showing that memory in fluid systems can be sustained by transient nonnormal amplification due to convective instability or the onset of turbulence."
 
@@ -372,6 +386,9 @@ We address these issues by applying Fisher information theory to dynamical syste
 
 
 ## Detecting patterns in biological raster plots
+
+
+<i class="fas fa-ban fa-lg"></i> **TODO**<br>
 
 ### decoding neural activity
 
@@ -461,9 +478,13 @@ Dynamics of Delay-Coupled Excitable Neural Systems.
 
 V. Thanasoulis, B. Vogginger, J. Partzsch and C. Mayr, "Delay-Based Neural Computation: Pulse Routing Architecture and Benchmark Application in FPGA," 2021 28th IEEE International Conference on Electronics, Circuits, and Systems (ICECS), 2021, pp. 1-5, doi: 10.1109/ICECS53924.2021.9665468.
 
+]{.banner .lightred}
 
 
 ## Learning to detect polychronous groups
+
+<i class="fas fa-ban fa-lg"></i> **TODO**<br>
+
 
 ### Learning weights ... and delays
 
@@ -526,8 +547,11 @@ Triplett MA, Avitan L, Goodhill GJ.PLoS Comput Biol. 2018
 
 Training and Spontaneous Reinforcement of Neuronal Assemblies by Spike Timing Plasticity.
 Ocker GK, Doiron B.Cereb Cortex. 2019.
+]{.banner .lightred}
 
 
+
+<i class="fas fa-ban fa-lg"></i> **TODO**<br>
 
 ### learning pattern detection on natural images / event-based cameras
 
@@ -539,10 +563,13 @@ Ocker GK, Doiron B.Cereb Cortex. 2019.
 
 
 #### Grimaldi CBMI / PAMI
+]{.banner .lightred}
 
 
 
 ## Discussion
+
+<i class="fas fa-ban fa-lg"></i> **TODO**<br>
 
 ### dynamical models
 
@@ -559,6 +586,7 @@ Emergence of electronic architectures specialized in Sparse Event-Based Convolut
 ## development
 
 scaffolding of neural assemblies / existence of critical periods : [@doi:10.1101/2021.06.08.447542]
+]{.banner .lightred}
 
 
 ## References {.page_break_before}
