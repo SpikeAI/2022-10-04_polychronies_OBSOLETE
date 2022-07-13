@@ -62,7 +62,7 @@ deconvolved
 demonstated
 dendritic
 dependance
-Differentially
+differentially
 dimensionality
 d’Informatique
 discrepency
@@ -179,7 +179,7 @@ PLoS
 PNG
 PNGs
 Politi
-Polychronization
+polychronization
 polychronous
 Poulet
 pre
@@ -223,7 +223,7 @@ STRFs
 subserve
 superlinearly
 supersequences
-Synfire
+synfire
 Systèmes
 Tempotron
 thalamocortical
