@@ -1,8 +1,6 @@
 
 ## Learning to detect polychronous groups
 
-<i class="fas fa-ban fa-lg"></i> **TODO**<br>
-
 
 ### Learning weights ... and delays
 
@@ -13,7 +11,8 @@ spike time coding in a neuron: We will describe the Spike-Time Dependent Plastic
 * [@Perrinet2001] : STDP
 * Masquelier
 
-<i class="fas fa-ban fa-lg"></i> **TODO amelie** section sur l'apprentissage des délais dans la biologie<br>
+<i class="fas fa-ban fa-lg"></i> 
+**TODO amelie** section sur l'apprentissage des délais dans la biologie<br>
 
 [@arxiv:2102.04906]
 
