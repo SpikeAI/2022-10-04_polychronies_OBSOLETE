@@ -62,7 +62,7 @@ deconvolved
 demonstated
 dendritic
 dependance
-differentially
+Differentially
 dimensionality
 d’Informatique
 discrepency
@@ -98,7 +98,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-hippocampal
+Hippocampal
 Hirase
 Huning
 HVC
@@ -179,7 +179,7 @@ PLoS
 PNG
 PNGs
 Politi
-polychronization
+Polychronization
 polychronous
 Poulet
 pre
@@ -190,7 +190,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-Rastermap
+rastermap
 RefRN
 Reproducibility
 resistive

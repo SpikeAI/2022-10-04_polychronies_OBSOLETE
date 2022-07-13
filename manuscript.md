@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/893ea6c4e537201674acd273959487546f122ee5/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/893ea6c4e537201674acd273959487546f122ee5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/893ea6c4e537201674acd273959487546f122ee5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/10237a386f5ed68162682494b040e906759af199/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/10237a386f5ed68162682494b040e906759af199/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/10237a386f5ed68162682494b040e906759af199/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,9 +111,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/893ea6c4e537201674acd273959487546f122ee5/))
+([permalink](https://SpikeAI.github.io/polychronies/v/10237a386f5ed68162682494b040e906759af199/))
 was automatically generated
-from [SpikeAI/polychronies@893ea6c](https://github.com/SpikeAI/polychronies/tree/893ea6c4e537201674acd273959487546f122ee5)
+from [SpikeAI/polychronies@10237a3](https://github.com/SpikeAI/polychronies/tree/10237a386f5ed68162682494b040e906759af199)
 on July 13, 2022.
 </em></small>
 
@@ -169,7 +169,7 @@ on July 13, 2022.
 
 ## Abstract {.page_break_before}
 
-Why do neurons communicate through spikes? By definition, a spike, or action potential, is a binary event —it can occur or not without further details— at asynchronous timings, i.e. it can occur at any time - differentially to the discretized timing classically used in digital processing. In the living world, neurons almost systematically use this so-called event-based representation, though we do not yet have a clear idea why. A better understanding of this phenomenon remains a fundamental challenge in neurobiology in order to better interpret the masses of recorded data. It is also an emerging challenge in computer science to allow the efficient exploitation of a new class of sensors and event-based computers, called neuromorphic, which could allow significant gains in computing time and energy consumption —a major societal challenge in the age of the digital economy and of global warming.
+Why do neurons communicate through spikes? By definition, a spike, or action potential, is a all-or-none event —it can occur or not without further details— at asynchronous timings, i.e. it can occur at any continuous time - differentially to the discretized timing classically used in digital processing. In the living world, neural systems almost systematically use this so-called event-based representation, though we do not yet have a clear idea why. A better understanding of this phenomenon remains a fundamental challenge in neurobiology in order to better interpret the masses of recorded data. It is also an emerging challenge in computer science to allow the efficient exploitation of a new class of sensors and event-based computers, called neuromorphic, which could allow significant gains in computing time and energy consumption —a major societal challenge in the age of the digital economy and of global warming.
 
 The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This *event-based representation* present in the neuronal code is essential in understanding information processing and yet, most neuronal models do not take advantage of this minute temporal dimension. Our goal here is to bring an interdisciplinary perspective on the computational advantage of time series representations for the brain and for information processing machines. In particular, we will focus on the hypothesis that there exists in an assembly of neurons a representation based on a set of motifs of different relative spike times. Here, we will review current litterature on the detection of such motifs in generic raster plots. It is work in progress, where anybody interested can *openly* join.
 
