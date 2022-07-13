@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/bf5a477c4c7380d025d41084dddb7d859bc865f8/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/bf5a477c4c7380d025d41084dddb7d859bc865f8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/bf5a477c4c7380d025d41084dddb7d859bc865f8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/41c9d4fb9945cd8b53355d281f68eff1db549c66/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/41c9d4fb9945cd8b53355d281f68eff1db549c66/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/41c9d4fb9945cd8b53355d281f68eff1db549c66/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,9 +111,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/bf5a477c4c7380d025d41084dddb7d859bc865f8/))
+([permalink](https://SpikeAI.github.io/polychronies/v/41c9d4fb9945cd8b53355d281f68eff1db549c66/))
 was automatically generated
-from [SpikeAI/polychronies@bf5a477](https://github.com/SpikeAI/polychronies/tree/bf5a477c4c7380d025d41084dddb7d859bc865f8)
+from [SpikeAI/polychronies@41c9d4f](https://github.com/SpikeAI/polychronies/tree/41c9d4fb9945cd8b53355d281f68eff1db549c66)
 on July 13, 2022.
 </em></small>
 
@@ -204,10 +204,9 @@ The analysis of generic raster plots reveals particular traits that hint at the 
 
 ![The timing of the spikes produced following the repetition of a step stimuli is less reproducible than that to a noisy stimulus. While this seems paradoxical at first sight, this is due to the use of the same *frozen* nois at each repetition and highlight the highly reproducible pattern of spikes when it is driven by a highly dynamic input. See this [notebook](https://github.com/laurentperrinet/2022_UE-neurosciences-computationnelles/blob/master/C_MainenSejnowski1995.ipynb) for a replication of this result using a simple LIF model.](https://camo.githubusercontent.com/77f4a48a0fe8f98ffab3c1f21dca1e74286b14d47c17120ee9627f3351fcd5e7/687474703a2f2f692e737461636b2e696d6775722e636f6d2f69786e727a2e706e67){#fig:mainen}
 
-In his book "Corticonics" [@Abeles1991], Moshe Abeles asked if the role of cortical neurons is whether to integrate synaptic inputs or rather to detect coincidences in temporal spiking patterns. The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models. While the first hypothesis favors the rate coding theory, the second possibility highlights the need for temporal precision in the neural code [@Paugam12]. The book then demonstrates that this could take the form of "synfire chains", that is synchronous activity on subsets of neurons which could be propagated in a stable fashion. Since, numerous studies demonstrated the emergence of synchronicity in neuron population activity [@doi:10/gm79hh], efficient encoding thanks to the use of spike latencies [@Perrinet2004; @doi:10.1126/science.1149639] or precise timing in the auditory system [@https://repository.cshl.edu/id/eprint/30941; @doi:10.1523/JNEUROSCI.10-10-03227.1990]. All these findings, and more [@doi:10.1023/B:NACO.0000027755.02868.60], highlight the importance of the temporal aspect of the neural code and suggest the existence of repeated spatio-temporal patterns in the spike train.
+In his book "Corticonics" [@Abeles1991], Moshe Abeles queried if the role of cortical neurons is whether to integrate synaptic inputs or rather to detect coincidences in temporal spiking patterns. The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models. While the first hypothesis favors the rate coding theory, the second possibility highlights the need for temporal precision in the neural code [@Paugam12]. The book then demonstrates that this could take the form of "synfire chains", that is synchronous activity on subsets of neurons which could be propagated in a stable fashion. Since, numerous studies demonstrated the emergence of synchronicity in neuron population activity [@doi:10/gm79hh], efficient encoding thanks to the use of spike latencies [@Perrinet2004; @doi:10.1126/science.1149639] or precise timing in the auditory system [@https://repository.cshl.edu/id/eprint/30941; @doi:10.1523/JNEUROSCI.10-10-03227.1990]. All these findings, and more [@doi:10.1023/B:NACO.0000027755.02868.60], highlight the importance of the temporal aspect of the neural code and suggest the existence of repeated spatio-temporal patterns in the spike train.
 
 It was shown that a simple model may allow the propagation of such synfire chains [@pmid:11665761]. This model considers the dynamics of leaky integrate-of-fire neurons in different groups of similar size. Each neuron of one group is connected by an excitatory synapse to the next. When a pulse is elicited in the first group, this may generate a spike in the next group. Depending on the weight value, this new activity may get more or less synchronized than the previous pulse (as measured by the standard deviation of spike times in the pulse). Recursively applying this to a sequence of groups generates either a synfire propagation or not. A simple simulation is shown in Figure [@fig:diesman]. A crucial aspect of this emergence is in particular the balance between excitation and inhibition [@doi:10.1111/j.1460-9568.2008.06434.x]. This was for instance modeled by  feed-forward inhibition which is a fine-scaled latency mechanism that is an essential ingredient in modelling push-pull effects in the primary visual cortex [@doi:10.3389/fncir.2016.00037].
-
 
 ![Simulation of a synfire propagation [using Brian](https://brian2.readthedocs.io/en/stable/examples/frompapers.Diesmann_et_al_1999.html). The model consists of 10 groups of 100 neurons each. A pulse with a given jitter is generated in the first group which here generates a pulse after a certain processing delay in the second group with a lower jitter. This allows the propagation of the synchronous activity along the chain of the neural groups.](https://brian2.readthedocs.io/en/stable/_images/frompapers.Diesmann_et_al_1999.1.png){#fig:diesman}
 
@@ -318,19 +317,18 @@ First, we will review models for the detection of polychronous groups:
 Finally we will discuss future avenues for effective PG detection and learning in event streams.
 
 
+## Theoretical models for the detection of precise heterosynaptic spiking motifs
+#sec:detection
 
-## Models of polychronization detection in models
+A popular model for the detection of latency patterns is the tempotron [@doi:10/ch29r4]. This model is in particular reviewed in [@doi:10.1016/j.conb.2014.01.004]. The Tempotron is a supervised synaptic learning algorithm which classifies a distractor from a target motif. This aims at extending the perceptron which does not incorporate a spike timing framework. The tempotron learning rule is derived by an optimization process and takes the form of a STDP rule.  It is general consensus that spike timing (STDP) plays a crucial role in the development of synaptic efficacy for many different kinds of neurons [@doi:10.1146/annurev.neuro.31.060407.125639]. The limits of this model is that it's output is only binary and that it's storage capacity are limited.
 
-A model for the detection of latency patterns is the tempotron
-[@doi:10/ch29r4]. This model is in particular reviewed in [@doi:10.1016/j.conb.2014.01.004]. The Tempotron is a supervised synaptic learning algorithm which classifies a distractor from a target motif. This aims at extending the perceptron which does not incorporate a spike timing framework. The tempotron learning rule is derived by an optimization process and takes the form of a STDP rule.  It is general consensus that spike timing (STDP) plays a crucial role in the development of synaptic efficacy for many different kinds of neurons [@doi:10.1146/annurev.neuro.31.060407.125639]. The limits of this model is that it's output is only binary and that it's staorage capacity are limited.
+Some other models of latency motifs detection using STDP learning rules. For instance, [@10.1016/j.neunet.2017.12.005] implements a STDP-based spiking deep convolutional neural networks for object recognition;  [@doi:10.1016/j.neunet.2018.05.018] develops a form of spike-based, competitive learning applied for unsupervised learning. In [@10.7554/eLife.19428], authors developed novel machine learning tools and statistical tests for unsupervised spatio-temporal pattern detection in non-stationary environments, which was applied to simultaneous electrophysiological recordings from tens to hundreds of neurons for decoding cognitive processes from neural activity.
 
-Some other models of latency motifs detection using STDP learning rules. For instance, [@10.1016/j.neunet.2017.12.005] implements a STDP-based spiking deep convolutional neural networks for object recognition;  [@doi:10.1016/j.neunet.2018.05.018] develops a form of spike-based, competitive learning applied for unsupervised learning.
+In the following of this section, we will review theoretical models which directly tackle the problem of using precise heterosynaptic spiking motifs.
 
-In [@10.7554/eLife.19428], authors developed novel machine learning tools and statistical tests for unsupervised spatio-temporal pattern detection in non-stationary environments, which was applied to simultaneous electrophysiological recordings from tens to hundreds of neurons for decoding cognitive processes from neural activity.
+### Izhikevitch's polychronization model
 
-### polychronization Izhikevitch
-
-Considering the number of spikes required to exceed a voltage threshold, asynchronous signals are less efficient than synchronous signals. However, taking axonal propagation times into account, synchronous signals may not coincide significantly at the post-synaptic neuron contrary to asynchronous or polychronous signals. The term polychronous was first introduced in 2006, by E. Izhichevitch in [@doi: 10.1162/089976606775093882]. He defines this term after pointing out a particular organization of the neurons of his spiking artificial neural network. The network is characterized by a timing-dependant learning rule for weights (STDP) and by fixed conduction delays between neurons. Due to the interplay between the delays and STDP, the spiking neurons spontaneously self-organize into groups and generate patterns of stereotypical polychronous activity, i.e. exhibit reproducible time-locked but not synchronous firing patterns. The neurons composing a group discharge at different times, but due to delays, the spikes reach the postsynaptic neuron at the same time. This synchrony leads to the summation of the excitatory post-synaptic potentials evoked by each spike and thus to the crossing of the voltage threshold and to the discharge of a spike. According to the STDP rule, the neurons involved in this activity will see their weight of synaptic connection increase and thus, constitute a polychronous group. Interestingly, thanks to the fact that a neuron can be involved in different polychronous groups,  the number of coexisting polychronous groups far exceeds the number of neurons in the network, resulting in an unprecedented memory capacity of the system.
+Considering the number of spikes required to exceed a voltage threshold, asynchronous signals are less efficient than synchronous signals. However, taking axonal propagation times into account, synchronous signals may not coincide significantly at the post-synaptic neuron contrary to asynchronous or polychronous signals. The term polychronous was first introduced in 2006, by E. Izhichevitch in [@doi:10.1162/089976606775093882]. He defines this term after pointing out a particular organization of the neurons of his spiking artificial neural network. The network is characterized by a timing-dependant learning rule for weights (STDP) and by fixed conduction delays between neurons. Due to the interplay between the delays and STDP, the spiking neurons spontaneously self-organize into groups and generate patterns of stereotypical polychronous activity, i.e. exhibit reproducible time-locked but not synchronous firing patterns. The neurons composing a group discharge at different times, but due to delays, the spikes reach the postsynaptic neuron at the same time. This synchrony leads to the summation of the excitatory post-synaptic potentials evoked by each spike and thus to the crossing of the voltage threshold and to the discharge of a spike. According to the STDP rule, the neurons involved in this activity will see their weight of synaptic connection increase and thus, constitute a polychronous group. Interestingly, thanks to the fact that a neuron can be involved in different polychronous groups,  the number of coexisting polychronous groups far exceeds the number of neurons in the network, resulting in an unprecedented memory capacity of the system.
 
 [
 <i class="fas fa-ban fa-lg"></i> **TODO**<br>
@@ -358,9 +356,18 @@ Thus, the learning of delays allowing this polychronous group organization may b
 
 A Bayesian account: "Previous methods for studying the PNG activation response to stimuli have been limited by the template-based methods used to identify PNG activation. In this letter, we outline a new method that overcomes these difficulties by establishing for the first time a probabilistic interpretation of PNG activation. We then demonstrate the use of this method by investigating the claim that PNGs might provide the foundation of a representational system." [@10.1162/NECO_a_00620].  Stimulation of a trained network produces the activation of a PNG, ie the propagation of firing activity through multiple layers due to convergent patterns of firing.
 
+Memory traces in dynamical systems [@doi:10.1073/pnas.0804451105] : "To perform nontrivial, real-time computations on a sensory input stream, biological systems must retain a short-term memory trace of their recent inputs. It has been proposed that generic high-dimensional dynamical systems could retain a memory trace for past inputs in their current state. This raises important questions about the fundamental limits of such memory traces and the properties required of dynamical systems to achieve these limits. We address these issues by applying Fisher information theory to dynamical systems driven by time-dependent signals corrupted by noise. We introduce the Fisher Memory Curve (FMC) as a measure of the signal-to-noise ratio (SNR) embedded in the dynamical state relative to the input SNR. The integrated FMC indicates the total memory capacity. We apply this theory to linear neuronal networks and show that the capacity of networks with normal connectivity matrices is exactly 1 and that of any network of N neurons is, at most, N. A nonnormal network achieving this bound is subject to stringent design constraints: It must have a hidden feedforward architecture that superlinearly amplifies its input for a time of order N, and the input connectivity must optimally match this architecture. The memory capacity of networks subject to saturating nonlinearities is further limited, and cannot exceed √𝑁. This limit can be realized by feedforward structures with divergent fan out that distributes the signal across neurons, thereby avoiding saturation. We illustrate the generality of the theory by showing that memory in fluid systems can be sustained by transient nonnormal amplification due to convective instability or the onset of turbulence."
+
+We address these issues by applying Fisher information theory to dynamical systems driven by time-dependent signals corrupted by noise.  Memory capacity is constrained by architecture: "This limit can be realized by feedforward structures with divergent fan out that distributes the signal across neurons, thereby avoiding saturation."
+
+
+## Detecting precise heterosynaptic spiking motifs in biological raster plots
+
+
+<i class="fas fa-ban fa-lg"></i> **TODO**<br>
+
+
 ### spike distances
-
-
 
 
 <i class="fas fa-ban fa-lg"></i> **TODO**<br>
@@ -379,16 +386,6 @@ Robust computation with rhythmic spike patterns. Proceedings of the National Ac
 
 ]{.banner .lightred}
 
-
-Memory traces in dynamical systems [@doi:10.1073/pnas.0804451105] : "To perform nontrivial, real-time computations on a sensory input stream, biological systems must retain a short-term memory trace of their recent inputs. It has been proposed that generic high-dimensional dynamical systems could retain a memory trace for past inputs in their current state. This raises important questions about the fundamental limits of such memory traces and the properties required of dynamical systems to achieve these limits. We address these issues by applying Fisher information theory to dynamical systems driven by time-dependent signals corrupted by noise. We introduce the Fisher Memory Curve (FMC) as a measure of the signal-to-noise ratio (SNR) embedded in the dynamical state relative to the input SNR. The integrated FMC indicates the total memory capacity. We apply this theory to linear neuronal networks and show that the capacity of networks with normal connectivity matrices is exactly 1 and that of any network of N neurons is, at most, N. A nonnormal network achieving this bound is subject to stringent design constraints: It must have a hidden feedforward architecture that superlinearly amplifies its input for a time of order N, and the input connectivity must optimally match this architecture. The memory capacity of networks subject to saturating nonlinearities is further limited, and cannot exceed √𝑁. This limit can be realized by feedforward structures with divergent fan out that distributes the signal across neurons, thereby avoiding saturation. We illustrate the generality of the theory by showing that memory in fluid systems can be sustained by transient nonnormal amplification due to convective instability or the onset of turbulence."
-
-We address these issues by applying Fisher information theory to dynamical systems driven by time-dependent signals corrupted by noise.  Memory capacity is constrained by architecture: "This limit can be realized by feedforward structures with divergent fan out that distributes the signal across neurons, thereby avoiding saturation."
-
-
-## Detecting patterns in biological raster plots
-
-
-<i class="fas fa-ban fa-lg"></i> **TODO**<br>
 
 ### decoding neural activity
 
@@ -495,9 +492,13 @@ spike time coding in a neuron: We will describe the Spike-Time Dependent Plastic
 * [@Perrinet2001] : STDP
 * Masquelier
 
-bonjour amelie - coucou ceci est un test ! j'essaye de citer : [@arxiv:2102.04906]
+<i class="fas fa-ban fa-lg"></i> **TODO amelie** section sur l'apprentissage des délais dans la biologie<br>
+
+[@arxiv:2102.04906]
 
 [@arxiv:2011.09380]
+
+]{.banner .lightred}
 
 Bio-plausible Unsupervised Delay Learning for Extracting Temporal Features in Spiking Neural Networks
 Alireza Nadafian, Mohammad Ganjtabesh
