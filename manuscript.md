@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/d88b54007db3cd544d3e89df5a4a1dadfff305ea/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/d88b54007db3cd544d3e89df5a4a1dadfff305ea/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/d88b54007db3cd544d3e89df5a4a1dadfff305ea/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/a92e62673b0aae77f7d2f742bb9974fe36c5ecf4/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a92e62673b0aae77f7d2f742bb9974fe36c5ecf4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a92e62673b0aae77f7d2f742bb9974fe36c5ecf4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,9 +111,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/d88b54007db3cd544d3e89df5a4a1dadfff305ea/))
+([permalink](https://SpikeAI.github.io/polychronies/v/a92e62673b0aae77f7d2f742bb9974fe36c5ecf4/))
 was automatically generated
-from [SpikeAI/polychronies@d88b540](https://github.com/SpikeAI/polychronies/tree/d88b54007db3cd544d3e89df5a4a1dadfff305ea)
+from [SpikeAI/polychronies@a92e626](https://github.com/SpikeAI/polychronies/tree/a92e62673b0aae77f7d2f742bb9974fe36c5ecf4)
 on July 13, 2022.
 </em></small>
 
@@ -464,6 +464,8 @@ https://doi.org/10.1101/2020.06.03.131573;
  * Model predicts relationship between noise, signal, and spontaneous correlations
  * Stimulus statistics dependence of response statistics is explained
 
+
+To overcome the limits of models which require spike times to be discretized, utilize a sub-optimal least-squares criterion, or do not provide uncertainty estimates for model predictions or estimated parameters, [@arXiv:2010.04875]  address each of these shortcomings by developing a point process model that characterizes fine-scale sequences at the level of individual spikes and represents sequence occurrences as a small number of marked events in continuous time. They also introduce learnable time warping parameters to model sequences of varying duration, which have been experimentally observed in neural circuits and demonstrate these advantages on experimental recordings from songbird higher vocal center and rodent hippocampus.
 
 #### FPGA
 

@@ -93,7 +93,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-Hippocampal
+hippocampal
 Hirase
 HVC
 ICECS
@@ -122,6 +122,7 @@ Laboratoire
 l’apprentissage
 latencies
 laurentperrinet
+learnable
 LFP
 LIF
 lightred
@@ -170,7 +171,7 @@ PNG
 PNGs
 Politi
 polychronization
-Polychronous
+polychronous
 Poulet
 pre
 premotor
@@ -197,7 +198,7 @@ SNR
 soma
 spatio
 spatiotemporal
-spectro
+Spectro
 spectrograms
 SpikeShip
 SPOTDis
@@ -214,7 +215,7 @@ supersequences
 sur
 Synfire
 Systèmes
-tempotron
+Tempotron
 thalamocortical
 Thanasoulis
 Timone
