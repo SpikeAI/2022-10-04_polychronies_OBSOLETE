@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/41c9d4fb9945cd8b53355d281f68eff1db549c66/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/41c9d4fb9945cd8b53355d281f68eff1db549c66/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/41c9d4fb9945cd8b53355d281f68eff1db549c66/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/d88b54007db3cd544d3e89df5a4a1dadfff305ea/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/d88b54007db3cd544d3e89df5a4a1dadfff305ea/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/d88b54007db3cd544d3e89df5a4a1dadfff305ea/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,9 +111,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/41c9d4fb9945cd8b53355d281f68eff1db549c66/))
+([permalink](https://SpikeAI.github.io/polychronies/v/d88b54007db3cd544d3e89df5a4a1dadfff305ea/))
 was automatically generated
-from [SpikeAI/polychronies@41c9d4f](https://github.com/SpikeAI/polychronies/tree/41c9d4fb9945cd8b53355d281f68eff1db549c66)
+from [SpikeAI/polychronies@d88b540](https://github.com/SpikeAI/polychronies/tree/d88b54007db3cd544d3e89df5a4a1dadfff305ea)
 on July 13, 2022.
 </em></small>
 
@@ -480,8 +480,6 @@ V. Thanasoulis, B. Vogginger, J. Partzsch and C. Mayr, "Delay-Based Neural Compu
 
 ## Learning to detect polychronous groups
 
-<i class="fas fa-ban fa-lg"></i> **TODO**<br>
-
 
 ### Learning weights ... and delays
 
@@ -492,7 +490,8 @@ spike time coding in a neuron: We will describe the Spike-Time Dependent Plastic
 * [@Perrinet2001] : STDP
 * Masquelier
 
-<i class="fas fa-ban fa-lg"></i> **TODO amelie** section sur l'apprentissage des délais dans la biologie<br>
+<i class="fas fa-ban fa-lg"></i> 
+**TODO amelie** section sur l'apprentissage des délais dans la biologie<br>
 
 [@arxiv:2102.04906]
 

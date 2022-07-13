@@ -60,7 +60,7 @@ demonstated
 dendritic
 dependance
 des
-Differentially
+differentially
 dimensionality
 d’Informatique
 discrepency
@@ -93,7 +93,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-hippocampal
+Hippocampal
 Hirase
 HVC
 ICECS
