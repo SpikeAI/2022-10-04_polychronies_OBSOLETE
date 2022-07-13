@@ -1,5 +1,8 @@
 ## Detecting patterns in biological raster plots
 
+
+<i class="fas fa-ban fa-lg"></i> **TODO**<br>
+
 ### decoding neural activity
 
 In generic linear non linear lnl models, the output is assumed to be poisson. As such a simple decoding strategy is to asscume it is to b inferned for a given tuning curves (Jayazeri) or simply by a simple regression [@doi:10.1523/jneurosci.1335-12.2012]. This latter model assumes a Bernoulli model for the generation of spikes such that the decoding amounts to a single-layer logistic regression.
@@ -87,3 +90,5 @@ Dynamics of Delay-Coupled Excitable Neural Systems.
     DOI: 10.1142/S0218127409023111
 
 V. Thanasoulis, B. Vogginger, J. Partzsch and C. Mayr, "Delay-Based Neural Computation: Pulse Routing Architecture and Benchmark Application in FPGA," 2021 28th IEEE International Conference on Electronics, Circuits, and Systems (ICECS), 2021, pp. 1-5, doi: 10.1109/ICECS53924.2021.9665468.
+
+]{.banner .lightred}

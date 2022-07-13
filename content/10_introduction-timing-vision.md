@@ -1,4 +1,4 @@
-## Introduction: Precise temporal patterns in the brain
+## Introduction: Importance of precise spike timings in the brain
 
 ### Ultra fast neural codes for ultra fast vision
 

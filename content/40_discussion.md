@@ -1,6 +1,8 @@
 
 ## Discussion
 
+<i class="fas fa-ban fa-lg"></i> **TODO**<br>
+
 ### dynamical models
 
 Dumas and colleagues [@arxiv:2112.12147] : three levels / fourth paradigm [@doi:10.1109/JPROC.2011.2155130] i.e., data exploration in which the scientific models are fit to the data by learning algorithms.
@@ -16,3 +18,4 @@ Emergence of electronic architectures specialized in Sparse Event-Based Convolut
 ## development
 
 scaffolding of neural assemblies / existence of critical periods : [@doi:10.1101/2021.06.08.447542]
+]{.banner .lightred}

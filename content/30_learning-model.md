@@ -1,6 +1,9 @@
 
 ## Learning to detect polychronous groups
 
+<i class="fas fa-ban fa-lg"></i> **TODO**<br>
+
+
 ### Learning weights ... and delays
 
 spike time coding in a neuron: We will describe the Spike-Time Dependent Plasticity (STDP) [@doi:10/ftvvd8] rule which implement an unsupervised learning aiming at optimizing the detection of polychronous patterns, that is volleys of spikes which are synchronized, up to some stable pattern of pre-synaptic delays. This STDP rule will be based by the inversion of the generative model for spike formation and will therefore be derived by a Bayesian approach. This will decouple the active synapses (similarly to a logistic regression) from the values of possible synaptic delays.
@@ -62,3 +65,4 @@ Triplett MA, Avitan L, Goodhill GJ.PLoS Comput Biol. 2018
 
 Training and Spontaneous Reinforcement of Neuronal Assemblies by Spike Timing Plasticity.
 Ocker GK, Doiron B.Cereb Cortex. 2019.
+]{.banner .lightred}
