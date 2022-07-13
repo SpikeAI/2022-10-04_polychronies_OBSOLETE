@@ -9,7 +9,7 @@ spike time coding in a neuron: We will describe the Spike-Time Dependent Plastic
 
 * [@Perrinet2002] : coherence detection
 * [@Perrinet2001] : STDP
-* Masquelier
+* Masquelier, Gilson et al. - 2010 - STDP in Recurrent Neuronal Networks [@doi:10.3389/fncom.2010.00023] or Delay Selection by Spike-Timing-Dependent Plasticity in Recurrent Networks of Spiking Neurons Receiving Oscillatory Inputs. PLoS Comput Biol 9(2): e1002897. [@doi:10.1371/journal.pcbi.1002897] which targets at the selective potentiation of recurrent connections with different axonal and dendritic delays during oscillatory activity.
 
 <i class="fas fa-ban fa-lg"></i> 
 **TODO amelie** section sur l'apprentissage des délais dans la biologie<br>
