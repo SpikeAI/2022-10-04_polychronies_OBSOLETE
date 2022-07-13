@@ -1,7 +1,28 @@
-## Detecting patterns in biological raster plots
+## Detecting precise heterosynaptic spiking motifs in biological raster plots
 
 
 <i class="fas fa-ban fa-lg"></i> **TODO**<br>
+
+
+### spike distances
+
+
+<i class="fas fa-ban fa-lg"></i> **TODO**<br>
+J. D. Victor and K. P. Purpura, “Nature and precision of temporal coding in visual cortex: a metric-space analysis,” J. Neurophysiol., vol. 76, pp. 1310–1326, Aug. 1996.
+
+M. C. W. van Rossum, “A novel spike distance,” Neural Comput., vol. 13, no. 4, pp. 751–763, 2001. [21] D. Aronov and J. D. Victor, “Non-Euclidean properties of spike train metric spaces,” Physical Rev. E (Statist., Nonlinear, Soft Matter Phys.), vol. 69, no. 6, 2004.
+
+T. Kreuz, J. S. Haas, A. Morelli, H. D. I. Abarbanel, and A. Politi, “Measuring spike train synchrony,” J. Neurosci. Methods, vol. 165, no. 1, pp. 151–161, 2007. [23] H.
+
+Paper by [@Moser2014] On Stability of Distance Measures for Event Sequences Induced by Level-Crossing Sampling
+
+Weyl's discrepency measure [@doi:10.1007/BF01475864] which may lead to the definition of a cross-correlation.
+
+
+Robust computation with rhythmic spike patterns. Proceedings of the National Academy of Sciences of the United States of America 116(36), 18050 - 18059. https://dx.doi.org/10.1073/pnas.1902653116
+
+]{.banner .lightred}
+
 
 ### decoding neural activity
 

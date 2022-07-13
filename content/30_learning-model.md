@@ -13,9 +13,13 @@ spike time coding in a neuron: We will describe the Spike-Time Dependent Plastic
 * [@Perrinet2001] : STDP
 * Masquelier
 
-bonjour amelie - coucou ceci est un test ! j'essaye de citer : [@arxiv:2102.04906]
+<i class="fas fa-ban fa-lg"></i> **TODO amelie** section sur l'apprentissage des délais dans la biologie<br>
+
+[@arxiv:2102.04906]
 
 [@arxiv:2011.09380]
+
+]{.banner .lightred}
 
 Bio-plausible Unsupervised Delay Learning for Extracting Temporal Features in Spiking Neural Networks
 Alireza Nadafian, Mohammad Ganjtabesh
