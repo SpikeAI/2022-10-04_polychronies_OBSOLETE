@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/a92e62673b0aae77f7d2f742bb9974fe36c5ecf4/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a92e62673b0aae77f7d2f742bb9974fe36c5ecf4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/a92e62673b0aae77f7d2f742bb9974fe36c5ecf4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/ec179504340ed38660766a2ae4be29d6abd78db2/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/ec179504340ed38660766a2ae4be29d6abd78db2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/ec179504340ed38660766a2ae4be29d6abd78db2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,9 +111,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/a92e62673b0aae77f7d2f742bb9974fe36c5ecf4/))
+([permalink](https://SpikeAI.github.io/polychronies/v/ec179504340ed38660766a2ae4be29d6abd78db2/))
 was automatically generated
-from [SpikeAI/polychronies@a92e626](https://github.com/SpikeAI/polychronies/tree/a92e62673b0aae77f7d2f742bb9974fe36c5ecf4)
+from [SpikeAI/polychronies@ec17950](https://github.com/SpikeAI/polychronies/tree/ec179504340ed38660766a2ae4be29d6abd78db2)
 on July 13, 2022.
 </em></small>
 
@@ -490,7 +490,7 @@ spike time coding in a neuron: We will describe the Spike-Time Dependent Plastic
 
 * [@Perrinet2002] : coherence detection
 * [@Perrinet2001] : STDP
-* Masquelier
+* Masquelier, Gilson et al. - 2010 - STDP in Recurrent Neuronal Networks [@doi:10.3389/fncom.2010.00023] or Delay Selection by Spike-Timing-Dependent Plasticity in Recurrent Networks of Spiking Neurons Receiving Oscillatory Inputs. PLoS Comput Biol 9(2): e1002897. [@doi:10.1371/journal.pcbi.1002897] which targets at the selective potentiation of recurrent connections with different axonal and dendritic delays during oscillatory activity.
 
 <i class="fas fa-ban fa-lg"></i> 
 **TODO amelie** section sur l'apprentissage des délais dans la biologie<br>

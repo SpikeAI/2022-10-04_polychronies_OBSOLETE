@@ -332,7 +332,14 @@ content/30_learning-model.md:7:pre
 content/30_learning-model.md:7:STDP
 content/30_learning-model.md:7:STDP
 content/30_learning-model.md:11:STDP
+content/30_learning-model.md:12:axonal
+content/30_learning-model.md:12:Comput
+content/30_learning-model.md:12:dendritic
+content/30_learning-model.md:12:Gilson
 content/30_learning-model.md:12:Masquelier
+content/30_learning-model.md:12:PLoS
+content/30_learning-model.md:12:potentiation
+content/30_learning-model.md:12:STDP
 content/30_learning-model.md:15:amelie
 content/30_learning-model.md:15:biologie
 content/30_learning-model.md:15:dans

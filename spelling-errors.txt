@@ -83,6 +83,7 @@ Gabor
 Ganjtabesh
 Gaussians
 Gillett
+Gilson
 GJ
 GLM
 Goodhill
@@ -93,7 +94,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-hippocampal
+Hippocampal
 Hirase
 HVC
 ICECS
@@ -172,6 +173,7 @@ PNGs
 Politi
 polychronization
 polychronous
+potentiation
 Poulet
 pre
 premotor
@@ -181,7 +183,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-Rastermap
+rastermap
 RefRN
 resistive
 retinotopic
