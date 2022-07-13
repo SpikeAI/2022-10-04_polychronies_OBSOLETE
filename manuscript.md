@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/ec179504340ed38660766a2ae4be29d6abd78db2/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/ec179504340ed38660766a2ae4be29d6abd78db2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/ec179504340ed38660766a2ae4be29d6abd78db2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/29afe93dc78ad08a6f147cdf4f176fd2d9d7a41f/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/29afe93dc78ad08a6f147cdf4f176fd2d9d7a41f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/29afe93dc78ad08a6f147cdf4f176fd2d9d7a41f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,9 +111,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/ec179504340ed38660766a2ae4be29d6abd78db2/))
+([permalink](https://SpikeAI.github.io/polychronies/v/29afe93dc78ad08a6f147cdf4f176fd2d9d7a41f/))
 was automatically generated
-from [SpikeAI/polychronies@ec17950](https://github.com/SpikeAI/polychronies/tree/ec179504340ed38660766a2ae4be29d6abd78db2)
+from [SpikeAI/polychronies@29afe93](https://github.com/SpikeAI/polychronies/tree/29afe93dc78ad08a6f147cdf4f176fd2d9d7a41f)
 on July 13, 2022.
 </em></small>
 
