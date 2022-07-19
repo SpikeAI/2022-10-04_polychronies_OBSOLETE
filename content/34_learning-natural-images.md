@@ -1,4 +1,6 @@
 
+<i class="fas fa-ban fa-lg"></i> **TODO**<br>
+
 ### learning pattern detection on natural images / event-based cameras
 
 
@@ -9,3 +11,4 @@
 
 
 #### Grimaldi CBMI / PAMI
+]{.banner .lightred}

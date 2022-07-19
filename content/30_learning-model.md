@@ -1,6 +1,7 @@
 
 ## Learning to detect polychronous groups
 
+
 ### Learning weights ... and delays
 
 spike time coding in a neuron: We will describe the Spike-Time Dependent Plasticity (STDP) [@doi:10/ftvvd8] rule which implement an unsupervised learning aiming at optimizing the detection of polychronous patterns, that is volleys of spikes which are synchronized, up to some stable pattern of pre-synaptic delays. This STDP rule will be based by the inversion of the generative model for spike formation and will therefore be derived by a Bayesian approach. This will decouple the active synapses (similarly to a logistic regression) from the values of possible synaptic delays.
@@ -8,13 +9,16 @@ spike time coding in a neuron: We will describe the Spike-Time Dependent Plastic
 
 * [@Perrinet2002] : coherence detection
 * [@Perrinet2001] : STDP
-* Masquelier
+* Masquelier, Gilson et al. - 2010 - STDP in Recurrent Neuronal Networks [@doi:10.3389/fncom.2010.00023] or Delay Selection by Spike-Timing-Dependent Plasticity in Recurrent Networks of Spiking Neurons Receiving Oscillatory Inputs. PLoS Comput Biol 9(2): e1002897. [@doi:10.1371/journal.pcbi.1002897] which targets at the selective potentiation of recurrent connections with different axonal and dendritic delays during oscillatory activity.
 
- Our ability to track and respond to rapidly changing visual stimuli, such as a fast-moving tennis ball, indicates that the brain is capable of extrapolating the trajectory of a moving object to predict its current position, despite the delays that result from neural transmission. Here, we show how the neural circuits underlying this ability can be learned through spike-timing-dependent synaptic plasticity and that these circuits emerge spontaneously and without supervision. This demonstrates how the neural transmission delays can, in part, be compensated to implement the extrapolation mechanisms required to predict where a moving object is at the present moment. [@doi:10.1523/JNEUROSCI.2017-20.2021] 
+ Our ability to track and respond to rapidly changing visual stimuli, such as a fast-moving tennis ball, indicates that the brain is capable of extrapolating the trajectory of a moving object to predict its current position, despite the delays that result from neural transmission. Here, we show how the neural circuits underlying this ability can be learned through spike-timing-dependent synaptic plasticity and that these circuits emerge spontaneously and without supervision. This demonstrates how the neural transmission delays can, in part, be compensated to implement the extrapolation mechanisms required to predict where a moving object is at the present moment. [@doi:10.1523/JNEUROSCI.2017-20.2021]
 
-bonjour amelie - coucou ceci est un test ! j'essaye de citer : [@arxiv:2102.04906]
+<i class="fas fa-ban fa-lg"></i>
+**TODO amelie** section sur l'apprentissage des délais dans la biologie<br>
 
 [@arxiv:2011.09380]
+
+]{.banner .lightred}
 
 Bio-plausible Unsupervised Delay Learning for Extracting Temporal Features in Spiking Neural Networks
 Alireza Nadafian, Mohammad Ganjtabesh
@@ -64,3 +68,4 @@ Triplett MA, Avitan L, Goodhill GJ.PLoS Comput Biol. 2018
 
 Training and Spontaneous Reinforcement of Neuronal Assemblies by Spike Timing Plasticity.
 Ocker GK, Doiron B.Cereb Cortex. 2019.
+]{.banner .lightred}

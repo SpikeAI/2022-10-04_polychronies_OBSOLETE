@@ -1,4 +1,28 @@
-## Detecting patterns in biological raster plots
+## Detecting precise heterosynaptic spiking motifs in biological raster plots
+
+
+<i class="fas fa-ban fa-lg"></i> **TODO**<br>
+
+
+### spike distances
+
+
+<i class="fas fa-ban fa-lg"></i> **TODO**<br>
+J. D. Victor and K. P. Purpura, “Nature and precision of temporal coding in visual cortex: a metric-space analysis,” J. Neurophysiol., vol. 76, pp. 1310–1326, Aug. 1996.
+
+M. C. W. van Rossum, “A novel spike distance,” Neural Comput., vol. 13, no. 4, pp. 751–763, 2001. [21] D. Aronov and J. D. Victor, “Non-Euclidean properties of spike train metric spaces,” Physical Rev. E (Statist., Nonlinear, Soft Matter Phys.), vol. 69, no. 6, 2004.
+
+T. Kreuz, J. S. Haas, A. Morelli, H. D. I. Abarbanel, and A. Politi, “Measuring spike train synchrony,” J. Neurosci. Methods, vol. 165, no. 1, pp. 151–161, 2007. [23] H.
+
+Paper by [@Moser2014] On Stability of Distance Measures for Event Sequences Induced by Level-Crossing Sampling
+
+Weyl's discrepency measure [@doi:10.1007/BF01475864] which may lead to the definition of a cross-correlation.
+
+
+Robust computation with rhythmic spike patterns. Proceedings of the National Academy of Sciences of the United States of America 116(36), 18050 - 18059. https://dx.doi.org/10.1073/pnas.1902653116
+
+]{.banner .lightred}
+
 
 ### decoding neural activity
 
@@ -78,6 +102,8 @@ https://doi.org/10.1101/2020.06.03.131573;
  * Stimulus statistics dependence of response statistics is explained
 
 
+To overcome the limits of models which require spike times to be discretized, utilize a sub-optimal least-squares criterion, or do not provide uncertainty estimates for model predictions or estimated parameters, [@arXiv:2010.04875]  address each of these shortcomings by developing a point process model that characterizes fine-scale sequences at the level of individual spikes and represents sequence occurrences as a small number of marked events in continuous time. They also introduce learnable time warping parameters to model sequences of varying duration, which have been experimentally observed in neural circuits and demonstrate these advantages on experimental recordings from songbird higher vocal center and rodent hippocampus.
+
 #### FPGA
 
 Dynamics of Delay-Coupled Excitable Neural Systems.
@@ -87,3 +113,5 @@ Dynamics of Delay-Coupled Excitable Neural Systems.
     DOI: 10.1142/S0218127409023111
 
 V. Thanasoulis, B. Vogginger, J. Partzsch and C. Mayr, "Delay-Based Neural Computation: Pulse Routing Architecture and Benchmark Application in FPGA," 2021 28th IEEE International Conference on Electronics, Circuits, and Systems (ICECS), 2021, pp. 1-5, doi: 10.1109/ICECS53924.2021.9665468.
+
+]{.banner .lightred}

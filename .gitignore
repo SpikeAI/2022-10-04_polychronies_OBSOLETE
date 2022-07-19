@@ -1,3 +1,4 @@
+.DS_Store
 # Generated manuscript output files
 output/*
 !output/README.md

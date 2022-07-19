@@ -1,4 +1,4 @@
-# Review on Polychrony detection in biological and artificial raster plots
+# Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
@@ -13,6 +13,10 @@
 <!-- usage note: edit this section. -->
 
 This manuscript reviews current litterature on *polychrony detection* in raster plots. It is work in progress, where anybody interested can *openly* join.
+
+Some help editing:
+ * template https://manubot.github.io/rootstock/ 
+ * template's code https://raw.githubusercontent.com/manubot/rootstock/main/content/02.delete-me.md
 
 ## Manubot
 
