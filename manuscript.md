@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-07-13'
+date-meta: '2022-07-19'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -59,8 +59,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-07-13" />
-  <meta name="citation_publication_date" content="2022-07-13" />
+  <meta name="dc.date" content="2022-07-19" />
+  <meta name="citation_publication_date" content="2022-07-19" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/29afe93dc78ad08a6f147cdf4f176fd2d9d7a41f/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/29afe93dc78ad08a6f147cdf4f176fd2d9d7a41f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/29afe93dc78ad08a6f147cdf4f176fd2d9d7a41f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/843288ce09164d830eb32ee58a8664cb287b1a3d/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/843288ce09164d830eb32ee58a8664cb287b1a3d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/843288ce09164d830eb32ee58a8664cb287b1a3d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,10 +111,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/29afe93dc78ad08a6f147cdf4f176fd2d9d7a41f/))
+([permalink](https://SpikeAI.github.io/polychronies/v/843288ce09164d830eb32ee58a8664cb287b1a3d/))
 was automatically generated
-from [SpikeAI/polychronies@29afe93](https://github.com/SpikeAI/polychronies/tree/29afe93dc78ad08a6f147cdf4f176fd2d9d7a41f)
-on July 13, 2022.
+from [SpikeAI/polychronies@843288c](https://github.com/SpikeAI/polychronies/tree/843288ce09164d830eb32ee58a8664cb287b1a3d)
+on July 19, 2022.
 </em></small>
 
 ## Authors
@@ -492,10 +492,10 @@ spike time coding in a neuron: We will describe the Spike-Time Dependent Plastic
 * [@Perrinet2001] : STDP
 * Masquelier, Gilson et al. - 2010 - STDP in Recurrent Neuronal Networks [@doi:10.3389/fncom.2010.00023] or Delay Selection by Spike-Timing-Dependent Plasticity in Recurrent Networks of Spiking Neurons Receiving Oscillatory Inputs. PLoS Comput Biol 9(2): e1002897. [@doi:10.1371/journal.pcbi.1002897] which targets at the selective potentiation of recurrent connections with different axonal and dendritic delays during oscillatory activity.
 
-<i class="fas fa-ban fa-lg"></i> 
-**TODO amelie** section sur l'apprentissage des délais dans la biologie<br>
+ Our ability to track and respond to rapidly changing visual stimuli, such as a fast-moving tennis ball, indicates that the brain is capable of extrapolating the trajectory of a moving object to predict its current position, despite the delays that result from neural transmission. Here, we show how the neural circuits underlying this ability can be learned through spike-timing-dependent synaptic plasticity and that these circuits emerge spontaneously and without supervision. This demonstrates how the neural transmission delays can, in part, be compensated to implement the extrapolation mechanisms required to predict where a moving object is at the present moment. [@doi:10.1523/JNEUROSCI.2017-20.2021]
 
-[@arxiv:2102.04906]
+<i class="fas fa-ban fa-lg"></i>
+**TODO amelie** section sur l'apprentissage des délais dans la biologie<br>
 
 [@arxiv:2011.09380]
 
