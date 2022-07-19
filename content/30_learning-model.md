@@ -10,6 +10,8 @@ spike time coding in a neuron: We will describe the Spike-Time Dependent Plastic
 * [@Perrinet2001] : STDP
 * Masquelier
 
+ Our ability to track and respond to rapidly changing visual stimuli, such as a fast-moving tennis ball, indicates that the brain is capable of extrapolating the trajectory of a moving object to predict its current position, despite the delays that result from neural transmission. Here, we show how the neural circuits underlying this ability can be learned through spike-timing-dependent synaptic plasticity and that these circuits emerge spontaneously and without supervision. This demonstrates how the neural transmission delays can, in part, be compensated to implement the extrapolation mechanisms required to predict where a moving object is at the present moment. [@doi:10.1523/JNEUROSCI.2017-20.2021] 
+
 bonjour amelie - coucou ceci est un test ! j'essaye de citer : [@arxiv:2102.04906]
 
 [@arxiv:2011.09380]
