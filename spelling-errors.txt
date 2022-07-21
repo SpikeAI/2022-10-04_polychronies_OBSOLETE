@@ -60,7 +60,7 @@ demonstated
 dendritic
 dependance
 des
-Differentially
+differentially
 dimensionality
 d’Informatique
 discrepency
@@ -183,7 +183,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-Rastermap
+rastermap
 RefRN
 resistive
 retinotopic
@@ -200,7 +200,7 @@ SNR
 soma
 spatio
 spatiotemporal
-Spectro
+spectro
 spectrograms
 SpikeShip
 SPOTDis
@@ -215,7 +215,7 @@ subserve
 superlinearly
 supersequences
 sur
-synfire
+Synfire
 Systèmes
 tempotron
 thalamocortical

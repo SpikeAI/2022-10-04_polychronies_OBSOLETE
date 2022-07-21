@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/1f21ea72d00a6ad9272fb92df7406b2bebb52682/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/1f21ea72d00a6ad9272fb92df7406b2bebb52682/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/1f21ea72d00a6ad9272fb92df7406b2bebb52682/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/2db038605bde708e4843081db67ffb026c661009/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/2db038605bde708e4843081db67ffb026c661009/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/2db038605bde708e4843081db67ffb026c661009/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,9 +111,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/1f21ea72d00a6ad9272fb92df7406b2bebb52682/))
+([permalink](https://SpikeAI.github.io/polychronies/v/2db038605bde708e4843081db67ffb026c661009/))
 was automatically generated
-from [SpikeAI/polychronies@1f21ea7](https://github.com/SpikeAI/polychronies/tree/1f21ea72d00a6ad9272fb92df7406b2bebb52682)
+from [SpikeAI/polychronies@2db0386](https://github.com/SpikeAI/polychronies/tree/2db038605bde708e4843081db67ffb026c661009)
 on July 21, 2022.
 </em></small>
 
@@ -218,7 +218,7 @@ Attempts have been made to detect such synfire chains in neurobiological data [@
 
 Note also that synchronicity may explain some unintuitive results. Indeed it has been shown that  thalamocortical synapses are relatively weak compared to the amount of intra-cortical activity. However, this pathway is sufficient to drive the cortex as this input is more often synchronously active [@doi:10.1126/science.1124593].
 
-Some experimental results show the emergence of synchrony, for instance in motor cortical function [@doi:10.1126/science.278.5345.1950]. Interestingly, authors showed that "Accurate spike synchronization occurred in relation to external events (stimuli, movements) and was commonly accompanied by discharge rate modulations but without precise time locking of the spikes to these external events. Spike synchronization also occurred in relation to purely internal events (stimulus expectancy), where firing rate modulations were distinctly absent. These findings indicate that internally generated synchronization of individual spike discharges may subserve the cortical organization of cognitive motor processes." Moreover, such emergence could change over the learning period involved in learning a task [@doi:10.1523/JNEUROSCI.1554-09.2009] and showed some tuning to  to movement direction and reaction time [@doi:10.1007/s00422-002-0385-3]. It is important to note that synchronous events tended to lock to LFP beta waves [@doi:10.1038/s41598-018-22990-7], and was extended to larger assemblies [@doi:10.1371/journal.pcbi.1004939, @doi:10.1523/JNEUROSCI.4375-15.2016] using statistical methods (see [@sec:detection]).
+Some experimental results show the emergence of synchrony, for instance in motor cortical function [@doi:10.1126/science.278.5345.1950]. Interestingly, authors showed that "Accurate spike synchronization occurred in relation to external events (stimuli, movements) and was commonly accompanied by discharge rate modulations but without precise time locking of the spikes to these external events. Spike synchronization also occurred in relation to purely internal events (stimulus expectancy), where firing rate modulations were distinctly absent. These findings indicate that internally generated synchronization of individual spike discharges may subserve the cortical organization of cognitive motor processes." Moreover, such emergence could change over the learning period involved in learning a task [@doi:10.1523/JNEUROSCI.1554-09.2009] and showed some tuning to  to movement direction and reaction time [@doi:10.1007/s00422-002-0385-3]. It is important to note that synchronous events tended to lock to LFP beta waves [@doi:10.1038/s41598-018-22990-7], and was extended to larger assemblies [@Torre2016, @doi:10.1523/JNEUROSCI.4375-15.2016] using statistical methods (see [@sec:detection]).
 
 
 In [@doi:10.1371/journal.pcbi.1002561], the author proposes a simple spike-based computational framework, based on the idea that stimulus-induced synchrony can be used to extract sensory invariants (for example, the location of a sound source), which is a difficult task for classical neural networks. It relies on the simple remark that a series of repeated coincidences is in itself an invariant. Many aspects of perception rely on extracting invariant features, such as the spatial location of a time-varying sound, the identity of an odor with fluctuating intensity, the pitch of a musical note.
@@ -240,7 +240,7 @@ More recently Advanced recording techniques have enabled the identification of t
 
 #### Spike Synchronization and Rate Modulation Differentially Involved in Motor Cortical Function [@doi:10.1126/science.278.5345.1950]
 
-It is now commonly accepted that planning and execution of movements are based on distributed processing by neuronal populations in motor cortical areas. It is less clear, though, how these populations organize dynamically to cope with the momentary computational demands. Simultaneously recorded activities of neurons in the primary motor cortex of monkeys during performance of a delayed-pointing task exhibited context-dependent, rapid changes in the patterns of coincident action potentials. Accurate spike synchronization occurred in relation to external events (stimuli, movements) and was commonly accompanied by discharge rate modulations but without precise time locking of the spikes to these external events. Spike synchronization also occurred in relation to purely internal events (stimulus expectancy), where firing rate modulations were distinctly absent. These findings indicate that internally generated synchronization of individual spike discharges may subserve the cortical organization of cognitive motor processes.
+It is now commonly accepted that planning and execution of movements are based on distributed processing by neuronal populations in motor cortical areas [@doi:10.1007/s002210050826]. It is less clear, though, how these populations organize dynamically to cope with the momentary computational demands. Simultaneously recorded activities of neurons in the primary motor cortex of monkeys during performance of a delayed-pointing task exhibited context-dependent, rapid changes in the patterns of coincident action potentials. Accurate spike synchronization occurred in relation to external events (stimuli, movements) and was commonly accompanied by discharge rate modulations but without precise time locking of the spikes to these external events. Spike synchronization also occurred in relation to purely internal events (stimulus expectancy), where firing rate modulations were distinctly absent. These findings indicate that internally generated synchronization of individual spike discharges may subserve the cortical organization of cognitive motor processes.
 
 
 [@Chemla19]
