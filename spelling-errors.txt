@@ -94,7 +94,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-hippocampal
+Hippocampal
 Hirase
 HVC
 ICECS
@@ -172,7 +172,7 @@ PNG
 PNGs
 Politi
 polychronization
-polychronous
+Polychronous
 potentiation
 Poulet
 pre
@@ -183,7 +183,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-rastermap
+Rastermap
 RefRN
 resistive
 retinotopic

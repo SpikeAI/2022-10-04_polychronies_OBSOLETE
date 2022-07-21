@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-07-19'
+date-meta: '2022-07-21'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -59,8 +59,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-07-19" />
-  <meta name="citation_publication_date" content="2022-07-19" />
+  <meta name="dc.date" content="2022-07-21" />
+  <meta name="citation_publication_date" content="2022-07-21" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/843288ce09164d830eb32ee58a8664cb287b1a3d/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/843288ce09164d830eb32ee58a8664cb287b1a3d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/843288ce09164d830eb32ee58a8664cb287b1a3d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/c94cf0115005842649c2f513b354512dee0d7a14/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/c94cf0115005842649c2f513b354512dee0d7a14/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/c94cf0115005842649c2f513b354512dee0d7a14/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,10 +111,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/843288ce09164d830eb32ee58a8664cb287b1a3d/))
+([permalink](https://SpikeAI.github.io/polychronies/v/c94cf0115005842649c2f513b354512dee0d7a14/))
 was automatically generated
-from [SpikeAI/polychronies@843288c](https://github.com/SpikeAI/polychronies/tree/843288ce09164d830eb32ee58a8664cb287b1a3d)
-on July 19, 2022.
+from [SpikeAI/polychronies@c94cf01](https://github.com/SpikeAI/polychronies/tree/c94cf0115005842649c2f513b354512dee0d7a14)
+on July 21, 2022.
 </em></small>
 
 ## Authors
@@ -285,6 +285,8 @@ In [@doi:10.1016/j.neuron.2020.12.013], it was shown that attentional informatio
 
 
 It is interesting to make a parallel with the "Rapid Formation of Robust Auditory Memories" reported in [@Agus2010] which uses noise patterns. They " used random waveforms to probe the formation of new memories for arbitrary complex sounds. A behavioral measure was designed, based on the detection of repetitions embedded in noises up to 4 s long." The  task is to detect the repetition of the same (frozen) noise within a trial. " Unbeknownst to listeners, some noise samples reoccurred randomly throughout an experimental block." they showed that the "repeated exposure induced learning for otherwise totally unpredictable and meaningless sounds" by showing that the sensitivity increases in that case. Note that "acoustical analyses failed to reveal any obvious differences between good and bad noises" and that "Time reversal had no significant effect on the RefRN advantage" (quite surprising). The Learning is unsupervised (statistical, automatic), fast-acting (phase transition, "insight"), and long-lasting (memorization).
+
+Such observations suggest  that neuronal groups or ensembles, rather than individual neurons, are emergent functional units of cortical activity [@doi:10.1073/pnas.1406077111]. This work shows that whereas intrinsic ensembles recur at random time intervals, visually evoked ensembles are time-locked to stimuli. It proposes that visual stimuli recruit endogenously generated ensembles to represent visual attributes.
 
 
 ### outline
