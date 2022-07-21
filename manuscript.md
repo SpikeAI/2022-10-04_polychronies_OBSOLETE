@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/d7aa408fb661e256053fcb9fa25e1ce3e0125563/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/d7aa408fb661e256053fcb9fa25e1ce3e0125563/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/d7aa408fb661e256053fcb9fa25e1ce3e0125563/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/4913c560feda220c70ce51540b537e5b9e11842c/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/4913c560feda220c70ce51540b537e5b9e11842c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/4913c560feda220c70ce51540b537e5b9e11842c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,9 +111,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/d7aa408fb661e256053fcb9fa25e1ce3e0125563/))
+([permalink](https://SpikeAI.github.io/polychronies/v/4913c560feda220c70ce51540b537e5b9e11842c/))
 was automatically generated
-from [SpikeAI/polychronies@d7aa408](https://github.com/SpikeAI/polychronies/tree/d7aa408fb661e256053fcb9fa25e1ce3e0125563)
+from [SpikeAI/polychronies@4913c56](https://github.com/SpikeAI/polychronies/tree/4913c560feda220c70ce51540b537e5b9e11842c)
 on July 21, 2022.
 </em></small>
 
@@ -366,7 +366,7 @@ We address these issues by applying Fisher information theory to dynamical syste
 
 
 ## Detecting precise heterosynaptic spiking motifs in biological raster plots
-[#sec:detection]
+{#sec:detection}
 
 
 
