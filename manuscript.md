@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/16a3c47456655551cbb082b668b92ec2cd15ad62/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/16a3c47456655551cbb082b668b92ec2cd15ad62/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/16a3c47456655551cbb082b668b92ec2cd15ad62/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/b9b43081abbf14ab0ecd61aeeec58ef760bbf1de/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/b9b43081abbf14ab0ecd61aeeec58ef760bbf1de/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/b9b43081abbf14ab0ecd61aeeec58ef760bbf1de/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,9 +111,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/16a3c47456655551cbb082b668b92ec2cd15ad62/))
+([permalink](https://SpikeAI.github.io/polychronies/v/b9b43081abbf14ab0ecd61aeeec58ef760bbf1de/))
 was automatically generated
-from [SpikeAI/polychronies@16a3c47](https://github.com/SpikeAI/polychronies/tree/16a3c47456655551cbb082b668b92ec2cd15ad62)
+from [SpikeAI/polychronies@b9b4308](https://github.com/SpikeAI/polychronies/tree/b9b43081abbf14ab0ecd61aeeec58ef760bbf1de)
 on July 21, 2022.
 </em></small>
 
@@ -218,7 +218,7 @@ Attempts have been made to detect such synfire chains in neurobiological data [@
 
 Note also that synchronicity may explain some unintuitive results. Indeed it has been shown that  thalamocortical synapses are relatively weak compared to the amount of intra-cortical activity. However, this pathway is sufficient to drive the cortex as this input is more often synchronously active [@doi:10.1126/science.1124593].
 
-Some experimental results show the emergence of synchrony, for instance in motor cortical function [@doi:10.1126/science.278.5345.1950]. Interestingly, authors showed that "Accurate spike synchronization occurred in relation to external events (stimuli, movements) and was commonly accompanied by discharge rate modulations but without precise time locking of the spikes to these external events. Spike synchronization also occurred in relation to purely internal events (stimulus expectancy), where firing rate modulations were distinctly absent. These findings indicate that internally generated synchronization of individual spike discharges may subserve the cortical organization of cognitive motor processes." Moreover, such emergence could change over the learning period involved in learning a task [@doi:10.1523/JNEUROSCI.1554-09.2009] and showed some tuning to  to movement direction and reaction time [@doi:10.1007/s00422-002-0385-3]. It is important to note that synchronous events tended to lock to LFP beta waves [@doi:10.1038/s41598-018-22990-7], and was extended to larger assemblies [@doi:10.1523/JNEUROSCI.4375-15.2016] using statistical methods (see [@sec:detection]).
+Some experimental results show the emergence of synchrony, for instance in motor cortical function [@doi:10.1126/science.278.5345.1950]. Interestingly, authors showed that "Accurate spike synchronization occurred in relation to external events (stimuli, movements) and was commonly accompanied by discharge rate modulations but without precise time locking of the spikes to these external events. Spike synchronization also occurred in relation to purely internal events (stimulus expectancy), where firing rate modulations were distinctly absent. These findings indicate that internally generated synchronization of individual spike discharges may subserve the cortical organization of cognitive motor processes." Moreover, such emergence could change over the learning period involved in learning a task [@doi:10.1523/JNEUROSCI.1554-09.2009] and showed some tuning to  to movement direction and reaction time [@doi:10.1007/s00422-002-0385-3]. It is important to note that synchronous events tended to lock to LFP beta waves [@doi:10.1038/s41598-018-22990-7], and was extended to larger assemblies [@doi:10.1371/journal.pcbi.1004939, @doi:10.1523/JNEUROSCI.4375-15.2016] using statistical methods (see [@sec:detection]).
 
 
 In [@doi:10.1371/journal.pcbi.1002561], the author proposes a simple spike-based computational framework, based on the idea that stimulus-induced synchrony can be used to extract sensory invariants (for example, the location of a sound source), which is a difficult task for classical neural networks. It relies on the simple remark that a series of repeated coincidences is in itself an invariant. Many aspects of perception rely on extracting invariant features, such as the spatial location of a time-varying sound, the identity of an odor with fluctuating intensity, the pitch of a musical note.
@@ -366,9 +366,8 @@ We address these issues by applying Fisher information theory to dynamical syste
 
 
 ## Detecting precise heterosynaptic spiking motifs in biological raster plots
+[sec:detection]
 
-
-<i class="fas fa-ban fa-lg"></i> **TODO**<br>
 
 
 ### spike distances
@@ -481,7 +480,11 @@ Dynamics of Delay-Coupled Excitable Neural Systems.
 
 V. Thanasoulis, B. Vogginger, J. Partzsch and C. Mayr, "Delay-Based Neural Computation: Pulse Routing Architecture and Benchmark Application in FPGA," 2021 28th IEEE International Conference on Electronics, Circuits, and Systems (ICECS), 2021, pp. 1-5, doi: 10.1109/ICECS53924.2021.9665468.
 
-]{.banner .lightred}
+## lag constellations
+
+Cell assemblies at multiple time scales with arbitrary lag constellations [@doi:10.7554/eLife.19428] We start from the relatively old notion of assessing the departure of the joint spike count distribution of two units (or sets) from independence. It is based on unitary events in multiple single-neuron spiking activity  [@doi:10.1162/089976602753284455] and the  reliable and efficient analysis of an excess or deficiency of joint-spike events  [@doi:10.1007/s10827-007-0065-3].  Having derived a fast, non-stationarity-corrected parametric test statistic for assessing the independence of pairs, we designed an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies.
+[@doi:]
+
 
 
 ## Learning to detect polychronous groups

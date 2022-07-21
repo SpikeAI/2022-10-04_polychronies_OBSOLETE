@@ -60,7 +60,7 @@ demonstated
 dendritic
 dependance
 des
-Differentially
+differentially
 dimensionality
 d’Informatique
 discrepency
@@ -172,7 +172,7 @@ PNG
 PNGs
 Politi
 polychronization
-polychronous
+Polychronous
 potentiation
 Poulet
 pre
@@ -200,7 +200,7 @@ SNR
 soma
 spatio
 spatiotemporal
-Spectro
+spectro
 spectrograms
 SpikeShip
 SPOTDis
@@ -217,7 +217,7 @@ supersequences
 sur
 Synfire
 Systèmes
-Tempotron
+tempotron
 thalamocortical
 Thanasoulis
 Timone
