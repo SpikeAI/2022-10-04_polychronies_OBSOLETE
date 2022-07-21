@@ -1,7 +1,6 @@
 ## Detecting precise heterosynaptic spiking motifs in biological raster plots
+[sec:detection]
 
-
-<i class="fas fa-ban fa-lg"></i> **TODO**<br>
 
 
 ### spike distances
@@ -114,4 +113,7 @@ Dynamics of Delay-Coupled Excitable Neural Systems.
 
 V. Thanasoulis, B. Vogginger, J. Partzsch and C. Mayr, "Delay-Based Neural Computation: Pulse Routing Architecture and Benchmark Application in FPGA," 2021 28th IEEE International Conference on Electronics, Circuits, and Systems (ICECS), 2021, pp. 1-5, doi: 10.1109/ICECS53924.2021.9665468.
 
-]{.banner .lightred}
+## lag constellations
+
+Cell assemblies at multiple time scales with arbitrary lag constellations [@doi:10.7554/eLife.19428] We start from the relatively old notion of assessing the departure of the joint spike count distribution of two units (or sets) from independence. It is based on unitary events in multiple single-neuron spiking activity  [@doi:10.1162/089976602753284455] and the  reliable and efficient analysis of an excess or deficiency of joint-spike events  [@doi:10.1007/s10827-007-0065-3].  Having derived a fast, non-stationarity-corrected parametric test statistic for assessing the independence of pairs, we designed an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies.
+[@doi:]
