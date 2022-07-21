@@ -60,7 +60,7 @@ demonstated
 dendritic
 dependance
 des
-differentially
+Differentially
 dimensionality
 d’Informatique
 discrepency
@@ -183,7 +183,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-Rastermap
+rastermap
 RefRN
 resistive
 retinotopic
@@ -217,7 +217,7 @@ supersequences
 sur
 Synfire
 Systèmes
-tempotron
+Tempotron
 thalamocortical
 Thanasoulis
 Timone
