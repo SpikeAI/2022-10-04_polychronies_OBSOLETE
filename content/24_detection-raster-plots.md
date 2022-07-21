@@ -1,5 +1,5 @@
 ## Detecting precise heterosynaptic spiking motifs in biological raster plots
-[sec:detection]
+[#sec:detection]
 
 
 
