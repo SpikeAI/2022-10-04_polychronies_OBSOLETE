@@ -60,7 +60,7 @@ demonstated
 dendritic
 dependance
 des
-differentially
+Differentially
 dimensionality
 d’Informatique
 discrepency
@@ -94,7 +94,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-hippocampal
+Hippocampal
 Hirase
 HVC
 ICECS
@@ -172,7 +172,7 @@ PNG
 PNGs
 Politi
 polychronization
-Polychronous
+polychronous
 potentiation
 Poulet
 pre
@@ -183,7 +183,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-rastermap
+Rastermap
 RefRN
 resistive
 retinotopic
@@ -200,7 +200,7 @@ SNR
 soma
 spatio
 spatiotemporal
-spectro
+Spectro
 spectrograms
 SpikeShip
 SPOTDis
@@ -215,7 +215,7 @@ subserve
 superlinearly
 supersequences
 sur
-Synfire
+synfire
 Systèmes
 tempotron
 thalamocortical

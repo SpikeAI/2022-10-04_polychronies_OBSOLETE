@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/b9b43081abbf14ab0ecd61aeeec58ef760bbf1de/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/b9b43081abbf14ab0ecd61aeeec58ef760bbf1de/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/b9b43081abbf14ab0ecd61aeeec58ef760bbf1de/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/1f21ea72d00a6ad9272fb92df7406b2bebb52682/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/1f21ea72d00a6ad9272fb92df7406b2bebb52682/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/1f21ea72d00a6ad9272fb92df7406b2bebb52682/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,9 +111,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/b9b43081abbf14ab0ecd61aeeec58ef760bbf1de/))
+([permalink](https://SpikeAI.github.io/polychronies/v/1f21ea72d00a6ad9272fb92df7406b2bebb52682/))
 was automatically generated
-from [SpikeAI/polychronies@b9b4308](https://github.com/SpikeAI/polychronies/tree/b9b43081abbf14ab0ecd61aeeec58ef760bbf1de)
+from [SpikeAI/polychronies@1f21ea7](https://github.com/SpikeAI/polychronies/tree/1f21ea72d00a6ad9272fb92df7406b2bebb52682)
 on July 21, 2022.
 </em></small>
 
@@ -470,20 +470,20 @@ https://doi.org/10.1101/2020.06.03.131573;
 
 To overcome the limits of models which require spike times to be discretized, utilize a sub-optimal least-squares criterion, or do not provide uncertainty estimates for model predictions or estimated parameters, [@arXiv:2010.04875]  address each of these shortcomings by developing a point process model that characterizes fine-scale sequences at the level of individual spikes and represents sequence occurrences as a small number of marked events in continuous time. They also introduce learnable time warping parameters to model sequences of varying duration, which have been experimentally observed in neural circuits and demonstrate these advantages on experimental recordings from songbird higher vocal center and rodent hippocampus.
 
-#### FPGA
+#### Dynamics of Delay-Coupled Excitable Neural Systems
 
-Dynamics of Delay-Coupled Excitable Neural Systems.
+uses a FPGA
+[@doi:10.1142/S0218127409023111]
+
 
     February 2009International Journal of Bifurcation and Chaos 19(02):745-753
 
-    DOI: 10.1142/S0218127409023111
+V. Thanasoulis, B. Vogginger, J. Partzsch and C. Mayr, "Delay-Based Neural Computation: Pulse Routing Architecture and Benchmark Application in FPGA," 2021 28th IEEE International Conference on Electronics, Circuits, and Systems (ICECS), 2021, pp. 1-5
+[@doi:10.1109/ICECS53924.2021.9665468]
 
-V. Thanasoulis, B. Vogginger, J. Partzsch and C. Mayr, "Delay-Based Neural Computation: Pulse Routing Architecture and Benchmark Application in FPGA," 2021 28th IEEE International Conference on Electronics, Circuits, and Systems (ICECS), 2021, pp. 1-5, doi: 10.1109/ICECS53924.2021.9665468.
+#### Cell assemblies at multiple time scales with arbitrary lag constellations
 
-## lag constellations
-
-Cell assemblies at multiple time scales with arbitrary lag constellations [@doi:10.7554/eLife.19428] We start from the relatively old notion of assessing the departure of the joint spike count distribution of two units (or sets) from independence. It is based on unitary events in multiple single-neuron spiking activity  [@doi:10.1162/089976602753284455] and the  reliable and efficient analysis of an excess or deficiency of joint-spike events  [@doi:10.1007/s10827-007-0065-3].  Having derived a fast, non-stationarity-corrected parametric test statistic for assessing the independence of pairs, we designed an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies.
-[@doi:]
+[@doi:10.7554/eLife.19428] starts from the relatively old notion of assessing the departure of the joint spike count distribution of two units (or sets) from independence. It is based on unitary events in multiple single-neuron spiking activity  [@doi:10.1162/089976602753284455] and the  reliable and efficient analysis of an excess or deficiency of joint-spike events  [@doi:10.1007/s10827-007-0065-3].  Having derived a fast, non-stationarity-corrected parametric test statistic for assessing the independence of pairs, they designed an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies.
 
 
 
