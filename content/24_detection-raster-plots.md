@@ -1,12 +1,10 @@
-## Detecting precise heterosynaptic spiking motifs in biological raster plots
-{#sec:detection}
+## Detecting precise spiking motifs in biological raster plots
+{sec:detection}
 
 
 
 ### spike distances
 
-
-<i class="fas fa-ban fa-lg"></i> **TODO**<br>
 J. D. Victor and K. P. Purpura, “Nature and precision of temporal coding in visual cortex: a metric-space analysis,” J. Neurophysiol., vol. 76, pp. 1310–1326, Aug. 1996.
 
 M. C. W. van Rossum, “A novel spike distance,” Neural Comput., vol. 13, no. 4, pp. 751–763, 2001. [21] D. Aronov and J. D. Victor, “Non-Euclidean properties of spike train metric spaces,” Physical Rev. E (Statist., Nonlinear, Soft Matter Phys.), vol. 69, no. 6, 2004.
@@ -20,7 +18,7 @@ Weyl's discrepency measure [@doi:10.1007/BF01475864] which may lead to the defin
 
 Robust computation with rhythmic spike patterns. Proceedings of the National Academy of Sciences of the United States of America 116(36), 18050 - 18059. https://dx.doi.org/10.1073/pnas.1902653116
 
-]{.banner .lightred}
+A review of the methods for neuronal response latency estimation including bayesian binning [@doi:10.1016/j.biosystems.2015.04.008].
 
 
 ### decoding neural activity
@@ -32,10 +30,9 @@ Unitary event analysis is performed by a statistical model of coincidence detect
 
 Statistical evaluation of synchronous spike patterns extracted by frequent item set mining -  a method to detect significant patterns of synchronous spiking in a subset of massively parallel spike trains in the presence of background activity  [@doi:10.3389/fncom.2013.00132]. By the same group the SPADE, CAD or ASSET algorithms are methods for identification of spike patterns in massively parallel spike trains (the spiking activity of tens to hundred(s) of neurons recorded in parallel) by identifying fine temporal correlations in the ms precision range [@doi:10.1007/s00422-018-0755-0].
 
-This was recently extended in "3d-SPADE: Significance evaluation of spatio-temporal patterns of various temporal extents" [@doi:10.1016/j.biosystems.2019.104022] in order to find reoccurring spike patterns in parallel spike train data, and to determine their statistical significance. The extension improves the performance in the presence of patterns with different durations, as here demonstrated by application to various synthetic data.
+This was recently extended in "3d-SPADE: Significance evaluation of spatio-temporal patterns of various temporal extents" [@doi:10.1016/j.biosystems.2019.104022] in order to find reoccurring spike patterns in parallel spike train data, and to determine their statistical significance. The extension improves the performance in the presence of patterns with different durations, as demonstrated by application to various synthetic data, such as surrogates generated to evaluate precisely timed higher-order spike correlations [@doi:10.1523/ENEURO.0505-21.2022].
 
 
-A review of the methods for neuronal response latency estimation including bayesian binning [@doi:10.1016/j.biosystems.2015.04.008].
 
 [@doi:]
 
