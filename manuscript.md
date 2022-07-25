@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-07-21'
+date-meta: '2022-07-25'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -59,8 +59,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-07-21" />
-  <meta name="citation_publication_date" content="2022-07-21" />
+  <meta name="dc.date" content="2022-07-25" />
+  <meta name="citation_publication_date" content="2022-07-25" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/4913c560feda220c70ce51540b537e5b9e11842c/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/4913c560feda220c70ce51540b537e5b9e11842c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/4913c560feda220c70ce51540b537e5b9e11842c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/eb91631bd348593893a2934af157c8927fc1a646/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/eb91631bd348593893a2934af157c8927fc1a646/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/eb91631bd348593893a2934af157c8927fc1a646/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,10 +111,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/4913c560feda220c70ce51540b537e5b9e11842c/))
+([permalink](https://SpikeAI.github.io/polychronies/v/eb91631bd348593893a2934af157c8927fc1a646/))
 was automatically generated
-from [SpikeAI/polychronies@4913c56](https://github.com/SpikeAI/polychronies/tree/4913c560feda220c70ce51540b537e5b9e11842c)
-on July 21, 2022.
+from [SpikeAI/polychronies@eb91631](https://github.com/SpikeAI/polychronies/tree/eb91631bd348593893a2934af157c8927fc1a646)
+on July 25, 2022.
 </em></small>
 
 ## Authors
@@ -365,15 +365,13 @@ Memory traces in dynamical systems [@doi:10.1073/pnas.0804451105] : "To perform 
 We address these issues by applying Fisher information theory to dynamical systems driven by time-dependent signals corrupted by noise.  Memory capacity is constrained by architecture: "This limit can be realized by feedforward structures with divergent fan out that distributes the signal across neurons, thereby avoiding saturation."
 
 
-## Detecting precise heterosynaptic spiking motifs in biological raster plots
-{#sec:detection}
+## Detecting precise spiking motifs in biological raster plots
+{sec:detection}
 
 
 
 ### spike distances
 
-
-<i class="fas fa-ban fa-lg"></i> **TODO**<br>
 J. D. Victor and K. P. Purpura, “Nature and precision of temporal coding in visual cortex: a metric-space analysis,” J. Neurophysiol., vol. 76, pp. 1310–1326, Aug. 1996.
 
 M. C. W. van Rossum, “A novel spike distance,” Neural Comput., vol. 13, no. 4, pp. 751–763, 2001. [21] D. Aronov and J. D. Victor, “Non-Euclidean properties of spike train metric spaces,” Physical Rev. E (Statist., Nonlinear, Soft Matter Phys.), vol. 69, no. 6, 2004.
@@ -387,7 +385,7 @@ Weyl's discrepency measure [@doi:10.1007/BF01475864] which may lead to the defin
 
 Robust computation with rhythmic spike patterns. Proceedings of the National Academy of Sciences of the United States of America 116(36), 18050 - 18059. https://dx.doi.org/10.1073/pnas.1902653116
 
-]{.banner .lightred}
+A review of the methods for neuronal response latency estimation including bayesian binning [@doi:10.1016/j.biosystems.2015.04.008].
 
 
 ### decoding neural activity
@@ -399,10 +397,9 @@ Unitary event analysis is performed by a statistical model of coincidence detect
 
 Statistical evaluation of synchronous spike patterns extracted by frequent item set mining -  a method to detect significant patterns of synchronous spiking in a subset of massively parallel spike trains in the presence of background activity  [@doi:10.3389/fncom.2013.00132]. By the same group the SPADE, CAD or ASSET algorithms are methods for identification of spike patterns in massively parallel spike trains (the spiking activity of tens to hundred(s) of neurons recorded in parallel) by identifying fine temporal correlations in the ms precision range [@doi:10.1007/s00422-018-0755-0].
 
-This was recently extended in "3d-SPADE: Significance evaluation of spatio-temporal patterns of various temporal extents" [@doi:10.1016/j.biosystems.2019.104022] in order to find reoccurring spike patterns in parallel spike train data, and to determine their statistical significance. The extension improves the performance in the presence of patterns with different durations, as here demonstrated by application to various synthetic data.
+This was recently extended in "3d-SPADE: Significance evaluation of spatio-temporal patterns of various temporal extents" [@doi:10.1016/j.biosystems.2019.104022] in order to find reoccurring spike patterns in parallel spike train data, and to determine their statistical significance. The extension improves the performance in the presence of patterns with different durations, as demonstrated by application to various synthetic data, such as surrogates generated to evaluate precisely timed higher-order spike correlations [@doi:10.1523/ENEURO.0505-21.2022].
 
 
-A review of the methods for neuronal response latency estimation including bayesian binning [@doi:10.1016/j.biosystems.2015.04.008].
 
 [@doi:]
 
