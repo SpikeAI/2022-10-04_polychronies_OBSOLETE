@@ -8,7 +8,7 @@
   <meta name="author" content="Antoine Grimaldi" />
   <meta name="author" content="Amélie Gruel" />
   <meta name="author" content="Laurent U Perrinet" />
-  <meta name="dcterms.date" content="2022-07-25" />
+  <meta name="dcterms.date" content="2022-08-17" />
   <meta name="keywords" content="neurons, code, time" />
   <title>Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data</title>
   <style>
@@ -47,8 +47,8 @@
   <meta name="citation_title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-07-25" />
-  <meta name="citation_publication_date" content="2022-07-25" />
+  <meta name="dc.date" content="2022-08-17" />
+  <meta name="citation_publication_date" content="2022-08-17" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -74,9 +74,9 @@
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/eb91631bd348593893a2934af157c8927fc1a646/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/eb91631bd348593893a2934af157c8927fc1a646/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/eb91631bd348593893a2934af157c8927fc1a646/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/2f05debd02b2b2cbeae1dd431736eeaca38d2b0f/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/2f05debd02b2b2cbeae1dd431736eeaca38d2b0f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/2f05debd02b2b2cbeae1dd431736eeaca38d2b0f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -93,10 +93,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://SpikeAI.github.io/polychronies/v/eb91631bd348593893a2934af157c8927fc1a646/">permalink</a>)
+(<a href="https://SpikeAI.github.io/polychronies/v/2f05debd02b2b2cbeae1dd431736eeaca38d2b0f/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/SpikeAI/polychronies/tree/eb91631bd348593893a2934af157c8927fc1a646">SpikeAI/polychronies@eb91631</a>
-on July 25, 2022.
+from <a href="https://github.com/SpikeAI/polychronies/tree/2f05debd02b2b2cbeae1dd431736eeaca38d2b0f">SpikeAI/polychronies@2f05deb</a>
+on August 17, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -144,7 +144,7 @@ Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
 <h2 class="page_break_before" id="abstract">Abstract</h2>
 <p>Why do neurons communicate through spikes? By definition, a spike, or action potential, is a all-or-none event —it can occur or not without further details— at asynchronous timings, i.e. it can occur at any continuous time - differentially to the discretized timing classically used in digital processing. In the living world, neural systems almost systematically use this so-called event-based representation, though we do not yet have a clear idea why. A better understanding of this phenomenon remains a fundamental challenge in neurobiology in order to better interpret the masses of recorded data. It is also an emerging challenge in computer science to allow the efficient exploitation of a new class of sensors and event-based computers, called neuromorphic, which could allow significant gains in computing time and energy consumption —a major societal challenge in the age of the digital economy and of global warming.</p>
 <p>The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This <em>event-based representation</em> present in the neuronal code is essential in understanding information processing and yet, most neuronal models do not take advantage of this minute temporal dimension. Our goal here is to bring an interdisciplinary perspective on the computational advantage of time series representations for the brain and for information processing machines. In particular, we will focus on the hypothesis that there exists in an assembly of neurons a representation based on a set of motifs of different relative spike times. Here, we will review current litterature on the detection of such motifs in generic raster plots. It is work in progress, where anybody interested can <em>openly</em> join.</p>
-<p>This hypothesis is directly inspired by neurobiological observations in the hippocampus, and it expands the capabilities of analog representations based on the firing rate by considering a representation based on repetitions of these motifs at precise times of occurrence. A mathematical formalization would be particularly well suited to neuromorphic computing, and would allow for the supervised or self-supervised learning of such motifs in any event-driven data. We will first review some biological and theoretical evidence in neural information processing. We will then present some models for the detection of such motifs in arbitrary raster plots, synthetic, biological or artificial (notably from event-based cameras). In particular, we will discuss models which exploit the variety of synaptic delays on the dendritic tree. Then, we will try to outline some possible strategies for learning these patterns and finally discuss possible perspectives.</p>
+<p>This hypothesis is directly inspired by neurobiological observations in the hippocampus, and it expands the capabilities of analog representations based on the firing rate by considering a representation based on repetitions of these motifs at precise times of occurrence <span style="color:red"> (what is this reference?)</span> . A mathematical formalization would be particularly well suited to neuromorphic computing, and would allow for the supervised or self-supervised learning of such motifs in any event-driven data. We will first review some biological and theoretical evidence in neural information processing. We will then present some models for the detection of such motifs in arbitrary raster plots, synthetic, biological or artificial (notably from event-based cameras). In particular, we will discuss models which exploit the variety of synaptic delays on the dendritic tree. Then, we will try to outline some possible strategies for learning these patterns and finally discuss possible perspectives.</p>
 <h2 id="introduction-importance-of-precise-spike-timings-in-the-brain">Introduction: Importance of precise spike timings in the brain</h2>
 <h3 id="ultra-fast-neural-codes-for-ultra-fast-vision">Ultra fast neural codes for ultra fast vision</h3>
 <p>Let us start our review of the state of the art on the role of dynamics in vision by presenting some surprising results that have been obtained in neuroscience. Indeed, Simon Thorpe’s group has shown during the last decades numerous examples demonstrating that humans can categorize briefly presented images in a fraction of a second. Its first experiment consisted in asking subjects to categorize images that do or do not contain animals <span class="citation" data-cites="G3GlupPg">[<a href="#ref-G3GlupPg" role="doc-biblioref">1</a>]</span>. The results showed that humans were able to perform this task very well (with a success rate of more than 95%) but above all that a differential activity for the two categories of images could be observed by electroencephalography, showing that this differentiation emerges at a very early latency in neuronal activity. These results have been extended to several species including primates but also extended to different experimental protocols and have shown for example that the response could be extremely fast of the order of 120 ms when the task was to perform a saccade <span class="citation" data-cites="B9iZWoq3">[<a href="#ref-B9iZWoq3" role="doc-biblioref">2</a>]</span>.</p>
@@ -809,7 +809,7 @@ Ocker GK, Doiron B.Cereb Cortex. 2019.
 <div class="csl-left-margin">126. </div><div class="csl-right-inline"><strong>The Fourth Paradigm: Data-Intensive Scientific Discovery [Point of View]</strong> <div class="csl-block">Kristin M Tolle, DStewart W Tansley, Anthony JG Hey</div> <em>Proceedings of the IEEE</em> (2011-08) <a href="https://doi.org/dfggjc">https://doi.org/dfggjc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/jproc.2011.2155130">10.1109/jproc.2011.2155130</a></div></div>
 </div>
 <div id="ref-sJ03d2Zj" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">127. </div><div class="csl-right-inline"><strong>SNE: an Energy-Proportional Digital Accelerator for Sparse Event-Based Convolutions</strong> <div class="csl-block">Di Mauro, Alfio, Suravi Prasad, Arpan, Huang, Zhikai, Spallanzani, Matteo, Conti, Francesco, Benini, Luca</div> <em>ETH Zurich</em> (2022) <a href="https://doi.org/gp3m5v">https://doi.org/gp3m5v</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3929/ethz-b-000543342">10.3929/ethz-b-000543342</a></div></div>
+<div class="csl-left-margin">127. </div><div class="csl-right-inline"><strong>SNE: an Energy-Proportional Digital Accelerator for Sparse Event-Based Convolutions</strong> <div class="csl-block">Di Mauro, Alfio, Prasad, Arpan Suravi, Huang, Zhikai, Spallanzani, Matteo, Conti, Francesco, Benini, Luca</div> <em>ETH Zurich</em> (2022) <a href="https://doi.org/gp3m5v">https://doi.org/gp3m5v</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3929/ethz-b-000543342">10.3929/ethz-b-000543342</a></div></div>
 </div>
 <div id="ref-R5BYFgCP" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">128. </div><div class="csl-right-inline"><strong>SATA: Sparsity-Aware Training Accelerator for Spiking Neural Networks</strong> <div class="csl-block">Ruokai Yin, Abhishek Moitra, Abhiroop Bhattacharjee, Youngeun Kim, Priyadarshini Panda</div> <em>arXiv</em> (2022-04-13) <a href="https://arxiv.org/abs/2204.05422">https://arxiv.org/abs/2204.05422</a></div>
