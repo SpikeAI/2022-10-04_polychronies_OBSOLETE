@@ -200,7 +200,7 @@ SNR
 soma
 spatio
 spatiotemporal
-spectro
+Spectro
 spectrograms
 SpikeShip
 SPOTDis
@@ -215,7 +215,7 @@ subserve
 superlinearly
 supersequences
 sur
-Synfire
+synfire
 Systèmes
 Tempotron
 thalamocortical
