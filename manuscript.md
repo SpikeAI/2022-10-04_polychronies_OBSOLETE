@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-08-17'
+date-meta: '2022-08-18'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -59,8 +59,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-08-17" />
-  <meta name="citation_publication_date" content="2022-08-17" />
+  <meta name="dc.date" content="2022-08-18" />
+  <meta name="citation_publication_date" content="2022-08-18" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/2f05debd02b2b2cbeae1dd431736eeaca38d2b0f/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/2f05debd02b2b2cbeae1dd431736eeaca38d2b0f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/2f05debd02b2b2cbeae1dd431736eeaca38d2b0f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/fda3d506a219219442a52d3298026076374bcdcf/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/fda3d506a219219442a52d3298026076374bcdcf/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/fda3d506a219219442a52d3298026076374bcdcf/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,10 +111,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/2f05debd02b2b2cbeae1dd431736eeaca38d2b0f/))
+([permalink](https://SpikeAI.github.io/polychronies/v/fda3d506a219219442a52d3298026076374bcdcf/))
 was automatically generated
-from [SpikeAI/polychronies@2f05deb](https://github.com/SpikeAI/polychronies/tree/2f05debd02b2b2cbeae1dd431736eeaca38d2b0f)
-on August 17, 2022.
+from [SpikeAI/polychronies@fda3d50](https://github.com/SpikeAI/polychronies/tree/fda3d506a219219442a52d3298026076374bcdcf)
+on August 18, 2022.
 </em></small>
 
 ## Authors
@@ -173,7 +173,7 @@ Why do neurons communicate through spikes? By definition, a spike, or action pot
 
 The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This *event-based representation* present in the neuronal code is essential in understanding information processing and yet, most neuronal models do not take advantage of this minute temporal dimension. Our goal here is to bring an interdisciplinary perspective on the computational advantage of time series representations for the brain and for information processing machines. In particular, we will focus on the hypothesis that there exists in an assembly of neurons a representation based on a set of motifs of different relative spike times. Here, we will review current litterature on the detection of such motifs in generic raster plots. It is work in progress, where anybody interested can *openly* join.
 
-This hypothesis is directly inspired by neurobiological observations in the hippocampus, and it expands the capabilities of analog representations based on the firing rate by considering a representation based on repetitions of these motifs at precise times of occurrence <span style="color:red"> (what is this reference?)</span> . A mathematical formalization would be particularly well suited to neuromorphic computing, and would allow for the supervised or self-supervised learning of such motifs in any event-driven data. We will first review some biological and theoretical evidence in neural information processing. We will then present some models for the detection of such motifs in arbitrary raster plots, synthetic, biological or artificial (notably from event-based cameras). In particular, we will discuss models which exploit the variety of synaptic delays on the dendritic tree. Then, we will try to outline some possible strategies for learning these patterns and finally discuss possible perspectives.
+This hypothesis is directly inspired by neurobiological observations in the hippocampus, and it expands the capabilities of analog representations based on the firing rate by considering a representation based on repetitions of these motifs at precise times of occurrence. A mathematical formalization would be particularly well suited to neuromorphic computing, and would allow for the supervised or self-supervised learning of such motifs in any event-driven data. We will first review some biological and theoretical evidence in neural information processing. We will then present some models for the detection of such motifs in arbitrary raster plots, synthetic, biological or artificial (notably from event-based cameras). In particular, we will discuss models which exploit the variety of synaptic delays on the dendritic tree. Then, we will try to outline some possible strategies for learning these patterns and finally discuss possible perspectives.
 
 
 ## Introduction: Importance of precise spike timings in the brain
