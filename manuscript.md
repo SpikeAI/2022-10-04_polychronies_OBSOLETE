@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-08-18'
+date-meta: '2022-08-31'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -59,8 +59,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-08-18" />
-  <meta name="citation_publication_date" content="2022-08-18" />
+  <meta name="dc.date" content="2022-08-31" />
+  <meta name="citation_publication_date" content="2022-08-31" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/fda3d506a219219442a52d3298026076374bcdcf/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/fda3d506a219219442a52d3298026076374bcdcf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/fda3d506a219219442a52d3298026076374bcdcf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/b283391a3130a5660403a112cce875238b80b1f5/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/b283391a3130a5660403a112cce875238b80b1f5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/b283391a3130a5660403a112cce875238b80b1f5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,10 +111,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/fda3d506a219219442a52d3298026076374bcdcf/))
+([permalink](https://SpikeAI.github.io/polychronies/v/b283391a3130a5660403a112cce875238b80b1f5/))
 was automatically generated
-from [SpikeAI/polychronies@fda3d50](https://github.com/SpikeAI/polychronies/tree/fda3d506a219219442a52d3298026076374bcdcf)
-on August 18, 2022.
+from [SpikeAI/polychronies@b283391](https://github.com/SpikeAI/polychronies/tree/b283391a3130a5660403a112cce875238b80b1f5)
+on August 31, 2022.
 </em></small>
 
 ## Authors
@@ -588,6 +588,8 @@ Here, we develop a model for the efficient detection of such PGs based on the in
 
 Emergence of electronic architectures specialized in Sparse Event-Based Convolutions [@doi:10.3929/ethz-b-000543342] or of sparsity aware algorithms [@arxiv:2204.05422].
 
+
+and  oscillations?  Journal Article • DOI: 10.1007/BF00202899 Coherent oscillations: A mechanism of feature linking in the visual cortex?
 
 ## development
 

@@ -60,7 +60,7 @@ demonstated
 dendritic
 dependance
 des
-Differentially
+differentially
 dimensionality
 d’Informatique
 discrepency
@@ -94,7 +94,7 @@ HDBSCAN
 heatmap
 Hebbian
 heterosynaptic
-Hippocampal
+hippocampal
 Hirase
 HVC
 ICECS
@@ -200,7 +200,7 @@ SNR
 soma
 spatio
 spatiotemporal
-spectro
+Spectro
 spectrograms
 SpikeShip
 SPOTDis
@@ -217,7 +217,7 @@ supersequences
 sur
 Synfire
 Systèmes
-Tempotron
+tempotron
 thalamocortical
 Thanasoulis
 Timone
