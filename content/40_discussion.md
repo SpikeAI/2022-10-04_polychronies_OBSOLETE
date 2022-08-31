@@ -15,6 +15,8 @@ Here, we develop a model for the efficient detection of such PGs based on the in
 Emergence of electronic architectures specialized in Sparse Event-Based Convolutions [@doi:10.3929/ethz-b-000543342] or of sparsity aware algorithms [@arxiv:2204.05422].
 
 
+and  oscillations?  Journal Article • DOI: 10.1007/BF00202899 Coherent oscillations: A mechanism of feature linking in the visual cortex?
+
 ## development
 
 scaffolding of neural assemblies / existence of critical periods : [@doi:10.1101/2021.06.08.447542]
