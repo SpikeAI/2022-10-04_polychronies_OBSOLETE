@@ -79,5 +79,6 @@ sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6
 
  * recent theories of binding by synchrony : Fries 2005 trends cog neuro with spikes arriving at peak susceptibility (top of a cycle) or down, van Rullen, Laura Dugué
 
+* cell assembly hypothesis: neurons coordinate their activity through the formation and repetitive co-activation of groups. https://link-springer-com.insb.bib.cnrs.fr/article/10.1007/s10827-021-00801-9 Hebb DO. The organisation of behaviour: a neuropsychological theory. New York: Science Editions; 1949.
 
  * A notable exception is the polychronization model of Izhikevich [@Izhikevich2006], which combined the construction of a random recurrent model of spiking neurons including such delays and whose weights evolved with a Spike-Time Dependent Plasticity (STDP) learning rule. In this model, raster plot analysis showed repeated activation of Polychronous Groups (PGs), i.e., specific spike patterns with a specific sequence of activations.
