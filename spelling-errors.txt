@@ -92,6 +92,7 @@ Grismaldi
 Grossberger
 HDBSCAN
 heatmap
+Hebb
 Hebbian
 heterosynaptic
 hippocampal
@@ -153,6 +154,7 @@ neuromorphic
 Neurophysiol
 neurophysiological
 Neurophysiologists
+neuropsychological
 Neurosci
 Neurosciences
 neuroscientific
@@ -172,7 +174,7 @@ PNG
 PNGs
 Politi
 polychronization
-polychronous
+Polychronous
 potentiation
 Poulet
 pre
@@ -183,7 +185,7 @@ PSCs
 pulvinar
 Purpura
 pyNN
-rastermap
+Rastermap
 RefRN
 resistive
 retinotopic
@@ -200,7 +202,7 @@ SNR
 soma
 spatio
 spatiotemporal
-Spectro
+spectro
 spectrograms
 SpikeShip
 SPOTDis

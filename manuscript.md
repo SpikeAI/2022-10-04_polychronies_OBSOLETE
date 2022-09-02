@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-08-31'
+date-meta: '2022-09-02'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -59,8 +59,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-08-31" />
-  <meta name="citation_publication_date" content="2022-08-31" />
+  <meta name="dc.date" content="2022-09-02" />
+  <meta name="citation_publication_date" content="2022-09-02" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/b283391a3130a5660403a112cce875238b80b1f5/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/b283391a3130a5660403a112cce875238b80b1f5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/b283391a3130a5660403a112cce875238b80b1f5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/d2fe7eb9ebd0ab510f14fe490d93f6d2aa75fae3/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/d2fe7eb9ebd0ab510f14fe490d93f6d2aa75fae3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/d2fe7eb9ebd0ab510f14fe490d93f6d2aa75fae3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,10 +111,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/b283391a3130a5660403a112cce875238b80b1f5/))
+([permalink](https://SpikeAI.github.io/polychronies/v/d2fe7eb9ebd0ab510f14fe490d93f6d2aa75fae3/))
 was automatically generated
-from [SpikeAI/polychronies@b283391](https://github.com/SpikeAI/polychronies/tree/b283391a3130a5660403a112cce875238b80b1f5)
-on August 31, 2022.
+from [SpikeAI/polychronies@d2fe7eb](https://github.com/SpikeAI/polychronies/tree/d2fe7eb9ebd0ab510f14fe490d93f6d2aa75fae3)
+on September 2, 2022.
 </em></small>
 
 ## Authors
@@ -257,6 +257,7 @@ sparse in time and space [2] AL Barth and JF Poulet Trends in Neurosciences 35.6
 
  * recent theories of binding by synchrony : Fries 2005 trends cog neuro with spikes arriving at peak susceptibility (top of a cycle) or down, van Rullen, Laura Dugué
 
+* cell assembly hypothesis: neurons coordinate their activity through the formation and repetitive co-activation of groups. https://link-springer-com.insb.bib.cnrs.fr/article/10.1007/s10827-021-00801-9 Hebb DO. The organisation of behaviour: a neuropsychological theory. New York: Science Editions; 1949.
 
  * A notable exception is the polychronization model of Izhikevich [@Izhikevich2006], which combined the construction of a random recurrent model of spiking neurons including such delays and whose weights evolved with a Spike-Time Dependent Plasticity (STDP) learning rule. In this model, raster plot analysis showed repeated activation of Polychronous Groups (PGs), i.e., specific spike patterns with a specific sequence of activations.
 
