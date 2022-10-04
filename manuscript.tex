@@ -1,0 +1,1433 @@
+This manuscript
+(\href{https://SpikeAI.github.io/polychronies/v/9f4dbc4083cc349bedef79375849d649d7300fd4/}{permalink})
+was automatically generated
+from \href{https://github.com/SpikeAI/polychronies/tree/9f4dbc4083cc349bedef79375849d649d7300fd4}{SpikeAI/polychronies@9f4dbc4}
+on October 4, 2022.
+
+\hypertarget{authors}{%
+\subsection{Authors}\label{authors}}
+
+\begin{itemize}
+\item
+  \textbf{Camille Besnainou}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.svg}
+  \href{https://github.com/camillebesnainou}{camillebesnainou}
+  Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
+  · Funded by Grant AgileNeuroBot
+\item
+  \textbf{Antoine Grimaldi}
+  · \url{http://antoinegrimaldi.fr/}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.svg}
+  \href{https://orcid.org/0000-0002-3107-4788}{0000-0002-3107-4788}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.svg}
+  \href{https://github.com/AntoineGrimaldi}{AntoineGrimaldi}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/twitter.svg}
+  \href{https://twitter.com/A_Grismaldi}{A\_Grismaldi}
+  Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
+  · Funded by Grant APROVIS3D
+\item
+  \textbf{Amélie Gruel}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.svg}
+  \href{https://orcid.org/0000-0003-3916-0514}{0000-0003-3916-0514}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.svg}
+  \href{https://github.com/amygruel}{amygruel}
+  Laboratoire d'Informatique, Signaux et Systèmes de Sophia Antipolis (I3S), CNRS / Université Côte d'Azur
+  · Funded by Grant APROVIS3D
+\item
+  \textbf{Laurent U Perrinet}
+  · \url{https://laurentperrinet.github.io/}
+  \includegraphics[width=0.16667in,height=0.16667in]{images/orcid.svg}
+  \href{https://orcid.org/0000-0002-9536-010X}{0000-0002-9536-010X}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/github.svg}
+  \href{https://github.com/laurentperrinet}{laurentperrinet}
+  · \includegraphics[width=0.16667in,height=0.16667in]{images/twitter.svg}
+  \href{https://twitter.com/laurentperrinet}{laurentperrinet}
+  Institut de Neurosciences de la Timone, CNRS / Aix-Marseille Université
+  · Funded by Grant APROVIS3D; Grant AgileNeuroBot
+\end{itemize}
+
+\hypertarget{abstract}{%
+\subsection{Abstract}\label{abstract}}
+
+Why do neurons communicate through spikes? By definition, a spike, or action potential, is a all-or-none event ---it can occur or not without further details--- at asynchronous timings, i.e.~it can occur at any continuous time - differentially to the discretized timing classically used in digital processing. In the living world, neural systems almost systematically use this so-called event-based representation, though we do not yet have a clear idea why. A better understanding of this phenomenon remains a fundamental challenge in neurobiology in order to better interpret the masses of recorded data. It is also an emerging challenge in computer science to allow the efficient exploitation of a new class of sensors and event-based computers, called neuromorphic, which could allow significant gains in computing time and energy consumption ---a major societal challenge in the age of the digital economy and of global warming.
+
+The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This \emph{event-based representation} present in the neuronal code is essential in understanding information processing and yet, most neuronal models do not take advantage of this minute temporal dimension. Our goal here is to bring an interdisciplinary perspective on the computational advantage of time series representations for the brain and for information processing machines. In particular, we will focus on the hypothesis that there exists in an assembly of neurons a representation based on a set of motifs of different relative spike times. Here, we will review current litterature on the detection of such motifs in generic raster plots. It is work in progress, where anybody interested can \emph{openly} join.
+
+This hypothesis is directly inspired by neurobiological observations in the hippocampus, and it expands the capabilities of analog representations based on the firing rate by considering a representation based on repetitions of these motifs at precise times of occurrence. A mathematical formalization would be particularly well suited to neuromorphic computing, and would allow for the supervised or self-supervised learning of such motifs in any event-driven data. We will first review some biological and theoretical evidence in neural information processing. We will then present some models for the detection of such motifs in arbitrary raster plots, synthetic, biological or artificial (notably from event-based cameras). In particular, we will discuss models which exploit the variety of synaptic delays on the dendritic tree. Then, we will try to outline some possible strategies for learning these patterns and finally discuss possible perspectives.
+
+\hypertarget{introduction-importance-of-precise-spike-timings-in-the-brain}{%
+\subsection{Introduction: Importance of precise spike timings in the brain}\label{introduction-importance-of-precise-spike-timings-in-the-brain}}
+
+\hypertarget{ultra-fast-neural-codes-for-ultra-fast-vision}{%
+\subsubsection{Ultra fast neural codes for ultra fast vision}\label{ultra-fast-neural-codes-for-ultra-fast-vision}}
+
+Let us start our review of the state of the art on the role of dynamics in vision by presenting some surprising results that have been obtained in neuroscience. Indeed, Simon Thorpe's group has shown during the last decades numerous examples demonstrating that humans can categorize briefly presented images in a fraction of a second. Its first experiment consisted in asking subjects to categorize images that do or do not contain animals {[}\protect\hyperlink{ref-G3GlupPg}{1}{]}. The results showed that humans were able to perform this task very well (with a success rate of more than 95\%) but above all that a differential activity for the two categories of images could be observed by electroencephalography, showing that this differentiation emerges at a very early latency in neuronal activity. These results have been extended to several species including primates but also extended to different experimental protocols and have shown for example that the response could be extremely fast of the order of 120 ms when the task was to perform a saccade {[}\protect\hyperlink{ref-B9iZWoq3}{2}{]}.
+
+This fast processing also explains the surprising experiments of fast serial detection which consists in presenting a fast succession of different images and to decode via the EEG if the observer can detect for example the presence of an animal. The performances decrease progressively as the frequency of presentation of the images increases. However, it has been shown in the macaque that a significant performance could be maintained with an image presentation time of only 14 ms per image {[}\protect\hyperlink{ref-EqCCVwl2}{3}{]}.
+
+This speed of the visual cortex, although surprising, is quite compatible with the latencies that are recorded at the neuro-physiological level. Indeed, when an image is presented on the retina, the visual information is rapidly propagated to the thalamus and then to the primary visual cortex takes about 55 ms in the macaque {[}\protect\hyperlink{ref-Vu87UU6A}{4}{]}, see Figure {[}\ref{fig:thorpe}{]}. This functioning of visual processing as a forward pass is most prominent in fast processing but can be complemented with feedback loops from the higher areas to the sensory areas {[}\protect\hyperlink{ref-15aMjRHVK}{5}{]}.
+
+\begin{figure}
+\hypertarget{fig:thorpe}{%
+\centering
+\includegraphics[width=1\textwidth,height=\textheight]{https://cdn-learn.adafruit.com/assets/assets/000/086/572/original/circuitpython_Thorpe-FabreThorpe-Neuroscience-Seeking-categories-in-the-brain-monkey-visual-latency-estimate.jpg}
+\caption{From {[}\protect\hyperlink{ref-12dWDpY61}{6}{]}}\label{fig:thorpe}
+}
+\end{figure}
+
+\hypertarget{how-timing-encodes-analogous-profile}{%
+\subsubsection{How timing encodes analogous profile}\label{how-timing-encodes-analogous-profile}}
+
+An important characteristic of neuronal information is that it consists mainly in the transfer of action potentials, or spikes, which consist of brief impulses that propagate along the axons of neurons. These have the particularity of being essentially binary in their amplitude (that is to say, they are prototypical, all or nothing). An important consequence of the speed of processing is that it implies that it is carried out using only very few spikes. Indeed, if we consider that a behavioral response in only 120 ms consists of about ten processing stages following the ``forward'' pathways of the visual system, then this imposes that the processing in a single area is performed with a reduced number of spikes. Neurophysiologists tipcally use firing sequences to characterize the activity of neurons using different statistics on their individual timing {[}\protect\hyperlink{ref-zZUVkTfZ}{7}{]} but also the dependance across neurons {[}\protect\hyperlink{ref-13T2Gne9z}{8}{]}.
+
+Numerous studies demonstrated the importance of precise timing in neural population activity {[}\protect\hyperlink{ref-BNK6T5Uk}{9}{]}, efficient encoding thanks to the use of spike latencies {[}\protect\hyperlink{ref-1DpSM1kpQ}{10},\protect\hyperlink{ref-IjepoonT}{11}{]} or precise timing in the auditory system {[}\protect\hyperlink{ref-mxPMgOmW}{12},\protect\hyperlink{ref-1ECJhg2GM}{13}{]}. All these findings, and more {[}\protect\hyperlink{ref-WZsEyOlK}{14}{]}, highlight the importance of the temporal aspect of the neural code and suggest the existence of repeated spatio-temporal patterns in the spike train. Note also that depending on how an in vitro cell is driven, this may influence the reliability of spike timing in neocortical neurons {[}\protect\hyperlink{ref-XsHCA4IZ}{15}{]}.
+
+\begin{figure}
+\hypertarget{fig:roc}{%
+\centering
+\includegraphics{images/roc.jpg}
+\caption{Latency coding. An input analog profile is encoded in latencies: the higher the contrast, the shorter the latency. In this example, one generates at most one spike per neuron. From {[}\protect\hyperlink{ref-YX5wqWH4}{16}{]}}\label{fig:roc}
+}
+\end{figure}
+
+At the level of dynamic processing of visual information, it has been shown that an encoding of the values of luminance imminence in the image instead of the retina {[}\protect\hyperlink{ref-IjepoonT}{11}{]}. Notably one can appreciate in figure 1 that the response of ganglion cells to visual gratings that are flashed onto the retina. The authors showed that the neuronal response could be encoded in the latency of the response and not only in the frequency of discharge as is often assumed. In figure 4 of the same article, these results are extended to natural images and show a qualitatively similar behavior. The conclusion of the authors is that the discharge latency of the neurons allows to encode spatial characteristics of the image. First-spike latency codes are a feasible mechanism for information transfer even when biologically plausible estimates of stimulus onset are taken into account {[}\protect\hyperlink{ref-1H1Omh73g}{17}{]}. Interestingly, such fine latency effect can be at the origin of somme visual illusions, for instance the illusion of false colors in the \href{https://michaelbach.de/ot/col-Benham/index.html}{Benham Top} based based on center-surround interactions in the parvocellular pathway {[}\protect\hyperlink{ref-UlbjMU0W}{18}{]}.
+
+Similar results have been demonstrated through neurophysiological recordings in the primary visual cortex and show that different levels of visual activity will induce different levels of neuronal discharge latency in the primary visual area {[}\protect\hyperlink{ref-513xqzmL}{19}{]}. Many models have used these properties in temporal coding to build fast image categorization networks. These models take the form of artificial spiking neural networks (SNNs) and have been able to demonstrate their practical applications for image categorization {[}\protect\hyperlink{ref-1DpSM1kpQ}{10}{]}. This work has been extended to include unsupervised learning capabilities and we have recently developed a SNN architecture that allows to categorize images of different classes in only a few spikes {[}\protect\hyperlink{ref-7K80jcx9}{20},\protect\hyperlink{ref-fRudGmR1}{21}{]}. This type of modeling is extremely important with respect to the development of a new generation of cameras called Silicon Cameras which, instead of using a basic frame-based representation, uses a representation similar to the one we have just described and which consists in representing the image by events {[}\protect\hyperlink{ref-Oet1bgdb}{22}{]}. This type of modeling often uses the classical architecture of image categorization developed in deep learning while adapting it to the specificity of the event-based representation {[}\protect\hyperlink{ref-15cR83gqd}{23}{]}. Note also that timing is not entirely sensorial or internal but in {[}\protect\hyperlink{ref-1E8gkynCm}{24}{]}, they found that ``timing accuracy was improved when the environment afforded cues that rats can incorporate into motor routines. Timing, at least in animals, may thus be fundamentally embodied and situated.'' Altogether, these results show that ``that like other senses, vision relies heavily on temporal strategies and temporal neural codes to extract and represent spatial information'' {[}\protect\hyperlink{ref-QK8RfvTZ}{25}{]}.
+
+\hypertarget{from-synfire-chains}{%
+\subsubsection{From synfire chains\ldots{}}\label{from-synfire-chains}}
+
+The analysis of generic raster plots reveals particular traits that hint at the role of a precise timing. For instance, the firing rate is highly irregular {[}\protect\hyperlink{ref-sYHyiGsP}{26}{]}, which makes it inconsistent with temporal integration of random EPSPs. It has also been observed that the response of a neuron in a cortical slice to a current step could be highly non-reproducible, where the first spike is aligned but the subsequent spike times tend to diffuse for independent repetitions of the stimulation {[}\protect\hyperlink{ref-XsHCA4IZ}{15}{]} (see Figure {[}\ref{fig:mainen}{]}). When driven by a highly dynamic \emph{frozen} noise, the output spikes are highly reproducible. This is consistent with the differential role of different stimulus frequencies on the reliability of spike timing reported in {[}\protect\hyperlink{ref-1AbvCTG03}{27}{]} : ``we found that, as expected given the resistive and capacitive properties of cortical neurons, low frequencies have a larger effect on the membrane potential of cortical neurons than do higher frequencies. However, increasing the amount of gamma range fluctuations in a stimulus leads to more precise timing of action potentials''.
+
+\begin{figure}
+\hypertarget{fig:mainen}{%
+\centering
+\includegraphics{https://camo.githubusercontent.com/77f4a48a0fe8f98ffab3c1f21dca1e74286b14d47c17120ee9627f3351fcd5e7/687474703a2f2f692e737461636b2e696d6775722e636f6d2f69786e727a2e706e67}
+\caption{The timing of the spikes produced following the repetition of a step stimuli is less reproducible than that to a noisy stimulus. While this seems paradoxical at first sight, this is due to the use of the same \emph{frozen} nois at each repetition and highlight the highly reproducible pattern of spikes when it is driven by a highly dynamic input. See this \href{https://github.com/laurentperrinet/2022_UE-neurosciences-computationnelles/blob/master/C_MainenSejnowski1995.ipynb}{notebook} for a replication of this result using a simple LIF model.}\label{fig:mainen}
+}
+\end{figure}
+
+In his book ``Corticonics'' {[}\protect\hyperlink{ref-19MS6Bbwp}{28}{]}, Moshe Abeles queried if the role of cortical neurons is whether to integrate synaptic inputs or rather to detect coincidences in temporal spiking patterns. The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models. While the first hypothesis favors the rate coding theory, the second possibility highlights the need for temporal precision in the neural code {[}\protect\hyperlink{ref-lT1Ato7P}{29}{]}. The book then demonstrates that this could take the form of ``synfire chains'', that is synchronous activity on subsets of neurons which could be propagated in a stable fashion. Since this date, multiple experimental observations have suggested the existence of this precise zero-phase-lag spike synchronization in a defined subset of neurons {[}\protect\hyperlink{ref-R2E2wRFg}{32}{]}.
+
+It was shown that a simple model may allow the propagation of such synfire chains {[}\protect\hyperlink{ref-xbqYi2PD}{33}{]}. This model considers the dynamics of leaky integrate-of-fire neurons in different groups of similar size. Each neuron of one group is connected by an excitatory synapse to the next. When a pulse is elicited in the first group, this may generate a spike in the next group. Depending on the weight value, this new activity may get more or less synchronized than the previous pulse (as measured by the standard deviation of spike times in the pulse). Recursively applying this to a sequence of groups generates either a synfire propagation or not. A simple simulation is shown in Figure {[}\ref{fig:diesman}{]}. A crucial aspect of this emergence is in particular the balance between excitation and inhibition {[}\protect\hyperlink{ref-DL2NpHxr}{34}{]}. This was for instance modeled by feed-forward inhibition which is a fine-scaled latency mechanism that is an essential ingredient in modelling push-pull effects in the primary visual cortex {[}\protect\hyperlink{ref-mszJ8wdv}{35}{]}.
+
+\begin{figure}
+\hypertarget{fig:diesman}{%
+\centering
+\includegraphics{https://brian2.readthedocs.io/en/stable/_images/frompapers.Diesmann_et_al_1999.1.png}
+\caption{Simulation of a synfire propagation \href{https://brian2.readthedocs.io/en/stable/examples/frompapers.Diesmann_et_al_1999.html}{using Brian}. The model consists of 10 groups of 100 neurons each. A pulse with a given jitter is generated in the first group which here generates a pulse after a certain processing delay in the second group with a lower jitter. This allows the propagation of the synchronous activity along the chain of the neural groups.}\label{fig:diesman}
+}
+\end{figure}
+
+Attempts have been made to detect such synfire chains in neurobiological data {[}\protect\hyperlink{ref-qVu1OkoS}{36}{]}: ``The sensitivity is high enough to detect synfire chain activity in simultaneous single-unit recordings of 100 to 200 neurons from such data, enabling application to experimental data in the near future.'' Further models have shown that such synfire chains could be embedded in topographies {[}\protect\hyperlink{ref-xBZqHOuN}{37}{]} or using conductance-based neurons with feed-forward inhibition to improve the robustness of the propagation {[}\protect\hyperlink{ref-p7xk5w4f}{38}{]}. In particular, this was implemented using the pyNN language {[}\protect\hyperlink{ref-33SRV9MB}{39}{]} both in CPU-based and neuromorphic hardware {[}\protect\hyperlink{ref-DiIieN8s}{40}{]} (see Figure {[}\ref{fig:pynn}{]}).
+
+\begin{figure}
+\hypertarget{fig:pynn}{%
+\centering
+\includegraphics{https://www.frontiersin.org/files/Articles/39056/fnins-07-00011-r2/image_m/fnins-07-00011-g004.jpg}
+\caption{A pyNN implementation of a Synfire chain with feedforward inhibition. The background is only utilized in the original model, where it is implemented as random Gaussian current. For the presented hardware implementation it has been omitted due to network size constraints. As compensation for missing background stimuli, the resting potential was increased to ensure a comparable excitability of the neurons. The state space gives the duration of synfire chains as a function of the protocol's parameters and compares (C) CPU to (D) neuromorphic implementations.}\label{fig:pynn}
+}
+\end{figure}
+
+Note also that synchronicity may explain some unintuitive results. Indeed it has been shown that thalamocortical synapses are relatively weak compared to the amount of intra-cortical activity. However, this pathway is sufficient to drive the cortex as this input is more often synchronously active {[}\protect\hyperlink{ref-18ZU9zP9l}{41}{]}.
+
+Some experimental results show the emergence of synchrony, for instance in motor cortical function {[}\protect\hyperlink{ref-wVZpQvSk}{42}{]}. Interestingly, authors showed that ``Accurate spike synchronization occurred in relation to external events (stimuli, movements) and was commonly accompanied by discharge rate modulations but without precise time locking of the spikes to these external events. Spike synchronization also occurred in relation to purely internal events (stimulus expectancy), where firing rate modulations were distinctly absent. These findings indicate that internally generated synchronization of individual spike discharges may subserve the cortical organization of cognitive motor processes.'' Moreover, such emergence could change over the learning period involved in learning a task {[}\protect\hyperlink{ref-1HJjmmSpm}{43}{]} and showed some tuning to to movement direction and reaction time {[}\protect\hyperlink{ref-FZ9X31Qa}{44}{]}. It is important to note that synchronous events tended to lock to LFP beta waves {[}\protect\hyperlink{ref-Ejy1sAyh}{45}{]}, and was extended to larger assemblies {[}\protect\hyperlink{ref-Glu4NlLC}{47}{]} using statistical methods (see {[}\protect\hyperlink{ref-sec:detection}{\textbf{sec:detection?}}{]}).
+
+In {[}\protect\hyperlink{ref-3GlNNxH5}{48}{]}, the author proposes a simple spike-based computational framework, based on the idea that stimulus-induced synchrony can be used to extract sensory invariants (for example, the location of a sound source), which is a difficult task for classical neural networks. It relies on the simple remark that a series of repeated coincidences is in itself an invariant. Many aspects of perception rely on extracting invariant features, such as the spatial location of a time-varying sound, the identity of an odor with fluctuating intensity, the pitch of a musical note.
+
+\hypertarget{to-traveling-waves}{%
+\paragraph{.. to traveling waves \ldots{}}\label{to-traveling-waves}}
+
+TODO : {[}\protect\hyperlink{ref-zNDCo9Hy}{49}{]}
+
+Statistical dependencies in the responses of sensory neurons govern both the amount of stimulus information conveyed and the means by which downstream neurons can extract it. This is put in evidence by analysing the functional significance of correlated firing in a complete population of macaque parasol retinal ganglion cells using a model of multi-neuron spike responses {[}\protect\hyperlink{ref-Piao2Wzf}{50}{]}. This show precise spatio-temporal differences in this recurrently connected assembly. The different aspects of information in the data are evaluated by a decoding strategy highlighting the role of correlations. A similar dataset used in {[}\protect\hyperlink{ref-2AsQOOsE}{52}{]} is available from M. Berry's lab {[}\protect\hyperlink{ref-1FU0Y7Erc}{53}{]}.
+
+Propagating waves occur in many excitable media and were recently found in neural systems from retina to neocortex. While propagating waves are clearly present under anaesthesia, whether they also appear during awake and conscious states remains unclear. One possibility is that these waves are systematically missed in trial-averaged data, due to variability. A recent work {[}\protect\hyperlink{ref-hGYLURVS}{54}{]} presents a method for detecting propagating waves in noisy multichannel recordings. Applying this method to single-trial voltage-sensitive dye imaging data, they show that the stimulus-evoked population response in primary visual cortex of the awake monkey propagates as a travelling wave, with consistent dynamics across trials. A network model suggests that this reliability is the hallmark of the horizontal fibre network of superficial cortical layers. Propagating waves with similar properties occur independently in secondary visual cortex, but maintain precise phase relations with the waves in primary visual cortex. These results show that, in response to a visual stimulus, propagating waves are systematically evoked in several visual areas, generating a consistent spatiotemporal frame for further neuronal interactions.
+
+\begin{figure}
+\hypertarget{fig:davis}{%
+\centering
+\includegraphics[width=1\textwidth,height=\textheight]{https://media.springernature.com/lw685/springer-static/image/art\%3A10.1038\%2Fs41467-021-26175-1/MediaObjects/41467_2021_26175_Fig1_HTML.png}
+\caption{a Spike raster for repeated presentations (N = 40) of a high-contrast (10\% Michelson contrast) drifting Gabor recorded from area MT of a fixating marmoset (stimulus-onset, red line; mean response, blue line). A single-trial LFP trace is plotted in gray, and the average LFP response is plotted in black. The relative power between baseline (−200 ms to stimulus-onset) and evoked fluctuations (stimulus-onset + 50--250 ms) significantly favored the evoked response (right panel; N = 110 trials; median = 1.89 dB, p = 0.000019, two-tailed Wilcoxon's ranked-sum test). b Same as in (a), but for a low contrast stimulus (\textless2\% Michelson contrast). The relative power between baseline and evoked LFP fluctuations was not statistically different from parity (median = 1.23 dB, p = 0.087 two-tailed Wilcoxon's ranked-sum test). c An example of spontaneous LFP fluctuations structured as a traveling wave recorded from a spatially distributed multielectrode array in marmoset area MT. d Histogram of spontaneous spike probability as a function of the generalized phase of the LFP during fixation. e The average evoked response to low contrast stimuli was stronger when a more excitable phase (±π rad) of a spontaneous traveling wave aligned with the retinotopic location of the target (aligned, green line) as compared to when a less excitable phase (0 rad) was aligned (unaligned, purple line; N = 43 wave and non-wave trials; shaded region SEM; p = 0.0000015 two-tailed Wilcoxon's rank-sum test). Data for panels c--e modified from Davis et al.17 with permission.}\label{fig:davis}
+}
+\end{figure}
+
+More recently Advanced recording techniques have enabled the identification of travelling waves of neuronal activity in different areas of the cortex {[}\protect\hyperlink{ref-vsKvZJ82}{55}{]}. Authors review these findings, consider the mechanisms by which travelling waves are generated and evaluate their possible roles in cortical function. In particular, spontaneous traveling waves naturally emerge from horizontal fiber time delays and travel through locally asynchronous-irregular states {[}\protect\hyperlink{ref-BNK6T5Uk}{9}{]}. Studies of sensory-evoked neuronal responses often focus on mean spike rates, with fluctuations treated as internally-generated noise. However, fluctuations of spontaneous activity, often organized as traveling waves, shape stimulus-evoked responses and perceptual sensitivity. The mechanisms underlying these waves are unknown. Further, it is unclear whether waves are consistent with the low rate and weakly correlated ``asynchronous-irregular'' dynamics observed in cortical recordings. Here, authors describe a large-scale computational model with topographically-organized connectivity and conduction delays relevant to biological scales. They find that spontaneous traveling waves are a general property of these networks. The traveling waves that occur in the model are sparse, with only a small fraction of neurons participating in any individual wave. Consequently, they do not induce measurable spike correlations and remain consistent with locally asynchronous irregular states. Further, by modulating local network state, they can shape responses to incoming inputs as observed in vivo.
+
+{[}\protect\hyperlink{ref-17EU8fPBv}{56}{]} present ensemble-recordings of neurons in the lumbar spinal cord that indicate that, rather than alternating, the population is performing a low-dimensional ``rotation'' in neural space, in which the neural activity is cycling through all phases continuously during the rhythmic behavior.
+
+\hypertarget{spike-synchronization-and-rate-modulation-differentially-involved-in-motor-cortical-function-doi10.1126science.278.5345.1950}{%
+\paragraph{\texorpdfstring{Spike Synchronization and Rate Modulation Differentially Involved in Motor Cortical Function {[}\protect\hyperlink{ref-wVZpQvSk}{42}{]}}{Spike Synchronization and Rate Modulation Differentially Involved in Motor Cortical Function {[}42{]}}}\label{spike-synchronization-and-rate-modulation-differentially-involved-in-motor-cortical-function-doi10.1126science.278.5345.1950}}
+
+It is now commonly accepted that planning and execution of movements are based on distributed processing by neuronal populations in motor cortical areas {[}\protect\hyperlink{ref-yLVM9IXi}{57}{]}. It is less clear, though, how these populations organize dynamically to cope with the momentary computational demands. Simultaneously recorded activities of neurons in the primary motor cortex of monkeys during performance of a delayed-pointing task exhibited context-dependent, rapid changes in the patterns of coincident action potentials. Accurate spike synchronization occurred in relation to external events (stimuli, movements) and was commonly accompanied by discharge rate modulations but without precise time locking of the spikes to these external events. Spike synchronization also occurred in relation to purely internal events (stimulus expectancy), where firing rate modulations were distinctly absent. These findings indicate that internally generated synchronization of individual spike discharges may subserve the cortical organization of cognitive motor processes.
+
+{[}\protect\hyperlink{ref-OAorhMRa}{58}{]}
+
+\hypertarget{todo-and-to-synfire-braids-and-polychronous-groups}{%
+\paragraph{TODO \ldots{} and to synfire braids and polychronous groups}\label{todo-and-to-synfire-braids-and-polychronous-groups}}
+
+\begin{itemize}
+\tightlist
+\item
+  {[}\protect\hyperlink{ref-HjDb1gnq}{59}{]} : from synfire chains to Synfire braids
+\end{itemize}
+
+In neuronal models, an efficient use or detection of these spatio-temporal patterns embedded in the spike train comes with the integration of heterogeneous delays {[}\protect\hyperlink{ref-KS4oxnst}{60},\protect\hyperlink{ref-ga3ZTFC7}{61}{]}. Notably, Izhikevich {[}\protect\hyperlink{ref-SM9G0xBK}{62}{]} introduced the notion of polychronous groups (PGs) as a repetitive motif of spikes defined by a subset of neurons with different, yet precise, spiking delays. This representation has a much greater information capacity in comparison to other neural coding approaches through their connectivity and the possible coexistence of numerous superposed PGs.
+
+sparse in time and space {[}2{]} AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp.~345-355. {[}3{]} CC Petersen and S Crochet, Neuron 78.1 (2013), pp.~28-48.
+
+\begin{itemize}
+\item
+  recent theories of binding by synchrony : Fries 2005 trends cog neuro with spikes arriving at peak susceptibility (top of a cycle) or down, van Rullen, Laura Dugué
+\item
+  cell assembly hypothesis: neurons coordinate their activity through the formation and repetitive co-activation of groups. https://link-springer-com.insb.bib.cnrs.fr/article/10.1007/s10827-021-00801-9 Hebb DO. The organisation of behaviour: a neuropsychological theory. New York: Science Editions; 1949.
+\item
+  A notable exception is the polychronization model of Izhikevich {[}\protect\hyperlink{ref-SM9G0xBK}{62}{]}, which combined the construction of a random recurrent model of spiking neurons including such delays and whose weights evolved with a Spike-Time Dependent Plasticity (STDP) learning rule. In this model, raster plot analysis showed repeated activation of Polychronous Groups (PGs), i.e., specific spike patterns with a specific sequence of activations.
+\end{itemize}
+
+\hypertarget{are-there-precise-heterosynaptic-spiking-motifs-in-the-brain}{%
+\subsubsection{Are there precise heterosynaptic spiking motifs in the brain?}\label{are-there-precise-heterosynaptic-spiking-motifs-in-the-brain}}
+
+Currently, there is a consensus for rate-based coding models in computational and biological neuroscience. Nevertheless, there is a substantial literature in neurobiology indicating that brain dynamics often organize into stereotyped sequences (like synfire chains {[}\protect\hyperlink{ref-Mf6h1KNY}{63}{]}, packets {[}\protect\hyperlink{ref-2GovoaYw}{64}{]} or hippocampal sequences {[}\protect\hyperlink{ref-SVfasyCp}{65},\protect\hyperlink{ref-PUNGVou}{66}{]} and on the role of such precise spike timing in downstream information transfer and coding {[}\protect\hyperlink{ref-19fAM6hcv}{67},\protect\hyperlink{ref-13dQ0R4UM}{68},\protect\hyperlink{ref-MfmcMsqA}{69}{]}. This is for instance relevant in sensory pathways in vision {[}\protect\hyperlink{ref-1EHZgcKyL}{70}{]}, audition {[}\protect\hyperlink{ref-FlKJw2VL}{71}{]}, olfaction {[}\protect\hyperlink{ref-AhSRXBJ2}{72}{]}{]} or touch {[}\protect\hyperlink{ref-gDinei4a}{73}{]}. In particular, one theoretical viewpoint considers synfire braids (Bienenstock, 1995), where a precise sequential motif of spikes will synchronize as it reaches the soma of a neuron for which synaptic delays are adequately tuned. In particular, computational modeling shows that at the scale of neurons, an efficient neural code can emerge where spike times are organized in prototypical, precise temporal motifs (Izhikevich, 2006) which he defined as polychronous groups.
+
+Stereotyped sequences of neuronal activation have been particularly well described in the adult hippocampus and related to its function in mental travel in time and space {[}\protect\hyperlink{ref-13dQ0R4UM}{68}{]}. These sequences can be internally generated {[}\protect\hyperlink{ref-SVfasyCp}{65},\protect\hyperlink{ref-PUNGVou}{66}{]} and are formed by the chained activation of orthogonal assemblies, themselves organized as sequence packets (Malvache et al., 2016). Thus, hippocampal sequences are formed by the ordered activation of smaller sequence motifs. They are stereotyped and robust, since neurons can be activated in the same order across days (see Figure {[}\ref{fig:haimerl}{]} from {[}\protect\hyperlink{ref-qI2HUEyy}{74}{]} below). As a consequence, hippocampal sequences may rely on an internally hardwired structure and form the functional building blocks for encoding, storing and retrieving experience.
+
+\begin{figure}
+\hypertarget{fig:haimerl}{%
+\centering
+\includegraphics{https://www.pnas.org/cms/10.1073/pnas.1718518116/asset/ab9a48f6-b28f-40c1-978e-6f6dbec39b98/assets/graphic/pnas.1718518116fig01.jpeg}
+\caption{Mixed distance and duration representation in CA1. (A) Calcium fluorescence (heatmap) of CA1 neurons participating to run sequences in consecutive imaging sessions. Cells have been selected and ordered with respect to their activity in the first imaging session (Top). The black line represents speed of the mouse.}\label{fig:haimerl}
+}
+\end{figure}
+
+TODO: read {[}\protect\hyperlink{ref-MfmcMsqA}{69}{]} Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745--55.
+
+In {[}\protect\hyperlink{ref-4D8Jnhkz}{75}{]}, it was shown that attentional information from V4 or arousal can change the timings of groups of events in V1. They develop a HMM model for quantifying the transitions. ``In this study, van Kempen et al.~show that fluctuations in neural excitability are coordinated between visual areas with retinotopic precision. Top-down attention drives interareal coordination along the reverse cortical hierarchy, predicting better behavioral performance with increased coordination.''
+
+\hypertarget{cortical-songs}{%
+\subsubsection{Cortical songs}\label{cortical-songs}}
+
+\begin{itemize}
+\tightlist
+\item
+  Ikegaya and colleagues {[}\protect\hyperlink{ref-Mf6h1KNY}{63}{]} worked on spontaneous activity in vitro and in vivo. They demonstrated that in cortical activity, we can find a repetition of several motifs. In PSCs, but also in spike activity. These sequences repeat after minutes and have a precise spatio temporal structure with a ms precision. They can be specific of a particular layer or colomn, are synchronized with network activity oscillation and can involve several cells. They also demonstated that these sequences can form supersequences : the cortical songs. It consist of the assembly of several sequences which repeat in a specific order with a compressed timing.
+\item
+  ``We find precise repetitions of spontaneous patterns of synaptic inputs in neocortical neurons in vivo and in vitro. These patterns repeat after minutes, maintaining millisecond accuracy.''
+\item
+  Precisely repeating motifs of spontaneous synaptic activity in slices: duration around 1s +/- .5 s. Some events in motifs are of similar size but sometimes absent - better described by Bernouilli than SE (and covariance)
+\item
+  \emph{in vivo} spontaneous activity also reveals repeating sequences. About 3000 sequences, each involving 3-10 cells out of about 900, and last up to 3 seconds
+\item
+  topography: ``Sequences had specific topographic structures, in some cases involving only a particular layer or a vertical column of cells or cells located in a cluster (Fig. 4, A and B, and fig.~S3B). (\ldots) Therefore, repeating temporal patterns of activation (\ldots) were associated with a structured spatial organization of the neurons that formed them.''
+\item
+  ``Cortical songs: modular assemblies of repeated sequences'': hierarchical detection.
+\item
+  in cotical songs, there is a ``compressing timing'' which may be taken into account by a similar mechanism as maxpooling in CNNs for space, but in time. Or there may be a mechanism for controlling the replay speed (pulvinar, \ldots{} , ?)
+\end{itemize}
+
+\begin{figure}
+\hypertarget{fig:Ikegaya2004}{%
+\centering
+\includegraphics{images/Ikegaya2004zse0150424620001.jpeg}
+\caption{Fig. 1. from {[}\protect\hyperlink{ref-Mf6h1KNY}{63}{]} Repeated motifs of spontaneous synaptic activity in vitro and in vivo. (A) Repeated motifs of intracellular activity from layer 5 pyramidal neurons in slices. Panels show segments (red) of the same voltage-clamp recording from the same cell repeating seconds or minutes after the initial occurrence (blue). Arrows indicate timings of repeated PSCs. (i) Upper trace: low--temporal resolution display of spontaneous activity of a neuron. Lower traces: higher resolution display of the repeated motif at indicated regions of the trace (a to c). (ii) Example of a longer motif. (B) Three repetitions of a motif. The top traces show the motifs superimposed on each other (blue, green, and red), the middle traces show these same traces individually, and the bottom traces show temporally magnified regions of the motifs (a to c). (C) Repeated sequences of intracellular current-clamp recordings in vivo. Two (i) and three (ii) repetitions of motifs are shown. Shuffle tests were performed on traces (i), a to c, yielding significantly fewer repeats (fig.~S2, P \textless{} 0.02). In (i), the blue trace is shifted --2.75 mV; in (ii), the blue trace is shifted --1.58 mV, and the green +0.79 mV.}\label{fig:Ikegaya2004}
+}
+\end{figure}
+
+It is interesting to make a parallel with the ``Rapid Formation of Robust Auditory Memories'' reported in {[}\protect\hyperlink{ref-Jzr1gwsr}{76}{]} which uses noise patterns. They '' used random waveforms to probe the formation of new memories for arbitrary complex sounds. A behavioral measure was designed, based on the detection of repetitions embedded in noises up to 4 s long.'' The task is to detect the repetition of the same (frozen) noise within a trial. '' Unbeknownst to listeners, some noise samples reoccurred randomly throughout an experimental block.'' they showed that the ``repeated exposure induced learning for otherwise totally unpredictable and meaningless sounds'' by showing that the sensitivity increases in that case. Note that ``acoustical analyses failed to reveal any obvious differences between good and bad noises'' and that ``Time reversal had no significant effect on the RefRN advantage'' (quite surprising). The Learning is unsupervised (statistical, automatic), fast-acting (phase transition, ``insight''), and long-lasting (memorization).
+
+Such observations suggest that neuronal groups or ensembles, rather than individual neurons, are emergent functional units of cortical activity {[}\protect\hyperlink{ref-UGHHptIH}{77}{]}. This work shows, using two-photon calcium imaging of populations of neurons from the primary visual cortex of awake mice during visual stimulation and spontaneous activity, that whereas intrinsic ensembles recur at random time intervals, visually evoked ensembles are time-locked to stimuli. It proposes that visual stimuli recruit endogenously generated ensembles to represent visual attributes. Note that evoked ensembles in response to a natural movie played in a loop were precisely timed across repetitions (Fig. 7).
+
+\hypertarget{outline}{%
+\subsubsection{outline}\label{outline}}
+
+A natural candidate to use these precise temporal patterns in the brain is to use Spiking Neural Networks (SNNs) {[}\protect\hyperlink{ref-DUpFdm8C}{78}{]}. The approach which is at present most prominent in the SNNs community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.
+
+{[}
+\textbf{TODO: a paragraph on our existing work}
+Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level.
+
+there are temporal delays in the nervous system, both at the neural {[}\protect\hyperlink{ref-f7gkBktf}{79}{]} and behavioral {[}\protect\hyperlink{ref-1BSbXPPDF}{80}{]} levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks.
+
+may be used for motion detection and interpolation {[}\protect\hyperlink{ref-WGEaBYgy}{81}{]} {[}\protect\hyperlink{ref-7GEdzh5o}{82}{]}
+
+{]}\{.banner .lightred\}
+
+Remarkably, novel neuromorphic chips use a representation similar to that of real neurons {[}\protect\hyperlink{ref-Oet1bgdb}{22}{]}. For example, event-based cameras provide a stream of binary asynchronous events signaling detectable changes in luminance, and information is represented by these spike-based temporal motifs, hence their name ``silicon retinas'' (see Figure \ref{fig:silicon_retina}). For such devices, it is crucial to better understand the potential of using such event-based representations in order to devise novel algorithms.
+
+\begin{figure}
+\hypertarget{fig:silicon_retina}{%
+\centering
+\includegraphics{https://laurentperrinet.github.io/grant/anr-anr/event_driven_computations.png}
+\caption{A miniature, event-based ATIS sensor. Contrary to a classical frame-based camera for which a full dense image representation is given at discrete, regularly spaced timings, the event-based camera provides with events at the micro-second resolution. These are sparse as they represent luminance increments or decrements (ON and OFF events, respectively).}\label{fig:silicon_retina}
+}
+\end{figure}
+
+This section has provided evidence that polychronous groups are an important apsect of information representation in biology with important application in data analysis and neuromorphic engineering. The rest of this review paper is organized as follows.
+
+First, we will review models for the detection of polychronous groups:
+
+\begin{itemize}
+\item
+  A crucial advantage of Spiking Neural Networks (SNNs) architectures lies in its processing of temporal information. Yet, most SNNs encode the temporal signal as an analog signal and try to ``cross-compile'' classical Neural Network to a spiking architecture. To go beyond the state-of-the-art, we will review here on one core computation of a spiking neuron, that is, is its ability to switch from the classical integrator mode (summing analog currents on its synapses) to a synchrony detector where it emits a spike whenever presynaptic spiking inputs are synchronized. To overcome the diversity of input presynaptic patterns, we will explore different existing architectures to learn to detect stable ``polychronous`` events, that is, volleys of spikes which are stable up to certain synaptic delays. These models will be compared in light of neuroscientific and computational perspectives. We review theoretical and computational foundations of PG detection in models.
+\item
+  Application to Image processing using sparse spiking representations: Using the core computational unit defined, extension of the computation to a topographic representation similar to that observed in the primary visual cortex of mammals. design of micro-circuits with specific lateral interactions will allow us to design efficient micro-circuits for the sparse representation of images.
+\end{itemize}
+
+Finally we will discuss future avenues for effective PG detection and learning in event streams.
+
+\hypertarget{theoretical-models-for-the-detection-of-precise-heterosynaptic-spiking-motifs}{%
+\subsection{Theoretical models for the detection of precise heterosynaptic spiking motifs}\label{theoretical-models-for-the-detection-of-precise-heterosynaptic-spiking-motifs}}
+
+\#sec:detection
+
+A popular model for the detection of latency patterns is the tempotron {[}\protect\hyperlink{ref-1GazUBEdT}{83}{]}. This model is in particular reviewed in {[}\protect\hyperlink{ref-QCyjy8wE}{84}{]}. The Tempotron is a supervised synaptic learning algorithm which classifies a distractor from a target motif. This aims at extending the perceptron which does not incorporate a spike timing framework. The tempotron learning rule is derived by an optimization process and takes the form of a STDP rule. It is general consensus that spike timing (STDP) plays a crucial role in the development of synaptic efficacy for many different kinds of neurons {[}\protect\hyperlink{ref-EF6Larp8}{85}{]}. The limits of this model is that it's output is only binary and that it's storage capacity are limited.
+
+Some other models of latency motifs detection using STDP learning rules. For instance, {[}\protect\hyperlink{ref-Dd3kSDRW}{86}{]} implements a STDP-based spiking deep convolutional neural networks for object recognition; {[}\protect\hyperlink{ref-vePjgmRh}{87}{]} develops a form of spike-based, competitive learning applied for unsupervised learning. In {[}\protect\hyperlink{ref-RrgzWOSk}{88}{]}, authors developed novel machine learning tools and statistical tests for unsupervised spatio-temporal pattern detection in non-stationary environments, which was applied to simultaneous electrophysiological recordings from tens to hundreds of neurons for decoding cognitive processes from neural activity.
+
+In the following of this section, we will review theoretical models which directly tackle the problem of using precise heterosynaptic spiking motifs.
+
+\hypertarget{izhikevitchs-polychronization-model}{%
+\subsubsection{Izhikevitch's polychronization model}\label{izhikevitchs-polychronization-model}}
+
+Considering the number of spikes required to exceed a voltage threshold, asynchronous signals are less efficient than synchronous signals. However, taking axonal propagation times into account, synchronous signals may not coincide significantly at the post-synaptic neuron contrary to asynchronous or polychronous signals. The term polychronous was first introduced in 2006, by E. Izhichevitch in {[}\protect\hyperlink{ref-SM9G0xBK}{62}{]}. He defines this term after pointing out a particular organization of the neurons of his spiking artificial neural network. The network is characterized by a timing-dependant learning rule for weights (STDP) and by fixed conduction delays between neurons. Due to the interplay between the delays and STDP, the spiking neurons spontaneously self-organize into groups and generate patterns of stereotypical polychronous activity, i.e.~exhibit reproducible time-locked but not synchronous firing patterns. The neurons composing a group discharge at different times, but due to delays, the spikes reach the postsynaptic neuron at the same time. This synchrony leads to the summation of the excitatory post-synaptic potentials evoked by each spike and thus to the crossing of the voltage threshold and to the discharge of a spike. According to the STDP rule, the neurons involved in this activity will see their weight of synaptic connection increase and thus, constitute a polychronous group. Interestingly, thanks to the fact that a neuron can be involved in different polychronous groups, the number of coexisting polychronous groups far exceeds the number of neurons in the network, resulting in an unprecedented memory capacity of the system.
+
+{[}
+\textbf{TODO}
+
+-\textgreater{} insert fig 2 of {[}\protect\hyperlink{ref-doi}{\textbf{doi?}} 10.1162/089976606775093882{]}
+
+Thus, the learning of delays allowing this polychronous group organization may be useful to detect temporal sequences of interest.
+
+\begin{itemize}
+\item
+  Reproducing Polychronization: A Guide to Maximizing the Reproducibility of Spiking Network Models \url{https://www.frontiersin.org/articles/10.3389/fninf.2018.00046/full}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    comes with python code
+  \end{itemize}
+\item
+  blog post by Paxon Frady \url{https://epaxon.blogspot.com/2012/07/izhikevich-2006-polychronization.html}
+\item
+  dynamic networks \& learning delays:
+
+  \begin{itemize}
+  \item
+    Huning H., Glunder H., and Palm G. (1998) Synaptic delay learning in pulse-coupled neurons. Neural Computation, 10:555--565. \url{https://www.deepdyve.com/lp/mit-press/synaptic-delay-learning-in-pulse-coupled-neurons-DGMiNHxp0A}
+  \item
+    \href{https://www.researchgate.net/publication/37921636_Dynamics_of_Self-Organized_Delay_Adaptation}{Eurich C., Pawelzik K., Ernst U., Cowan J., and Milton J. (1999) Dynamics of self-organazed delay adaptation. Phys. Rev.~Lett., 82:1594--1597.}
+  \item
+    The recent ``multi-neuronal spike sequence detector'' (MNSD) architecture integrates the weight- and delay-adjustment methods by combining heterosynaptic plasticity with the neurocomputational feature spike latency : \url{https://pubmed.ncbi.nlm.nih.gov/33679293/}
+  \item
+    an extensive (graph-centric) review on \href{https://arxiv.org/abs/2109.07618}{Synchronization in time-varying networks}
+  \end{itemize}
+\end{itemize}
+
+{]}\{.banner .lightred\}
+
+A Bayesian account: ``Previous methods for studying the PNG activation response to stimuli have been limited by the template-based methods used to identify PNG activation. In this letter, we outline a new method that overcomes these difficulties by establishing for the first time a probabilistic interpretation of PNG activation. We then demonstrate the use of this method by investigating the claim that PNGs might provide the foundation of a representational system.'' {[}\protect\hyperlink{ref-KS4oxnst}{60}{]}. Stimulation of a trained network produces the activation of a PNG, ie the propagation of firing activity through multiple layers due to convergent patterns of firing.
+
+Memory traces in dynamical systems {[}\protect\hyperlink{ref-o7rANZux}{89}{]} : ``To perform nontrivial, real-time computations on a sensory input stream, biological systems must retain a short-term memory trace of their recent inputs. It has been proposed that generic high-dimensional dynamical systems could retain a memory trace for past inputs in their current state. This raises important questions about the fundamental limits of such memory traces and the properties required of dynamical systems to achieve these limits. We address these issues by applying Fisher information theory to dynamical systems driven by time-dependent signals corrupted by noise. We introduce the Fisher Memory Curve (FMC) as a measure of the signal-to-noise ratio (SNR) embedded in the dynamical state relative to the input SNR. The integrated FMC indicates the total memory capacity. We apply this theory to linear neuronal networks and show that the capacity of networks with normal connectivity matrices is exactly 1 and that of any network of N neurons is, at most, N. A nonnormal network achieving this bound is subject to stringent design constraints: It must have a hidden feedforward architecture that superlinearly amplifies its input for a time of order N, and the input connectivity must optimally match this architecture. The memory capacity of networks subject to saturating nonlinearities is further limited, and cannot exceed √𝑁. This limit can be realized by feedforward structures with divergent fan out that distributes the signal across neurons, thereby avoiding saturation. We illustrate the generality of the theory by showing that memory in fluid systems can be sustained by transient nonnormal amplification due to convective instability or the onset of turbulence.''
+
+We address these issues by applying Fisher information theory to dynamical systems driven by time-dependent signals corrupted by noise. Memory capacity is constrained by architecture: ``This limit can be realized by feedforward structures with divergent fan out that distributes the signal across neurons, thereby avoiding saturation.''
+
+\hypertarget{detecting-precise-spiking-motifs-in-biological-raster-plots}{%
+\subsection{Detecting precise spiking motifs in biological raster plots}\label{detecting-precise-spiking-motifs-in-biological-raster-plots}}
+
+\{sec:detection\}
+
+\hypertarget{spike-distances}{%
+\subsubsection{spike distances}\label{spike-distances}}
+
+J. D. Victor and K. P. Purpura, ``Nature and precision of temporal coding in visual cortex: a metric-space analysis,'' J. Neurophysiol., vol.~76, pp.~1310--1326, Aug.~1996.
+
+M. C. W. van Rossum, ``A novel spike distance,'' Neural Comput., vol.~13, no. 4, pp.~751--763, 2001. {[}21{]} D. Aronov and J. D. Victor, ``Non-Euclidean properties of spike train metric spaces,'' Physical Rev.~E (Statist., Nonlinear, Soft Matter Phys.), vol.~69, no. 6, 2004.
+
+T. Kreuz, J. S. Haas, A. Morelli, H. D. I. Abarbanel, and A. Politi, ``Measuring spike train synchrony,'' J. Neurosci. Methods, vol.~165, no. 1, pp.~151--161, 2007. {[}23{]} H.
+
+Paper by {[}\protect\hyperlink{ref-LjkTSK3h}{90}{]} On Stability of Distance Measures for Event Sequences Induced by Level-Crossing Sampling
+
+Weyl's discrepency measure {[}\protect\hyperlink{ref-RYzP72lj}{91}{]} which may lead to the definition of a cross-correlation.
+
+Robust computation with rhythmic spike patterns.~Proceedings of the National Academy of Sciences of the United States of America~116(36), 18050 - 18059.~https://dx.doi.org/10.1073/pnas.1902653116
+
+A review of the methods for neuronal response latency estimation including bayesian binning {[}\protect\hyperlink{ref-Z7LAUup3}{92}{]}.
+
+\hypertarget{decoding-neural-activity}{%
+\subsubsection{decoding neural activity}\label{decoding-neural-activity}}
+
+In generic linear non linear lnl models, the output is assumed to be poisson. As such a simple decoding strategy is to asscume it is to b inferned for a given tuning curves (Jayazeri) or simply by a simple regression {[}\protect\hyperlink{ref-MgINa6bU}{93}{]}. This latter model assumes a Bernoulli model for the generation of spikes such that the decoding amounts to a single-layer logistic regression.
+
+Unitary event analysis is performed by a statistical model of coincidence detection {[}\protect\hyperlink{ref-13iJohyPk}{94}{]}. This was extensively used in detecting above chance significant synchronous patterns, in particular in recordings of pairs of neurons (see {[}\protect\hyperlink{ref-wVZpQvSk}{42}{]} for instance).
+
+Statistical evaluation of synchronous spike patterns extracted by frequent item set mining - a method to detect significant patterns of synchronous spiking in a subset of massively parallel spike trains in the presence of background activity {[}\protect\hyperlink{ref-1ErNTONy0}{95}{]}. By the same group the SPADE, CAD or ASSET algorithms are methods for identification of spike patterns in massively parallel spike trains (the spiking activity of tens to hundred(s) of neurons recorded in parallel) by identifying fine temporal correlations in the ms precision range {[}\protect\hyperlink{ref-V9qkJFZU}{96}{]}.
+
+This was recently extended in ``3d-SPADE: Significance evaluation of spatio-temporal patterns of various temporal extents'' {[}\protect\hyperlink{ref-pExXxdMb}{97}{]} in order to find reoccurring spike patterns in parallel spike train data, and to determine their statistical significance. The extension improves the performance in the presence of patterns with different durations, as demonstrated by application to various synthetic data, such as surrogates generated to evaluate precisely timed higher-order spike correlations {[}\protect\hyperlink{ref-d2m7wQpH}{98}{]}.
+
+{[}\protect\hyperlink{ref-doi}{\textbf{doi?}}{]}
+
+TODO: summarize ``Understanding Auditory Spectro-Temporal Receptive Fields and Their Changes with Input Statistics by Efficient Coding Principles'' - Spectro-temporal receptive fields (STRFs) have been widely used as linear approximations to the signal transform from sound spectrograms to neural responses along the auditory pathway. Their dependence on statistical attributes of the stimuli, such as sound intensity, is usually explained by nonlinear mechanisms and models. Here, we apply an efficient coding principle which has been successfully used to understand receptive fields in early stages of visual processing, in order to provide a computational understanding of the STRFs. According to this principle, STRFs result from an optimal tradeoff between maximizing the sensory information the brain receives, and minimizing the cost of the neural activities required to represent and transmit this information. Both terms depend on the statistical properties of the sensory inputs and the noise that corrupts them. The STRFs should therefore depend on the input power spectrum and the signal-to-noise ratio, which is assumed to increase with input intensity. We analytically derive the optimal STRFs when signal and noise are approximated as Gaussians. Under the constraint that they should be spectro-temporally local, the STRFs are predicted to adapt from being band-pass to low-pass filters as the input intensity reduces, or the input correlation becomes longer range in sound frequency or time. These predictions qualitatively match physiological observations. Our prediction as to how the STRFs should be determined by the input power spectrum could readily be tested, since this spectrum depends on the stimulus ensemble. The potentials and limitations of the efficient coding principle are discussed.
+{[}\protect\hyperlink{ref-s63GcujC}{99}{]}
+
+\hypertarget{rastermap-decoding-large-scale-data}{%
+\subsubsection{Rastermap : decoding large-scale data}\label{rastermap-decoding-large-scale-data}}
+
+\href{https://nbviewer.org/github/MouseLand/rastermap/blob/master/tutorial/tutorial.ipynb}{Rastermap} re-arranges neurons in the raster plot based on similarity of activity
+
+\begin{itemize}
+\tightlist
+\item
+  https://www.janelia.org/lab/stringer-lab
+\item
+  described in {[}\protect\hyperlink{ref-zc16plUu}{100}{]}
+\item
+  \href{https://github.com/MouseLand/rastermap}{rastermap}
+\item
+  deconvolution strategy
+\item
+  based on a linear model
+\end{itemize}
+
+\hypertarget{stringer-et-al-2019-nature-stringer2019nature}{%
+\paragraph{\texorpdfstring{Stringer et al 2019, Nature {[}\protect\hyperlink{ref-brg2FFsb}{101}{]}}{Stringer et al 2019, Nature {[}101{]}}}\label{stringer-et-al-2019-nature-stringer2019nature}}
+
+\begin{itemize}
+\tightlist
+\item
+  ``A neuronal population encodes information most efficiently when its stimulus responses are high-dimensional and uncorrelated, and most robustly when they are lower-dimensional and correlated. Here we analysed the dimensionality of the encoding of natural images by large populations of neurons in the visual cortex of awake mice.''
+\item
+  Data availability: All of the processed deconvolved calcium traces are available on \href{https://figshare.com/articles/Recordings_of_ten_thousand_neurons_in_visual_cortex_in_response_to_2_800_natural_images/6845348}{figshare}, together with the image stimuli.
+\item
+  Code availability: The code is available on \href{https://github.com/MouseLand/stringer-pachitariu-et-al-2018b}{GitHub}.
+\end{itemize}
+
+\hypertarget{stringer-et-al-2019-science-stringer2019science}{%
+\paragraph{\texorpdfstring{Stringer et al 2019, Science {[}\protect\hyperlink{ref-1BPHUQLTf}{102}{]}}{Stringer et al 2019, Science {[}102{]}}}\label{stringer-et-al-2019-science-stringer2019science}}
+
+\begin{itemize}
+\item
+  Stringer et al.~analyzed spontaneous neuronal firing, finding that neurons in the primary visual cortex encoded both visual information and motor activity related to facial movements. The variability of neuronal responses to visual stimuli in the primary visual area is mainly related to arousal and reflects the encoding of latent behavioral states.
+\item
+  see also the work showing that you can encode very precise orientation information by using many neurons: {[}\protect\hyperlink{ref-1EMs3GS0B}{103}{]}
+\end{itemize}
+
+\hypertarget{detecting-structured-temporal-patterns}{%
+\subsubsection{detecting structured temporal patterns}\label{detecting-structured-temporal-patterns}}
+
+\hypertarget{paper-by-grossberger-2018-grossberger2018}{%
+\paragraph{\texorpdfstring{Paper by Grossberger, 2018 {[}\protect\hyperlink{ref-9AK1cwY1}{104}{]}}{Paper by Grossberger, 2018 {[}104{]}}}\label{paper-by-grossberger-2018-grossberger2018}}
+
+\begin{itemize}
+\tightlist
+\item
+  Temporally ordered multi-neuron patterns likely encode information in the brain. We introduce an unsupervised method, SPOTDisClust (Spike Pattern Optimal Transport Dissimilarity Clustering), for their detection from high-dimensional neural ensembles. SPOTDisClust measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other (SPOTDis).
+\item
+  Detecting these temporal patterns represents a major methodological challenge.
+\item
+  Many approaches to this problem are supervised, that is, they take patterns occurring concurrently with a known event, such as the delivery of a stimulus for sensory neurons or the traversal of a running track for hippocampal place fields, as a ``template'' and then search for repetitions of the same template in spiking activity :
+\item
+  Nadasdy Z, Hirase H, Czurko A, Csicsvari J, Buzsaki G. Replay and time compression of recurring spike sequences in the hippocampus. J Neurosci. 1999;19(21):9497--507. pmid:10531452
+\item
+  Lee AK, Wilson MA. A combinatorial method for analyzing sequential firing patterns involving an arbitrary number of neurons based on relative time order. J Neurophysiol. 2004;92(4):2555--73. pmid:15212425
+\item
+  Davidson TJ, Kloosterman F, Wilson MA. Hippocampal replay of extended experience. Neuron. 2009;63(4):497--507. pmid:19709631
+\item
+  only one spike per neuron: fig 1A = ``For each pattern and each neuron, a random position was chosen for the activation pulse.''
+\item
+  t-SNE projection with HDBSCAN labels shows that our clustering method can retrieve all patterns from the data.
+\item
+  data available @ https://doi.org/10.1371/journal.pcbi.1006283.s013
+\end{itemize}
+
+\begin{figure}
+\hypertarget{fig:G2018-1}{%
+\centering
+\includegraphics[width=7in,height=\textheight]{images/pcbi.1006283.g001.PNG_L.png}
+\caption{Fig 1 of {[}\protect\hyperlink{ref-9AK1cwY1}{104}{]}: ``Simulated example illustrating the steps in SPOTDisClust. A) Structure of five ``ground-truth'' patterns (\ldots). For each pattern and each neuron, a random position was chosen for the activation pulse. B) Neuronal output is generated according to an inhomogeneous Poisson process, with rates dictated by the patterns in (A).'' (© Authors under a \href{https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006283}{CC licence})}\label{fig:G2018-1}
+}
+\end{figure}
+
+\begin{itemize}
+\tightlist
+\item
+  ``However, SPOTDis has two principal weaknesses that we address here: (1) Its computational complexity, for comparing two time epochs, is O(N2), where N is the number of neurons. This becomes a major problem for computing an MM dissimilarity matrix (for M time epochs) for thousands of neurons. (2) It relies exclusively on pairwise spike-timing relationships (i.e 2nd order correlations), because it does not solve the optimal transport problem for the entire spike pattern, but only for neuron pairs separately. Hence, it may not be sensitive to higher-order correlations in spiking
+  patterns.
+  Here, we develop a novel dissimilarity measure for multi-neuron spiking patterns called SpikeShip, which has linear computational complexity of O(N). We achieve this by (1) computing the minimum transport cost of spikes for each spike train separately, and (2) discounting a global translation term in the transport flow across neurons.''
+  https://doi.org/10.1101/2020.06.03.131573;
+\end{itemize}
+
+\hypertarget{paper-by-russo-et-al-2017-russo2017}{%
+\paragraph{\texorpdfstring{Paper by Russo et al 2017 {[}\protect\hyperlink{ref-RrgzWOSk}{88}{]}}{Paper by Russo et al 2017 {[}88{]}}}\label{paper-by-russo-et-al-2017-russo2017}}
+
+\begin{itemize}
+\tightlist
+\item
+  ``Here we present such a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization.'' by {[}\protect\hyperlink{ref-RrgzWOSk}{88}{]}
+\item
+  sliding window as in {[}\protect\hyperlink{ref-1XpTamcl}{105}{]} (``Numerous other statistical procedures for detecting assemblies or sequential patterns have been proposed previously'') - extended to multiple lags {[}\protect\hyperlink{ref-bc9czTxi}{46}{]}
+\item
+  based on a ``non-stationarity-corrected parametric test statistic for assessing the independence of pairs'' and ``an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies''
+\end{itemize}
+
+\hypertarget{neural-variability-and-sampling-based-probabilistic-representations-in-the-visual-cortex-orban2016}{%
+\paragraph{\texorpdfstring{Neural Variability and Sampling-Based Probabilistic Representations in the Visual Cortex {[}\protect\hyperlink{ref-1300cS9RL}{106}{]}}{Neural Variability and Sampling-Based Probabilistic Representations in the Visual Cortex {[}106{]}}}\label{neural-variability-and-sampling-based-probabilistic-representations-in-the-visual-cortex-orban2016}}
+
+\begin{itemize}
+\tightlist
+\item
+  Stochastic sampling links perceptual uncertainty to neural response variability
+\item
+  Model accounts for independent changes in strength and variability of responses
+\item
+  Model predicts relationship between noise, signal, and spontaneous correlations
+\item
+  Stimulus statistics dependence of response statistics is explained
+\end{itemize}
+
+To overcome the limits of models which require spike times to be discretized, utilize a sub-optimal least-squares criterion, or do not provide uncertainty estimates for model predictions or estimated parameters, {[}\protect\hyperlink{ref-1365b3Wwl}{107}{]} address each of these shortcomings by developing a point process model that characterizes fine-scale sequences at the level of individual spikes and represents sequence occurrences as a small number of marked events in continuous time. They also introduce learnable time warping parameters to model sequences of varying duration, which have been experimentally observed in neural circuits and demonstrate these advantages on experimental recordings from songbird higher vocal center and rodent hippocampus.
+
+\hypertarget{dynamics-of-delay-coupled-excitable-neural-systems}{%
+\paragraph{Dynamics of Delay-Coupled Excitable Neural Systems}\label{dynamics-of-delay-coupled-excitable-neural-systems}}
+
+uses a FPGA
+{[}\protect\hyperlink{ref-rYLmAESf}{108}{]}
+
+\begin{verbatim}
+February 2009International Journal of Bifurcation and Chaos 19(02):745-753
+\end{verbatim}
+
+V. Thanasoulis, B. Vogginger, J. Partzsch and C. Mayr, ``Delay-Based Neural Computation: Pulse Routing Architecture and Benchmark Application in FPGA,'' 2021 28th IEEE International Conference on Electronics, Circuits, and Systems (ICECS), 2021, pp.~1-5
+{[}\protect\hyperlink{ref-1DadetlqZ}{109}{]}
+
+\hypertarget{cell-assemblies-at-multiple-time-scales-with-arbitrary-lag-constellations}{%
+\paragraph{Cell assemblies at multiple time scales with arbitrary lag constellations}\label{cell-assemblies-at-multiple-time-scales-with-arbitrary-lag-constellations}}
+
+{[}\protect\hyperlink{ref-RrgzWOSk}{88}{]} starts from the relatively old notion of assessing the departure of the joint spike count distribution of two units (or sets) from independence. It is based on unitary events in multiple single-neuron spiking activity {[}\protect\hyperlink{ref-iNkKTYaI}{110}{]} and the reliable and efficient analysis of an excess or deficiency of joint-spike events {[}\protect\hyperlink{ref-14wpaupd5}{111}{]}. Having derived a fast, non-stationarity-corrected parametric test statistic for assessing the independence of pairs, they designed an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies.
+
+\hypertarget{learning-to-detect-polychronous-groups}{%
+\subsection{Learning to detect polychronous groups}\label{learning-to-detect-polychronous-groups}}
+
+\hypertarget{learning-weights-and-delays}{%
+\subsubsection{Learning weights \ldots{} and delays}\label{learning-weights-and-delays}}
+
+spike time coding in a neuron: We will describe the Spike-Time Dependent Plasticity (STDP) {[}\protect\hyperlink{ref-19NyVq80B}{112}{]} rule which implement an unsupervised learning aiming at optimizing the detection of polychronous patterns, that is volleys of spikes which are synchronized, up to some stable pattern of pre-synaptic delays. This STDP rule will be based by the inversion of the generative model for spike formation and will therefore be derived by a Bayesian approach. This will decouple the active synapses (similarly to a logistic regression) from the values of possible synaptic delays.
+
+\begin{itemize}
+\tightlist
+\item
+  {[}\protect\hyperlink{ref-11p3NXmkg}{113}{]} : coherence detection
+\item
+  {[}\protect\hyperlink{ref-j5xS3owo}{114}{]} : STDP
+\item
+  Masquelier, Gilson et al.~- 2010 - STDP in Recurrent Neuronal Networks {[}\protect\hyperlink{ref-15TktA0gR}{115}{]} or Delay Selection by Spike-Timing-Dependent Plasticity in Recurrent Networks of Spiking Neurons Receiving Oscillatory Inputs. PLoS Comput Biol 9(2): e1002897. {[}\protect\hyperlink{ref-1FHIKpizQ}{116}{]} which targets at the selective potentiation of recurrent connections with different axonal and dendritic delays during oscillatory activity.
+\end{itemize}
+
+Our ability to track and respond to rapidly changing visual stimuli, such as a fast-moving tennis ball, indicates that the brain is capable of extrapolating the trajectory of a moving object to predict its current position, despite the delays that result from neural transmission. Here, we show how the neural circuits underlying this ability can be learned through spike-timing-dependent synaptic plasticity and that these circuits emerge spontaneously and without supervision. This demonstrates how the neural transmission delays can, in part, be compensated to implement the extrapolation mechanisms required to predict where a moving object is at the present moment. {[}\protect\hyperlink{ref-s09KZ8Kh}{117}{]}
+
+\textbf{TODO amelie} section sur l'apprentissage des délais dans la biologie
+
+{[}\protect\hyperlink{ref-UeTLXQCp}{118}{]}
+
+{]}\{.banner .lightred\}
+
+Bio-plausible Unsupervised Delay Learning for Extracting Temporal Features in Spiking Neural Networks
+Alireza Nadafian, Mohammad Ganjtabesh
+
+\begin{verbatim}
+The plasticity of the conduction delay between neurons plays a fundamental role in learning. However, the exact underlying mechanisms in the brain for this modulation is still an open problem. Understanding the precise adjustment of synaptic delays could help us in developing effective brain-inspired computational models in providing aligned insights with the experimental evidence. In this paper, we propose an unsupervised biologically plausible learning rule for adjusting the synaptic delays in spiking neural networks. Then, we provided some mathematical proofs to show that our learning rule gives a neuron the ability to learn repeating spatio-temporal patterns. Furthermore, the experimental results of applying an STDP-based spiking neural network equipped with our proposed delay learning rule on Random Dot Kinematogram indicate the efficacy of the proposed delay learning rule in extracting temporal features.
+\end{verbatim}
+
+Integrating synaptic delay plasticity into supervised learning and proposes a novel learning method that adjusts both the synaptic delays and weights of the learning neurons to make them fire precisely timed spikes, that is referred to as synaptic delay-weight plasticity {[}\protect\hyperlink{ref-ga3ZTFC7}{61}{]}. Uses synthetic data to extend the existing Remote Supervised Method (ReSuMe) method.
+
+In a recent paper {[}\protect\hyperlink{ref-B493Fl4K}{119}{]}, authors propose a gradient descent-based learning algorithm for synaptic delays to enhance the sequential learning performance of single spiking neuron. In this algorithm, information is encoded in the relative timing of individual neuronal spikes, and learning is performed based on the exact derivatives of the postsynaptic spike times with respect to presynaptic spike times.
+
+In a computational model, authors show that the frequently activated polychronous neuronal groups can be learned by readout neurons with joint weight-delay spike-timing-dependent plasticity {[}\protect\hyperlink{ref-pPRQwZb}{120}{]}. This uses a joint Weight-Delay Spike-Timing-Dependent Plasticity and show aan efficient learning of polychronous groups.
+
+\hypertarget{learning-sequences}{%
+\subsubsection{Learning sequences}\label{learning-sequences}}
+
+In {[}\protect\hyperlink{ref-WFwUKZb5}{121}{]}, authors present a model to ``show a way by which the nervous system maintains precise, stereotyped behavior in the face of environmental and neural changes''. It is shown in bridsong generation that ``A precise, temporally sparse sequence from the premotor nucleus HVC is crucial to the performance of song in songbirds'' {[}\protect\hyperlink{ref-1EhOfHrje}{122},\protect\hyperlink{ref-Dry1ANMD}{123},\protect\hyperlink{ref-SAIh1pga}{124}{]} and this model shows how one could vary HVC activity using something similar to dropout in ML. Using such controlled variability, ``behaviors are made more robust to environmental change by continually seeking subtly new ways of performing the same task''. Not sure however how important it is that the HVC pattern should be sparse (and similar to PGs).
+
+\begin{itemize}
+\item
+  in {[}\protect\hyperlink{ref-Jzr1gwsr}{76}{]}, there are ``good'' and ``bad'' noises show that some patterns are more easy to disentangle - similar to bird songs and ecological niche.
+\item
+  In Bellec {[}\protect\hyperlink{ref-aj6TgorR}{125}{]}, authors fit summary statistics of neural data with a differentiable spiking network simulator.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    the loss function is the cross entropy (following Bernouilli hypothesis with a GLM where each unit is modelled with a SRM neuron {[}\protect\hyperlink{ref-14e3BCBii}{126}{]} with recurrent dynamics)
+  \item
+    sample and measure method to include latent / hidden neurons
+  \item
+    comes with code https://github.com/EPFL-LCN/pub-bellec-wang-2021-sample-and-measure
+  \item
+    V1-dataset : The dataset we used was collected by Smith and Kohn {[}49{]} and is publicly available at:
+    http://crcns.org/data-sets/vc/pvc-11 - it is in a sense supervised with the input being the movie and the output the spikes recorded.
+  \end{itemize}
+\end{itemize}
+
+A recent work {[}\protect\hyperlink{ref-10EU8MfxC}{127}{]} proposes a two-stage unsupervised-supervised system for the categorization of spatiotemporal actions from an event-based stream. The first stage learns spatiotemporal convolutional filters targeted to minimize event-removal related changes to a local spatiotemporal spike-event pattern. The second stage takes the output of the spatiotemporal filters as an input example containing multiple feature channels, and proceeds to train a classifier for recognition of spatiotemporal activity. For testing the system, two datasets are considered: DVS Gesture and a new action recognition dataset recorded for this work. Results demonstrate the ability of the system to outperform the state-of-the-art in event-based gesture recognition, along with demonstrating superior performance to other alternative ways of obtaining the first stage filters. Showing the potential of such representation
+
+\hypertarget{todo-more-bib-to-read}{%
+\subsubsection{TODO: more bib to read}\label{todo-more-bib-to-read}}
+
+Learning compositional sequences with multiple time scales through a hierarchical network of spiking neurons.
+Maes A, Barahona M, Clopath C.PLoS Comput Biol. 2021
+
+Characteristics of sequential activity in networks with temporally asymmetric Hebbian learning.
+Gillett M, Pereira U, Brunel N.Proc Natl Acad Sci U S A. 2020
+
+Unsupervised Learning of Persistent and Sequential Activity.
+Pereira U, Brunel N.Front Comput Neurosci. 2020
+
+From space to time: Spatial inhomogeneities lead to the emergence of spatiotemporal sequences in spiking neuronal networks.
+Spreizer S, Aertsen A, Kumar A.PLoS Comput Biol. 2019
+
+Fast and flexible sequence induction in spiking neural networks via rapid excitability changes.
+Pang R, Fairhall AL.Elife. 2019 May {[}\protect\hyperlink{ref-12zyUFdO4}{128}{]}
+
+Emergence of spontaneous assembly activity in developing neural networks without afferent input.
+Triplett MA, Avitan L, Goodhill GJ.PLoS Comput Biol. 2018
+
+Training and Spontaneous Reinforcement of Neuronal Assemblies by Spike Timing Plasticity.
+Ocker GK, Doiron B.Cereb Cortex. 2019.
+{]}\{.banner .lightred\}
+
+\textbf{TODO}
+
+\hypertarget{learning-pattern-detection-on-natural-images-event-based-cameras}{%
+\subsubsection{learning pattern detection on natural images / event-based cameras}\label{learning-pattern-detection-on-natural-images-event-based-cameras}}
+
+\hypertarget{sparse-coding-on-spatio-temporal-data}{%
+\paragraph{sparse coding on spatio-temporal data}\label{sparse-coding-on-spatio-temporal-data}}
+
+\hypertarget{hots}{%
+\paragraph{HOTS}\label{hots}}
+
+\hypertarget{grimaldi-cbmi-pami}{%
+\paragraph{Grimaldi CBMI / PAMI}\label{grimaldi-cbmi-pami}}
+
+{]}\{.banner .lightred\}
+
+\hypertarget{discussion}{%
+\subsection{Discussion}\label{discussion}}
+
+\textbf{TODO}
+
+\hypertarget{dynamical-models}{%
+\subsubsection{dynamical models}\label{dynamical-models}}
+
+Dumas and colleagues {[}\protect\hyperlink{ref-WxQdcMB2}{129}{]} : three levels / fourth paradigm {[}\protect\hyperlink{ref-JrZPoxk9}{130}{]} i.e., data exploration in which the scientific models are fit to the data by learning algorithms.
+
+\hypertarget{our-model}{%
+\subsubsection{our model}\label{our-model}}
+
+Here, we develop a model for the efficient detection of such PGs based on the inversion of a probabilistic model defining the generation of the raster plot as a combination of such groups. We show that such an inference can be achieved by a neural-like computation that could itself be used as a spiking neuron, as can be implemented in a neuromorphic chip for instance. A first result is to show the efficiency of such a scheme in detecting different PGs occurring at specific times in synthetic data. The representational capacity of the PGs is particularly interesting compared to traditional models of neuronal encoding using spiking frequency. Our second result is to propose a novel learning method for learning PGs in raster plots in a self-supervised manner. Finally we demonstrate the use of this algorithm to the output of an event-based camera and how this may separate independent components from the stream of events. This end-to-end event-based computational brick could help improve the performance of current Spiking Neural Network solution currently used in neuromorphic chips.
+
+Emergence of electronic architectures specialized in Sparse Event-Based Convolutions {[}\protect\hyperlink{ref-sJ03d2Zj}{131}{]} or of sparsity aware algorithms {[}\protect\hyperlink{ref-R5BYFgCP}{132}{]}.
+
+and oscillations? Journal Article • DOI: 10.1007/BF00202899 Coherent oscillations: A mechanism of feature linking in the visual cortex?
+
+\hypertarget{development}{%
+\subsection{development}\label{development}}
+
+scaffolding of neural assemblies / existence of critical periods : {[}\protect\hyperlink{ref-1HSyNOl48}{133}{]}
+{]}\{.banner .lightred\}
+
+\hypertarget{references}{%
+\subsection{References}\label{references}}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-G3GlupPg}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{\textbf{Speed of processing in the human visual system}
+\CSLBlock{Simon Thorpe, Denis Fize, Catherine Marlot} \emph{Nature} (1996-06) \url{https://doi.org/c4v35x}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/381520a0}{10.1038/381520a0} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/8632824}{8632824}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-B9iZWoq3}{}}%
+\CSLLeftMargin{2. }%
+\CSLRightInline{\textbf{Ultra-rapid object detection with saccadic eye movements: Visual processing speed revisited}
+\CSLBlock{H Kirchner, Sj Thorpe} \emph{Vision Research} (2006) \url{https://www.sciencedirect.com/science/article/pii/S0042698905005110}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.visres.2005.10.002}{10.1016/j.visres.2005.10.002}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-EqCCVwl2}{}}%
+\CSLLeftMargin{3. }%
+\CSLRightInline{\textbf{The Speed of Sight}
+\CSLBlock{C Keysers, D-K Xiao, P Földiák, DI Perrett} \emph{Journal of Cognitive Neuroscience} (2001-01-01) \url{https://doi.org/cfdjtg}
+\CSLBlock{DOI: \href{https://doi.org/10.1162/089892901564199}{10.1162/089892901564199} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/11224911}{11224911}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Vu87UU6A}{}}%
+\CSLLeftMargin{4. }%
+\CSLRightInline{\textbf{The Timing of Information Transfer in the Visual System}
+\CSLBlock{Lionel G Nowak, Jean Bullier} \emph{Extrastriate Cortex in Primates} (1997) \url{https://doi.org/gpb33s}
+\CSLBlock{DOI: \href{https://doi.org/10.1007/978-1-4757-9625-4_5}{10.1007/978-1-4757-9625-4\_5}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-15aMjRHVK}{}}%
+\CSLLeftMargin{5. }%
+\CSLRightInline{\textbf{The distinct modes of vision offered by feedforward and recurrent processing}
+\CSLBlock{Victor AF Lamme, Pieter R Roelfsema} \emph{Trends in Neurosciences} (2000-11) \url{https://doi.org/ccv3w2}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/s0166-2236(00)01657-x}{10.1016/s0166-2236(00)01657-x}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-12dWDpY61}{}}%
+\CSLLeftMargin{6. }%
+\CSLRightInline{\textbf{Seeking Categories in the Brain}
+\CSLBlock{Simon J Thorpe, Michèle Fabre-Thorpe} \emph{Science} (2001-01-12) \url{https://doi.org/bzn42k}
+\CSLBlock{DOI: \href{https://doi.org/10.1126/science.1058249}{10.1126/science.1058249} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/11253215}{11253215}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-zZUVkTfZ}{}}%
+\CSLLeftMargin{7. }%
+\CSLRightInline{\textbf{Neuronal Spike Trains and Stochastic Point Processes}
+\CSLBlock{Donald H Perkel, George L Gerstein, George P Moore} \emph{Biophysical Journal} (1967-07) \url{https://doi.org/fwhmkz}
+\CSLBlock{DOI: \href{https://doi.org/fwhmkz}{fwhmkz}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-13T2Gne9z}{}}%
+\CSLLeftMargin{8. }%
+\CSLRightInline{\textbf{Neuronal Spike Trains and Stochastic Point Processes}
+\CSLBlock{Donald H Perkel, George L Gerstein, George P Moore} \emph{Biophysical Journal} (1967-07) \url{https://doi.org/b823wg}
+\CSLBlock{DOI: \href{https://doi.org/b823wg}{b823wg}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-BNK6T5Uk}{}}%
+\CSLLeftMargin{9. }%
+\CSLRightInline{\textbf{Spontaneous traveling waves naturally emerge from horizontal fiber time delays and travel through locally asynchronous-irregular states}
+\CSLBlock{Zachary W Davis, Gabriel B Benigno, Charlee Fletterman, Theo Desbordes, Christopher Steward, Terrence J Sejnowski, John H. Reynolds, Lyle Muller} \emph{Nature Communications} (2021-10-18) \url{https://doi.org/gm79hh}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41467-021-26175-1}{10.1038/s41467-021-26175-1} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/34663796}{34663796} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8523565}{PMC8523565}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1DpSM1kpQ}{}}%
+\CSLLeftMargin{10. }%
+\CSLRightInline{\textbf{Coding Static Natural Images Using Spiking Event Times: Do Neurons Cooperate?}
+\CSLBlock{L Perrinet, M Samuelides, S Thorpe} \emph{IEEE Transactions on Neural Networks} (2004-09) \url{https://doi.org/b3b9n9}
+\CSLBlock{DOI: \href{https://doi.org/10.1109/tnn.2004.833303}{10.1109/tnn.2004.833303} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/15484892}{15484892}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-IjepoonT}{}}%
+\CSLLeftMargin{11. }%
+\CSLRightInline{\textbf{Rapid Neural Coding in the Retina with Relative Spike Latencies}
+\CSLBlock{Tim Gollisch, Markus Meister} \emph{Science} (2008-02-22) \url{https://doi.org/c6czvj}
+\CSLBlock{DOI: \href{https://doi.org/10.1126/science.1149639}{10.1126/science.1149639} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/18292344}{18292344}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-mxPMgOmW}{}}%
+\CSLLeftMargin{12. }%
+\CSLRightInline{\textbf{Binary coding in auditory cortex}
+\CSLBlock{MR DeWeese, AM Zador} \emph{Neural Information Processing Systems Foundation} (2003) \url{http://papers.nips.cc/paper/2342-binary-coding-in-auditory-cortex}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1ECJhg2GM}{}}%
+\CSLLeftMargin{13. }%
+\CSLRightInline{\textbf{A circuit for detection of interaural time differences in the brain stem of the barn owl}
+\CSLBlock{CE Carr, M Konishi} \emph{The Journal of Neuroscience} (1990-10-01) \url{https://doi.org/ggzpks}
+\CSLBlock{DOI: \href{https://doi.org/10.1523/jneurosci.10-10-03227.1990}{10.1523/jneurosci.10-10-03227.1990} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/2213141}{2213141} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6570189}{PMC6570189}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-WZsEyOlK}{}}%
+\CSLLeftMargin{14. }%
+\CSLRightInline{\textbf{The evidence for neural information processing with precise spike-times: A survey}
+\CSLBlock{Sander M Bohte} \emph{Natural Computing} (2004) \url{https://doi.org/b5x365}
+\CSLBlock{DOI: \href{https://doi.org/10.1023/b:naco.0000027755.02868.60}{10.1023/b:naco.0000027755.02868.60}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-XsHCA4IZ}{}}%
+\CSLLeftMargin{15. }%
+\CSLRightInline{\textbf{Reliability of Spike Timing in Neocortical Neurons}
+\CSLBlock{Zachary F Mainen, Terrence J Sejnowski} \emph{Science} (1995-06-09) \url{https://doi.org/b2mms6}
+\CSLBlock{DOI: \href{https://doi.org/10.1126/science.7770778}{10.1126/science.7770778} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/7770778}{7770778}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-YX5wqWH4}{}}%
+\CSLLeftMargin{16. }%
+\CSLRightInline{\url{https://www.cnrs.fr/mi/IMG/pdf/parissep14-m-thorpe-small.pdf}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1H1Omh73g}{}}%
+\CSLLeftMargin{17. }%
+\CSLRightInline{\textbf{First-spike latency information in single neurons increases when referenced to population onset}
+\CSLBlock{Steven M Chase, Eric D Young} \emph{Proceedings of the National Academy of Sciences} (2007-03-20) \url{https://doi.org/cm3b98}
+\CSLBlock{DOI: \href{https://doi.org/10.1073/pnas.0610368104}{10.1073/pnas.0610368104} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/17360369}{17360369} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1829282}{PMC1829282}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-UlbjMU0W}{}}%
+\CSLLeftMargin{18. }%
+\CSLRightInline{\textbf{A theory of the Benham Top based on center--surround interactions in the parvocellular pathway}
+\CSLBlock{Garrett T Kenyon, Dan Hill, James Theiler, John S George, David W Marshak} \emph{Neural Networks} (2004-06) \url{https://doi.org/bjwzzt}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.neunet.2004.05.005}{10.1016/j.neunet.2004.05.005} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/15288897}{15288897} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3359843}{PMC3359843}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-513xqzmL}{}}%
+\CSLLeftMargin{19. }%
+\CSLRightInline{\textbf{Dynamics of orientation coding in area V1 of the awake primate}
+\CSLBlock{Simona Celebrini, Simon Thorpe, Yves Trotter, Michel Imbert} \emph{Visual Neuroscience} (1993-09) \url{https://doi.org/dqt5cm}
+\CSLBlock{DOI: \href{https://doi.org/10.1017/s0952523800006052}{10.1017/s0952523800006052} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/8217934}{8217934}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-7K80jcx9}{}}%
+\CSLLeftMargin{20. }%
+\CSLRightInline{\textbf{A homeostatic gain control mechanism to improve event-driven object recognition}
+\CSLBlock{Antoine Grimaldi, Victor Boutin, Laurent Perrinet, Sio-Hoi Ieng, Ryad Benosman} \emph{2021 International Conference on Content-Based Multimedia Indexing (CBMI)} (2021-06-28) \url{https://doi.org/gkzcrv}
+\CSLBlock{DOI: \href{https://doi.org/10.1109/cbmi50038.2021.9461901}{10.1109/cbmi50038.2021.9461901}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-fRudGmR1}{}}%
+\CSLLeftMargin{21. }%
+\CSLRightInline{\textbf{A robust event-driven approach to always-on object recognition}
+\CSLBlock{Antoine Grimaldi, Victor Boutin, Sio-Hoi Ieng, Ryad Benosman, Laurent Perrinet} \emph{Institute of Electrical and Electronics Engineers (IEEE)} (2022-01-13) \url{https://doi.org/gn62xd}
+\CSLBlock{DOI: \href{https://doi.org/10.36227/techrxiv.18003077.v1}{10.36227/techrxiv.18003077.v1}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Oet1bgdb}{}}%
+\CSLLeftMargin{22. }%
+\CSLRightInline{\textbf{The Challenges Ahead for Bio-inspired Neuromorphic Event Processors: How Memristors Dynamic Properties Could Revolutionize Machine Learning}
+\CSLBlock{Marco Rasetto, Qingzhou Wan, Himanshu Akolkar, Bertram Shi, Feng Xiong, Ryad Benosman} \emph{arXiv} (2022-02-01) \url{https://arxiv.org/abs/2201.12673}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-15cR83gqd}{}}%
+\CSLLeftMargin{23. }%
+\CSLRightInline{\textbf{Fast and energy-efficient neuromorphic deep learning with first-spike times}
+\CSLBlock{Julian Göltz, Laura Kriener, Andreas Baumbach, Sebastian Billaudelle, Oliver Breitwieser, Benjamin Cramer, Dominik Dold, Akos Ferenc Kungl, Walter Senn, Johannes Schemmel, \ldots{} Mihai Alexandru Petrovici} \emph{arXiv} (2021-05-18) \url{https://arxiv.org/abs/1912.11443}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1E8gkynCm}{}}%
+\CSLLeftMargin{24. }%
+\CSLRightInline{\textbf{Turning the body into a clock: Accurate timing is facilitated by simple stereotyped interactions with the environment}
+\CSLBlock{Mostafa Safaie, Maria-Teresa Jurado-Parras, Stefania Sarno, Jordane Louis, Corane Karoutchi, Ludovic F Petit, Matthieu O Pasquet, Christophe Eloy, David Robbe} \emph{Proceedings of the National Academy of Sciences} (2020-05-20) \url{https://doi.org/gnqsmh}
+\CSLBlock{DOI: \href{https://doi.org/10.1073/pnas.1921226117}{10.1073/pnas.1921226117} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/32434909}{32434909} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7293717}{PMC7293717}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-QK8RfvTZ}{}}%
+\CSLLeftMargin{25. }%
+\CSLRightInline{\textbf{Temporal Coding of Visual Space}
+\CSLBlock{Michele Rucci, Ehud Ahissar, David Burr} \emph{Trends in Cognitive Sciences} (2018-10) \url{https://doi.org/gfcskd}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.tics.2018.07.009}{10.1016/j.tics.2018.07.009} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/30266148}{30266148} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6179437}{PMC6179437}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-sYHyiGsP}{}}%
+\CSLLeftMargin{26. }%
+\CSLRightInline{\textbf{The highly irregular firing of cortical cells is inconsistent with temporal integration of random EPSPs}
+\CSLBlock{WR Softky, C Koch} \emph{The Journal of Neuroscience} (1993-01-01) \url{https://doi.org/ggzph6}
+\CSLBlock{DOI: \href{https://doi.org/10.1523/jneurosci.13-01-00334.1993}{10.1523/jneurosci.13-01-00334.1993} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/8423479}{8423479} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6576320}{PMC6576320}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1AbvCTG03}{}}%
+\CSLLeftMargin{27. }%
+\CSLRightInline{\textbf{Influence of low and high frequency inputs on spike timing in visual cortical neurons}
+\CSLBlock{L Nowak} \emph{Cerebral Cortex} (1997-09-01) \url{https://doi.org/fvjpx7}
+\CSLBlock{DOI: \href{https://doi.org/10.1093/cercor/7.6.487}{10.1093/cercor/7.6.487} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/9276174}{9276174}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-19MS6Bbwp}{}}%
+\CSLLeftMargin{28. }%
+\CSLRightInline{\textbf{Corticonics: neural circuits of the cerebral cortex}
+\CSLBlock{Moshe Abeles} \emph{Cambridge University Press} (1991)
+\CSLBlock{ISBN: 9780521374767}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-lT1Ato7P}{}}%
+\CSLLeftMargin{29. }%
+\CSLRightInline{\textbf{Computing with spiking neuron networks}
+\CSLBlock{Hélene Paugam-Moisy, Sander Bohte} \emph{Handbook of natural computing} (2012)}
+
+\leavevmode\vadjust pre{\hypertarget{ref-KZgcpjXN}{}}%
+\CSLLeftMargin{30. }%
+\CSLRightInline{\textbf{Visual Feature Integration and the Temporal Correlation Hypothesis}
+\CSLBlock{W Singer, CM Gray} \emph{Annual Review of Neuroscience} (1995-03) \url{https://doi.org/cgx8jp}
+\CSLBlock{DOI: \href{https://doi.org/10.1146/annurev.ne.18.030195.003011}{10.1146/annurev.ne.18.030195.003011} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/7605074}{7605074}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1ABzD5t6G}{}}%
+\CSLLeftMargin{31. }%
+\CSLRightInline{\textbf{Visuomotor integration is associated with zero time-lag synchronization among cortical areas}
+\CSLBlock{Pieter R Roelfsema, Andreas K Engel, Peter König, Wolf Singer} \emph{Nature} (1997-01) \url{https://doi.org/dp8q5v}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/385157a0}{10.1038/385157a0} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/8990118}{8990118}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-R2E2wRFg}{}}%
+\CSLLeftMargin{32. }%
+\CSLRightInline{\textbf{Organization of cell assemblies in the hippocampus}
+\CSLBlock{Kenneth D Harris, Jozsef Csicsvari, Hajime Hirase, George Dragoi, György Buzsáki} \emph{Nature} (2003-07) \url{https://doi.org/bm3vgb}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/nature01834}{10.1038/nature01834} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/12891358}{12891358}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-xbqYi2PD}{}}%
+\CSLLeftMargin{33. }%
+\CSLRightInline{\textbf{Propagation of cortical synfire activity: survival probability in single trials and stability in the mean.}
+\CSLBlock{MO Gewaltig, M Diesmann, A Aertsen} \emph{Neural networks : the official journal of the International Neural Network Society} \url{https://www.ncbi.nlm.nih.gov/pubmed/11665761}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/s0893-6080(01)00070-3}{10.1016/s0893-6080(01)00070-3} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/11665761}{11665761}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-DL2NpHxr}{}}%
+\CSLLeftMargin{34. }%
+\CSLRightInline{\textbf{Stimulus-selective spiking is driven by the relative timing of synchronous excitation and disinhibition in cat striate neurons\textless i\textgreater in vivo\textless/i\textgreater{}}
+\CSLBlock{Rony Azouz, Charles M Gray} \emph{European Journal of Neuroscience} (2008-10) \url{https://doi.org/cbcr8h}
+\CSLBlock{DOI: \href{https://doi.org/10.1111/j.1460-9568.2008.06434.x}{10.1111/j.1460-9568.2008.06434.x} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/18973556}{18973556}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-mszJ8wdv}{}}%
+\CSLLeftMargin{35. }%
+\CSLRightInline{\textbf{Push-Pull Receptive Field Organization and Synaptic Depression: Mechanisms for Reliably Encoding Naturalistic Stimuli in V1}
+\CSLBlock{Jens Kremkow, Laurent U Perrinet, Cyril Monier, Jose-Manuel Alonso, Ad Aertsen, Yves Frégnac, Guillaume S Masson} \emph{Frontiers in Neural Circuits} (2016-05-11) \url{https://doi.org/ggkdkh}
+\CSLBlock{DOI: \href{https://doi.org/10.3389/fncir.2016.00037}{10.3389/fncir.2016.00037} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/27242445}{27242445} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4862982}{PMC4862982}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-qVu1OkoS}{}}%
+\CSLLeftMargin{36. }%
+\CSLRightInline{\textbf{Detecting Synfire Chain Activity Using Massively Parallel Spike Train Recording}
+\CSLBlock{Sven Schrader, Sonja Grün, Markus Diesmann, George L Gerstein} \emph{Journal of Neurophysiology} (2008-10) \url{https://doi.org/cvb22p}
+\CSLBlock{DOI: \href{https://doi.org/10.1152/jn.01245.2007}{10.1152/jn.01245.2007} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/18632888}{18632888} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2576207}{PMC2576207}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-xBZqHOuN}{}}%
+\CSLLeftMargin{37. }%
+\CSLRightInline{\textbf{On Embedding Synfire Chains in a Balanced Network}
+\CSLBlock{Y Aviel, C Mehring, M Abeles, D Horn} \emph{Neural Computation} (2003-06-01) \url{https://doi.org/fgj3wf}
+\CSLBlock{DOI: \href{https://doi.org/10.1162/089976603321780290}{10.1162/089976603321780290} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/12816575}{12816575}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-p7xk5w4f}{}}%
+\CSLLeftMargin{38. }%
+\CSLRightInline{\textbf{Functional consequences of correlated excitatory and inhibitory conductances in cortical networks}
+\CSLBlock{Jens Kremkow, Laurent U Perrinet, Guillaume S Masson, Ad Aertsen} \emph{Journal of Computational Neuroscience} (2010-05-19) \url{https://doi.org/c3wrbn}
+\CSLBlock{DOI: \href{https://doi.org/10.1007/s10827-010-0240-9}{10.1007/s10827-010-0240-9} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/20490645}{20490645}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-33SRV9MB}{}}%
+\CSLLeftMargin{39. }%
+\CSLRightInline{\textbf{PyNN: a common interface for neuronal network simulators}
+\CSLBlock{Andrew P Davison} \emph{Frontiers in Neuroinformatics} (2008) \url{https://doi.org/fh8h6j}
+\CSLBlock{DOI: \href{https://doi.org/10.3389/neuro.11.011.2008}{10.3389/neuro.11.011.2008} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/19194529}{19194529} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2634533}{PMC2634533}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-DiIieN8s}{}}%
+\CSLLeftMargin{40. }%
+\CSLRightInline{\textbf{Six Networks on a Universal Neuromorphic Computing Substrate}
+\CSLBlock{Thomas Pfeil, Andreas Grübl, Sebastian Jeltsch, Eric Müller, Paul Müller, Mihai A Petrovici, Michael Schmuker, Daniel Brüderle, Johannes Schemmel, Karlheinz Meier} \emph{Frontiers in Neuroscience} (2013) \url{https://doi.org/gh4jg3}
+\CSLBlock{DOI: \href{https://doi.org/10.3389/fnins.2013.00011}{10.3389/fnins.2013.00011} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/23423583}{23423583} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3575075}{PMC3575075}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-18ZU9zP9l}{}}%
+\CSLLeftMargin{41. }%
+\CSLRightInline{\textbf{Cortex Is Driven by Weak but Synchronously Active Thalamocortical Synapses}
+\CSLBlock{Randy M Bruno, Bert Sakmann} \emph{Science} (2006-06-16) \url{https://doi.org/c5575v}
+\CSLBlock{DOI: \href{https://doi.org/10.1126/science.1124593}{10.1126/science.1124593} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/16778049}{16778049}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-wVZpQvSk}{}}%
+\CSLLeftMargin{42. }%
+\CSLRightInline{\textbf{Spike Synchronization and Rate Modulation Differentially Involved in Motor Cortical Function}
+\CSLBlock{Alexa Riehle, Sonja Grün, Markus Diesmann, Ad Aertsen} \emph{Science} (1997-12-12) \url{https://doi.org/fr25fn}
+\CSLBlock{DOI: \href{https://doi.org/10.1126/science.278.5345.1950}{10.1126/science.278.5345.1950} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/9395398}{9395398}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1HJjmmSpm}{}}%
+\CSLLeftMargin{43. }%
+\CSLRightInline{\textbf{Long-Term Modifications in Motor Cortical Dynamics Induced by Intensive Practice}
+\CSLBlock{BE Kilavik, S Roux, A Ponce-Alvarez, J Confais, S Grun, A Riehle} \emph{Journal of Neuroscience} (2009-10-07) \url{https://doi.org/bf84ps}
+\CSLBlock{DOI: \href{https://doi.org/10.1523/jneurosci.1554-09.2009}{10.1523/jneurosci.1554-09.2009} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/19812340}{19812340} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6665105}{PMC6665105}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-FZ9X31Qa}{}}%
+\CSLLeftMargin{44. }%
+\CSLRightInline{\textbf{Spike synchronization and firing rate in a population of motor cortical neurons in relation to movement direction and reaction time}
+\CSLBlock{F Grammont, A Riehle} \emph{Biological Cybernetics} (2003-05-01) \url{https://doi.org/ctvhsb}
+\CSLBlock{DOI: \href{https://doi.org/10.1007/s00422-002-0385-3}{10.1007/s00422-002-0385-3} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/12750898}{12750898}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Ejy1sAyh}{}}%
+\CSLLeftMargin{45. }%
+\CSLRightInline{\textbf{LFP beta amplitude is linked to mesoscopic spatio-temporal phase patterns}
+\CSLBlock{Michael Denker, Lyuba Zehl, Bjørg E Kilavik, Markus Diesmann, Thomas Brochier, Alexa Riehle, Sonja Grün} \emph{Scientific Reports} (2018-03-26) \url{https://doi.org/gc9xx6}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41598-018-22990-7}{10.1038/s41598-018-22990-7} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/29581430}{29581430} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5980111}{PMC5980111}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-bc9czTxi}{}}%
+\CSLLeftMargin{46. }%
+\CSLRightInline{\textbf{ASSET: Analysis of Sequences of Synchronous Events in Massively Parallel Spike Trains}
+\CSLBlock{Emiliano Torre, Carlos Canova, Michael Denker, George Gerstein, Moritz Helias, Sonja Grün} \emph{PLOS Computational Biology} (2016-07-15) \url{https://doi.org/gnpx4q}
+\CSLBlock{DOI: \href{https://doi.org/10.1371/journal.pcbi.1004939}{10.1371/journal.pcbi.1004939} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/27420734}{27420734} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4946788}{PMC4946788}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Glu4NlLC}{}}%
+\CSLLeftMargin{47. }%
+\CSLRightInline{\textbf{Synchronous Spike Patterns in Macaque Motor Cortex during an Instructed-Delay Reach-to-Grasp Task}
+\CSLBlock{E Torre, P Quaglio, M Denker, T Brochier, A Riehle, S Grun} \emph{Journal of Neuroscience} (2016-08-10) \url{https://doi.org/f82b6j}
+\CSLBlock{DOI: \href{https://doi.org/10.1523/jneurosci.4375-15.2016}{10.1523/jneurosci.4375-15.2016} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/27511007}{27511007} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4978798}{PMC4978798}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-3GlNNxH5}{}}%
+\CSLLeftMargin{48. }%
+\CSLRightInline{\textbf{Computing with Neural Synchrony}
+\CSLBlock{Romain Brette} \emph{PLoS Computational Biology} (2012-06-14) \url{https://doi.org/f32tvz}
+\CSLBlock{DOI: \href{https://doi.org/10.1371/journal.pcbi.1002561}{10.1371/journal.pcbi.1002561} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/22719243}{22719243} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3375225}{PMC3375225}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-zNDCo9Hy}{}}%
+\CSLLeftMargin{49. }%
+\CSLRightInline{\textbf{Horizontal Propagation of Visual Activity in the Synaptic Integration Field of Area 17 Neurons}
+\CSLBlock{Vincent Bringuier, Frédéric Chavane, Larry Glaeser, Yves Frégnac} \emph{Science} (1999-01) \url{http://science.sciencemag.org/content/283/5402/695}
+\CSLBlock{DOI: \href{https://doi.org/b9shf4}{b9shf4} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/9924031}{9924031}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Piao2Wzf}{}}%
+\CSLLeftMargin{50. }%
+\CSLRightInline{\textbf{Spatio-temporal correlations and visual signalling in a complete neuronal population}
+\CSLBlock{Jonathan W Pillow, Jonathon Shlens, Liam Paninski, Alexander Sher, Alan M Litke, EJ Chichilnisky, Eero P Simoncelli} \emph{Nature} (2008-07-23) \url{https://doi.org/dzvdm3}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/nature07140}{10.1038/nature07140} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/18650810}{18650810} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2684455}{PMC2684455}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Bxpr0Oeq}{}}%
+\CSLLeftMargin{51. }%
+\CSLRightInline{\textbf{Redundancy in the Population Code of the Retina}
+\CSLBlock{Jason L Puchalla, Elad Schneidman, Robert A Harris, Michael J Berry} \emph{Neuron} (2005-05) \url{https://doi.org/cw22j9}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.neuron.2005.03.026}{10.1016/j.neuron.2005.03.026} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/15882648}{15882648}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-2AsQOOsE}{}}%
+\CSLLeftMargin{52. }%
+\CSLRightInline{\textbf{Weak pairwise correlations imply strongly correlated network states in a neural population}
+\CSLBlock{Elad Schneidman, Michael J Berry II, Ronen Segev, William Bialek} \emph{Nature} (2006-04-01) \url{https://doi.org/b9ph32}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/nature04701}{10.1038/nature04701} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/16625187}{16625187} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1785327}{PMC1785327}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1FU0Y7Erc}{}}%
+\CSLLeftMargin{53. }%
+\CSLRightInline{\textbf{Spike Trains of Retinal Ganglion Cells Viewing a Repeated Natural Movie}
+\CSLBlock{Berry Ii, Michael J} (2022-03-08) \url{https://dataspace.princeton.edu/handle/88435/dsp015425kd84r}
+\CSLBlock{DOI: \href{https://doi.org/10.34770/V0V4-3H52}{10.34770/v0v4-3h52}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-hGYLURVS}{}}%
+\CSLLeftMargin{54. }%
+\CSLRightInline{\textbf{The stimulus-evoked population response in visual cortex of awake monkey is a propagating wave}
+\CSLBlock{Lyle Muller, Alexandre Reynaud, Frédéric Chavane, Alain Destexhe} \emph{Nature Communications} (2014-04-28)
+\CSLBlock{DOI: \href{https://doi.org/f52mxc}{f52mxc} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/24770473}{24770473} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4015334}{PMC4015334}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-vsKvZJ82}{}}%
+\CSLLeftMargin{55. }%
+\CSLRightInline{\textbf{Cortical travelling waves: Mechanisms and computational principles}
+\CSLBlock{Lyle Muller, Frédéric Chavane, John Reynolds, Terrence J Sejnowski} \emph{Nature Reviews Neuroscience} (2018-03) \url{http://www.nature.com/doifinder/10.1038/nrn.2018.20}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/nrn.2018.20}{10.1038/nrn.2018.20}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-17EU8fPBv}{}}%
+\CSLLeftMargin{56. }%
+\CSLRightInline{\textbf{Movement is governed by rotational population dynamics in spinal motor networks}
+\CSLBlock{Henrik Lindén, Peter C Petersen, Mikkel Vestergaard, Rune W Berg} \emph{Cold Spring Harbor Laboratory} (2021-09-01) \url{https://doi.org/gqg6rb}
+\CSLBlock{DOI: \href{https://doi.org/10.1101/2021.08.31.458405}{10.1101/2021.08.31.458405}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-yLVM9IXi}{}}%
+\CSLLeftMargin{57. }%
+\CSLRightInline{\textbf{Precise spike synchronization in monkey motor cortex involved in preparation for movement}
+\CSLBlock{Franck Grammont, Alexa Riehle} \emph{Experimental Brain Research} (1999-09-03) \url{https://doi.org/b67khx}
+\CSLBlock{DOI: \href{https://doi.org/10.1007/s002210050826}{10.1007/s002210050826} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/10473749}{10473749}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-OAorhMRa}{}}%
+\CSLLeftMargin{58. }%
+\CSLRightInline{\textbf{Suppressive waves disambiguate the representation of long-range apparent motion in awake monkey V1}
+\CSLBlock{Sandrine Chemla, Alexandre Reynaud, Matteo diVolo, Yann Zerlaut, Laurent U Perrinet, Alain Destexhe, Frédéric Y Chavane} \emph{Journal of Neuroscience} (2019-03-18) \url{http://www.jneurosci.org/content/early/2019/03/18/JNEUROSCI.2792-18.2019}
+\CSLBlock{DOI: \href{https://doi.org/10.1523/JNEUROSCI.2792-18.2019}{10.1523/jneurosci.2792-18.2019}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-HjDb1gnq}{}}%
+\CSLLeftMargin{59. }%
+\CSLRightInline{\textbf{A model of neocortex}
+\CSLBlock{Elie Bienenstock} \emph{Network: Computation in Neural Systems} (1995-01) \url{https://doi.org/gm6nn3}
+\CSLBlock{DOI: \href{https://doi.org/10.1088/0954-898x_6_2_004}{10.1088/0954-898x\_6\_2\_004}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-KS4oxnst}{}}%
+\CSLLeftMargin{60. }%
+\CSLRightInline{\textbf{A Bayesian Model of Polychronicity}
+\CSLBlock{Mira Guise, Alistair Knott, Lubica Benuskova} \emph{Neural Computation} (2014-09) \url{https://doi.org/f6chbq}
+\CSLBlock{DOI: \href{https://doi.org/10.1162/neco_a_00620}{10.1162/neco\_a\_00620} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/24877736}{24877736}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-ga3ZTFC7}{}}%
+\CSLLeftMargin{61. }%
+\CSLRightInline{\textbf{Supervised learning in spiking neural networks with synaptic delay-weight plasticity}
+\CSLBlock{Malu Zhang, Jibin Wu, Ammar Belatreche, Zihan Pan, Xiurui Xie, Yansong Chua, Guoqi Li, Hong Qu, Haizhou Li} \emph{Neurocomputing} (2020-10) \url{https://doi.org/ghsm45}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.neucom.2020.03.079}{10.1016/j.neucom.2020.03.079}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-SM9G0xBK}{}}%
+\CSLLeftMargin{62. }%
+\CSLRightInline{\textbf{Polychronization: Computation with Spikes}
+\CSLBlock{Eugene M Izhikevich} \emph{Neural Computation} (2006-02-01) \url{https://doi.org/bgh4qv}
+\CSLBlock{DOI: \href{https://doi.org/10.1162/089976606775093882}{10.1162/089976606775093882} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/16378515}{16378515}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Mf6h1KNY}{}}%
+\CSLLeftMargin{63. }%
+\CSLRightInline{\textbf{Synfire Chains and Cortical Songs: Temporal Modules of Cortical Activity}
+\CSLBlock{Yuji Ikegaya, Gloster Aaron, Rosa Cossart, Dmitriy Aronov, Ilan Lampl, David Ferster, Rafael Yuste} \emph{Science} (2004-04-23) \url{https://doi.org/djckcn}
+\CSLBlock{DOI: \href{https://doi.org/10.1126/science.1093173}{10.1126/science.1093173} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/15105494}{15105494}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-2GovoaYw}{}}%
+\CSLLeftMargin{64. }%
+\CSLRightInline{\textbf{Sequential structure of neocortical spontaneous activity
+\textless i\textgreater in vivo\textless/i\textgreater{}}
+\CSLBlock{Artur Luczak, Peter Barthó, Stephan L Marguet, György Buzsáki, Kenneth D Harris} \emph{Proceedings of the National Academy of Sciences} (2007-01-02) \url{https://doi.org/fcj2rr}
+\CSLBlock{DOI: \href{https://doi.org/10.1073/pnas.0605643104}{10.1073/pnas.0605643104} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/17185420}{17185420} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1765463}{PMC1765463}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-SVfasyCp}{}}%
+\CSLLeftMargin{65. }%
+\CSLRightInline{\textbf{Internally Generated Cell Assembly Sequences in the Rat Hippocampus}
+\CSLBlock{Eva Pastalkova, Vladimir Itskov, Asohan Amarasingham, György Buzsáki} \emph{Science} (2008-09-05) \url{https://doi.org/dbjjz9}
+\CSLBlock{DOI: \href{https://doi.org/10.1126/science.1159775}{10.1126/science.1159775} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/18772431}{18772431} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2570043}{PMC2570043}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-PUNGVou}{}}%
+\CSLLeftMargin{66. }%
+\CSLRightInline{\textbf{Internally Recurring Hippocampal Sequences as a Population Template of Spatiotemporal Information}
+\CSLBlock{Vincent Villette, Arnaud Malvache, Thomas Tressard, Nathalie Dupuy, Rosa Cossart} \emph{Neuron} (2015-10) \url{https://doi.org/f7whnn}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.neuron.2015.09.052}{10.1016/j.neuron.2015.09.052} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/26494280}{26494280} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4622933}{PMC4622933}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-19fAM6hcv}{}}%
+\CSLLeftMargin{67. }%
+\CSLRightInline{\textbf{Dendritic Discrimination of Temporal Input Sequences in Cortical Neurons}
+\CSLBlock{Tiago Branco, Beverley A Clark, Michael Häusser} \emph{Science} (2010-09-24) \url{https://doi.org/dqx4n4}
+\CSLBlock{DOI: \href{https://doi.org/10.1126/science.1189664}{10.1126/science.1189664} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/20705816}{20705816} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6354899}{PMC6354899}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-13dQ0R4UM}{}}%
+\CSLLeftMargin{68. }%
+\CSLRightInline{\textbf{Space and Time: The Hippocampus as a Sequence Generator}
+\CSLBlock{György Buzsáki, David Tingley} \emph{Trends in Cognitive Sciences} (2018-10) \url{https://doi.org/gfcr76}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.tics.2018.07.006}{10.1016/j.tics.2018.07.006} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/30266146}{30266146} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6166479}{PMC6166479}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-MfmcMsqA}{}}%
+\CSLLeftMargin{69. }%
+\CSLRightInline{\textbf{Packet-based communication in the cortex.}
+\CSLBlock{Artur Luczak, Bruce L McNaughton, Kenneth D Harris} \emph{Nature reviews. Neuroscience} (2015-10-28) \url{https://www.ncbi.nlm.nih.gov/pubmed/26507295}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/nrn4026}{10.1038/nrn4026} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/26507295}{26507295}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1EHZgcKyL}{}}%
+\CSLLeftMargin{70. }%
+\CSLRightInline{\textbf{Concerted Signaling by Retinal Ganglion Cells}
+\CSLBlock{Markus Meister, Leon Lagnado, Denis A Baylor} \emph{Science} (1995-11-17) \url{https://doi.org/dszfrn}
+\CSLBlock{DOI: \href{https://doi.org/10.1126/science.270.5239.1207}{10.1126/science.270.5239.1207} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/7502047}{7502047}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-FlKJw2VL}{}}%
+\CSLLeftMargin{71. }%
+\CSLRightInline{\textbf{Primary cortical representation of sounds by the coordination of action-potential timing}
+\CSLBlock{RChristopher deCharms, Michael M Merzenich} \emph{Nature} (1996-06) \url{https://doi.org/bctwmg}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/381610a0}{10.1038/381610a0} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/8637597}{8637597}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-AhSRXBJ2}{}}%
+\CSLLeftMargin{72. }%
+\CSLRightInline{\textbf{Odour encoding by temporal sequences of firing in oscillating neural assemblies}
+\CSLBlock{Michael Wehr, Gilles Laurent} \emph{Nature} (1996-11) \url{https://doi.org/b3t32c}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/384162a0}{10.1038/384162a0} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/8906790}{8906790}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-gDinei4a}{}}%
+\CSLLeftMargin{73. }%
+\CSLRightInline{\textbf{First spikes in ensembles of human tactile afferents code complex spatial fingertip events}
+\CSLBlock{Roland S Johansson, Ingvars Birznieks} \emph{Nature Neuroscience} (2004-01-18) \url{https://doi.org/dqstpm}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/nn1177}{10.1038/nn1177} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/14730306}{14730306}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-qI2HUEyy}{}}%
+\CSLLeftMargin{74. }%
+\CSLRightInline{\textbf{Internal representation of hippocampal neuronal population spans a time-distance continuum}
+\CSLBlock{Caroline Haimerl, David Angulo-Garcia, Vincent Villette, Susanne Reichinnek, Alessandro Torcini, Rosa Cossart, Arnaud Malvache} \emph{Proceedings of the National Academy of Sciences} (2019-03-25) \url{https://doi.org/ghpbm3}
+\CSLBlock{DOI: \href{https://doi.org/10.1073/pnas.1718518116}{10.1073/pnas.1718518116} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/30910984}{30910984} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6462106}{PMC6462106}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-4D8Jnhkz}{}}%
+\CSLLeftMargin{75. }%
+\CSLRightInline{\textbf{Top-down coordination of local cortical state during selective attention}
+\CSLBlock{Jochem van Kempen, Marc A Gieselmann, Michael Boyd, Nicholas A Steinmetz, Tirin Moore, Tatiana A Engel, Alexander Thiele} \emph{Neuron} (2021-03) \url{https://doi.org/ghvj3k}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.neuron.2020.12.013}{10.1016/j.neuron.2020.12.013} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/33406410}{33406410} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7927916}{PMC7927916}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Jzr1gwsr}{}}%
+\CSLLeftMargin{76. }%
+\CSLRightInline{\textbf{Rapid Formation of Robust Auditory Memories: Insights from Noise}
+\CSLBlock{Trevor R Agus, Simon J Thorpe, Daniel Pressnitzer} \emph{Neuron} (2010-05) \url{https://doi.org/dc3r2d}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.neuron.2010.04.014}{10.1016/j.neuron.2010.04.014} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/20510864}{20510864}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-UGHHptIH}{}}%
+\CSLLeftMargin{77. }%
+\CSLRightInline{\textbf{Visual stimuli recruit intrinsically generated cortical ensembles}
+\CSLBlock{Jae-eun Kang Miller, Inbal Ayzenshtat, Luis Carrillo-Reid, Rafael Yuste} \emph{Proceedings of the National Academy of Sciences} (2014-09-08) \url{https://doi.org/f6htkt}
+\CSLBlock{DOI: \href{https://doi.org/10.1073/pnas.1406077111}{10.1073/pnas.1406077111} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/25201983}{25201983} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4183303}{PMC4183303}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-DUpFdm8C}{}}%
+\CSLLeftMargin{78. }%
+\CSLRightInline{\textbf{Networks of spiking neurons: The third generation of neural network models}
+\CSLBlock{Wolfgang Maass} \emph{Neural Networks} (1997-12) \url{https://linkinghub.elsevier.com/retrieve/pii/S0893608097000117}
+\CSLBlock{DOI: \href{https://doi.org/fm92kt}{fm92kt}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-f7gkBktf}{}}%
+\CSLLeftMargin{79. }%
+\CSLRightInline{\textbf{Active inference, eye movements and oculomotor delays}
+\CSLBlock{Laurent U Perrinet, Rick A Adams, Karl J Friston} \emph{Biological Cybernetics} (2014-08-16) \url{https://doi.org/f6skjq}
+\CSLBlock{DOI: \href{https://doi.org/10.1007/s00422-014-0620-8}{10.1007/s00422-014-0620-8} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/25128318}{25128318} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4250571}{PMC4250571}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1BSbXPPDF}{}}%
+\CSLLeftMargin{80. }%
+\CSLRightInline{\textbf{The Flash-Lag Effect as a Motion-Based Predictive Shift}
+\CSLBlock{Mina A Khoei, Guillaume S Masson, Laurent U Perrinet} \emph{PLOS Computational Biology} (2017-01-26) \url{https://doi.org/b2t5}
+\CSLBlock{DOI: \href{https://doi.org/10.1371/journal.pcbi.1005068}{10.1371/journal.pcbi.1005068} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/28125585}{28125585} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5268412}{PMC5268412}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-WGEaBYgy}{}}%
+\CSLLeftMargin{81. }%
+\CSLRightInline{\textbf{Anisotropic connectivity implements motion-based prediction in a spiking neural network}
+\CSLBlock{Bernhard A Kaplan, Anders Lansner, Guillaume S Masson, Laurent U Perrinet} \emph{Frontiers in Computational Neuroscience} (2013-09-17) \url{https://laurentperrinet.github.io/publication/kaplan-13}
+\CSLBlock{DOI: \href{https://doi.org/10.3389/fncom.2013.00112}{10.3389/fncom.2013.00112}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-7GEdzh5o}{}}%
+\CSLLeftMargin{82. }%
+\CSLRightInline{\textbf{The flash-lag effect as a motion-based predictive shift}
+\CSLBlock{Mina A Khoei, Guillaume S Masson, Laurent U Perrinet} \emph{PLoS Computational Biology} (2017-01-26) \url{https://laurentperrinet.github.io/publication/khoei-masson-perrinet-17/}
+\CSLBlock{DOI: \href{https://doi.org/10.1371/journal.pcbi.1005068}{10.1371/journal.pcbi.1005068}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1GazUBEdT}{}}%
+\CSLLeftMargin{83. }%
+\CSLRightInline{\textbf{The tempotron: a neuron that learns spike timing--based decisions}
+\CSLBlock{Robert Gütig, Haim Sompolinsky} \emph{Nature Neuroscience} (2006-02-12) \url{https://doi.org/ch29r4}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/nn1643}{10.1038/nn1643} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/16474393}{16474393}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-QCyjy8wE}{}}%
+\CSLLeftMargin{84. }%
+\CSLRightInline{\textbf{To spike, or when to spike?}
+\CSLBlock{Robert Gütig} \emph{Current Opinion in Neurobiology} (2014-04) \url{https://doi.org/f52tkt}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.conb.2014.01.004}{10.1016/j.conb.2014.01.004} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/24468508}{24468508}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-EF6Larp8}{}}%
+\CSLLeftMargin{85. }%
+\CSLRightInline{\textbf{Spike Timing--Dependent Plasticity: A Hebbian Learning Rule}
+\CSLBlock{Natalia Caporale, Yang Dan} \emph{Annual Review of Neuroscience} (2008-07-01) \url{https://doi.org/fqxrgj}
+\CSLBlock{DOI: \href{https://doi.org/10.1146/annurev.neuro.31.060407.125639}{10.1146/annurev.neuro.31.060407.125639} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/18275283}{18275283}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Dd3kSDRW}{}}%
+\CSLLeftMargin{86. }%
+\CSLRightInline{\textbf{STDP-based spiking deep convolutional neural networks for object recognition}
+\CSLBlock{Saeed Reza Kheradpisheh, Mohammad Ganjtabesh, Simon J Thorpe, Timothée Masquelier} \emph{Neural Networks} (2018-03) \url{https://doi.org/gc6dqh}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.neunet.2017.12.005}{10.1016/j.neunet.2017.12.005} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/29328958}{29328958}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-vePjgmRh}{}}%
+\CSLLeftMargin{87. }%
+\CSLRightInline{\textbf{Representation learning using event-based STDP}
+\CSLBlock{Amirhossein Tavanaei, Timothée Masquelier, Anthony Maida} \emph{Neural Networks} (2018-09) \url{https://doi.org/gd6tgv}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.neunet.2018.05.018}{10.1016/j.neunet.2018.05.018} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/29894846}{29894846}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RrgzWOSk}{}}%
+\CSLLeftMargin{88. }%
+\CSLRightInline{\textbf{Cell assemblies at multiple time scales with arbitrary lag constellations}
+\CSLBlock{Eleonora Russo, Daniel Durstewitz} \emph{eLife} (2017-01-11) \url{https://doi.org/f9kxd8}
+\CSLBlock{DOI: \href{https://doi.org/10.7554/elife.19428}{10.7554/elife.19428} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/28074777}{28074777} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5226654}{PMC5226654}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-o7rANZux}{}}%
+\CSLLeftMargin{89. }%
+\CSLRightInline{\textbf{Memory traces in dynamical systems}
+\CSLBlock{Surya Ganguli, Dongsung Huh, Haim Sompolinsky} \emph{Proceedings of the National Academy of Sciences} (2008-12-02) \url{https://doi.org/bq52bt}
+\CSLBlock{DOI: \href{https://doi.org/10.1073/pnas.0804451105}{10.1073/pnas.0804451105} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/19020074}{19020074} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2596211}{PMC2596211}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-LjkTSK3h}{}}%
+\CSLLeftMargin{90. }%
+\CSLRightInline{\textbf{On Stability of Distance Measures for Event Sequences Induced by Level-Crossing Sampling}
+\CSLBlock{Bernhard A Moser, Thomas Natschlager} \emph{IEEE Transactions on Signal Processing} (2014-04) \url{https://doi.org/gnpb7w}
+\CSLBlock{DOI: \href{https://doi.org/10.1109/tsp.2014.2305642}{10.1109/tsp.2014.2305642}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RYzP72lj}{}}%
+\CSLLeftMargin{91. }%
+\CSLRightInline{\textbf{�ber die Gleichverteilung von Zahlen mod. Eins}
+\CSLBlock{Hermann Weyl} \emph{Mathematische Annalen} (1916-09) \url{https://doi.org/crprvc}
+\CSLBlock{DOI: \href{https://doi.org/10.1007/bf01475864}{10.1007/bf01475864}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Z7LAUup3}{}}%
+\CSLLeftMargin{92. }%
+\CSLRightInline{\textbf{A review of the methods for neuronal response latency estimation}
+\CSLBlock{Marie Levakova, Massimiliano Tamborrino, Susanne Ditlevsen, Petr Lansky} \emph{Biosystems} (2015-10) \url{https://doi.org/gpshjz}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.biosystems.2015.04.008}{10.1016/j.biosystems.2015.04.008} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/25939679}{25939679}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-MgINa6bU}{}}%
+\CSLLeftMargin{93. }%
+\CSLRightInline{\textbf{A Fast and Simple Population Code for Orientation in Primate V1}
+\CSLBlock{P Berens, AS Ecker, RJ Cotton, WJ Ma, M Bethge, AS Tolias} \emph{Journal of Neuroscience} (2012-08-01) \url{https://doi.org/f365rn}
+\CSLBlock{DOI: \href{https://doi.org/10.1523/jneurosci.1335-12.2012}{10.1523/jneurosci.1335-12.2012} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/22855811}{22855811} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3506189}{PMC3506189}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-13iJohyPk}{}}%
+\CSLLeftMargin{94. }%
+\CSLRightInline{\textbf{Unitary Event Analysis}
+\CSLBlock{Sonja Grün, Markus Diesmann, Ad Aertsen} \emph{Analysis of Parallel Spike Trains} (2010) \url{https://doi.org/dxgxt9}
+\CSLBlock{DOI: \href{https://doi.org/10.1007/978-1-4419-5675-0_10}{10.1007/978-1-4419-5675-0\_10}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1ErNTONy0}{}}%
+\CSLLeftMargin{95. }%
+\CSLRightInline{\textbf{Statistical evaluation of synchronous spike patterns extracted by frequent item set mining}
+\CSLBlock{Emiliano Torre, David Picado-Muiño, Michael Denker, Christian Borgelt, Sonja Grün} \emph{Frontiers in Computational Neuroscience} (2013) \url{https://doi.org/gpshgq}
+\CSLBlock{DOI: \href{https://doi.org/10.3389/fncom.2013.00132}{10.3389/fncom.2013.00132} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/24167487}{24167487} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3805944}{PMC3805944}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-V9qkJFZU}{}}%
+\CSLLeftMargin{96. }%
+\CSLRightInline{\textbf{Methods for identification of spike patterns in massively parallel spike trains}
+\CSLBlock{Pietro Quaglio, Vahid Rostami, Emiliano Torre, Sonja Grün} \emph{Biological Cybernetics} (2018-04) \url{https://doi.org/gdgckg}
+\CSLBlock{DOI: \href{https://doi.org/10.1007/s00422-018-0755-0}{10.1007/s00422-018-0755-0} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/29651582}{29651582} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5908877}{PMC5908877}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-pExXxdMb}{}}%
+\CSLLeftMargin{97. }%
+\CSLRightInline{\textbf{3d-SPADE: Significance evaluation of spatio-temporal patterns of various temporal extents}
+\CSLBlock{Alessandra Stella, Pietro Quaglio, Emiliano Torre, Sonja Grün} \emph{Biosystems} (2019-11) \url{https://doi.org/gpshj2}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.biosystems.2019.104022}{10.1016/j.biosystems.2019.104022} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/31449837}{31449837}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-d2m7wQpH}{}}%
+\CSLLeftMargin{98. }%
+\CSLRightInline{\textbf{Comparing Surrogates to Evaluate Precisely Timed Higher-Order Spike Correlations}
+\CSLBlock{Alessandra Stella, Peter Bouss, Günther Palm, Sonja Grün} \emph{eneuro} (2022-05) \url{https://doi.org/gqjvht}
+\CSLBlock{DOI: \href{https://doi.org/10.1523/eneuro.0505-21.2022}{10.1523/eneuro.0505-21.2022} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/35584914}{35584914} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9186111}{PMC9186111}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-s63GcujC}{}}%
+\CSLLeftMargin{99. }%
+\CSLRightInline{\textbf{Understanding Auditory Spectro-Temporal Receptive Fields and Their Changes with Input Statistics by Efficient Coding Principles}
+\CSLBlock{Lingyun Zhao, Li Zhaoping} \emph{PLoS Computational Biology} (2011-08-18) \url{https://doi.org/bjc6c9}
+\CSLBlock{DOI: \href{https://doi.org/10.1371/journal.pcbi.1002123}{10.1371/journal.pcbi.1002123} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/21887121}{21887121} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3158037}{PMC3158037}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-zc16plUu}{}}%
+\CSLLeftMargin{100. }%
+\CSLRightInline{\textbf{Robustness of Spike Deconvolution for Neuronal Calcium Imaging}
+\CSLBlock{Marius Pachitariu, Carsen Stringer, Kenneth D Harris} \emph{The Journal of Neuroscience} (2018-08-06) \url{https://doi.org/gd9mcx}
+\CSLBlock{DOI: \href{https://doi.org/10.1523/jneurosci.3339-17.2018}{10.1523/jneurosci.3339-17.2018} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/30082416}{30082416} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6136155}{PMC6136155}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-brg2FFsb}{}}%
+\CSLLeftMargin{101. }%
+\CSLRightInline{\textbf{High-dimensional geometry of population responses in visual cortex}
+\CSLBlock{Carsen Stringer, Marius Pachitariu, Nicholas Steinmetz, Matteo Carandini, Kenneth D Harris} \emph{Nature} (2019-06-26) \url{https://doi.org/gf4cfj}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/s41586-019-1346-5}{10.1038/s41586-019-1346-5} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/31243367}{31243367} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6642054}{PMC6642054}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1BPHUQLTf}{}}%
+\CSLLeftMargin{102. }%
+\CSLRightInline{\textbf{Spontaneous behaviors drive multidimensional, brainwide activity}
+\CSLBlock{Carsen Stringer, Marius Pachitariu, Nicholas Steinmetz, Charu Bai Reddy, Matteo Carandini, Kenneth D Harris} \emph{Science} (2019-04-19) \url{https://doi.org/gfz6mh}
+\CSLBlock{DOI: \href{https://doi.org/10.1126/science.aav7893}{10.1126/science.aav7893} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/31000656}{31000656} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6525101}{PMC6525101}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1EMs3GS0B}{}}%
+\CSLLeftMargin{103. }%
+\CSLRightInline{\textbf{High-precision coding in visual cortex}
+\CSLBlock{Carsen Stringer, Michalis Michaelos, Dmitri Tsyboulski, Sarah E Lindo, Marius Pachitariu} \emph{Cell} (2021-05) \url{https://doi.org/gjqbjd}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.cell.2021.03.042}{10.1016/j.cell.2021.03.042} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/33857423}{33857423}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-9AK1cwY1}{}}%
+\CSLLeftMargin{104. }%
+\CSLRightInline{\textbf{Unsupervised clustering of temporal patterns in high-dimensional neuronal ensembles using a novel dissimilarity measure}
+\CSLBlock{Lukas Grossberger, Francesco P Battaglia, Martin Vinck} \emph{PLOS Computational Biology} (2018-07-06) \url{https://doi.org/gdvbsx}
+\CSLBlock{DOI: \href{https://doi.org/10.1371/journal.pcbi.1006283}{10.1371/journal.pcbi.1006283} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/29979681}{29979681} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6051652}{PMC6051652}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1XpTamcl}{}}%
+\CSLLeftMargin{105. }%
+\CSLRightInline{\textbf{Unitary Events in Multiple Single-Neuron Spiking Activity: II. Nonstationary Data}
+\CSLBlock{Sonja Grün, Markus Diesmann, Ad Aertsen} \emph{Neural Computation} (2002-01-01) \url{https://doi.org/ffvbkp}
+\CSLBlock{DOI: \href{https://doi.org/10.1162/089976602753284464}{10.1162/089976602753284464} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/11747535}{11747535}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1300cS9RL}{}}%
+\CSLLeftMargin{106. }%
+\CSLRightInline{\textbf{Neural Variability and Sampling-Based Probabilistic Representations in the Visual Cortex}
+\CSLBlock{Gergő Orbán, Pietro Berkes, József Fiser, Máté Lengyel} \emph{Neuron} (2016-10) \url{https://doi.org/f88725}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/j.neuron.2016.09.038}{10.1016/j.neuron.2016.09.038} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/27764674}{27764674} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5077700}{PMC5077700}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1365b3Wwl}{}}%
+\CSLLeftMargin{107. }%
+\CSLRightInline{\textbf{Point process models for sequence detection in high-dimensional neural spike trains}
+\CSLBlock{Alex H Williams, Anthony Degleris, Yixin Wang, Scott W Linderman} \emph{arXiv} (2020-10-13) \url{https://arxiv.org/abs/2010.04875}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-rYLmAESf}{}}%
+\CSLLeftMargin{108. }%
+\CSLRightInline{\textbf{DYNAMICS OF DELAY-COUPLED EXCITABLE NEURAL SYSTEMS}
+\CSLBlock{MA DAHLEM, G HILLER, A PANCHUK, E SCHÖLL} \emph{International Journal of Bifurcation and Chaos} (2009-02) \url{https://doi.org/d43v5b}
+\CSLBlock{DOI: \href{https://doi.org/10.1142/s0218127409023111}{10.1142/s0218127409023111}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1DadetlqZ}{}}%
+\CSLLeftMargin{109. }%
+\CSLRightInline{\textbf{Delay-Based Neural Computation: Pulse Routing Architecture and Benchmark Application in FPGA}
+\CSLBlock{Vasilis Thanasoulis, Bernhard Vogginger, Johannes Partzsch, Christian Mayr} \emph{2021 28th IEEE International Conference on Electronics, Circuits, and Systems (ICECS)} (2021-11-28) \url{https://doi.org/gn63rh}
+\CSLBlock{DOI: \href{https://doi.org/10.1109/icecs53924.2021.9665468}{10.1109/icecs53924.2021.9665468}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-iNkKTYaI}{}}%
+\CSLLeftMargin{110. }%
+\CSLRightInline{\textbf{Unitary Events in Multiple Single-Neuron Spiking Activity: I. Detection and Significance}
+\CSLBlock{Sonja Grün, Markus Diesmann, Ad Aertsen} \emph{Neural Computation} (2002-01-01) \url{https://doi.org/c63kkn}
+\CSLBlock{DOI: \href{https://doi.org/10.1162/089976602753284455}{10.1162/089976602753284455} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/11747534}{11747534}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-14wpaupd5}{}}%
+\CSLLeftMargin{111. }%
+\CSLRightInline{\textbf{NeuroXidence: reliable and efficient analysis of an excess or deficiency of joint-spike events}
+\CSLBlock{Gordon Pipa, Diek W Wheeler, Wolf Singer, Danko Nikolić} \emph{Journal of Computational Neuroscience} (2008-01-26) \url{https://doi.org/ddh5js}
+\CSLBlock{DOI: \href{https://doi.org/10.1007/s10827-007-0065-3}{10.1007/s10827-007-0065-3} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/18219568}{18219568} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2758673}{PMC2758673}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-19NyVq80B}{}}%
+\CSLLeftMargin{112. }%
+\CSLRightInline{\textbf{Regulation of Synaptic Efficacy by Coincidence of Postsynaptic APs and EPSPs}
+\CSLBlock{Henry Markram, Joachim Lübke, Michael Frotscher, Bert Sakmann} \emph{Science} (1997-01-10) \url{https://doi.org/ftvvd8}
+\CSLBlock{DOI: \href{https://doi.org/10.1126/science.275.5297.213}{10.1126/science.275.5297.213} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/8985014}{8985014}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-11p3NXmkg}{}}%
+\CSLLeftMargin{113. }%
+\CSLRightInline{\textbf{Coherence detection in a spiking neuron via Hebbian learning}
+\CSLBlock{L Perrinet, M Samuelides} \emph{Neurocomputing} (2002-06) \url{https://doi.org/fsk9mk}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/s0925-2312(02)00374-0}{10.1016/s0925-2312(02)00374-0}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-j5xS3owo}{}}%
+\CSLLeftMargin{114. }%
+\CSLRightInline{\textbf{Networks of integrate-and-fire neuron using rank order coding A: How to implement spike time dependent Hebbian plasticity}
+\CSLBlock{L Perrinet, A Delorme, M Samuelides, SJ Thorpe} \emph{Neurocomputing} (2001-06) \url{https://doi.org/d5p6b2}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/s0925-2312(01)00460-x}{10.1016/s0925-2312(01)00460-x}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-15TktA0gR}{}}%
+\CSLLeftMargin{115. }%
+\CSLRightInline{\textbf{STDP in recurrent neuronal networks}
+\CSLBlock{Matthieu Gilson} \emph{Frontiers in Computational Neuroscience} (2010) \url{https://doi.org/c8ck59}
+\CSLBlock{DOI: \href{https://doi.org/10.3389/fncom.2010.00023}{10.3389/fncom.2010.00023} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/20890448}{20890448} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2947928}{PMC2947928}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1FHIKpizQ}{}}%
+\CSLLeftMargin{116. }%
+\CSLRightInline{\textbf{Delay Selection by Spike-Timing-Dependent Plasticity in Recurrent Networks of Spiking Neurons Receiving Oscillatory Inputs}
+\CSLBlock{Robert R Kerr, Anthony N Burkitt, Doreen A Thomas, Matthieu Gilson, David B Grayden} \emph{PLoS Computational Biology} (2013-02-07) \url{https://doi.org/f4rm5j}
+\CSLBlock{DOI: \href{https://doi.org/10.1371/journal.pcbi.1002897}{10.1371/journal.pcbi.1002897} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/23408878}{23408878} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3567188}{PMC3567188}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-s09KZ8Kh}{}}%
+\CSLLeftMargin{117. }%
+\CSLRightInline{\textbf{Predictive Visual Motion Extrapolation Emerges Spontaneously and without Supervision at Each Layer of a Hierarchical Neural Network with Spike-Timing-Dependent Plasticity}
+\CSLBlock{Anthony N Burkitt, Hinze Hogendoorn} \emph{The Journal of Neuroscience} (2021-04-22) \url{https://doi.org/gjtwzk}
+\CSLBlock{DOI: \href{https://doi.org/10.1523/jneurosci.2017-20.2021}{10.1523/jneurosci.2017-20.2021} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/33888603}{33888603} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8152614}{PMC8152614}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-UeTLXQCp}{}}%
+\CSLLeftMargin{118. }%
+\CSLRightInline{\textbf{Bio-plausible Unsupervised Delay Learning for Extracting Temporal Features in Spiking Neural Networks}
+\CSLBlock{Alireza Nadafian, Mohammad Ganjtabesh} \emph{arXiv} (2020-11-19) \url{https://arxiv.org/abs/2011.09380}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-B493Fl4K}{}}%
+\CSLLeftMargin{119. }%
+\CSLRightInline{\textbf{Supervised Learning in Multilayer Spiking Neural Networks With Spike Temporal Error Backpropagation}
+\CSLBlock{Xiaoling Luo, Hong Qu, Yuchen Wang, Zhang Yi, Jilun Zhang, Malu Zhang} \emph{IEEE Transactions on Neural Networks and Learning Systems} (2022) \url{https://doi.org/gpzp26}
+\CSLBlock{DOI: \href{https://doi.org/10.1109/tnnls.2022.3164930}{10.1109/tnnls.2022.3164930} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/35436200}{35436200}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-pPRQwZb}{}}%
+\CSLLeftMargin{120. }%
+\CSLRightInline{\textbf{Learning Polychronous Neuronal Groups Using Joint Weight-Delay Spike-Timing-Dependent Plasticity}
+\CSLBlock{Haoqi Sun, Olga Sourina, Guang-Bin Huang} \emph{Neural Computation} (2016-10) \url{https://doi.org/f86wm7}
+\CSLBlock{DOI: \href{https://doi.org/10.1162/neco_a_00879}{10.1162/neco\_a\_00879} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/27557107}{27557107}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-WFwUKZb5}{}}%
+\CSLLeftMargin{121. }%
+\CSLRightInline{\textbf{Variation in sequence dynamics improves maintenance of stereotyped behavior in an example from bird song}
+\CSLBlock{Alison Duffy, Elliott Abe, David J Perkel, Adrienne L Fairhall} \emph{Proceedings of the National Academy of Sciences} (2019-04-23) \url{https://doi.org/gpfjm6}
+\CSLBlock{DOI: \href{https://doi.org/10.1073/pnas.1815910116}{10.1073/pnas.1815910116} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/31015294}{31015294} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6511032}{PMC6511032}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1EhOfHrje}{}}%
+\CSLLeftMargin{122. }%
+\CSLRightInline{\textbf{Motor control of birdsong.}
+\CSLBlock{Roderick A Suthers, Daniel Margoliash} \emph{Current opinion in neurobiology} (2002-12) \url{https://www.ncbi.nlm.nih.gov/pubmed/12490259}
+\CSLBlock{DOI: \href{https://doi.org/10.1016/s0959-4388(02)00386-0}{10.1016/s0959-4388(02)00386-0} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/12490259}{12490259}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Dry1ANMD}{}}%
+\CSLLeftMargin{123. }%
+\CSLRightInline{\textbf{Descending projections of the songbird nucleus robustus archistriatalis.}
+\CSLBlock{JM Wild} \emph{The Journal of comparative neurology} (1993-12-08) \url{https://www.ncbi.nlm.nih.gov/pubmed/8308169}
+\CSLBlock{DOI: \href{https://doi.org/10.1002/cne.903380207}{10.1002/cne.903380207} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/8308169}{8308169}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-SAIh1pga}{}}%
+\CSLLeftMargin{124. }%
+\CSLRightInline{\textbf{Temporal hierarchical control of singing in birds.}
+\CSLBlock{AC Yu, D Margoliash} \emph{Science (New York, N.Y.)} (1996-09-27) \url{https://www.ncbi.nlm.nih.gov/pubmed/8791594}
+\CSLBlock{DOI: \href{https://doi.org/10.1126/science.273.5283.1871}{10.1126/science.273.5283.1871} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/8791594}{8791594}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-aj6TgorR}{}}%
+\CSLLeftMargin{125. }%
+\CSLRightInline{\textbf{Fitting summary statistics of neural data with a differentiable spiking network simulator}
+\CSLBlock{Guillaume Bellec, Shuqi Wang, Alireza Modirshanechi, Johanni Brea, Wulfram Gerstner} \emph{arXiv} (2021-11-16) \url{https://arxiv.org/abs/2106.10064}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-14e3BCBii}{}}%
+\CSLLeftMargin{126. }%
+\CSLRightInline{\textbf{Time structure of the activity in neural network models}
+\CSLBlock{Wulfram Gerstner} \emph{Physical Review E} (1995-01-01) \url{https://doi.org/cwcn9d}
+\CSLBlock{DOI: \href{https://doi.org/10.1103/physreve.51.738}{10.1103/physreve.51.738} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/9962697}{9962697}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-10EU8MfxC}{}}%
+\CSLLeftMargin{127. }%
+\CSLRightInline{\textbf{Spatiotemporal Filtering for Event-Based Action Recognition}
+\CSLBlock{Rohan Ghosh, Anupam Gupta, Andrei Nakagawa, Alcimar Soares, Nitish Thakor} \emph{arXiv} (2019) \url{https://doi.org/gp3g8p}
+\CSLBlock{DOI: \href{https://doi.org/10.48550/arxiv.1903.07067}{10.48550/arxiv.1903.07067}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-12zyUFdO4}{}}%
+\CSLLeftMargin{128. }%
+\CSLRightInline{\textbf{Abstract}
+\CSLBlock{eLife Sciences Publications, Ltd} \url{https://doi.org/gpb34v}
+\CSLBlock{DOI: \href{https://doi.org/10.7554/elife.44324.001}{10.7554/elife.44324.001}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-WxQdcMB2}{}}%
+\CSLLeftMargin{129. }%
+\CSLRightInline{\textbf{Generative Models of Brain Dynamics -\/- A review}
+\CSLBlock{Mahta Ramezanian Panahi, Germán Abrevaya, Jean-Christophe Gagnon-Audet, Vikram Voleti, Irina Rish, Guillaume Dumas} \emph{arXiv} (2021-12-24) \url{https://arxiv.org/abs/2112.12147}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-JrZPoxk9}{}}%
+\CSLLeftMargin{130. }%
+\CSLRightInline{\textbf{The Fourth Paradigm: Data-Intensive Scientific Discovery {[}Point of View{]}}
+\CSLBlock{Kristin M Tolle, DStewart W Tansley, Anthony JG Hey} \emph{Proceedings of the IEEE} (2011-08) \url{https://doi.org/dfggjc}
+\CSLBlock{DOI: \href{https://doi.org/10.1109/jproc.2011.2155130}{10.1109/jproc.2011.2155130}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-sJ03d2Zj}{}}%
+\CSLLeftMargin{131. }%
+\CSLRightInline{\textbf{SNE: an Energy-Proportional Digital Accelerator for Sparse Event-Based Convolutions}
+\CSLBlock{Di Mauro, Alfio, Prasad, Arpan Suravi, Huang, Zhikai, Spallanzani, Matteo, Conti, Francesco, Benini, Luca} \emph{ETH Zurich} (2022) \url{https://doi.org/gp3m5v}
+\CSLBlock{DOI: \href{https://doi.org/10.3929/ethz-b-000543342}{10.3929/ethz-b-000543342}}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-R5BYFgCP}{}}%
+\CSLLeftMargin{132. }%
+\CSLRightInline{\textbf{SATA: Sparsity-Aware Training Accelerator for Spiking Neural Networks}
+\CSLBlock{Ruokai Yin, Abhishek Moitra, Abhiroop Bhattacharjee, Youngeun Kim, Priyadarshini Panda} \emph{arXiv} (2022-04-13) \url{https://arxiv.org/abs/2204.05422}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-1HSyNOl48}{}}%
+\CSLLeftMargin{133. }%
+\CSLRightInline{\textbf{The rapid developmental rise of somatic inhibition disengages hippocampal dynamics from self-motion}
+\CSLBlock{Robin F Dard, Erwan Leprince, Julien Denis, Shrisha Rao-Balappa, Dmitrii Suchkov, Richard Boyce, Catherine Lopez, Marie Giorgi-Kurz, Tom Szwagier, Theo Dumont, \ldots{} Michel A Picardo} \emph{Cold Spring Harbor Laboratory} (2021-06-09) \url{https://doi.org/gpks29}
+\CSLBlock{DOI: \href{https://doi.org/10.1101/2021.06.08.447542}{10.1101/2021.06.08.447542}}}
+
+\end{CSLReferences}

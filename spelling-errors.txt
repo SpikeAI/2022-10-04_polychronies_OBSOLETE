@@ -35,6 +35,7 @@ Buzsáki
 camillebesnainou
 capacitive
 CBMI
+centric
 Cereb
 Clopath
 CNNs
@@ -47,6 +48,7 @@ convolutional
 Corticonics
 Côte
 cotical
+Cowan
 Csicsvari
 Czurko
 dans
@@ -60,7 +62,7 @@ demonstated
 dendritic
 dependance
 des
-differentially
+Differentially
 dimensionality
 d’Informatique
 discrepency
@@ -73,12 +75,14 @@ DVS
 electrophysiological
 Elife
 EPSPs
+Eurich
 excitatory
 Fairhall
 feedforward
 figshare
 FMC
 FPGA
+Frady
 Gabor
 Ganjtabesh
 Gaussians
@@ -86,6 +90,7 @@ Gillett
 Gilson
 GJ
 GLM
+Glunder
 Goodhill
 Grimaldi
 Grismaldi
@@ -95,8 +100,9 @@ heatmap
 Hebb
 Hebbian
 heterosynaptic
-hippocampal
+Hippocampal
 Hirase
+Huning
 HVC
 ICECS
 Ikegaya
@@ -139,6 +145,7 @@ Masquelier
 maxpooling
 Mayr
 MNIST
+MNSD
 Morelli
 Moshe
 multielectrode
@@ -150,6 +157,7 @@ neocortical
 neuro
 neurobiological
 neurobiology
+neurocomputational
 neuromorphic
 Neurophysiol
 neurophysiological
@@ -162,9 +170,12 @@ nois
 nonlinearities
 nonnormal
 olfaction
+organazed
 PAMI
 Partzsch
 parvocellular
+Pawelzik
+Paxon
 perceptron
 Pereira
 Perrinet
@@ -173,8 +184,8 @@ PLoS
 PNG
 PNGs
 Politi
-polychronization
-Polychronous
+Polychronization
+polychronous
 potentiation
 Poulet
 pre
@@ -185,8 +196,9 @@ PSCs
 pulvinar
 Purpura
 pyNN
-Rastermap
+rastermap
 RefRN
+Reproducibility
 resistive
 retinotopic
 Rossum
@@ -217,9 +229,9 @@ subserve
 superlinearly
 supersequences
 sur
-Synfire
+synfire
 Systèmes
-tempotron
+Tempotron
 thalamocortical
 Thanasoulis
 Timone

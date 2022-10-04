@@ -5,7 +5,7 @@ keywords:
 - code
 - time
 lang: en-US
-date-meta: '2022-09-02'
+date-meta: '2022-10-04'
 author-meta:
 - Camille Besnainou
 - Antoine Grimaldi
@@ -59,8 +59,8 @@ header-includes: |-
   <meta name="citation_title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta property="og:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
   <meta property="twitter:title" content="Review on precise heterosynaptic spiking motifs in neurobiological and neuromorphic data" />
-  <meta name="dc.date" content="2022-09-02" />
-  <meta name="citation_publication_date" content="2022-09-02" />
+  <meta name="dc.date" content="2022-10-04" />
+  <meta name="citation_publication_date" content="2022-10-04" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -86,9 +86,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://SpikeAI.github.io/polychronies/" />
   <meta name="citation_pdf_url" content="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://SpikeAI.github.io/polychronies/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/d2fe7eb9ebd0ab510f14fe490d93f6d2aa75fae3/" />
-  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/d2fe7eb9ebd0ab510f14fe490d93f6d2aa75fae3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/d2fe7eb9ebd0ab510f14fe490d93f6d2aa75fae3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://SpikeAI.github.io/polychronies/v/9f4dbc4083cc349bedef79375849d649d7300fd4/" />
+  <meta name="manubot_html_url_versioned" content="https://SpikeAI.github.io/polychronies/v/9f4dbc4083cc349bedef79375849d649d7300fd4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://SpikeAI.github.io/polychronies/v/9f4dbc4083cc349bedef79375849d649d7300fd4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -111,10 +111,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://SpikeAI.github.io/polychronies/v/d2fe7eb9ebd0ab510f14fe490d93f6d2aa75fae3/))
+([permalink](https://SpikeAI.github.io/polychronies/v/9f4dbc4083cc349bedef79375849d649d7300fd4/))
 was automatically generated
-from [SpikeAI/polychronies@d2fe7eb](https://github.com/SpikeAI/polychronies/tree/d2fe7eb9ebd0ab510f14fe490d93f6d2aa75fae3)
-on September 2, 2022.
+from [SpikeAI/polychronies@9f4dbc4](https://github.com/SpikeAI/polychronies/tree/9f4dbc4083cc349bedef79375849d649d7300fd4)
+on October 4, 2022.
 </em></small>
 
 ## Authors
