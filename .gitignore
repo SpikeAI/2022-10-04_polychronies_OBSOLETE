@@ -6,3 +6,6 @@ manuscript.synctex.gz
 manuscript.fdb_latexmk
 manuscript.fls
 manuscript.out
+manuscript.bbl
+manuscript.blg
+manuscript.synctex(busy)
