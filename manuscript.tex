@@ -73,6 +73,14 @@
 %=================================================================
 % Add packages and commands here. The following packages are loaded in our class file: fontenc, inputenc, calc, indentfirst, fancyhdr, graphicx, epstopdf, lastpage, ifthen, lineno, float, amsmath, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, tabto, xcolor, soul, multirow, microtype, tikz, totcount, changepage, attrib, upgreek, cleveref, amsthm, hyphenat, natbib, hyperref, footmisc, url, geometry, newfloat, caption
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% a simpler annotation system:
+\usepackage{soulutf8}
+\usepackage{color}
+\newcommand{\note}[1]{{\sethlcolor{yellow}\hl{#1}}}
+%\newcommand{\note}[1]{}
+%
+
 %=================================================================
 %% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation, Assumption
 %% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
@@ -93,7 +101,7 @@
 \Author{
 Antoine Grimaldi $^{1,\dagger,\ddagger}$\orcidA{}, 
 Amélie Gruel $^{2,\dagger,\ddagger}$, 
-Jean Martinet $^{2,\ddagger}$ 
+Jean Martinet $^{2,}$ 
 and Laurent Perrinet $^{1,}$\orcidD{}*}
 
 
@@ -127,11 +135,7 @@ $^{2}$ \quad SPARKS,  Côte d'Azur, CNRS, I3S; 2000 Rte des Lucioles, 06900 Soph
 % Abstract (Do not insert blank lines, i.e. \\) 
 \abstract{
 %A single paragraph of about 200 words maximum. For research articles, abstracts should give a pertinent overview of the work. We strongly encourage authors to use the following style of structured abstracts, but without headings: (1) Background: place the question addressed in a broad context and highlight the purpose of the study; (2) Methods: describe briefly the main methods or treatments applied; (3) Results: summarize the article's main findings; (4) Conclusions: indicate the main conclusions or interpretations. The abstract should be an objective representation of the article, it must not contain results which are not presented and substantiated in the main text and should not exaggerate the main conclusions.
-Why do neurons communicate through spikes? By definition, a spike, or action potential, is a all-or-none event ---it can occur or not without further details--- at asynchronous timings, i.e.~it can occur at any continuous time - differentially to the discretized timing classically used in digital processing. In the living world, neural systems almost systematically use this so-called event-based representation, though we do not yet have a clear idea why. A better understanding of this phenomenon remains a fundamental challenge in neurobiology in order to better interpret the masses of recorded data. It is also an emerging challenge in computer science to allow the efficient exploitation of a new class of sensors and event-based computers, called neuromorphic, which could allow significant gains in computing time and energy consumption ---a major societal challenge in the age of the digital economy and of global warming.
-%
-The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This \emph{event-based representation} present in the neuronal code is essential in understanding information processing and yet, most neuronal models do not take advantage of this minute temporal dimension. Our goal here is to bring an interdisciplinary perspective on the computational advantage of time series representations for the brain and for information processing machines. In particular, we will focus on the hypothesis that there exists in an assembly of neurons a representation based on a set of motifs of different relative spike times. Here, we will review current litterature on the detection of such motifs in generic raster plots. It is work in progress, where anybody interested can \emph{openly} join.
-%
-This hypothesis is directly inspired by neurobiological observations in the hippocampus, and it expands the capabilities of analog representations based on the firing rate by considering a representation based on repetitions of these motifs at precise times of occurrence. A mathematical formalization would be particularly well suited to neuromorphic computing, and would allow for the supervised or self-supervised learning of such motifs in any event-driven data. We will first review some biological and theoretical evidence in neural information processing. We will then present some models for the detection of such motifs in arbitrary raster plots, synthetic, biological or artificial (notably from event-based cameras). In particular, we will discuss models which exploit the variety of synaptic delays on the dendritic tree. Then, we will try to outline some possible strategies for learning these patterns and finally discuss possible perspectives.
+Why do neurons communicate through spikes? By definition, a spike, or action potential, is a all-or-none event ---it can occur or not without further details--- at asynchronous timings, i.e.~it can occur at any continuous time - differentially to the discretized timing classically used in digital processing. In the living world, neural systems almost systematically use this so-called event-based representation. A better understanding of this phenomenon remains a fundamental challenge in neurobiology in order to better interpret the masses of recorded data. It is also an emerging challenge in computer science to allow the efficient exploitation of a new class of sensors and event-based computers, called neuromorphic, which could allow significant gains in computing time and energy consumption ---a major societal challenge in the age of the digital economy and of global warming.
 }
 
 % Keywords
@@ -168,21 +172,26 @@ This hypothesis is directly inspired by neurobiological observations in the hipp
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Introduction}
 
 \section{Introduction: Importance of precise spike timings in the brain}\label{introduction-importance-of-precise-spike-timings-in-the-brain}
+
+%
+The response of a biological neuron depends largely on the precise timing of the sequence of presynaptic spikes as they reach the basal dendritic tree. This \emph{event-based representation} present in the neuronal code is essential in understanding information processing and yet, most neuronal models do not take advantage of this minute temporal dimension. Our goal here is to bring an interdisciplinary perspective on the computational advantage of time series representations for the brain and for information processing machines. In particular, we will focus on the hypothesis that there exists at the scale of an assembly of neurons a representation based on a set of motifs defined by different relative spike times. %Here, we will review current literature on the detection of such motifs in generic raster plots. It is work in progress, where anybody interested can \emph{openly} join.
+%
+This hypothesis is directly inspired by neurobiological observations in the hippocampus, and it expands the capabilities of analog representations based on the firing rate by considering a representation based on repetitions of these motifs at precise times of occurrence. A mathematical formalization would be particularly well suited to neuromorphic computing, and would allow for the supervised or self-supervised learning of such motifs in any event-driven data. We will first review some biological and theoretical evidence in neural information processing. We will then present some models for the detection of such motifs in arbitrary raster plots, biological or artificial (notably from event-based cameras). In particular, we will discuss models which exploit the variety of synaptic delays on the dendritic tree. Then, we will try to outline some possible strategies for learning these patterns and finally discuss possible perspectives.
+
 \subsection{Ultra fast neural codes for ultra fast vision}\label{ultra-fast-neural-codes-for-ultra-fast-vision}
 
 Let us start our review of the state of the art on the role of dynamics in vision by presenting some surprising results that have been obtained in neuroscience. Indeed, Simon Thorpe's group has shown during the last decades numerous examples demonstrating that humans can categorize briefly presented images in a fraction of a second. Its first experiment consisted in asking subjects to categorize images that do or do not contain animals~\citep{thorpe_speed_1996}. The results showed that humans were able to perform this task very well (with a success rate of more than 95\%) but above all that a differential activity for the two categories of images could be observed by electroencephalography, showing that this differentiation emerges at a very early latency in neuronal activity. These results have been extended to several species including primates but also extended to different experimental protocols and have shown for example that the response could be extremely fast of the order of 120 ms when the task was to perform a saccade~\citep{kirchner_ultra-rapid_2006}.
 
 This fast processing also explains the surprising experiments of fast serial detection which consists in presenting a fast succession of different images and to decode via the EEG if the observer can detect for example the presence of an animal. The performances decrease progressively as the frequency of presentation of the images increases. However, it has been shown in the macaque that a significant performance could be maintained with an image presentation time of only 14 ms per image~\citep{keysers_speed_2001}.
 
-This speed of the visual cortex, although surprising, is quite compatible with the latencies that are recorded at the neuro-physiological level. Indeed, when an image is presented on the retina, the visual information is rapidly propagated to the thalamus and then to the primary visual cortex takes about 55 ms in the macaque~\citep{nowak_timing_1997}, see Figure {[}\ref{fig:thorpe}{]}. This functioning of visual processing as a forward pass is most prominent in fast processing but can be complemented with feedback loops from the higher areas to the sensory areas~\citep{lamme_distinct_2000}.
+This speed of the visual cortex, although surprising, is quite compatible with the latencies that are recorded at the neuro-physiological level. Indeed, when an image is presented on the retina, the visual information is rapidly propagated to the thalamus and then to the primary visual cortex takes about 55 ms in the macaque~\citep{nowak_timing_1997}, see Figure~\ref{fig:thorpe}. This functioning of visual processing as a forward pass is most prominent in fast processing but can be complemented with feedback loops from the higher areas to the sensory areas~\citep{lamme_distinct_2000}.
 
 \begin{figure}
 \centering
-\includegraphics[width=1\textwidth,height=\textheight]{figures/visual-latency-estimate.jpg}
-\caption{From~\citep{thorpe_seeking_2001}}\label{fig:thorpe}
+\includegraphics[width=.7\textwidth]{figures/visual-latency-estimate.jpg}
+\caption{From~\citep{thorpe_seeking_2001} \note{get the rights or redo a schematics}}\label{fig:thorpe}
 \end{figure}
 
 \subsection{How timing encodes analogous profile}\label{how-timing-encodes-analogous-profile}
@@ -192,8 +201,8 @@ Numerous studies demonstrated the importance of precise timing in neural populat
 
 \begin{figure}
 \centering
-%\includegraphics{images/roc.jpg}
-\caption{Latency coding. An input analog profile is encoded in latencies: the higher the contrast, the shorter the latency. In this example, one generates at most one spike per neuron. %From~\citep{ref-YX5wqWH4}
+\note{redo a figure similar to the thorpe code}%\includegraphics{images/roc.jpg}
+\caption{Latency coding. An input analog profile is encoded in latencies: the higher the contrast, the shorter the latency. In this example, one generates at most one spike per neuron.
 }\label{fig:roc}
 \end{figure}
 
@@ -201,18 +210,22 @@ At the level of dynamic processing of visual information, it has been shown that
 
 Similar results have been demonstrated through neurophysiological recordings in the primary visual cortex and show that different levels of visual activity will induce different levels of neuronal discharge latency in the primary visual area~\citep{celebrini_dynamics_1993}. Many models have used these properties in temporal coding to build fast image categorization networks. These models take the form of artificial spiking neural networks (SNNs) and have been able to demonstrate their practical applications for image categorization~\citep{thorpe_speed_1996}. This work has been extended to include unsupervised learning capabilities and we have recently developed a SNN architecture that allows to categorize images of different classes in only a few spikes~\citep{grimaldi_homeostatic_2021,grimaldi_robust_2022}. This type of modeling is extremely important with respect to the development of a new generation of cameras called Silicon Cameras which, instead of using a basic frame-based representation, uses a representation similar to the one we have just described and which consists in representing the image by events~\citep{rasetto_challenges_2022}. This type of modeling often uses the classical architecture of image categorization developed in deep learning while adapting it to the specificity of the event-based representation~\citep{goltz_fast_2021}. Note also that timing is not entirely sensorial or internal but in~\citep{safaie_turning_2020}, they found that ``timing accuracy was improved when the environment afforded cues that rats can incorporate into motor routines. Timing, at least in animals, may thus be fundamentally embodied and situated.'' Altogether, these results show that ``that like other senses, vision relies heavily on temporal strategies and temporal neural codes to extract and represent spatial information''~\citep{rucci_temporal_2018}.
 
+\section{Precise spike timings in neural assemblies}
+
 \subsection{From synfire chains\ldots{}}\label{from-synfire-chains}
-The analysis of generic raster plots reveals particular traits that hint at the role of a precise timing. For instance, the firing rate is highly irregular~\citep{softky_highly_1993}, which makes it inconsistent with temporal integration of random EPSPs. It has also been observed that the response of a neuron in a cortical slice to a current step could be highly non-reproducible, where the first spike is aligned but the subsequent spike times tend to diffuse for independent repetitions of the stimulation~\citep{mainen_reliability_1995} (see Figure {[}\ref{fig:mainen}{]}). When driven by a highly dynamic \emph{frozen} noise, the output spikes are highly reproducible. This is consistent with the differential role of different stimulus frequencies on the reliability of spike timing reported in~\citep{nowak_influence_1997} : ``we found that, as expected given the resistive and capacitive properties of cortical neurons, low frequencies have a larger effect on the membrane potential of cortical neurons than do higher frequencies. However, increasing the amount of gamma range fluctuations in a stimulus leads to more precise timing of action potentials.''
+The analysis of generic raster plots reveals particular traits that hint at the role of a precise timing. For instance, the firing rate is highly irregular~\citep{softky_highly_1993}, which makes it inconsistent with temporal integration of random EPSPs. It has also been observed that the response of a neuron in a cortical slice to a current step could be highly non-reproducible, where the first spike is aligned but the subsequent spike times tend to diffuse for independent repetitions of the stimulation~\citep{mainen_reliability_1995} (see Figur
+~\ref{fig:mainen}). When driven by a highly dynamic \emph{frozen} noise, the output spikes are highly reproducible. This is consistent with the differential role of different stimulus frequencies on the reliability of spike timing reported in~\citep{nowak_influence_1997} : ``we found that, as expected given the resistive and capacitive properties of cortical neurons, low frequencies have a larger effect on the membrane potential of cortical neurons than do higher frequencies. However, increasing the amount of gamma range fluctuations in a stimulus leads to more precise timing of action potentials.''
 
 \begin{figure}
 \centering
-\includegraphics{figures/MainenSejnowski1995.png} % TODO replace by the simulation
-\caption{The timing of the spikes produced following the repetition of a step stimuli is less reproducible than that to a noisy stimulus. While this seems paradoxical at first sight, this is due to the use of the same \emph{frozen} nois at each repetition and highlight the highly reproducible pattern of spikes when it is driven by a highly dynamic input. See this \href{https://github.com/laurentperrinet/2022_UE-neurosciences-computationnelles/blob/master/C_MainenSejnowski1995.ipynb}{notebook} for a replication of this result using a simple LIF model.}\label{fig:mainen}
+\includegraphics[width=.7\textwidth]{figures/MainenSejnowski1995.png} % TODO replace by the simulation
+\caption{The timing of the spikes produced following the repetition of a step stimuli is less reproducible than that to a noisy stimulus. While this seems paradoxical at first sight, this is due to the use of the same \emph{frozen} noise at each repetition and highlight the highly reproducible pattern of spikes when it is driven by a highly dynamic input. See this \href{https://github.com/laurentperrinet/2022_UE-neurosciences-computationnelles/blob/master/C_MainenSejnowski1995.ipynb}{notebook} for a replication of this result using a simple LIF model.}\label{fig:mainen}
 \end{figure}
 
 In his book ``Corticonics''~\citep{abeles_corticonics_1991}, Moshe Abeles queried if the role of cortical neurons is whether to integrate synaptic inputs or rather to detect coincidences in temporal spiking patterns. The book gradually leads the reader from the macroscopic cortical anatomy and standard electrophysiological properties of single neurons to neural network models. While the first hypothesis favors the rate coding theory, the second possibility highlights the need for temporal precision in the neural code~\citep{paugam-moisy_computing_2012}. The book then demonstrates that this could take the form of ``synfire chains,'' that is synchronous activity on subsets of neurons which could be propagated in a stable fashion. Since this date, multiple experimental observations have suggested the existence of this precise zero-phase-lag spike synchronization in a defined subset of neurons~\citep{harris_organization_2003}.
 
-It was shown that a simple model may allow the propagation of such synfire chains~\citep{gewaltig_propagation_1970}. This model considers the dynamics of leaky integrate-of-fire neurons in different groups of similar size. Each neuron of one group is connected by an excitatory synapse to the next. When a pulse is elicited in the first group, this may generate a spike in the next group. Depending on the weight value, this new activity may get more or less synchronized than the previous pulse (as measured by the standard deviation of spike times in the pulse). Recursively applying this to a sequence of groups generates either a synfire propagation or not. A simple simulation is shown in Figure {[}\ref{fig:diesman}{]}. A crucial aspect of this emergence is in particular the balance between excitation and inhibition~\citep{azouz_stimulus-selective_2008}. This was for instance modeled by feed-forward inhibition which is a fine-scaled latency mechanism that is an essential ingredient in modelling push-pull effects in the primary visual cortex~\citep{kremkow_push-pull_2016}.
+It was shown that a simple model may allow the propagation of such synfire chains~\citep{gewaltig_propagation_1970}. This model considers the dynamics of leaky integrate-of-fire neurons in different groups of similar size. Each neuron of one group is connected by an excitatory synapse to the next. When a pulse is elicited in the first group, this may generate a spike in the next group. Depending on the weight value, this new activity may get more or less synchronized than the previous pulse (as measured by the standard deviation of spike times in the pulse). Recursively applying this to a sequence of groups generates either a synfire propagation or not. A simple simulation is shown in Figure
+~\ref{fig:diesman}. A crucial aspect of this emergence is in particular the balance between excitation and inhibition~\citep{azouz_stimulus-selective_2008}. This was for instance modeled by feed-forward inhibition which is a fine-scaled latency mechanism that is an essential ingredient in modelling push-pull effects in the primary visual cortex~\citep{kremkow_push-pull_2016}.
 
 \begin{figure}
 \centering
@@ -220,7 +233,7 @@ It was shown that a simple model may allow the propagation of such synfire chain
 \caption{Simulation of a synfire propagation \href{https://brian2.readthedocs.io/en/stable/examples/frompapers.Diesmann_et_al_1999.html}{using Brian}. The model consists of 10 groups of 100 neurons each. A pulse with a given jitter is generated in the first group which here generates a pulse after a certain processing delay in the second group with a lower jitter. This allows the propagation of the synchronous activity along the chain of the neural groups.}\label{fig:diesman}
 \end{figure}
 
-Attempts have been made to detect such synfire chains in neurobiological data~\citep{schrader_detecting_2008}: ``The sensitivity is high enough to detect synfire chain activity in simultaneous single-unit recordings of 100 to 200 neurons from such data, enabling application to experimental data in the near future.'' Further models have shown that such synfire chains could be embedded in topographies~\citep{aviel_embedding_2003} or using conductance-based neurons with feed-forward inhibition to improve the robustness of the propagation~\citep{kremkow_functional_2010}. In particular, this was implemented using the pyNN language~\citep{davison_pynn_2008} both in CPU-based and neuromorphic hardware~\citep{pfeil_six_2013} (see Figure {[}\ref{fig:pynn}{]}).
+Attempts have been made to detect such synfire chains in neurobiological data~\citep{schrader_detecting_2008}: ``The sensitivity is high enough to detect synfire chain activity in simultaneous single-unit recordings of 100 to 200 neurons from such data, enabling application to experimental data in the near future.'' Further models have shown that such synfire chains could be embedded in topographies~\citep{aviel_embedding_2003} or using conductance-based neurons with feed-forward inhibition to improve the robustness of the propagation~\citep{kremkow_functional_2010}. In particular, this was implemented using the pyNN language~\citep{davison_pynn_2008} both in CPU-based and neuromorphic hardware~\citep{pfeil_six_2013} (see Figure~\ref{fig:pynn}).
 
 \begin{figure}
 \centering
@@ -230,7 +243,7 @@ Attempts have been made to detect such synfire chains in neurobiological data~\c
 
 Note also that synchronicity may explain some unintuitive results. Indeed it has been shown that thalamocortical synapses are relatively weak compared to the amount of intra-cortical activity. However, this pathway is sufficient to drive the cortex as this input is more often synchronously active~\citep{bruno_cortex_2006}.
 
-Some experimental results show the emergence of synchrony, for instance in motor cortical function~\citep{riehle_spike_1997}. Interestingly, authors showed that ``Accurate spike synchronization occurred in relation to external events (stimuli, movements) and was commonly accompanied by discharge rate modulations but without precise time locking of the spikes to these external events. Spike synchronization also occurred in relation to purely internal events (stimulus expectancy), where firing rate modulations were distinctly absent. These findings indicate that internally generated synchronization of individual spike discharges may subserve the cortical organization of cognitive motor processes.'' Moreover, such emergence could change over the learning period involved in learning a task~\citep{kilavik_long-term_2009} and showed some tuning to to movement direction and reaction time~\citep{grammont_spike_2003}. It is important to note that synchronous events tended to lock to LFP beta waves~\citep{denker_lfp_2018}, and was extended to larger assemblies~\citep{torre_synchronous_2016} using statistical methods (see~\citep{ref-sec:detection}{\textbf{sec:detection?}}{]}).
+Some experimental results show the emergence of synchrony, for instance in motor cortical function~\citep{riehle_spike_1997}. Interestingly, authors showed that ``Accurate spike synchronization occurred in relation to external events (stimuli, movements) and was commonly accompanied by discharge rate modulations but without precise time locking of the spikes to these external events. Spike synchronization also occurred in relation to purely internal events (stimulus expectancy), where firing rate modulations were distinctly absent. These findings indicate that internally generated synchronization of individual spike discharges may subserve the cortical organization of cognitive motor processes.'' Moreover, such emergence could change over the learning period involved in learning a task~\citep{kilavik_long-term_2009} and showed some tuning to to movement direction and reaction time~\citep{grammont_spike_2003}. It is important to note that synchronous events tended to lock to LFP beta waves~\citep{denker_lfp_2018}, and was extended to larger assemblies~\citep{torre_synchronous_2016} using statistical methods (see~\ref{sec:detection}).
 
 In~\citep{brette_computing_2012}, the author proposes a simple spike-based computational framework, based on the idea that stimulus-induced synchrony can be used to extract sensory invariants (for example, the location of a sound source), which is a difficult task for classical neural networks. It relies on the simple remark that a series of repeated coincidences is in itself an invariant. Many aspects of perception rely on extracting invariant features, such as the spatial location of a time-varying sound, the identity of an odor with fluctuating intensity, the pitch of a musical note.
 
@@ -265,7 +278,8 @@ It is now commonly accepted that planning and execution of movements are based o
 
 In neuronal models, an efficient use or detection of these spatio-temporal patterns embedded in the spike train comes with the integration of heterogeneous delays~\citep{guise_bayesian_2014,zhang_supervised_2020}. Notably, Izhikevich~\citep{izhikevich_polychronization_2006} introduced the notion of polychronous groups (PGs) as a repetitive motif of spikes defined by a subset of neurons with different, yet precise, spiking delays. This representation has a much greater information capacity in comparison to other neural coding approaches through their connectivity and the possible coexistence of numerous superposed PGs.
 
-sparse in time and space {[}2{]} AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp.~345-355. {[}3{]} CC Petersen and S Crochet, Neuron 78.1 (2013), pp.~28-48.
+sparse in time and space : AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp.~345-355. 
+CC Petersen and S Crochet, Neuron 78.1 (2013), pp.~28-48.
 
 \begin{itemize}
 \item
@@ -277,9 +291,10 @@ sparse in time and space {[}2{]} AL Barth and JF Poulet Trends in Neurosciences 
 \end{itemize}
 
 \subsection{Are there precise heterosynaptic spiking motifs in the brain?}\label{are-there-precise-heterosynaptic-spiking-motifs-in-the-brain}
-Currently, there is a consensus for rate-based coding models in computational and biological neuroscience. Nevertheless, there is a substantial literature in neurobiology indicating that brain dynamics often organize into stereotyped sequences (like synfire chains~\citep{ikegaya_synfire_2004}, packets~\citep{luczak_sequential_2007} or hippocampal sequences~\citep{pastalkova_internally_2008,villette_internally_2015} and on the role of such precise spike timing in downstream information transfer and coding~\citep{villette_internally_2015,branco_dendritic_2010,luczak_packet-based_2015}. This is for instance relevant in sensory pathways in vision~\citep{meister_concerted_1995}, audition~\citep{decharms_primary_1996}, olfaction~\citep{wehr_odour_1996}{]} or touch~\citep{johansson_first_2004}. In particular, one theoretical viewpoint considers synfire braids (Bienenstock, 1995), where a precise sequential motif of spikes will synchronize as it reaches the soma of a neuron for which synaptic delays are adequately tuned. In particular, computational modeling shows that at the scale of neurons, an efficient neural code can emerge where spike times are organized in prototypical, precise temporal motifs (Izhikevich, 2006) which he defined as polychronous groups.
+Currently, there is a consensus for rate-based coding models in computational and biological neuroscience. Nevertheless, there is a substantial literature in neurobiology indicating that brain dynamics often organize into stereotyped sequences (like synfire chains~\citep{ikegaya_synfire_2004}, packets~\citep{luczak_sequential_2007} or hippocampal sequences~\citep{pastalkova_internally_2008,villette_internally_2015} and on the role of such precise spike timing in downstream information transfer and coding~\citep{villette_internally_2015,branco_dendritic_2010,luczak_packet-based_2015}. This is for instance relevant in sensory pathways in vision~\citep{meister_concerted_1995}, audition~\citep{decharms_primary_1996}, olfaction~\citep{wehr_odour_1996} or touch~\citep{johansson_first_2004}. In particular, one theoretical viewpoint considers synfire braids (Bienenstock, 1995), where a precise sequential motif of spikes will synchronize as it reaches the soma of a neuron for which synaptic delays are adequately tuned. In particular, computational modeling shows that at the scale of neurons, an efficient neural code can emerge where spike times are organized in prototypical, precise temporal motifs (Izhikevich, 2006) which he defined as polychronous groups.
 
-Stereotyped sequences of neuronal activation have been particularly well described in the adult hippocampus and related to its function in mental travel in time and space~\citep{buzsaki_space_2018}. These sequences can be internally generated~\citep{pastalkova_internally_2008,villette_internally_2015} and are formed by the chained activation of orthogonal assemblies, themselves organized as sequence packets (Malvache et al., 2016). Thus, hippocampal sequences are formed by the ordered activation of smaller sequence motifs. They are stereotyped and robust, since neurons can be activated in the same order across days (see Figure {[}\ref{fig:haimerl}{]} from~\citep{haimerl_internal_2019} below). As a consequence, hippocampal sequences may rely on an internally hardwired structure and form the functional building blocks for encoding, storing and retrieving experience.
+Stereotyped sequences of neuronal activation have been particularly well described in the adult hippocampus and related to its function in mental travel in time and space~\citep{buzsaki_space_2018}. These sequences can be internally generated~\citep{pastalkova_internally_2008,villette_internally_2015} and are formed by the chained activation of orthogonal assemblies, themselves organized as sequence packets (Malvache et al., 2016). Thus, hippocampal sequences are formed by the ordered activation of smaller sequence motifs. They are stereotyped and robust, since neurons can be activated in the same order across days (see Figure
+~\ref{fig:haimerl} from~\citep{haimerl_internal_2019} below). As a consequence, hippocampal sequences may rely on an internally hardwired structure and form the functional building blocks for encoding, storing and retrieving experience.
 
 \begin{figure}
 \centering
@@ -322,7 +337,6 @@ Such observations suggest that neuronal groups or ensembles, rather than individ
 \subsection{outline}\label{outline}
 A natural candidate to use these precise temporal patterns in the brain is to use Spiking Neural Networks (SNNs)~\citep{maass_networks_1997}. The approach which is at present most prominent in the SNNs community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, for instance with a surrogate gradient. This approach is quite successful, and SNNs approach in some case the performance of Deep Learning algorithms, for instance on the N-MNIST dataset for categorizing digits in a stream of events. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs. Our approach will be to focus on the temporal representation of information directly. In particular, our objective is to fully exploit the capacity of spiking neurons to detect synchronous patterns.
 
-{[}
 \textbf{TODO: a paragraph on our existing work}
 Our approach would be distinct than these approaches from us and colleagues as we will directly deal with delays in the system at the presynaptic level.
 
@@ -352,8 +366,7 @@ First, we will review models for the detection of polychronous groups:
 
 Finally we will discuss future avenues for effective PG detection and learning in event streams.
 
-\section{Theoretical models for the detection of precise heterosynaptic spiking motifs}\label{theoretical-models-for-the-detection-of-precise-heterosynaptic-spiking-motifs}
-\#sec:detection
+\section{Models for the detection of precise heterosynaptic spiking motifs}\label{sec:detection}
 
 A popular model for the detection of latency patterns is the tempotron~\citep{gutig_tempotron_2006}. This model is in particular reviewed in~\citep{gutig_spike_2014}. The Tempotron is a supervised synaptic learning algorithm which classifies a distractor from a target motif. This aims at extending the perceptron which does not incorporate a spike timing framework. The tempotron learning rule is derived by an optimization process and takes the form of a STDP rule. It is general consensus that spike timing (STDP) plays a crucial role in the development of synaptic efficacy for many different kinds of neurons~\citep{caporale_spike_2008}. The limits of this model is that it's output is only binary and that it's storage capacity are limited.
 
@@ -364,10 +377,14 @@ In the following of this section, we will review theoretical models which direct
 \subsection{Izhikevitch's polychronization model}\label{izhikevitchs-polychronization-model}
 Considering the number of spikes required to exceed a voltage threshold, asynchronous signals are less efficient than synchronous signals. However, taking axonal propagation times into account, synchronous signals may not coincide significantly at the post-synaptic neuron contrary to asynchronous or polychronous signals. The term polychronous was first introduced in 2006, by E. Izhichevitch in~\citep{izhikevich_polychronization_2006}. He defines this term after pointing out a particular organization of the neurons of his spiking artificial neural network. The network is characterized by a timing-dependant learning rule for weights (STDP) and by fixed conduction delays between neurons. Due to the interplay between the delays and STDP, the spiking neurons spontaneously self-organize into groups and generate patterns of stereotypical polychronous activity, i.e.~exhibit reproducible time-locked but not synchronous firing patterns. The neurons composing a group discharge at different times, but due to delays, the spikes reach the postsynaptic neuron at the same time. This synchrony leads to the summation of the excitatory post-synaptic potentials evoked by each spike and thus to the crossing of the voltage threshold and to the discharge of a spike. According to the STDP rule, the neurons involved in this activity will see their weight of synaptic connection increase and thus, constitute a polychronous group. Interestingly, thanks to the fact that a neuron can be involved in different polychronous groups, the number of coexisting polychronous groups far exceeds the number of neurons in the network, resulting in an unprecedented memory capacity of the system.
 
-{[}
-\textbf{TODO}
+This paper proposes a supervised delay learning algorithm for spiking neurons with temporal encoding, in which both the weight and delay of a synaptic connection can be adjusted to enhance the learning performance~\citep{wang}.
 
--\textgreater{} insert fig 2 of~\citep{izhikevich_polychronization_2006}
+\begin{figure}
+\centering
+\includegraphics{figures/event_driven_computations.png}
+\caption{\note{insert fig 2 of~\citep{izhikevich_polychronization_2006}}.}\label{fig:PG}
+\end{figure}
+
 
 Thus, the learning of delays allowing this polychronous group organization may be useful to detect temporal sequences of interest.
 
@@ -403,15 +420,14 @@ Memory traces in dynamical systems~\citep{ganguli_memory_2008} : ``To perform no
 
 We address these issues by applying Fisher information theory to dynamical systems driven by time-dependent signals corrupted by noise. Memory capacity is constrained by architecture: ``This limit can be realized by feedforward structures with divergent fan out that distributes the signal across neurons, thereby avoiding saturation.''
 
-\section{Detecting precise spiking motifs in biological raster plots}\label{detecting-precise-spiking-motifs-in-biological-raster-plots}
-\{sec:detection\}
-
 \subsection{spike distances}\label{spike-distances}
 J. D. Victor and K. P. Purpura, ``Nature and precision of temporal coding in visual cortex: a metric-space analysis,'' J. Neurophysiol., vol.~76, pp.~1310--1326, Aug.~1996.
 
-M. C. W. van Rossum, ``A novel spike distance,'' Neural Comput., vol.~13, no. 4, pp.~751--763, 2001. {[}21{]} D. Aronov and J. D. Victor, ``Non-Euclidean properties of spike train metric spaces,'' Physical Rev.~E (Statist., Nonlinear, Soft Matter Phys.), vol.~69, no. 6, 2004.
+M. C. W. van Rossum, ``A novel spike distance,'' Neural Comput., vol.~13, no. 4, pp.~751--763, 2001. 
 
-T. Kreuz, J. S. Haas, A. Morelli, H. D. I. Abarbanel, and A. Politi, ``Measuring spike train synchrony,'' J. Neurosci. Methods, vol.~165, no. 1, pp.~151--161, 2007. {[}23{]} H.
+D. Aronov and J. D. Victor, ``Non-Euclidean properties of spike train metric spaces,'' Physical Rev.~E (Statist., Nonlinear, Soft Matter Phys.), vol.~69, no. 6, 2004.
+
+T. Kreuz, J. S. Haas, A. Morelli, H. D. I. Abarbanel, and A. Politi, ``Measuring spike train synchrony,'' J. Neurosci. Methods, vol.~165, no. 1, pp.~151--161, 2007. 23 H.
 
 Paper by~\citep{moser_stability_2014} On Stability of Distance Measures for Event Sequences Induced by Level-Crossing Sampling
 
@@ -429,7 +445,6 @@ Unitary event analysis is performed by a statistical model of coincidence detect
 Statistical evaluation of synchronous spike patterns extracted by frequent item set mining - a method to detect significant patterns of synchronous spiking in a subset of massively parallel spike trains in the presence of background activity~\citep{torre_statistical_2013}. By the same group the SPADE, CAD or ASSET algorithms are methods for identification of spike patterns in massively parallel spike trains (the spiking activity of tens to hundred(s) of neurons recorded in parallel) by identifying fine temporal correlations in the ms precision range~\citep{quaglio_methods_2018}.
 
 This was recently extended in ``3d-SPADE: Significance evaluation of spatio-temporal patterns of various temporal extents''~\citep{stella_3d-spade_2019} in order to find reoccurring spike patterns in parallel spike train data, and to determine their statistical significance. The extension improves the performance in the presence of patterns with different durations, as demonstrated by application to various synthetic data, such as surrogates generated to evaluate precisely timed higher-order spike correlations~\citep{stella_comparing_2022}.
-
 
 TODO: summarize ``Understanding Auditory Spectro-Temporal Receptive Fields and Their Changes with Input Statistics by Efficient Coding Principles'' - Spectro-temporal receptive fields (STRFs) have been widely used as linear approximations to the signal transform from sound spectrograms to neural responses along the auditory pathway. Their dependence on statistical attributes of the stimuli, such as sound intensity, is usually explained by nonlinear mechanisms and models. Here, we apply an efficient coding principle which has been successfully used to understand receptive fields in early stages of visual processing, in order to provide a computational understanding of the STRFs. According to this principle, STRFs result from an optimal tradeoff between maximizing the sensory information the brain receives, and minimizing the cost of the neural activities required to represent and transmit this information. Both terms depend on the statistical properties of the sensory inputs and the noise that corrupts them. The STRFs should therefore depend on the input power spectrum and the signal-to-noise ratio, which is assumed to increase with input intensity. We analytically derive the optimal STRFs when signal and noise are approximated as Gaussians. Under the constraint that they should be spectro-temporally local, the STRFs are predicted to adapt from being band-pass to low-pass filters as the input intensity reduces, or the input correlation becomes longer range in sound frequency or time. These predictions qualitatively match physiological observations. Our prediction as to how the STRFs should be determined by the input power spectrum could readily be tested, since this spectrum depends on the stimulus ensemble. The potentials and limitations of the efficient coding principle are discussed.
 ~\citep{zhao_understanding_2011}
@@ -593,7 +608,7 @@ In~\citep{duffy_variation_2019}, authors present a model to ``show a way by whic
   \item
     comes with code https://github.com/EPFL-LCN/pub-bellec-wang-2021-sample-and-measure
   \item
-    V1-dataset : The dataset we used was collected by Smith and Kohn {[}49{]} and is publicly available at:
+    V1-dataset : The dataset we used was collected by Smith and Kohn 49{and is publicly available at:
     http://crcns.org/data-sets/vc/pvc-11 - it is in a sense supervised with the input being the movie and the output the spikes recorded.
   \end{itemize}
 \end{itemize}
