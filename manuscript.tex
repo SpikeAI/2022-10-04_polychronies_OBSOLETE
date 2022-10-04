@@ -181,7 +181,7 @@ This speed of the visual cortex, although surprising, is quite compatible with t
 
 \begin{figure}
 \centering
-\includegraphics[width=1\textwidth,height=\textheight]{https://cdn-learn.adafruit.com/assets/assets/000/086/572/original/circuitpython_Thorpe-FabreThorpe-Neuroscience-Seeking-categories-in-the-brain-monkey-visual-latency-estimate.jpg}
+\includegraphics[width=1\textwidth,height=\textheight]{figures/visual-latency-estimate.jpg}
 \caption{From {[}\protect\hyperlink{ref-12dWDpY61}{6}{]}}\label{fig:thorpe}
 \end{figure}
 
@@ -205,7 +205,7 @@ The analysis of generic raster plots reveals particular traits that hint at the 
 
 \begin{figure}
 \centering
-\includegraphics{https://camo.githubusercontent.com/77f4a48a0fe8f98ffab3c1f21dca1e74286b14d47c17120ee9627f3351fcd5e7/687474703a2f2f692e737461636b2e696d6775722e636f6d2f69786e727a2e706e67}
+\includegraphics{figures/MainenSejnowski1995.png} % TODO replace by the simulation
 \caption{The timing of the spikes produced following the repetition of a step stimuli is less reproducible than that to a noisy stimulus. While this seems paradoxical at first sight, this is due to the use of the same \emph{frozen} nois at each repetition and highlight the highly reproducible pattern of spikes when it is driven by a highly dynamic input. See this \href{https://github.com/laurentperrinet/2022_UE-neurosciences-computationnelles/blob/master/C_MainenSejnowski1995.ipynb}{notebook} for a replication of this result using a simple LIF model.}\label{fig:mainen}
 \end{figure}
 
@@ -215,7 +215,7 @@ It was shown that a simple model may allow the propagation of such synfire chain
 
 \begin{figure}
 \centering
-\includegraphics{https://brian2.readthedocs.io/en/stable/_images/frompapers.Diesmann_et_al_1999.1.png}
+\includegraphics{figures/Diesmann_et_al_1999.png}
 \caption{Simulation of a synfire propagation \href{https://brian2.readthedocs.io/en/stable/examples/frompapers.Diesmann_et_al_1999.html}{using Brian}. The model consists of 10 groups of 100 neurons each. A pulse with a given jitter is generated in the first group which here generates a pulse after a certain processing delay in the second group with a lower jitter. This allows the propagation of the synchronous activity along the chain of the neural groups.}\label{fig:diesman}
 \end{figure}
 
@@ -223,7 +223,7 @@ Attempts have been made to detect such synfire chains in neurobiological data {[
 
 \begin{figure}
 \centering
-\includegraphics{https://www.frontiersin.org/files/Articles/39056/fnins-07-00011-r2/image_m/fnins-07-00011-g004.jpg}
+\includegraphics{figures/fnins-07-00011-g004.jpg}
 \caption{A pyNN implementation of a Synfire chain with feedforward inhibition. The background is only utilized in the original model, where it is implemented as random Gaussian current. For the presented hardware implementation it has been omitted due to network size constraints. As compensation for missing background stimuli, the resting potential was increased to ensure a comparable excitability of the neurons. The state space gives the duration of synfire chains as a function of the protocol's parameters and compares (C) CPU to (D) neuromorphic implementations.}\label{fig:pynn}
 \end{figure}
 
