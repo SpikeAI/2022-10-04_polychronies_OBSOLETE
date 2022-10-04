@@ -3,3 +3,5 @@ manuscript.aux
 manuscript.log
 manuscript.pdf
 manuscript.synctex.gz
+manuscript.fdb_latexmk
+manuscript.fls
