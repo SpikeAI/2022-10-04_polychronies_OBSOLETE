@@ -1,4 +1,103 @@
 
+@article{haessig_event-based_2020,
+	title = {Event-{Based} {Computation} for {Touch} {Localization} {Based} on {Precise} {Spike} {Timing}},
+	volume = {14},
+	issn = {1662-453X},
+	url = {https://www.frontiersin.org/article/10.3389/fnins.2020.00420},
+	doi = {10/ghvnxj},
+	abstract = {Precise spike timing and temporal coding are used extensively within the nervous system of insects and in the sensory periphery of higher order animals. However, conventional Artificial Neural Networks (ANNs) and machine learning algorithms cannot take advantage of this coding strategy, due to their rate-based representation of signals. Even in the case of artificial Spiking Neural Networks (SNNs), identifying applications where temporal coding outperforms the rate coding strategies of ANNs is still an open challenge. Neuromorphic sensory-processing systems provide an ideal context for exploring the potential advantages of temporal coding, as they are able to efficiently extract the information required to cluster or classify spatio-temporal activity patterns from relative spike timing. Here we propose a neuromorphic model inspired by the sand scorpion to explore the benefits of temporal coding, and validate it in an event-based sensory-processing task. The task consists in localizing a target using only the relative spike timing of eight spatially-separated vibration sensors. We propose two different approaches in which the SNNs learns to cluster spatio-temporal patterns in an unsupervised manner and we demonstrate how the task can be solved both analytically and through numerical simulation of multiple SNN models. We argue that the models presented are optimal for spatio-temporal pattern classification using precise spike timing in a task that could be used as a standard benchmark for evaluating event-based sensory processing models based on temporal coding.},
+	urldate = {2021-10-20},
+	journal = {Frontiers in Neuroscience},
+	author = {Haessig, Germain and Milde, Moritz B. and Aceituno, Pau Vilimelis and Oubari, Omar and Knight, James C. and van Schaik, André and Benosman, Ryad B. and Indiveri, Giacomo},
+	year = {2020},
+	note = {00007
+tex.ids= Haessig2020a},
+	keywords = {⛔ No INSPIRE recid found},
+	pages = {420},
+}
+
+@article{wang_neuromorphic_2015,
+	title = {A neuromorphic implementation of multiple spike-timing synaptic plasticity rules for large-scale neural networks},
+	volume = {9},
+	issn = {1662-453X},
+	url = {https://www.frontiersin.org/articles/10.3389/fnins.2015.00180},
+	doi = {10.3389/fnins.2015.00180},
+	abstract = {We present a neuromorphic implementation of multiple synaptic plasticity learning rules, which include both Spike Timing Dependent Plasticity (STDP) and Spike Timing Dependent Delay Plasticity (STDDP). We present a fully digital implementation as well as a mixed-signal implementation, both of which use a novel dynamic-assignment time-multiplexing approach and support up to 226 (64M) synaptic plasticity elements. Rather than implementing dedicated synapses for particular types of synaptic plasticity, we implemented a more generic synaptic plasticity adaptor array that is separate from the neurons in the neural network. Each adaptor performs synaptic plasticity according to the arrival times of the pre- and post-synaptic spikes assigned to it, and sends out a weighted or delayed pre-synaptic spike to the post-synaptic neuron in the neural network. This strategy provides great flexibility for building complex large-scale neural networks, as a neural network can be configured for multiple synaptic plasticity rules without changing its structure. We validate the proposed neuromorphic implementations with measurement results and illustrate that the circuits are capable of performing both STDP and STDDP. We argue that it is practical to scale the work presented here up to 236 (64G) synaptic adaptors on a current high-end FPGA platform.},
+	urldate = {2022-10-06},
+	journal = {Frontiers in Neuroscience},
+	author = {Wang, Runchun M. and Hamilton, Tara J. and Tapson, Jonathan C. and van Schaik, André},
+	year = {2015},
+	keywords = {⛔ No INSPIRE recid found},
+}
+
+@article{isbister_clustering_2021,
+	title = {Clustering and control for adaptation uncovers time-warped spike time patterns in cortical networks in vivo},
+	volume = {11},
+	copyright = {2021 The Author(s)},
+	issn = {2045-2322},
+	url = {https://www.nature.com/articles/s41598-021-94002-0},
+	doi = {10.1038/s41598-021-94002-0},
+	abstract = {How information in the nervous system is encoded by patterns of action potentials (i.e. spikes) remains an open question. Multi-neuron patterns of single spikes are a prime candidate for spike time encoding but their temporal variability requires further characterisation. Here we show how known sources of spike count variability affect stimulus-evoked spike time patterns between neurons separated over multiple layers and columns of adult rat somatosensory cortex in vivo. On subsets of trials (clusters) and after controlling for stimulus-response adaptation, spike time differences between pairs of neurons are “time-warped” (compressed/stretched) by trial-to-trial changes in shared excitability, explaining why fixed spike time patterns and noise correlations are seldom reported. We show that predicted cortical state is correlated between groups of 4 neurons, introducing the possibility of spike time pattern modulation by population-wide trial-to-trial changes in excitability (i.e. cortical state). Under the assumption of state-dependent coding, we propose an improved potential encoding capacity.},
+	language = {en},
+	number = {1},
+	urldate = {2022-10-06},
+	journal = {Scientific Reports},
+	author = {Isbister, James B. and Reyes-Puerta, Vicente and Sun, Jyh-Jang and Horenko, Illia and Luhmann, Heiko J.},
+	month = jul,
+	year = {2021},
+	note = {Number: 1
+Publisher: Nature Publishing Group},
+	keywords = {⛔ No INSPIRE recid found},
+	pages = {15066},
+}
+
+@article{dard_rapid_2022,
+	title = {The rapid developmental rise of somatic inhibition disengages hippocampal dynamics from self-motion},
+	volume = {11},
+	issn = {2050-084X},
+	url = {https://doi.org/10.7554/eLife.78116},
+	doi = {10.7554/eLife.78116},
+	abstract = {Early electrophysiological brain oscillations recorded in preterm babies and newborn rodents are initially mostly driven by bottom-up sensorimotor activity and only later can detach from external inputs. This is a hallmark of most developing brain areas, including the hippocampus, which, in the adult brain, functions in integrating external inputs onto internal dynamics. Such developmental disengagement from external inputs is likely a fundamental step for the proper development of cognitive internal models. Despite its importance, the developmental timeline and circuit basis for this disengagement remain unknown. To address this issue, we have investigated the daily evolution of CA1 dynamics and underlying circuits during the first two postnatal weeks of mouse development using two-photon calcium imaging in non-anesthetized pups. We show that the first postnatal week ends with an abrupt shift in the representation of self-motion in CA1. Indeed, most CA1 pyramidal cells switch from activated to inhibited by self-generated movements at the end of the first postnatal week, whereas the majority of GABAergic neurons remain positively modulated throughout this period. This rapid switch occurs within 2 days and follows the rapid anatomical and functional surge of local somatic GABAergic innervation. The observed change in dynamics is consistent with a two-population model undergoing a strengthening of inhibition. We propose that this abrupt developmental transition inaugurates the emergence of internal hippocampal dynamics.},
+	urldate = {2022-10-05},
+	journal = {eLife},
+	author = {Dard, Robin F and Leprince, Erwan and Denis, Julien and Rao Balappa, Shrisha and Suchkov, Dmitrii and Boyce, Richard and Lopez, Catherine and Giorgi-Kurz, Marie and Szwagier, Tom and Dumont, Théo and Rouault, Hervé and Minlebaev, Marat and Baude, Agnès and Cossart, Rosa and Picardo, Michel A},
+	editor = {Peyrache, Adrien and Colgin, Laura L and Butt, Simon JB},
+	month = jul,
+	year = {2022},
+	note = {tex.ids= Dard2021
+publisher: eLife Sciences Publications, Ltd},
+	keywords = {⛔ No INSPIRE recid found},
+	pages = {e78116},
+}
+
+@inproceedings{thanasoulis_delay-based_2021,
+	title = {Delay-{Based} {Neural} {Computation}: {Pulse} {Routing} {Architecture} and {Benchmark} {Application} in {FPGA}},
+	url = {https://doi.org/gn63rh},
+	doi = {10.1109/icecs53924.2021.9665468},
+	booktitle = {2021 28th {IEEE} {International} {Conference} on {Electronics}, {Circuits}, and {Systems} ({ICECS})},
+	publisher = {IEEE},
+	author = {Thanasoulis, Vasilis and Vogginger, Bernhard and Partzsch, Johannes and Mayr, Christian},
+	month = nov,
+	year = {2021},
+	note = {This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard\_id).
+standard\_id: doi:10.1109/icecs53924.2021.9665468
+tex.ids= Thanasoulis2021a},
+	keywords = {⛔ No INSPIRE recid found},
+}
+
+@article{wang_delay_2019,
+	title = {A {Delay} {Learning} {Algorithm} {Based} on {Spike} {Train} {Kernels} for {Spiking} {Neurons}},
+	volume = {13},
+	issn = {1662-453X},
+	url = {https://www.frontiersin.org/articles/10.3389/fnins.2019.00252},
+	abstract = {Neuroscience research confirms that the synaptic delays are not constant, but can be modulated. This paper proposes a supervised delay learning algorithm for spiking neurons with temporal encoding, in which both the weight and delay of a synaptic connection can be adjusted to enhance the learning performance. The proposed algorithm firstly defines spike train kernels to transform discrete spike trains during the learning phase into continuous analog signals so that common mathematical operations can be performed on them, and then deduces the supervised learning rules of synaptic weights and delays by gradient descent method. The proposed algorithm is successfully applied to various spike train learning tasks, and the effects of parameters of synaptic delays are analyzed in detail. Experimental results show that the network with dynamic delays achieves higher learning accuracy and less learning epochs than the network with static delays. The delay learning algorithm is further validated on a practical example of an image classification problem. The results again show that it can achieve a good classification performance with a proper receptive field. Therefore, the synaptic delay learning is significant for practical applications and theoretical researches of spiking neural networks.},
+	urldate = {2022-10-04},
+	journal = {Frontiers in Neuroscience},
+	author = {Wang, Xiangwen and Lin, Xianghong and Dang, Xiaochao},
+	year = {2019},
+	keywords = {⛔ No DOI found, ⛔ No INSPIRE recid found},
+}
+
 @article{berry_spike_2022,
 	title = {Spike {Trains} of {Retinal} {Ganglion} {Cells} {Viewing} a {Repeated} {Natural} {Movie}},
 	url = {https://dataspace.princeton.edu/handle/88435/dsp015425kd84r},
@@ -181,22 +280,6 @@ publisher: World Scientific Publishing Co.},
 tex.ids= Huning1998a},
 	keywords = {⛔ No INSPIRE recid found},
 	pages = {555--565},
-}
-
-@article{haessig_event-based_2020,
-	title = {Event-{Based} {Computation} for {Touch} {Localization} {Based} on {Precise} {Spike} {Timing}},
-	volume = {14},
-	issn = {1662-453X},
-	url = {https://www.frontiersin.org/article/10.3389/fnins.2020.00420},
-	doi = {10/ghvnxj},
-	abstract = {Precise spike timing and temporal coding are used extensively within the nervous system of insects and in the sensory periphery of higher order animals. However, conventional Artificial Neural Networks (ANNs) and machine learning algorithms cannot take advantage of this coding strategy, due to their rate-based representation of signals. Even in the case of artificial Spiking Neural Networks (SNNs), identifying applications where temporal coding outperforms the rate coding strategies of ANNs is still an open challenge. Neuromorphic sensory-processing systems provide an ideal context for exploring the potential advantages of temporal coding, as they are able to efficiently extract the information required to cluster or classify spatio-temporal activity patterns from relative spike timing. Here we propose a neuromorphic model inspired by the sand scorpion to explore the benefits of temporal coding, and validate it in an event-based sensory-processing task. The task consists in localizing a target using only the relative spike timing of eight spatially-separated vibration sensors. We propose two different approaches in which the SNNs learns to cluster spatio-temporal patterns in an unsupervised manner and we demonstrate how the task can be solved both analytically and through numerical simulation of multiple SNN models. We argue that the models presented are optimal for spatio-temporal pattern classification using precise spike timing in a task that could be used as a standard benchmark for evaluating event-based sensory processing models based on temporal coding.},
-	urldate = {2021-10-20},
-	journal = {Frontiers in Neuroscience},
-	author = {Haessig, Germain and Milde, Moritz B. and Aceituno, Pau Vilimelis and Oubari, Omar and Knight, James C. and van Schaik, André and Benosman, Ryad B. and Indiveri, Giacomo},
-	year = {2020},
-	note = {00007},
-	keywords = {⛔ No INSPIRE recid found},
-	pages = {420},
 }
 
 @article{grossberger_unsupervised_2018,
@@ -1838,17 +1921,6 @@ standard\_id: doi:10.1073/pnas.1921226117},
 	pages = {13084--13093},
 }
 
-@unpublished{dard_rapid_2021,
-	title = {The rapid developmental rise of somatic inhibition disengages hippocampal dynamics from self-motion},
-	url = {https://doi.org/gpks29},
-	abstract = {{\textless}jats:title{\textgreater}ABSTRACT{\textless}/jats:title{\textgreater}{\textless}jats:p{\textgreater}Early electrophysiological brain oscillations recorded in preterm babies and newborn rodents are initially mostly ignited by bottom-up sensorimotor activity and only later can detach from external inputs. This is a hallmark of most developing brain areas including the hippocampus, which in the adult brain, functions in integrating external inputs onto internal dynamics. Such developmental disengagement from external inputs is likely a fundamental step for the proper development of cognitive internal models. Despite its importance, the developmental timeline and circuit basis for this disengagement remain unknown. To address this issue, we have investigated the daily evolution of CA1 dynamics and underlying circuits during the first two postnatal weeks of mouse development using two-photon calcium imaging in non-anesthetized pups. We show that the first postnatal week ends with an abrupt shift in the representation of self-motion in CA1. Indeed, most CA1 pyramidal cells switch from activated to inhibited by self-generated movements at the end of the first postnatal week whereas the majority of GABAergic neurons remain positively modulated throughout this period. This rapid switch occurs within two days and follows the rapid anatomical and functional surge of local somatic GABAergic innervation. The observed change in dynamics is consistent with a two-population model undergoing a strengthening of inhibition. We propose that this abrupt developmental transition inaugurates the emergence of internal cognitive models.{\textless}/jats:p{\textgreater}},
-	author = {Dard, Robin F. and Leprince, Erwan and Denis, Julien and Rao-Balappa, Shrisha and Suchkov, Dmitrii and Boyce, Richard and Lopez, Catherine and Giorgi-Kurz, Marie and Szwagier, Tom and Dumont, Theo and Rouault, Hervé and Minlebaev, Marat and Baude, Agnes and Cossart, Rosa and Picardo, Michel A.},
-	year = {2021},
-	note = {This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard\_id).
-standard\_id: doi:10.1101/2021.06.08.447542},
-	keywords = {⛔ No INSPIRE recid found},
-}
-
 @unpublished{linden_movement_2021,
 	title = {Movement is governed by rotational population dynamics in spinal motor networks},
 	url = {https://doi.org/gqg6rb},
@@ -1918,20 +1990,6 @@ standard\_id: doi:10.1103/physreve.51.738},
 standard\_id: doi:10.1109/tnnls.2022.3164930},
 	keywords = {⛔ No INSPIRE recid found},
 	pages = {1--13},
-}
-
-@inproceedings{thanasoulis_delay-based_2021,
-	title = {Delay-{Based} {Neural} {Computation}: {Pulse} {Routing} {Architecture} and {Benchmark} {Application} in {FPGA}},
-	url = {https://doi.org/gn63rh},
-	doi = {10.1109/icecs53924.2021.9665468},
-	booktitle = {2021 28th {IEEE} {International} {Conference} on {Electronics}, {Circuits}, and {Systems} ({ICECS})},
-	publisher = {IEEE},
-	author = {Thanasoulis, Vasilis and Vogginger, Bernhard and Partzsch, Johannes and Mayr, Christian},
-	month = nov,
-	year = {2021},
-	note = {This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard\_id).
-standard\_id: doi:10.1109/icecs53924.2021.9665468},
-	keywords = {⛔ No INSPIRE recid found},
 }
 
 @article{azouz_stimulus-selective_2008,
