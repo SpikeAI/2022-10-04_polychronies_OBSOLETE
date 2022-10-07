@@ -244,6 +244,7 @@
 \newcommand{\chicagostylejournals}{
 	\ifthenelse{\equal{\@journal}{admsci}
 		\OR \equal{\@journal}{arts}
+		\OR \equal{\@journal}{brainsci} % HACK by LuP !
 		\OR \equal{\@journal}{econometrics}
 		\OR \equal{\@journal}{economies}
 		\OR \equal{\@journal}{genealogy}
