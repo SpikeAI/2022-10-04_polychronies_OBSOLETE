@@ -283,7 +283,7 @@ Stereotyped sequences of neural activation have been particularly well described
 ~\ref{fig:haimerl} from~\citep{haimerl_internal_2019} below). As a consequence, hippocampal sequences may rely on an internally hardwired structure and form the functional building blocks for encoding, storing and retrieving experience.
 The rest of this review will be devoted to present evidence for the use of precise spiking motifs in computational neuroscience, neurobiology and neuromorphic engineering.
 
-%: >>>>>>>> Laurent is here <<<<<<<<<<<<<<
+% Robust computation with rhythmic spike patterns.~Proceedings of the National Academy of Sciences of the United States of America~116(36), 18050 - 18059.~https://dx.doi.org/10.1073/pnas.1902653116
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Precisely timing motifs in computational neuroscience}
@@ -390,42 +390,23 @@ We will review some more applications of using precise spiking motifs in neuromo
  \section{Precise spiking motifs in neurobiology}
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
- In Bellec~\citep{bellec_fitting_2021}, authors fit summary statistics of neural data with a differentiable spiking network simulator. The loss function is the cross entropy (following Bernouilli hypothesis with a GLM where each unit is modelled with a SRM neuron~\citep{gerstner_time_1995} with recurrent dynamics). The model uses samples and measure method sto include latent / hidden neurons. In particular, it    comes with  \href{code}{https://github.com/EPFL-LCN/pub-bellec-wang-2021-sample-and-measure}. It uses the publicly available \href{V1-dataset}{http://crcns.org/data-sets/vc/pvc-11}, which allows to supervise the model with the input being the movie and the output the spikes recorded.
+% In Bellec~\citep{bellec_fitting_2021}, authors fit summary statistics of neural data with a differentiable spiking network simulator. The loss function is the cross entropy (following Bernouilli hypothesis with a GLM where each unit is modelled with a SRM neuron~\citep{gerstner_time_1995} with recurrent dynamics). The model uses samples and measure method sto include latent / hidden neurons. In particular, it comes with  \href{code}{https://github.com/EPFL-LCN/pub-bellec-wang-2021-sample-and-measure}. It uses the publicly available \href{V1-dataset}{http://crcns.org/data-sets/vc/pvc-11}, which allows to supervise the model with the input being the movie and the output the spikes recorded.
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{decoding neural activity/ spike distances}
+\subsection{Decoding neural activity using spike distances}
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In most generic computational models the neural activity is assumed to be encoded in the firing rate. For instance, linear non linear L-NL models, the output is assumed to be distributed according to a Poisson law. As such a simple decoding strategy is to asscume it is to b inferned for a given tuning curves (Jayazeri) or simply by a simple regression~\citep{berens_fast_2012}. This latter model assumes a Bernoulli model for the generation of spikes such that the decoding amounts to a single-layer logistic regression.
 
-J. D. Victor and K. P. Purpura, ``Nature and precision of temporal coding in visual cortex: a metric-space analysis,'' J. Neurophysiol., vol.~76, pp.~1310--1326, Aug.~1996.
+There are different solution to provide with a distance between two given spike trains. A known measure is the Victor-Pupura distance which showed that their findings are inconsistent with Poisson models of spike trains~\citep{victor_nature_1996}. In a later study,~\citet{van_rossum_novel_2001} have defined a distance that has a time constant as a parameter. Depending on this parameter, the distance interpolates between a coincidence detector and a rate difference counter. Such distances were extended to non-Euclidean metrics~\citep{} and use morphological manipulmations to compute spike train dissimilarity~\citet{kruz}. Mathelmatically, the stability of distance measures induced by level-crossing sampling can be evaluated~\citep{moser_stability_2014}, notably in light of Weyl's discrepency measure~\citep{weyl_ber_1916} which may lead to the definition of a cross-correlation measure which is adapted to the event-based nature of spiking signals. These observations lead to the intuition that each distance may be related as the optimal solution of a generative model for these measures.
 
-M. C. W. van Rossum, ``A novel spike distance,'' Neural Comput., vol.~13, no. 4, pp.~751--763, 2001. 
+Let's now focus on distances defined based on a generative model formed by using precise spiking motifs. A review of the methods for neuronal response latency estimation exists that includes bayesian binning~\citep{levakova_review_2015}. More braodly, unitary event analysis can be performed by a statistical model of coincidence detection~\citep{grun_unitary_2010}. This was extensively used in detecting above chance significant synchronous patterns, in particular in recordings of pairs of neurons (see~\citep{riehle_spike_1997} for instance). A method to detect significant patterns of synchronous spiking in a subset of massively parallel spike trains in the presence of background activity can be defined using the statistical evaluation of synchronous spike patterns extracted by frequent item set mining~\citep{torre_statistical_2013}. By the same group the SPADE, CAD or ASSET algorithms are methods for identification of spike patterns in massively parallel spike trains (the spiking activity of tens to hundred(s) of neurons recorded in parallel) by identifying fine temporal correlations in the$~\ms$ precision range~\citep{quaglio_methods_2018}. This was recently extended in ``3d-SPADE: Significance evaluation of spatio-temporal patterns of various temporal extents''~\citep{stella_3d-spade_2019} in order to find reoccurring spike patterns in parallel spike train data, and to determine their statistical significance. The extension improves the performance in the presence of patterns with different durations, as demonstrated by application to various synthetic data, such as surrogates generated to evaluate precisely timed higher-order spike correlations~\citep{stella_comparing_2022}.
 
-D. Aronov and J. D. Victor, ``Non-Euclidean properties of spike train metric spaces,'' Physical Rev.~E (Statist., Nonlinear, Soft Matter Phys.), vol.~69, no. 6, 2004.
+% TODO: summarize ``Understanding Auditory Spectro-Temporal Receptive Fields and Their Changes with Input Statistics by Efficient Coding Principles'' - Spectro-temporal receptive fields (STRFs) have been widely used as linear approximations to the signal transform from sound spectrograms to neural responses along the auditory pathway. Their dependence on statistical attributes of the stimuli, such as sound intensity, is usually explained by nonlinear mechanisms and models. Here, we apply an efficient coding principle which has been successfully used to understand receptive fields in early stages of visual processing, in order to provide a computational understanding of the STRFs. According to this principle, STRFs result from an optimal tradeoff between maximizing the sensory information the brain receives, and minimizing the cost of the neural activities required to represent and transmit this information. Both terms depend on the statistical properties of the sensory inputs and the noise that corrupts them. The STRFs should therefore depend on the input power spectrum and the signal-to-noise ratio, which is assumed to increase with input intensity. We analytically derive the optimal STRFs when signal and noise are approximated as Gaussians. Under the constraint that they should be spectro-temporally local, the STRFs are predicted to adapt from being band-pass to low-pass filters as the input intensity reduces, or the input correlation becomes longer range in sound frequency or time. These predictions qualitatively match physiological observations. Our prediction as to how the STRFs should be determined by the input power spectrum could readily be tested, since this spectrum depends on the stimulus ensemble. The potentials and limitations of the efficient coding principle are discussed. ~\citep{zhao_understanding_2011}
 
-T. Kreuz, J. S. Haas, A. Morelli, H. D. I. Abarbanel, and A. Politi, ``Measuring spike train synchrony,'' J. Neurosci. Methods, vol.~165, no. 1, pp.~151--161, 2007. 23 H.
-
-Paper by~\citep{moser_stability_2014} On Stability of Distance Measures for Event Sequences Induced by Level-Crossing Sampling
-
-Weyl's discrepency measure~\citep{weyl_ber_1916} which may lead to the definition of a cross-correlation.
-
-Robust computation with rhythmic spike patterns.~Proceedings of the National Academy of Sciences of the United States of America~116(36), 18050 - 18059.~https://dx.doi.org/10.1073/pnas.1902653116
-
-A review of the methods for neuronal response latency estimation including bayesian binning~\citep{levakova_review_2015}.
+%: >>>>>>>> Laurent is here <<<<<<<<<<<<<<
+\subsection{Scaling up to very large scale data}
 
 
-
-In generic linear non linear lnl models, the output is assumed to be poisson. As such a simple decoding strategy is to asscume it is to b inferned for a given tuning curves (Jayazeri) or simply by a simple regression~\citep{berens_fast_2012}. This latter model assumes a Bernoulli model for the generation of spikes such that the decoding amounts to a single-layer logistic regression.
-
-Unitary event analysis is performed by a statistical model of coincidence detection~\citep{grun_unitary_2010}. This was extensively used in detecting above chance significant synchronous patterns, in particular in recordings of pairs of neurons (see~\citep{riehle_spike_1997} for instance).
-
-Statistical evaluation of synchronous spike patterns extracted by frequent item set mining - a method to detect significant patterns of synchronous spiking in a subset of massively parallel spike trains in the presence of background activity~\citep{torre_statistical_2013}. By the same group the SPADE, CAD or ASSET algorithms are methods for identification of spike patterns in massively parallel spike trains (the spiking activity of tens to hundred(s) of neurons recorded in parallel) by identifying fine temporal correlations in the$~\ms$ precision range~\citep{quaglio_methods_2018}.
-
-This was recently extended in ``3d-SPADE: Significance evaluation of spatio-temporal patterns of various temporal extents''~\citep{stella_3d-spade_2019} in order to find reoccurring spike patterns in parallel spike train data, and to determine their statistical significance. The extension improves the performance in the presence of patterns with different durations, as demonstrated by application to various synthetic data, such as surrogates generated to evaluate precisely timed higher-order spike correlations~\citep{stella_comparing_2022}.
-
-TODO: summarize ``Understanding Auditory Spectro-Temporal Receptive Fields and Their Changes with Input Statistics by Efficient Coding Principles'' - Spectro-temporal receptive fields (STRFs) have been widely used as linear approximations to the signal transform from sound spectrograms to neural responses along the auditory pathway. Their dependence on statistical attributes of the stimuli, such as sound intensity, is usually explained by nonlinear mechanisms and models. Here, we apply an efficient coding principle which has been successfully used to understand receptive fields in early stages of visual processing, in order to provide a computational understanding of the STRFs. According to this principle, STRFs result from an optimal tradeoff between maximizing the sensory information the brain receives, and minimizing the cost of the neural activities required to represent and transmit this information. Both terms depend on the statistical properties of the sensory inputs and the noise that corrupts them. The STRFs should therefore depend on the input power spectrum and the signal-to-noise ratio, which is assumed to increase with input intensity. We analytically derive the optimal STRFs when signal and noise are approximated as Gaussians. Under the constraint that they should be spectro-temporally local, the STRFs are predicted to adapt from being band-pass to low-pass filters as the input intensity reduces, or the input correlation becomes longer range in sound frequency or time. These predictions qualitatively match physiological observations. Our prediction as to how the STRFs should be determined by the input power spectrum could readily be tested, since this spectrum depends on the stimulus ensemble. The potentials and limitations of the efficient coding principle are discussed.
-~\citep{zhao_understanding_2011}
-
-\subsubsection{Rastermap : decoding large-scale data}\label{rastermap-decoding-large-scale-data}
 \href{https://nbviewer.org/github/MouseLand/rastermap/blob/master/tutorial/tutorial.ipynb}{Rastermap} re-arranges neurons in the raster plot based on similarity of activity
 
 \begin{itemize}
@@ -565,7 +546,7 @@ In~\citep{van_kempen_top-down_2021}, it was shown that attentional information f
 \item
   ``Cortical songs: modular assemblies of repeated sequences'': hierarchical detection.
 \item
-  in cotical songs, there is a ``compressing timing'' which may be taken into account by a similar mechanism as maxpooling in CNNs for space, but in time. Or there may be a mechanism for controlling the replay speed (pulvinar, \ldots{} , ?)
+  in cortical songs, there is a ``compressing timing'' which may be taken into account by a similar mechanism as maxpooling in CNNs for space, but in time. Or there may be a mechanism for controlling the replay speed (pulvinar, \ldots{} , ?)
 \end{itemize}
 
 \begin{figure}
@@ -577,12 +558,13 @@ In~\citep{van_kempen_top-down_2021}, it was shown that attentional information f
 It is interesting to make a parallel with the ``Rapid Formation of Robust Auditory Memories'' reported in~\citep{agus_rapid_2010} which uses noise patterns. They " used random waveforms to probe the formation of new memories for arbitrary complex sounds. A behavioral measure was designed, based on the detection of repetitions embedded in noises up to 4 s long." The task is to detect the repetition of the same (frozen) noise within a trial. " Unbeknownst to listeners, some noise samples reoccurred randomly throughout an experimental block." they showed that the ``repeated exposure induced learning for otherwise totally unpredictable and meaningless sounds'' by showing that the sensitivity increases in that case. Note that ``acoustical analyses failed to reveal any obvious differences between good and bad noises'' and that ``Time reversal had no significant effect on the RefRN advantage'' (quite surprising). The Learning is unsupervised (statistical, automatic), fast-acting (phase transition, ``insight''), and long-lasting (memorization).
 
 Such observations suggest that neural groups or ensembles, rather than individual neurons, are emergent functional units of cortical activity~\citep{miller_visual_2014}. This work shows, using two-photon calcium imaging of populations of neurons from the primary visual cortex of awake mice during visual stimulation and spontaneous activity, that whereas intrinsic ensembles recur at random time intervals, visually evoked ensembles are time-locked to stimuli. It proposes that visual stimuli recruit endogenously generated ensembles to represent visual attributes. Note that evoked ensembles in response to a natural movie played in a loop were precisely timed across repetitions (Fig. 7).
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Precise spiking motifs in  neuromorphic engineering}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \subsubsection{Dynamics of Delay-Coupled Excitable Neural Systems}
