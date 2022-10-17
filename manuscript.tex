@@ -478,35 +478,23 @@ The limits of this method is that it is block-based and stricly specialized for 
 % \end{itemize}
 
 
-\subsection{Cell assemblies at multiple time scales with arbitrary lag constellations}
-\subsubsection{Paper by Russo et al 2017~\citep{russo_cell_2017}}\label{paper-by-russo-et-al-2017-russo2017}
-\begin{itemize}
- \item
-  ``Here we present such a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization.'' by~\citep{russo_cell_2017}
-\item
-  sliding window as in~\citep{grun_unitary_2002} (``Numerous other statistical procedures for detecting assemblies or sequential patterns have been proposed previously'') - extended to multiple lags~\citep{torre_synchronous_2016}
-\item
-  based on a ``non-stationarity-corrected parametric test statistic for assessing the independence of pairs'' and ``an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies''
-\end{itemize}
+\subsection{Extending the decoding at multiple time scales}
 
-\subsubsection{Neural Variability and Sampling-Based Probabilistic Representations in the Visual Cortex~\citep{orban_neural_2016}}
-\begin{itemize}
- \item
-  Stochastic sampling links perceptual uncertainty to neural response variability
-\item
-  Model accounts for independent changes in strength and variability of responses
-\item
-  Model predicts relationship between noise, signal, and spontaneous correlations
-\item
-  Stimulus statistics dependence of response statistics is explained
-\end{itemize}
+In the paper by~\citet{russo_cell_2017}, authors present a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization. It uses  sliding window as in~\citep{grun_unitary_2002} and the reliable and efficient analysis of an excess or deficiency of joint-spike events~\citep{pipa_neuroxidence_2008}. They extend the measure to multiple lags~\citep{torre_synchronous_2016}. The core measure is based on a non-stationarity-corrected parametric test statistic for assessing the independence of pairs and an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies. 
+
+% \subsubsection{Neural Variability and Sampling-Based Probabilistic Representations in the Visual Cortex~\citep{orban_neural_2016}}
+% \begin{itemize}
+%  \item
+%   Stochastic sampling links perceptual uncertainty to neural response variability
+% \item
+%   Model accounts for independent changes in strength and variability of responses
+% \item
+%   Model predicts relationship between noise, signal, and spontaneous correlations
+% \item
+%   Stimulus statistics dependence of response statistics is explained
+% \end{itemize}
 
 To overcome the limits of models which require spike times to be discretized, utilize a sub-optimal least-squares criterion, or do not provide uncertainty estimates for model predictions or estimated parameters,~\citep{williams_point_2020} address each of these shortcomings by developing a point process model that characterizes fine-scale sequences at the level of individual spikes and represents sequence occurrences as a small number of marked events in continuous time. They also introduce learnable time warping parameters to model sequences of varying duration, which have been experimentally observed in neural circuits and demonstrate these advantages on experimental recordings from songbird higher vocal center and rodent hippocampus.
-
-
-~\citep{russo_cell_2017} starts from the relatively old notion of assessing the departure of the joint spike count distribution of two units (or sets) from independence. It is based on unitary events in multiple single-neuron spiking activity~\citep{grun_unitary_2002-1} and the reliable and efficient analysis of an excess or deficiency of joint-spike events~\citep{pipa_neuroxidence_2008}. Having derived a fast, non-stationarity-corrected parametric test statistic for assessing the independence of pairs, they designed an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies.
-
-
 
 \begin{figure}
 \centering
@@ -514,10 +502,8 @@ To overcome the limits of models which require spike times to be discretized, ut
 \caption{Mixed distance and duration representation in CA1. (A) Calcium fluorescence (heatmap) of CA1 neurons participating to run sequences in consecutive imaging sessions. Cells have been selected and ordered with respect to their activity in the first imaging session (Top). The black line represents speed of the mouse.}\label{fig:haimerl}
 \end{figure}
 
-% sparse in time and space : AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp.~345-355. 
-CC Petersen and S Crochet, Neuron 78.1 (2013), pp.~28-48.
+% sparse in time and space : AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp.~345-355.  CC Petersen and S Crochet, Neuron 78.1 (2013), pp.~28-48.
 
-TODO: read~\citep{luczak_packet-based_2015} Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745--55.
 
 In~\citep{van_kempen_top-down_2021}, it was shown that attentional information from V4 or arousal can change the timings of groups of events in V1. They develop a Hidden Markov Model for quantifying the transitions. In particular, they show that fluctuations in neural excitability are coordinated between visual areas with retinotopic precision. Top-down attention drives interareal coordination along the reverse cortical hierarchy, predicting better behavioral performance with increased coordination.
 
@@ -549,6 +535,9 @@ In~\citep{van_kempen_top-down_2021}, it was shown that attentional information f
 \end{figure}
 
 It is interesting to make a parallel with the ``Rapid Formation of Robust Auditory Memories'' reported in~\citep{agus_rapid_2010} which uses noise patterns. They " used random waveforms to probe the formation of new memories for arbitrary complex sounds. A behavioral measure was designed, based on the detection of repetitions embedded in noises up to 4 s long." The task is to detect the repetition of the same (frozen) noise within a trial. " Unbeknownst to listeners, some noise samples reoccurred randomly throughout an experimental block." they showed that the ``repeated exposure induced learning for otherwise totally unpredictable and meaningless sounds'' by showing that the sensitivity increases in that case. Note that ``acoustical analyses failed to reveal any obvious differences between good and bad noises'' and that ``Time reversal had no significant effect on the RefRN advantage'' (quite surprising). The Learning is unsupervised (statistical, automatic), fast-acting (phase transition, ``insight''), and long-lasting (memorization).
+
+
+TODO: read~\citep{luczak_packet-based_2015} Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745--55.
 
 Such observations suggest that neural groups or ensembles, rather than individual neurons, are emergent functional units of cortical activity~\citep{miller_visual_2014}. This work shows, using two-photon calcium imaging of populations of neurons from the primary visual cortex of awake mice during visual stimulation and spontaneous activity, that whereas intrinsic ensembles recur at random time intervals, visually evoked ensembles are time-locked to stimuli. It proposes that visual stimuli recruit endogenously generated ensembles to represent visual attributes. Note that evoked ensembles in response to a natural movie played in a loop were precisely timed across repetitions (Fig. 7).
 
