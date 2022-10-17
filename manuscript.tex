@@ -405,68 +405,61 @@ Let's now focus on distances defined based on a generative model formed by using
 
 %: >>>>>>>> Laurent is here <<<<<<<<<<<<<<
 \subsection{Scaling up to very large scale data}
+Over the past decade, tremendous technological advances across several disciplines have dramatically expanded the frontiers of experimentally accessible neuroscientific facts. Bridging across different spatial and temporal scales, combination of in vivo two photon imaging, large population recording-array technologies, optogenetic circuit control tools, transgenic manipulations as well as large volume circuit reconstructions are now used to examine the function, structure and dynamics of neural networks on an unprecedented level of detail and precision. The daunting complexity of the biological reality revealed by these technologies highlights the importance of neurophysics to provide a conceptual bridge between abstract principles of brain function and their biological implementations within neural circuits. 
 
+One algorithm capable of achieveing such daunting task is the Rastermap algorithm~\citep{pachitariu_robustness_2018}. Basically, it re-arranges neurons in the raster plot based on similarity of activity and applies a deconvolution strategy based on a linear model. The model is \href{https://github.com/MouseLand/rastermap}{openly accessible} and has led to important discoveries. In~\citet{stringer_high-dimensional_2019}, it was shown that a neuronal population encodes information most efficiently when its stimulus responses are high-dimensional and uncorrelated, and most robustly when they are lower-dimensional and correlated. 
+Then, in~\citep{stringer_high-precision_2021}, authors analyzed spontaneous neural firing, finding that neurons in the primary visual cortex encoded both visual information and motor activity related to facial movements. Altogether, this provides evidence for the importance of such machine-learning-based tools to provide with breakthroughs in neuroscience.
+% \href{https://nbviewer.org/github/MouseLand/rastermap/blob/master/tutorial/tutorial.ipynb}{Rastermap} re-arranges neurons in the raster plot based on similarity of activity
 
-\href{https://nbviewer.org/github/MouseLand/rastermap/blob/master/tutorial/tutorial.ipynb}{Rastermap} re-arranges neurons in the raster plot based on similarity of activity
+% \begin{itemize}
+%  \item
+%   https://www.janelia.org/lab/stringer-lab
+% \item
+%   described in
+% \item
+%   \href{https://github.com/MouseLand/rastermap}{rastermap}
+% \item
+%   deconvolution strategy
+% \item
+%   based on a linear model
+% \end{itemize}
+% \subsubsection{Stringer et al 2019, Nature~\citep{stringer_high-dimensional_2019}}\label{stringer-et-al-2019-nature-stringer2019nature}
+% \begin{itemize}
+%  \item
+%   ``A neuronal population encodes information most efficiently when its stimulus responses are high-dimensional and uncorrelated, and most robustly when they are lower-dimensional and correlated. Here we analysed the dimensionality of the encoding of natural images by large populations of neurons in the visual cortex of awake mice.''
+% \item
+%   Data availability: All of the processed deconvolved calcium traces are available on \href{https://figshare.com/articles/Recordings_of_ten_thousand_neurons_in_visual_cortex_in_response_to_2_800_natural_images/6845348}{figshare}, together with the image stimuli.
+% \item
+%   Code availability: The code is available on \href{https://github.com/MouseLand/stringer-pachitariu-et-al-2018b}{GitHub}.
+% \end{itemize}
 
-\begin{itemize}
- \item
-  https://www.janelia.org/lab/stringer-lab
-\item
-  described in~\citep{pachitariu_robustness_2018}
-\item
-  \href{https://github.com/MouseLand/rastermap}{rastermap}
-\item
-  deconvolution strategy
-\item
-  based on a linear model
-\end{itemize}
+% \subsubsection{Stringer et al 2019, Science~\citep{stringer_spontaneous_2019}}\label{stringer-et-al-2019-science-stringer2019science}
+% \begin{itemize}
+% \item
+%   Stringer et al.~analyzed spontaneous neural firing, finding that neurons in the primary visual cortex encoded both visual information and motor activity related to facial movements. The variability of neural responses to visual stimuli in the primary visual area is mainly related to arousal and reflects the encoding of latent behavioral states.
+% \item
+%   see also the work showing that you can encode very precise orientation information by using many neurons:~\citep{stringer_high-precision_2021}
+% \end{itemize}
 
-\subsubsection{Stringer et al 2019, Nature~\citep{stringer_high-dimensional_2019}}\label{stringer-et-al-2019-nature-stringer2019nature}
-\begin{itemize}
- \item
-  ``A neuronal population encodes information most efficiently when its stimulus responses are high-dimensional and uncorrelated, and most robustly when they are lower-dimensional and correlated. Here we analysed the dimensionality of the encoding of natural images by large populations of neurons in the visual cortex of awake mice.''
-\item
-  Data availability: All of the processed deconvolved calcium traces are available on \href{https://figshare.com/articles/Recordings_of_ten_thousand_neurons_in_visual_cortex_in_response_to_2_800_natural_images/6845348}{figshare}, together with the image stimuli.
-\item
-  Code availability: The code is available on \href{https://github.com/MouseLand/stringer-pachitariu-et-al-2018b}{GitHub}.
-\end{itemize}
-
-\subsubsection{Stringer et al 2019, Science~\citep{stringer_spontaneous_2019}}\label{stringer-et-al-2019-science-stringer2019science}
-\begin{itemize}
-\item
-  Stringer et al.~analyzed spontaneous neural firing, finding that neurons in the primary visual cortex encoded both visual information and motor activity related to facial movements. The variability of neural responses to visual stimuli in the primary visual area is mainly related to arousal and reflects the encoding of latent behavioral states.
-\item
-  see also the work showing that you can encode very precise orientation information by using many neurons:~\citep{stringer_high-precision_2021}
-\end{itemize}
-
-
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{detecting structured temporal patterns}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Paper by Grossberger, 2018~\citep{grossberger_unsupervised_2018}}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}
- \item
-  Temporally ordered multi-neuron patterns likely encode information in the brain. We introduce an unsupervised method, SPOTDisClust (Spike Pattern Optimal Transport Dissimilarity Clustering), for their detection from high-dimensional neural ensembles. SPOTDisClust measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other (SPOTDis).
-\item
-  Detecting these temporal patterns represents a major methodological challenge.
-\item
-  Many approaches to this problem are supervised, that is, they take patterns occurring concurrently with a known event, such as the delivery of a stimulus for sensory neurons or the traversal of a running track for hippocampal place fields, as a ``template'' and then search for repetitions of the same template in spiking activity :
-\item
-  Nadasdy Z, Hirase H, Czurko A, Csicsvari J, Buzsaki G. Replay and time compression of recurring spike sequences in the hippocampus. J Neurosci. 1999;19(21):9497--507. pmid:10531452
-\item
-  Lee AK, Wilson MA. A combinatorial method for analyzing sequential firing patterns involving an arbitrary number of neurons based on relative time order. J Neurophysiol. 2004;92(4):2555--73. pmid:15212425
-\item
-  Davidson TJ, Kloosterman F, Wilson MA. Hippocampal replay of extended experience. Neuron. 2009;63(4):497--507. pmid:19709631
-\item
-  only one spike per neuron: fig 1A = ``For each pattern and each neuron, a random position was chosen for the activation pulse.''
-\item
-  t-SNE projection with HDBSCAN labels shows that our clustering method can retrieve all patterns from the data.
-\item
-  data available @ https://doi.org/10.1371/journal.pcbi.1006283.s013
-\end{itemize}
+Another important algorithm is based on the detection of structured temporal patterns~\citep{grossberger_unsupervised_2018}. They introduced an unsupervised method based for their detection from high-dimensional neural ensembles. The algorithm measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other. Many approaches to this problem are supervised, that is, they take patterns occurring concurrently with a known event, such as the delivery of a stimulus for sensory neurons or the traversal of a running track for hippocampal place fields, as a ``template'' and then search for repetitions of the same template in spiking activity~\citep{nadasdy_replay_1999,lee_combinatorial_2004}.
+% \item
+%   Detecting these temporal patterns represents a major methodological challenge.
+% \item
+%   Many approaches to this problem are supervised, that is, they take patterns occurring concurrently with a known event, such as the delivery of a stimulus for sensory neurons or the traversal of a running track for hippocampal place fields, as a ``template'' and then search for repetitions of the same template in spiking activity :
+% \item
+%   Nadasdy Z, Hirase H, Czurko A, Csicsvari J, Buzsaki G. Replay and time compression of recurring spike sequences in the hippocampus. J Neurosci. 1999;19(21):9497--507. pmid:10531452
+% \item
+%   Lee AK, Wilson MA. A combinatorial method for analyzing sequential firing patterns involving an arbitrary number of neurons based on relative time order. J Neurophysiol. 2004;92(4):2555--73. pmid:15212425
+% \item
+%   Davidson TJ, Kloosterman F, Wilson MA. Hippocampal replay of extended experience. Neuron. 2009;63(4):497--507. pmid:19709631
+% \item
+In that method, the learning is unsupervised. It uses the prior that there is only one spike per pattern. 
+% \item
+Using a t-SNE projection with knwon labels validated that this clustering method can retrieve all patterns from the data.
+% \item
+%   data available @ https://doi.org/10.1371/journal.pcbi.1006283.s013
+% \end{itemize}
+The limits of this method is that it is block-based and stricly specialized for the task at hand. To overcome these diculties a novel method was recently developped~\citep{sotomayor-gomez_spikeship_2021}.
 
 %----------------------------%
 \begin{figure}
@@ -476,14 +469,16 @@ Let's now focus on distances defined based on a generative model formed by using
 \end{figure}
 %----------------------------%
 
-\begin{itemize}
- \item
-  ``However, SPOTDis has two principal weaknesses that we address here: (1) Its computational complexity, for comparing two time epochs, is O(N2), where N is the number of neurons. This becomes a major problem for computing an M dissimilarity matrix (for M time epochs) for thousands of neurons. (2) It relies exclusively on pairwise spike-timing relationships (i.e 2nd order correlations), because it does not solve the optimal transport problem for the entire spike pattern, but only for neuron pairs separately. Hence, it may not be sensitive to higher-order correlations in spiking
-  patterns.
-  Here, we develop a novel dissimilarity measure for multi-neuron spiking patterns called SpikeShip, which has linear computational complexity of O(N). We achieve this by (1) computing the minimum transport cost of spikes for each spike train separately, and (2) discounting a global translation term in the transport flow across neurons.''
-  https://doi.org/10.1101/2020.06.03.131573;
-\end{itemize}
+% \begin{itemize}
+%  \item
+%   ``However, SPOTDis has two principal weaknesses that we address here: (1) Its computational complexity, for comparing two time epochs, is O(N2), where N is the number of neurons. This becomes a major problem for computing an M dissimilarity matrix (for M time epochs) for thousands of neurons. (2) It relies exclusively on pairwise spike-timing relationships (i.e 2nd order correlations), because it does not solve the optimal transport problem for the entire spike pattern, but only for neuron pairs separately. Hence, it may not be sensitive to higher-order correlations in spiking
+%   patterns.
+%   Here, we develop a novel dissimilarity measure for multi-neuron spiking patterns called SpikeShip, which has linear computational complexity of O(N). We achieve this by (1) computing the minimum transport cost of spikes for each spike train separately, and (2) discounting a global translation term in the transport flow across neurons.''
+%   https://doi.org/10.1101/2020.06.03.131573;
+% \end{itemize}
 
+
+\subsection{Cell assemblies at multiple time scales with arbitrary lag constellations}
 \subsubsection{Paper by Russo et al 2017~\citep{russo_cell_2017}}\label{paper-by-russo-et-al-2017-russo2017}
 \begin{itemize}
  \item
@@ -509,7 +504,6 @@ Let's now focus on distances defined based on a generative model formed by using
 To overcome the limits of models which require spike times to be discretized, utilize a sub-optimal least-squares criterion, or do not provide uncertainty estimates for model predictions or estimated parameters,~\citep{williams_point_2020} address each of these shortcomings by developing a point process model that characterizes fine-scale sequences at the level of individual spikes and represents sequence occurrences as a small number of marked events in continuous time. They also introduce learnable time warping parameters to model sequences of varying duration, which have been experimentally observed in neural circuits and demonstrate these advantages on experimental recordings from songbird higher vocal center and rodent hippocampus.
 
 
-\subsubsection{Cell assemblies at multiple time scales with arbitrary lag constellations}\label{cell-assemblies-at-multiple-time-scales-with-arbitrary-lag-constellations}
 ~\citep{russo_cell_2017} starts from the relatively old notion of assessing the departure of the joint spike count distribution of two units (or sets) from independence. It is based on unitary events in multiple single-neuron spiking activity~\citep{grun_unitary_2002-1} and the reliable and efficient analysis of an excess or deficiency of joint-spike events~\citep{pipa_neuroxidence_2008}. Having derived a fast, non-stationarity-corrected parametric test statistic for assessing the independence of pairs, they designed an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies.
 
 
@@ -520,16 +514,15 @@ To overcome the limits of models which require spike times to be discretized, ut
 \caption{Mixed distance and duration representation in CA1. (A) Calcium fluorescence (heatmap) of CA1 neurons participating to run sequences in consecutive imaging sessions. Cells have been selected and ordered with respect to their activity in the first imaging session (Top). The black line represents speed of the mouse.}\label{fig:haimerl}
 \end{figure}
 
-
-sparse in time and space : AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp.~345-355. 
+% sparse in time and space : AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp.~345-355. 
 CC Petersen and S Crochet, Neuron 78.1 (2013), pp.~28-48.
 
 TODO: read~\citep{luczak_packet-based_2015} Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745--55.
 
-In~\citep{van_kempen_top-down_2021}, it was shown that attentional information from V4 or arousal can change the timings of groups of events in V1. They develop a HMM model for quantifying the transitions. ``In this study, van Kempen et al.~show that fluctuations in neural excitability are coordinated between visual areas with retinotopic precision. Top-down attention drives interareal coordination along the reverse cortical hierarchy, predicting better behavioral performance with increased coordination.''
+In~\citep{van_kempen_top-down_2021}, it was shown that attentional information from V4 or arousal can change the timings of groups of events in V1. They develop a Hidden Markov Model for quantifying the transitions. In particular, they show that fluctuations in neural excitability are coordinated between visual areas with retinotopic precision. Top-down attention drives interareal coordination along the reverse cortical hierarchy, predicting better behavioral performance with increased coordination.
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsection{Cortical songs}
+\subsection{Cortical songs}
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
@@ -587,6 +580,10 @@ A notable exception is the polychronization model of Izhikevich~\citep{izhikevic
 
 Event-Based Computation for Touch Localization Based on Precise Spike Timing : Here we propose a neuromorphic model inspired by the sand scorpion to explore the benefits of temporal coding, and validate it in an event-based sensory-processing task. The task consists in localizing a target using only the relative spike timing of eight spatially-separated vibration sensors.  Haessig2020a
 
+
+
+\subsection{learning pattern detection on natural images / event-based cameras}
+
 Remarkably, novel neuromorphic chips use a representation similar to that of real neurons~\citep{rasetto_challenges_2022}. For example, event-based cameras provide a stream of binary asynchronous events signaling detectable changes in luminance, and information is represented by these spike-based temporal motifs, hence their name ``silicon retinas'' (see Figure \ref{fig:silicon_retina}). For such devices, it is crucial to better understand the potential of using such event-based representations in order to devise novel algorithms.
 
 %----------------------------%
@@ -599,8 +596,6 @@ Remarkably, novel neuromorphic chips use a representation similar to that of rea
 This section has provided evidence that polychronous groups are an important apsect of information representation in biology with important application in data analysis and neuromorphic engineering. The rest of this review paper is organized as follows.
 
 
-
-\subsection{learning pattern detection on natural images / event-based cameras}\label{learning-pattern-detection-on-natural-images-event-based-cameras}
 \subsubsection{sparse coding on spatio-temporal data}\label{sparse-coding-on-spatio-temporal-data}
 \subsubsection{HOTS}\label{hots}
 \subsubsection{Grimaldi CBMI / PAMI}\label{grimaldi-cbmi-pami}
