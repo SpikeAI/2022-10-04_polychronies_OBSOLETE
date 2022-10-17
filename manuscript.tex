@@ -333,7 +333,7 @@ The recent ``multi-neuronal spike sequence detector'' (MNSD) architecture integr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-A notable extension of~\citep{izhikevich_polychronization_2006} is an extensive work aiming at reproducing the polychronization model~\citep{pauli_reproducing_2018}. Indeed, while the original paper contained material within the text to reproduce the whole model, it was not complete for the repoduction of all results presented in that manuscript. This more recent work details how this code was slighlty corrected. It comes with python code and a version control system detailing the whole process used to give provenance to the different steps in this scientific process.
+A notable extension of~\citep{izhikevich_polychronization_2006} is a very detailed work aiming at reproducing the polychronization model~\citep{pauli_reproducing_2018}. Indeed, while the original paper contained material within the text to reproduce the whole model, it was not complete for the repoduction of all results presented in that manuscript. This more recent work details how this code was slighlty corrected. It comes with python code and a version control system detailing the whole process used to give provenance to the different steps in this scientific process.
 
 Another recent work gives a Bayesian account in a similar model~\citep{guise_bayesian_2014}. Based on the fact that previous methods for studying polychronous neural groups (PNG) activation response to stimuli have been limited by the template-based methods used to identify PNG activation, authors outline a new method that overcomes these difficulties by establishing a probabilistic interpretation of PNG activation. They demonstrate the use of this method by investigating the claim that PNGs might provide the foundation of a representational system. Stimulations of the trained network produces the activation of a PNG, ie the propagation of firing activity through multiple layers due to convergent patterns of firing.
 
@@ -353,8 +353,6 @@ In a recent paper~\citep{luo_supervised_2022}, authors propose a gradient descen
 In yet another computational model,~\citet{sun_learning_2016} show that the frequently activated polychronous neural groups can be learned by readout neurons with joint weight-delay spike-timing-dependent plasticity. This uses a joint Weight-Delay Spike-Timing-Dependent Plasticity and show aan efficient learning of polychronous groups.
 
 %In~\citep{duffy_variation_2019}, authors present a model to ``show a way by which the nervous system maintains precise, stereotyped behavior in the face of environmental and neural changes.'' It is shown in birdsong generation that ``A precise, temporally sparse sequence from the premotor nucleus HVC is crucial to the performance of song in songbirds''~\citep{suthers_motor_2002,wild_descending_1993,yu_temporal_1996} and this model shows how one could vary HVC activity using something similar to dropout in ML. Using such controlled variability, ``behaviors are made more robust to environmental change by continually seeking subtly new ways of performing the same task.'' Not sure however how important it is that the HVC pattern should be sparse (and similar to PGs). In~\citep{agus_rapid_2010}, there are ``good'' and ``bad'' noises show that some patterns are more easy to disentangle - similar to bird songs and ecological niche. 
-
-
 
 % Learning compositional sequences with multiple time scales through a hierarchical network of spiking neurons.
 % Maes A, Barahona M, Clopath C.PLoS Comput Biol. 2021
@@ -383,21 +381,15 @@ In yet another computational model,~\citet{sun_learning_2016} show that the freq
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Most of these theoretical models are trying to reproduce neurobiological observations and some others also propose applications to machine learning mothods such as image processing. For instance, in a recent work~\citet{ghosh_spatiotemporal_2019} propose a two-stage unsupervised-supervised system for the categorization of spatiotemporal actions from an event-based stream. The first stage learns spatiotemporal convolutional filters targeted to minimize event-removal related changes to a local spatiotemporal spike-event pattern. The second stage takes the output of the spatiotemporal filters as an input example containing multiple feature channels, and proceeds to train a classifier for recognition of spatiotemporal activity. For testing the system, two datasets are considered: DVS Gesture and a new action recognition dataset recorded for this work. Results demonstrate the ability of the system to outperform the state-of-the-art in event-based gesture recognition, along with demonstrating superior performance to other alternative ways of obtaining the first stage filters. Showing the potential of such representation
 
-There are more applications to image processing using sparse spiking representations. Using the core computational unit defined, extension of the computation to a topographic representation similar to that observed in the primary visual cortex of mammals. design of micro-circuits with specific lateral interactions will allow us to design efficient micro-circuits for the sparse representation of images.
-
-
-there are temporal delays in the nervous system, both at the neural~\citep{perrinet_active_2014} 
-
-and behavioral~\citep{khoei_flash-lag_2017} levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks.
-
-may be used for motion detection and Motion-based prediction explains the role of tracking in motion extrapolation interpolation~\citep{kaplan_anisotropic_2013}~\citep{khoei_flash-lag_2017}
-
+%There are more applications to image processing using sparse spiking representations. Using the core computational unit defined, extension of the computation to a topographic representation similar to that observed in the primary visual cortex of mammals. design of micro-circuits with specific lateral interactions will allow us to design efficient micro-circuits for the sparse representation of images.
+A predictive model defined in the framework of the free-energy principle was able to account for temporal delays in the nervous system, both at the sensory and motor levels~\citep{perrinet_active_2014}.  %
+%and behavioral~\citep{khoei_flash-lag_2017} levels. Extending this knowledge to the optimization of delays in a SNN will provide a breakthrough in the efficiency of these networks.
+Such a model was implemented at the network level by showing that motion-based prediction explains the role of tracking in motion extrapolation interpolation~\citep{khoei_motion-based_2013}. Note that this motion-based prediction is implemented in the weights of the neural network by defining connections between neurons with specific delays.  Two neurons which were selective to specific motions were connected if the delay was coherent with the change in the position of their respective receptive fields~\citep{hogendoorn_predictive_2019}. This was aso implemented in a spiking neural network and reproduced the observation that neural activty was maintained during the trajectory of a smoothly moving dot even if it was momentarily blanked~\citep{kaplan_anisotropic_2013}. This led in particular to the proposal that such delay-based computations could explain diverse perceptual mechanisms, such as the flash-lag illusion~\citep{khoei_flash-lag_2017}. 
 We will review some more applications of using precise spiking motifs in neuromorphic engineering, but will first review current evidence in neurobiology, that is, from actual recordings in biological tissues.
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \section{Precise spiking motifs in neurobiology}
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
+%
  In Bellec~\citep{bellec_fitting_2021}, authors fit summary statistics of neural data with a differentiable spiking network simulator. The loss function is the cross entropy (following Bernouilli hypothesis with a GLM where each unit is modelled with a SRM neuron~\citep{gerstner_time_1995} with recurrent dynamics). The model uses samples and measure method sto include latent / hidden neurons. In particular, it    comes with  \href{code}{https://github.com/EPFL-LCN/pub-bellec-wang-2021-sample-and-measure}. It uses the publicly available \href{V1-dataset}{http://crcns.org/data-sets/vc/pvc-11}, which allows to supervise the model with the input being the movie and the output the spikes recorded.
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
