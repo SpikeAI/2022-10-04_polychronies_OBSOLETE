@@ -547,30 +547,32 @@ Such observations suggest that neural groups or ensembles, rather than individua
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Precise spiking motifs in  neuromorphic engineering}
+\section{Precise spiking motifs in neuromorphic engineering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+We have seen that precise spiking moifs may be used in theoretical neuroscience models, themselves being used to derive novel methods for the understanding of neurobuological data. 
+A third class of models coming from the field of neuromorphic engineering, a priori different from that used in neuroscience, are of interest in this review as they often take advantage of minute temporal information.  
 
-
-\subsubsection{Dynamics of Delay-Coupled Excitable Neural Systems}
+\subsubsection{The emergence of neuromorphic engineering}
+% intro 
+the field of neuromorphic engineering...
 
 uses a FPGA~\citep{dahlem_dynamics_2009}
-
 
 V. Thanasoulis, B. Vogginger, J. Partzsch and C. Mayr, ``Delay-Based Neural Computation: Pulse Routing Architecture and Benchmark Application in FPGA,'' 2021 28th IEEE International Conference on Electronics, Circuits, and Systems (ICECS), 2021, pp.~1-5
 ~\citep{thanasoulis_delay-based_2021}
 
 
-
+% un exemple de polychronization
  ~\citet{wang_neuromorphic_2015} presented a hardware implementation of polychronous networks in which propagation delays are learned in a supervised manner, based on the expected firing time of the post-synaptic neuron. This paper proposes a supervised delay learning algorithm for spiking neurons with temporal encoding, in which both the weight and delay of a synaptic connection can be adjusted to enhance the learning performance.
 
-
+% d'autres applications
 Event-Based Computation for Touch Localization Based on Precise Spike Timing : Here we propose a neuromorphic model inspired by the sand scorpion to explore the benefits of temporal coding, and validate it in an event-based sensory-processing task. The task consists in localizing a target using only the relative spike timing of eight spatially-separated vibration sensors.  Haessig2020a
 
 
 
-\subsection{learning pattern detection on natural images / event-based cameras}
-
+\subsection{Temporal pattern detection in event-based cameras}
+% le cas spécifique des event-based cameras
 Remarkably, novel neuromorphic chips use a representation similar to that of real neurons~\citep{rasetto_challenges_2022}. For example, event-based cameras provide a stream of binary asynchronous events signaling detectable changes in luminance, and information is represented by these spike-based temporal motifs, hence their name ``silicon retinas'' (see Figure \ref{fig:silicon_retina}). For such devices, it is crucial to better understand the potential of using such event-based representations in order to devise novel algorithms.
 
 %----------------------------%
@@ -582,10 +584,23 @@ Remarkably, novel neuromorphic chips use a representation similar to that of rea
 %----------------------------%
 This section has provided evidence that polychronous groups are an important apsect of information representation in biology with important application in data analysis and neuromorphic engineering. The rest of this review paper is organized as follows.
 
+% solutions usuellement utilisées - surrogate gradient
 
-\subsubsection{sparse coding on spatio-temporal data}\label{sparse-coding-on-spatio-temporal-data}
-\subsubsection{HOTS}\label{hots}
-\subsubsection{Grimaldi CBMI / PAMI}\label{grimaldi-cbmi-pami}
+
+% autres méthodes
+
+
+\subsubsection{Methods using precise timings}
+
+% HOTS
+
+
+% Grimaldi CBMI + PAMI
+
+
+% Grimaldi ICIP
+
+
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
