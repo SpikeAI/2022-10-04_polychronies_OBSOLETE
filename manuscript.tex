@@ -510,26 +510,12 @@ To overcome the limits of models which require spike times to be discretized, ut
 
 In~\citep{van_kempen_top-down_2021}, it was shown that attentional information from V4 or arousal can change the timings of groups of events in V1. They develop a Hidden Markov Model for quantifying the transitions. In particular, they show that fluctuations in neural excitability are coordinated between visual areas with retinotopic precision. Top-down attention drives interareal coordination along the reverse cortical hierarchy, predicting better behavioral performance with increased coordination.
 
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Cortical songs}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}
- \item
-  Ikegaya and colleagues~\citep{ikegaya_synfire_2004} worked on spontaneous activity in vitro and in vivo. They demonstrated that in cortical activity, we can find a repetition of several motifs. In PSCs, but also in spike activity. These sequences repeat after minutes and have a precise spatio temporal structure with a $~\ms$ precision. They can be specific of a particular layer or colomn, are synchronized with network activity oscillation and can involve several cells. They also demonstated that these sequences can form supersequences : the cortical songs. It consist of the assembly of several sequences which repeat in a specific order with a compressed timing.
-\item
-  ``We find precise repetitions of spontaneous patterns of synaptic inputs in neocortical neurons in vivo and in vitro. These patterns repeat after minutes, maintaining millisecond accuracy.''
-\item
-  Precisely repeating motifs of spontaneous synaptic activity in slices: duration around 1s +/- .5 s. Some events in motifs are of similar size but sometimes absent - better described by Bernouilli than SE (and covariance)
-\item
-  \emph{in vivo} spontaneous activity also reveals repeating sequences. About 3000 sequences, each involving 3-10 cells out of about 900, and last up to 3 seconds
-\item
-  topography: ``Sequences had specific topographic structures, in some cases involving only a particular layer or a vertical column of cells or cells located in a cluster (Fig. 4, A and B, and fig.~S3B). (\ldots) Therefore, repeating temporal patterns of activation (\ldots) were associated with a structured spatial organization of the neurons that formed them.''
-\item
-  ``Cortical songs: modular assemblies of repeated sequences'': hierarchical detection.
-\item
-  in cortical songs, there is a ``compressing timing'' which may be taken into account by a similar mechanism as maxpooling in CNNs for space, but in time. Or there may be a mechanism for controlling the replay speed (pulvinar, \ldots{} , ?)
-\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Going further, researchers have found that  precise repetitions of spontaneous patterns of synaptic inputs in neocortical neurons in vivo and in vitro. These patterns repeat after minutes, maintaining millisecond accuracy. Indeed,~\citet{ikegaya_synfire_2004} demonstrated that in cortical activity, one can find a repetition of several motifs in spike activity (duration around 1s +/- .5 s, some events in motifs are of similar size but sometimes absent). These sequences can be specific of a particular layer or colomn, can be synchronized with network activity oscillation and can involve several cells. They also demonstated that these sequences can form supersequences, so-called cortical songs. It consist of the assembly of several sequences which repeat in a specific order with a compressed timing. \emph{In vivo} spontaneous activity also reveals repeating sequences. About 3000 sequences, each involving 3-10 cells out of about 900, and last up to 3 seconds. Sequences had specific topographic structures, in some cases involving only a particular layer or a vertical column of cells or cells located in a cluster and were associated with a structured spatial organization of the neurons that formed them. %In cortical songs, there is a ``compressing timing'' which may be taken into account by a similar mechanism as maxpooling in CNNs for space, but in time. Or there may be a mechanism for controlling the replay speed (pulvinar, \ldots{} , ?)
 
 \begin{figure}
 \centering
@@ -540,7 +526,7 @@ In~\citep{van_kempen_top-down_2021}, it was shown that attentional information f
 It is interesting to make a parallel with the ``Rapid Formation of Robust Auditory Memories'' reported in~\citep{agus_rapid_2010} which uses noise patterns. They " used random waveforms to probe the formation of new memories for arbitrary complex sounds. A behavioral measure was designed, based on the detection of repetitions embedded in noises up to 4 s long." The task is to detect the repetition of the same (frozen) noise within a trial. " Unbeknownst to listeners, some noise samples reoccurred randomly throughout an experimental block." they showed that the ``repeated exposure induced learning for otherwise totally unpredictable and meaningless sounds'' by showing that the sensitivity increases in that case. Note that ``acoustical analyses failed to reveal any obvious differences between good and bad noises'' and that ``Time reversal had no significant effect on the RefRN advantage'' (quite surprising). The Learning is unsupervised (statistical, automatic), fast-acting (phase transition, ``insight''), and long-lasting (memorization).
 
 
-TODO: read~\citep{luczak_packet-based_2015} Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745--55.
+TODO: re-read~\citep{luczak_packet-based_2015} Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745--55.
 
 Such observations suggest that neural groups or ensembles, rather than individual neurons, are emergent functional units of cortical activity~\citep{miller_visual_2014}. This work shows, using two-photon calcium imaging of populations of neurons from the primary visual cortex of awake mice during visual stimulation and spontaneous activity, that whereas intrinsic ensembles recur at random time intervals, visually evoked ensembles are time-locked to stimuli. It proposes that visual stimuli recruit endogenously generated ensembles to represent visual attributes. Note that evoked ensembles in response to a natural movie played in a loop were precisely timed across repetitions (Fig. 7).
 
@@ -611,7 +597,6 @@ This section has provided evidence that polychronous groups are an important aps
 \subsection{Spiking neural models with heterogeneous delays}
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{our model}\label{our-model}
 Here, we develop a model for the efficient detection of such PGs based on the inversion of a probabilistic model defining the generation of the raster plot as a combination of such groups. We show that such an inference can be achieved by a neural-like computation that could itself be used as a spiking neuron, as can be implemented in a neuromorphic chip for instance. A first result is to show the efficiency of such a scheme in detecting different PGs occurring at specific times in synthetic data. The representational capacity of the PGs is particularly interesting compared to traditional models of neuronal encoding using spiking frequency. Our second result is to propose a novel learning method for learning PGs in raster plots in a self-supervised manner. Finally we demonstrate the use of this algorithm to the output of an event-based camera and how this may separate independent components from the stream of events. This end-to-end event-based computational brick could help improve the performance of current Spiking Neural Network solution currently used in neuromorphic chips.
 
 
