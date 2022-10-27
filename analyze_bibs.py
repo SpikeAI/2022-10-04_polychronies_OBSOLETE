@@ -20,7 +20,7 @@ else:
     latex = ''.join(line for line in latexlines)
     # latex = latex.replace('\\', '\')
 
-rx = re.compile(r'''(?<!\\)%.+|(\\(?:no)?citep?\{((?!\*)[^{}]+)\})''')
+rx = re.compile(r'''(?<!\\)%.+|(\\(?:no)?cite[pt]?\{((?!\*)[^{}]+)\})''')
 # rx = re.compile(r'''^(?!(%\\(?:no)?cite\w*\{([^}]*?)\}))[^*\n]*$''')
 # rx = re.compile(r'''^(?!(%\\(?:no)?cite\w*\{([^}]*?)\}))[^*\n]*$''')
 
@@ -29,8 +29,8 @@ citekeys = [m.group(2) for m in rx.finditer(latex) if m.group(2)]
 
 citekey_list = []
 for citekey in citekeys:
-    for citekey_ in citekey.split(', '):
-        citekey_list.append(citekey_)
+    for citekey_ in citekey.split(','):
+        citekey_list.append(citekey_.strip(' '))
 import numpy as np
 citekey_list = np.unique(citekey_list)
 # print(citekey_list)
@@ -46,8 +46,11 @@ rx = re.compile(r'''@\w+{([\w:-]+)''')
 bibkeys = [m.group(1) for m in rx.finditer(bibtex) if m.group(1)]
 bibkeys = np.unique(bibkeys)
 # print(bibkeys)
+
+for citekey in citekey_list:
+    if not(citekey in bibkeys):
+        print('This key in not present in the bibliography', citekey)
     
 for bibkey in bibkeys:
     if not(bibkey in citekey_list):
         print('This key in not used in the paper', bibkey)
-
