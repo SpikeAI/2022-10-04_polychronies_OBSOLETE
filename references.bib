@@ -4,11 +4,86 @@
 	volume = {11},
 	issn = {1662-453X},
 	url = {https://www.frontiersin.org/articles/10.3389/fnins.2017.00682},
+	doi = {10.3389/fnins.2017.00682},
 	abstract = {Spiking neural networks (SNNs) can potentially offer an efficient way of doing inference because the neurons in the networks are sparsely activated and computations are event-driven. Previous work showed that simple continuous-valued deep Convolutional Neural Networks (CNNs) can be converted into accurate spiking equivalents. These networks did not include certain common operations such as max-pooling, softmax, batch-normalization and Inception-modules. This paper presents spiking equivalents of these operations therefore allowing conversion of nearly arbitrary CNN architectures. We show conversion of popular CNN architectures, including VGG-16 and Inception-v3, into SNNs that produce the best results reported to date on MNIST, CIFAR-10 and the challenging ImageNet dataset. SNNs can trade off classification error rate against the number of available operations whereas deep continuous-valued neural networks require a fixed number of operations to achieve their classification error rate. From the examples of LeNet for MNIST and BinaryNet for CIFAR-10, we show that with an increase in error rate of a few percentage points, the SNNs can achieve more than 2x reductions in operations compared to the original CNNs. This highlights the potential of SNNs in particular when deployed on power-efficient neuromorphic spiking neuron chips, for use in embedded applications.},
 	urldate = {2022-10-25},
 	journal = {Frontiers in Neuroscience},
 	author = {Rueckauer, Bodo and Lungu, Iulia-Alexandra and Hu, Yuhuang and Pfeiffer, Michael and Liu, Shih-Chii},
 	year = {2017},
+	keywords = {⛔ No INSPIRE recid found},
+}
+
+@article{gautrais_rate_1998,
+	title = {Rate coding versus temporal order coding: a theoretical approach},
+	volume = {48},
+	shorttitle = {Rate coding versus temporal order coding},
+	doi = {10.1016/S0303-2647(98)00050-1},
+	number = {1-3},
+	journal = {Biosystems},
+	author = {Gautrais, Jacques and Thorpe, Simon},
+	year = {1998},
+	note = {Publisher: Elsevier},
+	keywords = {⛔ No INSPIRE recid found},
+	pages = {57--65},
+}
+
+@article{delorme_spikenet_1999,
+	title = {{SpikeNET}: {A} simulator for modeling large networks of integrate and fire neurons},
+	volume = {26},
+	shorttitle = {{SpikeNET}},
+	doi = {10.1016/S0925-2312(99)00095-8},
+	journal = {Neurocomputing},
+	author = {Delorme, Arnaud and Gautrais, Jacques and Van Rullen, Rufin and Thorpe, Simon},
+	year = {1999},
+	note = {Publisher: Elsevier},
+	keywords = {⛔ No INSPIRE recid found},
+	pages = {989--996},
+}
+
+@article{serre_feedforward_2007,
+	title = {A feedforward architecture accounts for rapid categorization},
+	volume = {104},
+	doi = {10.1073/pnas.0700622104},
+	number = {15},
+	journal = {Proceedings of the National Academy of Sciences of the United States of America},
+	author = {Serre, T. and Oliva, A. and Poggio, T.},
+	year = {2007},
+	note = {tex.bdsk-url-2: https://doi.org/10.1073/pnas.0700622104
+tex.date-added: 2022-05-05 19:08:15 +0200
+tex.date-modified: 2022-05-05 19:08:15 +0200},
+	keywords = {⛔ No INSPIRE recid found},
+	pages = {6424--6429},
+}
+
+@inproceedings{state_training_2019,
+	address = {Cham},
+	series = {Lecture {Notes} in {Computer} {Science}},
+	title = {Training {Delays} in {Spiking} {Neural} {Networks}},
+	isbn = {978-3-030-30487-4},
+	doi = {10.1007/978-3-030-30487-4_54},
+	abstract = {Spiking Neural Networks (SNNs) are a promising computational paradigm, both to understand biological information processing and for low-power, embedded chips. Although SNNs are known to encode information in the precise timing of spikes, conventional artificial learning algorithms do not take this into account directly. In this work, we implement the spike timing by training the synaptic delays in a single layer SNN. We use two different approaches: a classical gradient descent and a direct algebraic method that is based on a complex-valued encoding of the spikes. Both algorithms are equally able to correctly solve simple detection tasks. Our work provides new optimization methods for the data analysis of highly time-dependent data and training methods for neuromorphic chips.},
+	language = {en},
+	booktitle = {Artificial {Neural} {Networks} and {Machine} {Learning} – {ICANN} 2019: {Theoretical} {Neural} {Computation}},
+	publisher = {Springer International Publishing},
+	author = {State, Laura and Vilimelis Aceituno, Pau},
+	editor = {Tetko, Igor V. and Kůrková, Věra and Karpov, Pavel and Theis, Fabian},
+	year = {2019},
+	keywords = {⛔ No INSPIRE recid found},
+	pages = {713--717},
+}
+
+@book{datadien_right_2011,
+	title = {The {Right} {Delay} - {Detecting} {Specific} {Spike} {Patterns} with {STDP} and {Axonal} {Conduction} {Delays}.},
+	abstract = {Axonal conduction delays should not be ignored in simulations of spiking neural networks. Here it is shown that by using axonal
+conduction delays, neurons can display sensitivity to a specific spatio-temporal spike pattern. By using delays that complement
+the firing times in a pattern, spikes can arrive simultaneously at an output neuron, giving it a high chance of firing in
+response to that pattern. An unsupervised learning mechanism called spike-timing-dependent plasticity then increases the weights
+for connections used in the pattern, and decreases the others. This allows for an attunement of output neurons to specific
+activity patterns, based on temporal aspects of axonal conductivity.},
+	author = {Datadien, Arvind and Haselager, Pim and Sprinkhuizen-Kuyper, Ida},
+	month = jan,
+	year = {2011},
+	note = {Pages: 99},
 	keywords = {⛔ No INSPIRE recid found},
 }
 
@@ -1461,46 +1536,6 @@
 	year = {2001},
 	keywords = {Action Potentials, Animals, Cell Membrane, Cerebral Cortex, Cortical dynamics, Humans, Integrate-and-fire neurons, Models, Statistical, Nerve Net, Neural Networks, Computer, Neurons, Pulse packets, Single-trial analysis, Spike patterns, Spiking neurons, Synaptic Transmission, Synfire chains, Variability, ⛔ No INSPIRE recid found},
 	pages = {657--673},
-}
-
-@article{gautrais_rate_1998,
-	title = {Rate coding versus temporal order coding: a theoretical approach},
-	volume = {48},
-	shorttitle = {Rate coding versus temporal order coding},
-	number = {1-3},
-	journal = {Biosystems},
-	author = {Gautrais, Jacques and Thorpe, Simon},
-	year = {1998},
-	note = {Publisher: Elsevier},
-	keywords = {⛔ No INSPIRE recid found},
-	pages = {57--65},
-}
-
-@article{delorme_spikenet_1999,
-	title = {{SpikeNET}: {A} simulator for modeling large networks of integrate and fire neurons},
-	volume = {26},
-	shorttitle = {{SpikeNET}},
-	journal = {Neurocomputing},
-	author = {Delorme, Arnaud and Gautrais, Jacques and Van Rullen, Rufin and Thorpe, Simon},
-	year = {1999},
-	note = {Publisher: Elsevier},
-	keywords = {⛔ No INSPIRE recid found},
-	pages = {989--996},
-}
-
-@article{serre_feedforward_2007,
-	title = {A feedforward architecture accounts for rapid categorization},
-	volume = {104},
-	doi = {10/cr3ksx},
-	number = {15},
-	journal = {Proceedings of the National Academy of Sciences of the United States of America},
-	author = {Serre, T. and Oliva, A. and Poggio, T.},
-	year = {2007},
-	note = {tex.bdsk-url-2: https://doi.org/10.1073/pnas.0700622104
-tex.date-added: 2022-05-05 19:08:15 +0200
-tex.date-modified: 2022-05-05 19:08:15 +0200},
-	keywords = {⛔ No INSPIRE recid found},
-	pages = {6424--6429},
 }
 
 @misc{jeremie_ultrafast_2022,
