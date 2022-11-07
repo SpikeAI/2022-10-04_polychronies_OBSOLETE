@@ -80,20 +80,20 @@
 \TitleCitation{Precise spiking motifs}
 
 % Author Orchid ID: enter ID or remove command
-\newcommand{\orcidauthorA}{0000-0002-9536-010X} % Add \orcidA{} behind the author's name
+\newcommand{\orcidauthorAnG}{0000-0002-9536-010X} % Add \orcidA{} behind the author's name
 %\newcommand{\orcidauthorB}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
-\newcommand{\orcidauthorB}{0000-0003-3916-0514}
-\newcommand{\orcidauthorC}{0000-0001-8821-5556}
-\newcommand{\orcidauthorD}{0000-0002-3107-4788}
+\newcommand{\orcidauthorAmG}{0000-0003-3916-0514}
+\newcommand{\orcidauthorJN}{0000-0001-8821-5556}
+\newcommand{\orcidauthorLP}{0000-0002-3107-4788}
 
 % Authors, for the paper (add full first names)
 \Author{
 Antoine Grimaldi $^{1}$% $^{1,\dagger,\ddagger}$
-\orcidA{}, 
-Amélie Gruel $^{2}$\orcidB{}, % $^{2,\dagger,\ddagger}$,
+\orcidAnG{}, 
+Amélie Gruel $^{2}$\orcidAmG{}, % $^{2,\dagger,\ddagger}$,
 Camille Besnainou $^{1}$,
-Jean Martinet $^{2}$\orcidC{},  
-and Laurent Perrinet $^{1,}$\orcidD{}*}
+Jean Martinet $^{2}$\orcidJN{},  
+and Laurent Perrinet $^{1,}$\orcidLP{}*}
 
 
 %\longauthorlist{yes}
@@ -245,7 +245,7 @@ In particular, it was shown that a simple model may allow the propagation of suc
 \caption{Simulation of a synfire propagation \href{https://brian2.readthedocs.io/en/stable/examples/frompapers.Diesmann_et_al_1999.html}{using Brian}. The model consists of 10 groups of 100 neurons each. A pulse with a given jitter is generated in the first group which here generates a pulse after a certain processing delay in the second group with a lower jitter. This allows the propagation of the synchronous activity along the chain of the neural groups.}\label{fig:diesman}
 \end{figure}
 %----------------------------%
-Attempts have been made to detect such synfire chains in neurobiological data. \citet{schrader_detecting_2008} envisioned that ``sensitivity is high enough to detect synfire chain activity in simultaneous single-unit recordings of 100 to 200 neurons from such data, enabling application to experimental data in the near future.'' Further models have shown that such synfire chains could be embedded in topographies~\citep{aviel_embedding_2003}, while others used conductance-based neurons with feed-forward inhibition to improve the robustness of the propagation~\citep{kremkow_functional_2010}. In particular, this was implemented as a computational neuroscience benchmark model using the pyNN language~\citep{davison_pynn_2008} both in CPU-based and neuromorphic hardware~\citep{pfeil_six_2013} (see Figure~\ref{fig:pynn}).
+Attempts have been made to detect such synfire chains in neurobiological data.~\citet{schrader_detecting_2008} envisioned that ``sensitivity is high enough to detect synfire chain activity in simultaneous single-unit recordings of 100 to 200 neurons from such data, enabling application to experimental data in the near future.'' Further models have shown that such synfire chains could be embedded in topographies~\citep{aviel_embedding_2003}, while others used conductance-based neurons with feed-forward inhibition to improve the robustness of the propagation~\citep{kremkow_functional_2010}. In particular, this was implemented as a computational neuroscience benchmark model using the pyNN language~\citep{davison_pynn_2008} both in CPU-based and neuromorphic hardware~\citep{pfeil_six_2013} (see Figure~\ref{fig:pynn}).
 %
 %----------------------------%
 \begin{figure}
@@ -582,7 +582,7 @@ This section has provided evidence that polychronous groups are an important asp
 % solutions usuellement utilisées - surrogate gradient
 
 % autres méthodes
-Spatio-temporal kernels: \citep{yu_stsc-snn_2022}
+Spatio-temporal kernels:~\citep{yu_stsc-snn_2022}
 
 
 \subsection{Methods using precise timings}
@@ -634,15 +634,15 @@ Despite the extensive computer evidence of the effectiveness of precise spiking 
 
 % First biological observations
 
-One of the first significant evidence of any neuronal delay in the information propagation within the animal brain came from Young's study of the squid giant axon \cite{young_1938}:
+One of the first significant evidence of any neuronal delay in the information propagation within the animal brain came from Young's study of the squid giant axon~\cite{young_1938}:
 
-However, it was not before The interaural time difference, allowing for the azimutal localization of sound by barn owls. According to Gerstner in 1996, there is a true paradox in auditory neural systems since “neural networks encode behaviourally relevant signals in the range of a few $\mu s$ with neurons that are at least one order of magnitude slower” \cite{gerstner_1996}. 
+However, it was not before The interaural time difference, allowing for the azimutal localization of sound by barn owls. According to Gerstner in 1996, there is a true paradox in auditory neural systems since “neural networks encode behaviourally relevant signals in the range of a few $\mu s$ with neurons that are at least one order of magnitude slower”~\cite{gerstner_1996}. 
 
 Various biological experiments have thus revealed the existence of a biological axonal delay precisely adjusted according to variations of parameters in the brainstem.
 
 % The importance of myelination
 
-Over and over, myelin has been identified as one of the parameters mentioned above. Indeed, this multilaminar coating formed by the glial cells in the Vertebrates' nervous system facilitates both the neural circuit function and the behavioural performance \cite{fields_2015}. Experiments on mammals show that myelination is directly related to learning and memory consolidation, 
+Over and over, myelin has been identified as one of the parameters mentioned above. Indeed, this multilaminar coating formed by the glial cells in the Vertebrates' nervous system facilitates both the neural circuit function and the behavioural performance~\cite{fields_2015}. Experiments on mammals show that myelination is directly related to learning and memory consolidation, 
 %especially motor training and in enriched environments, and 
 both at an early age and in older animals, due to its involvement in coupling the activity of distant neuron populations. 
 %It is worth highlighting that myelination becomes increasingly important in larger brains where conductance delays are substantial and brainwave rhythms are critical; synchrony errors can lead to neuropsychiatric and neurological dysfunctions. 
@@ -662,7 +662,7 @@ hierarchies
 developpment
 
 %
-%The introduction should briefly place the study in a broad context and highlight why it is important. It should define the purpose of the work and its significance. The current state of the research field should be reviewed carefully and key publications cited. Please highlight controversial and diverging hypotheses when necessary. Finally, briefly mention the main aim of the work and highlight the principal conclusions. As far as possible, please keep the introduction comprehensible to scientists outside your particular field of research. Citing a journal paper \cite{ref-journal}. Now citing a book reference \cite{ref-book1,ref-book2} or other reference types \cite{ref-unpublish,ref-communication,ref-proceeding}. Please use the command \citep{ref-thesis,ref-url} for the following MDPI journals, which use author--date citation: Administrative Sciences, Arts, Econometrics, Economies, Genealogy, Humanities, IJFS, Journal of Intelligence, Journalism and Media, JRFM, Languages, Laws, Religions, Risks, Social Sciences, Literature.
+%The introduction should briefly place the study in a broad context and highlight why it is important. It should define the purpose of the work and its significance. The current state of the research field should be reviewed carefully and key publications cited. Please highlight controversial and diverging hypotheses when necessary. Finally, briefly mention the main aim of the work and highlight the principal conclusions. As far as possible, please keep the introduction comprehensible to scientists outside your particular field of research. Citing a journal paper~\cite{ref-journal}. Now citing a book reference~\cite{ref-book1,ref-book2} or other reference types~\cite{ref-unpublish,ref-communication,ref-proceeding}. Please use the command~\citep{ref-thesis,ref-url} for the following MDPI journals, which use author--date citation: Administrative Sciences, Arts, Econometrics, Economies, Genealogy, Humanities, IJFS, Journal of Intelligence, Journalism and Media, JRFM, Languages, Laws, Religions, Risks, Social Sciences, Literature.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{Materials and Methods}
 %
@@ -916,8 +916,8 @@ All appendix sections must be cited in the main text. In the appendices, Figures
 %\end{thebibliography}
 
 % For the MDPI journals use author-date citation, please follow the formatting guidelines on http://www.mdpi.com/authors/references
-% To cite two works by the same author: \citeauthor{ref-journal-1a} (\citeyear{ref-journal-1a}, \citeyear{ref-journal-1b}). This produces: Whittaker (1967, 1975)
-% To cite two works by the same author with specific pages: \citeauthor{ref-journal-3a} (\citeyear{ref-journal-3a}, p. 328; \citeyear{ref-journal-3b}, p.475). This produces: Wong (1999, p. 328; 2000, p. 475)
+% To cite two works by the same author:~\citeauthor{ref-journal-1a} (\citeyear{ref-journal-1a},~\citeyear{ref-journal-1b}). This produces: Whittaker (1967, 1975)
+% To cite two works by the same author with specific pages:~\citeauthor{ref-journal-3a} (\citeyear{ref-journal-3a}, p. 328;~\citeyear{ref-journal-3b}, p.475). This produces: Wong (1999, p. 328; 2000, p. 475)
 
 \end{adjustwidth}
 \end{document}
