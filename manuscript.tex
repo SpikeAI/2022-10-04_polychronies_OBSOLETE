@@ -89,11 +89,11 @@
 % Authors, for the paper (add full first names)
 \Author{
 Antoine Grimaldi $^{1}$% $^{1,\dagger,\ddagger}$
-\orcidAnG{}, 
-Amélie Gruel $^{2}$\orcidAmG{}, % $^{2,\dagger,\ddagger}$,
+\orcidauthorAnG{}, 
+Amélie Gruel $^{2}$\orcidauthorAmG{}, % $^{2,\dagger,\ddagger}$,
 Camille Besnainou $^{1}$,
-Jean Martinet $^{2}$\orcidJN{},  
-and Laurent Perrinet $^{1,}$\orcidLP{}*}
+Jean Martinet $^{2}$\orcidauthorJN{},  
+and Laurent Perrinet $^{1,}$\orcidauthorLP{}*}
 
 
 %\longauthorlist{yes}
@@ -533,7 +533,7 @@ Going further, researchers have found that  precise repetitions of spontaneous p
 \caption{Fig. 1. from~\citep{ikegaya_synfire_2004} repeated motifs of spontaneous synaptic activity \textit{in vitro} and \textit{in vivo}. (A) Repeated motifs of intracellular activity from layer 5 pyramidal neurons in slices. Panels show segments (red) of the same voltage-clamp recording from the same cell, repeating seconds or minutes after the initial occurrence (blue). Arrows indicate timings of repeated PSCs. (i) Upper trace: low--temporal resolution display of spontaneous activity of a neuron. Lower traces: higher resolution display of the repeated motif at indicated regions of the trace (a to c). (ii) Example of a longer motif. (B) Three repetitions of a motif. The top traces show the motifs superimposed on each other (blue, green, and red), the middle traces show these same traces individually, and the bottom traces show temporally magnified regions of the motifs (a to c). (C) Repeated sequences of intracellular current-clamp recordings \textit{in vivo}. Two (i) and three (ii) repetitions of motifs are shown. Shuffle tests were performed on traces (i), a to c, yielding significantly fewer repeats (fig.~S2, P  0.02). In (i), the blue trace is shifted --2.75 mV; in (ii), the blue trace is shifted --1.58 mV, and the green +0.79 mV.}\label{fig:Ikegaya2004}
 \end{figure}
 
-It is interesting to make a parallel with the ``Rapid Formation of Robust Auditory Memories'' reported in~\citep{agus_rapid_2010} which uses noise patterns. They ``used random waveforms to probe the formation of new memories for arbitrary complex sounds. A behavioral measure was designed, based on the detection of repetitions embedded in noises up to $4 \s$ long''. The task is to detect the repetition of the same (frozen) noise within a trial. " Unbeknownst to listeners, some noise samples reoccurred randomly throughout an experimental block." They showed that the ``repeated exposure induced learning for otherwise totally unpredictable and meaningless sounds'' by showing that the sensitivity increases in that case. Note that ``acoustical analyses failed to reveal any obvious differences between good and bad noises'' and that ``time reversal had no significant effect on the RefRN advantage'' (which is quite surprising). The mearning is unsupervised (statistical, automatic), fast-acting (phase transition, ``insight''), and long-lasting (memorization).
+It is interesting to make a parallel with the ``Rapid Formation of Robust Auditory Memories'' reported in~\citep{agus_rapid_2010} which uses noise patterns. They ``used random waveforms to probe the formation of new memories for arbitrary complex sounds. A behavioral measure was designed, based on the detection of repetitions embedded in noises up to $4 \si{\second}$ long''. The task is to detect the repetition of the same (frozen) noise within a trial. " Unbeknownst to listeners, some noise samples reoccurred randomly throughout an experimental block." They showed that the ``repeated exposure induced learning for otherwise totally unpredictable and meaningless sounds'' by showing that the sensitivity increases in that case. Note that ``acoustical analyses failed to reveal any obvious differences between good and bad noises'' and that ``time reversal had no significant effect on the RefRN advantage'' (which is quite surprising). The mearning is unsupervised (statistical, automatic), fast-acting (phase transition, ``insight''), and long-lasting (memorization).
 
 
 TODO: re-read~\citep{luczak_packet-based_2015} Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745--55.
@@ -546,6 +546,12 @@ Such observations suggest that neural groups or ensembles, rather than individua
 \section{Precise spiking motifs in neuromorphic engineering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Artificial intelligence has made huge advances in the past decades, now deep learning algorithms outperform humans at complex tasks like natural image recognition or abstract strategy board games. Machine learning algorithms still suffer from adversarial attacks or a lack of generalization capacity but their main weakness, compared to biological neural networks, rely on their poor energy efficiency. Neuromorphic engineering intends to mimic the neural bases of communication with a wide variety of technics, from strictly analog circuits to software-based neuromorphic systems (ref de revue?), and to develop tools improving the capacities of current artificial intelligence. Because the reduced energy consumption of biological networks can be explained by the use of spikes and asynchronous responses to exchange information (ref), neuromorphic chips use this parallel and event-based representation to make computations. This is also the case for Dynamic Vision Sensors (DVS) which provide a stream of binary asynchronous events signaling detectable changes in luminance. These devices, also named ``silicon retinas'' (see Figure \ref{fig:silicon_retina}), show great improvements in terms of memory allocation for the recording of a visual scene (ref). Another important distinction with classical Von Neumann architectures is the localized memory of this new type of chips. It is materialized by the physical connections between the processing units that can store information, an example directly inspired by synaptic plasticity of such connection is the memristor (ref). Using these event-based computations as a building brick, neuromorphic engineering proposes new hardware designs perfect to simulate SNNs and use the full power of asynchronous computations observed in biological systems. Many connections can be drawn between neuromorphic engineering and computational neuroscience to aim at solving both research and technology challenges (ref). Just as communication between neurons can be illustrated by a raster plot, information exchanges in neuromorphic hardware is described as event streams by an Address-Event Representation (AER). Here we extend the review of the use of precise spike timing to this emerging field. 
+
+\subsection{On the importance of spatio-temporal information in event-based recordings}
+
+With their AER and their submillisecond temporal precision, DVS bring a new approach to the storage and use of visual information. This neuromorphic sensor is mostly used in robotics  
+
 We have seen that precise spiking motifs may be used in theoretical neuroscience models, themselves being used to derive novel methods for the understanding of neurobiological data. Interestingly some of these computational neuroscience models aim at solving the spike sorting method using STDP rules~\citep{bernert_fully_2017,bernert_attention-based_2018}
 A third class of models coming from the field of neuromorphic engineering, a priori different from that used in neuroscience, are of interest in this review as they often take advantage of minute temporal information.  
 
