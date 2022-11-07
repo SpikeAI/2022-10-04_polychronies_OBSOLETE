@@ -559,29 +559,29 @@ With the AER specification and their submillisecond temporal precision, DVS brin
 
 such as estimating optical flow and time-to-contact~\cite{benosman2013event, tschechne2014bio, bardow2016simultaneous}, inferring 3D reconstruction~\cite{hidalgo2020learning, osswald2017spiking, zhu2018realtime} or solving the simultaneous localization and mapping problem~\cite{gallego2017event, kim2016real} %à voir si je reformule cette phrase empruntée du pami
 
-We have seen that precise spiking motifs may be used in theoretical neuroscience models, themselves being used to derive novel methods for the understanding of neurobiological data. Interestingly some of these computational neuroscience models aim at solving the spike sorting method using STDP rules~\citep{bernert_fully_2017,bernert_attention-based_2018}
-A third class of models coming from the field of neuromorphic engineering, a priori different from that used in neuroscience, are of interest in this review as they often take advantage of minute temporal information.  
+%We have seen that precise spiking motifs may be used in theoretical neuroscience models, themselves being used to derive novel methods for the understanding of neurobiological data. Interestingly some of these computational neuroscience models aim at solving the spike sorting method using STDP rules~\citep{bernert_fully_2017,bernert_attention-based_2018}
+%A third class of models coming from the field of neuromorphic engineering, a priori different from that used in neuroscience, are of interest in this review as they often take advantage of minute temporal information.  
 
-\subsection{The emergence of neuromorphic engineering}
+%\subsection{The emergence of neuromorphic engineering}
 % intro 
-The field of neuromorphic engineering has emerged with the need for dedicated hardware to simulate SNNs.
+%The field of neuromorphic engineering has emerged with the need for dedicated hardware to simulate SNNs.
 
-uses a FPGA~\citep{dahlem_dynamics_2009}
+%uses a FPGA~\citep{dahlem_dynamics_2009}
 
-V. Thanasoulis, B. Vogginger, J. Partzsch and C. Mayr, ``Delay-Based Neural Computation: Pulse Routing Architecture and Benchmark Application in FPGA,'' 2021 28th IEEE International Conference on Electronics, Circuits, and Systems (ICECS), 2021, pp.~1-5
-~\citep{thanasoulis_delay-based_2021}
+%V. Thanasoulis, B. Vogginger, J. Partzsch and C. Mayr, ``Delay-Based Neural Computation: Pulse Routing Architecture and Benchmark Application in FPGA,'' 2021 28th IEEE International Conference on Electronics, Circuits, and Systems (ICECS), 2021, pp.~1-5
+%~\citep{thanasoulis_delay-based_2021}
 
 
 % un exemple de polychronization
- ~\citet{wang_neuromorphic_2015} presented a hardware implementation of polychronous networks in which propagation delays are learned in a supervised manner, based on the expected firing time of the post-synaptic neuron. This paper proposes a supervised delay learning algorithm for spiking neurons with temporal encoding, in which both the weight and delay of a synaptic connection can be adjusted to enhance the learning performance.
+% ~\citet{wang_neuromorphic_2015} presented a hardware implementation of polychronous networks in which propagation delays are learned in a supervised manner, based on the expected firing time of the post-synaptic neuron. This paper proposes a supervised delay learning algorithm for spiking neurons with temporal encoding, in which both the weight and delay of a synaptic connection can be adjusted to enhance the learning performance.
 
 % d'autres applications
-Event-Based Computation for Touch Localization Based on Precise Spike Timing : Here we propose a neuromorphic model inspired by the sand scorpion to explore the benefits of temporal coding, and validate it in an event-based sensory-processing task. The task consists in localizing a target using only the relative spike timing of eight spatially-separated vibration sensors~\citep{haessig_event-based_2020}.
+%Event-Based Computation for Touch Localization Based on Precise Spike Timing : Here we propose a neuromorphic model inspired by the sand scorpion to explore the benefits of temporal coding, and validate it in an event-based sensory-processing task. The task consists in localizing a target using only the relative spike timing of eight spatially-separated vibration sensors~\citep{haessig_event-based_2020}.
 
 
-\subsection{Temporal pattern detection in event-based cameras}
+%\subsection{Temporal pattern detection in event-based cameras}
 % le cas spécifique des event-based cameras
-Remarkably, novel neuromorphic chips use a representation similar to that of real neurons~\citep{rasetto_challenges_2022}. For example, event-based cameras provide a stream of binary asynchronous events signaling detectable changes in luminance, and information is represented by these spike-based temporal motifs, hence their name ``silicon retinas'' (see Figure \ref{fig:silicon_retina}). For such devices, it is crucial to better understand the potential of using such event-based representations in order to devise novel algorithms.
+%Remarkably, novel neuromorphic chips use a representation similar to that of real neurons~\citep{rasetto_challenges_2022}. For example, event-based cameras provide a stream of binary asynchronous events signaling detectable changes in luminance, and information is represented by these spike-based temporal motifs, hence their name ``silicon retinas'' (see Figure \ref{fig:silicon_retina}). For such devices, it is crucial to better understand the potential of using such event-based representations in order to devise novel algorithms.
 
 %----------------------------%
 \begin{figure}
@@ -598,20 +598,20 @@ This section has provided evidence that polychronous groups are an important asp
 Spatio-temporal kernels:~\citep{yu_stsc-snn_2022}
 
 
-\subsection{Methods using precise timings}
+\subsection{Precise timings on neuromorphic hardware}
 
 % HOTS
 
- ~\citep{lagorce_hots_2017} 
+ %~\citep{lagorce_hots_2017} 
  
- ~\citep{benosman_asynchronous_2012} 
+ %~\citep{benosman_asynchronous_2012} 
  
- ~\citep{benosman_event-based_2014}
+ %~\citep{benosman_event-based_2014}
  
-  ~\citep{dardelet_event-by-event_2021}
+  %~\citep{dardelet_event-by-event_2021}
  
 % Grimaldi CBMI + PAMI
-~\citep{lagorce_hots_2017, grimaldi_homeostatic_2021,grimaldi_robust_2022}
+%~\citep{lagorce_hots_2017, grimaldi_homeostatic_2021,grimaldi_robust_2022}
 
 % Grimaldi ICIP
 
