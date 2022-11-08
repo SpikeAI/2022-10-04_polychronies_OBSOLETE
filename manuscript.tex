@@ -282,13 +282,26 @@ Interestingly, it can be shown that these travelling waves could have a measurab
 \subsection{A rediscovered hypothesis: precise spiking motifs in cell assemblies}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Travelling waves indicate that spatio-temporal correlations could play an important role in shaping neural activity. For instance, statistical dependencies in the responses of sensory neurons govern both the amount of stimulus information conveyed and the means by which downstream neurons can extract it. In particular, this was put in evidence by analyzing the functional significance of correlated firing in a complete population of macaque parasol retinal ganglion cells using a model of multi-neuron spike responses~\citep{pillow_spatio-temporal_2008}, which shows precise spatio-temporal differences in this recurrently connected assembly. The different aspects of information in the data are evaluated by a decoding strategy, highlighting the role of correlations. Note that a similar dataset used in~\citep{schneidman_weak_2006} is available from M. Berry's lab~\citep{berry_spike_2022} and allows performing and validate these hypotheses. However, a limit of explaining such data with traveling waves is that in theory a traveling wave would be stationary, which is incompatible with the limits in space and time of a neural system. 
+Travelling waves indicate that spatio-temporal correlations could play an important role in shaping neural activity. For instance, statistical dependencies in the responses of sensory neurons govern both the amount of stimulus information conveyed and the means by which downstream neurons can extract it. In particular, this was put in evidence by analyzing the functional significance of correlated firing in a complete population of macaque parasol retinal ganglion cells using a model of multi-neuron spike responses~\citep{pillow_spatio-temporal_2008}, which shows precise spatio-temporal differences in this recurrently connected assembly. The different aspects of information in the data are evaluated by a decoding strategy, highlighting the role of correlations. Note that a similar dataset used in~\citep{schneidman_weak_2006} is available from M. Berry's lab~\citep{berry_spike_2022} and allows performing and validate these hypotheses. However, a limit of explaining such data with traveling waves is that in theory a traveling wave would be stationary, which is incompatible with the limits in space and time of a neural system. Recent observations may suggest that neural groups or ensembles, rather than individual neurons, are emergent functional units of cortical activity. ~\citep{miller_visual_2014} shows, using two-photon calcium imaging of populations of neurons from the primary visual cortex of awake mice during visual stimulation and spontaneous activity, that whereas intrinsic ensembles recur at random time intervals, visually evoked ensembles are time-locked to stimuli. It proposes that visual stimuli recruit endogenously generated ensembles to represent visual attributes. Note that evoked ensembles in response to a natural movie played in a loop were precisely timed across repetitions. % (Fig. 7).
 
-From another viewpoint, there is a substantial literature in neurobiology indicating that brain dynamics often organize into stereotyped sequences such as synfire chains~\citep{ikegaya_synfire_2004}, packets~\citep{luczak_sequential_2007} or hippocampal sequences~\citep{pastalkova_internally_2008}. Additional studies detail the role of such precise spike timing in downstream information transfer and coding~\citep{villette_internally_2015,branco_dendritic_2010,luczak_packet-based_2015}. This is for instance relevant in sensory pathways in vision~\citep{meister_concerted_1995}, audition~\citep{decharms_primary_1996}, olfaction~\citep{wehr_odour_1996} or touch~\citep{johansson_first_2004}. 
 
-In particular, stereotyped sequences of neural activation have been described in the adult hippocampus and related to its function in mental travel in time and space~\citep{buzsaki_space_2018}. These sequences can be internally generated~\citep{pastalkova_internally_2008,villette_internally_2015} and are formed by the chained activation of orthogonal assemblies, themselves organized as sequence packets~\citep{malvache_awake_2016}. Thus, hippocampal sequences are formed by the ordered activation of smaller sequence motifs. They are stereotyped and robust, since neurons can be activated in the same order across days (see Figure~\ref{fig:haimerl} from~\citep{haimerl_internal_2019}). As a consequence, hippocampal sequences may rely on an internally hardwired structure and form the functional building blocks for encoding, storing and retrieving experience.
+From another viewpoint, there is a substantial literature in neurobiology indicating that brain dynamics often organize into stereotyped sequences such as synfire chains~\citep{ikegaya_synfire_2004}, packets~\citep{luczak_sequential_2007} or hippocampal sequences~\citep{pastalkova_internally_2008}. %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Explictly decoding spiking motifs}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%We have previously seen that neurobiologists have described stereotyped sequences of neural activation, notably in the hippocampus~\citep{pastalkova_internally_2008,villette_internally_2015,malvache_awake_2016}, and that neurons can be activated in the same order across days~\citep{haimerl_internal_2019}. 
+Going further, researchers have found that  precise repetitions of spontaneous patterns of synaptic inputs in neocortical neurons \textit{in vivo} and \textit{in vitro}. These patterns repeat after minutes, maintaining millisecond accuracy. Indeed,~\citet{ikegaya_synfire_2004} demonstrated that in cortical activity, one can find a repetition of several motifs in spike activity (duration around 1s +/- .5 s, some events in motifs are of similar size but sometimes absent). These sequences can be specific of a particular layer or column, can be synchronized with network activity oscillation, and can involve several cells. They also demonstrated that these sequences can form super sequences, so-called \emph{cortical songs}. It consists of the assembly of several sequences which repeat in a specific order with a compressed timing. \emph{In vivo} spontaneous activity also reveals repeating sequences: about 3000 sequences, each involving 3-10 cells out of about 900, and lasting up to 3 seconds. Sequences have specific topographic structures, in some cases involving only a particular layer or a vertical column of cells or cells located in a cluster, and are associated with a structured spatial organization of the neurons that formed them. %In cortical songs, there is a ``compressing timing'' which may be taken into account by a similar mechanism as maxpooling in CNNs for space, but in time. Or there may be a mechanism for controlling the replay speed (pulvinar, \ldots{} , ?)
+%----------------------------%
+\begin{figure}
+\centering
+\includegraphics[width=.6\linewidth]{figures/Ikegaya2004zse0150424620001.jpeg}%pcbi.1006283.g001.PNG_L.png}
+\caption{Fig. 1. from~\citep{ikegaya_synfire_2004} repeated motifs of spontaneous synaptic activity \textit{in vitro} and \textit{in vivo}. (A) Repeated motifs of intracellular activity from layer 5 pyramidal neurons in slices. Panels show segments (red) of the same voltage-clamp recording from the same cell, repeating seconds or minutes after the initial occurrence (blue). Arrows indicate timings of repeated PSCs. (i) Upper trace: low--temporal resolution display of spontaneous activity of a neuron. Lower traces: higher resolution display of the repeated motif at indicated regions of the trace (a to c). (ii) Example of a longer motif. (B) Three repetitions of a motif. The top traces show the motifs superimposed on each other (blue, green, and red), the middle traces show these same traces individually, and the bottom traces show temporally magnified regions of the motifs (a to c). (C) Repeated sequences of intracellular current-clamp recordings \textit{in vivo}. Two (i) and three (ii) repetitions of motifs are shown. Shuffle tests were performed on traces (i), a to c, yielding significantly fewer repeats (fig.~S2, P  0.02). In (i), the blue trace is shifted --2.75 mV; in (ii), the blue trace is shifted --1.58 mV, and the green +0.79 mV.}\label{fig:Ikegaya2004}
+\end{figure}
+%----------------------------%
 
-Interestingly, one theoretical viewpoint considers synfire braids~\citep{bienenstock_model_1995}, where a precise sequential motif of spikes will synchronize as it reaches the soma of a neuron for which synaptic delays are adequately tuned. Furthermore, computational modeling shows that at the scale of neurons, an efficient neural code can emerge where spike times are organized in prototypical, precise temporal motifs~\citep{izhikevich_polychronization_2006} which this author defined as \emph{polychronous groups}. The rest of this review will be devoted to present evidence for the use of precise spiking motifs in computational neuroscience, neurobiology and neuromorphic engineering.
+Additional studies detail the role of such precise spike timing in downstream information transfer and coding~\citep{villette_internally_2015,branco_dendritic_2010,luczak_packet-based_2015}. This is for instance relevant in sensory pathways in vision~\citep{meister_concerted_1995}, audition~\citep{decharms_primary_1996}, olfaction~\citep{wehr_odour_1996} or touch~\citep{johansson_first_2004}.  In particular, stereotyped sequences of neural activation have been described in the adult hippocampus and related to its function in mental travel in time and space~\citep{buzsaki_space_2018}. These sequences can be internally generated~\citep{pastalkova_internally_2008,villette_internally_2015} and are formed by the chained activation of orthogonal assemblies, themselves organized as sequence packets~\citep{malvache_awake_2016}. Thus, hippocampal sequences are formed by the ordered activation of smaller sequence motifs. They are stereotyped and robust, since neurons can be activated in the same order across days (see Figure~\ref{fig:haimerl} from~\citep{haimerl_internal_2019}). As a consequence, hippocampal sequences may rely on an internally hardwired structure and form the functional building blocks for encoding, storing and retrieving experience.
+
 %
 %----------------------------%
 \begin{figure}
@@ -297,9 +310,95 @@ Interestingly, one theoretical viewpoint considers synfire braids~\citep{bienens
 \caption{An example of a polychronous group seen in cortical slices. In this study by~\citep{haimerl_internal_2019}, an analysis of the raster plot shows repetitions of precise spiking motifs with a time scale of the order of seconds. (A) Calcium fluorescence (heatmap) of CA1 neurons participating to run sequences in consecutive imaging sessions. Cells have been selected and ordered with respect to their activity in the first imaging session (Top). The black line represents the speed of the mouse.}\label{fig:haimerl}
 \end{figure}
 %----------------------------%
-%
+
+It is interesting to make a parallel with the ``Rapid Formation of Robust Auditory Memories'' reported in~\citep{agus_rapid_2010} which uses noise patterns to observe if listeners could learn to detect repeated occurrences of some (frozen) noise patterns. In particular, they used random waveforms to probe the formation of new memories for arbitrary complex sounds. A behavioral measure was designed, based on the detection of repetitions embedded in noises up to $4 \si{\second}$ long. The task is to detect the repetition of the same (frozen) noise within a trial. Unbeknownst to listeners, some noise samples reoccurred randomly throughout an experimental block. They showed that the ``repeated exposure induced learning for otherwise totally unpredictable and meaningless sounds'' by showing that the sensitivity increases in that case. Note also that ``acoustical analyses failed to reveal any obvious differences between good and bad noises'' and that ``time reversal had no significant effect on the detection accuracy (which is quite surprising). The learning is unsupervised (statistical, automatic), fast-acting (phase transition, ``insight''), and long-lasting (memorization). 
+
+That results suggest that polychronous groups are not necessarily grouped on a topography and can be forming apparently randomly arranged connections. Interestingly, one theoretical viewpoint considers synfire braids~\citep{bienenstock_model_1995}, where a precise sequential motif of spikes will synchronize as it reaches the soma of a neuron for which synaptic delays are adequately tuned. Furthermore, computational modeling shows that at the scale of neurons, an efficient neural code can emerge where spike times are organized in prototypical, precise temporal motifs~\citep{izhikevich_polychronization_2006} which this author defined as \emph{polychronous groups}. The rest of this review will be devoted to present evidence for the use of precise spiking motifs in computational neuroscience, neurobiology and neuromorphic engineering.
+As a summary, it seems imperative to include such precise structural information should therefore be included in decoding algorithm for a better understanding of neural activity.
+
+
+% TODO: re-read~\citep{luczak_packet-based_2015} Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745--55.
+% \subsubsection{Neural Variability and Sampling-Based Probabilistic Representations in the Visual Cortex~\citep{orban_neural_2016}}
+% \begin{itemize}
+%  \item
+%   Stochastic sampling links perceptual uncertainty to neural response variability
+% \item
+%   Model accounts for independent changes in strength and variability of responses
+% \item
+%   Model predicts relationship between noise, signal, and spontaneous correlations
+% \item
+%   Stimulus statistics dependence of response statistics is explained
+% \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Precisely-timed spiking motifs in computational neuroscience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Understanding precise spiking motifs in neurobiology}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In this section, we will review current evidence of taking advantage of spiking motifs in neurobiology, that is, from actual recordings in biological tissues. In most generic computational models, the neural activity is assumed to be encoded in the firing rate. For instance, the output of the so-called linear non-linear (L-NL) models is assumed to model the response of a biological neuron as the sequence of a linear integration followed by a non-linear spiking response generating spikes according to a Poisson point-process. As such, a simple decoding strategy is to infer the input knowing the neuron's tuning curves~\citep{jazayeri_optimal_2006} or simply by a simple regression~\citep{berens_fast_2012}. This latter model assumes a Bernoulli model for the generation of spikes, such that the decoding amounts to a single-layer logistic regression. An important perspective of these methods used to decipher the recorded activity is that it could be ultimately used to fit neural network models to the recorded activity~\citep{bellec_fitting_2021}. In that paper, authors fit summary statistics of neural data with a differentiable spiking network model. The loss function is the cross entropy (following Bernouilli hypothesis with a GLM where each unit is modelled with an SRM neuron~\citep{gerstner_time_1995} with recurrent dynamics). In particular, it comes with \href{https://github.com/EPFL-LCN/pub-bellec-wang-2021-sample-and-measure}{code} and uses the publicly available \href{http://crcns.org/data-sets/vc/pvc-11}{V1-dataset} which allows supervising the model with the input being the movie and the output the spikes recorded. These type of model may infer sparse activity in a set of binary latent variables, each describing the activity of a cell assembly~\citep{warner_probabilistic_2022}.
+Using the right metric, as implemented in that paper by the chosen neural models, is essential in better understanding neural data. As such, all these models are dependent on a core definition of spike measures, and we will review here how precise spiking motifs are taken into account by such spike distances.
+%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Decoding neural activity using spike distances}\label{sec:detection}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+There are different solutions to provide with a distance between two given spike trains. A known measure is the Victor-Purpura distance, which showed that their findings are overcoming inconsistencies experienced with Poisson models of spike trains~\citep{victor_nature_1996}. In a later study,~\citet{van_rossum_novel_2001} have defined a distance that uses a time constant as a parameter. Depending on this parameter, the distance interpolates between a coincidence detector and a rate difference counter. Such distances were extended to non-Euclidean metrics and use morphological manipulations to compute spike train dissimilarity~\citet{kreuz_measuring_2007}. Mathematically, the stability of distance measures induced by level-crossing sampling can be evaluated~\citep{moser_stability_2014}, notably in light of the so-called Weyl's discrepancy measure~\citep{weyl_ueber_1916}, which may lead to the definition of a cross-correlation measure which is adapted to the event-based nature of spiking signals. These observations lead to the intuition that each distance may be related as the optimal solution of a generative model for these measures, possibly through non-linear relations~\citep{aronov_non-euclidean_2004}. % ~\citep{} 
+
+Let's now focus on distances defined based on a generative model formed by using precise spiking motifs. A review of the methods for neuronal response latency estimation exists and includes Bayesian binning~\citep{levakova_review_2015}. More broadly, unitary event analysis can be performed by a statistical model of coincidence detection~\citep{grun_unitary_2002-1}. This was extensively used in detecting above chance significant synchronous patterns~\citep{grun_unitary_2010}, in particular in recordings of pairs of neurons (see~\citep{riehle_spike_1997} for instance), and has been extended to non-stationary data~\citep{grun_unitary_2002}. A method to detect significant patterns of synchronous spiking in a subset of massively parallel spike trains in the presence of background activity can be defined using the statistical evaluation of synchronous spike patterns extracted by frequent item set mining~\citep{torre_statistical_2013}. By the same group, the SPADE, CAD or ASSET algorithms are methods for identification of spike patterns in massively parallel spike trains (the spiking activity of tens to hundred(s) of neurons recorded in parallel) by identifying fine temporal correlations in the$~\ms$ precision range~\citep{quaglio_methods_2018}. This was recently extended in~\citep{stella_3d-spade_2019} in order to find re-occurring patterns in parallel spike train data, and to determine their statistical significance. The extension improves the performance in the presence of patterns with different durations, as demonstrated by application to various synthetic data, such as surrogates generated to evaluate precisely timed higher-order spike correlations~\citep{stella_comparing_2022}.
+
+Another important algorithm, called SPOTDisClust, is based on the detection of structured temporal patterns~\citep{grossberger_unsupervised_2018}. They introduced an unsupervised method based for their detection from high-dimensional neural ensembles. The algorithm measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other. Many approaches to this problem are supervised. In other words, they take patterns occurring concurrently with a known event, such as the delivery of a stimulus for sensory neurons or the traversal of a running track for hippocampal place fields, as a ``template'' and then search for repetitions of the same template in spiking activity~\citep{nadasdy_replay_1999,lee_combinatorial_2004}. In SPOTDisClust, the learning is unsupervised. It uses the prior that there is only one spike per pattern. Using a so-called t-SNE projection (that allows to project this high-dimensional representation to a lower-dimension map) validated that this clustering method can retrieve all patterns from the data (see Figure~\ref{fig:SPOTDisClust}). The limits of this method are that it is computationally complex, block-based and strictly specialized for the task at hand. To overcome these difficulties, a novel method was recently developed~\citep{sotomayor-gomez_spikeship_2021}.
+%   Davidson TJ, Kloosterman F, Wilson MA. Hippocampal replay of extended experience. Neuron. 2009;63(4):497--507. pmid:19709631
+
+%----------------------------%
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{figures/pcbi.1006283.g001.png}%pcbi.1006283.g001.PNG_L.png}
+\caption{Fig 1 of~\citep{grossberger_unsupervised_2018}, showing simulated example illustrating the steps in SPOTDisClust. A) Structure of five ``ground-truth'' patterns (\ldots). For each pattern and each neuron, a random position was chosen for the activation pulse. B) Neuronal output is generated according to an inhomogeneous Poisson process, with rates dictated by the patterns in (A). (© Authors under a \href{https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006283}{CC licence})}\label{fig:SPOTDisClust}
+\end{figure}
+%----------------------------%
+%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Scaling up to very large scale data}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Over the past decade, tremendous technological advances across several disciplines have dramatically expanded the frontiers of experimentally accessible neuroscientific facts. Bridging across different spatial and temporal scales, combination of \textit{in vivo} two photon imaging, large population recording-array technologies, optogenetic circuit control tools, transgenic manipulations as well as large volume circuit reconstructions are now used to examine the function, structure and dynamics of neural networks on an unprecedented level of detail and precision. The daunting complexity of the biological reality revealed by these technologies highlights the importance of neurobiological knowledge to provide a conceptual bridge between abstract principles of brain function and their biological implementations within neural circuits. As a consequence, there is a growing need to scale these methods to larger amounts of data. 
+
+There are multiple solutions which aim at tackling this problem. One algorithm capable of achieving such a daunting task is the Rastermap algorithm~\citep{pachitariu_robustness_2018}. Basically, it re-arranges neurons in the raster plot based on similarity of activity and applies a deconvolution strategy based on a linear model. The model is \href{https://github.com/MouseLand/rastermap}{openly accessible} and has led to important discoveries. In~\citet{stringer_spontaneous_2019,stringer_high-dimensional_2019} for instance, it was shown that a neuronal population encodes information most efficiently when its stimulus responses are high-dimensional and uncorrelated, and most robustly when they are lower-dimensional and correlated. Then, in~\citep{stringer_high-precision_2021}, the authors analyzed spontaneous neural firing, finding that neurons in the primary visual cortex encoded both visual information and motor activity related to facial movements. In~\citep{russo_cell_2017}, the authors developed novel machine learning tools and statistical tests for unsupervised spatio-temporal pattern detection in non-stationary environments, which were applied to simultaneous electro-physiological recordings from tens to hundreds of neurons for decoding cognitive processes from neural activity. Altogether, this provides evidence for the importance of such machine-learning-based tools to provide with breakthroughs in neuroscience.
+%   Data availability: All of the processed deconvolved calcium traces are available on \href{https://figshare.com/articles/Recordings_of_ten_thousand_neurons_in_visual_cortex_in_response_to_2_800_natural_images/6845348}{figshare}, together with the image stimuli.
+
+
+% \subsection{Extending the decoding at multiple time scales}
+In the paper by~\citet{russo_cell_2017}, the authors present a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization. It uses  sliding window as in~\citep{grun_unitary_2002} and the reliable and efficient analysis of an excess or deficiency of joint-spike events~\citep{pipa_neuroxidence_2008}. They extend the measure to multiple lags~\citep{torre_synchronous_2016}. The core measure is based on a non-stationarity corrected parametric test statistic for assessing the independence of pairs and an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies.  To overcome the limits of models which either require spike times to be discretized, utilize a suboptimal least-squares criterion, or do not provide uncertainty estimates for model predictions or estimated parameters,~\citep{williams_point_2020} address each of these shortcomings by developing a point process model that characterizes fine-scale sequences at the level of individual spikes and represents sequence occurrences as a few marked events in continuous time. They also introduce learnable time warping parameters to model sequences of varying duration, which have been experimentally observed in neural circuits, and demonstrate these advantages on experimental recordings from songbird higher vocal center and rodent hippocampus.
+At a larger scale, in~\citep{van_kempen_top-down_2021}, it was shown that attentional information from V4 or arousal can change the timings of groups of events in V1. They develop a Hidden Markov Model for quantifying the transitions. In particular, they show that fluctuations in neural excitability are coordinated between visual areas with retinotopic precision. Top-down attention drives inter-areal coordination along the reverse cortical hierarchy, predicting better behavioral performance with increased coordination. Building such models for predicting changes of timings based on context, such as using a so-called change point model for blocked-based experimental protocols~\citep{pasturel_humans_2020}, could therefore provide useful prior information to enhance the decoding from neural activity.
+
+% sparse in time and space : AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp.~345-355.  CC Petersen and S Crochet, Neuron 78.1 (2013), pp.~28-48.
+
+\subsection{What biological mechanism enables delay learning?}
+
+Despite the extensive computer evidence of the effectiveness of precise spiking detection we presented above, doubts may remain as to the reliability of this learning mechanism and whether there is a real need for further research on this subject. The discovery of the existence of an equivalent biological mechanism in Vertebrates as well as the demonstration of the importance of its role in various developed behaviours allow us to put these doubts to rest. In the following paragraphs we will successively describe the first biological observations of biological delay learning, identify myelination as an important actor and finally study this phenomenon at the molecular level. 
+
+% First biological observations
+
+One of the first significant evidence of any neuronal delay in the information propagation within the animal brain came from Young's study of the squid giant axon~\cite{young_1938}:
+
+However, it was not until the study of the interaural time difference (ITD) by Gerstner in 1996~\citep{gerstner_neuronal_1996} that it was discovered that this delay is not homogeneous for all neurons of the same type and species, but adapts according to their function. This ITD is a biological mechanism which allows for the azimutal localization of sound by barn owls, by organically computing the difference in arrival time of a sound between their two ears. According to \citep{gerstner_neuronal_1996}, there is a true paradox in auditory neural systems since “neural networks encode behaviourally relevant signals in the range of a few $\mu s$ with neurons that are at least one order of magnitude slower”, therefore necessarily need to play on the response time to do so. \citet{pena_2001} conducted an extended study on ITD in order to confirm this theory by identifying the coincidence detector involved, which the authors situated in the nuclear laminaris. A first hypothesis suggested that the sound coincidence was detected using stereausis, i.e. the temporal disparity between left and right cochlear loci in the owl's brain. However it was quickly set aside as the predictions did not match the measured disparities in the loci, and no variations were perceived in the nuclear laminaris for a similar sound intensity in both owl ears. The authors support a second hypothesis, that of different axonal delays in the ipsi and contralateral cochlear nucleus magnocellularis. \citet{seidl_mechanisms_2010} experimentally seconds this hypothesis of a "coarse" regulation of delay, as the authors conclude that regulations at different sites within individual axons of at least two parameters, namely the axon diameter and internode distances, might be responsible for precise adjustments of physiological delays thus allowing the ITD detection. These experiments also confirmed previous studies stating that the conduction velocity of a spike in a neuron (in other words, its delay) depends strongly on the axon diameter \cite{gasser_1939} and the internode distance between Ranvier nodes \cite{brills_1977} --- instead of the axon's length as was previously thought. 
+
+% The importance of myelination
+
+\citet{gasser_1939} experimentally confirmed with homogeneously selected neurons that the axonal delay is positively proportional to the axon diameter, i.e. the amount of myelin wrapped around the axon. Indeed, the oligodendrocytes, one of the many glial cells present in the Vertebrates' nervous system, produce thin protein sheets interspersed with lipid layers wrapped concentrically around the axon~\citep{schmidt_1939}
+
+Over and over, myelin thus has been identified as a main actor in the delay regulation in many biological behaviors.
+
+% role of myelination and neuronal delay
+
+facilitates both the neural circuit function and the behavioural performance~\cite{fields_2015}. Experiments on mammals show that myelination is directly related to learning and memory consolidation, especially motor training and in enriched environments. This biological phenomenom both at an early age, where the amount of oligodendrocites is the particularly high in the central nervous system~\citep{reynolds_1928}, and in older animals, due to its involvement in coupling the activity of distant neuron populations. It is worth highlighting that myelination becomes increasingly important in larger brains where conductance delays are substantial and brainwave rhythms are critical; synchrony errors can lead to neuropsychiatric and neurological dysfunctions. 
+
+% How is the neuronal activity detected ?
+
+Some further studies show that oligodendrocytes may detect neuronal activity thanks to growth factors or neurotransmitters released through ion channels or via exocytosis.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Modeling precisely-timed spiking motifs in computational neuroscience}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -370,80 +469,8 @@ There are more applications to image processing using spiking neural networks ba
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Precise spiking motifs in neurobiology}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In this section, we will review current evidence of taking advantage of spiking motifs in neurobiology, that is, from actual recordings in biological tissues. In most generic computational models, the neural activity is assumed to be encoded in the firing rate. For instance, the output of the so-called linear non-linear (L-NL) models is assumed to model the response of a biological neuron as the sequence of a linear integration followed by a non-linear spiking response generating spikes according to a Poisson point-process. As such, a simple decoding strategy is to infer the input knowing the neuron's tuning curves~\citep{jazayeri_optimal_2006} or simply by a simple regression~\citep{berens_fast_2012}. This latter model assumes a Bernoulli model for the generation of spikes, such that the decoding amounts to a single-layer logistic regression. An important perspective of these methods used to decipher the recorded activity is that it could be ultimately used to fit neural network models to the recorded activity~\citep{bellec_fitting_2021}. In that paper, authors fit summary statistics of neural data with a differentiable spiking network model. The loss function is the cross entropy (following Bernouilli hypothesis with a GLM where each unit is modelled with an SRM neuron~\citep{gerstner_time_1995} with recurrent dynamics). In particular, it comes with \href{https://github.com/EPFL-LCN/pub-bellec-wang-2021-sample-and-measure}{code} and uses the publicly available \href{http://crcns.org/data-sets/vc/pvc-11}{V1-dataset} which allows supervising the model with the input being the movie and the output the spikes recorded. These type of model may infer sparse activity in a set of binary latent variables, each describing the activity of a cell assembly~\citep{warner_probabilistic_2022}.
-Using the right metric, as implemented in that paper by the chosen neural models, is essential in better understanding neural data. As such, all these models are dependent on a core definition of spike measures, and we will review here how precise spiking motifs are taken into account by such spike distances.
-%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Decoding neural activity using spike distances}\label{sec:detection}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-There are different solutions to provide with a distance between two given spike trains. A known measure is the Victor-Purpura distance, which showed that their findings are overcoming inconsistencies experienced with Poisson models of spike trains~\citep{victor_nature_1996}. In a later study,~\citet{van_rossum_novel_2001} have defined a distance that uses a time constant as a parameter. Depending on this parameter, the distance interpolates between a coincidence detector and a rate difference counter. Such distances were extended to non-Euclidean metrics and use morphological manipulations to compute spike train dissimilarity~\citet{kreuz_measuring_2007}. Mathematically, the stability of distance measures induced by level-crossing sampling can be evaluated~\citep{moser_stability_2014}, notably in light of the so-called Weyl's discrepancy measure~\citep{weyl_ueber_1916}, which may lead to the definition of a cross-correlation measure which is adapted to the event-based nature of spiking signals. These observations lead to the intuition that each distance may be related as the optimal solution of a generative model for these measures, possibly through non-linear relations~\citep{aronov_non-euclidean_2004}. % ~\citep{} 
-
-Let's now focus on distances defined based on a generative model formed by using precise spiking motifs. A review of the methods for neuronal response latency estimation exists and includes Bayesian binning~\citep{levakova_review_2015}. More broadly, unitary event analysis can be performed by a statistical model of coincidence detection~\citep{grun_unitary_2002-1}. This was extensively used in detecting above chance significant synchronous patterns~\citep{grun_unitary_2010}, in particular in recordings of pairs of neurons (see~\citep{riehle_spike_1997} for instance), and has been extended to non-stationary data~\citep{grun_unitary_2002}. A method to detect significant patterns of synchronous spiking in a subset of massively parallel spike trains in the presence of background activity can be defined using the statistical evaluation of synchronous spike patterns extracted by frequent item set mining~\citep{torre_statistical_2013}. By the same group, the SPADE, CAD or ASSET algorithms are methods for identification of spike patterns in massively parallel spike trains (the spiking activity of tens to hundred(s) of neurons recorded in parallel) by identifying fine temporal correlations in the$~\ms$ precision range~\citep{quaglio_methods_2018}. This was recently extended in~\citep{stella_3d-spade_2019} in order to find re-occurring patterns in parallel spike train data, and to determine their statistical significance. The extension improves the performance in the presence of patterns with different durations, as demonstrated by application to various synthetic data, such as surrogates generated to evaluate precisely timed higher-order spike correlations~\citep{stella_comparing_2022}.
-
-Another important algorithm, called SPOTDisClust, is based on the detection of structured temporal patterns~\citep{grossberger_unsupervised_2018}. They introduced an unsupervised method based for their detection from high-dimensional neural ensembles. The algorithm measures similarity between two ensemble spike patterns by determining the minimum transport cost of transforming their corresponding normalized cross-correlation matrices into each other. Many approaches to this problem are supervised. In other words, they take patterns occurring concurrently with a known event, such as the delivery of a stimulus for sensory neurons or the traversal of a running track for hippocampal place fields, as a ``template'' and then search for repetitions of the same template in spiking activity~\citep{nadasdy_replay_1999,lee_combinatorial_2004}. In SPOTDisClust, the learning is unsupervised. It uses the prior that there is only one spike per pattern. Using a so-called t-SNE projection (that allows to project this high-dimensional representation to a lower-dimension map) validated that this clustering method can retrieve all patterns from the data (see Figure~\ref{fig:SPOTDisClust}). The limits of this method are that it is computationally complex, block-based and strictly specialized for the task at hand. To overcome these difficulties, a novel method was recently developed~\citep{sotomayor-gomez_spikeship_2021}.
-%   Davidson TJ, Kloosterman F, Wilson MA. Hippocampal replay of extended experience. Neuron. 2009;63(4):497--507. pmid:19709631
-
-%----------------------------%
-\begin{figure}
-\centering
-\includegraphics[width=\linewidth]{figures/pcbi.1006283.g001.png}%pcbi.1006283.g001.PNG_L.png}
-\caption{Fig 1 of~\citep{grossberger_unsupervised_2018}, showing simulated example illustrating the steps in SPOTDisClust. A) Structure of five ``ground-truth'' patterns (\ldots). For each pattern and each neuron, a random position was chosen for the activation pulse. B) Neuronal output is generated according to an inhomogeneous Poisson process, with rates dictated by the patterns in (A). (© Authors under a \href{https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006283}{CC licence})}\label{fig:SPOTDisClust}
-\end{figure}
-%----------------------------%
-%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Scaling up to very large scale data}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Over the past decade, tremendous technological advances across several disciplines have dramatically expanded the frontiers of experimentally accessible neuroscientific facts. Bridging across different spatial and temporal scales, combination of \textit{in vivo} two photon imaging, large population recording-array technologies, optogenetic circuit control tools, transgenic manipulations as well as large volume circuit reconstructions are now used to examine the function, structure and dynamics of neural networks on an unprecedented level of detail and precision. The daunting complexity of the biological reality revealed by these technologies highlights the importance of neurobiological knowledge to provide a conceptual bridge between abstract principles of brain function and their biological implementations within neural circuits. As a consequence, there is a growing need to scale these methods to larger amounts of data. 
-
-There are multiple solutions which aim at tackling this problem. One algorithm capable of achieving such a daunting task is the Rastermap algorithm~\citep{pachitariu_robustness_2018}. Basically, it re-arranges neurons in the raster plot based on similarity of activity and applies a deconvolution strategy based on a linear model. The model is \href{https://github.com/MouseLand/rastermap}{openly accessible} and has led to important discoveries. In~\citet{stringer_spontaneous_2019,stringer_high-dimensional_2019} for instance, it was shown that a neuronal population encodes information most efficiently when its stimulus responses are high-dimensional and uncorrelated, and most robustly when they are lower-dimensional and correlated. Then, in~\citep{stringer_high-precision_2021}, the authors analyzed spontaneous neural firing, finding that neurons in the primary visual cortex encoded both visual information and motor activity related to facial movements. In~\citep{russo_cell_2017}, the authors developed novel machine learning tools and statistical tests for unsupervised spatio-temporal pattern detection in non-stationary environments, which were applied to simultaneous electro-physiological recordings from tens to hundreds of neurons for decoding cognitive processes from neural activity. Altogether, this provides evidence for the importance of such machine-learning-based tools to provide with breakthroughs in neuroscience.
-%   Data availability: All of the processed deconvolved calcium traces are available on \href{https://figshare.com/articles/Recordings_of_ten_thousand_neurons_in_visual_cortex_in_response_to_2_800_natural_images/6845348}{figshare}, together with the image stimuli.
-
-
-% \subsection{Extending the decoding at multiple time scales}
-In the paper by~\citet{russo_cell_2017}, the authors present a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization. It uses  sliding window as in~\citep{grun_unitary_2002} and the reliable and efficient analysis of an excess or deficiency of joint-spike events~\citep{pipa_neuroxidence_2008}. They extend the measure to multiple lags~\citep{torre_synchronous_2016}. The core measure is based on a non-stationarity corrected parametric test statistic for assessing the independence of pairs and an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies.  To overcome the limits of models which either require spike times to be discretized, utilize a suboptimal least-squares criterion, or do not provide uncertainty estimates for model predictions or estimated parameters,~\citep{williams_point_2020} address each of these shortcomings by developing a point process model that characterizes fine-scale sequences at the level of individual spikes and represents sequence occurrences as a few marked events in continuous time. They also introduce learnable time warping parameters to model sequences of varying duration, which have been experimentally observed in neural circuits, and demonstrate these advantages on experimental recordings from songbird higher vocal center and rodent hippocampus.
-At a larger scale, in~\citep{van_kempen_top-down_2021}, it was shown that attentional information from V4 or arousal can change the timings of groups of events in V1. They develop a Hidden Markov Model for quantifying the transitions. In particular, they show that fluctuations in neural excitability are coordinated between visual areas with retinotopic precision. Top-down attention drives inter-areal coordination along the reverse cortical hierarchy, predicting better behavioral performance with increased coordination. Building such models for predicting changes of timings based on context, such as using a so-called change point model for blocked-based experimental protocols~\citep{pasturel_humans_2020}, could therefore provide useful prior information to enhance the decoding from neural activity.
-
-% sparse in time and space : AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp.~345-355.  CC Petersen and S Crochet, Neuron 78.1 (2013), pp.~28-48.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Explictly decoding spiking motifs}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-We have previously seen that neurobiologists have described stereotyped sequences of neural activation, notably in the hippocampus~\citep{pastalkova_internally_2008,villette_internally_2015,malvache_awake_2016}, and that neurons can be activated in the same order across days~\citep{haimerl_internal_2019}. Going further, researchers have found that  precise repetitions of spontaneous patterns of synaptic inputs in neocortical neurons \textit{in vivo} and \textit{in vitro}. These patterns repeat after minutes, maintaining millisecond accuracy. Indeed,~\citet{ikegaya_synfire_2004} demonstrated that in cortical activity, one can find a repetition of several motifs in spike activity (duration around 1s +/- .5 s, some events in motifs are of similar size but sometimes absent). These sequences can be specific of a particular layer or column, can be synchronized with network activity oscillation, and can involve several cells. They also demonstrated that these sequences can form super sequences, so-called \emph{cortical songs}. It consists of the assembly of several sequences which repeat in a specific order with a compressed timing. \emph{In vivo} spontaneous activity also reveals repeating sequences: about 3000 sequences, each involving 3-10 cells out of about 900, and lasting up to 3 seconds. Sequences have specific topographic structures, in some cases involving only a particular layer or a vertical column of cells or cells located in a cluster, and are associated with a structured spatial organization of the neurons that formed them. %In cortical songs, there is a ``compressing timing'' which may be taken into account by a similar mechanism as maxpooling in CNNs for space, but in time. Or there may be a mechanism for controlling the replay speed (pulvinar, \ldots{} , ?)
-
-%----------------------------%
-\begin{figure}
-\centering
-\includegraphics[width=.6\linewidth]{figures/Ikegaya2004zse0150424620001.jpeg}%pcbi.1006283.g001.PNG_L.png}
-\caption{Fig. 1. from~\citep{ikegaya_synfire_2004} repeated motifs of spontaneous synaptic activity \textit{in vitro} and \textit{in vivo}. (A) Repeated motifs of intracellular activity from layer 5 pyramidal neurons in slices. Panels show segments (red) of the same voltage-clamp recording from the same cell, repeating seconds or minutes after the initial occurrence (blue). Arrows indicate timings of repeated PSCs. (i) Upper trace: low--temporal resolution display of spontaneous activity of a neuron. Lower traces: higher resolution display of the repeated motif at indicated regions of the trace (a to c). (ii) Example of a longer motif. (B) Three repetitions of a motif. The top traces show the motifs superimposed on each other (blue, green, and red), the middle traces show these same traces individually, and the bottom traces show temporally magnified regions of the motifs (a to c). (C) Repeated sequences of intracellular current-clamp recordings \textit{in vivo}. Two (i) and three (ii) repetitions of motifs are shown. Shuffle tests were performed on traces (i), a to c, yielding significantly fewer repeats (fig.~S2, P  0.02). In (i), the blue trace is shifted --2.75 mV; in (ii), the blue trace is shifted --1.58 mV, and the green +0.79 mV.}\label{fig:Ikegaya2004}
-\end{figure}
-%----------------------------%
-
-That results suggest that polychronous groups are not necessarily grouped on a topography and can be forming apparently randomly arranged connections. It is interesting to make a parallel with the ``Rapid Formation of Robust Auditory Memories'' reported in~\citep{agus_rapid_2010} which uses noise patterns to observe if listeners could learn to detect repeated occurrences of some (frozen) noise patterns. In paerticular, they used random waveforms to probe the formation of new memories for arbitrary complex sounds. A behavioral measure was designed, based on the detection of repetitions embedded in noises up to $4 \si{\second}$ long. The task is to detect the repetition of the same (frozen) noise within a trial. Unbeknownst to listeners, some noise samples reoccurred randomly throughout an experimental block. They showed that the ``repeated exposure induced learning for otherwise totally unpredictable and meaningless sounds'' by showing that the sensitivity increases in that case. Note also that ``acoustical analyses failed to reveal any obvious differences between good and bad noises'' and that ``time reversal had no significant effect on the detection accuracy (which is quite surprising). The learning is unsupervised (statistical, automatic), fast-acting (phase transition, ``insight''), and long-lasting (memorization). 
-
-Such observations may suggest that neural groups or ensembles, rather than individual neurons, are emergent functional units of cortical activity. ~\citep{miller_visual_2014} shows, using two-photon calcium imaging of populations of neurons from the primary visual cortex of awake mice during visual stimulation and spontaneous activity, that whereas intrinsic ensembles recur at random time intervals, visually evoked ensembles are time-locked to stimuli. It proposes that visual stimuli recruit endogenously generated ensembles to represent visual attributes. Note that evoked ensembles in response to a natural movie played in a loop were precisely timed across repetitions. % (Fig. 7).
-As a summary, it seems imperative to include such precise structural information should therefore be included in decoding algorithm for a better understanding of neural activity.
-
-% TODO: re-read~\citep{luczak_packet-based_2015} Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745--55.
-% \subsubsection{Neural Variability and Sampling-Based Probabilistic Representations in the Visual Cortex~\citep{orban_neural_2016}}
-% \begin{itemize}
-%  \item
-%   Stochastic sampling links perceptual uncertainty to neural response variability
-% \item
-%   Model accounts for independent changes in strength and variability of responses
-% \item
-%   Model predicts relationship between noise, signal, and spontaneous correlations
-% \item
-%   Stimulus statistics dependence of response statistics is explained
-% \end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Precise spiking motifs in neuromorphic engineering}
+\section{Applications of precise spiking motifs in neuromorphic engineering}
 \label{sec:neuromorphic}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -480,7 +507,7 @@ such as estimating optical flow and time-to-contact~\cite{benosman2013event, tsc
 %Event-Based Computation for Touch Localization Based on Precise Spike Timing : Here we propose a neuromorphic model inspired by the sand scorpion to explore the benefits of temporal coding, and validate it in an event-based sensory-processing task. The task consists in localizing a target using only the relative spike timing of eight spatially-separated vibration sensors~\citep{haessig_event-based_2020}.
 
 
-%\subsection{Temporal pattern detection in event-based cameras}
+\subsection{Temporal pattern detection in event-based cameras}
 % le cas spécifique des event-based cameras
 %Remarkably, novel neuromorphic chips use a representation similar to that of real neurons~\citep{rasetto_challenges_2022}. For example, event-based cameras provide a stream of binary asynchronous events signaling detectable changes in luminance, and information is represented by these spike-based temporal motifs, hence their name ``silicon retinas'' (see Figure \ref{fig:silicon_retina}). For such devices, it is crucial to better understand the potential of using such event-based representations in order to devise novel algorithms.
 
@@ -517,66 +544,174 @@ Spatio-temporal kernels:~\citep{yu_stsc-snn_2022}
 % Grimaldi ICIP
 
 
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}\label{sec:discussion}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Spiking neural models with heterogeneous delays}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- %: >>>>>>>> Laurent is here <<<<<<<<<<<<<<
-
-Here, we develop a model for the efficient detection of such PGs based on the inversion of a probabilistic model defining the generation of the raster plot as a combination of such groups. We show that such an inference can be achieved by a neural-like computation that could itself be used as a spiking neuron, as can be implemented in a neuromorphic chip for instance. A first result is to show the efficiency of such a scheme in detecting different PGs occurring at specific times in synthetic data. The representational capacity of the PGs is particularly interesting compared to traditional models of neuronal encoding using spiking frequency. Our second result is to propose a novel learning method for learning PGs in raster plots in a self-supervised manner. Finally, we demonstrate the use of this algorithm to the output of an event-based camera and how this may separate independent components from the stream of events. This end-to-end event-based computational brick could help improve the performance of current Spiking Neural Network solution currently used in neuromorphic chips.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Summary}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%: >>>>>>>> Laurent is here <<<<<<<<<<<<<<
+ 
+In this review paper, we have presented
+recent evidence for the role of precise
+spiking motifs in neuroscience. In
+particular, we have shown that those
+motifs may play a crucial role in
+neurobiology, that they may be understood
+at a theoretical and computational levels
+and that they may have numerous applications
+in neuromorphic engineering.
+In particular, we have shown that:
+- the efficiency of neural systems, and
+in particular the visual system, imposes
+strong constraints on the structure of
+neural activity which highlight the
+importance of precise spike times,
+- that growing evidence from neurobiology
+proves that neural systems are we ne thar
+integrators and may use synchrony
+detection in different forms: synfne chains,
+traveling waves on arbitrary spiking motif,
+- that many theoretical models exit
+taking into account the specificity of
+spiking motifs, notably by using
+heterogeneous delays,
+- ultimately that using precise puking
+motifs could be a key ingredient in
+men nomorphic systems to reach similar
+efficiencies as biological neural systems.
+Ova, our reviewing effort has shown
+that a growing community is focusing
+on that aspect. This community is
+based on solid and validated evidence
+which is getting novel grounds thanks h
+current advances in neurobiological
+technical advances. Moreover, we have also
+shown that this community as highly
+diverse, ranging from in vivo, he in
+computo and in silico. As a consequence
+the global effort is still largely scattered,
+which limits its larger acceptance in
+neuroscience.
 
 
 \subsection{Limits}
 
-Clustering and control for adaptation uncovers time-warped spike time patterns in cortical networks \textit{in vivo}~\citep{isbister_clustering_2021} They discovered (\textit{in vivo}) that the times that individual neurons spiked within a sequence depended on the excitability of the cortex when a stimulus was presented.
-% dynamical models
-Dumas and colleagues~\citep{panahi_generative_2021} : three levels / fourth paradigm~\citep{tolle_fourth_2011} i.e., data exploration in which the scientific models are fit to the data by learning algorithms.
-Emergence of electronic architectures specialized in Sparse Event-Based Convolutions~\citep{di_mauro_alfio_sne_2022} or of sparsity aware algorithms~\citep{yin_sata_2022}.
 
-and oscillations? Journal Article DOI: 10.1007/BF00202899 Coherent oscillations: A mechanism of feature linking in the visual cortex?
+Les différents modèles de detection et d’apprentissage de motifs de Spike que nous avons présenté aux différents niveaux (neurobiologiques, théoriques, neuromorphic ) présentent individuellement des limites qui empêchent leur généralisation en neurosciences.
+
+Tout d’abord, de nombreux modèles sont basé sur une discretisation du temps. cette hypothèse est importante pour permettre une représentation correcte de l'information neuronale afin d’etre traité dans des ordinateurs de façon computationnelle. Ce traitement revient à transformer les Rasster de Spike sous forme matricielle pour leur traitement dans des algorithmes et des formalisme classique d’apprentissage machine classique. cette hypothèse implique un usage inefficace de la mémoire, car cette représentation transforme la représentation parcimonieuse d’une séquence de Spike en des matrices denses. D’autre part, cette représentation peut induire des erreurs dû à la discréditassions et à l'échelle de l’échantillonnage temporel. Enfin, cette représentation encourage l'utilisation de méthodes classiques,qui ne sont pas adaptées à des applications disruptives telles que les représentations event-driven.
+
+D’autre part, l’apprentissage des motifs est souvent effectué de façon supervisé. En effet, le problème de détecter des groupes polichrone implique d’inférer à la fois l’adresse et le temps précis de occurrence de ces motifs. la plupart des modèles que nous avons présenté sont basé sur l’hypothèse qu'au moins une de ses variables est connu : soit le pattern, soit son identité, soit son temps d’occurrence. Cette contrainte est à mettre en parallèle du fonctionnement d’un système nerveux biologique dans lequel ses apprentissages sont effectués de façon autonome, c’est-à-dire sans supervision. On peut noter toutefois que certains modèles peuvent effectuer un tel apprentissage, mais seulement, dans le cas de données pour lequel les motifs sont aisément séparables.
+
+Une dernière limite des modèles que nous avons présenté et le fait que ceci sont constitués d’une seule couche de traitement qui relit une entrée à une sortie. Nous avons vu que toutefois le système neurobiologiques utilise des boucles de traitement.
+
+
+%Clustering and control for adaptation uncovers time-warped spike time patterns in cortical networks \textit{in vivo}~\citep{isbister_clustering_2021} They discovered (\textit{in vivo}) that the times that individual neurons spiked within a sequence depended on the excitability of the cortex when a stimulus was presented.
+% dynamical models
+%Dumas and colleagues~\citep{panahi_generative_2021} : three levels / fourth paradigm~\citep{tolle_fourth_2011} i.e., data exploration in which the scientific models are fit to the data by learning algorithms.
+%Emergence of electronic architectures specialized in Sparse Event-Based Convolutions~\citep{di_mauro_alfio_sne_2022} or of sparsity aware algorithms~\citep{yin_sata_2022}.
+
+%and oscillations? Journal Article DOI: 10.1007/BF00202899 Coherent oscillations: A mechanism of feature linking in the visual cortex?
 
 % development
-scaffolding of neural assemblies / existence of critical periods :~\citep{dard_rapid_2022}
+%scaffolding of neural assemblies / existence of critical periods :~\citep{dard_rapid_2022}
 
-\subsection{What biological mechanism enables delay learning?}
+% todo: implement recurrent predictive rules, such as those identified to dissociate this problem~\citep{perrinet_motion-based_2012}. it may be difficult but solutions exist  ~\citep{foss_multistability_2000,perrinet_active_2014}
 
-Despite the extensive computer evidence of the effectiveness of precise spiking detection we presented above, doubts may remain as to the reliability of this learning mechanism and whether there is a real need for further research on this subject. The discovery of the existence of an equivalent biological mechanism in Vertebrates as well as the demonstration of the importance of its role in various developed behaviours allow us to put these doubts to rest. In the following paragraphs we will successively describe the first biological observations of biological delay learning, identify myelination as an important actor and finally study this phenomenon at the molecular level. 
+%hierarchies
 
-% First biological observations
-
-One of the first significant evidence of any neuronal delay in the information propagation within the animal brain came from Young's study of the squid giant axon~\cite{young_1938}:
-
-However, it was not until the study of the interaural time difference (ITD) by Gerstner in 1996~\citep{gerstner_neuronal_1996} that it was discovered that this delay is not homogeneous for all neurons of the same type and species, but adapts according to their function. This ITD is a biological mechanism which allows for the azimutal localization of sound by barn owls, by organically computing the difference in arrival time of a sound between their two ears. According to \citep{gerstner_neuronal_1996}, there is a true paradox in auditory neural systems since “neural networks encode behaviourally relevant signals in the range of a few $\mu s$ with neurons that are at least one order of magnitude slower”, therefore necessarily need to play on the response time to do so. \citet{pena_2001} conducted an extended study on ITD in order to confirm this theory by identifying the coincidence detector involved, which the authors situated in the nuclear laminaris. A first hypothesis suggested that the sound coincidence was detected using stereausis, i.e. the temporal disparity between left and right cochlear loci in the owl's brain. However it was quickly set aside as the predictions did not match the measured disparities in the loci, and no variations were perceived in the nuclear laminaris for a similar sound intensity in both owl ears. The authors support a second hypothesis, that of different axonal delays in the ipsi and contralateral cochlear nucleus magnocellularis. \citet{seidl_mechanisms_2010} experimentally seconds this hypothesis of a "coarse" regulation of delay, as the authors conclude that regulations at different sites within individual axons of at least two parameters, namely the axon diameter and internode distances, might be responsible for precise adjustments of physiological delays thus allowing the ITD detection. These experiments also confirmed previous studies stating that the conduction velocity of a spike in a neuron (in other words, its delay) depends strongly on the axon diameter \cite{gasser_1939} and the internode distance between Ranvier nodes \cite{brills_1977} --- instead of the axon's length as was previously thought. 
-
-% The importance of myelination
-
-\citet{gasser_1939} experimentally confirmed with homogeneously selected neurons that the axonal delay is positively proportional to the axon diameter, i.e. the amount of myelin wrapped around the axon. Indeed, the oligodendrocytes, one of the many glial cells present in the Vertebrates' nervous system, produce thin protein sheets interspersed with lipid layers wrapped concentrically around the axon~\citep{schmidt_1939}
-
-Over and over, myelin thus has been identified as a main actor in the delay regulation in many biological behaviors.
-
-% role of myelination and neuronal delay
-
-facilitates both the neural circuit function and the behavioural performance~\cite{fields_2015}. Experiments on mammals show that myelination is directly related to learning and memory consolidation, especially motor training and in enriched environments. This biological phenomenom both at an early age, where the amount of oligodendrocites is the particularly high in the central nervous system~\citep{reynolds_1928}, and in older animals, due to its involvement in coupling the activity of distant neuron populations. It is worth highlighting that myelination becomes increasingly important in larger brains where conductance delays are substantial and brainwave rhythms are critical; synchrony errors can lead to neuropsychiatric and neurological dysfunctions. 
-
-% How is the neuronal activity detected ?
-
-Some further studies show that oligodendrocytes may detect neuronal activity thanks to growth factors or neurotransmitters released through ion channels or via exocytosis.
+%developpment
 
 
 \subsection{Perspectives}
 
-todo: implement recurrent predictive rules, such as those identified to dissociate this problem~\citep{perrinet_motion-based_2012}. it may be difficult but solutions exist  ~\citep{foss_multistability_2000,perrinet_active_2014}
+Mt#the limits that we have
+presented can be treated individually
+as evidenced by individual efforts
+which try he orecome them. However,
+to propose a real breakthrough, we
+believe that future venues should
+provide with a unified, inter-disciplinary
+approach, with applications to deal-
+word, ecological scenarios and
+with open and reproducible methods.
+First, as we already noted, the effort
+is still largely scattered -this is
+in part due to the fact that interaction
+between neurobiology, theoretical
+and computational neuroscience
+and meromorphic engineering
+are still scarce as of today.
+It was largely demonstrated that
+close, bi-directional interactions
+are essential to foster breakthrough
+For instance, the design of model-
+driven protocols as proven to be
+essential in modern neuroscience.
+Also, if neural networks were
+essential in shaping modern-day
+machine learning, e-g. computer
+vision using deep-learning,
+spiking neural networks should
+prove essential in future
+emerging technologies.
 
-hierarchies
-
-developpment
-
+In that perspective, it is
+essential that such models
+are tested on ecologically-
+relevant, real-world scenarios.
+Indeed, classic convolutional
+neural networks emerged
+as optimal solutions for
+instance he classify static
+images into categories, yet
+thay are not well adapted
+for processing dynamic,
+multimodal sensory flows.
+The emerging necessity to be
+able to process more complex
+flows, such as the multiples
+flows of information in a
+car designed for autonomous
+driving, necessitates to
+modify modelling paradigms.
+and in particular to take into
+account that the generated actions
+may modify the sensory inputs.
+Notably, the protocols used
+as well in neurobiology,
+theory on engineering should
+take into account this hovel
+complexity.
+Ultimately, the community should
+encourage the adoption of open,
+reproducible science. Indeed,
+the different models that we have
+displayed often come with the
+tools necessary he reproduce the
+results obtained. This is true
+in neurobiology (Belles), in
+theoretical neuroscience (Ishi)
+or in engineering (PAMI).
+This aspect is essential to
+foster the emergence of inter-
+disciplinary projects, such
+as model-driven neurobiological
+experiments or biologically-
+inspired vennomorphic
+engineering.
+As such, this review aimed
+at paving the way to openly
+share the variety of
+resources and to offer an
+unified view on the role of
+precise spiking motifs in
+neuroscience.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
