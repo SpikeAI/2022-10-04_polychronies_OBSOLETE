@@ -409,29 +409,26 @@ In the paper by~\citet{russo_cell_2017}, the authors present a unifying methodol
 At a larger scale, in~\citep{van_kempen_top-down_2021}, it was shown that attentional information from V4 or arousal can change the timings of groups of events in V1. They develop a Hidden Markov Model for quantifying the transitions. In particular, they show that fluctuations in neural excitability are coordinated between visual areas with retinotopic precision. Top-down attention drives inter-areal coordination along the reverse cortical hierarchy, predicting better behavioral performance with increased coordination. Building such models for predicting changes of timings based on context, such as using a so-called change point model for blocked-based experimental protocols~\citep{pasturel_humans_2020}, could therefore provide useful prior information to enhance the decoding from neural activity.
 
 % sparse in time and space : AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp.~345-355.  CC Petersen and S Crochet, Neuron 78.1 (2013), pp.~28-48.
-%: >>>>>>>> Laurent is here <<<<<<<<<<<<<<
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Explictly decoding spiking motifs}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 We have previously seen that neurobiologists have described stereotyped sequences of neural activation, notably in the hippocampus~\citep{pastalkova_internally_2008,villette_internally_2015,malvache_awake_2016}, and that neurons can be activated in the same order across days~\citep{haimerl_internal_2019}. Going further, researchers have found that  precise repetitions of spontaneous patterns of synaptic inputs in neocortical neurons \textit{in vivo} and \textit{in vitro}. These patterns repeat after minutes, maintaining millisecond accuracy. Indeed,~\citet{ikegaya_synfire_2004} demonstrated that in cortical activity, one can find a repetition of several motifs in spike activity (duration around 1s +/- .5 s, some events in motifs are of similar size but sometimes absent). These sequences can be specific of a particular layer or column, can be synchronized with network activity oscillation, and can involve several cells. They also demonstrated that these sequences can form super sequences, so-called \emph{cortical songs}. It consists of the assembly of several sequences which repeat in a specific order with a compressed timing. \emph{In vivo} spontaneous activity also reveals repeating sequences: about 3000 sequences, each involving 3-10 cells out of about 900, and lasting up to 3 seconds. Sequences have specific topographic structures, in some cases involving only a particular layer or a vertical column of cells or cells located in a cluster, and are associated with a structured spatial organization of the neurons that formed them. %In cortical songs, there is a ``compressing timing'' which may be taken into account by a similar mechanism as maxpooling in CNNs for space, but in time. Or there may be a mechanism for controlling the replay speed (pulvinar, \ldots{} , ?)
-Such precise structural information should therefore be included in decoding algorithm for a better understanding of neural activity.
 
 %----------------------------%
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{figures/pcbi.1006283.g001.png}%pcbi.1006283.g001.PNG_L.png}
+\includegraphics[width=.6\linewidth]{figures/Ikegaya2004zse0150424620001.jpeg}%pcbi.1006283.g001.PNG_L.png}
 \caption{Fig. 1. from~\citep{ikegaya_synfire_2004} repeated motifs of spontaneous synaptic activity \textit{in vitro} and \textit{in vivo}. (A) Repeated motifs of intracellular activity from layer 5 pyramidal neurons in slices. Panels show segments (red) of the same voltage-clamp recording from the same cell, repeating seconds or minutes after the initial occurrence (blue). Arrows indicate timings of repeated PSCs. (i) Upper trace: low--temporal resolution display of spontaneous activity of a neuron. Lower traces: higher resolution display of the repeated motif at indicated regions of the trace (a to c). (ii) Example of a longer motif. (B) Three repetitions of a motif. The top traces show the motifs superimposed on each other (blue, green, and red), the middle traces show these same traces individually, and the bottom traces show temporally magnified regions of the motifs (a to c). (C) Repeated sequences of intracellular current-clamp recordings \textit{in vivo}. Two (i) and three (ii) repetitions of motifs are shown. Shuffle tests were performed on traces (i), a to c, yielding significantly fewer repeats (fig.~S2, P  0.02). In (i), the blue trace is shifted --2.75 mV; in (ii), the blue trace is shifted --1.58 mV, and the green +0.79 mV.}\label{fig:Ikegaya2004}
 \end{figure}
 %----------------------------%
-%
-It is interesting to make a parallel with the ``Rapid Formation of Robust Auditory Memories'' reported in~\citep{agus_rapid_2010} which uses noise patterns. They ``used random waveforms to probe the formation of new memories for arbitrary complex sounds. A behavioral measure was designed, based on the detection of repetitions embedded in noises up to $4 \si{\second}$ long''. The task is to detect the repetition of the same (frozen) noise within a trial. " Unbeknownst to listeners, some noise samples reoccurred randomly throughout an experimental block." They showed that the ``repeated exposure induced learning for otherwise totally unpredictable and meaningless sounds'' by showing that the sensitivity increases in that case. Note that ``acoustical analyses failed to reveal any obvious differences between good and bad noises'' and that ``time reversal had no significant effect on the RefRN advantage'' (which is quite surprising). The mearning is unsupervised (statistical, automatic), fast-acting (phase transition, ``insight''), and long-lasting (memorization).
 
+That results suggest that polychronous groups are not necessarily grouped on a topography and can be forming apparently randomly arranged connections. It is interesting to make a parallel with the ``Rapid Formation of Robust Auditory Memories'' reported in~\citep{agus_rapid_2010} which uses noise patterns to observe if listeners could learn to detect repeated occurrences of some (frozen) noise patterns. In paerticular, they used random waveforms to probe the formation of new memories for arbitrary complex sounds. A behavioral measure was designed, based on the detection of repetitions embedded in noises up to $4 \si{\second}$ long. The task is to detect the repetition of the same (frozen) noise within a trial. Unbeknownst to listeners, some noise samples reoccurred randomly throughout an experimental block. They showed that the ``repeated exposure induced learning for otherwise totally unpredictable and meaningless sounds'' by showing that the sensitivity increases in that case. Note also that ``acoustical analyses failed to reveal any obvious differences between good and bad noises'' and that ``time reversal had no significant effect on the detection accuracy (which is quite surprising). The learning is unsupervised (statistical, automatic), fast-acting (phase transition, ``insight''), and long-lasting (memorization). 
 
-TODO: re-read~\citep{luczak_packet-based_2015} Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745--55.
+Such observations may suggest that neural groups or ensembles, rather than individual neurons, are emergent functional units of cortical activity. ~\citep{miller_visual_2014} shows, using two-photon calcium imaging of populations of neurons from the primary visual cortex of awake mice during visual stimulation and spontaneous activity, that whereas intrinsic ensembles recur at random time intervals, visually evoked ensembles are time-locked to stimuli. It proposes that visual stimuli recruit endogenously generated ensembles to represent visual attributes. Note that evoked ensembles in response to a natural movie played in a loop were precisely timed across repetitions. % (Fig. 7).
+As a summary, it seems imperative to include such precise structural information should therefore be included in decoding algorithm for a better understanding of neural activity.
 
-Such observations suggest that neural groups or ensembles, rather than individual neurons, are emergent functional units of cortical activity~\citep{miller_visual_2014}. This work shows, using two-photon calcium imaging of populations of neurons from the primary visual cortex of awake mice during visual stimulation and spontaneous activity, that whereas intrinsic ensembles recur at random time intervals, visually evoked ensembles are time-locked to stimuli. It proposes that visual stimuli recruit endogenously generated ensembles to represent visual attributes. Note that evoked ensembles in response to a natural movie played in a loop were precisely timed across repetitions (Fig. 7).
-
+% TODO: re-read~\citep{luczak_packet-based_2015} Luczak A, McNaughton BL, Harris KD. Packet-based communication in the cortex. Nat Rev Neurosci. 2015;16(12):745--55.
 % \subsubsection{Neural Variability and Sampling-Based Probabilistic Representations in the Visual Cortex~\citep{orban_neural_2016}}
 % \begin{itemize}
 %  \item
@@ -530,6 +527,8 @@ Spatio-temporal kernels:~\citep{yu_stsc-snn_2022}
 \subsection{Spiking neural models with heterogeneous delays}
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %: >>>>>>>> Laurent is here <<<<<<<<<<<<<<
+
 Here, we develop a model for the efficient detection of such PGs based on the inversion of a probabilistic model defining the generation of the raster plot as a combination of such groups. We show that such an inference can be achieved by a neural-like computation that could itself be used as a spiking neuron, as can be implemented in a neuromorphic chip for instance. A first result is to show the efficiency of such a scheme in detecting different PGs occurring at specific times in synthetic data. The representational capacity of the PGs is particularly interesting compared to traditional models of neuronal encoding using spiking frequency. Our second result is to propose a novel learning method for learning PGs in raster plots in a self-supervised manner. Finally, we demonstrate the use of this algorithm to the output of an event-based camera and how this may separate independent components from the stream of events. This end-to-end event-based computational brick could help improve the performance of current Spiking Neural Network solution currently used in neuromorphic chips.
 
 
@@ -577,6 +576,113 @@ todo: implement recurrent predictive rules, such as those identified to dissocia
 hierarchies
 
 developpment
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{6pt} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% optional
+%\supplementary{The following supporting information can be downloaded at:  \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.}
+
+% Only for the journal Methods and Protocols:
+% If you wish to submit a video article, please do so with any other supplementary material.
+% \supplementary{The following supporting information can be downloaded at: \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title. A supporting video article is available at doi: link.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\authorcontributions{For research articles with several authors, a short paragraph specifying their individual contributions must be provided. The following statements should be used ``Conceptualization, X.X. and Y.Y.; methodology, X.X.; software, X.X.; validation, X.X., Y.Y. and Z.Z.; formal analysis, X.X.; investigation, X.X.; resources, X.X.; data curation, X.X.; writing---original draft preparation, X.X.; writing---review and editing, X.X.; visualization, X.X.; supervision, X.X.; project administration, X.X.; funding acquisition, Y.Y. All authors have read and agreed to the published version of the manuscript.'', please turn to the  \href{http://img.mdpi.org/data/contributor-role-instruction.pdf}{CRediT taxonomy} for the term explanation. Authorship must be limited to those who have contributed substantially to the work~reported.}
+
+\funding{Please add: ``This research received no external funding'' or ``This research was funded by NAME OF FUNDER grant number XXX.'' and  and ``The APC was funded by XXX''. Check carefully that the details given are accurate and use the standard spelling of funding agency names at \url{https://search.crossref.org/funding}, any errors may affect your future funding.}
+
+\institutionalreview{In this section, you should add the Institutional Review Board Statement and approval number, if relevant to your study. You might choose to exclude this statement if the study did not require ethical approval. Please note that the Editorial Office might ask you for further information. Please add “The study was conducted in accordance with the Declaration of Helsinki, and approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving humans. OR “The animal study protocol was approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving animals. OR “Ethical review and approval were waived for this study due to REASON (please provide a detailed justification).” OR “Not applicable” for studies not involving humans or animals.}
+
+\informedconsent{Any research article describing a study involving humans should contain this statement. Please add ``Informed consent was obtained from all subjects involved in the study.'' OR ``Patient consent was waived due to REASON (please provide a detailed justification).'' OR ``Not applicable'' for studies not involving humans. You might also choose to exclude this statement if the study did not involve humans.
+
+Written informed consent for publication must be obtained from participating patients who can be identified (including by the patients themselves). Please state ``Written informed consent has been obtained from the patient(s) to publish this paper'' if applicable.}
+
+\dataavailability{
+%This works is made reproducible using the following tools. First the code reproducing all figures is available on \href{https://github.com/SpikeAI/2022-09_UltraFastCat/blob/main/Readme.md}{GitHub}~\citep{Jeremie2022a}.
+
+%\noindent The paper is available a an \href{https://arxiv.org/abs/2205.03635}{arXiv preprint} with links to previous versions ands to the code. 
+Find the associated \noindent \href{https://www.zotero.org/groups/4562620/polychronies}{zotero group} used to regroup relevant literature on the subject.
+
+} 
+
+\acknowledgments{In this section you can acknowledge any support given which is not covered by the author contribution or funding sections. This may include administrative and technical support, or donations in kind (e.g., materials used for experiments).}
+
+\conflictsofinterest{Declare conflicts of interest or state ``The authors declare no conflict of interest.'' Authors must identify and declare any personal circumstances or interest that may be perceived as inappropriately influencing the representation or interpretation of reported research results. Any role of the funders in the design of the study; in the collection, analyses or interpretation of data; in the writing of the manuscript; or in the decision to publish the results must be declared in this section. If there is no role, please state ``The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or in the decision to publish the~results''.} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optional
+\sampleavailability{Samples of the compounds ... are available from the authors.}
+
+%% Only for journal Encyclopedia
+%\entrylink{The Link to this entry published on the encyclopedia platform.}
+
+\abbreviations{Abbreviations}{
+The following abbreviations are used in this manuscript:\\
+
+\noindent 
+\begin{tabular}{@{}ll}
+MDPI & Multidisciplinary Digital Publishing Institute\\
+DOAJ & Directory of open access journals\\
+TLA & Three letter acronym\\
+LD & Linear dichroism
+\end{tabular}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optional
+\appendixtitles{no} % Leave argument "no" if all appendix headings stay EMPTY (then no dot is printed after "Appendix A"). If the appendix sections contain a heading then change the argument to "yes".
+\appendixstart
+\appendix
+\section[\appendixname~\thesection]{}
+\subsection[\appendixname~\thesubsection]{}
+The appendix is an optional section that can contain details and data supplemental to the main text---for example, explanations of experimental details that would disrupt the flow of the main text but nonetheless remain crucial to understanding and reproducing the research shown; figures of replicates for experiments of which representative data are shown in the main text can be added here if brief, or as Supplementary Data. Mathematical proofs of results not central to the paper can be added as an appendix.
+
+\begin{table}[H] 
+\caption{This is a table caption.\label{tab5}}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\begin{tabularx}{\textwidth}{CCC}
+\toprule
+\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}\\
+\midrule
+Entry 1		& Data			& Data\\
+Entry 2		& Data			& Data\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section[\appendixname~\thesection]{}
+All appendix sections must be cited in the main text. In the appendices, Figures, Tables, etc. should be labeled, starting with ``A''---e.g., Figure A1, Figure A2, etc.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{adjustwidth}{-\extralength}{0cm}
+%\printendnotes[custom] % Un-comment to print a list of endnotes
+
+%%%%%%%%% REFERENCES
+\reftitle{References}
+
+% Please provide either the correct journal abbreviation (e.g. according to the “List of Title Word Abbreviations” http://www.issn.org/services/online-services/access-to-the-ltwa/) or the full name of the journal.
+% Citations and References in Supplementary files are permitted provided that they also appear in the reference list here. 
+%\bibliographystyle{Definitions/chicago2}
+\bibliography{references}
+
+%\begin{thebibliography}{00}
+%\printbibliography[heading=none]
+%\end{thebibliography}
+
+% For the MDPI journals use author-date citation, please follow the formatting guidelines on http://www.mdpi.com/authors/references
+% To cite two works by the same author:~\citeauthor{ref-journal-1a} (\citeyear{ref-journal-1a},~\citeyear{ref-journal-1b}). This produces: Whittaker (1967, 1975)
+% To cite two works by the same author with specific pages:~\citeauthor{ref-journal-3a} (\citeyear{ref-journal-3a}, p. 328;~\citeyear{ref-journal-3b}, p.475). This produces: Wong (1999, p. 328; 2000, p. 475)
+
+\end{adjustwidth}
+\end{document}
+
+
 
 %
 %The introduction should briefly place the study in a broad context and highlight why it is important. It should define the purpose of the work and its significance. The current state of the research field should be reviewed carefully and key publications cited. Please highlight controversial and diverging hypotheses when necessary. Finally, briefly mention the main aim of the work and highlight the principal conclusions. As far as possible, please keep the introduction comprehensible to scientists outside your particular field of research. Citing a journal paper~\cite{ref-journal}. Now citing a book reference~\cite{ref-book1,ref-book2} or other reference types~\cite{ref-unpublish,ref-communication,ref-proceeding}. Please use the command~\citep{ref-thesis,ref-url} for the following MDPI journals, which use author--date citation: Administrative Sciences, Arts, Econometrics, Economies, Genealogy, Humanities, IJFS, Journal of Intelligence, Journalism and Media, JRFM, Languages, Laws, Religions, Risks, Social Sciences, Literature.
@@ -734,108 +840,3 @@ developpment
 %\section{Conclusions}
 %
 %This section is not mandatory, but can be added to the manuscript if the discussion is unusually long or complex.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{6pt} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% optional
-%\supplementary{The following supporting information can be downloaded at:  \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.}
-
-% Only for the journal Methods and Protocols:
-% If you wish to submit a video article, please do so with any other supplementary material.
-% \supplementary{The following supporting information can be downloaded at: \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title. A supporting video article is available at doi: link.}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\authorcontributions{For research articles with several authors, a short paragraph specifying their individual contributions must be provided. The following statements should be used ``Conceptualization, X.X. and Y.Y.; methodology, X.X.; software, X.X.; validation, X.X., Y.Y. and Z.Z.; formal analysis, X.X.; investigation, X.X.; resources, X.X.; data curation, X.X.; writing---original draft preparation, X.X.; writing---review and editing, X.X.; visualization, X.X.; supervision, X.X.; project administration, X.X.; funding acquisition, Y.Y. All authors have read and agreed to the published version of the manuscript.'', please turn to the  \href{http://img.mdpi.org/data/contributor-role-instruction.pdf}{CRediT taxonomy} for the term explanation. Authorship must be limited to those who have contributed substantially to the work~reported.}
-
-\funding{Please add: ``This research received no external funding'' or ``This research was funded by NAME OF FUNDER grant number XXX.'' and  and ``The APC was funded by XXX''. Check carefully that the details given are accurate and use the standard spelling of funding agency names at \url{https://search.crossref.org/funding}, any errors may affect your future funding.}
-
-\institutionalreview{In this section, you should add the Institutional Review Board Statement and approval number, if relevant to your study. You might choose to exclude this statement if the study did not require ethical approval. Please note that the Editorial Office might ask you for further information. Please add “The study was conducted in accordance with the Declaration of Helsinki, and approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving humans. OR “The animal study protocol was approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving animals. OR “Ethical review and approval were waived for this study due to REASON (please provide a detailed justification).” OR “Not applicable” for studies not involving humans or animals.}
-
-\informedconsent{Any research article describing a study involving humans should contain this statement. Please add ``Informed consent was obtained from all subjects involved in the study.'' OR ``Patient consent was waived due to REASON (please provide a detailed justification).'' OR ``Not applicable'' for studies not involving humans. You might also choose to exclude this statement if the study did not involve humans.
-
-Written informed consent for publication must be obtained from participating patients who can be identified (including by the patients themselves). Please state ``Written informed consent has been obtained from the patient(s) to publish this paper'' if applicable.}
-
-\dataavailability{
-%This works is made reproducible using the following tools. First the code reproducing all figures is available on \href{https://github.com/SpikeAI/2022-09_UltraFastCat/blob/main/Readme.md}{GitHub}~\citep{Jeremie2022a}.
-
-%\noindent The paper is available a an \href{https://arxiv.org/abs/2205.03635}{arXiv preprint} with links to previous versions ands to the code. 
-Find the associated \noindent \href{https://www.zotero.org/groups/4562620/polychronies}{zotero group} used to regroup relevant literature on the subject.
-
-} 
-
-\acknowledgments{In this section you can acknowledge any support given which is not covered by the author contribution or funding sections. This may include administrative and technical support, or donations in kind (e.g., materials used for experiments).}
-
-\conflictsofinterest{Declare conflicts of interest or state ``The authors declare no conflict of interest.'' Authors must identify and declare any personal circumstances or interest that may be perceived as inappropriately influencing the representation or interpretation of reported research results. Any role of the funders in the design of the study; in the collection, analyses or interpretation of data; in the writing of the manuscript; or in the decision to publish the results must be declared in this section. If there is no role, please state ``The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or in the decision to publish the~results''.} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Optional
-\sampleavailability{Samples of the compounds ... are available from the authors.}
-
-%% Only for journal Encyclopedia
-%\entrylink{The Link to this entry published on the encyclopedia platform.}
-
-\abbreviations{Abbreviations}{
-The following abbreviations are used in this manuscript:\\
-
-\noindent 
-\begin{tabular}{@{}ll}
-MDPI & Multidisciplinary Digital Publishing Institute\\
-DOAJ & Directory of open access journals\\
-TLA & Three letter acronym\\
-LD & Linear dichroism
-\end{tabular}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Optional
-\appendixtitles{no} % Leave argument "no" if all appendix headings stay EMPTY (then no dot is printed after "Appendix A"). If the appendix sections contain a heading then change the argument to "yes".
-\appendixstart
-\appendix
-\section[\appendixname~\thesection]{}
-\subsection[\appendixname~\thesubsection]{}
-The appendix is an optional section that can contain details and data supplemental to the main text---for example, explanations of experimental details that would disrupt the flow of the main text but nonetheless remain crucial to understanding and reproducing the research shown; figures of replicates for experiments of which representative data are shown in the main text can be added here if brief, or as Supplementary Data. Mathematical proofs of results not central to the paper can be added as an appendix.
-
-\begin{table}[H] 
-\caption{This is a table caption.\label{tab5}}
-\newcolumntype{C}{>{\centering\arraybackslash}X}
-\begin{tabularx}{\textwidth}{CCC}
-\toprule
-\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}\\
-\midrule
-Entry 1		& Data			& Data\\
-Entry 2		& Data			& Data\\
-\bottomrule
-\end{tabularx}
-\end{table}
-
-\section[\appendixname~\thesection]{}
-All appendix sections must be cited in the main text. In the appendices, Figures, Tables, etc. should be labeled, starting with ``A''---e.g., Figure A1, Figure A2, etc.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{adjustwidth}{-\extralength}{0cm}
-%\printendnotes[custom] % Un-comment to print a list of endnotes
-
-%%%%%%%%% REFERENCES
-\reftitle{References}
-
-% Please provide either the correct journal abbreviation (e.g. according to the “List of Title Word Abbreviations” http://www.issn.org/services/online-services/access-to-the-ltwa/) or the full name of the journal.
-% Citations and References in Supplementary files are permitted provided that they also appear in the reference list here. 
-%\bibliographystyle{Definitions/chicago2}
-\bibliography{references}
-
-%\begin{thebibliography}{00}
-%\printbibliography[heading=none]
-%\end{thebibliography}
-
-% For the MDPI journals use author-date citation, please follow the formatting guidelines on http://www.mdpi.com/authors/references
-% To cite two works by the same author:~\citeauthor{ref-journal-1a} (\citeyear{ref-journal-1a},~\citeyear{ref-journal-1b}). This produces: Whittaker (1967, 1975)
-% To cite two works by the same author with specific pages:~\citeauthor{ref-journal-3a} (\citeyear{ref-journal-3a}, p. 328;~\citeyear{ref-journal-3b}, p.475). This produces: Wong (1999, p. 328; 2000, p. 475)
-
-\end{adjustwidth}
-\end{document}
-
