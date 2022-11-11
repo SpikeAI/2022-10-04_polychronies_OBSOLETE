@@ -204,7 +204,7 @@ Sensory data is most often represented by continuous values, such as the energy 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{figures/replicating_MainenSejnowski1995.pdf} 
-\caption{The timing of the spikes produced following the repetition of a step stimuli is less reproducible than that to a noisy stimulus. The stimulus is shown in the top row, while repetitions of a simulated Leaky Integrate-and-Fire neuron are shown in the second row (with membrane potential represented by  blue color when low hot yellow colors when depolarized). While this seems paradoxical at first sight, this is due to the use of the same \emph{frozen} noise at each repetition and highlight the highly reproducible pattern of spikes when it is driven by a highly dynamic input. See this \href{https://github.com/laurentperrinet/2022_UE-neurosciences-computationnelles/blob/master/C_MainenSejnowski1995.ipynb}{notebook} for a replication of this result using a simple LIF model.}\label{fig:mainen}
+\caption{The timing of the spikes produced following the repetition of a step stimuli is less reproducible than that to a noisy stimulus. The stimulus is shown in the top row, while trial repetitions of a simulated Leaky Integrate-and-Fire neuron are shown in the second row (with membrane potential represented by  dark blue color when light yellow colors when depolarized). While this seems paradoxical at first sight, this is due to the use of the same \emph{frozen} noise at each repetition and highlight the highly reproducible pattern of spikes when it is driven by a highly dynamic input. See this \href{https://github.com/laurentperrinet/2022_UE-neurosciences-computationnelles/blob/master/C_MainenSejnowski1995.ipynb}{notebook} for a replication of this result using a simple LIF model.}\label{fig:mainen}
 \end{figure}
 %----------------------------%
 
@@ -247,7 +247,7 @@ Theoretically, it was shown that a simple model may allow the propagation of suc
 %----------------------------%
 \begin{figure}
 \centering
-\includegraphics[width=.4\textwidth]{figures/Diesmann_et_al_1999.png}
+\includegraphics[width=\textwidth]{figures/Diesmann_et_al_1999.pdf}
 \caption{Simulation of a synfire propagation \href{https://brian2.readthedocs.io/en/stable/examples/frompapers.Diesmann_et_al_1999.html}{using Brian}. The model consists of 10 groups of 100 neurons each. A pulse with a given jitter is generated in the first group, which here generates a pulse after a certain processing delay in the second group with a lower jitter. This allows the propagation of the synchronous activity along the chain of the neural groups.}\label{fig:diesman}
 \end{figure}
 %----------------------------%
