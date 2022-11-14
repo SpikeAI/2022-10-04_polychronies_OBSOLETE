@@ -66,10 +66,12 @@ plot(Mgp.t/ms, 1.0*Mgp.i/group_size, '.')
 plot([0, duration/ms], np.arange(n_groups).repeat(2).reshape(-1, 2).T, 'k-')
 ylabel('group number')
 yticks(np.arange(n_groups)+.5, labels=range(1, n_groups+1))
-xlabel('time (ms)')
-# show()
 
-fname = 'Diesmann_et_al_1999'
-import matplotlib.pyplot as plt
-plt.savefig(fname + '.pdf', bbox_inches='tight', pad_inches=0.0, backend='pdf')
-#plt.savefig(fname + '.png', bbox_inches='tight', pad_inches=0.0, dpi=150, backend='agg')
+xlabel('time (ms)')
+if False:
+        show()
+else:
+        fname = 'Diesmann_et_al_1999'
+        import matplotlib.pyplot as plt
+        plt.savefig(fname + '.pdf', bbox_inches='tight', pad_inches=0.0, backend='pdf')
+        #plt.savefig(fname + '.png', bbox_inches='tight', pad_inches=0.0, dpi=150, backend='agg')
