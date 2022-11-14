@@ -68,7 +68,7 @@ ylabel('group number')
 yticks(np.arange(n_groups)+.5, labels=range(1, n_groups+1))
 
 xlabel('time (ms)')
-if True:
+if False:
         show()
 else:
         fname = 'Diesmann_et_al_1999'
