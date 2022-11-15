@@ -7,7 +7,7 @@
 % https://www.overleaf.com/project/633bf90497b5b325a3ff692e
 % https://framateam.org/spikeai/channels/review_polychrony
 % https://www.zotero.org/groups/4562620/polychronies
-%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % cite or die
 % ❯ ipython analyze_bibs.py
@@ -58,7 +58,7 @@
 %=================================================================
 % Add packages and commands here. The following packages are loaded in our class file: fontenc, inputenc, calc, indentfirst, fancyhdr, graphicx, epstopdf, lastpage, ifthen, lineno, float, amsmath, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, tabto, xcolor, soul, multirow, microtype, tikz, totcount, changepage, attrib, upgreek, cleveref, amsthm, hyphenat, natbib, hyperref, footmisc, url, geometry, newfloat, caption
 
-%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{siunitx}%The siunitx package provides a  set  of  tools  for  authors  to  typeset  quantities  in  aconsistent  way.
 
 \newcommand{\ms}{\si{\milli\second}}%
@@ -280,18 +280,18 @@ Interestingly, it can be shown that these travelling waves could have a measurab
 %
 % Robust computation with rhythmic spike patterns.~Proceedings of the National Academy of Sciences of the United States of America~116(36), 18050 - 18059.~ https://dx.doi.org/10.1073/pnas.1902653116
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{A rediscovered hypothesis: precise spiking motifs in cell assemblies}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Travelling waves indicate that spatio-temporal correlations could play an important role in shaping neural activity. For instance, statistical dependencies in the responses of sensory neurons govern both the amount of stimulus information conveyed and the means by which downstream neurons can extract it. In particular, this was put in evidence by analyzing the functional significance of correlated firing in a complete population of macaque parasol retinal ganglion cells using a model of multi-neuron spike responses~\citep{pillow_spatio-temporal_2008}, which shows precise spatio-temporal differences in this recurrently connected assembly. The different aspects of information in the data are evaluated by a decoding strategy, highlighting the role of correlations. Note that a similar dataset used in~\citep{schneidman_weak_2006} is available from Michael Berry's lab~\citep{berry_spike_2022} and allows performing and validate these hypotheses. However, a limit of explaining such data with travelling waves is that in theory a travelling wave would be stationary, which is incompatible with the limits in space and time of a neural system. Moreover, recent observations may suggest that neural groups or ensembles, rather than individual neurons, are emergent functional units of cortical activity. ~\cite{miller_visual_2014} shows, using two-photon calcium imaging of populations of neurons from the primary visual cortex of awake mice during visual stimulation and spontaneous activity, that whereas intrinsic ensembles recur at random time intervals, visually evoked ensembles are time-locked to stimuli. It proposes that visual stimuli recruit endogenously generated ensembles to represent visual attributes. Note that evoked ensembles in response to a natural movie played in a loop were precisely timed across repetitions. % (Fig. 7).
 
 
 From another viewpoint, there is a substantial literature in neurobiology indicating that brain dynamics often organize into stereotyped sequences such as synfire chains~\citep{ikegaya_synfire_2004}, packets~\citep{luczak_sequential_2007} or hippocampal sequences~\citep{pastalkova_internally_2008}. %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Explictly decoding spiking motifs}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %We have previously seen that neurobiologists have described stereotyped sequences of neural activation, notably in the hippocampus~\citep{pastalkova_internally_2008,villette_internally_2015,malvache_awake_2016}, and that neurons can be activated in the same order across days~\citep{haimerl_internal_2019}. 
 Going further, researchers have found that  precise repetitions of spontaneous patterns of synaptic inputs in neocortical neurons, \textit{in vivo} and \textit{in vitro}. These patterns repeat after minutes, maintaining millisecond accuracy. Indeed,~\citet{ikegaya_synfire_2004} demonstrated that in cortical activity, one can find a repetition of several motifs in spike activity (duration around 1s +/- .5 s, some events in motifs are of similar size but sometimes absent). These sequences can be specific of a particular layer or column, can be synchronized with network activity oscillation, and can involve several cells. They also demonstrated that these sequences can form super sequences, so-called \emph{cortical songs}. It consists of the assembly of several sequences which repeat in a specific order with a compressed timing. \emph{In vivo} spontaneous activity also reveals repeating sequences: about 3000 sequences, each involving 3-10 cells out (of about 900), and lasting up to 3 seconds. Sequences have specific topographic structures, in some cases involving only a particular layer or a vertical column of cells or cells located in a cluster, and are associated with a structured spatial organization of the neurons that formed them. %In cortical songs, there is a ``compressing timing'' which may be taken into account by a similar mechanism as maxpooling in CNNs for space, but in time. Or there may be a mechanism for controlling the replay speed (pulvinar, \ldots{} , ?)
 % %----------------------------%
@@ -329,18 +329,18 @@ That results suggest that precise spiking motifs are not necessarily grouped on 
 % \item
 %   Stimulus statistics dependence of response statistics is explained
 % \end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Understanding precise spiking motifs in neurobiology}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In this section, we will review current evidence on the role of spiking motifs in neurobiology, that is, from our understanding arising from actual recordings in biological tissues. In most generic computational models, the neural activity is assumed to be encoded in the firing rate. For instance, the output of the so-called linear non-linear (L-NL) models is assumed to model the response of a biological neuron as the sequence of a linear integration followed by a non-linear spiking response generating spikes according to a Poisson point-process. As such, a simple decoding strategy is to infer the input knowing the neuron's tuning curves~\citep{jazayeri_optimal_2006} or simply by a simple regression~\citep{berens_fast_2012}. This latter model assumes a Bernoulli model for the generation of spikes, such that the decoding amounts to a single-layer logistic regression. An important perspective of these methods used to decipher the recorded activity is that it could be ultimately used to fit neural network models to the recorded activity~\citep{bellec_fitting_2021}. In this particular paper, authors fit summary statistics of neural data with a (differentiable) spiking network model. The loss function is the cross entropy (following Bernouilli hypothesis with a GLM where each unit is modelled with an SRM neuron~\citep{gerstner_time_1995}) and embedded with recurrent dynamics. In particular, it comes with \href{https://github.com/EPFL-LCN/pub-bellec-wang-2021-sample-and-measure}{code} and uses the publicly available \href{http://crcns.org/data-sets/vc/pvc-11}{V1-dataset} which allows supervising the model with the input being the movie and the output the spikes recorded. These type of model may infer sparse activity in a set of binary latent variables, each describing the activity of a cell assembly~\citep{warner_probabilistic_2022}.
 Using the right metric, as implemented in that paper by the corresponding neural models, is essential in better understanding neural data. Importantly, these models are dependent on a core definition of spike measures, and we will review here how precise spiking motifs are taken into account by such spike distances.
 %
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Decoding neural activity using spike distances}\label{sec:detection}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 There are different solutions to provide with a distance between two given spike trains. A known measure is the Victor-Purpura distance, which  overcomes inconsistencies experienced with a simple firing rate (Poisson model) of spike trains~\citep{victor_nature_1996}. In a later study,~\citet{van_rossum_novel_2001} have defined a distance that uses a time constant as a parameter. Depending on this parameter, the distance interpolates between a coincidence detector and a rate difference counter. Such distances were extended to non-Euclidean metrics and use morphological manipulations to compute spike train dissimilarity~\citep{kreuz_measuring_2007}. Mathematically, the stability of distance measures induced by level-crossing sampling can be evaluated~\citep{moser_stability_2014}, notably in light of the so-called Weyl's discrepancy measure~\citep{weyl_ueber_1916}, which may lead to the definition of a cross-correlation measure which is adapted to the event-based nature of spiking signals. These observations lead to the intuition that each distance may be as well  as the optimal solution of a generative model for these measures, possibly through non-linear relations~\citep{aronov_non-euclidean_2004}. % ~\citep{} 
 
 Let us now focus on distances defined based on a generative model formed by using precise spiking motifs. A review of the methods for neuronal response latency estimation exists and includes Bayesian binning~\citep{levakova_review_2015}. More broadly, unitary event analysis can be performed by a statistical model of coincidence detection~\citep{grun_unitary_2002-1}. This was extensively used in detecting above chance significant synchronous patterns~\citep{grun_unitary_2010}, in particular in recordings of pairs of neurons (see~\citep{riehle_spike_1997} for instance), and has been extended to non-stationary data~\citep{grun_unitary_2002}. A method to detect significant patterns of synchronous spiking in a subset of massively parallel spike trains in the presence of background activity can be defined using the statistical evaluation of synchronous spike patterns extracted by frequent item set mining~\citep{torre_statistical_2013}. By the same group, the SPADE, CAD or ASSET algorithms are methods for identification of spike patterns in massively parallel spike trains (the spiking activity of tens to hundred(s) of neurons recorded in parallel) by identifying fine temporal correlations in the$~\ms$ precision range~\citep{quaglio_methods_2018}. This was recently extended in~\citep{stella_3d-spade_2019} in order to find re-occurring patterns in parallel spike train data, and to determine their statistical significance. The extension improves the performance in the presence of patterns with different durations, as demonstrated by application to various synthetic data, such as surrogates generated to evaluate precisely timed higher-order spike correlations~\citep{stella_comparing_2022}.
@@ -356,9 +356,9 @@ Another important algorithm, called SPOTDisClust, is based on the detection of s
 \end{figure}
 %----------------------------%
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Scaling up to very large scale data}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Over the past decade, tremendous technological advances across several disciplines have dramatically expanded the frontiers of experimentally accessible neuroscientific facts. Bridging across different spatial and temporal scales, combination of \textit{in vivo} two photon imaging, large population recording-array technologies, optogenetic circuit control tools, transgenic manipulations as well as large volume circuit reconstructions are now used to examine the function, structure and dynamics of neural networks on an unprecedented level of detail and precision. The daunting complexity of the biological reality revealed by these technologies highlights the importance of neurobiological knowledge to provide a conceptual bridge between abstract principles of brain function and their biological implementations within neural circuits. As a consequence, there is a growing need to scale these methods to larger amounts of data. 
 
 There are multiple solutions which aim at tackling this problem. One algorithm capable of achieving such a daunting task is the Rastermap algorithm~\citep{pachitariu_robustness_2018}. Basically, it re-arranges neurons in the raster plot based on similarity of activity and applies a deconvolution strategy based on a linear model. The model is \href{https://github.com/MouseLand/rastermap}{openly accessible} and has led to important discoveries. In~\citet{stringer_spontaneous_2019,stringer_high-dimensional_2019} for instance, it was shown that a neuronal population encodes information most efficiently when its stimulus responses are high-dimensional and uncorrelated, and most robustly when they are lower-dimensional and correlated. Then, in~\citep{stringer_high-precision_2021}, the authors analyzed spontaneous neural firing, finding that neurons in the primary visual cortex encoded both visual information and motor activity related to facial movements. In~\citep{russo_cell_2017}, the authors developed novel machine learning tools and statistical tests for unsupervised spatio-temporal pattern detection in non-stationary environments, which were applied to simultaneous electro-physiological recordings from tens to hundreds of neurons for decoding cognitive processes from neural activity. Altogether, this provides evidence for the importance of such machine-learning-based tools to provide with breakthroughs in neuroscience.
@@ -369,9 +369,9 @@ In the paper by~\citet{russo_cell_2017}, the authors present a unifying methodol
 At a larger scale, in~\citep{van_kempen_top-down_2021}, it was shown that attentional information from V4 or arousal can change the timings of groups of events in V1. They develop a Hidden Markov Model for quantifying the transitions. In particular, they show that fluctuations in neural excitability are coordinated between visual areas with retinotopic precision. Top-down attention drives inter-areal coordination along the reverse cortical hierarchy, predicting better behavioral performance with increased coordination. Building such models for predicting changes of timings based on context, such as using a so-called change point model for blocked-based experimental protocols~\citep{pasturel_humans_2020}, could therefore provide useful prior information to enhance the decoding from neural activity.
 % sparse in time and space : AL Barth and JF Poulet Trends in Neurosciences 35.6 (2012), pp.~345-355.  CC Petersen and S Crochet, Neuron 78.1 (2013), pp.~28-48.
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{What biological mechanism could allow learning spiking motifs?}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 Despite the extensive computer evidence of the effectiveness of precise spiking detection we presented above, doubts may remain as to the reliability of this learning mechanism and whether there is a real need for further research on this subject. The discovery of the existence of an equivalent biological mechanism in vertebrates as well as the demonstration of the importance of its role in various developed behaviors allow us to put these doubts to rest. In the following paragraphs we will successively describe the first biological observations of biological delay learning, identify myelinization as an important actor and finally study this phenomenon at the molecular level. 
 
@@ -402,19 +402,19 @@ The previous paragraphs present the biological mechanisms behind axonal delay, r
 
 All in all, learning spike motifs requires significantly complex pathways and biological mechanisms whether in the dendrites or the axon of the neuron. More and more is known about the non-trivial research topic that is biological delay learning, and extensive experimental data help develop artificial neural networks, whose learning rules would be more neuromorphic. 
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Modeling precisely-timed spiking motifs in computational neuroscience}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In the following section, we review theoretical models which directly take advantage of using precise spiking motifs. 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 A natural candidate to use these precise temporal patterns in the brain is to use Spiking Neural Networks (SNNs)~\citep{maass_networks_1997}. The approach which is at present most prominent in the SNN community is to use existing algorithms from machine learning and to adapt them to the specificity of spiking architectures~\citep{goltz_fast_2021}. One such example is to adapt the successes of deep learning algorithms and to transfer the back-propagation algorithm to SNNs, as it is the most widely used to tune the weights of a classical (non spiking) Neural Network. In a nutshell, it considers the system as implementing an input / output function and iteratively updates the weights according to the direction and magnitude of the error function gradient. Since the activation function of a spiking neuron is not differentiable, a recent popular approach consists in using a surrogate gradient~\citep{neftci_surrogate_2019} to ``cross-compile'' classical Neural Network to a spiking architecture~\citep{rueckauer_conversion_2017}. This approach is quite successful, and SNNs reach in some case a similar performance as their non spiking equivalent, for instance on the N-MNIST dataset for categorizing digits in a stream of events~\citep{susi_nmnsd-spiking_2021}. The main reason for adopting this approach instead of classical architectures is the possibility to benefit from dedicated neuromorphic low-energy hardware. However, most biological neural systems use spikes and are obviously more efficient than current state-of-the-art vision systems, both in terms of efficiency (accuracy), in speed (latency), and energy consumption. There is therefore an immense gap in the way we understand biology to translate it to the efficiency of SNNs.  To go beyond the state-of-the-art, we will focus here on one core computation of a spiking neuron, that is, is its ability to switch from the classical integrator mode (summing analog currents on its synapses) to a synchrony detector where it emits a spike whenever presynaptic spiking inputs are synchronized~\citep{abeles_role_1982,paugam-moisy_computing_2012}. To overcome the diversity of input presynaptic patterns, we will explore different existing architectures which are able to learn to detect stable ``polychronous'' events, that is, volleys of spikes which are stable up to certain onset time (see Figure~\ref{fig:THC}). These models will be compared in light of neuroscientific and computational perspectives. We review in this section theoretical and computational foundations of spiking motif detection. %In particular, our objective is to describe methods which fully exploit the capacity of spiking neurons to detect synchronous patterns.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Izhikevitch's polychronization model}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % polychronization
 As we saw, most SNN and in particular those adapted from analogous deep-learning-like architectures, rely on an encoding of information based on a continuously varying firing-rate. A notable exception of a SNN using precise spike timings is the \textit{polychronization} model of~\citet{izhikevich_polychronization_2006}. This model is based on a random recurrent model of spiking neurons including synaptic delays chosen randomly from a range of biologically realistic delays (from $0$ to $20~\ms$) and whose weights evolved with a Spike-Time Dependent Plasticity (STDP) learning rule~\citep{markram_regulation_1997}. It is consensus that spike timing (STDP) plays a crucial role in the development of synaptic efficacy for many different kinds of neurons~\citep{caporale_spike_2008}. Delays are defined as the total time taken for a spike to be conducted from one presynaptic neuron's soma to the efferent postsynaptic neuron's soma. It is worth mentioning that only the weights are changed using the STDP rule and that the set of delays is set randomly at initialization and that delays are then ``frozen'' for the rest of the simulation. Due to the interplay between the delays and STDP, the spiking neurons spontaneously self-organize into groups and generate patterns of stereotypical polychronous activity, i.e.~exhibit reproducible time-locked firing patterns which  the author defined as ``polychronous groups'' (PGs). One core ingredient of this model is the fact that the neurons composing a group fire at different times, but due to the heterogeneous delays, the spikes reach the postsynaptic neuron at the same time. This synchrony of arrival at the soma of the neuron leads to the summation of the excitatory post-synaptic potentials evoked by each spike, and thus to the crossing of the voltage threshold and to the discharge of a spike (see Figure~\ref{fig:izhikevitch}). According to the STDP rule, the group of neurons involved in this polychronous activity will see their synaptic weight increase and, thus, may consolidate the formation of a polychronous group. %----------------------------%
 %
@@ -455,10 +455,10 @@ Strikingly, thanks to the fact that a neuron can be involved in different polych
 \end{figure}
 % 
 %----------------------------%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Learning synaptic delays}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Training delays ~\citep{state_training_2019}
 First, the original model use a simple STDP rule while a whole range of STDP-based learning rules may implement precise spiking motifs detection. For instance, to address how transmission delays and STDP can jointly determine these emergent pairwise activity-connectivity patterns, a recent study analyzed phase synchronization properties and coupling symmetry between two bidirectionally coupled neurons using both phase oscillator and conductance-based neuron models~\citep{madadi_asl_delay-dependent_2022}. Moreover, modified STDP rules have been used for synchronous coherence detection~\citep{perrinet_coherence_2002}, for the learning of specific receptive fields~\citep{perrinet_networks_2001}. They were also extended to recurrent Neuronal Networks~\citep{gilson_stdp_2010} or delay selection~\citep{datadien_right_2011}. In particular, this has been applied for recurrent networks of spiking neurons receiving oscillatory inputs~\citep{kerr_delay_2013} which targets for the selective potentiation of recurrent connections with different axonal and dendritic delays during oscillatory activity. More generally, our ability to track and respond to rapidly changing visual stimuli, such as a fast-moving tennis ball, indicates that the brain is capable of extrapolating the trajectory of a moving object to predict its current position, despite the delays that result from neural transmission. Specifically, the neural circuits underlying this ability can be learned through spike-timing-dependent synaptic plasticity and that these circuits emerge spontaneously and without supervision, demonstrating how the neural transmission delays can, in part, be compensated to implement the extrapolation mechanisms required to predict where a moving object is at the present moment~\citep{burkitt_predictive_2021}.
 
@@ -488,10 +488,10 @@ In yet another computational model,~\citet{sun_learning_2016} show that the freq
 % Training and Spontaneous Reinforcement of Neuronal Assemblies by Spike Timing Plasticity.
 % Ocker GK, Doiron B.Cereb Cortex. 2019.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Real-world applications}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %----------------------------%
 % TODO
 \begin{figure}%[t!]
@@ -509,13 +509,13 @@ A second shortcoming of models derived from the polychronization model is their 
 
 There are more applications to image processing using spiking neural networks. For instance, a set of models are based on the design of micro-circuits with specific lateral interactions embedded with spatially anisotropic connections. Using this core computational unit, and extending it to computations on a topographic representation similar to that observed in the primary visual cortex of mammals, the anisotropic rules implemented a form of delayed activation. This result was based on a predictive model defined in the Bayesian framework (the so-called free-energy principle) which was able to account for temporal delays in the  system, both at the sensory and motor levels~\citep{perrinet_active_2014}, and in particular that ``the application of delay operators just means changing synaptic connection strengths to take different mixtures of generalized sensations and their prediction errors.'' Such a model was implemented at the network level and applied to various motion detection tasks. In essence, two neurons which were selective to specific motions were connected if the delay was coherent with the change in the position of their respective receptive fields~\citep{hogendoorn_predictive_2019}.  This was also implemented in a neural mass model, showing that such anisotropic connectivity may explain the emergence of tracking~\citep{khoei_motion-based_2013}, and further explored in a spiking neural network which reproduced the observation that neural activity was maintained during the trajectory of a smoothly moving dot even if it was momentarily blanked~\citep{kaplan_anisotropic_2013}. This led in particular to the proposal that such delay-based computations could explain diverse perceptual mechanisms, such as the so-called flash-lag illusion~\citep{khoei_flash-lag_2017}. However, these latter models used parametric rules for defining the weights. Extending such mechanisms with the ability of learning delays in a SNN will provide a breakthrough in the efficiency of these networks, and we will explore some exemplar results from neuromorphic engineering to get better insights on that aspect.
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Applications of precise spiking motifs in neuromorphic engineering}
 \label{sec:neuromorphic}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 Artificial intelligence has made huge advances in the past decades and deep learning algorithms, nowadays, outperform humans at complex tasks like natural image recognition or abstract strategy board games. Yet, machine learning algorithms suffer from adversarial attacks or a lack of generalization capacity but their main weakness, compared to biological neural networks, rely on their poor energy efficiency. Neuromorphic engineering intends to mimic the neural bases of communication with a wide variety of technics, from strictly analog circuits to software-based neuromorphic systems, and to develop tools improving the capacities of current artificial intelligence~\citep{roy_towards_2019}. Because the reduced energy consumption of biological networks can be explained by the use of spikes and asynchronous responses to exchange information~\citep{maass_networks_1997}, neuromorphic chips use this parallel and event-based representation to make energy efficient computations. Another important distinction with classical von Neumann architectures is the localized memory of this new type of chips. It can be materialized by the capacity of the physical connections between the processing units to store information~\citep{markovic_physics_2020}. An example of such connection, directly inspired by synaptic plasticity, is the memristor~\citep{rasetto_challenges_2022} for which the resistance value can be dynamically adjusted. Using these event-based computations as a building brick, neuromorphic engineering proposes new hardware designs perfect to simulate SNNs and use the full power of asynchronous computations observed in biological systems. Even if some useful SNNs simulators run on GPUs~\citep{diesmann_nest_2003, hazan_bindsnet_2018, stimberg_brian_2019}, such event-based computing technics show their advantages in terms of frugality and rapidity only on neuromorphic chips. 
 
@@ -565,16 +565,16 @@ Online on-chip learning and computations with delays are still emerging in neuro
 % solutions usuellement utilisées - surrogate gradient
 %for other section: A hypothesis for temporal coding of young and mature granule cells(https://www.frontiersin.org/articles/10.3389/fnins.2013.00075/full)
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}\label{sec:discussion}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Summary}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %: >>>>>>>> Laurent is here <<<<<<<<<<<<<<
 In this review paper, we have presented recent evidence for the role of precise spiking motifs in neuroscience. In particular, we have shown that such particular motifs may play a crucial role in neurobiology, that they may be understood at the theoretical and computational levels and that they may have numerous applications in neuromorphic engineering. In particular, we have shown that:
 \begin{itemize}
