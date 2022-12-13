@@ -68,6 +68,14 @@
 \usepackage{color}
 \newcommand{\note}[1]{{\sethlcolor{yellow}\hl{#1}}}
 \usepackage[margins]{trackchanges}
+
+\addeditor{Antoine}
+\addeditor{Amélie}
+\addeditor{Camille}
+\addeditor{Jean}
+\addeditor{JN}
+\addeditor{Laurent}
+
 %\newcommand{\note}[1]{}
 %
 %=================================================================
@@ -176,7 +184,8 @@ Why do neurons communicate through spikes? By definition, spikes are all-or-none
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CONTEXT
 Neural activity is directly influenced by our immediate environment and by internal states and is structured in order to generate motor actions. The efficiency of these actions is key for survival, which is the sole determinant in the light of natural selection. A central question of modern neuroscience is to better understand the essence of neural activity, as exemplified by the recordings observed in neurobiological experiments. One sometimes uses the expression ``decoding the neural code'', although this implies the existence of a code, i.e. an explicit representation within the neural activity. Nevertheless, we will use this terminology in all generality to denote the existence of a structure in neural activity. In this respect, it is known that neural activity may be related to specific measurable variables, and since Galvani's experiments, we know that an electrical activity applied on muscular nerves can cause the stretching of a frog's limb (for a review, see~\citep{piccolino_luigi_1997}). A central and well-studied way of communication between neurons is specific electrochemical events called action potentials, or spikes, which were first discovered by \href{https://en.wikipedia.org/wiki/Edgar_Adrian}{Lord Adrian}~\citep{adrian_impulses_1926}. In the scope of this article, we focus mainly on these spikes, which are brief (about one millisecond) impulses that propagate along the axons of neurons. First, these have the particular property of being essentially binary in their amplitude, i.e. they are prototypical, 
-``\href{https://en.wikipedia.org/wiki/All-or-none_law}{all-or-none}''. Typically, these are received by a neuron from other afferent neurons on the arborized ``input'' dendrite, integrated in its soma, and possibly further propagated along its ``output'' axon to reach efferent neurons. The frequency at which these spikes are emitted has been shown to be roughly commensurate with the stretch of the frog's limb~\citep{adrian_impulses_1926}, and this variable (measured in spikes per second, or Hertz) is as of today considered to be the main constituent of the neural code. Indeed, most neurophysiologists use the temporal evolution of the firing rate (for instance, as computed as the average occurrence of spikes in small temporal windows of about $100~\ms$) in order to characterize the dynamical activity of neurons. This may be extended by computing different statistics on each neuron's sequence of spikes~\citep{perkel_neuronal_1967} but also the dependence across neurons~\citep{perkel_neuronal_1967-1}. 
+``\href{https://en.wikipedia.org/wiki/All-or-none_law}{all-or-none}''. \change[Antoine]{Typically, these are received by a neuron from other afferent neurons on the arborized ``input'' dendrite, integrated in its soma, and possibly further propagated along its ``output'' axon to reach efferent neurons.}{Typically, a postsynaptic neuron receives incoming spikes from other afferent neurons on the arborized ``input'' dendrite. Once integrated by the dendritic tree and the soma of the neuron, these spikes result in a modification of its membrane potential that possibly leads to the emission of an action potential along its ``output'' axon to reach efferent neurons.}
+The frequency at which these spikes are emitted has been shown to be roughly commensurate with the stretch of the frog's limb~\citep{adrian_impulses_1926}, and this variable (measured in spikes per second, or Hertz) is as of today considered to be the main constituent of the neural code. Indeed, most neurophysiologists use the temporal evolution of the firing rate (for instance, as computed as the average occurrence of spikes in small temporal windows of about $100~\ms$) in order to characterize the dynamical activity of neurons. This may be extended by computing different statistics on each neuron's sequence of spikes~\citep{perkel_neuronal_1967} but also the dependence across neurons~\citep{perkel_neuronal_1967-1}. 
 
 % GAP
 However, computational neuroscience models have suggested that the precise timing within a sequence of spikes may play a crucial role and that neurons may be synchrony detectors as well as integrators~\citep{abeles_role_1982}. We will investigate this very hypothesis in this review. %Indeed, the response of one biological neuron largely depends on the precise timing of the sequence of incoming spikes that reach its soma~\citep{paugam-moisy_computing_2012}. 
