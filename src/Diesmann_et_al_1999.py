@@ -36,8 +36,8 @@ N_pulses = 5
 spike_times = np.zeros(0)
 np.random.seed(42)
 for i_pulse in range(N_pulses):
-        pulse = .5 * (N_pulses-i_pulse) * np.random.randn(N_inputs) + 10 + i_pulse*20
-        spike_times = np.concatenate((spike_times, pulse))
+    pulse = .5 * (N_pulses-i_pulse) * np.random.randn(N_inputs) + 10 + i_pulse*20
+    spike_times = np.concatenate((spike_times, pulse))
 
 spike_times = np.mod(spike_times, 100)
 
@@ -69,7 +69,7 @@ yticks(np.arange(n_groups)+.5, labels=range(1, n_groups+1))
 xlabel('time (ms)')
 
 if False:
-        show()
+    show()
 else:
-        import matplotlib.pyplot as plt
-        plt.savefig('../figures/Diesmann_et_al_1999.pdf', bbox_inches='tight', pad_inches=0.0, backend='pdf')
+    import matplotlib.pyplot as plt
+    plt.savefig('../figures/Diesmann_et_al_1999.pdf', bbox_inches='tight', pad_inches=0.0, backend='pdf')
