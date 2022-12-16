@@ -9,6 +9,24 @@
 % https://www.zotero.org/groups/4562620/polychronies
 %%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\ResponsReviewerTwo}{
+The authors present a relatively thorough review on neural coding based on spike patterns in populations of neurons, from biological, theoretical and neuromorphic engineering perspective. I find the review mostly fine, with some omissions that, when corrected, should enhance it.
+
+My main concern is the overall reliance on spike motifs as a coding mechanism. The authors should list alternatives and compare to spike motifs, at least cursory. A minor concern is the focus on mylenation-based delay learning, ignoring the obvious length-based delay adjustments.
+
+I have commented heavily within the manuscript, and am attaching it for the authors to use. I tried to delineate wording suggestions from more significant critiques. I am also listing the bigger concerns below.
+
+Specific issues:
+
+- not referencing much of insect work, with a few exceptions that are put in mammalian context. OK to do just timing in vertebrate systems (as birds are used), but should be stated clearly, and cited work should comport to that constraint (e.g., cite rat olfactory, not locust olfactory). Should the authors wish to include invertebrate work, there is a LOT more to review.
+- some references to original research are missing, while often much older ones are used (and not reviews).
+- missing important lines of work on spike timing. In particular, Aurel Lazar's TEM work. 
+- missing important lines of work on dendritic processing: Mel, Spruston.
+- discounting axonal length as delay mechanism, focus on myelin effects too high.
+- singular focus on synfire chain/polychronicity-like mechanisms. Alternative options, like Bayesian spiking (Deneve), probabilistic ensemble motifs (Ballard) and probabilistic population coding (Pouget and Latham), which do not rely on exact motifs of spikes, are not discussed.
+- there are also some discrepancies - are SNN-s differentiable or not.
+}
+
 % cite or die
 % ❯ ipython analyze_bibs.py
 
