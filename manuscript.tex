@@ -86,7 +86,7 @@ Specific issues:
 \usepackage{color}
 \newcommand{\mynote}[1]{{\sethlcolor{yellow}\hl{#1}}}
 \usepackage{trackchanges}
-
+%\usepackage[finalnew]{trackchanges}
 \addeditor{Antoine}
 \addeditor{Amélie}
 \addeditor{Camille}
@@ -103,10 +103,10 @@ Specific issues:
 %=================================================================
 % Full title of the paper (Capitalized)
 \Title{Precise spiking motifs in neurobiological and neuromorphic data}
-
+%
 % MDPI internal command: Title for citation in the left column
 \TitleCitation{Precise spiking motifs}
-
+%
 % Author Orchid ID: enter ID or remove command
 \newcommand{\orcidauthorA}{0000-0002-3107-4788} % AnG % Add \orcidA{} behind the author's name
 %\newcommand{\orcidauthorB}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
@@ -115,7 +115,7 @@ Specific issues:
 \newcommand{\orcidauthorD}{0000-0002-9238-6654} % JN
 \newcommand{\orcidauthorE}{0000-0001-8821-5556} % JM
 \newcommand{\orcidauthorF}{0000-0002-9536-010X} % LP
-
+%
 % Authors, for the paper (add full first names)
 \Author{
 Antoine Grimaldi $^{1}$% $^{1,\dagger,\ddagger}$
@@ -125,47 +125,47 @@ Camille Besnainou $^{1}$\orcidC{},
 Jean-Nicolas Jérémie $^{1}$\orcidD{},
 Jean Martinet $^{2}$\orcidE{},
 and Laurent Perrinet $^{1,}$\orcidF{}*}
-
+%
 %\longauthorlist{yes}
-
+%
 % MDPI internal command: Authors, for metadata in PDF
 \AuthorNames{Antoine Grimaldi, Amélie Gruel, Camille Besnainou, Jean-Nicolas Jérémie, Jean Martinet and Laurent Perrinet}
-
+%
 % MDPI internal command: Authors, for citation in the left column
 \AuthorCitation{Grimaldi, A.; Gruel, A.; Besnainou, C.; Jérémie, J.-N.;Martinet, J.; and Perrinet, L.}
 % If this is a Chicago style journal: Lastname, Firstname, Firstname Lastname, and Firstname Lastname.
-
+%
 % Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
 \address{%
 $^{1}$ \quad INT UMR 7289, Aix Marseille Univ, CNRS; 27 Bd Jean Moulin, 13005 Marseille, France\\
 $^{2}$ \quad SPARKS,  Côte d'Azur, CNRS, I3S; 2000 Rte des Lucioles, 06900 Sophia-Antipolis, France
 }
-
+%
 % Contact information of the corresponding author
 \corres{Correspondence: laurent.perrinet@univ-amu.fr}
-
+%
 % Current address and/or shared authorship
 % \firstnote{Current address: Affiliation 3.} 
 % \secondnote{These authors contributed equally to this work.}
 % The commands \thirdnote{} till \eighthnote{} are available for further notes
-
+%
 %\simplesumm{} % Simple summary
-
+%
 %\conference{} % An extended version of a conference paper
-
+%
 % Abstract (Do not insert blank lines, i.e. \\) 
 \abstract{
 Why do neurons communicate through spikes? By definition, spikes are all-or-none neural events which occur at continuous times. In other words, spikes are on one side binary, existing or not without further details, and on the other can occur at any asynchronous time, without the need for a centralized clock. This stands in stark contrast to the analog representation of values and the discretized timing classically used in digital processing and at the base of modern-day neural networks. As neural systems almost systematically use this so-called event-based representation in the living world, a better understanding of this phenomenon remains a fundamental challenge in neurobiology in order to better interpret the profusion of recorded data. With the growing need for intelligent embedded systems, it also emerges as a new computing paradigm to enable the efficient operation of a new class of sensors and event-based computers, called neuromorphic, which could enable significant gains in computation time and energy consumption --- a major societal issue in the era of the digital economy and global warming. In this review paper, we provide evidence from biology, theory and engineering that the precise timing of spikes plays a crucial role in our understanding of the efficiency of neural networks.
 }
-
+%
 % Keywords
 \keyword{spikes; asynchronous computing; neurobiology; computational neuroscience; neuromorphic engineering; heterogeneous delays; spiking motifs; polychronization.)} 
-
+%
 % The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
 %\PACS{J0101}
 %\MSC{}
 %\JEL{}
-
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Only for the journal Diversity
 %\LSID{\url{http://}}
@@ -224,7 +224,7 @@ Let us start with a focus on the state-of-the-art of the role of dynamics in vis
 \includegraphics[width=.75\textwidth]{figures/visual-latency.pdf}
 % thorpe
 % \includegraphics[width=.7\textwidth]{figures/visual-latency-estimate.jpg}%-estimate.jpg}
-\caption{{\bf Latency of the different processing steps along the visual pathway.} Though this system is highly inter-connected, one can follow the sequence of activations whenever an image (here a yellow star) is flashed in front of the eyes. Different areas are schematically represented by ellipses and arrows denote the fastest feed-forward activation, ordered with respect to their activation latency. In order, the retina is first activated ($20-40~\ms$) then the thalamus and the primary visual cortex (V1, $60-80~\ms$). Visual information used for object recognition follows the temporal lobe to reach the infero-temporal area (IT, $120-140~\ms$), and then the prefrontal cortex (PFC) which modulates decision making and the Motor cortex (MC, $140-190~\ms$) which mediates a motor action which is then relayed through the spinal cord to trigger finger muscles, with latencies about $200-350~\ms$.}\label{fig:thorpe}
+\caption{{\bf Latency of the different processing steps along the visual pathway.} Though this system is highly inter-connected, one can follow the sequence of activations whenever an image (here a yellow star) is flashed in front of the eyes. Different areas are schematically represented by ellipses and arrows denote the fastest feed-forward activation, ordered with respect to their activation latency in $\ms$. In order, the retina is first activated ($20-40~\ms$) then the thalamus and the primary visual cortex (V1, $60-90~\ms$). Visual information used for object recognition follows the temporal lobe to reach the infero-temporal area (IT, $150~\ms$), and then the prefrontal cortex (PFC, $180~\ms$) which modulates decision making and the Motor cortex (MC, $220~\ms$) which mediates a motor action which is then relayed through the spinal cord to trigger finger muscles, with latencies about $280-400~\ms$.}\label{fig:thorpe}
 \end{figure}
 %----------------------------%
 In particular, there have been some remarkable findings when studying the dynamics of vision. For instance, Simon Thorpe's group has shown during the last decades numerous examples demonstrating that humans can categorize briefly presented images in a fraction of a second. \change[Antoine]{His}{Their} experiments consisted in asking subjects to categorize images that do or do not contain animals~\citep{thorpe_speed_1996}. The results showed that humans were able to perform this task very well (with a success rate of more than 95\%) but above all that a differential activity for the two categories of images could be observed by electroencephalography, showing that this differentiation emerges with a very short latency in neural activity. These results have been extended to several species, including primates. Different experimental protocols have shown for example that the motor response could be extremely fast (of the order of $120~\ms$) when the task was to perform a saccade~\citep{kirchner_ultra-rapid_2006}. This fast processing correlates with the surprising experiments of fast serial detection, which consists in presenting a fast succession of different images and decoding via the EEG if the observer can detect for example the presence of an animal~\citep{keysers_speed_2001}. As expected, the performances decrease progressively as the frequency of presentation of the images increases. However, it has been shown in the macaque that a significant performance could be maintained with an image presentation time of only $14~\ms$ per image.
