@@ -8,23 +8,44 @@
 % https://framateam.org/spikeai/channels/review_polychrony
 % https://www.zotero.org/groups/4562620/polychronies
 %%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \newcommand{\ResponseReviewerTwo}{
-The authors present a relatively thorough review on neural coding based on spike patterns in populations of neurons, from biological, theoretical and neuromorphic engineering perspective. I find the review mostly fine, with some omissions that, when corrected, should enhance it.
+We would like to thank reviewer 2 for his very detailed response which were essential in providing this new revision. 
 
-My main concern is the overall reliance on spike motifs as a coding mechanism. The authors should list alternatives and compare to spike motifs, at least cursory. A minor concern is the focus on mylenation-based delay learning, ignoring the obvious length-based delay adjustments.
+> The authors present a relatively thorough review on neural coding based on spike patterns in populations of neurons, from biological, theoretical and neuromorphic engineering perspective. I find the review mostly fine, with some omissions that, when corrected, should enhance it.
 
-I have commented heavily within the manuscript, and am attaching it for the authors to use. I tried to delineate wording suggestions from more significant critiques. I am also listing the bigger concerns below.
+Thanks for the encouraging comment, we hope that in its present form, the result is even more useful to the community.
 
-Specific issues:
+> My main concern is the overall reliance on spike motifs as a coding mechanism. The authors should list alternatives and compare to spike motifs, at least cursory. A minor concern is the focus on mylenation-based delay learning, ignoring the obvious length-based delay adjustments.
 
-- not referencing much of insect work, with a few exceptions that are put in mammalian context. OK to do just timing in vertebrate systems (as birds are used), but should be stated clearly, and cited work should comport to that constraint (e.g., cite rat olfactory, not locust olfactory). Should the authors wish to include invertebrate work, there is a LOT more to review.
-- some references to original research are missing, while often much older ones are used (and not reviews).
-- missing important lines of work on spike timing. In particular, Aurel Lazar's TEM work. 
-- missing important lines of work on dendritic processing: Mel, Spruston.
-- discounting axonal length as delay mechanism, focus on myelin effects too high.
-- singular focus on synfire chain/polychronicity-like mechanisms. Alternative options, like Bayesian spiking (Deneve), probabilistic ensemble motifs (Ballard) and probabilistic population coding (Pouget and Latham), which do not rely on exact motifs of spikes, are not discussed.
-- there are also some discrepancies - are SNN-s differentiable or not.
+We have more progressively commented different alternatives for coding mechanisms in the beginning of section 2, highlighting their relative benefits.
+
+> I have commented heavily within the manuscript, and am attaching it for the authors to use. I tried to delineate wording suggestions from more significant critiques. I am also listing the bigger concerns below.
+
+Many thanks for providing the PDF of the manuscript with annotations, this was immensely useful to annotate and improve our revision. To respond to all these points, we have constructed a tracked changes manuscript in which we respond (by a change, removal or addition) to the reviewer's comments.
+
+> Specific issues:
+> - not referencing much of insect work, with a few exceptions that are put in mammalian context. OK to do just timing in vertebrate systems (as birds are used), but should be stated clearly, and cited work should comport to that constraint (e.g., cite rat olfactory, not locust olfactory). Should the authors wish to include invertebrate work, there is a LOT more to review.
+
+Indeed, our focus was implicitly on mammals. worse, we were sometimes using evidence form insects without highlighting the differences. We believe that the coding principle we put forward is general enough to cover both orders. We also tried to keep the review at a reasonable length to keep the balance between computational and biological evidence. Therefore, while we keep our focus on mammals, we have been careful now to mention the order of animals.
+
+> - some references to original research are missing, while often much older ones are used (and not reviews).
+> - missing important lines of work on spike timing. In particular, Aurel Lazar's TEM work. 
+> - missing important lines of work on dendritic processing: Mel, Spruston.
+
+These critical references were indeed missing and we have added them now to the manuscript. Thanks for pointing out these omissions.
+
+> - discounting axonal length as delay mechanism, focus on myelin effects too high.
+
+This was corrected in section 4, providing a more balanced review.
+
+> - singular focus on synfire chain/polychronicity-like mechanisms. Alternative options, like Bayesian spiking (Deneve), probabilistic ensemble motifs (Ballard) and probabilistic population coding (Pouget and Latham), which do not rely on exact motifs of spikes, are not discussed.
+
+Indeed, we had made that choice to 
+
+> - there are also some discrepancies - are SNN-s differentiable or not.
+
+We have corrected these discrepancies. Thanks again for all these useful comments.
+
 }
 
 % cite or die
