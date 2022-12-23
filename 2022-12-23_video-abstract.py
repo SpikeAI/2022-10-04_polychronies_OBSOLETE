@@ -18,8 +18,8 @@ H_fig, W_fig = int(H-H/(1.618*3)), int(W-W/(1.618*3))
 
 opt_t = dict(font="Arial", size=(W,H), method='caption')
 opt_st = dict(font="Arial", size=(W,H), method='caption')
-opt_t = dict(size=(W,H), method='caption')
-opt_st = dict(size=(W,H), method='caption')
+# opt_t = dict(size=(W,H), method='caption')
+# opt_st = dict(size=(W,H), method='caption')
 
 clip = []
 t = 0 
@@ -31,19 +31,16 @@ texts = ["""Precise spiking motifs in neurobiological and neuromorphic data
 
 
 
+""", """Precise spiking motifs in neurobiological and neuromorphic data
+
+   Grimaldi, Gruel, Besnainou, 
+   Jérémie, Martinet, and Perrinet
+
 
 """, """Precise spiking motifs in neurobiological and neuromorphic data
 
-by Grimaldi, Gruel, 
-   Besnainou, Jérémie, 
-   Martinet, and Perrinet
-
-
-""", """Precise spiking motifs in neurobiological and neuromorphic data
-
-by Grimaldi, Gruel, 
-   Besnainou, Jérémie, 
-   Martinet, and Perrinet
+   Grimaldi, Gruel, Besnainou, 
+   Jérémie, Martinet, and Perrinet
 
 Brain Sciences (2022)
 """]
@@ -55,8 +52,8 @@ for text in texts:
     clip.append(txt)
 
 # INTRO
-sub_opts = dict(fontsize=28, align='center', color='white', **opt_t)
-sub_duration = 1.5
+sub_opts = dict(fontsize=28, align='left', color='white', **opt_t)
+sub_duration = 2.5
 intro_subs = ["""
 The majority of information passing 
 in the brain is mediated by all-or-none 
@@ -97,15 +94,19 @@ chapters['VS']['content'] = [dict(figure='figures/visual-latency.jpg', duration=
                 "This shows that different individuals have different...", 
                 "...compromise between exploration and the exploitation...", 
                 "...a hallmark of their inter-individual differences."])]
-chapters['poly']['content'] = [dict(figure='figures/visual-latency.jpg', duration=5, subtitle=[
-                "This shows that different individuals have different...", 
+chapters['poly']['content'] = [dict(figure='figures/replicating_MainenSejnowski1995.png', duration=5, subtitle=["This shows that different individuals have different...", 
                 "...compromise between exploration and the exploitation...", 
                 "...a hallmark of their inter-individual differences."])]
-chapters['neuro']['content'] = [dict(figure='figures/visual-latency.jpg', duration=5, subtitle=[
-                "This shows that different individuals have different...", 
+chapters['neuro']['content'] = [
+                dict(figure='figures/Ikegaya2004zse0150424620001.jpeg', 
+                     duration=5, subtitle=[
+                        "This shows that different individuals have different...", 
+                        "...compromise between exploration and the exploitation...", 
+                        "...a hallmark of their inter-individual differences."]),
+                dict(figure='figures/Ikegaya2004zse0150424620001.jpeg', duration=5, subtitle=["This shows that different individuals have different...", 
                 "...compromise between exploration and the exploitation...", 
                 "...a hallmark of their inter-individual differences."])]
-chapters['DVS']['content'] = [dict(figure='figures/visual-latency.jpg', duration=5, subtitle=[
+chapters['DVS']['content'] = [dict(figure='event_driven_computations.png', duration=5, subtitle=[
                 "This shows that different individuals have different...", 
                 "...compromise between exploration and the exploitation...", 
                 "...a hallmark of their inter-individual differences."])]
@@ -178,10 +179,12 @@ texts = ["""
 For more info, and the full, open-sourced code... visit
 
 
+
 """, """
 For more info, and the full, open-sourced code... visit
 
-https://laurentperrinet.github.io/publication/grimaldi-22-polychronies/
+https://laurentperrinet.github.io/
+         /publication/grimaldi-22-polychronies/
 """,
 ]
 
