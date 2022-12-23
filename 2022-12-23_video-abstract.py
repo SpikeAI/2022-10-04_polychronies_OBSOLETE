@@ -122,9 +122,7 @@ for chapter_key in chapters.keys():
     t += duration
     clip.append(txt)
 
-    for content_key in chapter['content'].keys():
-        content = chapter[content_key]
-
+    for content in chapter['content']:
         # set the figure
         figname = content['figure']
         if figname[-4:]=='.mp4' :
