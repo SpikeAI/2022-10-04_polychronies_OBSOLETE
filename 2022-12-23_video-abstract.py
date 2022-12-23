@@ -88,8 +88,6 @@ for i_sub, subtitle in enumerate(intro_subs):
 
 
 
-# visual-latency.jpg
-
 # fig_name = {"BSM":['BSM.mp4'], # 30''
 #             "Bet_eyeMvt":['eyeMvt.mp4',  # 10''
 #                       # '1_B_Trace_moyenne.png',
@@ -175,38 +173,67 @@ for i_sub, subtitle in enumerate(intro_subs):
 #                "...a hallmark of their inter-individual differences."]
 
 
-# # http://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=compositevideoclip#textclip
-# txt_opts = dict(fontsize=65, bg_color='white', align='center', **opt_st)
-# sub_opts = dict(fontsize=28, align='South', color='white', **opt_st)
 
-# for text, color in zip(texts, colors):
-#     # duration = 1
-#     # txt = TextClip(text, color=color, **txt_opts).set_start(t).set_duration(duration)
-#     # t += duration
-#     # clip.append(txt)
+chapters = {'VS': dict(title="Visual system", color='black'), 
+            'poly': dict(title="Polychrony", color='orange'), 
+            'neuro': dict(title="Neurobiology", color='red'), 
+            'DVS': dict(title="Neuromorphic", color='blue'), 
+            }
 
-#     for fig in fig_name[text] :
-    
-#         if fig[-4:]=='.mp4' :
-#             img = VideoFileClip('%s/%s'%(text, fig), audio=False)
-#             print(fig, '--> duration:', img.duration, ', fps:', img.fps)
-#             duration = img.duration
-#         else :
-#             duration = duration_dict[fig]
-#             img = ImageClip('%s/%s'%(text, fig)).set_duration(duration)
+chapters['VS']['content'] = [dict(figure='figures/visual-latency.jpg', duration=5, subtitle=
+                "This shows that different individuals have different...", 
+                "...compromise between exploration and the exploitation...", 
+                "...a hallmark of their inter-individual differences."
+)]
+chapters['poly']['content'] = [dict(figure='figures/visual-latency.jpg', duration=5, subtitle=
+                "This shows that different individuals have different...", 
+                "...compromise between exploration and the exploitation...", 
+                "...a hallmark of their inter-individual differences."
+)]
+chapters['neuro']['content'] = [dict(figure='figures/visual-latency.jpg', duration=5, subtitle=
+                "This shows that different individuals have different...", 
+                "...compromise between exploration and the exploitation...", 
+                "...a hallmark of their inter-individual differences."
+)]
+chapters['DVS']['content'] = [dict(figure='figures/visual-latency.jpg', duration=5, subtitle=
+                "This shows that different individuals have different...", 
+                "...compromise between exploration and the exploitation...", 
+                "...a hallmark of their inter-individual differences."
+)]
 
-#         img = img.set_start(t).set_pos('center').resize(height=H_fig, width=W_fig)
 
-#         t += duration
-#         clip.append(img)
+# http://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=compositevideoclip#textclip
+txt_opts = dict(fontsize=65, bg_color='white', align='center', **opt_st)
+sub_opts = dict(fontsize=28, align='South', color='white', **opt_st)
 
-#         # blabla
-#         t_sub = t - duration
-#         sub_duration = duration / len(subtitles[fig])
-#         for subtitle in subtitles[fig]:
-#             sub = TextClip(subtitle, **sub_opts).set_start(t_sub).set_duration(sub_duration)
-#             t_sub += sub_duration
-#             clip.append(sub)
+for chapter in chapters:
+    duration = 1
+    txt = TextClip(chapter[title], color=chapter[color], **txt_opts).set_start(t).set_duration(duration)
+    t += duration
+    clip.append(txt)
+
+    for content in chapter['content'] :
+        # set the figure
+        figname = content['figure']
+        if figname[-4:]=='.mp4' :
+            img = VideoFileClip(figname, audio=False)
+            print(figname, '--> duration:', img.duration, ', fps:', img.fps)
+            duration = img.duration
+        else :
+            img = ImageClip(figname).set_duration(content[duration])
+
+        img = img.set_start(t).set_pos('center').resize(height=H_fig, width=W_fig)
+
+        t += duration
+        clip.append(img)
+
+        # write the subtitles
+        t_sub = t - duration
+        sub_duration = duration / len(content[subtitle])
+        for subtitle in content[subtitle]:
+            sub = TextClip(subtitle, **sub_opts).set_start(t_sub).set_duration(sub_duration)
+            t_sub += sub_duration
+            clip.append(sub)
 
 # OUTRO
 texts = ["""
