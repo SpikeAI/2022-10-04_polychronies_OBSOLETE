@@ -106,7 +106,7 @@ chapters['neuro']['content'] = [
                 dict(figure='figures/Ikegaya2004zse0150424620001.jpeg', duration=5, subtitle=["This shows that different individuals have different...", 
                 "...compromise between exploration and the exploitation...", 
                 "...a hallmark of their inter-individual differences."])]
-chapters['DVS']['content'] = [dict(figure='event_driven_computations.png', duration=5, subtitle=[
+chapters['DVS']['content'] = [dict(figure='figures/event_driven_computations.png', duration=5, subtitle=[
                 "This shows that different individuals have different...", 
                 "...compromise between exploration and the exploitation...", 
                 "...a hallmark of their inter-individual differences."])]
