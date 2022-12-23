@@ -111,18 +111,23 @@ chapters = [dict(title="Visual system", color='black',
                             "...or neuromorphic engineering."])]), 
            dict(title="Neurobiology", color='red',
             content=[dict(figure='figures/haimerl2019.jpg', duration=5, subtitle=[
-                            "This shows that different individuals have different...", 
-                            "...compromise between exploration and the exploitation...", 
-                            "...a hallmark of their inter-individual haimerl2019.jpg."]),
+                            "This hypothesis is reviewed with respect to our ...", 
+                            "...knowledge of the neuobilogy, for instance in the...", 
+                            "...hippocampus of rodents. But we review also ."]),
                     dict(figure='figures/Ikegaya2004zse0150424620001.jpeg', duration=5, subtitle=[
-                            "This shows that different individuals have different...", 
-                            "...compromise between exploration and the exploitation...", 
-                            "...a hallmark of their inter-individual ."])]), 
+                            "...numerous and extensive work on the mechanisms...", 
+                            "... which may allow the neural system to learn...", 
+                            "...to actually use that precise spiking motifs."])]), 
            dict(title="Neuromorphic", color='blue',
             content=[dict(figure='figures/event_driven_computations.png', duration=5, subtitle=[
-                            "This shows that different individuals have different...", 
-                            "...compromise between exploration and the exploitation...", 
-                            "...a hallmark of their inter-individual differences."])]), 
+                            "We also review evidence from computational neuroscience...", 
+                            "...and neuromorphic engineering, in particular for novel...", 
+                            "...device such as event-based cameras which directly...", 
+                            "...transform lumnious information into spikes."]),
+                    dict(figure='../pyTERtorch/2022-11-30_BiolCybernetics/figures/2022-11-10_MotionDetection_input.mp4', duration=5, subtitle=[
+                            "For instance, we show how precise spike times may be...", 
+                            "...used to detect the direction of motion in a stream...", 
+                            "...of events in an ultra fast fashion."])]), 
            ]
 
 
