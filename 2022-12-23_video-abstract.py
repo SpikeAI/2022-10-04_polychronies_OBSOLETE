@@ -45,7 +45,7 @@ texts = ["""Precise spiking motifs in neurobiological and neuromorphic data
 Brain Sciences (2022)
 """]
 txt_opts = dict(align='center', color='white', **opt_t) #stroke_color='gray', stroke_width=.5
-duration = 2
+duration = 1.5
 for text in texts:
     txt = TextClip(text, fontsize=35, **txt_opts).set_start(t).set_duration(duration)
     t += duration
@@ -53,7 +53,7 @@ for text in texts:
 
 # INTRO
 sub_opts = dict(fontsize=28, align='West', color='white', **opt_t)
-sub_duration = 2.5
+sub_duration = 1.5
 intro_subs = ["""
 The majority of information passing 
 in the brain is mediated by all-or-none 
@@ -82,7 +82,7 @@ for i_sub, subtitle in enumerate(intro_subs):
     sub = TextClip(subtitle, **sub_opts).set_start(t).set_duration(sub_duration)
     t += sub_duration
     clip.append(sub)
-
+clip.append(sub) # another bit on the last bit
 
 chapters = [dict(title="Visual system", color='black',
             content=[dict(figure='figures/visual-latency.jpg', duration=5, subtitle=[
@@ -196,12 +196,14 @@ https://laurentperrinet.github.io/
 ]
 
 txt_opts = dict(align='center', **opt_t)
-duration = 3
-for text, fontsize in zip(texts, [30, 24]):
+duration = 2.5
+for text, fontsize in zip(texts, [28, 28]):
     txt = TextClip(text, color='orange', fontsize=fontsize, **txt_opts).set_start(t).set_duration(duration)
     t += duration
     clip.append(txt)    
 
+
+# COMPOSITING
 video = CompositeVideoClip(clip)
 video.write_videofile(videoname + '.mp4', fps=fps)
 
