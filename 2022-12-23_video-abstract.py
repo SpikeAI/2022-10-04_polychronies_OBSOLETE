@@ -192,8 +192,7 @@ for chapter in chapters:
 #################################################################################
 texts = ["""
 Overall, this manuscript reviews the potential
-of using the precise spiking motifs for a
-building more efficient machine learning 
+of using precise spiking motifs to design
 
 
 
@@ -201,21 +200,19 @@ building more efficient machine learning
 """,
 """
 Overall, this manuscript reviews the potential
-of using the precise spiking motifs for a
-building more efficient machine learning 
-algorithms, faster and more frugal,
-but also to better understand 
+of using precise spiking motifs to design
+more efficient machine learning algorithms, 
+that is, faster and more energy-frugal,
 
 
 """,
 """
 Overall, this manuscript reviews the potential
-of using the precise spiking motifs for a
-building more efficient machine learning 
-algorithms, faster and more frugal,
+of using precise spiking motifs to design
+more efficient machine learning algorithms, 
+that is, faster and more energy-frugal,
 but also to better understand 
-neurobiological functioning and their 
-disorders...
+neurobiological processes and their disorders...
 """]
 
 txt_opts = dict(fontsize=30, align='center', **opt_t)
