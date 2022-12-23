@@ -86,9 +86,15 @@ clip.append(sub) # another bit on the last bit
 
 chapters = [dict(title="Visual system", color='black',
             content=[dict(figure='figures/visual-latency.jpg', duration=5, subtitle=[
-                            "This shows that different individuals have different...", 
-                            "...compromise between exploration and the exploitation...", 
-                            "...a hallmark of their inter-individual differences."])]), 
+                            "The visual system is very efficient to generate a...", 
+                            "...decision from the raw image to the different ...", 
+                            "...stages of the visual pathways here a reaction...", 
+                            "...of finger muscles in about 300 milliseconds."]),
+                     dict(figure='../AG_figures/animated_neurons/LIF.mp4', duration=5, subtitle=[
+                            "This efficiency is thought to be mediated by spikes...", 
+                            "...that is brief all-or-none events which are passed...", 
+                            "...from assemblies of neurons to others, in the...", 
+                            "...very large network which forms the brain."])]), 
            dict(title="Polychrony", color='orange',
             content=[dict(figure='figures/replicating_MainenSejnowski1995.png', duration=5, subtitle=[
                             "This shows that different individuals have different...", 
