@@ -130,7 +130,7 @@ for chapter in chapters:
             duration = img.duration
         else :
             duration = content['duration']
-            img = ImageClip(figname, size=(W_fig, H_fig)).set_duration(duration)
+            img = ImageClip(figname).set_duration(duration)
 
         H_clip, W_clip, three = clip.get_frame(0).shape
         if H_clip/W_clip > H_fig/W_fig: # portrait-like
