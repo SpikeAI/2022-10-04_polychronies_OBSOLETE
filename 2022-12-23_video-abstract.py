@@ -62,8 +62,6 @@ for text in texts:
 # INTRO
 #################################################################################
 
-sub_opts = dict(fontsize=32, align='center', color='white', **opt_t)
-sub_duration = 1.5
 intro_subs = ["""
 The majority of information passing 
 in the brain is mediated by all-or-none events,
@@ -82,12 +80,14 @@ in the brain is mediated by all-or-none events,
 The majority of information passing 
 in the brain is mediated by all-or-none events,
 *spikes*.
-We present here novel evidence for the 
+We review here novel evidence for the 
 role of their precise timing from 
 neurobiological and neuromorphic data.
 """,
                ]
 
+sub_opts = dict(fontsize=32, align='center', color='white', **opt_t)
+sub_duration = 1.5
 for i_sub, subtitle in enumerate(intro_subs):
     sub = TextClip(subtitle, **sub_opts).set_start(t).set_duration(sub_duration)
     t += sub_duration
@@ -99,12 +99,12 @@ clip.append(sub) # another bit on the last bit
 chapters = [dict(title="Visual system", color='green',
             content=[dict(figure='figures/visual-latency_bg.jpg', duration=3, subtitle=[
                             "The visual system is very efficient to generate a...", 
-                            "...decision from the raw image to the different ..."]),
+                            "...decision from the retinal image to the different ..."]),
                     dict(figure='figures/visual-latency.jpg', duration=3, subtitle=[
-                            "...stages of the visual pathways here a reaction...", 
+                            "...stages of the visual pathways, here a reaction...", 
                             "...of finger muscles in about 300 milliseconds."]),
                      dict(figure='../AG_figures/animated_neurons/LIF.mp4', duration=5, subtitle=[
-                            "This efficiency is thought to be mediated by spikes...", 
+                            "This efficiency is thought to be allowed by spikes...", 
                             "...that is, brief all-or-none events which are passed...", 
                             "...in the very large network which forms the brain...", 
                             "...from assemblies of neurons to others."])]), 
@@ -113,7 +113,7 @@ chapters = [dict(title="Visual system", color='green',
                             "We review here an hypothesis in which, rather than the...", 
                             "...firing frequency of spikes, it is their precise timing...", 
                             "...which would enable or not this message passing."]),
-                    dict(figure='figures/THC_1a_k.png', duration=5, subtitle=[
+                    dict(figure='figures/THC_1a_k.png', duration=3, subtitle=[
                             "We present different mathematical models to extract...", 
                             "...such precise spiking motifs and..."]),
                     dict(figure='figures/THC_1a.png', duration=5, subtitle=[
