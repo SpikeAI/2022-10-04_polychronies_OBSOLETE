@@ -180,22 +180,22 @@ chapters = {'VS': dict(title="Visual system", color='black'),
             'DVS': dict(title="Neuromorphic", color='blue'), 
             }
 
-chapters['VS']['content'] = [dict(figure='figures/visual-latency.jpg', duration=5, subtitle=
+chapters['VS']['content'] = [dict(figure='figures/visual-latency.jpg', duration=5, subtitle=[
                 "This shows that different individuals have different...", 
                 "...compromise between exploration and the exploitation...", 
-                "...a hallmark of their inter-individual differences.")]
-chapters['poly']['content'] = [dict(figure='figures/visual-latency.jpg', duration=5, subtitle=
+                "...a hallmark of their inter-individual differences."])]
+chapters['poly']['content'] = [dict(figure='figures/visual-latency.jpg', duration=5, subtitle=[
                 "This shows that different individuals have different...", 
                 "...compromise between exploration and the exploitation...", 
-                "...a hallmark of their inter-individual differences.")]
-chapters['neuro']['content'] = [dict(figure='figures/visual-latency.jpg', duration=5, subtitle=
+                "...a hallmark of their inter-individual differences."])]
+chapters['neuro']['content'] = [dict(figure='figures/visual-latency.jpg', duration=5, subtitle=[
                 "This shows that different individuals have different...", 
                 "...compromise between exploration and the exploitation...", 
-                "...a hallmark of their inter-individual differences.")]
-chapters['DVS']['content'] = [dict(figure='figures/visual-latency.jpg', duration=5, subtitle=
+                "...a hallmark of their inter-individual differences."])]
+chapters['DVS']['content'] = [dict(figure='figures/visual-latency.jpg', duration=5, subtitle=[
                 "This shows that different individuals have different...", 
                 "...compromise between exploration and the exploitation...", 
-                "...a hallmark of their inter-individual differences.")]
+                "...a hallmark of their inter-individual differences."])]
 
 
 # http://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=compositevideoclip#textclip
