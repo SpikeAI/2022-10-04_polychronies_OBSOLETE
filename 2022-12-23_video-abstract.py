@@ -52,7 +52,7 @@ for text in texts:
     clip.append(txt)
 
 # INTRO
-sub_opts = dict(fontsize=28, align='left', color='white', **opt_t)
+sub_opts = dict(fontsize=28, align='West', color='white', **opt_t)
 sub_duration = 2.5
 intro_subs = ["""
 The majority of information passing 
