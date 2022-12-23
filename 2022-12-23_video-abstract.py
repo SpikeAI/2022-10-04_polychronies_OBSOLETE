@@ -52,7 +52,7 @@ for text in texts:
     clip.append(txt)
 
 # INTRO
-sub_opts = dict(fontsize=28, align='West', color='white', **opt_t)
+sub_opts = dict(fontsize=32, align='center', color='white', **opt_t)
 sub_duration = 1.5
 intro_subs = ["""
 The majority of information passing 
@@ -85,34 +85,39 @@ for i_sub, subtitle in enumerate(intro_subs):
 clip.append(sub) # another bit on the last bit
 
 chapters = [dict(title="Visual system", color='black',
-            content=[dict(figure='figures/visual-latency.jpg', duration=5, subtitle=[
+            content=[dict(figure='figures/visual-latency_bg.jpg', duration=3, subtitle=[
                             "The visual system is very efficient to generate a...", 
-                            "...decision from the raw image to the different ...", 
+                            "...decision from the raw image to the different ..."]),
+                    dict(figure='figures/visual-latency.jpg', duration=3, subtitle=[
                             "...stages of the visual pathways here a reaction...", 
                             "...of finger muscles in about 300 milliseconds."]),
                      dict(figure='../AG_figures/animated_neurons/LIF.mp4', duration=5, subtitle=[
                             "This efficiency is thought to be mediated by spikes...", 
-                            "...that is brief all-or-none events which are passed...", 
-                            "...from assemblies of neurons to others, in the...", 
-                            "...very large network which forms the brain."])]), 
+                            "...that is, brief all-or-none events which are passed...", 
+                            "...in the very large network which forms the brain...", 
+                            "...from assemblies of neurons to others."])]), 
            dict(title="Polychrony", color='orange',
-            content=[dict(figure='figures/replicating_MainenSejnowski1995.png', duration=5, subtitle=[
-                            "This shows that different individuals have different...", 
-                            "...compromise between exploration and the exploitation...", 
-                            "...a hallmark of their inter-individual differences."]),
+            content=[dict(figure='figures/izhikevich.png', duration=5, subtitle=[
+                            "We review here an hypothesis in which, rather than the...", 
+                            "...firing frequency of spikes, it is their precise timing...", 
+                            "...which would enable or not this message passing."]),
                     dict(figure='figures/THC_1a_k.png', duration=5, subtitle=[
-                            "This shows that different individuals have different...", 
-                            "...compromise between exploration and the exploitation...", 
+                            "We present different mathematical models to extract...", 
+                            "...such precise spiking motifs and...", 
                             "...a hallmark of their inter-individual differences."]),
                     dict(figure='figures/THC_1a.png', duration=5, subtitle=[
-                            "This shows that different individuals have different...", 
-                            "...compromise between exploration and the exploitation...", 
-                            "...a hallmark of their inter-individual differences."])]), 
+                            "... also some novel tools to extract these motifs...", 
+                            "...in arbitrary raster plots, from neurobiology...", 
+                            "...or neuromorphic engineering."])]), 
            dict(title="Neurobiology", color='red',
-            content=[dict(figure='figures/Ikegaya2004zse0150424620001.jpeg', duration=5, subtitle=[
+            content=[dict(figure='figures/haimerl2019.jpg', duration=5, subtitle=[
                             "This shows that different individuals have different...", 
                             "...compromise between exploration and the exploitation...", 
-                            "...a hallmark of their inter-individual differences."])]), 
+                            "...a hallmark of their inter-individual haimerl2019.jpg."]),
+                    dict(figure='figures/Ikegaya2004zse0150424620001.jpeg', duration=5, subtitle=[
+                            "This shows that different individuals have different...", 
+                            "...compromise between exploration and the exploitation...", 
+                            "...a hallmark of their inter-individual ."])]), 
            dict(title="Neuromorphic", color='blue',
             content=[dict(figure='figures/event_driven_computations.png', duration=5, subtitle=[
                             "This shows that different individuals have different...", 
@@ -218,6 +223,9 @@ for text, fontsize in zip(texts, [28, 28]):
     t += duration
     clip.append(txt)    
 
+img = ImageClip('figures/qrcode.png').set_duration(duration)
+img = img.resize(width=W_fig).set_start(t).set_pos('center')
+clip.append(img)
 
 # COMPOSITING
 video = CompositeVideoClip(clip)
