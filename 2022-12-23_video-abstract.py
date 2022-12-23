@@ -132,7 +132,13 @@ for chapter in chapters:
             duration = content['duration']
             img = ImageClip(figname, size=(W_fig, H_fig)).set_duration(duration)
 
-        img = img.set_start(t).set_pos('center').resize(height=H_fig, width=W_fig)
+        H_clip, W_clip, three = clip.get_frame(0).shape
+        if H_clip/W_clip > H_fig/W_fig: # portrait-like
+            img = img.resize(height=H_fig)
+        else: # landscape-like
+            img = img.resize(width=W_fig)
+
+        img = img.set_start(t).set_pos('center')#.resize(height=H_fig, width=W_fig)
 
         t += duration
         clip.append(img)
