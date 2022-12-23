@@ -130,7 +130,7 @@ for chapter in chapters:
             duration = img.duration
         else :
             duration = content['duration']
-            img = ImageClip(figname).set_duration(duration)
+            img = ImageClip(figname, size=(W_fig, H_fig)).set_duration(duration)
 
         img = img.set_start(t).set_pos('center').resize(height=H_fig, width=W_fig)
 
