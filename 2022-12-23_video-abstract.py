@@ -119,12 +119,13 @@ chapters = [dict(title="Visual system", color='green',
            dict(title="Neurobiology", color='red',
             content=[dict(figure='figures/haimerl2019.jpg', duration=5, subtitle=[
                             "This hypothesis is reviewed with respect to our ...", 
-                            "...knowledge of the neuobilogy, for instance in the...", 
-                            "...hippocampus of rodents. But we review also ."]),
+                            "...knowledge of the neurobiology, for instance in the...", 
+                            "...hippocampus of rodents. Also, we review..."]),
                     dict(figure='figures/Ikegaya2004zse0150424620001.jpeg', duration=5, subtitle=[
                             "...numerous and extensive work on the mechanisms...", 
                             "...which may allow the neural system to learn...", 
-                            "...to actually use that precise spiking motifs."])]), 
+                            "...to actually use that precise spiking motifs", 
+                            "...by atuning the delay between pairs of neurons."])]), 
            dict(title="Neuromorphic", color='blue',
             content=[dict(figure='figures/event_driven_computations.png', duration=5, subtitle=[
                             "We also review evidence from computational neuroscience...", 
