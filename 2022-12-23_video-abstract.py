@@ -84,40 +84,38 @@ for i_sub, subtitle in enumerate(intro_subs):
     clip.append(sub)
 
 
-chapters = {'VS': dict(title="Visual system", color='black'), 
-            'poly': dict(title="Polychrony", color='orange'), 
-            'neuro': dict(title="Neurobiology", color='red'), 
-            'DVS': dict(title="Neuromorphic", color='blue'), 
-            }
-
-chapters['VS']['content'] = [dict(figure='figures/visual-latency.jpg', duration=5, subtitle=[
-                "This shows that different individuals have different...", 
-                "...compromise between exploration and the exploitation...", 
-                "...a hallmark of their inter-individual differences."])]
-chapters['poly']['content'] = [dict(figure='figures/replicating_MainenSejnowski1995.png', duration=5, subtitle=["This shows that different individuals have different...", 
-                "...compromise between exploration and the exploitation...", 
-                "...a hallmark of their inter-individual differences."])]
-chapters['neuro']['content'] = [
-                dict(figure='figures/Ikegaya2004zse0150424620001.jpeg', 
-                     duration=5, subtitle=[
-                        "This shows that different individuals have different...", 
-                        "...compromise between exploration and the exploitation...", 
-                        "...a hallmark of their inter-individual differences."]),
-                dict(figure='figures/Ikegaya2004zse0150424620001.jpeg', duration=5, subtitle=["This shows that different individuals have different...", 
-                "...compromise between exploration and the exploitation...", 
-                "...a hallmark of their inter-individual differences."])]
-chapters['DVS']['content'] = [dict(figure='figures/event_driven_computations.png', duration=5, subtitle=[
-                "This shows that different individuals have different...", 
-                "...compromise between exploration and the exploitation...", 
-                "...a hallmark of their inter-individual differences."])]
+chapters = [dict(title="Visual system", color='black',
+            content=[dict(figure='figures/visual-latency.jpg', duration=5, subtitle=[
+                            "This shows that different individuals have different...", 
+                            "...compromise between exploration and the exploitation...", 
+                            "...a hallmark of their inter-individual differences."])]), 
+           dict(title="Polychrony", color='orange',
+            content=[dict(figure='figures/replicating_MainenSejnowski1995.png', duration=5, subtitle=[
+                            "This shows that different individuals have different...", 
+                            "...compromise between exploration and the exploitation...", 
+                            "...a hallmark of their inter-individual differences."]),
+                    dict(figure='figures/event_driven_computations.png', duration=5, subtitle=[
+                            "This shows that different individuals have different...", 
+                            "...compromise between exploration and the exploitation...", 
+                            "...a hallmark of their inter-individual differences."])]), 
+           dict(title="Neurobiology", color='red',
+            content=[dict(figure='figures/Ikegaya2004zse0150424620001.jpeg', duration=5, subtitle=[
+                            "This shows that different individuals have different...", 
+                            "...compromise between exploration and the exploitation...", 
+                            "...a hallmark of their inter-individual differences."])]), 
+           dict(title="Neuromorphic", color='blue',
+            content=[dict(figure='figures/event_driven_computations.png', duration=5, subtitle=[
+                            "This shows that different individuals have different...", 
+                            "...compromise between exploration and the exploitation...", 
+                            "...a hallmark of their inter-individual differences."])]), 
+           ]
 
 
 # http://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=compositevideoclip#textclip
 txt_opts = dict(fontsize=65, bg_color='white', align='center', **opt_st)
 sub_opts = dict(fontsize=28, align='South', color='white', **opt_st)
 
-for chapter_key in chapters.keys():
-    chapter = chapters[chapter_key]
+for chapter in chapters:
     duration = 1
     txt = TextClip(chapter['title'], color=chapter['color'], **txt_opts).set_start(t).set_duration(duration)
     t += duration
@@ -149,17 +147,26 @@ for chapter_key in chapters.keys():
 
 # OUTRO
 texts = ["""
-Overall, this study show the potential of 
-using the precise spiking motifs for a
-building more efficient machine learning 
+Overall, this manuscript reviews the potential
+of using the precise spiking motifs for a
+building more efficient 
 
 
 
 
 """,
 """
-Overall, this study show the potential of 
-using the precise spiking motifs for a
+Overall, this manuscript reviews the potential
+of using the precise spiking motifs for a
+building more efficient machine learning 
+algorithms, faster and more frugal,
+but also to better understand 
+
+
+""",
+"""
+Overall, this manuscript reviews the potential
+of using the precise spiking motifs for a
 building more efficient machine learning 
 algorithms, faster and more frugal,
 but also to better understand 
@@ -183,8 +190,8 @@ For more info, and the full, open-sourced code... visit
 """, """
 For more info, and the full, open-sourced code... visit
 
-https://laurentperrinet.github.io/
-         /publication/grimaldi-22-polychronies/
+https://laurentperrinet.github.io/           
+             /publication/grimaldi-22-polychronies/
 """,
 ]
 
