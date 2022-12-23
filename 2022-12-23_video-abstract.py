@@ -6,8 +6,9 @@ and using that @ https://github.com/chloepasturel/AnticipatorySPEM/blob/master/2
 """
 # Creating the movie using the (*excellent*) [MoviePy](http://zulko.github.io/moviepy/index.html) library:
 
-videoname = "Polychrony-review_2022_video-abstract"
+videoname = "2022-12-23_polychrony-review_video-abstract"
 gifname = videoname + ".gif"
+gifname = None
 fps = 30
 from moviepy.editor import VideoFileClip, ImageClip, TextClip, CompositeVideoClip
 
@@ -24,25 +25,25 @@ clip = []
 t = 0 
 
 # TITRE
-texts = ["""
-Precise spiking motifs in neurobiological and neuromorphic data
+texts = ["""Precise spiking motifs in neurobiological and neuromorphic data
 
 
 
 
 
-""", """
-Precise spiking motifs in neurobiological and neuromorphic data
 
-by Grimaldi, Gruel, Besnainou, Jérémie, 
-Martinet, and Perrinet
+""", """Precise spiking motifs in neurobiological and neuromorphic data
+
+by Grimaldi, Gruel, 
+   Besnainou, Jérémie, 
+   Martinet, and Perrinet
 
 
-""", """
-Precise spiking motifs in neurobiological and neuromorphic data
+""", """Precise spiking motifs in neurobiological and neuromorphic data
 
-by Grimaldi, Gruel, Besnainou, Jérémie, 
-Martinet, and Perrinet
+by Grimaldi, Gruel, 
+   Besnainou, Jérémie, 
+   Martinet, and Perrinet
 
 Brain Sciences (2022)
 """]
@@ -57,20 +58,26 @@ for text in texts:
 sub_opts = dict(fontsize=28, align='center', color='white', **opt_t)
 sub_duration = 1.5
 intro_subs = ["""
-The majority of information passing in the brain is
-mediated by all-or-none events, spikes.
+The majority of information passing 
+in the brain is mediated by all-or-none 
+events, 
+
+
+
+""", """
+The majority of information passing 
+in the brain is mediated by all-or-none 
+events, *spikes*.
+
 
 
 """, """
-The majority of information passing in the brain is
-mediated by all-or-none events, spikes.
-We present here novel evidence for the role of their 
-
-""", """
-The majority of information passing in the brain is
-mediated by all-or-none events, spikes.
-We present here novel evidence for the role of their 
-precise timing from neurobiological and neuromorphic data.
+The majority of information passing 
+in the brain is mediated by all-or-none 
+events, *spikes*.
+We present here novel evidence for the 
+role of their precise timing from 
+neurobiological and neuromorphic data.
 """,
                ]
 
@@ -208,14 +215,17 @@ using the precise spiking motifs for a
 building more efficient machine learning 
 
 
+
+
 """,
 """
 Overall, this study show the potential of 
 using the precise spiking motifs for a
 building more efficient machine learning 
 algorithms, faster and more frugal,
-but also to better understand neurobiological
-functioning and their disorders...
+but also to better understand 
+neurobiological functioning and their 
+disorders...
 """]
 
 txt_opts = dict(fontsize=30, align='center', **opt_t)
