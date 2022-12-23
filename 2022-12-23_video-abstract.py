@@ -111,7 +111,7 @@ chapters = [dict(title="Visual system", color='green',
                             "...which would enable or not this message passing."]),
                     dict(figure='figures/THC_1a_k.png', duration=5, subtitle=[
                             "We present different mathematical models to extract...", 
-                            "...such precise spiking motifs and...""]),
+                            "...such precise spiking motifs and..."]),
                     dict(figure='figures/THC_1a.png', duration=5, subtitle=[
                             "...also some novel tools to extract these motifs...", 
                             "...in arbitrary raster plots, from neurobiology...", 
