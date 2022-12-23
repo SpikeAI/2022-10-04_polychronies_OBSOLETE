@@ -1,4 +1,5 @@
 # 2022-12-23_video-abstract
+
 """
  Using the template @ https://laurentperrinet.github.io/sciblog/posts/2019-09-11_video-abstract-vision.html
 and using that @ https://github.com/chloepasturel/AnticipatorySPEM/blob/master/2020-03_video-abstract/2020-03-24_video-abstract.ipynb
@@ -245,9 +246,7 @@ for text, fontsize in zip(texts, [30, 24]):
 
 video = CompositeVideoClip(clip)
 video.write_videofile(videoname + '.mp4', fps=fps)
-<BR>
-<center><video controls autoplay loop src="PasturelMontagniniPerrinet2020_video-abstract.mp4" width=61.8%/></a> </center>
-<BR>
+
 video.write_gif(gifname, fps=fps)
 from pygifsicle import optimize
 optimize(gifname)
