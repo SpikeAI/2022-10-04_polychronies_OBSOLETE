@@ -118,7 +118,7 @@ sub_opts = dict(fontsize=28, align='South', color='white', **opt_st)
 for chapter_key in chapters.keys():
     chapter = chapters[chapter_key]
     duration = 1
-    txt = TextClip(chapter[title], color=chapter[color], **txt_opts).set_start(t).set_duration(duration)
+    txt = TextClip(chapter['title'], color=chapter['color'], **txt_opts).set_start(t).set_duration(duration)
     t += duration
     clip.append(txt)
 
