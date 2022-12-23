@@ -122,7 +122,9 @@ for chapter_key in chapters.keys():
     t += duration
     clip.append(txt)
 
-    for content in chapter['content'] :
+    for content_key in chapter['content'].keys():
+        content = chapter[content_key]
+
         # set the figure
         figname = content['figure']
         if figname[-4:]=='.mp4' :
@@ -130,7 +132,8 @@ for chapter_key in chapters.keys():
             print(figname, '--> duration:', img.duration, ', fps:', img.fps)
             duration = img.duration
         else :
-            img = ImageClip(figname).set_duration(content[duration])
+            duration = content['duration']
+            img = ImageClip(figname).set_duration(duration)
 
         img = img.set_start(t).set_pos('center').resize(height=H_fig, width=W_fig)
 
@@ -139,8 +142,8 @@ for chapter_key in chapters.keys():
 
         # write the subtitles
         t_sub = t - duration
-        sub_duration = duration / len(content[subtitle])
-        for subtitle in content[subtitle]:
+        sub_duration = duration / len(content['subtitle'])
+        for subtitle in content['subtitle']:
             sub = TextClip(subtitle, **sub_opts).set_start(t_sub).set_duration(sub_duration)
             t_sub += sub_duration
             clip.append(sub)
