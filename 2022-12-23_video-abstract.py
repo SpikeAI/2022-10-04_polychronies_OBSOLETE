@@ -284,6 +284,7 @@ for text, fontsize in zip(texts, [30, 24]):
 video = CompositeVideoClip(clip)
 video.write_videofile(videoname + '.mp4', fps=fps)
 
-video.write_gif(gifname, fps=fps)
-from pygifsicle import optimize
-optimize(gifname)
+if not(gifname is None):
+    video.write_gif(gifname, fps=fps)
+    from pygifsicle import optimize
+    optimize(gifname)
