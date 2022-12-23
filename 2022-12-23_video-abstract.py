@@ -242,6 +242,9 @@ for text in texts:
     t += duration
     clip.append(txt)    
 
+# QRCODE
+#
+# qrencode -o figures/qrcode.png -d 200 https://laurentperrinet.github.io/publication/grimaldi-22-polychronies
 img = ImageClip('figures/qrcode.png').set_duration(duration)
 img = img.resize(width=(W_fig*2)//3).set_start(t).set_pos('center')
 clip.append(img)
