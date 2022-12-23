@@ -1,8 +1,12 @@
+"""
 # 2022-12-23_video-abstract
 
-"""
+
  Using the template @ https://laurentperrinet.github.io/sciblog/posts/2019-09-11_video-abstract-vision.html
 and using that @ https://github.com/chloepasturel/AnticipatorySPEM/blob/master/2020-03_video-abstract/2020-03-24_video-abstract.ipynb
+
+cp 2022-12-23_polychrony-review_video-abstract.mp4  /Users/laurentperrinet/metagit/blog/hugo_academic/content/publication/grimaldi-22-polychronies/
+
 """
 # Creating the movie using the (*excellent*) [MoviePy](http://zulko.github.io/moviepy/index.html) library:
 
