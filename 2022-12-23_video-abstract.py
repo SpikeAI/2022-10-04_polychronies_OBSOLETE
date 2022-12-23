@@ -24,7 +24,10 @@ opt_st = dict(font="Arial", size=(W,H), method='caption')
 clip = []
 t = 0 
 
+#################################################################################
 # TITRE
+#################################################################################
+# 
 texts = ["""Precise spiking motifs in neurobiological and neuromorphic data
 
 
@@ -51,7 +54,10 @@ for text in texts:
     t += duration
     clip.append(txt)
 
+#################################################################################
 # INTRO
+#################################################################################
+
 sub_opts = dict(fontsize=32, align='center', color='white', **opt_t)
 sub_duration = 1.5
 intro_subs = ["""
@@ -84,7 +90,9 @@ for i_sub, subtitle in enumerate(intro_subs):
     clip.append(sub)
 clip.append(sub) # another bit on the last bit
 
-chapters = [dict(title="Visual system", color='black',
+#################################################################################
+#################################################################################
+chapters = [dict(title="Visual system", color='green',
             content=[dict(figure='figures/visual-latency_bg.jpg', duration=3, subtitle=[
                             "The visual system is very efficient to generate a...", 
                             "...decision from the raw image to the different ..."]),
@@ -171,7 +179,13 @@ for chapter in chapters:
             t_sub += sub_duration
             clip.append(sub)
 
+#################################################################################
+#################################################################################
+
+
+#################################################################################
 # OUTRO
+#################################################################################
 texts = ["""
 Overall, this manuscript reviews the potential
 of using the precise spiking motifs for a
@@ -232,7 +246,10 @@ img = ImageClip('figures/qrcode.png').set_duration(duration)
 img = img.resize(width=W_fig).set_start(t).set_pos('center')
 clip.append(img)
 
+#################################################################################
 # COMPOSITING
+#################################################################################
+
 video = CompositeVideoClip(clip)
 video.write_videofile(videoname + '.mp4', fps=fps)
 
