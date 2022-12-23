@@ -94,7 +94,7 @@ chapters = [dict(title="Visual system", color='black',
                             "This shows that different individuals have different...", 
                             "...compromise between exploration and the exploitation...", 
                             "...a hallmark of their inter-individual differences."]),
-                    dict(figure='figures/event_driven_computations.png', duration=5, subtitle=[
+                    dict(figure='figures/THC_1a.pdf', duration=5, subtitle=[
                             "This shows that different individuals have different...", 
                             "...compromise between exploration and the exploitation...", 
                             "...a hallmark of their inter-individual differences."])]), 
