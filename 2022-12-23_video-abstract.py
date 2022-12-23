@@ -62,22 +62,22 @@ sub_opts = dict(fontsize=32, align='center', color='white', **opt_t)
 sub_duration = 1.5
 intro_subs = ["""
 The majority of information passing 
-in the brain is mediated by all-or-none 
-events, 
+in the brain is mediated by all-or-none events,
 
-
-
-""", """
-The majority of information passing 
-in the brain is mediated by all-or-none 
-events, *spikes*.
 
 
 
 """, """
 The majority of information passing 
-in the brain is mediated by all-or-none 
-events, *spikes*.
+in the brain is mediated by all-or-none events,
+*spikes*.
+
+
+
+""", """
+The majority of information passing 
+in the brain is mediated by all-or-none events,
+*spikes*.
 We present here novel evidence for the 
 role of their precise timing from 
 neurobiological and neuromorphic data.
@@ -111,10 +111,9 @@ chapters = [dict(title="Visual system", color='green',
                             "...which would enable or not this message passing."]),
                     dict(figure='figures/THC_1a_k.png', duration=5, subtitle=[
                             "We present different mathematical models to extract...", 
-                            "...such precise spiking motifs and...", 
-                            "...a hallmark of their inter-individual differences."]),
+                            "...such precise spiking motifs and...""]),
                     dict(figure='figures/THC_1a.png', duration=5, subtitle=[
-                            "... also some novel tools to extract these motifs...", 
+                            "...also some novel tools to extract these motifs...", 
                             "...in arbitrary raster plots, from neurobiology...", 
                             "...or neuromorphic engineering."])]), 
            dict(title="Neurobiology", color='red',
@@ -124,7 +123,7 @@ chapters = [dict(title="Visual system", color='green',
                             "...hippocampus of rodents. But we review also ."]),
                     dict(figure='figures/Ikegaya2004zse0150424620001.jpeg', duration=5, subtitle=[
                             "...numerous and extensive work on the mechanisms...", 
-                            "... which may allow the neural system to learn...", 
+                            "...which may allow the neural system to learn...", 
                             "...to actually use that precise spiking motifs."])]), 
            dict(title="Neuromorphic", color='blue',
             content=[dict(figure='figures/event_driven_computations.png', duration=5, subtitle=[
@@ -134,8 +133,8 @@ chapters = [dict(title="Visual system", color='green',
                             "...transform lumnious information into spikes."]),
                     dict(figure='../pyTERtorch/2022-11-30_BiolCybernetics/figures/2022-11-10_MotionDetection_input.mp4', duration=5, subtitle=[
                             "For instance, we show how precise spike times may be...", 
-                            "...used to detect the direction of motion in a stream...", 
-                            "...of events in an ultra fast fashion."])]), 
+                            "...used to detect the direction of motion from such...", 
+                            "...a stream of events in an ultrafast fashion."])]), 
            ]
 
 
@@ -152,20 +151,21 @@ for chapter in chapters:
     for content in chapter['content']:
         # set the figure
         figname = content['figure']
+        duration = content['duration']
         if figname[-4:]=='.mp4' :
             img = VideoFileClip(figname, audio=False)
             print(figname, '--> duration:', img.duration, ', fps:', img.fps)
-            duration = img.duration
-        else :
-            duration = content['duration']
-            img = ImageClip(figname).set_duration(duration)
-
+            # duration = img.duration
+        else:
+            img = ImageClip(figname)
+        
         H_clip, W_clip, three = img.get_frame(0).shape
         if H_clip/W_clip > H_fig/W_fig: # portrait-like
             img = img.resize(height=H_fig)
         else: # landscape-like
             img = img.resize(width=W_fig)
 
+        img = img.set_duration(duration)
         img = img.set_start(t).set_pos('center')#.resize(height=H_fig, width=W_fig)
 
         t += duration
@@ -230,20 +230,19 @@ For more info, and the full, open-sourced code... visit
 """, """
 For more info, and the full, open-sourced code... visit
 
-https://laurentperrinet.github.io/           
-             /publication/grimaldi-22-polychronies/
+https://laurentperrinet.github.io/publication/grimaldi-22-polychronies
 """,
 ]
 
 txt_opts = dict(align='center', **opt_t)
 duration = 2.5
-for text, fontsize in zip(texts, [28, 28]):
-    txt = TextClip(text, color='orange', fontsize=fontsize, **txt_opts).set_start(t).set_duration(duration)
+for text in texts:
+    txt = TextClip(text, color='orange', fontsize=26, **txt_opts).set_start(t).set_duration(duration)
     t += duration
     clip.append(txt)    
 
 img = ImageClip('figures/qrcode.png').set_duration(duration)
-img = img.resize(width=W_fig).set_start(t).set_pos('center')
+img = img.resize(width=(W_fig*2)//3).set_start(t).set_pos('center')
 clip.append(img)
 
 #################################################################################
