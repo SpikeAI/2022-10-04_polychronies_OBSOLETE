@@ -83,12 +83,11 @@ in the brain is mediated by all-or-none events,
 We review here novel evidence for the 
 role of their precise timing from 
 neurobiological and neuromorphic data.
-""",
-               ]
+"""]
 
 sub_opts = dict(fontsize=32, align='center', color='white', **opt_t)
-sub_duration = 1.5
-for i_sub, subtitle in enumerate(intro_subs):
+sub_durations = [1.5, 1.5, 2.5]
+for subtitle, sub_duration in zip(intro_subs, sub_durations):
     sub = TextClip(subtitle, **sub_opts).set_start(t).set_duration(sub_duration)
     t += sub_duration
     clip.append(sub)
@@ -194,7 +193,7 @@ for chapter in chapters:
 texts = ["""
 Overall, this manuscript reviews the potential
 of using the precise spiking motifs for a
-building more efficient 
+building more efficient machine learning 
 
 
 
@@ -229,7 +228,6 @@ for text in texts:
 # FIN
 texts = ["""
 For more info, and the full, open-sourced code... visit
-
 
 
 """, """
