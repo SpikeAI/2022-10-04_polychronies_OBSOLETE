@@ -1,45 +1,25 @@
+
+manuscript.aux
+manuscript.log
+manuscript.pdf
+manuscript.synctex.gz
+manuscript.fdb_latexmk
+manuscript.fls
+manuscript.out
+manuscript.bbl
+manuscript.blg
+manuscript.synctex(busy)
+2022-11-16_coverletter.aux
+2022-11-16_coverletter.log
+2022-11-16_coverletter.out
+2022-11-16_coverletter.pdf
+2022-11-16_coverletter.synctex.gz
 .DS_Store
-# Generated manuscript output files
-output/*
-!output/README.md
-
-webpage/v
-
-# When PDF building fails, a temporary symlink named images in the root
-# directory is not removed.
-/images
-
-# Manubot cache directory
-ci/cache
-
-# Pandoc filters downloaded during continuous integration setup
-build/pandoc/filters/spellcheck.lua
-
-# Python
-__pycache__/
-*.pyc
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# Misc temporary files
-*.bak
-
-# System specific files
-
-## Linux
-*~
-.Trash-*
-
-## macOS
 .DS_Store
-._*
-.Trashes
-
-## Windows
-Thumbs.db
-[Dd]esktop.ini
-
-## Text Editors
-.vscode
-content/.*.swp
+src/patterns.pkl
+.DS_Store
+2022-12-19_coverletter.aux
+2022-12-19_coverletter.log
+2022-12-19_coverletter.out
+2022-12-19_coverletter.pdf
+2022-12-19_coverletter.synctex.gz
