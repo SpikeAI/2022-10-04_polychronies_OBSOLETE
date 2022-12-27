@@ -97,13 +97,13 @@ clip.append(sub) # another bit on the last bit
 #################################################################################
 chapters = [dict(title="Visual system", color='green',
             content=[dict(figure='figures/visual-latency_bg.jpg', duration=3, subtitle=[
-                            "The visual system is very efficient to generate a...", 
+                            "The visual system is very efficient in generating a...", 
                             "...decision from the retinal image to the different ..."]),
                     dict(figure='figures/visual-latency.jpg', duration=3, subtitle=[
                             "...stages of the visual pathways, here a reaction...", 
                             "...of finger muscles in about 300 milliseconds."]),
-                     dict(figure='../AG_figures/animated_neurons/LIF.mp4', duration=5, subtitle=[
-                            "This efficiency is thought to be allowed by spikes...", 
+                     dict(figure='/Users/laurentperrinet/metagit/ABCD/AG_figures/animated_neurons/LIF.mp4', duration=5, subtitle=[
+                            "It is thought that this efficiency is achieved by spikes...", 
                             "...that is, brief all-or-none events which are passed...", 
                             "...in the very large network which forms the brain...", 
                             "...from assemblies of neurons to others."])]), 
@@ -111,31 +111,31 @@ chapters = [dict(title="Visual system", color='green',
             content=[dict(figure='figures/izhikevich.png', duration=5, subtitle=[
                             "We review here an hypothesis in which, rather than the...", 
                             "...firing frequency of spikes, it is their precise timing...", 
-                            "...which would enable or not this message passing."]),
+                            "...which would allow or not this message passing."]),
                     dict(figure='figures/THC_1a_k.png', duration=3, subtitle=[
-                            "We present different mathematical models to extract...", 
+                            "We present different mathematical models for extracting...", 
                             "...such precise spiking motifs and..."]),
                     dict(figure='figures/THC_1a.png', duration=5, subtitle=[
-                            "...also some novel tools to extract these motifs...", 
-                            "...in arbitrary raster plots, from neurobiology...", 
+                            "...also some novel tools for extracting these motifs...", 
+                            "...in arbitrary raster plots from neurobiology...", 
                             "...or neuromorphic engineering."])]), 
            dict(title="Neurobiology", color='red',
             content=[dict(figure='figures/haimerl2019.jpg', duration=5, subtitle=[
                             "This hypothesis is reviewed with respect to our ...", 
                             "...knowledge of the neurobiology, for instance in the...", 
-                            "...hippocampus of rodents. Also, we review..."]),
+                            "...hippocampus of rodents. We also review..."]),
                     dict(figure='figures/Ikegaya2004zse0150424620001.jpeg', duration=5, subtitle=[
-                            "...numerous and extensive work on the mechanisms...", 
+                            "...numerous and extensive work on mechanisms...", 
                             "...which may allow the neural system to learn...", 
                             "...to actually use that precise spiking motifs", 
-                            "...by atuning the delay between pairs of neurons."])]), 
+                            "...by attuning the delay between pairs of neurons."])]), 
            dict(title="Neuromorphic", color='blue',
             content=[dict(figure='figures/event_driven_computations.png', duration=5, subtitle=[
                             "We also review evidence from computational neuroscience...", 
                             "...and neuromorphic engineering, in particular for novel...", 
                             "...device such as event-based cameras which directly...", 
                             "...transform lumnious information into spikes."]),
-                    dict(figure='../pyTERtorch/2022-11-30_BiolCybernetics/figures/2022-11-10_MotionDetection_input.mp4', duration=5, subtitle=[
+                    dict(figure='/Users/laurentperrinet/metagit/ABCD/pyTERtorch/2022-11-30_BiolCybernetics/figures/2022-11-10_MotionDetection_input.mp4', duration=5, subtitle=[
                             "For instance, we show how precise spike times may be...", 
                             "...used to detect the direction of motion from such...", 
                             "...a stream of events in an ultrafast fashion."])]), 
