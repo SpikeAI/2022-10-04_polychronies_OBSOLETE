@@ -529,24 +529,6 @@ Interestingly, the paper by~\citep{izhikevich_polychronization_2006} stirred a l
 
 Strikingly, thanks to the fact that a neuron can be involved in different polychronous groups, the number of coexisting polychronous groups far exceeds the number of neurons in the network, resulting in an unprecedented memory capacity of the system (see Figure~\ref{fig:THC}). In other neuronal models, an efficient use or detection of these spatio-temporal patterns embedded in the spike train comes with the integration of heterogeneous delays~\citep{guise_bayesian_2014,zhang_supervised_2020}. The recent ``multi-neuronal spike sequence detector'' architecture integrates the weight- and delay-adjustment methods by combining plasticity with the modulation of spike latency emission~\citep{susi_nmnsd-spiking_2021}. Additional models for the detection of latency patterns are presented in the extensive (graph-centric) review on synchronization in time-varying networks~\citep{ghosh_synchronization_2021,ghosh_synchronized_2022}. This representation has potentially a much greater information capacity in comparison to other neural coding approaches through their connectivity and the possible coexistence of numerous superposed PGs~\citep{izhikevich_polychronous_2009}. Recently, by using a logistic regression model coupled with a temporal convolution, a model with heterogeneous delays was implemented to test the detection of the spiking motifs embedded in an event stream~\citep{grimaldi_learning_2022}. This allowed to detect a high number of superposed polychronous motifs in synthetic data, illustrating the computational benefit of such representations compared to that with a unique delay (see Figure~\ref{fig:THC}). As such, these models use the neural dynamics to handle input signals with different delays but do not explicitly take full advantage of the representation capacity offered by heterogeneous delays. 
 
-\begin{figure}[H]%[t!][]
-%  \centering
-  \includegraphics[width=0.490\linewidth]{figures/THC_1a_k.pdf}
-  \includegraphics[width=0.490\linewidth]{figures/THC_1c.pdf}
-  \includegraphics[width=0.490\linewidth]{figures/THC_1b.pdf}
-  \includegraphics[width=0.490\linewidth]{figures/THC_1a.pdf}
-    \caption{
-      Detecting event-based motifs using spiking neurons with heterogeneous delays.
-    { (\textbf{a})}~Given a generic raster plot defined by a set of spikes occurring on specific addresses and at specific times, one may consider that this information consists of the repeated occurrence of groups of precise motifs of spikes that define ``polychronous groups'' (PGs). 
-    { (\textbf{b})}~The generative model is defined by this set of motifs (here $4$ PGs) each defined by  synapses defined by weights (increasing with the radius of the black dots) with heterogeneous delay. 
-    { (\textbf{c})}~Generalizing the core polychrony detection model (see Figure~\ref{fig:izhikevich}), one can define a layer of neurons that detect the identity and timing of these PGs~\citep{grimaldi_learning_2022}. % such that the addresses are the synapses of these neurons (which we therefore call here synapses).
-    %Note that each afferent may be connected with multiple weights at different delays. The propagation of the afferent information through these delay may generate at each time step a synchronous motif on a subset of synapses. %These PG motifs were efficiently learned by a logistic regression.
-    %{\bf (c)}~The output of the model provides with the predicted probability of occurrence of each PG motif at any time, which may be used to generate a spike as a Bernoulli trial, providing in this particular case with an exact identification of PGs occurrences.
-    { (\textbf{d})}~Knowing the %MDPI: Please change the (a) into (d) in picture. Fixed !
- results of this detection, one may for illustration purposes highlight them by different colors in the raster plots, showing that in this synthetic example, all spikes are now associated with a PG. 
-     }
-  \label{fig:THC} % TODO: citer biol cyb fig:THC
-\end{figure}
 
 \begin{figure}[H]%[t!]
 %  \centering
@@ -563,6 +545,24 @@ Strikingly, thanks to the fact that a neuron can be involved in different polych
 %----------------------------%
 %
 
+\begin{figure}[H]%[t!][]
+  %  \centering
+    \includegraphics[width=0.490\linewidth]{figures/THC_1a_k.pdf}
+    \includegraphics[width=0.490\linewidth]{figures/THC_1c.pdf}
+    \includegraphics[width=0.490\linewidth]{figures/THC_1b.pdf}
+    \includegraphics[width=0.490\linewidth]{figures/THC_1a.pdf}
+      \caption{
+        Detecting event-based motifs using spiking neurons with heterogeneous delays.
+      { (\textbf{a})}~Given a generic raster plot defined by a set of spikes occurring on specific addresses and at specific times, one may consider that this information consists of the repeated occurrence of groups of precise motifs of spikes that define ``polychronous groups'' (PGs). 
+      { (\textbf{b})}~The generative model is defined by this set of motifs (here $4$ PGs) each defined by  synapses defined by weights (increasing with the radius of the black dots) with heterogeneous delay. 
+      { (\textbf{c})}~Generalizing the core polychrony detection model (see Figure~\ref{fig:izhikevich}), one can define a layer of neurons that detect the identity and timing of these PGs~\citep{grimaldi_learning_2022}. % such that the addresses are the synapses of these neurons (which we therefore call here synapses).
+      %Note that each afferent may be connected with multiple weights at different delays. The propagation of the afferent information through these delay may generate at each time step a synchronous motif on a subset of synapses. %These PG motifs were efficiently learned by a logistic regression.
+      %{\bf (c)}~The output of the model provides with the predicted probability of occurrence of each PG motif at any time, which may be used to generate a spike as a Bernoulli trial, providing in this particular case with an exact identification of PGs occurrences.
+      { (\textbf{d})}~Knowing the %MDPI: Please change the (a) into (d) in picture. Fixed !
+   results of this detection, one may for illustration purposes highlight them by different colors in the raster plots, showing that in this synthetic example, all spikes are now associated with a PG. 
+       }
+    \label{fig:THC} % TODO: citer biol cyb fig:THC
+  \end{figure}
 % 
 %----------------------------%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
