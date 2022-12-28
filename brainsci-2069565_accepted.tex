@@ -553,13 +553,13 @@ Strikingly, thanks to the fact that a neuron can be involved in different polych
     \includegraphics[width=0.490\linewidth]{figures/THC_1a.pdf}
       \caption{
         Detecting event-based motifs using spiking neurons with heterogeneous delays.
-      { (\textbf{a})}~Given a generic raster plot defined by a set of spikes occurring on specific neuron addresses and at specific times, one may consider that this information consists of the repeated occurrence of groups of precise motifs of spikes that define ``polychronous groups''. 
-      { (\textbf{b})}~The generative model is defined by this set of motifs (here $4$ PGs) each defined by  synapses defined by weights (increasing with the radius of the black dots) with heterogeneous delay. 
-      { (\textbf{c})}~Generalizing the core polychrony detection model (see Figure~\ref{fig:izhikevich}), one can define a layer of neurons that detect the identity and timing of these PGs~\citep{grimaldi_learning_2022}. % such that the addresses are the synapses of these neurons (which we therefore call here synapses).
+      { (\textbf{a})}~Given a generic raster plot defined by a set of spikes occurring on specific neuron addresses and at specific times, one may consider that this information consists of the repeated occurrence of groups of precise spiking motifs. 
+      { (\textbf{b})}~The generative model is defined by this set of motifs (here $4$ of them) each defined by different weights at heterogeneous delays (red for excitatory, blue for inhibitory). 
+      { (\textbf{c})}~Generalizing the core polychrony detection model (see Figure~\ref{fig:izhikevich}), one can define a layer of neurons that detect the identity and timing of these spiking motifs~\citep{grimaldi_learning_2022}. % such that the addresses are the synapses of these neurons (which we therefore call here synapses).
       %Note that each afferent may be connected with multiple weights at different delays. The propagation of the afferent information through these delay may generate at each time step a synchronous motif on a subset of synapses. %These PG motifs were efficiently learned by a logistic regression.
       %{\bf (c)}~The output of the model provides with the predicted probability of occurrence of each PG motif at any time, which may be used to generate a spike as a Bernoulli trial, providing in this particular case with an exact identification of PGs occurrences.
       { (\textbf{d})}~Knowing the %MDPI: Please change the (a) into (d) in picture. Fixed !
-   results of this detection, one may for illustration purposes highlight them by different colors in the raster plots, showing that in this synthetic example, all spikes are now associated with a PG. 
+   results of this detection, one may for illustration purposes highlight them by different colors in the raster plots, showing that in this synthetic example, all spikes are now associated with a motif. 
        }
     \label{fig:THC} % TODO: citer biol cyb fig:THC
   \end{figure}
