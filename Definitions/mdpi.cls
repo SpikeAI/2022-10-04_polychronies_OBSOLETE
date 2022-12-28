@@ -1,5 +1,5 @@
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%	MDPI class for LaTeX files	 07 June 2022
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%	MDPI class for LaTeX files	 9 December 2022
 %% %%	For any information please send an e-mail to:
 %% %%		latex@mdpi.com
 %% %%
@@ -21,7 +21,7 @@
 
 %% IDENTIFICATION
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{Definitions/mdpi}[07/06/2022 MDPI paper class]
+\ProvidesClass{Definitions/mdpi}[09/12/2022 MDPI paper class]
 
  %% PRELIMINARY DECLARATIONS
 \LoadClass[10pt,a4paper]{article}
@@ -35,7 +35,7 @@
 \RequirePackage{ifthen}
 \RequirePackage[right]{lineno}
 \RequirePackage{float}
-\RequirePackage{amsmath}
+%\RequirePackage{amsmath}
 \RequirePackage{amssymb} % For math environment bold format
 \RequirePackage{setspace}
 \RequirePackage{enumitem}
@@ -244,7 +244,6 @@
 \newcommand{\chicagostylejournals}{
 	\ifthenelse{\equal{\@journal}{admsci}
 		\OR \equal{\@journal}{arts}
-		\OR \equal{\@journal}{brainsci} % HACK by LuP !
 		\OR \equal{\@journal}{econometrics}
 		\OR \equal{\@journal}{economies}
 		\OR \equal{\@journal}{genealogy}
@@ -590,6 +589,9 @@
 \newcommand{\longauthorlist}[1]{\gdef\@longauthorlist{#1}}
 \def\@encyclopediadef{}
 \newcommand{\encyclopediadef}[1]{\gdef\@encyclopediadef{#1}}
+\def\@addhighlights{}
+\newcommand{\addhighlights}[1]{\gdef\@addhighlights{#1}}
+
 
 %% ORCID
 % Make Orcid icon
@@ -827,10 +829,7 @@
 			Published: \@datepublished\\\vspace{-12pt}
 			}{%
 			Received: \@datereceived\\
-			\ifthenelse{\equal{\@daterevised}{\@empty}}{%
-				}{%
-				Revised: \@daterevised\\%
-				}
+			Revised: \@daterevised\\
 			Accepted: \@dateaccepted\\
 			Published: \@datepublished
 			\ifthenelse{\equal{\@datecorrected}{\@empty}}{%
@@ -845,13 +844,7 @@
 	}
 }
 
-% Part 4: Publisher's note
-\newcommand{\leftcolPublishersNote}{
-	\leftcolFont
-	\textbf{Publisher's Note:} MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affil-\linebreak iations.
-}
-
-% Part 5: Copyright
+% Part 4: Copyright
 \newcommand{\leftcolumnCright}{
 	\leftcolFont
 	\cright
@@ -863,11 +856,10 @@
 	\leftcolUpdateCitation\vspace{-2pt} %1
 	\leftcolExternalEditor %2
 	\leftcolDates\vspace{-2pt} %3
-	\leftcolPublishersNote %4
 	\ifthenelse{\equal{\@status}{submit}}{%
 		\vspace{-8pt}
 		}{}
-	\vspace{6pt}\leftcolumnCright %5
+	\vspace{6pt}\leftcolumnCright %4
 }
 }
 
@@ -895,47 +887,32 @@
 	\leftcolUpdateCitation\vspace{-2pt} %1
 	\leftcolExternalEditor %2
 	\leftcolDates\vspace{-2pt} %3
-	\leftcolPublishersNote %4
 }
 		
 \newcommand{\OptionOneB}{
-	\leftcolumnCright %5
+	\leftcolumnCright %4
 }
 
 % Split option 2	
 \newcommand{\OptionTwoA}{
 	\leftcolUpdateCitation\vspace{-2pt} %1
-	\leftcolExternalEditor %2
-	\leftcolDates %3
-}
-		
-\newcommand{\OptionTwoB}{
-	\leftcolPublishersNote %4
-	\vspace{6pt}\leftcolumnCright %5
-}
-
-% Split option 3	
-\newcommand{\OptionThreeA}{
-	\leftcolUpdateCitation\vspace{-2pt} %1
 	\leftcolExternalEditor\vspace{-10pt} %2
 }
 
-\newcommand{\OptionThreeB}{
+\newcommand{\OptionTwoB}{
 	\leftcolDates\vspace{-2pt} %3
-	\leftcolPublishersNote %4
-	\vspace{6pt}\leftcolumnCright %5
+	\vspace{6pt}\leftcolumnCright %4
 }
 
-% Split option 4
-\newcommand{\OptionFourA}{
+% Split option 3
+\newcommand{\OptionThreeA}{
 	\leftcolUpdateCitation %1
 }
 
-\newcommand{\OptionFourB}{
+\newcommand{\OptionThreeB}{
 	\leftcolExternalEditor %2
 	\leftcolDates\vspace{-2pt} %3
-	\leftcolPublishersNote %4
-	\vspace{6pt}\leftcolumnCright %5
+	\vspace{6pt}\leftcolumnCright %4
 }
 
 %%%% Maketitle part 2
@@ -1028,6 +1005,11 @@
 %10
 \ifthenelse{\equal{\@simplesumm}{\@empty}}{}{
 	\noindent\textbf{Simple Summary:\space}\@simplesumm
+	\vspace{12pt}
+	\par
+}
+\ifthenelse{\equal{\@addhighlights}{\@empty}}{}{
+	\noindent\textbf{Highlights:\\\vspace{-12pt}}\addhighlights % redefined in .tex to use itemize
 	\vspace{12pt}
 	\par
 }
@@ -1563,6 +1545,11 @@
 }
 \let\endthebibliography=\endlist
 
+
+%%%% Publisher's note
+\newcommand{\PublishersNote}{
+\null\par\noindent\fontsize{9}{11}\selectfont\textbf{Disclaimer/Publisher's Note:} The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+}
 
 %%%% Copyright info
 \newcommand{\cright}{%
