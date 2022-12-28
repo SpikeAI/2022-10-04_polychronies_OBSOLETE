@@ -648,7 +648,7 @@ Neuromorphic sensors have also been developed with the idea to capture external 
 %
 With the AER specification and their sub-millisecond temporal precision, DVSs bring a new approach to the storage and processing of visual information. From their generative model, these sparse events are markers of the dynamics of the visual scene captured by the sensor. The dynamics of the event streams have to be used to make sense of the recorded information, and new algorithms are needed to solve efficiently classical computer vision~tasks. 
 
-In~\citep{lagorce_hots_2017}, \textit{\hl{time surfaces}} were introduced as an event-driven 2D image of the delay between the last event recorded at the address of a pixel and the current time. An exponential decay is applied on this delay to obtain the analog values of the time surfaces. It gives more precision to represent recent events and offers an analogy with the LIF spiking neuron. It is a way to represent the local dynamics embedded in the event-based recordings, and with unsupervised learning on the event stream based on the cosine similarity, they can capture repeating motifs within the input signals. Learned time surfaces can be used for object recognition~\citep{lagorce_hots_2017, sironi_hats_2018, maro_event-based_2020, grimaldi_homeostatic_2021,grimaldi_robust_2022} and show that this method could be efficiently applied to state-of-the-art benchmarks.
+In~\citep{lagorce_hots_2017}, time surfaces were introduced as an event-driven 2D image of the delay between the last event recorded at the address of a pixel and the current time. An exponential decay is applied on this delay to obtain the analog values of the time surfaces. It gives more precision to represent recent events and offers an analogy with the LIF spiking neuron. It is a way to represent the local dynamics embedded in the event-based recordings, and with unsupervised learning on the event stream based on the cosine similarity, they can capture repeating motifs within the input signals. Learned time surfaces can be used for object recognition~\citep{lagorce_hots_2017, sironi_hats_2018, maro_event-based_2020, grimaldi_homeostatic_2021,grimaldi_robust_2022} and show that this method could be efficiently applied to state-of-the-art benchmarks.
 
 More generally, three-dimensional convolutions in both space and time are another representation of the spiking motifs embedded in the event stream~\citep{ghosh_spatiotemporal_2019, grimaldi_learning_2022, yu_stsc-snn_2022}. With their additional temporal dimension, their kernels can capture multiple events on the same pixel address, as long as they belong to the local temporal window (see Figure~\ref{fig:icip}). This representation is only limited by the time step used for the discretization of the signal; this factor defines the temporal precision of the representation. Other methods make direct use of the precise timing of events captured by the DVS to solve optical flow and time-to-contact challenges~\citep{benosman_event-based_2014, clady_asynchronous_2014, tschechne_bio-inspired_2014}, inferring depth~\citep{hidalgo-carrio_learning_2020}, feature detection and tracking~\citep{dardelet_event-by-event_2021}, motion segmentation~\citep{stoffregen_event-based_2019} or the simultaneous localization and mapping problem~\citep{kim_real-time_2016}. This non-exhaustive list of complex task solving is not directly linked to biological processes, but shows the potential of the precise temporal resolution of neuromorphic retina-like cameras. By essence, these sensors offer a novel view of visual information processing due to the asynchronous responses of the different pixels. With this type of signal, the use of spatio-temporal motifs embedded in the event streams is essential to solve high-level visual tasks. 
 
@@ -668,7 +668,7 @@ More generally, three-dimensional convolutions in both space and time are anothe
 %
 For the rest of this section, we report examples of implementations of event-based algorithms using precise spatio-temporal motifs on neuromorphic hardware. 
 \citep{hussain_deltron_2012} implemented a delay-learning algorithm on an analog chip. Online learning on neuromorphic chips is still a challenge today and for this work, only the detection of spiking motifs was performed on the analog architecture; training was performed digitally and based on the tempotron learning rule~\citep{gutig_tempotron_2006}. In addition to delay learning, a group at the University of West Sydney developed a neuromorphic implementation of multiple synaptic plasticity learning rules~\citep{wang_neuromorphic_2015}. They showed that STDP and spike-timing-dependent delay plasticity rules could be implemented in both a digital and an analog chip. From the network parameters and the physical limitations to store it on-chip, they proved that the digital implementation is way easier to scale up and that an external memory would be needed for a larger network. The same group presented a FPGA hardware implementation of polychronous networks in which propagation delays are learned in a supervised manner, based on the expected firing time of the post-synaptic neuron~\citep{wang_fpga_2014}. %This paper proposes a supervised delay learning algorithm for spiking neurons with temporal encoding, in which both the weight and delay of a synaptic connection can be adjusted to enhance the learning performance. 
-\citet{pfeil_neuromorphic_2013} implemented STDP on a mixed analog--digital chip to simulate the sound localization processes observed on the barn owl auditory system~\citep{gerstner_neuronal_1996}. Coherence detection on input spikes coming from two sources was obtained with a 50 \hl{$ns$} precision. They claimed that this unsupervised learning denoises the input and compensates for variations between neural components. The variability of response of the analog components can be compensated by population coding for responses robust to noise, and this phenomenon is also observed in biological neural networks~\citep{boerlin_spike-based_2011}. 
+\citet{pfeil_neuromorphic_2013} implemented STDP on a mixed analog--digital chip to simulate the sound localization processes observed on the barn owl auditory system~\citep{gerstner_neuronal_1996}. Coherence detection on input spikes coming from two sources was obtained with a 50 $ns$ precision. They claimed that this unsupervised learning denoises the input and compensates for variations between neural components. The variability of response of the analog components can be compensated by population coding for responses robust to noise, and this phenomenon is also observed in biological neural networks~\citep{boerlin_spike-based_2011}. 
 A recent work performed the implementation of a sparse vector symbol architecture binding operation on the Loihi chip, delay lines and coincidence detection, used to compute the binding operation~\citep{renner_sparse_2022}. They highlighted the fact that using delays can be expensive \add[Laurent]{notably in memory bandwidth} because incoming spikes have to be stored in blocks with a temporal dimension equivalent to the maximal delay. Note that this problem is also due to the algorithm used in this paper and that the analog chips must not suffer from this type of~limitation. 
 
 Online on-chip learning and computations with delays are still emerging in neuromorphic engineering. The technical challenges linked to the development of this type of implementation and the growing interest in delay learning make advances in this field interesting for the future of computations with precise spatio-temporal motifs. While improvements are still to be made, neuromorphic chips seem to be a good candidate to efficiently make use of these particular features. 
@@ -706,7 +706,7 @@ In this review paper, we presented recent evidence for the role of precise spiki
   \item  Using precise spiking motifs could ultimately be a key ingredient in neuromorphic systems to reach similar efficiencies as biological neural systems.
 \end{itemize}
 
- Overall, our reviewing effort has shown that a growing community is focusing on that aspect. This community is based on solid and validated evidence, which is breaking novel grounds thanks to the current technical advances. Moreover, we also showed that this community is highly diverse, operating on {\hl{in vivo}}, {\hl{in computo}} and {\hl{in silico}} systems. As a consequence, the global effort is still largely scattered, which limits its larger acceptance in~neuroscience. 
+ Overall, our reviewing effort has shown that a growing community is focusing on that aspect. This community is based on solid and validated evidence, which is breaking novel grounds thanks to the current technical advances. Moreover, we also showed that this community is highly diverse, operating in biology, computational neuroscience or neuromorphic engineering. As a consequence, the global effort is still largely scattered, which limits its larger acceptance in~neuroscience. 
 
 \subsection{Limits}
 Additionally, the different models of spike motif detection and learning that we have presented at these different levels (neurobiological, theoretical, and neuromorphic) individually present limitations that prevent their widespread application in neuroscience.
@@ -741,10 +741,10 @@ Ultimately, the community should encourage the adoption of open, reproducible sc
 % \authorcontributions{Conceptualization, LP; writing---original draft preparation, all authors; writing---review and editing, all authors; supervision, LP; funding acquisition, LP and JM. All authors have read and agreed to the published version of the manuscript.}
 
 \funding{
-This research was funded by the European Union ERA-NET CHIST-ERA 2018 research and innovation program under grant number ANR-19-CHR3-0008-03 (``\href{http://aprovis3d.eu/}{\hl{APROVIS3D}}''). % Agence Nationale de la Recherche %HL and 
-LP, CB and AG received funding from the ANR grant number ANR-20-CE23-0021 ``\href{https://laurentperrinet.github.io/grant/anr-anr/}{\hl{AgileNeuroBot}}''.
-% LP received funding 
-LP received support from the french government under the France 2030 investment plan, as part of the Initiative d’Excellence d’Aix-Marseille Université – A*MIDEX number AMX-21-RID-025 ``\href{https://laurentperrinet.github.io/grant/polychronies/}{\hl{Polychronies}}''.}
+This research was funded by the European Union ERA-NET CHIST-ERA 2018 research and innovation program under grant number ANR-19-CHR3-0008-03 (``\href{http://aprovis3d.eu/}{APROVIS3D}''). % Agence Nationale de la Recherche %HL and 
+LP, CB and AG received funding from the ANR grant number ANR-20-CE23-0021 ``\href{https://laurentperrinet.github.io/grant/anr-anr/}{AgileNeuroBot}''.
+% LP received funding  
+LP received support from the french government under the France 2030 investment plan, as part of the Initiative d’Excellence d’Aix-Marseille Université – A*MIDEX number AMX-21-RID-025 ``\href{https://laurentperrinet.github.io/grant/polychronies/}{Polychronies}''.}
 
 %\institutionalreview{In this section, you should add the Institutional Review Board Statement and approval number, if relevant to your study. You might choose to exclude this statement if the study did not require ethical approval. Please note that the Editorial Office might ask you for further information. Please add “The study was conducted in accordance with the Declaration of Helsinki, and approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving humans. OR “The animal study protocol was approved by the Institutional Review Board (or Ethics Committee) of NAME OF INSTITUTE (protocol code XXX and date of approval).” for studies involving animals. OR “Ethical review and approval were waived for this study due to REASON (please provide a detailed justification).” OR “Not applicable” for studies not involving humans or animals.}
 
@@ -899,8 +899,10 @@ Gollisch, T.; Meister, M.
 
 \bibitem[DeWeese and Zador(2003)]{deweese_binary_2003}
 DeWeese, M.R.; Zador, A.M.
-\newblock {\em Binary Coding in Auditory Cortex}; \hl{Neural Information Processing
-  Systems Foundation:} %MDPI: Please add the location of the publisher (City and Country).
+\newblock {\em Binary Coding in Auditory Cortex}; {Neural Information Processing
+  Systems Foundation:} 
+  \newblock MIT Press: Cambridge, MA, USA,
+  %MDPI: Please add the location of the publisher (City and Country).
    2003.
 
 \bibitem[Carr and Konishi(1990)]{carr_circuit_1990}
@@ -920,7 +922,7 @@ Bohte, S.M.
 
 \bibitem[DiLorenzo and Victor(2013)]{dilorenzo_spike_2013}
 DiLorenzo, P.M.; Victor, J.D.
-\newblock {\em Spike {Timing}: {Mechanisms} and {Function}}; CRC Press:  \hl{Boca Raton, FL, USA,} %newly added information, please confirm
+\newblock {\em Spike {Timing}: {Mechanisms} and {Function}}; CRC Press:  {Boca Raton, FL, USA,} %newly added information, please confirm
   2013.
 %\newblock Google-Books-ID: KTHUIMUpQCUC.  %MDPI: We removed Google-Books-ID: KTHUIMUpQCUC. Please confirm this revision.
 
@@ -935,8 +937,7 @@ Roy, K.; Jaiswal, A.; Panda, P.
 \bibitem[Flourens(1842)]{flourens_recherches_1842}
 Flourens, M.J.P.
 \newblock {\em Recherches Expérimentales sur les Propriétés et les Fonctions
-  du Système Nerveux, Dans les Animaux Vertébrés}; Balliere, J.-B., Ed.;  \hl{1842.} %MDPI: Please add the name of the publisher and their location.
-
+  du Système Nerveux, Dans les Animaux Vertébrés}; Hachette {BNF}: {Paris, France,} {1842.} %MDPI: Please add the name of the publisher and their location.
 
 \bibitem[Pearce(2009)]{pearce_marie-jean-pierre_2009}
 Pearce, J.
@@ -1022,7 +1023,7 @@ Jérémie, J.N.; Perrinet, L.U.
 \bibitem[Nowak and Bullier(1997)]{nowak_timing_1997}
 Nowak, L.G.; Bullier, J.
 \newblock The {Timing} of {Information} {Transfer} in the {Visual} {System}. In
-  {\em Extrastriate {Cortex} in {Primates}}; Springer: \hl{Boston, MA, USA,} %MDPI: We added the location of the publisher. Please confirm.
+  {\em Extrastriate {Cortex} in {Primates}}; Springer: {Boston, MA, USA,} %MDPI: We added the location of the publisher. Please confirm.
   1997; pp. 205--241.
 
 \bibitem[Thorpe and Fabre-Thorpe(2001)]{thorpe_seeking_2001}
@@ -1227,7 +1228,7 @@ Abeles, M.
 \bibitem[Paugam-Moisy and Bohte(2012)]{paugam-moisy_computing_2012}
 Paugam-Moisy, H.; Bohte, S.M.
 \newblock Computing with spiking neuron networks. In {\em Handbook of Natural
-  Computing}; Springer:  \hl{Berlin/Heidelberg, Germany,} %newly added information, please confirm
+  Computing}; Springer:  {Berlin/Heidelberg, Germany,} %newly added information, please confirm
   2012.
 
 \bibitem[Hebb(1949)]{hebb_organization_1949}
@@ -1316,7 +1317,7 @@ Bruno, R.M.; Sakmann, B.
 Deneve, S.
 \newblock Bayesian inference in spiking neurons.
 \newblock In \emph{Proceedings of the Advances in {Neural} {Information} {Processing}
-  {Systems}}; MIT Press:  \hl{Cambridge, MA, USA,} %newly added information, please confirm
+  {Systems}}; MIT Press: Cambridge, MA, USA, %newly added information, please confirm
   2004, Volume~17.
 
 \bibitem[Ballard and Jehee(2011)]{ballard_dual_2011}
@@ -1535,7 +1536,7 @@ Schneidman, E.; Berry, M.J.; Segev, R.; Bialek, W.
 \bibitem[Berry(2022)]{berry_spike_2022}
 Puchalla, J.; Berry, M.J.
 \newblock \emph{Spike {Trains} of {Retinal} {Ganglion} {Cells} {Viewing} a {Repeated}
-  {Natural} {Movie}}; \hl{Princeton University: Princeton, NJ, USA,} %MDPI: We added the name of the publisher and location. Please confirm.
+  {Natural} {Movie}}; {Princeton University: Princeton, NJ, USA,} %MDPI: We added the name of the publisher and location. Please confirm.
   {2022}.
 \newblock {{https://doi.org/10.34770/V0V4-3H52}}.
 
@@ -1605,7 +1606,7 @@ Meister, M.; Lagnado, L.; Baylor, D.A.
 \bibitem[Cleland(2014)]{cleland_construction_2014}
 Cleland, T.A.
 \newblock Construction of {Odor} {Representations} by {Olfactory} {Bulb}
-  {Microcircuits}. In {\em Progress in {Brain} {Research}}; Elsevier:  \hl{Amsterdam, The Netherlands,} %newly added information, please confirm
+  {Microcircuits}. In {\em Progress in {Brain} {Research}}; Elsevier:  {Amsterdam, The Netherlands,} %newly added information, please confirm
   2014;
   Volume 208, pp. 177--203.
 \newblock {{https://doi.org/10.1016/B978-0-444-63350-7.00007-3}}.
@@ -1674,7 +1675,7 @@ Izhikevich, E.M.
 \bibitem[Simoncelli {et~al.}(2003)Simoncelli, Paninski, Pillow, and
   Schwartz]{simoncelli_characterization_2003}
 Simoncelli, E.P.; Paninski, L.; Pillow, J.; Schwartz, O.
-\newblock Characterization of {Neural} {Responses} with {Stochastic} {Stimuli}. In \emph{\hl{The New Cognitive Neurosciences}}, \hl{3rd ed.; Gazzaniga, M., Ed.; MIT Press: Cambridge, MA, USA,} %MDPI: Newly added  information. Please confirm.
+\newblock Characterization of {Neural} {Responses} with {Stochastic} {Stimuli}. In \emph{{The New Cognitive Neurosciences}}, {3rd ed.; Gazzaniga, M., Ed.; MIT Press: Cambridge, MA, USA,} %MDPI: Newly added  information. Please confirm.
   {2003}.
 
 \bibitem[Jazayeri and Movshon(2006)]{jazayeri_optimal_2006}
@@ -1704,7 +1705,7 @@ Kohn, A.; Smith, M.
 \newblock Utah Array Extracellular Recordings of Spontaneous and Visually
   Evoked Activity from Anesthetized Macaque Primary Visual Cortex ({V1}). 
   2016.   
-Available online: {\url{https://doi.org/10.6080/K0NC5Z4X}}  \hl{(accessed on date month year).} %MDPI: Please add the access date (format: Date Month Year), e.g., accessed on 1 January 2020.
+Available online: {\url{https://doi.org/10.6080/K0NC5Z4X}}  {(accessed on 25 December 2022).} %MDPI: Please add the access date (format: Date Month Year), e.g., accessed on 1 January 2020.
 
 
 \bibitem[Warner {et~al.}(2022)Warner, Ruda, and
@@ -1776,7 +1777,7 @@ Grün, S.; Diesmann, M.; Aertsen, A.
   Aertsen]{grun_unitary_2010}
 Grün, S.; Diesmann, M.; Aertsen, A.
 \newblock Unitary {Event} {Analysis}. In {\em Analysis of {Parallel} {Spike}
-  {Trains}}; Springer: \hl{Boston, MA, USA,} %MDPI: We added the location of the publisher. Please confirm.
+  {Trains}}; Springer: {Boston, MA, USA,} %MDPI: We added the location of the publisher. Please confirm.
   2010; pp. 191--220.
 
 \bibitem[Grün {et~al.}(2002)Grün, Diesmann, and
@@ -1864,7 +1865,8 @@ Pachitariu, M.; Stringer, C.; Harris, K.D.
 \bibitem[Stringer(2020)]{stringer_mouselandrastermap_2020}
 Stringer, C.
 \newblock {MouseLand}/Rastermap: {A} Multi-Dimensional Embedding Algorithm.
-  \hl{2020}. %MDPI: Please add website and access date. Please check.
+  {2020}. %MDPI: Please add website and access date. Please check.
+  Available online: {\url{https://github.com/MouseLand/rastermap}}  {(accessed on 25 December 2022).} %MDPI: Please add the access date (format: Date Month Year), e.g., accessed on 1 January 2020.
 
 
 \bibitem[Stringer {et~al.}(2019)Stringer, Pachitariu, Steinmetz, Reddy,
@@ -2327,7 +2329,7 @@ Grimaldi, A.; Perrinet, L.U.
 \newblock Learning hetero-synaptic delays for motion detection in a single
   layer of spiking neurons.
 \newblock In Proceedings of the 2022 {IEEE} {International} {Conference} on
-  {Image} {Processing} ({ICIP}), \hl{Bordeaux, France, 16--19 October} %MDPI: We added the location and date of the conference. Please confirm.
+  {Image} {Processing} ({ICIP}), {Bordeaux, France, 16--19 October} %MDPI: We added the location and date of the conference. Please confirm.
  2022; pp.~3591--3595.
 %\newblock ISSN: 2381-8549,
   {{https://doi.org/10.1109/ICIP46576.2022.9897394}}.
@@ -2337,7 +2339,7 @@ Grimaldi, A.; Perrinet, L.U.
 Madadi~Asl, M.; Ramezani~Akbarabadi, S.
 \newblock Delay-dependent transitions of phase synchronization and coupling
   symmetry between neurons shaped by spike-timing-dependent plasticity.
-\newblock {\em Cogn. Neurodynamics} {\bf \hl{2022} %MDPI: Please add the volume.
+\newblock {\em Cogn. Neurodynamics} {\bf {2022} %MDPI: Please add the volume. There is none for this citation
 }, 1--14.
 \newblock {{https://doi.org/10.1007/s11571-022-09850-x}}.
 
@@ -2365,7 +2367,7 @@ Gilson, M.
   Sprinkhuizen-Kuyper]{datadien_right_2011}
 Datadien, A.; Haselager, P.; Sprinkhuizen-Kuyper, I.
 \newblock {\em The {Right} {Delay}---{Detecting} {Specific} {Spike} {Patterns}
-  with {STDP} and {Axonal} {Conduction} {Delays}}; \hl{Springer:  Berlin/Heidelberg, Germany,} %MDPI: We added the name of the publisher and location. Please confirm.
+  with {STDP} and {Axonal} {Conduction} {Delays}}; {Springer:  Berlin/Heidelberg, Germany,} %MDPI: We added the name of the publisher and location. Please confirm.
  2011;
 \newblock pp. 90--99.
 
@@ -2411,7 +2413,7 @@ Luo, X.; Qu, H.; Wang, Y.; Yi, Z.; Zhang, J.; Zhang, M.
 \newblock Supervised {Learning} in {Multilayer} {Spiking} {Neural} {Networks}
   {With} {Spike} {Temporal} {Error} {Backpropagation}.
 \newblock {\em IEEE Trans. Neural Netw. Learn. Syst.} {\bf
-  \hl{2022} %MDPI: Please add the volume.
+  {2022} %MDPI: Please add the volume. No volume for this citation
 }, 1--13.
 \newblock {{https://doi.org/10.1109/tnnls.2022.3164930}}.
 
@@ -2498,7 +2500,7 @@ Rasetto, M.; Wan, Q.; Akolkar, H.; Shi, B.; Xiong, F.; Benosman, R.
 Diesmann, M.; Gewaltig, M.O.
 \newblock {NEST}: {An} {Environment} for {Neural} {Systems} {Simulations}.
 \newblock {\em GWDG-Bericht Nr. 58 Theo Plesser, Volker Macho (Hrsg.)}; {
-  \hl{2003}}; %MDPI: Please add the name of the publisher and their location.
+  {2003}}; %MDPI: Please add the name of the publisher and their location. This is a tech report
  p.~29.
 
 \bibitem[Hazan {et~al.}(2018)Hazan, Saunders, Khan, Patel, Sanghavi,
@@ -2530,7 +2532,7 @@ Zenke, F.; Bohté, S.M.; Clopath, C.; Comşa, I.M.; Göltz, J.; Maass, W.;
 \bibitem[Mead and Ismail(1989)]{mead_analog_1989}
 Mead, C.; Ismail, M.
 \newblock {\em Analog {VLSI} {Implementation} of {Neural} {Systems}}; Springer
-  Science \& Business Media:  \hl{Berlin/Heidelberg, Germany,} %newly added information, please confirm
+  Science \& Business Media:  {Berlin/Heidelberg, Germany,} %newly added information, please confirm
   1989.
 %\newblock Google-Books-ID: 9e29dOiXeiMC.
 
@@ -2561,7 +2563,7 @@ Furber, S.B.; Lester, D.R.; Plana, L.A.; Garside, J.D.; Painkras, E.; Temple,
 \bibitem[Furber and Bogdan(2020)]{furber_spinnaker_2020}
 Furber, S.; Bogdan, P., Eds.
 \newblock {\em {SpiNNaker}: {A} {Spiking} {Neural} {Network} {Architecture}};
-  Now Publishers: \hl{Norwell, MA, USA,} %MDPI: We added the location of the publisher. Please confirm.
+  Now Publishers: {Norwell, MA, USA,} %MDPI: We added the location of the publisher. Please confirm.
   2020.
 \newblock {{https://doi.org/10.1561/9781680836523}}.
 
@@ -2601,7 +2603,7 @@ Schemmel, J.; Brüderle, D.; Grübl, A.; Hock, M.; Meier, K.; Millner, S.
 \newblock A wafer-scale neuromorphic hardware system for large-scale neural
   modeling.
 \newblock In Proceedings of the 2010 {IEEE} {International} {Symposium} on
-  {Circuits} and {Systems} ({ISCAS}), \hl{Paris, France, 30 May--2 June} %MDPI: We added the location and date of the conference. Please confirm.
+  {Circuits} and {Systems} ({ISCAS}), {Paris, France, 30 May--2 June} %MDPI: We added the location and date of the conference. Please confirm.
  2010; pp. 1947--1950.
 {{https://doi.org/10.1109/ISCAS.2010.5536970}}.
 
@@ -2619,7 +2621,7 @@ Markram, H.; Meier, K.; Lippert, T.; Grillner, S.; Frackowiak, R.; Dehaene, S.;
 Farquhar, E.; Gordon, C.; Hasler, P.
 \newblock A {Field} {Programmable} {Neural} {Array}.
 \newblock In Proceedings of the 2006 {IEEE} {International} {Symposium} on
-  {Circuits} and {Systems}, \hl{Kos, Greece, 21--24 May} %MDPI: We added the location and date of the conference. Please confirm.
+  {Circuits} and {Systems}, {Kos, Greece, 21--24 May} %MDPI: We added the location and date of the conference. Please confirm.
  2006; pp. 4114--4117.
 \newblock {{https://doi.org/10.1109/ISCAS.2006.1693534}}.
 
@@ -2664,7 +2666,7 @@ Sironi, A.; Brambilla, M.; Bourdis, N.; Lagorce, X.; Benosman, R.
 \newblock {HATS}: {Histograms} of {Averaged} {Time} {Surfaces} for {Robust}
   {Event}-{Based} {Object} {Classification}.
 \newblock In Proceedings of the 2018 {IEEE}/{CVF} {Conference} on {Computer}
-  {Vision} and {Pattern} {Recognition}, Salt Lake City, UT, USA, \hl{18--23 June} %MDPI: We added the  date of the conference. Please confirm.
+  {Vision} and {Pattern} {Recognition}, Salt Lake City, UT, USA, {18--23 June} %MDPI: We added the  date of the conference. Please confirm.
   2018;
   pp. 1731--1740.
 \newblock {{https://doi.org/10.1109/CVPR.2018.00186}}.
@@ -2683,7 +2685,7 @@ Grimaldi, A.; Boutin, V.; Perrinet, L.; Ieng, S.H.; Benosman, R.
 \newblock A homeostatic gain control mechanism to improve event-driven object
   recognition.
 \newblock In Proceedings of the 2021 {International} {Conference} on
-  {Content}-{Based} {Multimedia} {Indexing} ({CBMI}),  \hl{Lille, France,  28--30 June} %MDPI: We added the location and date of the conference. Please confirm.
+  {Content}-{Based} {Multimedia} {Indexing} ({CBMI}), {Lille, France,  28--30 June} %MDPI: We added the location and date of the conference. Please confirm.
   2021.
 \newblock {{https://doi.org/10.1109/cbmi50038.2021.9461901}}.
 
@@ -2747,7 +2749,7 @@ Dardelet, L.; Benosman, R.; Ieng, S.H.
 Stoffregen, T.; Gallego, G.; Drummond, T.; Kleeman, L.; Scaramuzza, D.
 \newblock Event-{Based} {Motion} {Segmentation} by {Motion} {Compensation}.
 \newblock In Proceedings of the 2019 {IEEE}/{CVF} {International} {Conference}
-  on {Computer} {Vision} ({ICCV}), \hl{Seoul, Republic of Korea, 27 February} %MDPI: We added the location and date of the conference. Please confirm.
+  on {Computer} {Vision} ({ICCV}), {Seoul, Republic of Korea, 27 February} %MDPI: We added the location and date of the conference. Please confirm.
  2019; pp. 7243--7252.
  {{https://doi.org/10.1109/ICCV.2019.00734}}.
 
@@ -2766,7 +2768,7 @@ Kim, H.; Leutenegger, S.; Davison, A.J.
 Hussain, S.; Basu, A.; Wang, M.; Hamilton, T.J.
 \newblock {DELTRON}: {Neuromorphic} architectures for delay based learning.
 \newblock In Proceedings of the 2012 {IEEE} {Asia} {Pacific} {Conference} on
-  {Circuits} and {Systems},  \hl{Kaohsiung, Taiwan, 2--5 December} %MDPI: We added the location and date of the conference. Please confirm.
+  {Circuits} and {Systems},  {Kaohsiung, Taiwan, 2--5 December} %MDPI: We added the location and date of the conference. Please confirm.
  2012; pp. 304--307.
 \newblock {{https://doi.org/10.1109/APCCAS.2012.6419032}}.
 
@@ -2783,7 +2785,7 @@ Wang, R.M.; Hamilton, T.J.; Tapson, J.C.; van Schaik, A.
 Wang, R.; Hamilton, T.J.; Tapson, J.; van Schaik, A.
 \newblock An {FPGA} design framework for large-scale spiking neural networks.
 \newblock In Proceedings of the 2014 {IEEE} {International} {Symposium} on
-  {Circuits} and {Systems} ({ISCAS}), \hl{Melbourne, VIC, Australia, 1--5 June} %MDPI: We added the location and date of the conference. Please confirm.
+  {Circuits} and {Systems} ({ISCAS}), {Melbourne, VIC, Australia, 1--5 June} %MDPI: We added the location and date of the conference. Please confirm.
  2014; pp. 457--460.
  {{https://doi.org/10.1109/ISCAS.2014.6865169}}.
 
@@ -2792,7 +2794,7 @@ Wang, R.; Hamilton, T.J.; Tapson, J.; van Schaik, A.
 Pfeil, T.; Scherzer, A.C.; Schemmel, J.; Meier, K.
 \newblock Neuromorphic learning towards nano second precision.
 \newblock In Proceedings of the The 2013 {International} {Joint} {Conference}
-  on {Neural} {Networks} ({IJCNN}), \hl{Dallas, TX, USA, 4--9 August} %MDPI: We added the location and date of the conference. Please confirm.
+  on {Neural} {Networks} ({IJCNN}), {Dallas, TX, USA, 4--9 August} %MDPI: We added the location and date of the conference. Please confirm.
  2013; pp. 1--5.
  {{https://doi.org/10.1109/IJCNN.2013.6706828}}.
 
