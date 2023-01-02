@@ -37,3 +37,5 @@ brainsci-2069565_accepted_trackedchanges.fls
 brainsci-2069565_accepted_trackedchanges.log
 brainsci-2069565_accepted_trackedchanges.pdf
 brainsci-2069565_accepted_trackedchanges.out
+ci/cache/requests-cache.sqlite
+output/requests-cache.sqlite
