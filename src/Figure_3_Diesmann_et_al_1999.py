@@ -73,3 +73,4 @@ if False:
 else:
     import matplotlib.pyplot as plt
     plt.savefig('../figures/Diesmann_et_al_1999.pdf', bbox_inches='tight', pad_inches=0.0, backend='pdf')
+    plt.savefig('../figures/Diesmann_et_al_1999.png', bbox_inches='tight', pad_inches=0.0)
