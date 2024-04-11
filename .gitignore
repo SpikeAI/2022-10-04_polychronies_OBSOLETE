@@ -39,3 +39,10 @@ brainsci-2069565_accepted_trackedchanges.pdf
 brainsci-2069565_accepted_trackedchanges.out
 ci/cache/requests-cache.sqlite
 output/requests-cache.sqlite
+manuscript-arxiv.aux
+manuscript-arxiv.bbl
+manuscript-arxiv.blg
+manuscript-arxiv.log
+manuscript-arxiv.out
+manuscript-arxiv.pdf
+manuscript-arxiv.synctex.gz
