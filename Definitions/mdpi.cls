@@ -632,7 +632,7 @@
 			\fancyhead[L]{
 				\footnotesize %
 				\ifthenelse{\equal{\@status}{submit}}{%
-					Version {\@ \today} submitted to {\em \journalname}%
+					Version submitted to {\em \journalname}%
 					}{%
 					{\em \journalname} %
 					{\bfseries \@pubyear}, %
@@ -655,7 +655,7 @@
 			\fancyfoot[L]{
 			\fontsize{8}{8}\selectfont
 			\ifthenelse{\equal{\@status}{submit}}{%
-				Version {\@ \today} submitted to {\em \journalname}%
+					Version submitted to {\em \journalname}%
 				}{%
 				{\em\journalname\ }{\bfseries\@pubyear}, {\em \@pubvolume}, %
 				\ifthenelse{\equal{\@continuouspages}{\@empty}}{%
@@ -1425,7 +1425,7 @@
 		}{%
 		\fontsize{8}{8}\selectfont%
 		\ifthenelse{\equal{\@status}{submit}}{%
-			Version {\@ \today} submitted to {\em \journalname}%
+					Version submitted to {\em \journalname}%
 			}{%
 			\ifthenelse{\equal{\@arttype}{Supfile}}{%
 			{\em \journalname} {\bfseries \@pubyear}, {\em \@pubvolume}, %
