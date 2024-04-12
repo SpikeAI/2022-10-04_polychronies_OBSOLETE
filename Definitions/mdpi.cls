@@ -33,7 +33,7 @@
 \RequirePackage{graphicx,epstopdf}
 \RequirePackage{lastpage}
 \RequirePackage{ifthen}
-\RequirePackage[right]{lineno}
+%\RequirePackage[right]{lineno}
 \RequirePackage{float}
 %\RequirePackage{amsmath}
 \RequirePackage{amssymb} % For math environment bold format
@@ -1085,7 +1085,7 @@
 	\AfterEndPreamble{
 		\maketitle
 		\let\maketitle\relax
-		\ifthenelse{\equal{\@status}{submit}}{\linenumbers}{}
+		%\ifthenelse{\equal{\@status}{submit}}{\linenumbers}{}
 		}%
 	}{
 	\AfterEndPreamble{
@@ -1093,7 +1093,7 @@
 		\let\maketitle\relax
 		\maketitlen
 		\let\maketitlen\relax
-		\ifthenelse{\equal{\@status}{submit}}{\linenumbers}{}
+		%\ifthenelse{\equal{\@status}{submit}}{\linenumbers}{}
 		\abstractkeywords
 	}%
 }
